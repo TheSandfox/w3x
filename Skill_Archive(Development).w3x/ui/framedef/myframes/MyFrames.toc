@@ -1,0 +1,4 @@
+ui\framedef\myframes\MyEdge.fdf
+ui\framedef\myframes\MyText.fdf
+ui\framedef\myframes\MyGTB.fdf
+ui\framedef\myframes\MyButton.fdf

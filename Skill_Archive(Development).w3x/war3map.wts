@@ -1,0 +1,605 @@
+﻿STRING 66
+// 파괴 가능한 물체: B000 (우물), Name (이름)
+{
+우물
+}
+
+STRING 111
+// 유닛: HR01 (총잡이), Hotkey (단축키)
+{
+Q
+}
+
+STRING 143
+// 유닛: HRxx (더미영웅), Hotkey (단축키)
+{
+Q
+}
+
+STRING 181
+// 유닛: HR02 (붉은기사), Hotkey (단축키)
+{
+Q
+}
+
+STRING 234
+// 유닛: HR03 (해골 검사), Hotkey (단축키)
+{
+Q
+}
+
+STRING 372
+// 유닛: HR04 (천공룡), Hotkey (단축키)
+{
+Q
+}
+
+STRING 1508
+// 파괴 가능한 물체: LTlt ((여름 나무 벽), Name (이름)
+{
+(여름 나무 벽
+}
+
+STRING 1678
+{
+플레이어 1
+}
+
+STRING 1679
+{
+플레이어 2
+}
+
+STRING 1680
+{
+플레이어 3
+}
+
+STRING 1681
+{
+플레이어 4
+}
+
+STRING 1682
+{
+플레이어 5
+}
+
+STRING 1683
+{
+플레이어 6
+}
+
+STRING 1684
+{
+플레이어 7
+}
+
+STRING 1685
+{
+플레이어 8
+}
+
+STRING 1689
+// 유닛: HRxx (더미영웅), Propernames (적합한 이름)
+{
+ 
+}
+
+STRING 1690
+// 유닛: HR00 (전사), Propernames (적합한 이름)
+{
+전사
+}
+
+STRING 1697
+{
+|Cff9999ff책략|R
+}
+
+STRING 1698
+{
+|Cff00ff99활력|R
+}
+
+STRING 1700
+{
+v1.00
+}
+
+STRING 1701
+{
+ 
+}
+
+STRING 1705
+{
+ 
+}
+
+STRING 1706
+{
+ 
+}
+
+STRING 1708
+{
+ 
+}
+
+STRING 1710
+{
+ 
+}
+
+STRING 1719
+{
+|cff9999ff책략|r
+}
+
+STRING 1720
+{
+|cff9999ff책략|r
+}
+
+STRING 1731
+{
+|cffff9900무력 :|r
+}
+
+STRING 1732
+{
+|cff9999ff책략 :|r
+}
+
+STRING 1733
+{
+|Cff00ff99활력 : |r
+}
+
+STRING 1737
+{
+|cff00ff99활력|r
+}
+
+STRING 1761
+{
+|cffff9900무력 :|r
+}
+
+STRING 1768
+{
+|cff00ff99저항력|r |cffffff00+1|r |cffcc0000체력재생|r |cffffff00+0.1
+
+}
+
+STRING 1809
+{
+수호자
+}
+
+STRING 1812
+// 능력: Axx0 (Axx0 공속), Name (이름)
+{
+Axx0 공속
+}
+
+STRING 1814
+{
+|cffcc00cc정확도|r |cffffff00+1|r
+|cffff9900방어관통|r과 |cff9999ff마법관통|r |cffffff00+0.5|r
+}
+
+STRING 1819
+{
+|cffff99ff통찰 : |r
+ - |cffff99ff재사용 대기시간 감소|r |cffffff00+1|r |cffff99ff마나비용 감소|r |cffffff00+1|r
+
+}
+
+STRING 1822
+{
+ - |cffff9900공격력 |r|cffffff00+1|r |cffff9900방어관통|r|cffffff00 +0.5|r
+}
+
+STRING 1824
+{
+|cffff9900공격력|r |cffffff00+1|r |cffff9900방어관통|r |cffffff00+0.5|r
+}
+
+STRING 1825
+{
+|cffff9900공격력|r |cffffff00+1|r |cffff9900방어관통|r |cffffff00+0.5|r
+}
+
+STRING 1826
+{
+|cffff9900공격력|r |cffffff00+1|r |cffff9900방어관통|r |cffffff00+0.5|r
+}
+
+STRING 1877
+// 유닛: HR05 (해병), Hotkey (단축키)
+{
+Q
+}
+
+STRING 1890
+{
+|cffff00ff정밀|r
+}
+
+STRING 1891
+{
+|Cffff00ff정밀|R
+}
+
+STRING 1892
+{
+|cffcccccc방어력|r |cffffff00+1|r |cff00ff00체력|r |cffffff00+10|r
+}
+
+STRING 1893
+{
+|cffcccccc방어력|r |cffffff00+1|r |cff00ff00체력|r |cffffff00+10|r
+}
+
+STRING 1894
+{
+|cffcccccc방어력|r |cffffff00+1|r |cff00ff00체력|r |cffffff00+10|r
+}
+
+STRING 1895
+{
+|cffcccccc인내 :|r
+ - |cffcccccc방어력|r |cffffff00+1 |cff00ff00체력|r |cffffff00+10|r
+
+}
+
+STRING 1896
+{
+ - |cffff00ff정확도|r |cffffff00+1|r |cffff00ff모든관통|r |cffffff00+0.25|r
+
+|cff99ccff민첩 :|r
+ - |cff99ccff회피|r |cffffff00+2|r
+
+}
+
+STRING 1898
+{
+|cffff00ff정밀 :|r
+}
+
+STRING 1899
+{
+|cffcccccc인내 :|r
+}
+
+STRING 1900
+{
+ - |cff9999ff주문력|r |cffffff00+1|r |cff9999ff저항관통|r |cffffff00+0.5|r
+
+|cff0099ff마력 :|r
+ - |cff0099ff마나|r |cffffff00+10|r |cff0099ff마나재생|r |cffffff00+0.1|r
+
+}
+
+STRING 1931
+// 유닛: HR06 (트롤 광전사), Hotkey (단축키)
+{
+Q
+}
+
+STRING 1932
+// 유닛: HR07 (자객), Hotkey (단축키)
+{
+Q
+}
+
+STRING 2089
+// 유닛: HR08 (치유의 정령), Hotkey (단축키)
+{
+Q
+}
+
+STRING 2109
+// 유닛: U000 (구울), Hotkey (단축키)
+{
+Q
+}
+
+STRING 2128
+// 유닛: dumm (라벨용 더미), Name (이름)
+{
+라벨용 더미
+}
+
+STRING 2129
+// 유닛: HR01 (총잡이), Propernames (적합한 이름)
+{
+총잡이
+}
+
+STRING 2152
+// 유닛: HRxx (더미영웅), Name (이름)
+{
+더미영웅
+}
+
+STRING 2155
+// 유닛: HR02 (붉은기사), Propernames (적합한 이름)
+{
+붉은기사
+}
+
+STRING 2158
+// 유닛: HR03 (해골 검사), Propernames (적합한 이름)
+{
+해골 검사
+}
+
+STRING 2204
+// 유닛: HR05 (해병), Propernames (적합한 이름)
+{
+해병
+}
+
+STRING 2207
+{
+|cffd5bd92스킬저장소|r |cffffff00v1.00|r
+}
+
+STRING 2208
+{
+8
+}
+
+STRING 2209
+{
+자신만의 영웅을 육성하고 몰려오는 언데드군단을 막아내세요.
+}
+
+STRING 2210
+{
+모래여우
+}
+
+STRING 2228
+// 유닛: HR06 (트롤 광전사), Propernames (적합한 이름)
+{
+트롤 광전사
+}
+
+STRING 2237
+// 유닛: HR07 (자객), Propernames (적합한 이름)
+{
+자객
+}
+
+STRING 2260
+// 유닛: HR08 (치유의 정령), Propernames (적합한 이름)
+{
+치유의 정령
+}
+
+STRING 2266
+// 유닛: HR04 (천공룡), Propernames (적합한 이름)
+{
+천공룡
+}
+
+STRING 2268
+// 유닛: HR00 (전사), Name (이름)
+{
+전사
+}
+
+STRING 2269
+// 유닛: HR01 (총잡이), Name (이름)
+{
+총잡이
+}
+
+STRING 2270
+// 유닛: HR02 (붉은기사), Name (이름)
+{
+붉은기사
+}
+
+STRING 2271
+// 유닛: HR03 (해골 검사), Name (이름)
+{
+해골 검사
+}
+
+STRING 2272
+// 유닛: HR04 (천공룡), Name (이름)
+{
+천공룡
+}
+
+STRING 2273
+// 유닛: HR05 (해병), Name (이름)
+{
+해병
+}
+
+STRING 2274
+// 유닛: HR06 (트롤 광전사), Name (이름)
+{
+트롤 광전사
+}
+
+STRING 2275
+// 유닛: HR07 (자객), Name (이름)
+{
+자객
+}
+
+STRING 2276
+// 유닛: HR08 (치유의 정령), Name (이름)
+{
+치유의 정령
+}
+
+STRING 2277
+// 능력: Axx1 (Axx1 따라가기), Name (이름)
+{
+Axx1 따라가기
+}
+
+STRING 2278
+// 능력: Axx2 (Axx2 자동공격 방지), Name (이름)
+{
+Axx2 자동공격 방지
+}
+
+STRING 2281
+// 능력: Axx3 (Axx3 충돌무시용 윈드워크), Name (이름)
+{
+Axx3 충돌무시용 윈드워크
+}
+
+STRING 2282
+// 유닛: U000 (구울), Propernames (적합한 이름)
+{
+구울
+}
+
+STRING 2283
+// 유닛: U000 (구울), Name (이름)
+{
+구울
+}
+
+STRING 2284
+// 유닛: U001 (지하마귀), Hotkey (단축키)
+{
+Q
+}
+
+STRING 2287
+// 유닛: U002 (가고일), Hotkey (단축키)
+{
+Q
+}
+
+STRING 2288
+// 유닛: U001 (지하마귀), Propernames (적합한 이름)
+{
+지하마귀
+}
+
+STRING 2289
+// 유닛: U001 (지하마귀), Name (이름)
+{
+지하마귀
+}
+
+STRING 2290
+// 유닛: U002 (가고일), Propernames (적합한 이름)
+{
+가고일
+}
+
+STRING 2291
+// 유닛: U002 (가고일), Name (이름)
+{
+가고일
+}
+
+STRING 2292
+// 유닛: U003 (강령술사), Hotkey (단축키)
+{
+Q
+}
+
+STRING 2293
+// 유닛: U003 (강령술사), Propernames (적합한 이름)
+{
+강령술사
+}
+
+STRING 2294
+// 유닛: U003 (강령술사), Name (이름)
+{
+강령술사
+}
+
+STRING 2295
+// 유닛: U004 (누더기 골렘), Hotkey (단축키)
+{
+Q
+}
+
+STRING 2296
+// 유닛: U004 (누더기 골렘), Propernames (적합한 이름)
+{
+누더기 골렘
+}
+
+STRING 2297
+// 유닛: U004 (누더기 골렘), Name (이름)
+{
+누더기 골렘
+}
+
+STRING 2298
+// 유닛: HR09 (마술사), Hotkey (단축키)
+{
+Q
+}
+
+STRING 2299
+// 유닛: HR09 (마술사), Propernames (적합한 이름)
+{
+마술사
+}
+
+STRING 2300
+// 유닛: HR09 (마술사), Name (이름)
+{
+마술사
+}
+
+STRING 2301
+// 유닛: G000 (수호병), Hotkey (단축키)
+{
+Q
+}
+
+STRING 2302
+// 유닛: G000 (수호병), Propernames (적합한 이름)
+{
+수호병
+}
+
+STRING 2303
+// 유닛: G000 (수호병), Name (이름)
+{
+수호병
+}
+
+STRING 2304
+// 유닛: G001 (생명의 나무), Hotkey (단축키)
+{
+Q
+}
+
+STRING 2305
+// 유닛: G001 (생명의 나무), Propernames (적합한 이름)
+{
+생명의 나무
+}
+
+STRING 2306
+// 유닛: G001 (생명의 나무), Name (이름)
+{
+생명의 나무
+}
+
+STRING 2307
+// 유닛: HR00 (전사), Hotkey (단축키)
+{
+Q
+}
+
