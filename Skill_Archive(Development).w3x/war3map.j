@@ -190,34 +190,34 @@ framehandle FRAME_SLOT_CHANGER= null
 framehandle FRAME_MAKE_POTION= null
 // processed: 		framehandle array FRAME_ABILITY_ICON[10]
 
-constant integer UI__MINIMAP_OFFSET_X= 0
-constant integer UI__MINIMAP_OFFSET_Y= 16
-constant integer UI__MINIMAP_SIZE= 224
-constant integer UI__MINIMAP_BORDER= 0
-constant integer UI__PORTRAIT_SIZE= 96
-constant integer UI__PORTRAIT_OFFSET_Y= 160
-constant integer UI__PORTRAIT_OFFSET_X= - 360
-constant integer UI__PORTRAIT_BORDER= 0
-constant integer UI__BAR_WIDTH= 720
-constant integer UI__BAR_HEIGHT= 24
-constant integer UI__HP_BAR_OFFSET_Y= 136
-constant integer UI__MP_BAR_OFFSET_Y= 112
-constant integer UI__ABILITY_CONTAINER_WIDTH= 720
-constant integer UI__ABILITY_CONTAINER_HEIGHT= 96
-constant integer UI__ABILITY_CONTAINER_OFFSET_Y= 16
-constant integer UI__ABILITY_ICON_SIZE= 64
-constant integer UI__ABILITY_TOOLTIP_OFFSET_Y= 160
-constant integer UI__CHINGHO_HEIGHT= 32
-constant integer UI__STAT1_WIDTH= 192
-constant integer UI__EXP_BAR_HEIGHT= 12
-constant integer UI__SKILL_SHOP_OFFSET_Y= - 16
-constant integer UI__SKILL_SHOP_WIDTH= 1280
-constant integer UI__SKILL_SHOP_HEIGHT= 428
-constant integer UI__SKILL_SHOP_INSET= 32
-constant integer UI__ABILITY_ERROR_OFFSET_Y= 268
-constant integer UI__SLOT_CHANGER_WIDTH= ( 64 * 10 ) + 16
-constant integer UI__SLOT_CHANGER_HEIGHT= ( 64 * 3 ) + 16
-constant integer UI__SLOT_CHANGER_OFFSET_Y= - 96
+constant integer UI___MINIMAP_OFFSET_X= 0
+constant integer UI___MINIMAP_OFFSET_Y= 16
+constant integer UI___MINIMAP_SIZE= 224
+constant integer UI___MINIMAP_BORDER= 0
+constant integer UI___PORTRAIT_SIZE= 96
+constant integer UI___PORTRAIT_OFFSET_Y= 160
+constant integer UI___PORTRAIT_OFFSET_X= - 360
+constant integer UI___PORTRAIT_BORDER= 0
+constant integer UI___BAR_WIDTH= 720
+constant integer UI___BAR_HEIGHT= 24
+constant integer UI___HP_BAR_OFFSET_Y= 136
+constant integer UI___MP_BAR_OFFSET_Y= 112
+constant integer UI___ABILITY_CONTAINER_WIDTH= 720
+constant integer UI___ABILITY_CONTAINER_HEIGHT= 96
+constant integer UI___ABILITY_CONTAINER_OFFSET_Y= 16
+constant integer UI___ABILITY_ICON_SIZE= 64
+constant integer UI___ABILITY_TOOLTIP_OFFSET_Y= 160
+constant integer UI___CHINGHO_HEIGHT= 32
+constant integer UI___STAT1_WIDTH= 192
+constant integer UI___EXP_BAR_HEIGHT= 12
+constant integer UI___SKILL_SHOP_OFFSET_Y= - 16
+constant integer UI___SKILL_SHOP_WIDTH= 1280
+constant integer UI___SKILL_SHOP_HEIGHT= 428
+constant integer UI___SKILL_SHOP_INSET= 32
+constant integer UI___ABILITY_ERROR_OFFSET_Y= 268
+constant integer UI___SLOT_CHANGER_WIDTH= ( 64 * 10 ) + 16
+constant integer UI___SLOT_CHANGER_HEIGHT= ( 64 * 3 ) + 16
+constant integer UI___SLOT_CHANGER_OFFSET_Y= - 96
 
 //endglobals from UI
 //globals from UndeadData:
@@ -385,7 +385,7 @@ integer array CHANCE_TIER4
 integer array CHANCE_TIER5
 integer array CHANCE_TOTAL
 constant integer CHANCE_LEVEL_MAX= 11
-integer array SkillShop__MAX_EXP
+integer array SkillShop___MAX_EXP
 constant integer LEVEL_MAX= 11
 //endglobals from SkillShop
 //globals from SlotChanger:
@@ -413,7 +413,7 @@ player GOLD_REFRESH_PLAYER= null
 //endglobals from User
 //globals from Ability:
 constant boolean LIBRARY_Ability=true
-hashtable Ability___HASH= InitHashtable()
+hashtable Ability__HASH= InitHashtable()
 constant string ABILITY_STRING_TARGET_LOCATION= "|cff00ffff지점 목표물|r"
 constant string ABILITY_STRING_TARGET_UNIT= "|cff00ffff유닛 목표물|r"
 constant string ABILITY_STRING_IMMEDIATE= "|cff00ffff즉시 시전|r"
@@ -445,46 +445,46 @@ constant string ABILITY_TAG_BUG= "|cffffff00벌레|r"
 constant boolean LIBRARY_CharacterSelect=true
 integer array CharacterSelect_ID
 integer array CharacterSelect_CHINGHO_ID
-boolean array CharacterSelect__READY
+boolean array CharacterSelect___READY
 
-trigger CharacterSelect__MAIN_TRIGGER= null
-triggercondition CharacterSelect__MAIN_COND= null
-integer CharacterSelect__TIME= 60
+trigger CharacterSelect___MAIN_TRIGGER= null
+triggercondition CharacterSelect___MAIN_COND= null
+integer CharacterSelect___TIME= 60
 
 framehandle CharacterSelect_BACKGROUND= null
-framehandle CharacterSelect__CONTAINER= null
-framehandle CharacterSelect__HEADER_BACKDROP= null
-framehandle CharacterSelect__HEADER_TEXT= null
-framehandle CharacterSelect__CONFIRM= null
-boolean CharacterSelect__CONFIRM_DISABLE= false
-framehandle CharacterSelect__CHINGHO= null
-framehandle CharacterSelect__CHINGHO_HEADER_BACKDROP= null
-framehandle CharacterSelect__CHINGHO_HEADER_TEXT= null
-framehandle CharacterSelect__CHINGHO_PAGE_NEXT= null
-framehandle CharacterSelect__CHINGHO_PAGE_PREV= null
-framehandle CharacterSelect__PANEL_CONTAINER= null
-framehandle CharacterSelect__PANEL_HEADER_BACKDROP= null
-framehandle CharacterSelect__PANEL_HEADER_TEXT= null
-framehandle CharacterSelect__FADE= null
-constant integer CharacterSelect__WIDTH= 768
-constant integer CharacterSelect__HEIGHT= 320
-constant integer CharacterSelect__OFFSET_X= - 128 - 16
-constant integer CharacterSelect__OFFSET_Y= 128
-constant integer CharacterSelect__PER_ROW= 8
-constant integer CharacterSelect__WIDGET_INSET= 16
-constant integer CharacterSelect__WIDGET_SIZE= 80
-constant integer CharacterSelect__CHINGHO_WIDTH= 256
-constant integer CharacterSelect__CHINGHO_HEIGHT= 640 - 64 + 16
+framehandle CharacterSelect___CONTAINER= null
+framehandle CharacterSelect___HEADER_BACKDROP= null
+framehandle CharacterSelect___HEADER_TEXT= null
+framehandle CharacterSelect___CONFIRM= null
+boolean CharacterSelect___CONFIRM_DISABLE= false
+framehandle CharacterSelect___CHINGHO= null
+framehandle CharacterSelect___CHINGHO_HEADER_BACKDROP= null
+framehandle CharacterSelect___CHINGHO_HEADER_TEXT= null
+framehandle CharacterSelect___CHINGHO_PAGE_NEXT= null
+framehandle CharacterSelect___CHINGHO_PAGE_PREV= null
+framehandle CharacterSelect___PANEL_CONTAINER= null
+framehandle CharacterSelect___PANEL_HEADER_BACKDROP= null
+framehandle CharacterSelect___PANEL_HEADER_TEXT= null
+framehandle CharacterSelect___FADE= null
+constant integer CharacterSelect___WIDTH= 768
+constant integer CharacterSelect___HEIGHT= 320
+constant integer CharacterSelect___OFFSET_X= - 128 - 16
+constant integer CharacterSelect___OFFSET_Y= 128
+constant integer CharacterSelect___PER_ROW= 8
+constant integer CharacterSelect___WIDGET_INSET= 16
+constant integer CharacterSelect___WIDGET_SIZE= 80
+constant integer CharacterSelect___CHINGHO_WIDTH= 256
+constant integer CharacterSelect___CHINGHO_HEIGHT= 640 - 64 + 16
 
-integer CharacterSelect__WIDGET_INDEX= 0
-integer CharacterSelect__CHINGHO_WIDGET_INDEX= 0
-constant integer CharacterSelect__CHINGHO_PER_PAGE= 8
-framehandle array CharacterSelect__CHINGHO_PAGE
-integer array CharacterSelect__CHINGHO_PAGE_INDEX
-integer CharacterSelect__CHINGHO_PAGE_MAX= 0
+integer CharacterSelect___WIDGET_INDEX= 0
+integer CharacterSelect___CHINGHO_WIDGET_INDEX= 0
+constant integer CharacterSelect___CHINGHO_PER_PAGE= 8
+framehandle array CharacterSelect___CHINGHO_PAGE
+integer array CharacterSelect___CHINGHO_PAGE_INDEX
+integer CharacterSelect___CHINGHO_PAGE_MAX= 0
 
-trigger CharacterSelect__PANEL_REFRESH_REQUEST= null
-player CharacterSelect__PANEL_REFRESH_PLAYER= null
+trigger CharacterSelect___PANEL_REFRESH_REQUEST= null
+player CharacterSelect___PANEL_REFRESH_PLAYER= null
 //endglobals from CharacterSelect
 //globals from Circle:
 constant boolean LIBRARY_Circle=true
@@ -510,7 +510,7 @@ player PLAYER_MONSTER= Player(23)
 player PLAYER_GUARDIANS= Player(21)
 player PLAYER_SYSTEM= Player(24)
 
-trigger Game__LEAVE_TRIGGER= CreateTrigger()
+trigger Game___LEAVE_TRIGGER= CreateTrigger()
 		
 //endglobals from Game
 //globals from Undead:
@@ -526,8 +526,8 @@ group Undead_GROUP= null
 //endglobals from Undead
 //globals from Wave:
 constant boolean LIBRARY_Wave=true
-rect array Wave__RECT
-hashtable Wave__HASH= InitHashtable()
+rect array Wave___RECT
+hashtable Wave___HASH= InitHashtable()
 //endglobals from Wave
     // User-defined
 real udg_EVENT_VALUE= 0
@@ -559,98 +559,98 @@ unit RIGHT_CLICK_UNIT= null
 real RIGHT_CLICK_X= 0.
 real RIGHT_CLICK_Y= 0.
 boolean RIGHT_CLICK_ENABLE= false
-string BuffStun___NAME= "기절"
-integer BuffStun___ID= 'Stun'
-integer BuffStun___INDIVISUAL= 0
-string BuffStun___ICON_PATH= "BTNStun"
-string BuffEnsn___NAME= "속박"
-integer BuffEnsn___ID= 'Ensn'
-integer BuffEnsn___INDIVISUAL= 0
-string BuffEnsn___ICON_PATH= "BTNEnsnare"
-constant integer Ability0000___ID= '0000'
-constant string Ability0000___NAME= "후려치기"
-constant string Ability0000___ICON_PATH= "BTNSteelMelee"
-constant integer Ability0000___TIER= 1
-constant integer Ability0000___COST= 1
-constant integer Ability0000___STAT_INDEX1= STAT_TYPE_ATTACK
-constant integer Ability0000___STAT_INDEX2= STAT_TYPE_ARMOR_PENET
-constant real Ability0000___CHARGE_DURATION= 0.25
-constant real Ability0000___CHARGE_SPEED= 1250.
-constant real Ability0000___KNOCKBACK_DISTANCE= 100.
-constant real Ability0000___KNOCKABCK_DURATION= 0.5
-constant real Ability0000___DAMAGE_PER_ATTACK= 1.5
-constant real Ability0000___DAMAGE_PER_LEVEL= 0.05
-constant real Ability0000___DAMAGE_PER_ATTACK_ALTERNATE= 2.0
-constant real Ability0000___BACKSWING= 0.15
-constant real Ability0000___COLRAD= 75.
-constant integer Ability0001___ID= '0001'
-constant string Ability0001___NAME= "쌍극의 번개"
-constant string Ability0001___ICON_PATH= "btn-ability-protoss-doubleshieldrecharge"
-constant integer Ability0001___TIER= 1
-constant integer Ability0001___COST= 1
-constant integer Ability0001___STAT_INDEX1= STAT_TYPE_MAGICPOWER
-constant integer Ability0001___STAT_INDEX2= STAT_TYPE_MAGIC_PENET
-constant real Ability0001___DELAY= 0.65
-constant real Ability0001___CAST= 0.25
-constant real Ability0001___BALL_UP= 0.3
-constant real Ability0001___BALL_HEIGHT= 85.
-constant real Ability0001___BALL_DISTANCE= 350.
-constant real Ability0001___BALL_RADIUS= 55.
-constant real Ability0001___RANGE= 500.
-constant string Ability0001___EFFECT_PATH1= "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
-constant string Ability0001___EFFECT_PATH2= "Abilities\\Weapons\\ChimaeraLightningMissile\\ChimaeraLightningMissile.mdl"
-constant real Ability0001___DAMAGE_PER_MAGICPOWER= 2.25
-constant real Ability0001___DAMAGE_PER_LEVEL= 0.05
-constant integer Ability0002___ID= '0002'
-constant string Ability0002___NAME= "고정사격"
-constant string Ability0002___ICON_PATH= "BTNDwarvenLongRifle"
-constant integer Ability0002___TIER= 1
-constant integer Ability0002___COST= 1
-constant integer Ability0002___STAT_INDEX1= STAT_TYPE_ACCURACY
-constant integer Ability0002___STAT_INDEX2= STAT_TYPE_ARMOR_PENET
-constant real Ability0002___DELAY= 2.
-constant real Ability0002___BACKSWING= 0.25
-constant real Ability0002___STARTAT= 45.
-constant string Ability0002___EFFECT_PATH1= "Abilities\\Weapons\\Mortar\\MortarMissile.mdl"
-constant string Ability0002___EFFECT_PATH2= "Effects\\Aim.mdl"
-constant real Ability0002___DAMAGE_PER_ATTACK= 2.65
-constant real Ability0002___DAMAGE_PER_LEVEL= 0.05
-constant real Ability0002___VELO= 1875.
-constant integer Ability0003___ID= '0003'
-constant string Ability0003___NAME= "화염구"
-constant string Ability0003___ICON_PATH= "BTNFireBolt"
-constant integer Ability0003___TIER= 1
-constant integer Ability0003___COST= 1
-constant integer Ability0003___STAT_INDEX1= STAT_TYPE_MAGICPOWER
-constant integer Ability0003___STAT_INDEX2= STAT_TYPE_SPELL_BOOST
-constant real Ability0003___DELAY= 0.2
-constant real Ability0003___DAMAGE_PER_MAGICPOWER= 2.25
-constant real Ability0003___DAMAGE_PER_LEVEL= 0.05
-constant real Ability0003___BACKSWING= 0.15
-constant real Ability0003___STARTAT= 32.5
-constant real Ability0003___COLRAD= 65.
-constant real Ability0003___EXPRAD= 145.
-constant real Ability0003___VELO= 1100.
-constant real Ability0003___RANGE= 750.
-constant string Ability0003___EFFECT_PATH1= "Abilities\\Weapons\\RedDragonBreath\\RedDragonMissile.mdl"
-constant string Ability0003___EFFECT_PATH2= "Abilities\\Spells\\Other\\Incinerate\\FireLordDeathExplode.mdl"
-constant integer Ability0004___ID= '0004'
-constant string Ability0004___NAME= "연쇄번개"
-constant string Ability0004___ICON_PATH= "btn-ability-swarm-kerrigan-chainreaction"
-constant integer Ability0004___TIER= 1
-constant integer Ability0004___COST= 1
-constant integer Ability0004___STAT_INDEX1= STAT_TYPE_MAGICPOWER
-constant integer Ability0004___STAT_INDEX2= STAT_TYPE_ACCURACY
-constant real Ability0004___DELAY= 0.2
-constant real Ability0004___DAMAGE_PER_MAGICPOWER= 1.55
-constant real Ability0004___DAMAGE_PER_ACCURACY= 0.85
-constant real Ability0004___DAMAGE_PER_LEVEL= 0.05
-constant real Ability0004___BACKSWING= 0.15
-constant real Ability0004___INTERVAL= 0.15
-constant real Ability0004___RANGE= 575.
-constant real Ability0004___RANGE_SECOND= 315.
-constant integer Ability0004___TARGET_MAX= 4
-constant string Ability0004___EFFECT_PATH1= "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
+string BuffStun__NAME= "기절"
+integer BuffStun__ID= 'Stun'
+integer BuffStun__INDIVISUAL= 0
+string BuffStun__ICON_PATH= "BTNStun"
+string BuffEnsn__NAME= "속박"
+integer BuffEnsn__ID= 'Ensn'
+integer BuffEnsn__INDIVISUAL= 0
+string BuffEnsn__ICON_PATH= "BTNEnsnare"
+constant integer Ability0000__ID= '0000'
+constant string Ability0000__NAME= "후려치기"
+constant string Ability0000__ICON_PATH= "BTNSteelMelee"
+constant integer Ability0000__TIER= 1
+constant integer Ability0000__COST= 1
+constant integer Ability0000__STAT_INDEX1= STAT_TYPE_ATTACK
+constant integer Ability0000__STAT_INDEX2= STAT_TYPE_ARMOR_PENET
+constant real Ability0000__CHARGE_DURATION= 0.25
+constant real Ability0000__CHARGE_SPEED= 1250.
+constant real Ability0000__KNOCKBACK_DISTANCE= 100.
+constant real Ability0000__KNOCKABCK_DURATION= 0.5
+constant real Ability0000__DAMAGE_PER_ATTACK= 1.5
+constant real Ability0000__DAMAGE_PER_LEVEL= 0.05
+constant real Ability0000__DAMAGE_PER_ATTACK_ALTERNATE= 2.0
+constant real Ability0000__BACKSWING= 0.15
+constant real Ability0000__COLRAD= 75.
+constant integer Ability0001__ID= '0001'
+constant string Ability0001__NAME= "쌍극의 번개"
+constant string Ability0001__ICON_PATH= "btn-ability-protoss-doubleshieldrecharge"
+constant integer Ability0001__TIER= 1
+constant integer Ability0001__COST= 1
+constant integer Ability0001__STAT_INDEX1= STAT_TYPE_MAGICPOWER
+constant integer Ability0001__STAT_INDEX2= STAT_TYPE_MAGIC_PENET
+constant real Ability0001__DELAY= 0.65
+constant real Ability0001__CAST= 0.25
+constant real Ability0001__BALL_UP= 0.3
+constant real Ability0001__BALL_HEIGHT= 85.
+constant real Ability0001__BALL_DISTANCE= 350.
+constant real Ability0001__BALL_RADIUS= 55.
+constant real Ability0001__RANGE= 500.
+constant string Ability0001__EFFECT_PATH1= "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
+constant string Ability0001__EFFECT_PATH2= "Abilities\\Weapons\\ChimaeraLightningMissile\\ChimaeraLightningMissile.mdl"
+constant real Ability0001__DAMAGE_PER_MAGICPOWER= 2.25
+constant real Ability0001__DAMAGE_PER_LEVEL= 0.05
+constant integer Ability0002__ID= '0002'
+constant string Ability0002__NAME= "고정사격"
+constant string Ability0002__ICON_PATH= "BTNDwarvenLongRifle"
+constant integer Ability0002__TIER= 1
+constant integer Ability0002__COST= 1
+constant integer Ability0002__STAT_INDEX1= STAT_TYPE_ACCURACY
+constant integer Ability0002__STAT_INDEX2= STAT_TYPE_ARMOR_PENET
+constant real Ability0002__DELAY= 2.
+constant real Ability0002__BACKSWING= 0.25
+constant real Ability0002__STARTAT= 45.
+constant string Ability0002__EFFECT_PATH1= "Abilities\\Weapons\\Mortar\\MortarMissile.mdl"
+constant string Ability0002__EFFECT_PATH2= "Effects\\Aim.mdl"
+constant real Ability0002__DAMAGE_PER_ATTACK= 2.65
+constant real Ability0002__DAMAGE_PER_LEVEL= 0.05
+constant real Ability0002__VELO= 1875.
+constant integer Ability0003__ID= '0003'
+constant string Ability0003__NAME= "화염구"
+constant string Ability0003__ICON_PATH= "BTNFireBolt"
+constant integer Ability0003__TIER= 1
+constant integer Ability0003__COST= 1
+constant integer Ability0003__STAT_INDEX1= STAT_TYPE_MAGICPOWER
+constant integer Ability0003__STAT_INDEX2= STAT_TYPE_SPELL_BOOST
+constant real Ability0003__DELAY= 0.2
+constant real Ability0003__DAMAGE_PER_MAGICPOWER= 2.25
+constant real Ability0003__DAMAGE_PER_LEVEL= 0.05
+constant real Ability0003__BACKSWING= 0.15
+constant real Ability0003__STARTAT= 32.5
+constant real Ability0003__COLRAD= 65.
+constant real Ability0003__EXPRAD= 145.
+constant real Ability0003__VELO= 1100.
+constant real Ability0003__RANGE= 750.
+constant string Ability0003__EFFECT_PATH1= "Abilities\\Weapons\\RedDragonBreath\\RedDragonMissile.mdl"
+constant string Ability0003__EFFECT_PATH2= "Abilities\\Spells\\Other\\Incinerate\\FireLordDeathExplode.mdl"
+constant integer Ability0004__ID= '0004'
+constant string Ability0004__NAME= "연쇄번개"
+constant string Ability0004__ICON_PATH= "btn-ability-swarm-kerrigan-chainreaction"
+constant integer Ability0004__TIER= 1
+constant integer Ability0004__COST= 1
+constant integer Ability0004__STAT_INDEX1= STAT_TYPE_MAGICPOWER
+constant integer Ability0004__STAT_INDEX2= STAT_TYPE_ACCURACY
+constant real Ability0004__DELAY= 0.2
+constant real Ability0004__DAMAGE_PER_MAGICPOWER= 1.55
+constant real Ability0004__DAMAGE_PER_ACCURACY= 0.85
+constant real Ability0004__DAMAGE_PER_LEVEL= 0.05
+constant real Ability0004__BACKSWING= 0.15
+constant real Ability0004__INTERVAL= 0.15
+constant real Ability0004__RANGE= 575.
+constant real Ability0004__RANGE_SECOND= 315.
+constant integer Ability0004__TARGET_MAX= 4
+constant string Ability0004__EFFECT_PATH1= "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl"
 constant integer Ability0005___ID= '0005'
 constant string Ability0005___NAME= "신성의 빛"
 constant string Ability0005___ICON_PATH= "BTNHolyBolt"
@@ -949,115 +949,137 @@ constant real Ability0030___RANGE= 1200.
 constant string Ability0030___EFFECT_PATH1= "Effects\\MissilePod.mdl"
 constant string Ability0030___EFFECT_PATH2= "Abilities\\Spells\\Other\\TinkerRocket\\TinkerRocketMissile.mdl"
 constant string Ability0030___EFFECT_PATH3= "Abilities\\Weapons\\SearingArrow\\SearingArrowMissile.mdl"
-constant integer Ability0040__ID= '0040'
-constant string Ability0040__NAME= "화룡의 숨결"
-constant string Ability0040__ICON_PATH= "BTNstorm_ui_icon_deathwing_molten_flame"
-constant integer Ability0040__TIER= 5
-constant integer Ability0040__COST= 5
-constant integer Ability0040__STAT_INDEX1= STAT_TYPE_MAGICPOWER
-constant integer Ability0040__STAT_INDEX2= STAT_TYPE_MAGIC_PENET
-constant real Ability0040__CAST= 0.75
-constant real Ability0040__INTERVAL= 0.2
-constant integer Ability0040__COUNT= 15
-constant real Ability0040__DAMAGE_PER_MAGICPOWER= 0.4
-constant real Ability0040__DAMAGE_PER_LEVEL= 0.25
-constant real Ability0040__IGNORE_GUARD= 0.5
-constant real Ability0040__EXPRAD= 250.
-constant real Ability0040__RANGE= 800.
-constant real Ability0040__DRAGON_DIST= 800.
-constant real Ability0040__FIRE_OFFSET= 200.
-constant integer Ability0040__ALPHA= 200
-constant string Ability0040__EFFECT_PATH1= "units\\creeps\\RedDragon\\RedDragon.mdl"
-constant string Ability0040__EFFECT_PATH2= "Abilities\\Weapons\\RedDragonBreath\\RedDragonMissile.mdl"
-constant string Ability0040__EFFECT_PATH3= "Objects\\Spawnmodels\\Other\\NeutralBuildingExplosion\\NeutralBuildingExplosion.mdl"
-constant string Ability0040__EFFECT_PATH4= "Abilities\\Spells\\Other\\Doom\\DoomDeath.mdl"
-constant string Ability0040__EFFECT_PATH5= "Abilities\\Spells\\Human\\FlameStrike\\FlameStrikeTarget.mdl"
-constant integer Ability0041__ID= '0041'
-constant string Ability0041__NAME= "종막: 이스보셋"
-constant string Ability0041__ICON_PATH= "BTNBlackArrows"
-constant integer Ability0041__TIER= 5
-constant integer Ability0041__COST= 5
-constant integer Ability0041__STAT_INDEX1= STAT_TYPE_ATTACK
-constant integer Ability0041__STAT_INDEX2= STAT_TYPE_MAXMP
-constant real Ability0041__CAST= 0.8
-constant real Ability0041__BACKSWING= 0.2
-constant real Ability0041__INTERVAL= 0.125
-constant integer Ability0041__COUNT= 4
-constant integer Ability0041__COUNT_WAVE= 20
-constant real Ability0041__DAMAGE_PER_ATTACK= 0.55
-constant real Ability0041__DAMAGE_PER_LEVEL= 0.25
-constant real Ability0041__RANGE= 1250.
-constant real Ability0041__VELO= 2000.
-constant real Ability0041__COLRAD= 50.
-constant real Ability0041__WIDTH= 30.
-constant real Ability0041__STARTAT= 35.
-constant string Ability0041__EFFECT_PATH1= "Effects\\Isubosete_origin.mdl"
-constant string Ability0041__EFFECT_PATH2= "Effects\\Isubosete_burst.mdl"
-constant string Ability0041__EFFECT_PATH3= "Effects\\Isubosete_bullet.mdl"
-constant string Ability0041__EFFECT_PATH4= "Abilities\\Weapons\\Rifle\\RifleImpact.mdl"
-constant integer AbilityC000__ID= 'C000'
-constant string AbilityC000__NAME= "새내기"
-constant string AbilityC000__ICON_PATH= "BTNMurgalSlave"
-constant integer AbilityC000__TIER= 0
-constant integer AbilityC000__COST= 0
-constant integer AbilityC000__STAT_INDEX1= STAT_TYPE_ATTACK
-constant integer AbilityC000__STAT_INDEX2= STAT_TYPE_ATTACK
-constant integer AbilityC001__ID= 'C001'
-constant string AbilityC001__NAME= "동인천 역가드"
-constant string AbilityC001__ICON_PATH= "BTNSacrifice"
-constant integer AbilityC001__TIER= 0
-constant integer AbilityC001__COST= 0
-constant integer AbilityC001__STAT_INDEX1= STAT_TYPE_ATTACK
-constant integer AbilityC001__STAT_INDEX2= STAT_TYPE_ATTACK
-constant integer AbilityC002__ID= 'C002'
-constant string AbilityC002__NAME= "가짜광기"
-constant string AbilityC002__ICON_PATH= "BTNBerserkForTrolls"
-constant integer AbilityC002__TIER= 0
-constant integer AbilityC002__COST= 0
-constant integer AbilityC002__STAT_INDEX1= STAT_TYPE_ATTACK
-constant integer AbilityC002__STAT_INDEX2= STAT_TYPE_ATTACK
-constant integer AbilityC003__ID= 'C003'
-constant string AbilityC003__NAME= "꿈나무"
-constant string AbilityC003__ICON_PATH= "BTNAcorn"
-constant integer AbilityC003__TIER= 0
-constant integer AbilityC003__COST= 0
-constant integer AbilityC003__STAT_INDEX1= STAT_TYPE_ATTACK
-constant integer AbilityC003__STAT_INDEX2= STAT_TYPE_ATTACK
-constant integer AbilityC004__ID= 'C004'
-constant string AbilityC004__NAME= "아이돌"
-constant string AbilityC004__ICON_PATH= "BTNSorceress"
-constant integer AbilityC004__TIER= 0
-constant integer AbilityC004__COST= 0
-constant integer AbilityC004__STAT_INDEX1= STAT_TYPE_ATTACK
-constant integer AbilityC004__STAT_INDEX2= STAT_TYPE_ATTACK
-constant integer AbilityC005__ID= 'C005'
-constant string AbilityC005__NAME= "정의의 사도"
-constant string AbilityC005__ICON_PATH= "BTNRacoon"
-constant integer AbilityC005__TIER= 0
-constant integer AbilityC005__COST= 0
-constant integer AbilityC005__STAT_INDEX1= STAT_TYPE_ATTACK
-constant integer AbilityC005__STAT_INDEX2= STAT_TYPE_ATTACK
-constant integer AbilityC006__ID= 'C006'
-constant string AbilityC006__NAME= "치유계"
-constant string AbilityC006__ICON_PATH= "BTNFountainOfLife"
-constant integer AbilityC006__TIER= 0
-constant integer AbilityC006__COST= 0
-constant integer AbilityC006__STAT_INDEX1= STAT_TYPE_ATTACK
-constant integer AbilityC006__STAT_INDEX2= STAT_TYPE_ATTACK
-constant integer AbilityC007__ID= 'C007'
-constant string AbilityC007__NAME= "패셔니스타"
-constant string AbilityC007__ICON_PATH= "BTNRobeOfTheMagi"
-constant integer AbilityC007__TIER= 0
-constant integer AbilityC007__COST= 0
-constant integer AbilityC007__STAT_INDEX1= STAT_TYPE_ATTACK
-constant integer AbilityC007__STAT_INDEX2= STAT_TYPE_ATTACK
-constant integer AbilityC008__ID= 'C008'
-constant string AbilityC008__NAME= "밤의 일족"
-constant string AbilityC008__ICON_PATH= "BTNElunesBlessing"
-constant integer AbilityC008__TIER= 0
-constant integer AbilityC008__COST= 0
-constant integer AbilityC008__STAT_INDEX1= STAT_TYPE_ATTACK
-constant integer AbilityC008__STAT_INDEX2= STAT_TYPE_ATTACK
+constant integer Ability0031___ID= '0031'
+constant string Ability0031___NAME= "유성 낙하"
+constant string Ability0031___ICON_PATH= "BTNFireRocks"
+constant integer Ability0031___TIER= 4
+constant integer Ability0031___COST= 4
+constant integer Ability0031___STAT_INDEX1= STAT_TYPE_MAGICPOWER
+constant integer Ability0031___STAT_INDEX2= STAT_TYPE_MAXMP
+constant real Ability0031___CAST= 0.25
+constant real Ability0031___DELAY= 0.5
+constant real Ability0031___DAMAGE_PER_MAGICPOWER= 3.2
+constant real Ability0031___DAMAGE_PER_LEVEL= 0.2
+constant real Ability0031___DAMAGE_ADDITIONAL= 0.25
+constant real Ability0031___EXPRAD= 200.
+constant real Ability0031___RANGE= 800.
+constant real Ability0031___RANGE_SECOND= 1500.
+constant real Ability0031___VELO= 1500.
+constant real Ability0031___BALL_DIST= 1000.
+constant real Ability0031___BALL_HEIGHT= 600.
+constant real Ability0031___EFFECT_INTERVAL= 0.12
+constant string Ability0031___EFFECT_PATH1= "units\\human\\phoenix\\phoenix.mdl"
+constant string Ability0031___EFFECT_PATH2= "Abilities\\Spells\\Other\\Doom\\DoomDeath.mdl"
+constant string Ability0031___EFFECT_PATH3= "Abilities\\Spells\\Other\\BreathOfFire\\BreathOfFireDamage.mdl"
+constant integer Ability0040___ID= '0040'
+constant string Ability0040___NAME= "화룡의 숨결"
+constant string Ability0040___ICON_PATH= "BTNstorm_ui_icon_deathwing_molten_flame"
+constant integer Ability0040___TIER= 5
+constant integer Ability0040___COST= 5
+constant integer Ability0040___STAT_INDEX1= STAT_TYPE_MAGICPOWER
+constant integer Ability0040___STAT_INDEX2= STAT_TYPE_MAGIC_PENET
+constant real Ability0040___CAST= 0.75
+constant real Ability0040___INTERVAL= 0.2
+constant integer Ability0040___COUNT= 15
+constant real Ability0040___DAMAGE_PER_MAGICPOWER= 0.4
+constant real Ability0040___DAMAGE_PER_LEVEL= 0.25
+constant real Ability0040___IGNORE_GUARD= 0.5
+constant real Ability0040___EXPRAD= 250.
+constant real Ability0040___RANGE= 800.
+constant real Ability0040___DRAGON_DIST= 800.
+constant real Ability0040___FIRE_OFFSET= 200.
+constant integer Ability0040___ALPHA= 200
+constant string Ability0040___EFFECT_PATH1= "units\\creeps\\RedDragon\\RedDragon.mdl"
+constant string Ability0040___EFFECT_PATH2= "Abilities\\Weapons\\RedDragonBreath\\RedDragonMissile.mdl"
+constant string Ability0040___EFFECT_PATH3= "Objects\\Spawnmodels\\Other\\NeutralBuildingExplosion\\NeutralBuildingExplosion.mdl"
+constant string Ability0040___EFFECT_PATH4= "Abilities\\Spells\\Other\\Doom\\DoomDeath.mdl"
+constant string Ability0040___EFFECT_PATH5= "Abilities\\Spells\\Human\\FlameStrike\\FlameStrikeTarget.mdl"
+constant integer Ability0041___ID= '0041'
+constant string Ability0041___NAME= "종막: 이스보셋"
+constant string Ability0041___ICON_PATH= "BTNIsubosete"
+constant integer Ability0041___TIER= 5
+constant integer Ability0041___COST= 5
+constant integer Ability0041___STAT_INDEX1= STAT_TYPE_ATTACK
+constant integer Ability0041___STAT_INDEX2= STAT_TYPE_MAXMP
+constant real Ability0041___CAST= 0.8
+constant real Ability0041___BACKSWING= 0.2
+constant real Ability0041___INTERVAL= 0.125
+constant integer Ability0041___COUNT= 4
+constant integer Ability0041___COUNT_WAVE= 20
+constant real Ability0041___DAMAGE_PER_ATTACK= 0.45
+constant real Ability0041___DAMAGE_PER_LEVEL= 0.25
+constant real Ability0041___RANGE= 1250.
+constant real Ability0041___VELO= 2000.
+constant real Ability0041___COLRAD= 50.
+constant real Ability0041___WIDTH= 30.
+constant real Ability0041___STARTAT= 35.
+constant string Ability0041___EFFECT_PATH1= "Effects\\Isubosete_origin.mdl"
+constant string Ability0041___EFFECT_PATH2= "Effects\\Isubosete_burst.mdl"
+constant string Ability0041___EFFECT_PATH3= "Effects\\Isubosete_bullet.mdl"
+constant string Ability0041___EFFECT_PATH4= "Abilities\\Weapons\\Rifle\\RifleImpact.mdl"
+constant integer AbilityC000___ID= 'C000'
+constant string AbilityC000___NAME= "새내기"
+constant string AbilityC000___ICON_PATH= "BTNMurgalSlave"
+constant integer AbilityC000___TIER= 0
+constant integer AbilityC000___COST= 0
+constant integer AbilityC000___STAT_INDEX1= STAT_TYPE_ATTACK
+constant integer AbilityC000___STAT_INDEX2= STAT_TYPE_ATTACK
+constant integer AbilityC001___ID= 'C001'
+constant string AbilityC001___NAME= "동인천 역가드"
+constant string AbilityC001___ICON_PATH= "BTNSacrifice"
+constant integer AbilityC001___TIER= 0
+constant integer AbilityC001___COST= 0
+constant integer AbilityC001___STAT_INDEX1= STAT_TYPE_ATTACK
+constant integer AbilityC001___STAT_INDEX2= STAT_TYPE_ATTACK
+constant integer AbilityC002___ID= 'C002'
+constant string AbilityC002___NAME= "가짜광기"
+constant string AbilityC002___ICON_PATH= "BTNBerserkForTrolls"
+constant integer AbilityC002___TIER= 0
+constant integer AbilityC002___COST= 0
+constant integer AbilityC002___STAT_INDEX1= STAT_TYPE_ATTACK
+constant integer AbilityC002___STAT_INDEX2= STAT_TYPE_ATTACK
+constant integer AbilityC003___ID= 'C003'
+constant string AbilityC003___NAME= "꿈나무"
+constant string AbilityC003___ICON_PATH= "BTNAcorn"
+constant integer AbilityC003___TIER= 0
+constant integer AbilityC003___COST= 0
+constant integer AbilityC003___STAT_INDEX1= STAT_TYPE_ATTACK
+constant integer AbilityC003___STAT_INDEX2= STAT_TYPE_ATTACK
+constant integer AbilityC004___ID= 'C004'
+constant string AbilityC004___NAME= "아이돌"
+constant string AbilityC004___ICON_PATH= "BTNSorceress"
+constant integer AbilityC004___TIER= 0
+constant integer AbilityC004___COST= 0
+constant integer AbilityC004___STAT_INDEX1= STAT_TYPE_ATTACK
+constant integer AbilityC004___STAT_INDEX2= STAT_TYPE_ATTACK
+constant integer AbilityC005___ID= 'C005'
+constant string AbilityC005___NAME= "정의의 사도"
+constant string AbilityC005___ICON_PATH= "BTNRacoon"
+constant integer AbilityC005___TIER= 0
+constant integer AbilityC005___COST= 0
+constant integer AbilityC005___STAT_INDEX1= STAT_TYPE_ATTACK
+constant integer AbilityC005___STAT_INDEX2= STAT_TYPE_ATTACK
+constant integer AbilityC006___ID= 'C006'
+constant string AbilityC006___NAME= "치유계"
+constant string AbilityC006___ICON_PATH= "BTNFountainOfLife"
+constant integer AbilityC006___TIER= 0
+constant integer AbilityC006___COST= 0
+constant integer AbilityC006___STAT_INDEX1= STAT_TYPE_ATTACK
+constant integer AbilityC006___STAT_INDEX2= STAT_TYPE_ATTACK
+constant integer AbilityC007___ID= 'C007'
+constant string AbilityC007___NAME= "패셔니스타"
+constant string AbilityC007___ICON_PATH= "BTNRobeOfTheMagi"
+constant integer AbilityC007___TIER= 0
+constant integer AbilityC007___COST= 0
+constant integer AbilityC007___STAT_INDEX1= STAT_TYPE_ATTACK
+constant integer AbilityC007___STAT_INDEX2= STAT_TYPE_ATTACK
+constant integer AbilityC008___ID= 'C008'
+constant string AbilityC008___NAME= "밤의 일족"
+constant string AbilityC008___ICON_PATH= "BTNElunesBlessing"
+constant integer AbilityC008___TIER= 0
+constant integer AbilityC008___COST= 0
+constant integer AbilityC008___STAT_INDEX1= STAT_TYPE_ATTACK
+constant integer AbilityC008___STAT_INDEX2= STAT_TYPE_ATTACK
 
 trigger l__library_init
 
@@ -1909,15 +1931,15 @@ boolean array s__Undead_target_is_different
 integer array s__Undead_position
 boolean array s__Undead_running
 real array s__Undead_acquire_range
-constant integer si__Wave__spawner=83
-integer si__Wave__spawner_F=0
-integer si__Wave__spawner_I=0
-integer array si__Wave__spawner_V
-timer array s__Wave__spawner_main_timer
-integer array s__Wave__spawner_index
-integer array s__Wave__spawner_level
-integer array s__Wave__spawner_position
-integer array s__Wave__spawner_count
+constant integer si__Wave___spawner=83
+integer si__Wave___spawner_F=0
+integer si__Wave___spawner_I=0
+integer array si__Wave___spawner_V
+timer array s__Wave___spawner_main_timer
+integer array s__Wave___spawner_index
+integer array s__Wave___spawner_level
+integer array s__Wave___spawner_position
+integer array s__Wave___spawner_count
 constant integer si__Wave=84
 integer s__Wave_INDEX= 0
 integer s__Wave_LAST_INDEX= 0
@@ -1929,7 +1951,7 @@ constant integer si__BuffEnsn_main=87
 constant integer si__Ability0000_mv=88
 constant integer si__Ability0000_actor=89
 real array s__Ability0000_actor_angle
-constant integer si__Ability0000___ind=90
+constant integer si__Ability0000__ind=90
 constant integer si__Ability0000_main=91
 constant integer si__Ability0001_explosion=92
 constant integer si__Ability0001_a2=93
@@ -1938,44 +1960,44 @@ integer array s__Ability0001_a2_effect_2
 integer array s__Ability0001_a2_sq
 real array s__Ability0001_a2_angle
 constant integer si__Ability0001_actor=94
-constant integer si__Ability0001___ind=95
+constant integer si__Ability0001__ind=95
 constant integer si__Ability0001_main=96
 constant integer si__Ability0002_actor=97
 boolean array s__Ability0002_actor_play
 integer array s__Ability0002_actor_aim
 integer array s__Ability0002_actor_lh
 constant integer si__Ability0002_main=98
-constant integer si__Ability0003___ball=99
-integer array s__Ability0003___ball_l
+constant integer si__Ability0003__ball=99
+integer array s__Ability0003__ball_l
 constant integer si__Ability0003_actor=100
 real array s__Ability0003_actor_angle
-constant integer si__Ability0003___ind=101
+constant integer si__Ability0003__ind=101
 constant integer si__Ability0003_main=102
-constant integer si__Ability0004___chain=103
-integer array s__Ability0004___chain_target_previous
-integer array s__Ability0004___chain_count
-real array s__Ability0004___chain_radius_explosion
-group array s__Ability0004___chain_group_wave
-group array s__Ability0004___chain_already
-integer array s__Ability0004___chain_damage_type
-integer array s__Ability0004___chain_attack_type
-boolean array s__Ability0004___chain_is_target
-boolean array s__Ability0004___chain_is_aoe
-integer array s__Ability0004___chain_interval_type
-integer array s__Ability0004___chain_vector_type
-boolean array s__Ability0004___chain_is_onhit
-boolean array s__Ability0004___chain_is_ranged
-weapontype array s__Ability0004___chain_weapon_type
-integer array s__Ability0004___chain_damage_id
-real array s__Ability0004___chain_damage_x
-real array s__Ability0004___chain_damage_y
-boolean array s__Ability0004___chain_use_damage_position
-real array s__Ability0004___chain_damage
-boolean array s__Ability0004___chain_affect_enemy
-boolean array s__Ability0004___chain_affect_ally
-boolean array s__Ability0004___chain_affect_invincible
-boolean array s__Ability0004___chain_affect_evasion
-boolean array s__Ability0004___chain_affect_self
+constant integer si__Ability0004__chain=103
+integer array s__Ability0004__chain_target_previous
+integer array s__Ability0004__chain_count
+real array s__Ability0004__chain_radius_explosion
+group array s__Ability0004__chain_group_wave
+group array s__Ability0004__chain_already
+integer array s__Ability0004__chain_damage_type
+integer array s__Ability0004__chain_attack_type
+boolean array s__Ability0004__chain_is_target
+boolean array s__Ability0004__chain_is_aoe
+integer array s__Ability0004__chain_interval_type
+integer array s__Ability0004__chain_vector_type
+boolean array s__Ability0004__chain_is_onhit
+boolean array s__Ability0004__chain_is_ranged
+weapontype array s__Ability0004__chain_weapon_type
+integer array s__Ability0004__chain_damage_id
+real array s__Ability0004__chain_damage_x
+real array s__Ability0004__chain_damage_y
+boolean array s__Ability0004__chain_use_damage_position
+real array s__Ability0004__chain_damage
+boolean array s__Ability0004__chain_affect_enemy
+boolean array s__Ability0004__chain_affect_ally
+boolean array s__Ability0004__chain_affect_invincible
+boolean array s__Ability0004__chain_affect_evasion
+boolean array s__Ability0004__chain_affect_self
 constant integer si__Ability0004_actor=104
 constant integer si__Ability0004_main=105
 constant integer si__Ability0005_actor=106
@@ -2112,47 +2134,56 @@ constant integer si__Ability0030_actor=156
 real array s__Ability0030_actor_angle
 constant integer si__Ability0030___ind=157
 constant integer si__Ability0030_main=158
-constant integer si__Ability0040__mystruct=159
-integer si__Ability0040__mystruct_F=0
-integer si__Ability0040__mystruct_I=0
-integer array si__Ability0040__mystruct_V
-real s__Ability0040__mystruct_DURATION= 1.
-real array s__Ability0040__mystruct_timeout
-timer array s__Ability0040__mystruct_t
-integer array s__Ability0040__mystruct_ef
-boolean array s__Ability0040__mystruct_b
-constant integer si__Ability0040_explosion=160
+constant integer si__Ability0031___ball=159
+integer array s__Ability0031___ball_level
+integer array s__Ability0031___ball_stage
+integer array s__Ability0031___ball_c
+real array s__Ability0031___ball_to
+constant integer si__Ability0031___actor=160
+real array s__Ability0031___actor_angle
+constant integer si__Ability0031___ind=161
+constant integer si__Ability0031_main=162
+constant integer si__Ability0040___mystruct=163
+integer si__Ability0040___mystruct_F=0
+integer si__Ability0040___mystruct_I=0
+integer array si__Ability0040___mystruct_V
+real s__Ability0040___mystruct_DURATION= 1.
+real array s__Ability0040___mystruct_timeout
+timer array s__Ability0040___mystruct_t
+integer array s__Ability0040___mystruct_ef
+boolean array s__Ability0040___mystruct_b
+constant integer si__Ability0040_explosion=164
 integer array s__Ability0040_explosion_c
 integer array s__Ability0040_explosion_ef
 integer array s__Ability0040_explosion_ef2
 integer array s__Ability0040_explosion_level
-constant integer si__Ability0040_actor=161
+constant integer si__Ability0040_actor=165
 integer array s__Ability0040_actor_ef
 boolean array s__Ability0040_actor_b
-constant integer si__Ability0040__ind=162
-integer array s__Ability0040__ind_c
-constant integer si__Ability0040_main=163
-constant integer si__Ability0041__ind=164
-constant integer si__Ability0041__bullet=165
-constant integer si__Ability0041__fire=166
-integer array s__Ability0041__fire_ef
-integer array s__Ability0041__fire_burst
-real array s__Ability0041__fire_angle
-real array s__Ability0041__fire_timeout2
-integer array s__Ability0041__fire_count
-constant integer si__Ability0041__prepare=167
-integer array s__Ability0041__prepare_ef
-real array s__Ability0041__prepare_a
-constant integer si__Ability0041_main=168
-constant integer si__AbilityC000_main=169
-constant integer si__AbilityC001_main=170
-constant integer si__AbilityC002_main=171
-constant integer si__AbilityC003_main=172
-constant integer si__AbilityC004_main=173
-constant integer si__AbilityC005_main=174
-constant integer si__AbilityC006_main=175
-constant integer si__AbilityC007_main=176
-constant integer si__AbilityC008_main=177
+constant integer si__Ability0040___ind=166
+integer array s__Ability0040___ind_c
+constant integer si__Ability0040_main=167
+constant integer si__Ability0041___ind=168
+constant integer si__Ability0041___bullet=169
+constant integer si__Ability0041___fire=170
+integer array s__Ability0041___fire_ef
+integer array s__Ability0041___fire_burst
+real array s__Ability0041___fire_angle
+real array s__Ability0041___fire_timeout2
+integer array s__Ability0041___fire_count
+constant integer si__Ability0041___prepare=171
+integer array s__Ability0041___prepare_ef
+real array s__Ability0041___prepare_a
+constant integer si__Ability0041_main=172
+constant integer si__AbilityC000_main=173
+constant integer si__AbilityC001_main=174
+constant integer si__AbilityC002_main=175
+constant integer si__AbilityC003_main=176
+constant integer si__AbilityC004_main=177
+constant integer si__AbilityC005_main=178
+constant integer si__AbilityC006_main=179
+constant integer si__AbilityC007_main=180
+constant integer si__AbilityC008_main=181
 integer array s__TimerUtils__Data
 integer array s__2TimerUtils__Data
 integer array s__3TimerUtils__Data
@@ -2187,6 +2218,7 @@ trigger array st__Buff_update
 trigger array st__Buff_intervalAction
 trigger array st__Buff_periodicAction
 trigger array st__Explosion_rangeFilter
+trigger array st__Explosion_explosionFillUnits
 trigger array st__Explosion_beforeExplosion
 trigger array st__Explosion_afterExplosion
 trigger array st__Explosion_explosionFilterAdditional
@@ -2231,6 +2263,7 @@ trigger array st__UnitMovement_rangeFilter
 trigger array st__UnitMovement_waveFilterAdditional
 trigger array st__UnitMovement_waveRangeFilter
 trigger array st__UnitMovement_executeWave
+trigger array st__UnitMovement_explosionFillUnits
 trigger array st__UnitMovement_collisionFilterAdditional
 trigger array st__UnitMovement_targetFilterAdditional
 trigger array st__UnitMovement_executeTarget
@@ -2285,6 +2318,7 @@ trigger array st__Ability_deactivate
 trigger array st__Missile_explosionFilterAdditional
 trigger array st__Missile_executeExplosion
 trigger array st__Missile_rangeFilter
+trigger array st__Missile_explosionFillUnits
 trigger array st__Missile_waveFilterAdditional
 trigger array st__Missile_waveRangeFilter
 trigger array st__Missile_executeWave
@@ -2483,6 +2517,7 @@ trigger st__Movement__set_target
 trigger st__Movement__get_curve
 trigger st__Movement__set_curve
 trigger st__Movement_setTargetLocation
+trigger st__Movement_resetTargetLocation
 trigger st__Movement_create
 trigger st__Movement_destroy
 trigger st__Unit_create
@@ -2492,18 +2527,19 @@ trigger st__Game_endSelect
 trigger st__Undead_getTarget
 trigger st__Undead_encount
 trigger st__Undead_create
-trigger st__Wave__spawner_onDestroy
-trigger st__Wave__spawner_destroy
+trigger st__Wave___spawner_onDestroy
+trigger st__Wave___spawner_destroy
 trigger st__Wave_spawn
 trigger st__Mouse_getX
 trigger st__Mouse_getY
 trigger st__Mouse_activateRefresher
-trigger st__Ability0004___chain_rangeFilter
-trigger st__Ability0004___chain_explosionFilterAdditional
-trigger st__Ability0004___chain_executeExplosion
+trigger st__Ability0004__chain_rangeFilter
+trigger st__Ability0004__chain_explosionFillUnits
+trigger st__Ability0004__chain_explosionFilterAdditional
+trigger st__Ability0004__chain_executeExplosion
 trigger st__Buffu010_main_destroy
-trigger st__Ability0040__mystruct_onDestroy
-trigger st__Ability0040__mystruct_destroy
+trigger st__Ability0040___mystruct_onDestroy
+trigger st__Ability0040___mystruct_destroy
 integer f__arg_integer1
 integer f__arg_integer2
 integer f__arg_integer3
@@ -2517,13 +2553,13 @@ real f__arg_real3
 real f__arg_real4
 real f__arg_real5
 real f__arg_real6
+group f__arg_group1
 trigger f__arg_trigger1
 weapontype f__arg_weapontype1
 unittype f__arg_unittype1
 widget f__arg_widget1
 unit f__arg_unit1
 animtype f__arg_animtype1
-group f__arg_group1
 timer f__arg_timer1
 code f__arg_code1
 integer f__arg_this
@@ -3030,6 +3066,13 @@ function sc__Explosion_rangeFilter takes integer this,integer target returns boo
  return f__result_boolean
 endfunction
 
+//Generated method caller for Explosion.explosionFillUnits
+function sc__Explosion_explosionFillUnits takes integer this,group g returns nothing
+    set f__arg_this=this
+    set f__arg_group1=g
+    call TriggerEvaluate(st__Explosion_explosionFillUnits[si__Explosion_type[this]])
+endfunction
+
 //Generated method caller for Explosion.beforeExplosion
 function sc__Explosion_beforeExplosion takes integer this returns nothing
     set f__arg_this=this
@@ -3136,6 +3179,13 @@ function sc__Explosion_deallocate takes integer this returns nothing
     set si__Explosion_F=this
 endfunction
 
+//Generated method caller for LineExplosion.explosionFillUnits
+function sc__LineExplosion_explosionFillUnits takes integer this,group g returns nothing
+    set f__arg_this=this
+    set f__arg_group1=g
+    call TriggerEvaluate(st__Explosion_explosionFillUnits[13])
+endfunction
+
 //Generated method caller for LineExplosion.rangeFilter
 function sc__LineExplosion_rangeFilter takes integer this,integer target returns boolean
     set f__arg_this=this
@@ -3224,20 +3274,20 @@ function s__Item_prototype_deallocate takes integer this returns nothing
     set si__Item_prototype_F=this
 endfunction
 
-//Generated method caller for Ability0041__ind.beforeRefresh
-function sc__Ability0041__ind_beforeRefresh takes integer this returns nothing
+//Generated method caller for Ability0041___ind.beforeRefresh
+function sc__Ability0041___ind_beforeRefresh takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__SectorIndicator_beforeRefresh[164])
+    call TriggerEvaluate(st__SectorIndicator_beforeRefresh[168])
 endfunction
 
-//Generated allocator of Ability0041__ind
-function s__Ability0041__ind__allocate takes integer abil ,player owner ,string width returns integer
+//Generated allocator of Ability0041___ind
+function s__Ability0041___ind__allocate takes integer abil ,player owner ,string width returns integer
  local integer this=sc__SectorIndicator_create(abil,owner,width)
  local integer kthis
     if(this==0) then
         return 0
     endif
-    set si__AbilityIndicator_type[this]=164
+    set si__AbilityIndicator_type[this]=168
     set kthis=this
 
  return this
@@ -3279,36 +3329,36 @@ function s__Math_deallocate takes integer this returns nothing
     set si__Math_F=this
 endfunction
 
-//Generated method caller for Ability0040__ind.refresh
-function sc__Ability0040__ind_refresh takes integer this returns nothing
+//Generated method caller for Ability0040___ind.refresh
+function sc__Ability0040___ind_refresh takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__AbilityIndicator_refresh[162])
+    call TriggerEvaluate(st__AbilityIndicator_refresh[166])
 endfunction
 
-//Generated method caller for Ability0040__ind.show
-function sc__Ability0040__ind_show takes integer this,boolean flag returns nothing
+//Generated method caller for Ability0040___ind.show
+function sc__Ability0040___ind_show takes integer this,boolean flag returns nothing
     set f__arg_this=this
     set f__arg_boolean1=flag
-    call TriggerEvaluate(st__AbilityIndicator_show[162])
+    call TriggerEvaluate(st__AbilityIndicator_show[166])
 endfunction
 
-//Generated method caller for Ability0040__ind.onDestroy
-function sc__Ability0040__ind_onDestroy takes integer this returns nothing
+//Generated method caller for Ability0040___ind.onDestroy
+function sc__Ability0040___ind_onDestroy takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__AbilityIndicator_onDestroy[162])
+    call TriggerEvaluate(st__AbilityIndicator_onDestroy[166])
 endfunction
 
-//Generated allocator of Ability0040__ind
-function s__Ability0040__ind__allocate takes integer abil ,player owner returns integer
+//Generated allocator of Ability0040___ind
+function s__Ability0040___ind__allocate takes integer abil ,player owner returns integer
  local integer this=sc__AbilityIndicator_create(abil,owner)
  local integer kthis
     if(this==0) then
         return 0
     endif
-    set si__AbilityIndicator_type[this]=162
+    set si__AbilityIndicator_type[this]=166
     set kthis=this
 
-   set s__Ability0040__ind_c[this]= 0
+   set s__Ability0040___ind_c[this]= 0
  return this
 endfunction
 
@@ -3354,20 +3404,20 @@ endfunction
 //Generated method caller for Ability0040_explosion.beforeExplosion
 function sc__Ability0040_explosion_beforeExplosion takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Explosion_beforeExplosion[160])
+    call TriggerEvaluate(st__Explosion_beforeExplosion[164])
 endfunction
 
 //Generated method caller for Ability0040_explosion.executeExplosion
 function sc__Ability0040_explosion_executeExplosion takes integer this,integer target returns nothing
     set f__arg_this=this
     set f__arg_integer1=target
-    call TriggerEvaluate(st__Explosion_executeExplosion[160])
+    call TriggerEvaluate(st__Explosion_executeExplosion[164])
 endfunction
 
 //Generated method caller for Ability0040_explosion.onDestroy
 function sc__Ability0040_explosion_onDestroy takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Explosion_onDestroy[160])
+    call TriggerEvaluate(st__Explosion_onDestroy[164])
 endfunction
 
 //Generated allocator of Ability0040_explosion
@@ -3377,7 +3427,7 @@ function s__Ability0040_explosion__allocate takes integer owner ,real x ,real y 
     if(this==0) then
         return 0
     endif
-    set si__Explosion_type[this]=160
+    set si__Explosion_type[this]=164
     set kthis=this
 
    set s__Ability0040_explosion_c[this]= 0
@@ -3388,44 +3438,44 @@ function s__Ability0040_explosion__allocate takes integer owner ,real x ,real y 
 endfunction
 
 
-//Generated method caller for Ability0040__mystruct.onDestroy
-function sc__Ability0040__mystruct_onDestroy takes integer this returns nothing
+//Generated method caller for Ability0040___mystruct.onDestroy
+function sc__Ability0040___mystruct_onDestroy takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Ability0040__mystruct_onDestroy)
+    call TriggerEvaluate(st__Ability0040___mystruct_onDestroy)
 endfunction
 
-//Generated allocator of Ability0040__mystruct
-function s__Ability0040__mystruct__allocate takes nothing returns integer
- local integer this=si__Ability0040__mystruct_F
+//Generated allocator of Ability0040___mystruct
+function s__Ability0040___mystruct__allocate takes nothing returns integer
+ local integer this=si__Ability0040___mystruct_F
     if (this!=0) then
-        set si__Ability0040__mystruct_F=si__Ability0040__mystruct_V[this]
+        set si__Ability0040___mystruct_F=si__Ability0040___mystruct_V[this]
     else
-        set si__Ability0040__mystruct_I=si__Ability0040__mystruct_I+1
-        set this=si__Ability0040__mystruct_I
+        set si__Ability0040___mystruct_I=si__Ability0040___mystruct_I+1
+        set this=si__Ability0040___mystruct_I
     endif
     if (this>8190) then
         return 0
     endif
 
-   set s__Ability0040__mystruct_timeout[this]= 0.
-   set s__Ability0040__mystruct_t[this]= null
-   set s__Ability0040__mystruct_ef[this]= 0
-   set s__Ability0040__mystruct_b[this]= false
-    set si__Ability0040__mystruct_V[this]=-1
+   set s__Ability0040___mystruct_timeout[this]= 0.
+   set s__Ability0040___mystruct_t[this]= null
+   set s__Ability0040___mystruct_ef[this]= 0
+   set s__Ability0040___mystruct_b[this]= false
+    set si__Ability0040___mystruct_V[this]=-1
  return this
 endfunction
 
-//Generated destructor of Ability0040__mystruct
-function sc__Ability0040__mystruct_deallocate takes integer this returns nothing
+//Generated destructor of Ability0040___mystruct
+function sc__Ability0040___mystruct_deallocate takes integer this returns nothing
     if this==null then
         return
-    elseif (si__Ability0040__mystruct_V[this]!=-1) then
+    elseif (si__Ability0040___mystruct_V[this]!=-1) then
         return
     endif
     set f__arg_this=this
-    call TriggerEvaluate(st__Ability0040__mystruct_onDestroy)
-    set si__Ability0040__mystruct_V[this]=si__Ability0040__mystruct_F
-    set si__Ability0040__mystruct_F=this
+    call TriggerEvaluate(st__Ability0040___mystruct_onDestroy)
+    set si__Ability0040___mystruct_V[this]=si__Ability0040___mystruct_F
+    set si__Ability0040___mystruct_F=this
 endfunction
 
 //Generated method caller for Mover.onDestroy
@@ -3471,20 +3521,20 @@ function sc__Mover_deallocate takes integer this returns nothing
     set si__Mover_F=this
 endfunction
 
-//Generated method caller for Ability0030___ind.beforeRefresh
-function sc__Ability0030___ind_beforeRefresh takes integer this returns nothing
+//Generated method caller for Ability0031___ind.beforeRefresh
+function sc__Ability0031___ind_beforeRefresh takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__LineIndicator_beforeRefresh[157])
+    call TriggerEvaluate(st__LineIndicator_beforeRefresh[161])
 endfunction
 
-//Generated allocator of Ability0030___ind
-function s__Ability0030___ind__allocate takes integer abil ,player owner returns integer
+//Generated allocator of Ability0031___ind
+function s__Ability0031___ind__allocate takes integer abil ,player owner returns integer
  local integer this=sc__LineIndicator_create(abil,owner)
  local integer kthis
     if(this==0) then
         return 0
     endif
-    set si__AbilityIndicator_type[this]=157
+    set si__AbilityIndicator_type[this]=161
     set kthis=this
 
  return this
@@ -3799,6 +3849,26 @@ function s__Round_deallocate takes integer this returns nothing
     set si__Round_F=this
 endfunction
 
+//Generated method caller for Ability0030___ind.beforeRefresh
+function sc__Ability0030___ind_beforeRefresh takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__LineIndicator_beforeRefresh[157])
+endfunction
+
+//Generated allocator of Ability0030___ind
+function s__Ability0030___ind__allocate takes integer abil ,player owner returns integer
+ local integer this=sc__LineIndicator_create(abil,owner)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__AbilityIndicator_type[this]=157
+    set kthis=this
+
+ return this
+endfunction
+
+
 //Generated allocator of Tip
 function s__Tip__allocate takes nothing returns integer
  local integer this=si__Tip_F
@@ -3826,40 +3896,6 @@ function s__Tip_deallocate takes integer this returns nothing
     set si__Tip_V[this]=si__Tip_F
     set si__Tip_F=this
 endfunction
-
-//Generated method caller for Ability0021___ind.refresh
-function sc__Ability0021___ind_refresh takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__AbilityIndicator_refresh[152])
-endfunction
-
-//Generated method caller for Ability0021___ind.show
-function sc__Ability0021___ind_show takes integer this,boolean flag returns nothing
-    set f__arg_this=this
-    set f__arg_boolean1=flag
-    call TriggerEvaluate(st__AbilityIndicator_show[152])
-endfunction
-
-//Generated method caller for Ability0021___ind.onDestroy
-function sc__Ability0021___ind_onDestroy takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__AbilityIndicator_onDestroy[152])
-endfunction
-
-//Generated allocator of Ability0021___ind
-function s__Ability0021___ind__allocate takes integer abil ,player owner returns integer
- local integer this=sc__AbilityIndicator_create(abil,owner)
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__AbilityIndicator_type[this]=152
-    set kthis=this
-
-   set s__Ability0021___ind_c[this]= 0
- return this
-endfunction
-
 
 //Generated method caller for Tombstone.onDestroy
 function sc__Tombstone_onDestroy takes integer this returns nothing
@@ -3899,6 +3935,165 @@ function sc__Tombstone_deallocate takes integer this returns nothing
     call TriggerEvaluate(st__Tombstone_onDestroy)
     set si__Tombstone_V[this]=si__Tombstone_F
     set si__Tombstone_F=this
+endfunction
+
+//Generated method caller for TreeOfLife.addLevel
+function sc__TreeOfLife_addLevel takes nothing returns nothing
+    call TriggerEvaluate(st__TreeOfLife_addLevel)
+endfunction
+
+//Generated method caller for TreeOfLife.end
+function sc__TreeOfLife_end takes nothing returns nothing
+    call TriggerEvaluate(st__TreeOfLife_end)
+endfunction
+
+//Generated allocator of TreeOfLife
+function s__TreeOfLife__allocate takes nothing returns integer
+ local integer this=si__TreeOfLife_F
+    if (this!=0) then
+        set si__TreeOfLife_F=si__TreeOfLife_V[this]
+    else
+        set si__TreeOfLife_I=si__TreeOfLife_I+1
+        set this=si__TreeOfLife_I
+    endif
+    if (this>8190) then
+        return 0
+    endif
+
+    set si__TreeOfLife_V[this]=-1
+ return this
+endfunction
+
+//Generated destructor of TreeOfLife
+function s__TreeOfLife_deallocate takes integer this returns nothing
+    if this==null then
+        return
+    elseif (si__TreeOfLife_V[this]!=-1) then
+        return
+    endif
+    set si__TreeOfLife_V[this]=si__TreeOfLife_F
+    set si__TreeOfLife_F=this
+endfunction
+
+//Generated method caller for Trigger.getData
+function sc__Trigger_getData takes trigger t returns integer
+			return LoadInteger(s__Trigger_HASH, GetHandleId(t), 0)
+endfunction
+
+//Generated method caller for Trigger.new
+function sc__Trigger_new takes integer data returns trigger
+    set f__arg_integer1=data
+    call TriggerEvaluate(st__Trigger_new)
+ return f__result_trigger
+endfunction
+
+//Generated method caller for Trigger.remove
+function sc__Trigger_remove takes trigger t returns nothing
+    set f__arg_trigger1=t
+    call TriggerEvaluate(st__Trigger_remove)
+endfunction
+
+//Generated allocator of Trigger
+function s__Trigger__allocate takes nothing returns integer
+ local integer this=si__Trigger_F
+    if (this!=0) then
+        set si__Trigger_F=si__Trigger_V[this]
+    else
+        set si__Trigger_I=si__Trigger_I+1
+        set this=si__Trigger_I
+    endif
+    if (this>8190) then
+        return 0
+    endif
+
+    set si__Trigger_V[this]=-1
+ return this
+endfunction
+
+//Generated destructor of Trigger
+function s__Trigger_deallocate takes integer this returns nothing
+    if this==null then
+        return
+    elseif (si__Trigger_V[this]!=-1) then
+        return
+    endif
+    set si__Trigger_V[this]=si__Trigger_F
+    set si__Trigger_F=this
+endfunction
+
+//Generated method caller for Ability0021___ind.refresh
+function sc__Ability0021___ind_refresh takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__AbilityIndicator_refresh[152])
+endfunction
+
+//Generated method caller for Ability0021___ind.show
+function sc__Ability0021___ind_show takes integer this,boolean flag returns nothing
+    set f__arg_this=this
+    set f__arg_boolean1=flag
+    call TriggerEvaluate(st__AbilityIndicator_show[152])
+endfunction
+
+//Generated method caller for Ability0021___ind.onDestroy
+function sc__Ability0021___ind_onDestroy takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__AbilityIndicator_onDestroy[152])
+endfunction
+
+//Generated allocator of Ability0021___ind
+function s__Ability0021___ind__allocate takes integer abil ,player owner returns integer
+ local integer this=sc__AbilityIndicator_create(abil,owner)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__AbilityIndicator_type[this]=152
+    set kthis=this
+
+   set s__Ability0021___ind_c[this]= 0
+ return this
+endfunction
+
+
+//Generated method caller for ChinghoFrame.onDestroy
+function sc__ChinghoFrame_onDestroy takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__ChinghoFrame_onDestroy)
+endfunction
+
+//Generated allocator of ChinghoFrame
+function s__ChinghoFrame__allocate takes nothing returns integer
+ local integer this=si__ChinghoFrame_F
+    if (this!=0) then
+        set si__ChinghoFrame_F=si__ChinghoFrame_V[this]
+    else
+        set si__ChinghoFrame_I=si__ChinghoFrame_I+1
+        set this=si__ChinghoFrame_I
+    endif
+    if (this>8190) then
+        return 0
+    endif
+
+   set s__ChinghoFrame_id[this]= 0
+   set s__ChinghoFrame_backdrop[this]= null
+   set s__ChinghoFrame_icon1[this]= null
+   set s__ChinghoFrame_icon2[this]= null
+   set s__ChinghoFrame_name[this]= null
+    set si__ChinghoFrame_V[this]=-1
+ return this
+endfunction
+
+//Generated destructor of ChinghoFrame
+function sc__ChinghoFrame_deallocate takes integer this returns nothing
+    if this==null then
+        return
+    elseif (si__ChinghoFrame_V[this]!=-1) then
+        return
+    endif
+    set f__arg_this=this
+    call TriggerEvaluate(st__ChinghoFrame_onDestroy)
+    set si__ChinghoFrame_V[this]=si__ChinghoFrame_F
+    set si__ChinghoFrame_F=this
 endfunction
 
 //Generated method caller for Ability0021_explosion.beforeExplosion
@@ -3978,151 +4173,6 @@ function s__Buff0021_main__allocate takes integer id ,integer caster ,integer ta
 endfunction
 
 
-//Generated method caller for TreeOfLife.addLevel
-function sc__TreeOfLife_addLevel takes nothing returns nothing
-    call TriggerEvaluate(st__TreeOfLife_addLevel)
-endfunction
-
-//Generated method caller for TreeOfLife.end
-function sc__TreeOfLife_end takes nothing returns nothing
-    call TriggerEvaluate(st__TreeOfLife_end)
-endfunction
-
-//Generated allocator of TreeOfLife
-function s__TreeOfLife__allocate takes nothing returns integer
- local integer this=si__TreeOfLife_F
-    if (this!=0) then
-        set si__TreeOfLife_F=si__TreeOfLife_V[this]
-    else
-        set si__TreeOfLife_I=si__TreeOfLife_I+1
-        set this=si__TreeOfLife_I
-    endif
-    if (this>8190) then
-        return 0
-    endif
-
-    set si__TreeOfLife_V[this]=-1
- return this
-endfunction
-
-//Generated destructor of TreeOfLife
-function s__TreeOfLife_deallocate takes integer this returns nothing
-    if this==null then
-        return
-    elseif (si__TreeOfLife_V[this]!=-1) then
-        return
-    endif
-    set si__TreeOfLife_V[this]=si__TreeOfLife_F
-    set si__TreeOfLife_F=this
-endfunction
-
-//Generated method caller for Ability0020___ind.beforeRefresh
-function sc__Ability0020___ind_beforeRefresh takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__LineIndicator_beforeRefresh[147])
-endfunction
-
-//Generated allocator of Ability0020___ind
-function s__Ability0020___ind__allocate takes integer abil ,player owner returns integer
- local integer this=sc__LineIndicator_create(abil,owner)
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__AbilityIndicator_type[this]=147
-    set kthis=this
-
- return this
-endfunction
-
-
-//Generated method caller for Trigger.getData
-function sc__Trigger_getData takes trigger t returns integer
-			return LoadInteger(s__Trigger_HASH, GetHandleId(t), 0)
-endfunction
-
-//Generated method caller for Trigger.new
-function sc__Trigger_new takes integer data returns trigger
-    set f__arg_integer1=data
-    call TriggerEvaluate(st__Trigger_new)
- return f__result_trigger
-endfunction
-
-//Generated method caller for Trigger.remove
-function sc__Trigger_remove takes trigger t returns nothing
-    set f__arg_trigger1=t
-    call TriggerEvaluate(st__Trigger_remove)
-endfunction
-
-//Generated allocator of Trigger
-function s__Trigger__allocate takes nothing returns integer
- local integer this=si__Trigger_F
-    if (this!=0) then
-        set si__Trigger_F=si__Trigger_V[this]
-    else
-        set si__Trigger_I=si__Trigger_I+1
-        set this=si__Trigger_I
-    endif
-    if (this>8190) then
-        return 0
-    endif
-
-    set si__Trigger_V[this]=-1
- return this
-endfunction
-
-//Generated destructor of Trigger
-function s__Trigger_deallocate takes integer this returns nothing
-    if this==null then
-        return
-    elseif (si__Trigger_V[this]!=-1) then
-        return
-    endif
-    set si__Trigger_V[this]=si__Trigger_F
-    set si__Trigger_F=this
-endfunction
-
-//Generated method caller for ChinghoFrame.onDestroy
-function sc__ChinghoFrame_onDestroy takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__ChinghoFrame_onDestroy)
-endfunction
-
-//Generated allocator of ChinghoFrame
-function s__ChinghoFrame__allocate takes nothing returns integer
- local integer this=si__ChinghoFrame_F
-    if (this!=0) then
-        set si__ChinghoFrame_F=si__ChinghoFrame_V[this]
-    else
-        set si__ChinghoFrame_I=si__ChinghoFrame_I+1
-        set this=si__ChinghoFrame_I
-    endif
-    if (this>8190) then
-        return 0
-    endif
-
-   set s__ChinghoFrame_id[this]= 0
-   set s__ChinghoFrame_backdrop[this]= null
-   set s__ChinghoFrame_icon1[this]= null
-   set s__ChinghoFrame_icon2[this]= null
-   set s__ChinghoFrame_name[this]= null
-    set si__ChinghoFrame_V[this]=-1
- return this
-endfunction
-
-//Generated destructor of ChinghoFrame
-function sc__ChinghoFrame_deallocate takes integer this returns nothing
-    if this==null then
-        return
-    elseif (si__ChinghoFrame_V[this]!=-1) then
-        return
-    endif
-    set f__arg_this=this
-    call TriggerEvaluate(st__ChinghoFrame_onDestroy)
-    set si__ChinghoFrame_V[this]=si__ChinghoFrame_F
-    set si__ChinghoFrame_F=this
-endfunction
-
 //Generated allocator of IconFrame
 function s__IconFrame__allocate takes nothing returns integer
  local integer this=si__IconFrame_F
@@ -4154,68 +4204,20 @@ function sc__IconFrame_deallocate takes integer this returns nothing
     set si__IconFrame_F=this
 endfunction
 
-//Generated method caller for Abilityu011___exx.executeExplosion
-function sc__Abilityu011___exx_executeExplosion takes integer this,integer target returns nothing
+//Generated method caller for Ability0020___ind.beforeRefresh
+function sc__Ability0020___ind_beforeRefresh takes integer this returns nothing
     set f__arg_this=this
-    set f__arg_integer1=target
-    call TriggerEvaluate(st__Explosion_executeExplosion[143])
+    call TriggerEvaluate(st__LineIndicator_beforeRefresh[147])
 endfunction
 
-//Generated method caller for Abilityu011___exx.beforeExplosion
-function sc__Abilityu011___exx_beforeExplosion takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Explosion_beforeExplosion[143])
-endfunction
-
-//Generated method caller for Abilityu011___exx.onDestroy
-function sc__Abilityu011___exx_onDestroy takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Explosion_onDestroy[143])
-endfunction
-
-//Generated allocator of Abilityu011___exx
-function s__Abilityu011___exx__allocate takes integer owner ,real x ,real y ,real radius returns integer
- local integer this=sc__Explosion_create(owner,x,y,radius)
+//Generated allocator of Ability0020___ind
+function s__Ability0020___ind__allocate takes integer abil ,player owner returns integer
+ local integer this=sc__LineIndicator_create(abil,owner)
  local integer kthis
     if(this==0) then
         return 0
     endif
-    set si__Explosion_type[this]=143
-    set kthis=this
-
-   set s__Abilityu011___exx_a[this]= 0
-   set s__Abilityu011___exx_level[this]= 1
-   set s__Abilityu011___exx_ef[this]= 0
- return this
-endfunction
-
-
-//Generated method caller for Buffu011_main.update
-function sc__Buffu011_main_update takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Buff_update[142])
-endfunction
-
-//Generated method caller for Buffu011_main.init
-function sc__Buffu011_main_init takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Buff_init[142])
-endfunction
-
-//Generated method caller for Buffu011_main.onDestroy
-function sc__Buffu011_main_onDestroy takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Buff_onDestroy[142])
-endfunction
-
-//Generated allocator of Buffu011_main
-function s__Buffu011_main__allocate takes integer id ,integer caster ,integer target ,real duration ,string name returns integer
- local integer this=sc__Buff_create(id,caster,target,duration,name)
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Buff_type[this]=142
+    set si__AbilityIndicator_type[this]=147
     set kthis=this
 
  return this
@@ -4232,40 +4234,6 @@ function s__BuffIcon__allocate takes nothing returns integer
     set si__IconFrame_type[this]=29
     set kthis=this
 
- return this
-endfunction
-
-
-//Generated method caller for Buffu010_main.update
-function sc__Buffu010_main_update takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Buff_update[140])
-endfunction
-
-//Generated method caller for Buffu010_main.init
-function sc__Buffu010_main_init takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Buff_init[140])
-endfunction
-
-//Generated method caller for Buffu010_main.onDestroy
-function sc__Buffu010_main_onDestroy takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Buff_onDestroy[140])
-endfunction
-
-//Generated allocator of Buffu010_main
-function s__Buffu010_main__allocate takes integer id ,integer caster ,integer target ,real duration ,string name returns integer
- local integer this=sc__Buff_create(id,caster,target,duration,name)
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Buff_type[this]=140
-    set kthis=this
-
-   set s__Buffu010_main_main_trigger[this]= null
-   set s__Buffu010_main_main_cond[this]= null
  return this
 endfunction
 
@@ -4356,6 +4324,74 @@ function s__StatIcon__allocate takes nothing returns integer
 endfunction
 
 
+//Generated method caller for Abilityu011___exx.executeExplosion
+function sc__Abilityu011___exx_executeExplosion takes integer this,integer target returns nothing
+    set f__arg_this=this
+    set f__arg_integer1=target
+    call TriggerEvaluate(st__Explosion_executeExplosion[143])
+endfunction
+
+//Generated method caller for Abilityu011___exx.beforeExplosion
+function sc__Abilityu011___exx_beforeExplosion takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Explosion_beforeExplosion[143])
+endfunction
+
+//Generated method caller for Abilityu011___exx.onDestroy
+function sc__Abilityu011___exx_onDestroy takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Explosion_onDestroy[143])
+endfunction
+
+//Generated allocator of Abilityu011___exx
+function s__Abilityu011___exx__allocate takes integer owner ,real x ,real y ,real radius returns integer
+ local integer this=sc__Explosion_create(owner,x,y,radius)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Explosion_type[this]=143
+    set kthis=this
+
+   set s__Abilityu011___exx_a[this]= 0
+   set s__Abilityu011___exx_level[this]= 1
+   set s__Abilityu011___exx_ef[this]= 0
+ return this
+endfunction
+
+
+//Generated method caller for Buffu011_main.update
+function sc__Buffu011_main_update takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Buff_update[142])
+endfunction
+
+//Generated method caller for Buffu011_main.init
+function sc__Buffu011_main_init takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Buff_init[142])
+endfunction
+
+//Generated method caller for Buffu011_main.onDestroy
+function sc__Buffu011_main_onDestroy takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Buff_onDestroy[142])
+endfunction
+
+//Generated allocator of Buffu011_main
+function s__Buffu011_main__allocate takes integer id ,integer caster ,integer target ,real duration ,string name returns integer
+ local integer this=sc__Buff_create(id,caster,target,duration,name)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Buff_type[this]=142
+    set kthis=this
+
+ return this
+endfunction
+
+
 //Generated method caller for Closeable.close
 function sc__Closeable_close takes integer this returns boolean
     set f__arg_this=this
@@ -4393,6 +4429,40 @@ function sc__Closeable_deallocate takes integer this returns nothing
     set si__Closeable_V[this]=si__Closeable_F
     set si__Closeable_F=this
 endfunction
+
+//Generated method caller for Buffu010_main.update
+function sc__Buffu010_main_update takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Buff_update[140])
+endfunction
+
+//Generated method caller for Buffu010_main.init
+function sc__Buffu010_main_init takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Buff_init[140])
+endfunction
+
+//Generated method caller for Buffu010_main.onDestroy
+function sc__Buffu010_main_onDestroy takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Buff_onDestroy[140])
+endfunction
+
+//Generated allocator of Buffu010_main
+function s__Buffu010_main__allocate takes integer id ,integer caster ,integer target ,real duration ,string name returns integer
+ local integer this=sc__Buff_create(id,caster,target,duration,name)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Buff_type[this]=140
+    set kthis=this
+
+   set s__Buffu010_main_main_trigger[this]= null
+   set s__Buffu010_main_main_cond[this]= null
+ return this
+endfunction
+
 
 //Generated method caller for UI.onDestroy
 function sc__UI_onDestroy takes integer this returns nothing
@@ -4446,26 +4516,6 @@ function sc__UI_deallocate takes integer this returns nothing
     set si__UI_V[this]=si__UI_F
     set si__UI_F=this
 endfunction
-
-//Generated method caller for Ability0015___ind.beforeRefresh
-function sc__Ability0015___ind_beforeRefresh takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__LineIndicator_beforeRefresh[135])
-endfunction
-
-//Generated allocator of Ability0015___ind
-function s__Ability0015___ind__allocate takes integer abil ,player owner returns integer
- local integer this=sc__LineIndicator_create(abil,owner)
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__AbilityIndicator_type[this]=135
-    set kthis=this
-
- return this
-endfunction
-
 
 //Generated method caller for Ability_prototype.addValue
 function sc__Ability_prototype_addValue takes integer this,integer v returns nothing
@@ -4815,28 +4865,6 @@ function sc__Ability_prototype_deallocate takes integer this returns nothing
     set si__Ability_prototype_F=this
 endfunction
 
-//Generated method caller for Ability0015___exp.executeExplosion
-function sc__Ability0015___exp_executeExplosion takes integer this,integer target returns nothing
-    set f__arg_this=this
-    set f__arg_integer1=target
-    call TriggerEvaluate(st__Explosion_executeExplosion[133])
-endfunction
-
-//Generated allocator of Ability0015___exp
-function s__Ability0015___exp__allocate takes integer owner ,real x ,real y ,real x2 ,real y2 ,real radius returns integer
- local integer this=sc__LineExplosion_create(owner,x,y,x2,y2,radius)
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Explosion_type[this]=133
-    set kthis=this
-
-   set s__Ability0015___exp_level[this]= 0
- return this
-endfunction
-
-
 //Generated method caller for Actor._get_x
 function sc__Actor__get_x takes integer this returns real
     set f__arg_this=this
@@ -4995,6 +5023,26 @@ function sc__CloseUI_deallocate takes integer this returns nothing
     set si__CloseUI_F=this
 endfunction
 
+//Generated method caller for Ability0015___ind.beforeRefresh
+function sc__Ability0015___ind_beforeRefresh takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__LineIndicator_beforeRefresh[135])
+endfunction
+
+//Generated allocator of Ability0015___ind
+function s__Ability0015___ind__allocate takes integer abil ,player owner returns integer
+ local integer this=sc__LineIndicator_create(abil,owner)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__AbilityIndicator_type[this]=135
+    set kthis=this
+
+ return this
+endfunction
+
+
 //Generated method caller for Curve.getCarculatedX
 function sc__Curve_getCarculatedX takes integer this,real v returns real
     set f__arg_this=this
@@ -5072,6 +5120,28 @@ function s__Curve__allocate takes nothing returns integer
 endfunction
 
 
+//Generated method caller for Ability0015___exp.executeExplosion
+function sc__Ability0015___exp_executeExplosion takes integer this,integer target returns nothing
+    set f__arg_this=this
+    set f__arg_integer1=target
+    call TriggerEvaluate(st__Explosion_executeExplosion[133])
+endfunction
+
+//Generated allocator of Ability0015___exp
+function s__Ability0015___exp__allocate takes integer owner ,real x ,real y ,real x2 ,real y2 ,real radius returns integer
+ local integer this=sc__LineExplosion_create(owner,x,y,x2,y2,radius)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Explosion_type[this]=133
+    set kthis=this
+
+   set s__Ability0015___exp_level[this]= 0
+ return this
+endfunction
+
+
 //Generated method caller for Bezier.create
 function sc__Bezier_create takes real x1,real y1,real z1,real x2,real y2,real z2 returns integer
     set f__arg_real1=x1
@@ -5136,34 +5206,6 @@ function s__Bezier2__allocate takes real x1 ,real y1 ,real z1 ,real x2 ,real y2 
 endfunction
 
 
-//Generated method caller for Ability0013___exp.executeExplosion
-function sc__Ability0013___exp_executeExplosion takes integer this,integer target returns nothing
-    set f__arg_this=this
-    set f__arg_integer1=target
-    call TriggerEvaluate(st__Explosion_executeExplosion[127])
-endfunction
-
-//Generated method caller for Ability0013___exp.beforeExplosion
-function sc__Ability0013___exp_beforeExplosion takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Explosion_beforeExplosion[127])
-endfunction
-
-//Generated allocator of Ability0013___exp
-function s__Ability0013___exp__allocate takes integer owner ,real x ,real y ,real radius returns integer
- local integer this=sc__Explosion_create(owner,x,y,radius)
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Explosion_type[this]=127
-    set kthis=this
-
-   set s__Ability0013___exp_level[this]= 0
- return this
-endfunction
-
-
 //Generated method caller for Bezier3.getCarculatedX
 function sc__Bezier3_getCarculatedX takes integer this,real v returns real
     set f__arg_this=this
@@ -5198,40 +5240,6 @@ function s__Bezier3__allocate takes real x1 ,real y1 ,real z1 ,real x2 ,real y2 
     set si__Object_type[this]=51
     set kthis=this
 
- return this
-endfunction
-
-
-//Generated method caller for Ability0010___ind.refresh
-function sc__Ability0010___ind_refresh takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__AbilityIndicator_refresh[125])
-endfunction
-
-//Generated method caller for Ability0010___ind.show
-function sc__Ability0010___ind_show takes integer this,boolean flag returns nothing
-    set f__arg_this=this
-    set f__arg_boolean1=flag
-    call TriggerEvaluate(st__AbilityIndicator_show[125])
-endfunction
-
-//Generated method caller for Ability0010___ind.onDestroy
-function sc__Ability0010___ind_onDestroy takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__AbilityIndicator_onDestroy[125])
-endfunction
-
-//Generated allocator of Ability0010___ind
-function s__Ability0010___ind__allocate takes integer abil ,player owner returns integer
- local integer this=sc__AbilityIndicator_create(abil,owner)
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__AbilityIndicator_type[this]=125
-    set kthis=this
-
-   set s__Ability0010___ind_c[this]= 0
  return this
 endfunction
 
@@ -5327,6 +5335,34 @@ function s__Group_deallocate takes integer this returns nothing
     set si__Group_F=this
 endfunction
 
+//Generated method caller for Ability0013___exp.executeExplosion
+function sc__Ability0013___exp_executeExplosion takes integer this,integer target returns nothing
+    set f__arg_this=this
+    set f__arg_integer1=target
+    call TriggerEvaluate(st__Explosion_executeExplosion[127])
+endfunction
+
+//Generated method caller for Ability0013___exp.beforeExplosion
+function sc__Ability0013___exp_beforeExplosion takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Explosion_beforeExplosion[127])
+endfunction
+
+//Generated allocator of Ability0013___exp
+function s__Ability0013___exp__allocate takes integer owner ,real x ,real y ,real radius returns integer
+ local integer this=sc__Explosion_create(owner,x,y,radius)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Explosion_type[this]=127
+    set kthis=this
+
+   set s__Ability0013___exp_level[this]= 0
+ return this
+endfunction
+
+
 //Generated method caller for Lightning.onDestroy
 function sc__Lightning_onDestroy takes integer this returns nothing
     set f__arg_this=this
@@ -5350,6 +5386,40 @@ function s__Lightning__allocate takes nothing returns integer
    set s__Lightning_b[this]= 1
    set s__Lightning_alpha[this]= 1
    set s__Lightning_visible_player[this]= null
+ return this
+endfunction
+
+
+//Generated method caller for Ability0010___ind.refresh
+function sc__Ability0010___ind_refresh takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__AbilityIndicator_refresh[125])
+endfunction
+
+//Generated method caller for Ability0010___ind.show
+function sc__Ability0010___ind_show takes integer this,boolean flag returns nothing
+    set f__arg_this=this
+    set f__arg_boolean1=flag
+    call TriggerEvaluate(st__AbilityIndicator_show[125])
+endfunction
+
+//Generated method caller for Ability0010___ind.onDestroy
+function sc__Ability0010___ind_onDestroy takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__AbilityIndicator_onDestroy[125])
+endfunction
+
+//Generated allocator of Ability0010___ind
+function s__Ability0010___ind__allocate takes integer abil ,player owner returns integer
+ local integer this=sc__AbilityIndicator_create(abil,owner)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__AbilityIndicator_type[this]=125
+    set kthis=this
+
+   set s__Ability0010___ind_c[this]= 0
  return this
 endfunction
 
@@ -5548,45 +5618,6 @@ function s__DoubleLine__allocate takes nothing returns integer
 endfunction
 
 
-//Generated method caller for Buffu001_main.addValue
-function sc__Buffu001_main_addValue takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Buff_addValue[118])
-endfunction
-
-//Generated method caller for Buffu001_main.update
-function sc__Buffu001_main_update takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Buff_update[118])
-endfunction
-
-//Generated method caller for Buffu001_main.init
-function sc__Buffu001_main_init takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Buff_init[118])
-endfunction
-
-//Generated method caller for Buffu001_main.onDestroy
-function sc__Buffu001_main_onDestroy takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Buff_onDestroy[118])
-endfunction
-
-//Generated allocator of Buffu001_main
-function s__Buffu001_main__allocate takes integer id ,integer caster ,integer target ,real duration ,string name returns integer
- local integer this=sc__Buff_create(id,caster,target,duration,name)
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Buff_type[this]=118
-    set kthis=this
-
-   set s__Buffu001_main_val[this]= 0.
- return this
-endfunction
-
-
 //Generated method caller for Arrow.refreshPosition
 function sc__Arrow_refreshPosition takes integer this returns nothing
     set f__arg_this=this
@@ -5745,22 +5776,41 @@ function s__SkillShop__allocate takes nothing returns integer
 endfunction
 
 
-//Generated method caller for Ability0008___ind.beforeRefresh
-function sc__Ability0008___ind_beforeRefresh takes integer this returns nothing
+//Generated method caller for Buffu001_main.addValue
+function sc__Buffu001_main_addValue takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__SectorIndicator_beforeRefresh[114])
+    call TriggerEvaluate(st__Buff_addValue[118])
 endfunction
 
-//Generated allocator of Ability0008___ind
-function s__Ability0008___ind__allocate takes integer abil ,player owner ,string width returns integer
- local integer this=sc__SectorIndicator_create(abil,owner,width)
+//Generated method caller for Buffu001_main.update
+function sc__Buffu001_main_update takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Buff_update[118])
+endfunction
+
+//Generated method caller for Buffu001_main.init
+function sc__Buffu001_main_init takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Buff_init[118])
+endfunction
+
+//Generated method caller for Buffu001_main.onDestroy
+function sc__Buffu001_main_onDestroy takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Buff_onDestroy[118])
+endfunction
+
+//Generated allocator of Buffu001_main
+function s__Buffu001_main__allocate takes integer id ,integer caster ,integer target ,real duration ,string name returns integer
+ local integer this=sc__Buff_create(id,caster,target,duration,name)
  local integer kthis
     if(this==0) then
         return 0
     endif
-    set si__AbilityIndicator_type[this]=114
+    set si__Buff_type[this]=118
     set kthis=this
 
+   set s__Buffu001_main_val[this]= 0.
  return this
 endfunction
 
@@ -5885,44 +5935,22 @@ function s__InstantText_deallocate takes integer this returns nothing
     set si__InstantText_F=this
 endfunction
 
-//Generated method caller for Ability0007___ind.beforeRefresh
-function sc__Ability0007___ind_beforeRefresh takes integer this returns nothing
+//Generated method caller for Ability0008___ind.beforeRefresh
+function sc__Ability0008___ind_beforeRefresh takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__LineIndicator_beforeRefresh[110])
+    call TriggerEvaluate(st__SectorIndicator_beforeRefresh[114])
 endfunction
 
-//Generated allocator of Ability0007___ind
-function s__Ability0007___ind__allocate takes integer abil ,player owner returns integer
- local integer this=sc__LineIndicator_create(abil,owner)
+//Generated allocator of Ability0008___ind
+function s__Ability0008___ind__allocate takes integer abil ,player owner ,string width returns integer
+ local integer this=sc__SectorIndicator_create(abil,owner,width)
  local integer kthis
     if(this==0) then
         return 0
     endif
-    set si__AbilityIndicator_type[this]=110
+    set si__AbilityIndicator_type[this]=114
     set kthis=this
 
- return this
-endfunction
-
-
-//Generated method caller for Ability0007___exp.executeExplosion
-function sc__Ability0007___exp_executeExplosion takes integer this,integer target returns nothing
-    set f__arg_this=this
-    set f__arg_integer1=target
-    call TriggerEvaluate(st__Explosion_executeExplosion[109])
-endfunction
-
-//Generated allocator of Ability0007___exp
-function s__Ability0007___exp__allocate takes integer owner ,real x ,real y ,real x2 ,real y2 ,real radius returns integer
- local integer this=sc__LineExplosion_create(owner,x,y,x2,y2,radius)
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Explosion_type[this]=109
-    set kthis=this
-
-   set s__Ability0007___exp_b[this]= false
  return this
 endfunction
 
@@ -6014,21 +6042,63 @@ function sc__User_getFocusUnit takes player p returns integer
 		return s__User_FOCUSUNIT[GetPlayerId(p)]
 endfunction
 
+//Generated method caller for Ability0007___ind.beforeRefresh
+function sc__Ability0007___ind_beforeRefresh takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__LineIndicator_beforeRefresh[110])
+endfunction
+
+//Generated allocator of Ability0007___ind
+function s__Ability0007___ind__allocate takes integer abil ,player owner returns integer
+ local integer this=sc__LineIndicator_create(abil,owner)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__AbilityIndicator_type[this]=110
+    set kthis=this
+
+ return this
+endfunction
+
+
+//Generated method caller for Ability0007___exp.executeExplosion
+function sc__Ability0007___exp_executeExplosion takes integer this,integer target returns nothing
+    set f__arg_this=this
+    set f__arg_integer1=target
+    call TriggerEvaluate(st__Explosion_executeExplosion[109])
+endfunction
+
+//Generated allocator of Ability0007___exp
+function s__Ability0007___exp__allocate takes integer owner ,real x ,real y ,real x2 ,real y2 ,real radius returns integer
+ local integer this=sc__LineExplosion_create(owner,x,y,x2,y2,radius)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Explosion_type[this]=109
+    set kthis=this
+
+   set s__Ability0007___exp_b[this]= false
+ return this
+endfunction
+
+
 //Generated method caller for Ability.getTypeTier
 function sc__Ability_getTypeTier takes integer id returns integer
-			return LoadInteger(Ability___HASH, id, s__Ability_INDEX_TIER)
+			return LoadInteger(Ability__HASH, id, s__Ability_INDEX_TIER)
 endfunction
 
 //Generated method caller for Ability.getRandomAbility
 function sc__Ability_getRandomAbility takes integer table_num returns integer
    local integer i= GetRandomInt(0, s__Ability_TABLE_INDEX[table_num] - 1)
-			return LoadInteger(Ability___HASH, table_num, i)
+			return LoadInteger(Ability__HASH, table_num, i)
 endfunction
 
 //Generated method caller for Ability.getTypeTooltip
 function sc__Ability_getTypeTooltip takes integer id returns string
-			if HaveSavedString(Ability___HASH, id, s__Ability_INDEX_TOOLTIP) then
-				return LoadStr(Ability___HASH, id, s__Ability_INDEX_TOOLTIP)
+			if HaveSavedString(Ability__HASH, id, s__Ability_INDEX_TOOLTIP) then
+				return LoadStr(Ability__HASH, id, s__Ability_INDEX_TOOLTIP)
 			else
 				return "ToolTip Missing"
 			endif
@@ -6036,28 +6106,28 @@ endfunction
 
 //Generated method caller for Ability.getTypeCost
 function sc__Ability_getTypeCost takes integer id returns integer
-			return LoadInteger(Ability___HASH, id, s__Ability_INDEX_COST)
+			return LoadInteger(Ability__HASH, id, s__Ability_INDEX_COST)
 endfunction
 
 //Generated method caller for Ability.getTypeName
 function sc__Ability_getTypeName takes integer id returns string
-			return LoadStr(Ability___HASH, id, s__Ability_INDEX_NAME)
+			return LoadStr(Ability__HASH, id, s__Ability_INDEX_NAME)
 endfunction
 
 //Generated method caller for Ability.getTypeIconPath
 function sc__Ability_getTypeIconPath takes integer id returns string
-			return LoadStr(Ability___HASH, id, s__Ability_INDEX_ICON_PATH)
+			return LoadStr(Ability__HASH, id, s__Ability_INDEX_ICON_PATH)
 endfunction
 
 //Generated method caller for Ability.getTypeBonusStatIndex
 function sc__Ability_getTypeBonusStatIndex takes integer id,integer slot returns integer
-			return LoadInteger(Ability___HASH, id, s__Ability_INDEX_BONUS_STAT + slot)
+			return LoadInteger(Ability__HASH, id, s__Ability_INDEX_BONUS_STAT + slot)
 endfunction
 
 //Generated method caller for Ability.getTypeTag
 function sc__Ability_getTypeTag takes integer id,integer index returns string
-			if HaveSavedString(Ability___HASH, id, index) and index < s__Ability_INDEX_ICON_PATH then
-				return LoadStr(Ability___HASH, id, index)
+			if HaveSavedString(Ability__HASH, id, index) and index < s__Ability_INDEX_ICON_PATH then
+				return LoadStr(Ability__HASH, id, index)
 			else
 				return ""
 			endif
@@ -6105,6 +6175,47 @@ function s__Ability__allocate takes nothing returns integer
 endfunction
 
 
+//Generated method caller for Ability0005_main.relativeTooltip
+function sc__Ability0005_main_relativeTooltip takes integer this returns string
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_relativeTooltip[107])
+ return f__result_string
+endfunction
+
+//Generated method caller for Ability0005_main.targetFilterAdditional
+function sc__Ability0005_main_targetFilterAdditional takes integer this,integer target returns boolean
+    set f__arg_this=this
+    set f__arg_integer1=target
+    call TriggerEvaluate(st__Ability_prototype_targetFilterAdditional[107])
+ return f__result_boolean
+endfunction
+
+//Generated method caller for Ability0005_main.execute
+function sc__Ability0005_main_execute takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_execute[107])
+endfunction
+
+//Generated method caller for Ability0005_main.init
+function sc__Ability0005_main_init takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_init[107])
+endfunction
+
+//Generated allocator of Ability0005_main
+function s__Ability0005_main__allocate takes nothing returns integer
+ local integer this=s__Ability__allocate()
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Ability_prototype_type[this]=107
+    set kthis=this
+
+ return this
+endfunction
+
+
 //Generated method caller for ChinghoWidget.onDestroy
 function sc__ChinghoWidget_onDestroy takes integer this returns nothing
     set f__arg_this=this
@@ -6145,6 +6256,39 @@ function sc__ChinghoWidget_deallocate takes integer this returns nothing
     set si__ChinghoWidget_F=this
 endfunction
 
+//Generated method caller for Ability0004_main.relativeTooltip
+function sc__Ability0004_main_relativeTooltip takes integer this returns string
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_relativeTooltip[105])
+ return f__result_string
+endfunction
+
+//Generated method caller for Ability0004_main.execute
+function sc__Ability0004_main_execute takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_execute[105])
+endfunction
+
+//Generated method caller for Ability0004_main.init
+function sc__Ability0004_main_init takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_init[105])
+endfunction
+
+//Generated allocator of Ability0004_main
+function s__Ability0004_main__allocate takes nothing returns integer
+ local integer this=s__Ability__allocate()
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Ability_prototype_type[this]=105
+    set kthis=this
+
+ return this
+endfunction
+
+
 //Generated method caller for CharacterWidget.onDestroy
 function sc__CharacterWidget_onDestroy takes integer this returns nothing
     set f__arg_this=this
@@ -6184,59 +6328,6 @@ function sc__CharacterWidget_deallocate takes integer this returns nothing
     set si__CharacterWidget_V[this]=si__CharacterWidget_F
     set si__CharacterWidget_F=this
 endfunction
-
-//Generated method caller for Ability0003_main.relativeTooltip
-function sc__Ability0003_main_relativeTooltip takes integer this returns string
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_relativeTooltip[102])
- return f__result_string
-endfunction
-
-//Generated method caller for Ability0003_main.execute
-function sc__Ability0003_main_execute takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_execute[102])
-endfunction
-
-//Generated method caller for Ability0003_main.init
-function sc__Ability0003_main_init takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_init[102])
-endfunction
-
-//Generated allocator of Ability0003_main
-function s__Ability0003_main__allocate takes nothing returns integer
- local integer this=s__Ability__allocate()
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Ability_prototype_type[this]=102
-    set kthis=this
-
- return this
-endfunction
-
-
-//Generated method caller for Ability0003___ind.beforeRefresh
-function sc__Ability0003___ind_beforeRefresh takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__LineIndicator_beforeRefresh[101])
-endfunction
-
-//Generated allocator of Ability0003___ind
-function s__Ability0003___ind__allocate takes integer abil ,player owner returns integer
- local integer this=sc__LineIndicator_create(abil,owner)
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__AbilityIndicator_type[this]=101
-    set kthis=this
-
- return this
-endfunction
-
 
 //Generated method caller for CharacterInfoPanel.onDestroy
 function sc__CharacterInfoPanel_onDestroy takes integer this returns nothing
@@ -6283,44 +6374,63 @@ function sc__CharacterInfoPanel_deallocate takes integer this returns nothing
     set si__CharacterInfoPanel_F=this
 endfunction
 
-//Generated method caller for CharacterSelect.finish
-function sc__CharacterSelect_finish takes nothing returns nothing
-    call TriggerEvaluate(st__CharacterSelect_finish)
-endfunction
-
-//Generated method caller for Ability0002_main.relativeTooltip
-function sc__Ability0002_main_relativeTooltip takes integer this returns string
+//Generated method caller for Ability0003_main.relativeTooltip
+function sc__Ability0003_main_relativeTooltip takes integer this returns string
     set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_relativeTooltip[98])
+    call TriggerEvaluate(st__Ability_prototype_relativeTooltip[102])
  return f__result_string
 endfunction
 
-//Generated method caller for Ability0002_main.basicAttack
-function sc__Ability0002_main_basicAttack takes integer this,integer target returns nothing
+//Generated method caller for Ability0003_main.execute
+function sc__Ability0003_main_execute takes integer this returns nothing
     set f__arg_this=this
-    set f__arg_integer1=target
-    call TriggerEvaluate(st__Ability_prototype_basicAttack[98])
+    call TriggerEvaluate(st__Ability_prototype_execute[102])
 endfunction
 
-//Generated method caller for Ability0002_main.init
-function sc__Ability0002_main_init takes integer this returns nothing
+//Generated method caller for Ability0003_main.init
+function sc__Ability0003_main_init takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_init[98])
+    call TriggerEvaluate(st__Ability_prototype_init[102])
 endfunction
 
-//Generated allocator of Ability0002_main
-function s__Ability0002_main__allocate takes nothing returns integer
+//Generated allocator of Ability0003_main
+function s__Ability0003_main__allocate takes nothing returns integer
  local integer this=s__Ability__allocate()
  local integer kthis
     if(this==0) then
         return 0
     endif
-    set si__Ability_prototype_type[this]=98
+    set si__Ability_prototype_type[this]=102
     set kthis=this
 
  return this
 endfunction
 
+
+//Generated method caller for Ability0003__ind.beforeRefresh
+function sc__Ability0003__ind_beforeRefresh takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__LineIndicator_beforeRefresh[101])
+endfunction
+
+//Generated allocator of Ability0003__ind
+function s__Ability0003__ind__allocate takes integer abil ,player owner returns integer
+ local integer this=sc__LineIndicator_create(abil,owner)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__AbilityIndicator_type[this]=101
+    set kthis=this
+
+ return this
+endfunction
+
+
+//Generated method caller for CharacterSelect.finish
+function sc__CharacterSelect_finish takes nothing returns nothing
+    call TriggerEvaluate(st__CharacterSelect_finish)
+endfunction
 
 //Generated method caller for GuardianFrame.onDestroy
 function sc__GuardianFrame_onDestroy takes integer this returns nothing
@@ -6369,53 +6479,34 @@ function sc__GuardianFrame_deallocate takes integer this returns nothing
     set si__GuardianFrame_F=this
 endfunction
 
-//Generated method caller for Ability0001_main.relativeTooltip
-function sc__Ability0001_main_relativeTooltip takes integer this returns string
+//Generated method caller for Ability0002_main.relativeTooltip
+function sc__Ability0002_main_relativeTooltip takes integer this returns string
     set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_relativeTooltip[96])
+    call TriggerEvaluate(st__Ability_prototype_relativeTooltip[98])
  return f__result_string
 endfunction
 
-//Generated method caller for Ability0001_main.execute
-function sc__Ability0001_main_execute takes integer this returns nothing
+//Generated method caller for Ability0002_main.basicAttack
+function sc__Ability0002_main_basicAttack takes integer this,integer target returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_execute[96])
+    set f__arg_integer1=target
+    call TriggerEvaluate(st__Ability_prototype_basicAttack[98])
 endfunction
 
-//Generated method caller for Ability0001_main.init
-function sc__Ability0001_main_init takes integer this returns nothing
+//Generated method caller for Ability0002_main.init
+function sc__Ability0002_main_init takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_init[96])
+    call TriggerEvaluate(st__Ability_prototype_init[98])
 endfunction
 
-//Generated allocator of Ability0001_main
-function s__Ability0001_main__allocate takes nothing returns integer
+//Generated allocator of Ability0002_main
+function s__Ability0002_main__allocate takes nothing returns integer
  local integer this=s__Ability__allocate()
  local integer kthis
     if(this==0) then
         return 0
     endif
-    set si__Ability_prototype_type[this]=96
-    set kthis=this
-
- return this
-endfunction
-
-
-//Generated method caller for Ability0001___ind.beforeRefresh
-function sc__Ability0001___ind_beforeRefresh takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__LineIndicator_beforeRefresh[95])
-endfunction
-
-//Generated allocator of Ability0001___ind
-function s__Ability0001___ind__allocate takes integer abil ,player owner returns integer
- local integer this=sc__LineIndicator_create(abil,owner)
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__AbilityIndicator_type[this]=95
+    set si__Ability_prototype_type[this]=98
     set kthis=this
 
  return this
@@ -6454,6 +6545,59 @@ function s__Guardians_deallocate takes integer this returns nothing
     set si__Guardians_V[this]=si__Guardians_F
     set si__Guardians_F=this
 endfunction
+
+//Generated method caller for Ability0001_main.relativeTooltip
+function sc__Ability0001_main_relativeTooltip takes integer this returns string
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_relativeTooltip[96])
+ return f__result_string
+endfunction
+
+//Generated method caller for Ability0001_main.execute
+function sc__Ability0001_main_execute takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_execute[96])
+endfunction
+
+//Generated method caller for Ability0001_main.init
+function sc__Ability0001_main_init takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_init[96])
+endfunction
+
+//Generated allocator of Ability0001_main
+function s__Ability0001_main__allocate takes nothing returns integer
+ local integer this=s__Ability__allocate()
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Ability_prototype_type[this]=96
+    set kthis=this
+
+ return this
+endfunction
+
+
+//Generated method caller for Ability0001__ind.beforeRefresh
+function sc__Ability0001__ind_beforeRefresh takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__LineIndicator_beforeRefresh[95])
+endfunction
+
+//Generated allocator of Ability0001__ind
+function s__Ability0001__ind__allocate takes integer abil ,player owner returns integer
+ local integer this=sc__LineIndicator_create(abil,owner)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__AbilityIndicator_type[this]=95
+    set kthis=this
+
+ return this
+endfunction
+
 
 //Generated method caller for Movement._get_x
 function sc__Movement__get_x takes integer this returns real
@@ -6496,8 +6640,9 @@ endfunction
 
 //Generated method caller for Movement._set_curve
 function sc__Movement__set_curve takes integer this,integer cv returns nothing
-			set s__Movement_curve_true[this]=cv
-			set s__Movement_flag_curve[this]=cv > 0
+    set f__arg_this=this
+    set f__arg_integer1=cv
+    call TriggerEvaluate(st__Movement__set_curve)
 endfunction
 
 //Generated method caller for Movement.setTargetLocation
@@ -6506,6 +6651,11 @@ function sc__Movement_setTargetLocation takes integer this,real x,real y,real z 
 			set s__Movement_target_x[this]=x
 			set s__Movement_target_y[this]=y
 			set s__Movement_target_z[this]=z
+endfunction
+
+//Generated method caller for Movement.resetTargetLocation
+function sc__Movement_resetTargetLocation takes integer this returns nothing
+			set s__Movement_flag_target_location[this]=false
 endfunction
 
 //Generated method caller for Movement.onSuspend
@@ -6593,6 +6743,49 @@ function s__Movement__allocate takes integer actor ,real x ,real y ,real duratio
 endfunction
 
 
+//Generated method caller for Game.defeat
+function sc__Game_defeat takes nothing returns nothing
+    call TriggerEvaluate(st__Game_defeat)
+endfunction
+
+//Generated method caller for Game.addLevel
+function sc__Game_addLevel takes nothing returns nothing
+    call TriggerEvaluate(st__Game_addLevel)
+endfunction
+
+//Generated method caller for Game.endSelect
+function sc__Game_endSelect takes nothing returns nothing
+    call TriggerEvaluate(st__Game_endSelect)
+endfunction
+
+//Generated allocator of Game
+function s__Game__allocate takes nothing returns integer
+ local integer this=si__Game_F
+    if (this!=0) then
+        set si__Game_F=si__Game_V[this]
+    else
+        set si__Game_I=si__Game_I+1
+        set this=si__Game_I
+    endif
+    if (this>8190) then
+        return 0
+    endif
+
+    set si__Game_V[this]=-1
+ return this
+endfunction
+
+//Generated destructor of Game
+function s__Game_deallocate takes integer this returns nothing
+    if this==null then
+        return
+    elseif (si__Game_V[this]!=-1) then
+        return
+    endif
+    set si__Game_V[this]=si__Game_F
+    set si__Game_F=this
+endfunction
+
 //Generated method caller for Ability0001_explosion.executeExplosion
 function sc__Ability0001_explosion_executeExplosion takes integer this,integer target returns nothing
     set f__arg_this=this
@@ -6647,14 +6840,14 @@ function s__Ability0000_main__allocate takes nothing returns integer
 endfunction
 
 
-//Generated method caller for Ability0000___ind.beforeRefresh
-function sc__Ability0000___ind_beforeRefresh takes integer this returns nothing
+//Generated method caller for Ability0000__ind.beforeRefresh
+function sc__Ability0000__ind_beforeRefresh takes integer this returns nothing
     set f__arg_this=this
     call TriggerEvaluate(st__LineIndicator_beforeRefresh[90])
 endfunction
 
-//Generated allocator of Ability0000___ind
-function s__Ability0000___ind__allocate takes integer abil ,player owner returns integer
+//Generated allocator of Ability0000__ind
+function s__Ability0000__ind__allocate takes integer abil ,player owner returns integer
  local integer this=sc__LineIndicator_create(abil,owner)
  local integer kthis
     if(this==0) then
@@ -6667,88 +6860,50 @@ function s__Ability0000___ind__allocate takes integer abil ,player owner returns
 endfunction
 
 
-//Generated method caller for Game.defeat
-function sc__Game_defeat takes nothing returns nothing
-    call TriggerEvaluate(st__Game_defeat)
+//Generated method caller for Wave___spawner.onDestroy
+function sc__Wave___spawner_onDestroy takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Wave___spawner_onDestroy)
 endfunction
 
-//Generated method caller for Game.addLevel
-function sc__Game_addLevel takes nothing returns nothing
-    call TriggerEvaluate(st__Game_addLevel)
-endfunction
-
-//Generated method caller for Game.endSelect
-function sc__Game_endSelect takes nothing returns nothing
-    call TriggerEvaluate(st__Game_endSelect)
-endfunction
-
-//Generated allocator of Game
-function s__Game__allocate takes nothing returns integer
- local integer this=si__Game_F
+//Generated allocator of Wave___spawner
+function s__Wave___spawner__allocate takes nothing returns integer
+ local integer this=si__Wave___spawner_F
     if (this!=0) then
-        set si__Game_F=si__Game_V[this]
+        set si__Wave___spawner_F=si__Wave___spawner_V[this]
     else
-        set si__Game_I=si__Game_I+1
-        set this=si__Game_I
+        set si__Wave___spawner_I=si__Wave___spawner_I+1
+        set this=si__Wave___spawner_I
     endif
     if (this>8190) then
         return 0
     endif
 
-    set si__Game_V[this]=-1
+   set s__Wave___spawner_main_timer[this]= null
+   set s__Wave___spawner_index[this]= 0
+   set s__Wave___spawner_level[this]= 0
+   set s__Wave___spawner_position[this]= 0
+   set s__Wave___spawner_count[this]= 0
+    set si__Wave___spawner_V[this]=-1
  return this
 endfunction
 
-//Generated destructor of Game
-function s__Game_deallocate takes integer this returns nothing
+//Generated destructor of Wave___spawner
+function sc__Wave___spawner_deallocate takes integer this returns nothing
     if this==null then
         return
-    elseif (si__Game_V[this]!=-1) then
-        return
-    endif
-    set si__Game_V[this]=si__Game_F
-    set si__Game_F=this
-endfunction
-
-//Generated method caller for Wave__spawner.onDestroy
-function sc__Wave__spawner_onDestroy takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Wave__spawner_onDestroy)
-endfunction
-
-//Generated allocator of Wave__spawner
-function s__Wave__spawner__allocate takes nothing returns integer
- local integer this=si__Wave__spawner_F
-    if (this!=0) then
-        set si__Wave__spawner_F=si__Wave__spawner_V[this]
-    else
-        set si__Wave__spawner_I=si__Wave__spawner_I+1
-        set this=si__Wave__spawner_I
-    endif
-    if (this>8190) then
-        return 0
-    endif
-
-   set s__Wave__spawner_main_timer[this]= null
-   set s__Wave__spawner_index[this]= 0
-   set s__Wave__spawner_level[this]= 0
-   set s__Wave__spawner_position[this]= 0
-   set s__Wave__spawner_count[this]= 0
-    set si__Wave__spawner_V[this]=-1
- return this
-endfunction
-
-//Generated destructor of Wave__spawner
-function sc__Wave__spawner_deallocate takes integer this returns nothing
-    if this==null then
-        return
-    elseif (si__Wave__spawner_V[this]!=-1) then
+    elseif (si__Wave___spawner_V[this]!=-1) then
         return
     endif
     set f__arg_this=this
-    call TriggerEvaluate(st__Wave__spawner_onDestroy)
-    set si__Wave__spawner_V[this]=si__Wave__spawner_F
-    set si__Wave__spawner_F=this
+    call TriggerEvaluate(st__Wave___spawner_onDestroy)
+    set si__Wave___spawner_V[this]=si__Wave___spawner_F
+    set si__Wave___spawner_F=this
+endfunction
+
+//Generated method caller for Wave.spawn
+function sc__Wave_spawn takes nothing returns nothing
+    call TriggerEvaluate(st__Wave_spawn)
 endfunction
 
 //Generated method caller for BuffEnsn_main.update
@@ -6832,11 +6987,6 @@ function sc__Mouse_activateRefresher takes player p returns nothing
     call TriggerEvaluate(st__Mouse_activateRefresher)
 endfunction
 
-//Generated method caller for Wave.spawn
-function sc__Wave_spawn takes nothing returns nothing
-    call TriggerEvaluate(st__Wave_spawn)
-endfunction
-
 //Generated method caller for Agent.create
 function sc__Agent_create takes agent a returns integer
     set f__arg_agent1=a
@@ -6883,7 +7033,7 @@ endfunction
 //Generated method caller for AbilityC002_main.init
 function sc__AbilityC002_main_init takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_init[171])
+    call TriggerEvaluate(st__Ability_prototype_init[175])
 endfunction
 
 //Generated method caller for AbilityC002_main.onDestroy
@@ -6898,7 +7048,7 @@ function s__AbilityC002_main__allocate takes nothing returns integer
     if(this==0) then
         return 0
     endif
-    set si__Ability_prototype_type[this]=171
+    set si__Ability_prototype_type[this]=175
     set kthis=this
 
  return this
@@ -6908,7 +7058,7 @@ endfunction
 //Generated method caller for AbilityC001_main.init
 function sc__AbilityC001_main_init takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_init[170])
+    call TriggerEvaluate(st__Ability_prototype_init[174])
 endfunction
 
 //Generated method caller for AbilityC001_main.onDestroy
@@ -6923,7 +7073,7 @@ function s__AbilityC001_main__allocate takes nothing returns integer
     if(this==0) then
         return 0
     endif
-    set si__Ability_prototype_type[this]=170
+    set si__Ability_prototype_type[this]=174
     set kthis=this
 
  return this
@@ -6947,7 +7097,7 @@ function s__AbilityC000_main__allocate takes nothing returns integer
     if(this==0) then
         return 0
     endif
-    set si__Ability_prototype_type[this]=169
+    set si__Ability_prototype_type[this]=173
     set kthis=this
 
  return this
@@ -6957,20 +7107,20 @@ endfunction
 //Generated method caller for Ability0041_main.relativeTooltip
 function sc__Ability0041_main_relativeTooltip takes integer this returns string
     set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_relativeTooltip[168])
+    call TriggerEvaluate(st__Ability_prototype_relativeTooltip[172])
  return f__result_string
 endfunction
 
 //Generated method caller for Ability0041_main.execute
 function sc__Ability0041_main_execute takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_execute[168])
+    call TriggerEvaluate(st__Ability_prototype_execute[172])
 endfunction
 
 //Generated method caller for Ability0041_main.init
 function sc__Ability0041_main_init takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_init[168])
+    call TriggerEvaluate(st__Ability_prototype_init[172])
 endfunction
 
 //Generated allocator of Ability0041_main
@@ -6980,7 +7130,7 @@ function s__Ability0041_main__allocate takes nothing returns integer
     if(this==0) then
         return 0
     endif
-    set si__Ability_prototype_type[this]=168
+    set si__Ability_prototype_type[this]=172
     set kthis=this
 
  return this
@@ -6990,20 +7140,20 @@ endfunction
 //Generated method caller for Ability0040_main.relativeTooltip
 function sc__Ability0040_main_relativeTooltip takes integer this returns string
     set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_relativeTooltip[163])
+    call TriggerEvaluate(st__Ability_prototype_relativeTooltip[167])
  return f__result_string
 endfunction
 
 //Generated method caller for Ability0040_main.execute
 function sc__Ability0040_main_execute takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_execute[163])
+    call TriggerEvaluate(st__Ability_prototype_execute[167])
 endfunction
 
 //Generated method caller for Ability0040_main.init
 function sc__Ability0040_main_init takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_init[163])
+    call TriggerEvaluate(st__Ability_prototype_init[167])
 endfunction
 
 //Generated allocator of Ability0040_main
@@ -7013,7 +7163,40 @@ function s__Ability0040_main__allocate takes nothing returns integer
     if(this==0) then
         return 0
     endif
-    set si__Ability_prototype_type[this]=163
+    set si__Ability_prototype_type[this]=167
+    set kthis=this
+
+ return this
+endfunction
+
+
+//Generated method caller for Ability0031_main.relativeTooltip
+function sc__Ability0031_main_relativeTooltip takes integer this returns string
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_relativeTooltip[162])
+ return f__result_string
+endfunction
+
+//Generated method caller for Ability0031_main.execute
+function sc__Ability0031_main_execute takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_execute[162])
+endfunction
+
+//Generated method caller for Ability0031_main.init
+function sc__Ability0031_main_init takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_init[162])
+endfunction
+
+//Generated allocator of Ability0031_main
+function s__Ability0031_main__allocate takes nothing returns integer
+ local integer this=s__Ability__allocate()
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Ability_prototype_type[this]=162
     set kthis=this
 
  return this
@@ -7237,64 +7420,6 @@ function s__Ability0016_main__allocate takes nothing returns integer
 endfunction
 
 
-//Generated method caller for Ability0015_main.relativeTooltip
-function sc__Ability0015_main_relativeTooltip takes integer this returns string
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_relativeTooltip[137])
- return f__result_string
-endfunction
-
-//Generated method caller for Ability0015_main.beforeRelease
-function sc__Ability0015_main_beforeRelease takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_beforeRelease[137])
-endfunction
-
-//Generated method caller for Ability0015_main.onRelease
-function sc__Ability0015_main_onRelease takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_onRelease[137])
-endfunction
-
-//Generated method caller for Ability0015_main.onRightClick
-function sc__Ability0015_main_onRightClick takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_onRightClick[137])
-endfunction
-
-//Generated method caller for Ability0015_main.execute
-function sc__Ability0015_main_execute takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_execute[137])
-endfunction
-
-//Generated method caller for Ability0015_main.onPress
-function sc__Ability0015_main_onPress takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_onPress[137])
-endfunction
-
-//Generated method caller for Ability0015_main.init
-function sc__Ability0015_main_init takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_init[137])
-endfunction
-
-//Generated allocator of Ability0015_main
-function s__Ability0015_main__allocate takes nothing returns integer
- local integer this=s__Ability__allocate()
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Ability_prototype_type[this]=137
-    set kthis=this
-
-   set s__Ability0015_main_range_temp[this]= 0.
- return this
-endfunction
-
-
 //Generated method caller for UnitActor.rightClick
 function sc__UnitActor_rightClick takes integer this returns nothing
     set f__arg_this=this
@@ -7398,39 +7523,6 @@ function s__Ability0004_actor__allocate takes integer caster ,integer target ,re
 endfunction
 
 
-//Generated method caller for Ability0004_main.relativeTooltip
-function sc__Ability0004_main_relativeTooltip takes integer this returns string
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_relativeTooltip[105])
- return f__result_string
-endfunction
-
-//Generated method caller for Ability0004_main.execute
-function sc__Ability0004_main_execute takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_execute[105])
-endfunction
-
-//Generated method caller for Ability0004_main.init
-function sc__Ability0004_main_init takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_init[105])
-endfunction
-
-//Generated allocator of Ability0004_main
-function s__Ability0004_main__allocate takes nothing returns integer
- local integer this=s__Ability__allocate()
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Ability_prototype_type[this]=105
-    set kthis=this
-
- return this
-endfunction
-
-
 //Generated method caller for Ability0005_actor.onComplete
 function sc__Ability0005_actor_onComplete takes integer this returns nothing
     set f__arg_this=this
@@ -7451,47 +7543,6 @@ function s__Ability0005_actor__allocate takes integer caster ,integer target ,re
         return 0
     endif
     set si__Actor_type[this]=106
-    set kthis=this
-
- return this
-endfunction
-
-
-//Generated method caller for Ability0005_main.relativeTooltip
-function sc__Ability0005_main_relativeTooltip takes integer this returns string
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_relativeTooltip[107])
- return f__result_string
-endfunction
-
-//Generated method caller for Ability0005_main.targetFilterAdditional
-function sc__Ability0005_main_targetFilterAdditional takes integer this,integer target returns boolean
-    set f__arg_this=this
-    set f__arg_integer1=target
-    call TriggerEvaluate(st__Ability_prototype_targetFilterAdditional[107])
- return f__result_boolean
-endfunction
-
-//Generated method caller for Ability0005_main.execute
-function sc__Ability0005_main_execute takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_execute[107])
-endfunction
-
-//Generated method caller for Ability0005_main.init
-function sc__Ability0005_main_init takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_init[107])
-endfunction
-
-//Generated allocator of Ability0005_main
-function s__Ability0005_main__allocate takes nothing returns integer
- local integer this=s__Ability__allocate()
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Ability_prototype_type[this]=107
     set kthis=this
 
  return this
@@ -7795,6 +7846,13 @@ function sc__UnitMovement_executeWave takes integer this,integer target returns 
     call TriggerEvaluate(st__UnitMovement_executeWave[si__Actor_type[this]])
 endfunction
 
+//Generated method caller for UnitMovement.explosionFillUnits
+function sc__UnitMovement_explosionFillUnits takes integer this,group g returns nothing
+    set f__arg_this=this
+    set f__arg_group1=g
+    call TriggerEvaluate(st__UnitMovement_explosionFillUnits[si__Actor_type[this]])
+endfunction
+
 //Generated method caller for UnitMovement.collisionFilterAdditional
 function sc__UnitMovement_collisionFilterAdditional takes integer this,integer target returns boolean
     set f__arg_this=this
@@ -7973,6 +8031,145 @@ function s__knockback__allocate takes integer u ,real velo ,real angle returns i
     set si__Actor_type[this]=43
     set kthis=this
 
+ return this
+endfunction
+
+
+//Generated method caller for Ability0010_make.periodicAction
+function sc__Ability0010_make_periodicAction takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_periodicAction[123])
+endfunction
+
+//Generated method caller for Ability0010_make.onComplete
+function sc__Ability0010_make_onComplete takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_onComplete[123])
+endfunction
+
+//Generated method caller for Ability0010_make.onSuspend
+function sc__Ability0010_make_onSuspend takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_onSuspend[123])
+endfunction
+
+//Generated method caller for Ability0010_make.onDestroy
+function sc__Ability0010_make_onDestroy takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_onDestroy[123])
+endfunction
+
+//Generated allocator of Ability0010_make
+function s__Ability0010_make__allocate takes integer caster ,integer target ,real x ,real y ,integer level ,real duration ,boolean channeling returns integer
+ local integer this=sc__UnitActor_create(caster,target,x,y,level,duration,channeling)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Actor_type[this]=123
+    set kthis=this
+
+   set s__Ability0010_make_ef[this]= 0
+   set s__Ability0010_make_mp[this]= 0.
+   set s__Ability0010_make_potion_index[this]= 0
+ return this
+endfunction
+
+
+//Generated method caller for Ability0010_actor.onComplete
+function sc__Ability0010_actor_onComplete takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_onComplete[124])
+endfunction
+
+//Generated method caller for Ability0010_actor.onSuspend
+function sc__Ability0010_actor_onSuspend takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_onSuspend[124])
+endfunction
+
+//Generated method caller for Ability0010_actor.onDestroy
+function sc__Ability0010_actor_onDestroy takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_onDestroy[124])
+endfunction
+
+//Generated allocator of Ability0010_actor
+function s__Ability0010_actor__allocate takes integer caster ,integer target ,real x ,real y ,integer level ,real duration ,boolean channeling returns integer
+ local integer this=sc__UnitActor_create(caster,target,x,y,level,duration,channeling)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Actor_type[this]=124
+    set kthis=this
+
+ return this
+endfunction
+
+
+//Generated method caller for Ability0010_main.iconClick
+function sc__Ability0010_main_iconClick takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_iconClick[126])
+endfunction
+
+//Generated method caller for Ability0010_main.relativeTooltip
+function sc__Ability0010_main_relativeTooltip takes integer this returns string
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_relativeTooltip[126])
+ return f__result_string
+endfunction
+
+//Generated method caller for Ability0010_main.useFilterAdditional
+function sc__Ability0010_main_useFilterAdditional takes integer this returns boolean
+				if LoadInteger(s__Ability0010_main_HASH, this, s__Ability0010_main_INDEX_POTION_COUNT + s__Ability0010_main_potion_index[this]) > 0 then
+					return true
+				else
+					set ERROR_MESSAGE="선택된 종류의 물약을 가지고 있지 않습니다."
+					return false
+				endif
+endfunction
+
+//Generated method caller for Ability0010_main.execute
+function sc__Ability0010_main_execute takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_execute[126])
+endfunction
+
+//Generated method caller for Ability0010_main.update
+function sc__Ability0010_main_update takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_update[126])
+endfunction
+
+//Generated method caller for Ability0010_main.init
+function sc__Ability0010_main_init takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_init[126])
+endfunction
+
+//Generated method caller for Ability0010_main.deactivate
+function sc__Ability0010_main_deactivate takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_deactivate[126])
+endfunction
+
+//Generated allocator of Ability0010_main
+function s__Ability0010_main__allocate takes nothing returns integer
+ local integer this=s__Ability__allocate()
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Ability_prototype_type[this]=126
+    set kthis=this
+
+   set s__Ability0010_main_potion_index[this]= 0
+   set s__Ability0010_main_visible_flag[this]= false
+   set s__Ability0010_main_container[this]= null
+   set s__Ability0010_main_keypress[this]= null
+   set s__Ability0010_main_keypress_cond[this]= null
  return this
 endfunction
 
@@ -8234,145 +8431,6 @@ function s__Effect__allocate takes agent a returns integer
 endfunction
 
 
-//Generated method caller for Ability0010_make.periodicAction
-function sc__Ability0010_make_periodicAction takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Actor_periodicAction[123])
-endfunction
-
-//Generated method caller for Ability0010_make.onComplete
-function sc__Ability0010_make_onComplete takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Actor_onComplete[123])
-endfunction
-
-//Generated method caller for Ability0010_make.onSuspend
-function sc__Ability0010_make_onSuspend takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Actor_onSuspend[123])
-endfunction
-
-//Generated method caller for Ability0010_make.onDestroy
-function sc__Ability0010_make_onDestroy takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Actor_onDestroy[123])
-endfunction
-
-//Generated allocator of Ability0010_make
-function s__Ability0010_make__allocate takes integer caster ,integer target ,real x ,real y ,integer level ,real duration ,boolean channeling returns integer
- local integer this=sc__UnitActor_create(caster,target,x,y,level,duration,channeling)
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Actor_type[this]=123
-    set kthis=this
-
-   set s__Ability0010_make_ef[this]= 0
-   set s__Ability0010_make_mp[this]= 0.
-   set s__Ability0010_make_potion_index[this]= 0
- return this
-endfunction
-
-
-//Generated method caller for Ability0010_actor.onComplete
-function sc__Ability0010_actor_onComplete takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Actor_onComplete[124])
-endfunction
-
-//Generated method caller for Ability0010_actor.onSuspend
-function sc__Ability0010_actor_onSuspend takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Actor_onSuspend[124])
-endfunction
-
-//Generated method caller for Ability0010_actor.onDestroy
-function sc__Ability0010_actor_onDestroy takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Actor_onDestroy[124])
-endfunction
-
-//Generated allocator of Ability0010_actor
-function s__Ability0010_actor__allocate takes integer caster ,integer target ,real x ,real y ,integer level ,real duration ,boolean channeling returns integer
- local integer this=sc__UnitActor_create(caster,target,x,y,level,duration,channeling)
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Actor_type[this]=124
-    set kthis=this
-
- return this
-endfunction
-
-
-//Generated method caller for Ability0010_main.iconClick
-function sc__Ability0010_main_iconClick takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_iconClick[126])
-endfunction
-
-//Generated method caller for Ability0010_main.relativeTooltip
-function sc__Ability0010_main_relativeTooltip takes integer this returns string
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_relativeTooltip[126])
- return f__result_string
-endfunction
-
-//Generated method caller for Ability0010_main.useFilterAdditional
-function sc__Ability0010_main_useFilterAdditional takes integer this returns boolean
-				if LoadInteger(s__Ability0010_main_HASH, this, s__Ability0010_main_INDEX_POTION_COUNT + s__Ability0010_main_potion_index[this]) > 0 then
-					return true
-				else
-					set ERROR_MESSAGE="선택된 종류의 물약을 가지고 있지 않습니다."
-					return false
-				endif
-endfunction
-
-//Generated method caller for Ability0010_main.execute
-function sc__Ability0010_main_execute takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_execute[126])
-endfunction
-
-//Generated method caller for Ability0010_main.update
-function sc__Ability0010_main_update takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_update[126])
-endfunction
-
-//Generated method caller for Ability0010_main.init
-function sc__Ability0010_main_init takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_init[126])
-endfunction
-
-//Generated method caller for Ability0010_main.deactivate
-function sc__Ability0010_main_deactivate takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_deactivate[126])
-endfunction
-
-//Generated allocator of Ability0010_main
-function s__Ability0010_main__allocate takes nothing returns integer
- local integer this=s__Ability__allocate()
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Ability_prototype_type[this]=126
-    set kthis=this
-
-   set s__Ability0010_main_potion_index[this]= 0
-   set s__Ability0010_main_visible_flag[this]= false
-   set s__Ability0010_main_container[this]= null
-   set s__Ability0010_main_keypress[this]= null
-   set s__Ability0010_main_keypress_cond[this]= null
- return this
-endfunction
-
-
 //Generated method caller for Ability0013_actor.periodicAction
 function sc__Ability0013_actor_periodicAction takes integer this returns nothing
     set f__arg_this=this
@@ -8507,6 +8565,132 @@ function s__Ability0014_main__allocate takes nothing returns integer
     set si__Ability_prototype_type[this]=132
     set kthis=this
 
+ return this
+endfunction
+
+
+//Generated method caller for Ability0015_actor.periodicAction
+function sc__Ability0015_actor_periodicAction takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_periodicAction[134])
+endfunction
+
+//Generated method caller for Ability0015_actor.onComplete
+function sc__Ability0015_actor_onComplete takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_onComplete[134])
+endfunction
+
+//Generated method caller for Ability0015_actor.onSuspend
+function sc__Ability0015_actor_onSuspend takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_onSuspend[134])
+endfunction
+
+//Generated method caller for Ability0015_actor.onDestroy
+function sc__Ability0015_actor_onDestroy takes integer this returns nothing
+				set s__Ability0015_actor_sq[this]=0
+endfunction
+
+//Generated allocator of Ability0015_actor
+function s__Ability0015_actor__allocate takes integer caster ,integer target ,real x ,real y ,integer level ,real duration ,boolean channeling returns integer
+ local integer this=sc__UnitActor_create(caster,target,x,y,level,duration,channeling)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Actor_type[this]=134
+    set kthis=this
+
+   set s__Ability0015_actor_range[this]= 0.
+   set s__Ability0015_actor_angle[this]= 0.
+   set s__Ability0015_actor_sq[this]= 0
+ return this
+endfunction
+
+
+//Generated method caller for Ability0015_charge.periodicAction
+function sc__Ability0015_charge_periodicAction takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_periodicAction[136])
+endfunction
+
+//Generated method caller for Ability0015_charge.onDestroy
+function sc__Ability0015_charge_onDestroy takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_onDestroy[136])
+endfunction
+
+//Generated allocator of Ability0015_charge
+function s__Ability0015_charge__allocate takes integer caster ,integer target ,real x ,real y ,integer level ,real duration ,boolean channeling returns integer
+ local integer this=sc__UnitActor_create(caster,target,x,y,level,duration,channeling)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Actor_type[this]=136
+    set kthis=this
+
+   set s__Ability0015_charge_ef[this]= 0
+   set s__Ability0015_charge_mv[this]= 0
+ return this
+endfunction
+
+
+//Generated method caller for Ability0015_main.relativeTooltip
+function sc__Ability0015_main_relativeTooltip takes integer this returns string
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_relativeTooltip[137])
+ return f__result_string
+endfunction
+
+//Generated method caller for Ability0015_main.beforeRelease
+function sc__Ability0015_main_beforeRelease takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_beforeRelease[137])
+endfunction
+
+//Generated method caller for Ability0015_main.onRelease
+function sc__Ability0015_main_onRelease takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_onRelease[137])
+endfunction
+
+//Generated method caller for Ability0015_main.onRightClick
+function sc__Ability0015_main_onRightClick takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_onRightClick[137])
+endfunction
+
+//Generated method caller for Ability0015_main.execute
+function sc__Ability0015_main_execute takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_execute[137])
+endfunction
+
+//Generated method caller for Ability0015_main.onPress
+function sc__Ability0015_main_onPress takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_onPress[137])
+endfunction
+
+//Generated method caller for Ability0015_main.init
+function sc__Ability0015_main_init takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_init[137])
+endfunction
+
+//Generated allocator of Ability0015_main
+function s__Ability0015_main__allocate takes nothing returns integer
+ local integer this=s__Ability__allocate()
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Ability_prototype_type[this]=137
+    set kthis=this
+
+   set s__Ability0015_main_range_temp[this]= 0.
  return this
 endfunction
 
@@ -8951,7 +9135,7 @@ endfunction
 //Generated method caller for AbilityC008_main.init
 function sc__AbilityC008_main_init takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_init[177])
+    call TriggerEvaluate(st__Ability_prototype_init[181])
 endfunction
 
 //Generated method caller for AbilityC008_main.onDestroy
@@ -8966,7 +9150,7 @@ function s__AbilityC008_main__allocate takes nothing returns integer
     if(this==0) then
         return 0
     endif
-    set si__Ability_prototype_type[this]=177
+    set si__Ability_prototype_type[this]=181
     set kthis=this
 
  return this
@@ -8976,7 +9160,7 @@ endfunction
 //Generated method caller for AbilityC007_main.init
 function sc__AbilityC007_main_init takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_init[176])
+    call TriggerEvaluate(st__Ability_prototype_init[180])
 endfunction
 
 //Generated method caller for AbilityC007_main.onDestroy
@@ -8991,7 +9175,7 @@ function s__AbilityC007_main__allocate takes nothing returns integer
     if(this==0) then
         return 0
     endif
-    set si__Ability_prototype_type[this]=176
+    set si__Ability_prototype_type[this]=180
     set kthis=this
 
  return this
@@ -9001,7 +9185,7 @@ endfunction
 //Generated method caller for AbilityC006_main.init
 function sc__AbilityC006_main_init takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_init[175])
+    call TriggerEvaluate(st__Ability_prototype_init[179])
 endfunction
 
 //Generated method caller for AbilityC006_main.onDestroy
@@ -9016,7 +9200,7 @@ function s__AbilityC006_main__allocate takes nothing returns integer
     if(this==0) then
         return 0
     endif
-    set si__Ability_prototype_type[this]=175
+    set si__Ability_prototype_type[this]=179
     set kthis=this
 
  return this
@@ -9046,81 +9230,6 @@ function s__Abilityu000_actor__allocate takes integer u ,real velo ,real angle r
     set kthis=this
 
    set s__Abilityu000_actor_ability_target[this]= 0
- return this
-endfunction
-
-
-//Generated method caller for AbilityC005_main.init
-function sc__AbilityC005_main_init takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_init[174])
-endfunction
-
-//Generated method caller for AbilityC005_main.onDestroy
-function sc__AbilityC005_main_onDestroy takes integer this returns nothing
-				
-endfunction
-
-//Generated allocator of AbilityC005_main
-function s__AbilityC005_main__allocate takes nothing returns integer
- local integer this=s__Chingho__allocate()
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Ability_prototype_type[this]=174
-    set kthis=this
-
- return this
-endfunction
-
-
-//Generated method caller for AbilityC004_main.init
-function sc__AbilityC004_main_init takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_init[173])
-endfunction
-
-//Generated method caller for AbilityC004_main.onDestroy
-function sc__AbilityC004_main_onDestroy takes integer this returns nothing
-				
-endfunction
-
-//Generated allocator of AbilityC004_main
-function s__AbilityC004_main__allocate takes nothing returns integer
- local integer this=s__Chingho__allocate()
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Ability_prototype_type[this]=173
-    set kthis=this
-
- return this
-endfunction
-
-
-//Generated method caller for AbilityC003_main.init
-function sc__AbilityC003_main_init takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Ability_prototype_init[172])
-endfunction
-
-//Generated method caller for AbilityC003_main.onDestroy
-function sc__AbilityC003_main_onDestroy takes integer this returns nothing
-				
-endfunction
-
-//Generated allocator of AbilityC003_main
-function s__AbilityC003_main__allocate takes nothing returns integer
- local integer this=s__Chingho__allocate()
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Ability_prototype_type[this]=172
-    set kthis=this
-
  return this
 endfunction
 
@@ -9159,34 +9268,77 @@ function s__Ability0000_mv__allocate takes integer u ,real velo ,real angle retu
 endfunction
 
 
-//Generated method caller for Unit.create
-function sc__Unit_create takes player p,integer uid,real x,real y,real yaw returns integer
-    set f__arg_player1=p
-    set f__arg_integer1=uid
-    set f__arg_real1=x
-    set f__arg_real2=y
-    set f__arg_real3=yaw
-    call TriggerEvaluate(st__Unit_create)
- return f__result_integer
-endfunction
-
-//Generated method caller for Unit.onDestroy
-function sc__Unit_onDestroy takes integer this returns nothing
+//Generated method caller for AbilityC005_main.init
+function sc__AbilityC005_main_init takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Object_onDestroy[80])
+    call TriggerEvaluate(st__Ability_prototype_init[178])
 endfunction
 
-//Generated allocator of Unit
-function s__Unit__allocate takes player p ,integer uid ,real x ,real y ,real facing returns integer
- local integer this=sc__Unit_prototype_create(p,uid,x,y,facing)
+//Generated method caller for AbilityC005_main.onDestroy
+function sc__AbilityC005_main_onDestroy takes integer this returns nothing
+				
+endfunction
+
+//Generated allocator of AbilityC005_main
+function s__AbilityC005_main__allocate takes nothing returns integer
+ local integer this=s__Chingho__allocate()
  local integer kthis
     if(this==0) then
         return 0
     endif
-    set si__Object_type[this]=80
+    set si__Ability_prototype_type[this]=178
     set kthis=this
 
-   set s__Unit_chingho[this]= 0
+ return this
+endfunction
+
+
+//Generated method caller for AbilityC004_main.init
+function sc__AbilityC004_main_init takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_init[177])
+endfunction
+
+//Generated method caller for AbilityC004_main.onDestroy
+function sc__AbilityC004_main_onDestroy takes integer this returns nothing
+				
+endfunction
+
+//Generated allocator of AbilityC004_main
+function s__AbilityC004_main__allocate takes nothing returns integer
+ local integer this=s__Chingho__allocate()
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Ability_prototype_type[this]=177
+    set kthis=this
+
+ return this
+endfunction
+
+
+//Generated method caller for AbilityC003_main.init
+function sc__AbilityC003_main_init takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Ability_prototype_init[176])
+endfunction
+
+//Generated method caller for AbilityC003_main.onDestroy
+function sc__AbilityC003_main_onDestroy takes integer this returns nothing
+				
+endfunction
+
+//Generated allocator of AbilityC003_main
+function s__AbilityC003_main__allocate takes nothing returns integer
+ local integer this=s__Chingho__allocate()
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Ability_prototype_type[this]=176
+    set kthis=this
+
  return this
 endfunction
 
@@ -9216,148 +9368,34 @@ function s__Ability0000_actor__allocate takes integer caster ,integer target ,re
 endfunction
 
 
-//Generated method caller for Ability0015_actor.periodicAction
-function sc__Ability0015_actor_periodicAction takes integer this returns nothing
+//Generated method caller for Unit.create
+function sc__Unit_create takes player p,integer uid,real x,real y,real yaw returns integer
+    set f__arg_player1=p
+    set f__arg_integer1=uid
+    set f__arg_real1=x
+    set f__arg_real2=y
+    set f__arg_real3=yaw
+    call TriggerEvaluate(st__Unit_create)
+ return f__result_integer
+endfunction
+
+//Generated method caller for Unit.onDestroy
+function sc__Unit_onDestroy takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Actor_periodicAction[134])
+    call TriggerEvaluate(st__Object_onDestroy[80])
 endfunction
 
-//Generated method caller for Ability0015_actor.onComplete
-function sc__Ability0015_actor_onComplete takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Actor_onComplete[134])
-endfunction
-
-//Generated method caller for Ability0015_actor.onSuspend
-function sc__Ability0015_actor_onSuspend takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Actor_onSuspend[134])
-endfunction
-
-//Generated method caller for Ability0015_actor.onDestroy
-function sc__Ability0015_actor_onDestroy takes integer this returns nothing
-				set s__Ability0015_actor_sq[this]=0
-endfunction
-
-//Generated allocator of Ability0015_actor
-function s__Ability0015_actor__allocate takes integer caster ,integer target ,real x ,real y ,integer level ,real duration ,boolean channeling returns integer
- local integer this=sc__UnitActor_create(caster,target,x,y,level,duration,channeling)
+//Generated allocator of Unit
+function s__Unit__allocate takes player p ,integer uid ,real x ,real y ,real facing returns integer
+ local integer this=sc__Unit_prototype_create(p,uid,x,y,facing)
  local integer kthis
     if(this==0) then
         return 0
     endif
-    set si__Actor_type[this]=134
+    set si__Object_type[this]=80
     set kthis=this
 
-   set s__Ability0015_actor_range[this]= 0.
-   set s__Ability0015_actor_angle[this]= 0.
-   set s__Ability0015_actor_sq[this]= 0
- return this
-endfunction
-
-
-//Generated method caller for Ability0015_charge.periodicAction
-function sc__Ability0015_charge_periodicAction takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Actor_periodicAction[136])
-endfunction
-
-//Generated method caller for Ability0015_charge.onDestroy
-function sc__Ability0015_charge_onDestroy takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Actor_onDestroy[136])
-endfunction
-
-//Generated allocator of Ability0015_charge
-function s__Ability0015_charge__allocate takes integer caster ,integer target ,real x ,real y ,integer level ,real duration ,boolean channeling returns integer
- local integer this=sc__UnitActor_create(caster,target,x,y,level,duration,channeling)
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Actor_type[this]=136
-    set kthis=this
-
-   set s__Ability0015_charge_ef[this]= 0
-   set s__Ability0015_charge_mv[this]= 0
- return this
-endfunction
-
-
-//Generated method caller for Ability0004___chain.rangeFilter
-function sc__Ability0004___chain_rangeFilter takes integer this,integer target returns boolean
-    set f__arg_this=this
-    set f__arg_integer1=target
-    call TriggerEvaluate(st__Ability0004___chain_rangeFilter)
- return f__result_boolean
-endfunction
-
-//Generated method caller for Ability0004___chain.explosionFilterAdditional
-function sc__Ability0004___chain_explosionFilterAdditional takes integer this,integer target returns boolean
-    set f__arg_this=this
-    set f__arg_integer1=target
-    call TriggerEvaluate(st__Ability0004___chain_explosionFilterAdditional)
- return f__result_boolean
-endfunction
-
-//Generated method caller for Ability0004___chain.executeExplosion
-function sc__Ability0004___chain_executeExplosion takes integer this,integer target returns nothing
-				call DoNothing()
-endfunction
-
-//Generated method caller for Ability0004___chain.killFilter
-function sc__Ability0004___chain_killFilter takes integer this returns boolean
-    set f__arg_this=this
-    call TriggerEvaluate(st__Actor_killFilter[103])
- return f__result_boolean
-endfunction
-
-//Generated method caller for Ability0004___chain.onComplete
-function sc__Ability0004___chain_onComplete takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Actor_onComplete[103])
-endfunction
-
-//Generated method caller for Ability0004___chain.onDestroy
-function sc__Ability0004___chain_onDestroy takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Actor_onDestroy[103])
-endfunction
-
-//Generated allocator of Ability0004___chain
-function s__Ability0004___chain__allocate takes integer caster ,integer target ,real x ,real y ,integer level ,real duration ,boolean channeling returns integer
- local integer this=sc__UnitActor_create(caster,target,x,y,level,duration,channeling)
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Actor_type[this]=103
-    set kthis=this
-
-   set s__Ability0004___chain_target_previous[this]= 0
-   set s__Ability0004___chain_count[this]= 0
-   set s__Ability0004___chain_radius_explosion[this]= Ability0004___RANGE_SECOND
-   set s__Ability0004___chain_group_wave[this]= null
-   set s__Ability0004___chain_already[this]= null
-   set s__Ability0004___chain_damage_type[this]= DAMAGE_TYPE_PHYSICAL
-   set s__Ability0004___chain_attack_type[this]= ATTACK_TYPE_BASIC
-   set s__Ability0004___chain_is_target[this]= false
-   set s__Ability0004___chain_is_aoe[this]= false
-   set s__Ability0004___chain_interval_type[this]= INTERVAL_TYPE_SINGLE
-   set s__Ability0004___chain_vector_type[this]= VECTOR_TYPE_OUTTER
-   set s__Ability0004___chain_is_onhit[this]= true
-   set s__Ability0004___chain_is_ranged[this]= true
-   set s__Ability0004___chain_weapon_type[this]= WEAPON_TYPE_WHOKNOWS
-   set s__Ability0004___chain_damage_id[this]= 0
-   set s__Ability0004___chain_damage_x[this]= 0.
-   set s__Ability0004___chain_damage_y[this]= 0.
-   set s__Ability0004___chain_use_damage_position[this]= false
-   set s__Ability0004___chain_damage[this]= 0.
-   set s__Ability0004___chain_affect_enemy[this]= true
-   set s__Ability0004___chain_affect_ally[this]= false
-   set s__Ability0004___chain_affect_invincible[this]= false
-   set s__Ability0004___chain_affect_evasion[this]= false
-   set s__Ability0004___chain_affect_self[this]= false
+   set s__Unit_chingho[this]= 0
  return this
 endfunction
 
@@ -9414,6 +9452,91 @@ function s__Ability0016_actor__allocate takes integer caster ,integer target ,re
 endfunction
 
 
+//Generated method caller for Ability0004__chain.rangeFilter
+function sc__Ability0004__chain_rangeFilter takes integer this,integer target returns boolean
+    set f__arg_this=this
+    set f__arg_integer1=target
+    call TriggerEvaluate(st__Ability0004__chain_rangeFilter)
+ return f__result_boolean
+endfunction
+
+//Generated method caller for Ability0004__chain.explosionFillUnits
+function sc__Ability0004__chain_explosionFillUnits takes integer this,group g returns nothing
+    set f__arg_this=this
+    set f__arg_group1=g
+    call TriggerEvaluate(st__Ability0004__chain_explosionFillUnits)
+endfunction
+
+//Generated method caller for Ability0004__chain.explosionFilterAdditional
+function sc__Ability0004__chain_explosionFilterAdditional takes integer this,integer target returns boolean
+    set f__arg_this=this
+    set f__arg_integer1=target
+    call TriggerEvaluate(st__Ability0004__chain_explosionFilterAdditional)
+ return f__result_boolean
+endfunction
+
+//Generated method caller for Ability0004__chain.executeExplosion
+function sc__Ability0004__chain_executeExplosion takes integer this,integer target returns nothing
+				call DoNothing()
+endfunction
+
+//Generated method caller for Ability0004__chain.killFilter
+function sc__Ability0004__chain_killFilter takes integer this returns boolean
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_killFilter[103])
+ return f__result_boolean
+endfunction
+
+//Generated method caller for Ability0004__chain.onComplete
+function sc__Ability0004__chain_onComplete takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_onComplete[103])
+endfunction
+
+//Generated method caller for Ability0004__chain.onDestroy
+function sc__Ability0004__chain_onDestroy takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_onDestroy[103])
+endfunction
+
+//Generated allocator of Ability0004__chain
+function s__Ability0004__chain__allocate takes integer caster ,integer target ,real x ,real y ,integer level ,real duration ,boolean channeling returns integer
+ local integer this=sc__UnitActor_create(caster,target,x,y,level,duration,channeling)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Actor_type[this]=103
+    set kthis=this
+
+   set s__Ability0004__chain_target_previous[this]= 0
+   set s__Ability0004__chain_count[this]= 0
+   set s__Ability0004__chain_radius_explosion[this]= Ability0004__RANGE_SECOND
+   set s__Ability0004__chain_group_wave[this]= null
+   set s__Ability0004__chain_already[this]= null
+   set s__Ability0004__chain_damage_type[this]= DAMAGE_TYPE_PHYSICAL
+   set s__Ability0004__chain_attack_type[this]= ATTACK_TYPE_BASIC
+   set s__Ability0004__chain_is_target[this]= false
+   set s__Ability0004__chain_is_aoe[this]= false
+   set s__Ability0004__chain_interval_type[this]= INTERVAL_TYPE_SINGLE
+   set s__Ability0004__chain_vector_type[this]= VECTOR_TYPE_OUTTER
+   set s__Ability0004__chain_is_onhit[this]= true
+   set s__Ability0004__chain_is_ranged[this]= true
+   set s__Ability0004__chain_weapon_type[this]= WEAPON_TYPE_WHOKNOWS
+   set s__Ability0004__chain_damage_id[this]= 0
+   set s__Ability0004__chain_damage_x[this]= 0.
+   set s__Ability0004__chain_damage_y[this]= 0.
+   set s__Ability0004__chain_use_damage_position[this]= false
+   set s__Ability0004__chain_damage[this]= 0.
+   set s__Ability0004__chain_affect_enemy[this]= true
+   set s__Ability0004__chain_affect_ally[this]= false
+   set s__Ability0004__chain_affect_invincible[this]= false
+   set s__Ability0004__chain_affect_evasion[this]= false
+   set s__Ability0004__chain_affect_self[this]= false
+ return this
+endfunction
+
+
 //Generated method caller for Ability0003_actor.onComplete
 function sc__Ability0003_actor_onComplete takes integer this returns nothing
     set f__arg_this=this
@@ -9437,6 +9560,42 @@ function s__Ability0003_actor__allocate takes integer caster ,integer target ,re
     set kthis=this
 
    set s__Ability0003_actor_angle[this]= 0.
+ return this
+endfunction
+
+
+//Generated method caller for Ability0001_a2.onComplete
+function sc__Ability0001_a2_onComplete takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_onComplete[93])
+endfunction
+
+//Generated method caller for Ability0001_a2.periodicAction
+function sc__Ability0001_a2_periodicAction takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_periodicAction[93])
+endfunction
+
+//Generated method caller for Ability0001_a2.onDestroy
+function sc__Ability0001_a2_onDestroy takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_onDestroy[93])
+endfunction
+
+//Generated allocator of Ability0001_a2
+function s__Ability0001_a2__allocate takes integer caster ,integer target ,real x ,real y ,integer level ,real duration ,boolean channeling returns integer
+ local integer this=sc__UnitActor_create(caster,target,x,y,level,duration,channeling)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Actor_type[this]=93
+    set kthis=this
+
+   set s__Ability0001_a2_effect_1[this]= 0
+   set s__Ability0001_a2_effect_2[this]= 0
+   set s__Ability0001_a2_sq[this]= 0
+   set s__Ability0001_a2_angle[this]= 0.
  return this
 endfunction
 
@@ -9470,6 +9629,13 @@ function sc__Missile_rangeFilter takes integer this,integer target returns boole
     set f__arg_integer1=target
     call TriggerEvaluate(st__Missile_rangeFilter[si__Object_type[this]])
  return f__result_boolean
+endfunction
+
+//Generated method caller for Missile.explosionFillUnits
+function sc__Missile_explosionFillUnits takes integer this,group g returns nothing
+    set f__arg_this=this
+    set f__arg_group1=g
+    call TriggerEvaluate(st__Missile_explosionFillUnits[si__Object_type[this]])
 endfunction
 
 //Generated method caller for Missile.waveFilterAdditional
@@ -9624,69 +9790,6 @@ function s__Missile__allocate takes string path ,real x ,real y ,real z ,real ya
    set s__Missile_affect_invincible[this]= false
    set s__Missile_affect_evasion[this]= false
    set s__Missile_affect_self[this]= false
- return this
-endfunction
-
-
-//Generated method caller for Ability0002_actor.suspendFilterAdditional
-function sc__Ability0002_actor_suspendFilterAdditional takes integer this returns boolean
-    set f__arg_this=this
-    call TriggerEvaluate(st__UnitActor_suspendFilterAdditional[97])
- return f__result_boolean
-endfunction
-
-//Generated method caller for Ability0002_actor.onComplete
-function sc__Ability0002_actor_onComplete takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Actor_onComplete[97])
-endfunction
-
-//Generated method caller for Ability0002_actor.periodicAction
-function sc__Ability0002_actor_periodicAction takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Actor_periodicAction[97])
-endfunction
-
-//Generated method caller for Ability0002_actor.onDestroy
-function sc__Ability0002_actor_onDestroy takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Actor_onDestroy[97])
-endfunction
-
-//Generated allocator of Ability0002_actor
-function s__Ability0002_actor__allocate takes integer caster ,integer target ,real x ,real y ,integer level ,real duration ,boolean channeling returns integer
- local integer this=sc__UnitActor_create(caster,target,x,y,level,duration,channeling)
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Actor_type[this]=97
-    set kthis=this
-
-   set s__Ability0002_actor_play[this]= false
-   set s__Ability0002_actor_aim[this]= 0
-   set s__Ability0002_actor_lh[this]= 0
- return this
-endfunction
-
-
-//Generated method caller for Ability0020___bullet.executeTarget
-function sc__Ability0020___bullet_executeTarget takes integer this,integer target returns nothing
-    set f__arg_this=this
-    set f__arg_integer1=target
-    call TriggerEvaluate(st__Missile_executeTarget[145])
-endfunction
-
-//Generated allocator of Ability0020___bullet
-function s__Ability0020___bullet__allocate takes integer owner ,string path ,real x ,real y ,real z ,real yaw returns integer
- local integer this=sc__Missile_create(owner,path,x,y,z,yaw)
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Object_type[this]=145
-    set kthis=this
-
  return this
 endfunction
 
@@ -9939,10 +10042,145 @@ function s__Guardian__allocate takes player p ,integer uid ,real x ,real y ,real
 endfunction
 
 
+//Generated method caller for Ability0031___ball.periodicAction
+function sc__Ability0031___ball_periodicAction takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Missile_periodicAction[159])
+endfunction
+
+//Generated method caller for Ability0031___ball.afterWave
+function sc__Ability0031___ball_afterWave takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Missile_afterWave[159])
+endfunction
+
+//Generated method caller for Ability0031___ball.executeWave
+function sc__Ability0031___ball_executeWave takes integer this,integer target returns nothing
+    set f__arg_this=this
+    set f__arg_integer1=target
+    call TriggerEvaluate(st__Missile_executeWave[159])
+endfunction
+
+//Generated method caller for Ability0031___ball.afterExplosion
+function sc__Ability0031___ball_afterExplosion takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Missile_afterExplosion[159])
+endfunction
+
+//Generated method caller for Ability0031___ball.executeExplosion
+function sc__Ability0031___ball_executeExplosion takes integer this,integer target returns nothing
+    set f__arg_this=this
+    set f__arg_integer1=target
+    call TriggerEvaluate(st__Missile_executeExplosion[159])
+endfunction
+
+//Generated method caller for Ability0031___ball.killFilter
+function sc__Ability0031___ball_killFilter takes integer this returns boolean
+			if s__Ability0031___ball_stage[this] == 0 then
+				set s__Ability0031___ball_stage[this]=1
+				set s__Missile_want_kill[this]=false
+				return false
+			endif
+			return true
+endfunction
+
+//Generated method caller for Ability0031___ball.onDestroy
+function sc__Ability0031___ball_onDestroy takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Object_onDestroy[159])
+endfunction
+
+//Generated allocator of Ability0031___ball
+function s__Ability0031___ball__allocate takes integer owner ,string path ,real x ,real y ,real z ,real yaw returns integer
+ local integer this=sc__Missile_create(owner,path,x,y,z,yaw)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Object_type[this]=159
+    set kthis=this
+
+   set s__Ability0031___ball_level[this]= 0
+   set s__Ability0031___ball_stage[this]= 0
+   set s__Ability0031___ball_c[this]= 0
+   set s__Ability0031___ball_to[this]= 0.
+ return this
+endfunction
+
+
+//Generated method caller for Ability0031___actor.onComplete
+function sc__Ability0031___actor_onComplete takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_onComplete[160])
+endfunction
+
+//Generated method caller for Ability0031___actor.onDestroy
+function sc__Ability0031___actor_onDestroy takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_onDestroy[160])
+endfunction
+
+//Generated allocator of Ability0031___actor
+function s__Ability0031___actor__allocate takes integer caster ,integer target ,real x ,real y ,integer level ,real duration ,boolean channeling returns integer
+ local integer this=sc__UnitActor_create(caster,target,x,y,level,duration,channeling)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Actor_type[this]=160
+    set kthis=this
+
+   set s__Ability0031___actor_angle[this]= 0.
+ return this
+endfunction
+
+
+//Generated method caller for Ability0002_actor.suspendFilterAdditional
+function sc__Ability0002_actor_suspendFilterAdditional takes integer this returns boolean
+    set f__arg_this=this
+    call TriggerEvaluate(st__UnitActor_suspendFilterAdditional[97])
+ return f__result_boolean
+endfunction
+
+//Generated method caller for Ability0002_actor.onComplete
+function sc__Ability0002_actor_onComplete takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_onComplete[97])
+endfunction
+
+//Generated method caller for Ability0002_actor.periodicAction
+function sc__Ability0002_actor_periodicAction takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_periodicAction[97])
+endfunction
+
+//Generated method caller for Ability0002_actor.onDestroy
+function sc__Ability0002_actor_onDestroy takes integer this returns nothing
+    set f__arg_this=this
+    call TriggerEvaluate(st__Actor_onDestroy[97])
+endfunction
+
+//Generated allocator of Ability0002_actor
+function s__Ability0002_actor__allocate takes integer caster ,integer target ,real x ,real y ,integer level ,real duration ,boolean channeling returns integer
+ local integer this=sc__UnitActor_create(caster,target,x,y,level,duration,channeling)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Actor_type[this]=97
+    set kthis=this
+
+   set s__Ability0002_actor_play[this]= false
+   set s__Ability0002_actor_aim[this]= 0
+   set s__Ability0002_actor_lh[this]= 0
+ return this
+endfunction
+
+
 //Generated method caller for Ability0040_actor.periodicAction
 function sc__Ability0040_actor_periodicAction takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Actor_periodicAction[161])
+    call TriggerEvaluate(st__Actor_periodicAction[165])
 endfunction
 
 //Generated method caller for Ability0040_actor.onDestroy
@@ -9957,7 +10195,7 @@ function s__Ability0040_actor__allocate takes integer caster ,integer target ,re
     if(this==0) then
         return 0
     endif
-    set si__Actor_type[this]=161
+    set si__Actor_type[this]=165
     set kthis=this
 
    set s__Ability0040_actor_ef[this]= 0
@@ -9992,124 +10230,88 @@ function s__Ability0001_actor__allocate takes integer caster ,integer target ,re
 endfunction
 
 
-//Generated method caller for Ability0041__bullet.executeWave
-function sc__Ability0041__bullet_executeWave takes integer this,integer target returns nothing
+//Generated method caller for Ability0041___bullet.executeWave
+function sc__Ability0041___bullet_executeWave takes integer this,integer target returns nothing
     set f__arg_this=this
     set f__arg_integer1=target
-    call TriggerEvaluate(st__Missile_executeWave[165])
+    call TriggerEvaluate(st__Missile_executeWave[169])
 endfunction
 
-//Generated allocator of Ability0041__bullet
-function s__Ability0041__bullet__allocate takes integer owner ,string path ,real x ,real y ,real z ,real yaw returns integer
+//Generated allocator of Ability0041___bullet
+function s__Ability0041___bullet__allocate takes integer owner ,string path ,real x ,real y ,real z ,real yaw returns integer
  local integer this=sc__Missile_create(owner,path,x,y,z,yaw)
  local integer kthis
     if(this==0) then
         return 0
     endif
-    set si__Object_type[this]=165
+    set si__Object_type[this]=169
     set kthis=this
 
  return this
 endfunction
 
 
-//Generated method caller for Ability0041__fire.onComplete
-function sc__Ability0041__fire_onComplete takes integer this returns nothing
+//Generated method caller for Ability0041___fire.onComplete
+function sc__Ability0041___fire_onComplete takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Actor_onComplete[166])
+    call TriggerEvaluate(st__Actor_onComplete[170])
 endfunction
 
-//Generated method caller for Ability0041__fire.periodicAction
-function sc__Ability0041__fire_periodicAction takes integer this returns nothing
+//Generated method caller for Ability0041___fire.periodicAction
+function sc__Ability0041___fire_periodicAction takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Actor_periodicAction[166])
+    call TriggerEvaluate(st__Actor_periodicAction[170])
 endfunction
 
-//Generated method caller for Ability0041__fire.onDestroy
-function sc__Ability0041__fire_onDestroy takes integer this returns nothing
+//Generated method caller for Ability0041___fire.onDestroy
+function sc__Ability0041___fire_onDestroy takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Actor_onDestroy[166])
+    call TriggerEvaluate(st__Actor_onDestroy[170])
 endfunction
 
-//Generated allocator of Ability0041__fire
-function s__Ability0041__fire__allocate takes integer caster ,integer target ,real x ,real y ,integer level ,real duration ,boolean channeling returns integer
+//Generated allocator of Ability0041___fire
+function s__Ability0041___fire__allocate takes integer caster ,integer target ,real x ,real y ,integer level ,real duration ,boolean channeling returns integer
  local integer this=sc__UnitActor_create(caster,target,x,y,level,duration,channeling)
  local integer kthis
     if(this==0) then
         return 0
     endif
-    set si__Actor_type[this]=166
+    set si__Actor_type[this]=170
     set kthis=this
 
-   set s__Ability0041__fire_ef[this]= 0
-   set s__Ability0041__fire_burst[this]= 0
-   set s__Ability0041__fire_angle[this]= 0.
-   set s__Ability0041__fire_timeout2[this]= 0.
-   set s__Ability0041__fire_count[this]= Ability0041__COUNT_WAVE
+   set s__Ability0041___fire_ef[this]= 0
+   set s__Ability0041___fire_burst[this]= 0
+   set s__Ability0041___fire_angle[this]= 0.
+   set s__Ability0041___fire_timeout2[this]= 0.
+   set s__Ability0041___fire_count[this]= Ability0041___COUNT_WAVE
  return this
 endfunction
 
 
-//Generated method caller for Ability0041__prepare.onComplete
-function sc__Ability0041__prepare_onComplete takes integer this returns nothing
+//Generated method caller for Ability0041___prepare.onComplete
+function sc__Ability0041___prepare_onComplete takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Actor_onComplete[167])
+    call TriggerEvaluate(st__Actor_onComplete[171])
 endfunction
 
-//Generated method caller for Ability0041__prepare.onDestroy
-function sc__Ability0041__prepare_onDestroy takes integer this returns nothing
+//Generated method caller for Ability0041___prepare.onDestroy
+function sc__Ability0041___prepare_onDestroy takes integer this returns nothing
     set f__arg_this=this
-    call TriggerEvaluate(st__Actor_onDestroy[167])
+    call TriggerEvaluate(st__Actor_onDestroy[171])
 endfunction
 
-//Generated allocator of Ability0041__prepare
-function s__Ability0041__prepare__allocate takes integer caster ,integer target ,real x ,real y ,integer level ,real duration ,boolean channeling returns integer
+//Generated allocator of Ability0041___prepare
+function s__Ability0041___prepare__allocate takes integer caster ,integer target ,real x ,real y ,integer level ,real duration ,boolean channeling returns integer
  local integer this=sc__UnitActor_create(caster,target,x,y,level,duration,channeling)
  local integer kthis
     if(this==0) then
         return 0
     endif
-    set si__Actor_type[this]=167
+    set si__Actor_type[this]=171
     set kthis=this
 
-   set s__Ability0041__prepare_ef[this]= 0
-   set s__Ability0041__prepare_a[this]= 0.
- return this
-endfunction
-
-
-//Generated method caller for Ability0001_a2.onComplete
-function sc__Ability0001_a2_onComplete takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Actor_onComplete[93])
-endfunction
-
-//Generated method caller for Ability0001_a2.periodicAction
-function sc__Ability0001_a2_periodicAction takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Actor_periodicAction[93])
-endfunction
-
-//Generated method caller for Ability0001_a2.onDestroy
-function sc__Ability0001_a2_onDestroy takes integer this returns nothing
-    set f__arg_this=this
-    call TriggerEvaluate(st__Actor_onDestroy[93])
-endfunction
-
-//Generated allocator of Ability0001_a2
-function s__Ability0001_a2__allocate takes integer caster ,integer target ,real x ,real y ,integer level ,real duration ,boolean channeling returns integer
- local integer this=sc__UnitActor_create(caster,target,x,y,level,duration,channeling)
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Actor_type[this]=93
-    set kthis=this
-
-   set s__Ability0001_a2_effect_1[this]= 0
-   set s__Ability0001_a2_effect_2[this]= 0
-   set s__Ability0001_a2_sq[this]= 0
-   set s__Ability0001_a2_angle[this]= 0.
+   set s__Ability0041___prepare_ef[this]= 0
+   set s__Ability0041___prepare_a[this]= 0.
  return this
 endfunction
 
@@ -10151,31 +10353,52 @@ function s__Ability0010_potion__allocate takes integer owner ,string path ,real 
 endfunction
 
 
-//Generated method caller for Ability0003___ball.periodicAction
-function sc__Ability0003___ball_periodicAction takes integer this returns nothing
+//Generated method caller for Ability0020___bullet.executeTarget
+function sc__Ability0020___bullet_executeTarget takes integer this,integer target returns nothing
+    set f__arg_this=this
+    set f__arg_integer1=target
+    call TriggerEvaluate(st__Missile_executeTarget[145])
+endfunction
+
+//Generated allocator of Ability0020___bullet
+function s__Ability0020___bullet__allocate takes integer owner ,string path ,real x ,real y ,real z ,real yaw returns integer
+ local integer this=sc__Missile_create(owner,path,x,y,z,yaw)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Object_type[this]=145
+    set kthis=this
+
+ return this
+endfunction
+
+
+//Generated method caller for Ability0003__ball.periodicAction
+function sc__Ability0003__ball_periodicAction takes integer this returns nothing
     set f__arg_this=this
     call TriggerEvaluate(st__Missile_periodicAction[99])
 endfunction
 
-//Generated method caller for Ability0003___ball.executeTarget
-function sc__Ability0003___ball_executeTarget takes integer this,integer target returns nothing
+//Generated method caller for Ability0003__ball.executeTarget
+function sc__Ability0003__ball_executeTarget takes integer this,integer target returns nothing
 				call DoNothing()
 endfunction
 
-//Generated method caller for Ability0003___ball.afterExplosion
-function sc__Ability0003___ball_afterExplosion takes integer this returns nothing
+//Generated method caller for Ability0003__ball.afterExplosion
+function sc__Ability0003__ball_afterExplosion takes integer this returns nothing
     set f__arg_this=this
     call TriggerEvaluate(st__Missile_afterExplosion[99])
 endfunction
 
-//Generated method caller for Ability0003___ball.onDestroy
-function sc__Ability0003___ball_onDestroy takes integer this returns nothing
+//Generated method caller for Ability0003__ball.onDestroy
+function sc__Ability0003__ball_onDestroy takes integer this returns nothing
     set f__arg_this=this
     call TriggerEvaluate(st__Object_onDestroy[99])
 endfunction
 
-//Generated allocator of Ability0003___ball
-function s__Ability0003___ball__allocate takes integer owner ,string path ,real x ,real y ,real z ,real yaw returns integer
+//Generated allocator of Ability0003__ball
+function s__Ability0003__ball__allocate takes integer owner ,string path ,real x ,real y ,real z ,real yaw returns integer
  local integer this=sc__Missile_create(owner,path,x,y,z,yaw)
  local integer kthis
     if(this==0) then
@@ -10184,7 +10407,7 @@ function s__Ability0003___ball__allocate takes integer owner ,string path ,real 
     set si__Object_type[this]=99
     set kthis=this
 
-   set s__Ability0003___ball_l[this]= 0
+   set s__Ability0003__ball_l[this]= 0
  return this
 endfunction
 
@@ -10204,27 +10427,6 @@ function s__Abilityu001___mss__allocate takes integer owner ,string path ,real x
         return 0
     endif
     set si__Object_type[this]=119
-    set kthis=this
-
- return this
-endfunction
-
-
-//Generated method caller for Ability0008___arrow.executeTarget
-function sc__Ability0008___arrow_executeTarget takes integer this,integer target returns nothing
-    set f__arg_this=this
-    set f__arg_integer1=target
-    call TriggerEvaluate(st__Missile_executeTarget[112])
-endfunction
-
-//Generated allocator of Ability0008___arrow
-function s__Ability0008___arrow__allocate takes integer owner ,string path ,real x ,real y ,real z ,real yaw returns integer
- local integer this=sc__Missile_create(owner,path,x,y,z,yaw)
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Object_type[this]=112
     set kthis=this
 
  return this
@@ -10340,6 +10542,44 @@ function s__Undead__allocate takes player p ,integer uid ,real x ,real y ,real y
 endfunction
 
 
+//Generated method caller for UndeadU001.init
+function sc__UndeadU001_init takes integer this returns nothing
+			set s__Undead_acquire_range[this]=750.
+endfunction
+
+//Generated allocator of UndeadU001
+function s__UndeadU001__allocate takes integer uid ,real x ,real y ,real yaw ,integer position returns integer
+ local integer this=sc__Undead_create(uid,x,y,yaw,position)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Object_type[this]=35
+    set kthis=this
+
+ return this
+endfunction
+
+
+//Generated method caller for UndeadU002.init
+function sc__UndeadU002_init takes integer this returns nothing
+			set s__Undead_acquire_range[this]=750.
+endfunction
+
+//Generated allocator of UndeadU002
+function s__UndeadU002__allocate takes integer uid ,real x ,real y ,real yaw ,integer position returns integer
+ local integer this=sc__Undead_create(uid,x,y,yaw,position)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Object_type[this]=36
+    set kthis=this
+
+ return this
+endfunction
+
+
 //Generated method caller for UndeadU003.init
 function sc__UndeadU003_init takes integer this returns nothing
 			set s__Undead_acquire_range[this]=750.
@@ -10373,6 +10613,27 @@ function s__UndeadU004__allocate takes integer uid ,real x ,real y ,real yaw ,in
 endfunction
 
 
+//Generated method caller for Ability0008___arrow.executeTarget
+function sc__Ability0008___arrow_executeTarget takes integer this,integer target returns nothing
+    set f__arg_this=this
+    set f__arg_integer1=target
+    call TriggerEvaluate(st__Missile_executeTarget[112])
+endfunction
+
+//Generated allocator of Ability0008___arrow
+function s__Ability0008___arrow__allocate takes integer owner ,string path ,real x ,real y ,real z ,real yaw returns integer
+ local integer this=sc__Missile_create(owner,path,x,y,z,yaw)
+ local integer kthis
+    if(this==0) then
+        return 0
+    endif
+    set si__Object_type[this]=112
+    set kthis=this
+
+ return this
+endfunction
+
+
 //Generated method caller for UndeadU000.periodicAction
 function sc__UndeadU000_periodicAction takes integer this returns nothing
     set f__arg_this=this
@@ -10387,44 +10648,6 @@ function s__UndeadU000__allocate takes integer uid ,real x ,real y ,real yaw ,in
         return 0
     endif
     set si__Object_type[this]=34
-    set kthis=this
-
- return this
-endfunction
-
-
-//Generated method caller for UndeadU002.init
-function sc__UndeadU002_init takes integer this returns nothing
-			set s__Undead_acquire_range[this]=750.
-endfunction
-
-//Generated allocator of UndeadU002
-function s__UndeadU002__allocate takes integer uid ,real x ,real y ,real yaw ,integer position returns integer
- local integer this=sc__Undead_create(uid,x,y,yaw,position)
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Object_type[this]=36
-    set kthis=this
-
- return this
-endfunction
-
-
-//Generated method caller for UndeadU001.init
-function sc__UndeadU001_init takes integer this returns nothing
-			set s__Undead_acquire_range[this]=750.
-endfunction
-
-//Generated allocator of UndeadU001
-function s__UndeadU001__allocate takes integer uid ,real x ,real y ,real yaw ,integer position returns integer
- local integer this=sc__Undead_create(uid,x,y,yaw,position)
- local integer kthis
-    if(this==0) then
-        return 0
-    endif
-    set si__Object_type[this]=35
     set kthis=this
 
  return this
@@ -11363,6 +11586,10 @@ endfunction
 
 		
 
+  function s__Explosion_explosionFillUnits takes integer this,group g returns nothing
+			call sc__Group_fillUnitsInRange(g , s__Explosion_x[this] , s__Explosion_y[this] , s__Explosion_radius_explosion[this])
+  endfunction
+
   function s__Explosion_explosionFilter takes integer this,integer target returns boolean
 			if not s__Explosion_affectFilter(this,target) then
 				return false
@@ -11378,15 +11605,23 @@ endfunction
   function s__Explosion_explosionAction takes integer this returns nothing
    local integer i= 0
    local unit u= null
+   local group g= sc__Group_new()
+			call sc__Explosion_explosionFillUnits(this,g)
 			loop
-				set u=BlzGroupUnitAt(UnitPrototype_GROUP, i)
+				set u=BlzGroupUnitAt(g, i)
 				exitwhen u == null
-				if s__Explosion_explosionFilter(this,sc__Unit_prototype_get(u)) then
-					call sc__Explosion_executeExplosion(this,sc__Unit_prototype_get(u))
-					call GroupAddUnit(s__Explosion_group_wave[this], u)
+				if not IsUnitType(u, UNIT_TYPE_DEAD) then
+					if sc__Unit_prototype_get(u) > 0 then
+						if s__Explosion_explosionFilter(this,sc__Unit_prototype_get(u)) then
+							call sc__Explosion_executeExplosion(this,sc__Unit_prototype_get(u))
+							call GroupAddUnit(s__Explosion_group_wave[this], u)
+						endif
+					endif
 				endif
 				set i=i + 1
 			endloop
+			call sc__Group_release(g)
+			set g=null
 			set u=null
   endfunction
 
@@ -11493,6 +11728,10 @@ endfunction
 
 
 
+  function s__LineExplosion_explosionFillUnits takes integer this,group g returns nothing
+			call sc__Group_fillUnitsInRange(g , s__Explosion_x[this] , s__Explosion_y[this] , sc__Math_distancePoints(s__Explosion_x[this] , s__Explosion_y[this] , s__LineExplosion_x2[this] , s__LineExplosion_y2[this]))
+  endfunction
+ 
   function s__LineExplosion_rangeFilter takes integer this,integer target returns boolean
 			return sc__Unit_prototype_inLine(target,s__Explosion_x[this] , s__Explosion_y[this] , s__LineExplosion_x2[this] , s__LineExplosion_y2[this] , s__Explosion_radius_explosion[this])
   endfunction
@@ -12893,9 +13132,9 @@ endfunction
   function s__ChinghoFrame_setTarget takes integer this,integer cid returns nothing
 			set s__ChinghoFrame_id[this]=cid
 			if cid > 0 then
-				call BlzFrameSetTexture(s__ChinghoFrame_icon1[this], "ReplaceableTextures\\CommandButtons\\" + (LoadStr(Ability___HASH, (cid), s__Ability_INDEX_ICON_PATH)) + ".blp", 0, true) // INLINED!!
-				call BlzFrameSetTexture(s__ChinghoFrame_icon2[this], "ReplaceableTextures\\CommandButtons\\" + (LoadStr(Ability___HASH, (cid), s__Ability_INDEX_ICON_PATH)) + ".blp", 0, true) // INLINED!!
-				call BlzFrameSetText(s__ChinghoFrame_name[this], (LoadStr(Ability___HASH, (cid), s__Ability_INDEX_NAME))) // INLINED!!
+				call BlzFrameSetTexture(s__ChinghoFrame_icon1[this], "ReplaceableTextures\\CommandButtons\\" + (LoadStr(Ability__HASH, (cid), s__Ability_INDEX_ICON_PATH)) + ".blp", 0, true) // INLINED!!
+				call BlzFrameSetTexture(s__ChinghoFrame_icon2[this], "ReplaceableTextures\\CommandButtons\\" + (LoadStr(Ability__HASH, (cid), s__Ability_INDEX_ICON_PATH)) + ".blp", 0, true) // INLINED!!
+				call BlzFrameSetText(s__ChinghoFrame_name[this], (LoadStr(Ability__HASH, (cid), s__Ability_INDEX_NAME))) // INLINED!!
 			elseif cid < 0 then
 				call BlzFrameSetTexture(s__ChinghoFrame_icon1[this], "ReplaceableTextures\\CommandButtons\\BTNSelectHeroOn.blp", 0, true)
 				call BlzFrameSetTexture(s__ChinghoFrame_icon2[this], "ReplaceableTextures\\CommandButtons\\BTNSelectHeroOn.blp", 0, true)
@@ -12911,15 +13150,15 @@ endfunction
    local integer this= s__ChinghoFrame__allocate()
 			set s__ChinghoFrame_backdrop[this]=BlzCreateFrameByType("BACKDROP", "", parent, "", 0)
 			call BlzFrameSetPoint(s__ChinghoFrame_backdrop[this], FRAMEPOINT_TOPLEFT, pivot, FRAMEPOINT_TOPLEFT, 0., 0.)
-			call BlzFrameSetSize(s__ChinghoFrame_backdrop[this], (((UI__STAT1_WIDTH)*1.0) / 1800.), (((UI__CHINGHO_HEIGHT)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetSize(s__ChinghoFrame_backdrop[this], (((UI___STAT1_WIDTH)*1.0) / 1800.), (((UI___CHINGHO_HEIGHT)*1.0) / 1800.)) // INLINED!!
 			call BlzFrameSetTexture(s__ChinghoFrame_backdrop[this], "textures\\black32.blp", 0, true)
 			set s__ChinghoFrame_icon1[this]=BlzCreateFrameByType("BACKDROP", "", s__ChinghoFrame_backdrop[this], "", 0)
 			call BlzFrameSetPoint(s__ChinghoFrame_icon1[this], FRAMEPOINT_TOPLEFT, s__ChinghoFrame_backdrop[this], FRAMEPOINT_TOPLEFT, 0., 0.)
-			call BlzFrameSetSize(s__ChinghoFrame_icon1[this], (((UI__CHINGHO_HEIGHT)*1.0) / 1800.), (((UI__CHINGHO_HEIGHT)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetSize(s__ChinghoFrame_icon1[this], (((UI___CHINGHO_HEIGHT)*1.0) / 1800.), (((UI___CHINGHO_HEIGHT)*1.0) / 1800.)) // INLINED!!
 			call BlzFrameSetTexture(s__ChinghoFrame_icon1[this], "textures\\black32.blp", 0, true)
 			set s__ChinghoFrame_icon2[this]=BlzCreateFrameByType("BACKDROP", "", s__ChinghoFrame_backdrop[this], "", 0)
 			call BlzFrameSetPoint(s__ChinghoFrame_icon2[this], FRAMEPOINT_TOPRIGHT, s__ChinghoFrame_backdrop[this], FRAMEPOINT_TOPRIGHT, 0., 0.)
-			call BlzFrameSetSize(s__ChinghoFrame_icon2[this], (((UI__CHINGHO_HEIGHT)*1.0) / 1800.), (((UI__CHINGHO_HEIGHT)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetSize(s__ChinghoFrame_icon2[this], (((UI___CHINGHO_HEIGHT)*1.0) / 1800.), (((UI___CHINGHO_HEIGHT)*1.0) / 1800.)) // INLINED!!
 			call BlzFrameSetTexture(s__ChinghoFrame_icon2[this], "textures\\black32.blp", 0, true)
 			set s__ChinghoFrame_name[this]=BlzCreateFrame("MyTextSmall", s__ChinghoFrame_backdrop[this], 0, 0)
 			call BlzFrameSetAllPoints(s__ChinghoFrame_name[this], s__ChinghoFrame_backdrop[this])
@@ -12978,7 +13217,7 @@ endfunction
 				call BlzFrameSetVisible(s__AbilityIcon_cooldown_backdrop[this], s__Ability_prototype_cooldown_remaining[s__AbilityIcon_target[this]] > 0. and sc__Ability_prototype_getCount(s__AbilityIcon_target[this]) == 0 and sc__Ability_prototype_getCarculatedMaxCooldown(s__AbilityIcon_target[this]) > 0.)
 				call BlzFrameSetText(s__AbilityIcon_cooldown_text[this], R2SW(s__Ability_prototype_cooldown_remaining[s__AbilityIcon_target[this]], 1, 1))
 				if sc__Ability_prototype_getCarculatedMaxCooldown(s__AbilityIcon_target[this]) > 0. then
-					call BlzFrameSetPoint(s__AbilityIcon_cooldown_backdrop[this], FRAMEPOINT_TOPRIGHT, s__AbilityIcon_icon_backdrop[this], FRAMEPOINT_BOTTOMRIGHT, 0., (((UI__ABILITY_ICON_SIZE)*1.0) / 1800.) * ( s__Ability_prototype_cooldown_remaining[s__AbilityIcon_target[this]] / sc__Ability_prototype_getCarculatedMaxCooldown(s__AbilityIcon_target[this]) )) // INLINED!!
+					call BlzFrameSetPoint(s__AbilityIcon_cooldown_backdrop[this], FRAMEPOINT_TOPRIGHT, s__AbilityIcon_icon_backdrop[this], FRAMEPOINT_BOTTOMRIGHT, 0., (((UI___ABILITY_ICON_SIZE)*1.0) / 1800.) * ( s__Ability_prototype_cooldown_remaining[s__AbilityIcon_target[this]] / sc__Ability_prototype_getCarculatedMaxCooldown(s__AbilityIcon_target[this]) )) // INLINED!!
 				endif
 				
 				call BlzFrameSetVisible(s__AbilityIcon_nem_backdrop[this], sc__Unit_prototype__get_mp(s__Ability_prototype_owner[s__AbilityIcon_target[this]]) < (I2R(s__Ability_prototype_manacost[(s__AbilityIcon_target[this])]))) // INLINED!!
@@ -12988,15 +13227,15 @@ endfunction
 				call BlzFrameSetText(s__AbilityIcon_extra_text[this], I2S(s__Ability_prototype_count[s__AbilityIcon_target[this]]))
 				
 				call BlzFrameSetVisible(s__AbilityIcon_gauge_backdrop[this], s__Ability_prototype_gauge[s__AbilityIcon_target[this]] > 0.)
-				call BlzFrameSetPoint(s__AbilityIcon_gauge_fill[this], FRAMEPOINT_BOTTOMRIGHT, s__AbilityIcon_gauge_backdrop[this], FRAMEPOINT_BOTTOMLEFT, (((UI__ABILITY_ICON_SIZE)*1.0) / 1800.) * s__Ability_prototype_gauge[s__AbilityIcon_target[this]], 0) // INLINED!!
+				call BlzFrameSetPoint(s__AbilityIcon_gauge_fill[this], FRAMEPOINT_BOTTOMRIGHT, s__AbilityIcon_gauge_backdrop[this], FRAMEPOINT_BOTTOMLEFT, (((UI___ABILITY_ICON_SIZE)*1.0) / 1800.) * s__Ability_prototype_gauge[s__AbilityIcon_target[this]], 0) // INLINED!!
 				
 				call BlzFrameSetText(s__AbilityIcon_tooltip_text[this], sc__Ability_prototype_relativeTooltip(s__AbilityIcon_target[this]) + "\n\n|cff00ffff능력치 보너스 : |r")
 				
 				call BlzFrameSetText(s__AbilityIcon_tooltip_manacost_text[this], "|cff0099ff" + I2S(R2I((I2R(s__Ability_prototype_manacost[(s__AbilityIcon_target[this])])))) + "|r") // INLINED!!
-				call BlzFrameSetText(s__AbilityIcon_tooltip_cooldown_text[this], "|cffffff99" + R2SW(sc__Ability_prototype_getCarculatedMaxCooldown(s__AbilityIcon_target[this]), 2, 2) + "|r\n|cff999999(" + R2SW(s__Ability_prototype_cooldown_min[s__AbilityIcon_target[this]], 2, 2) + ")|r")
+				call BlzFrameSetText(s__AbilityIcon_tooltip_cooldown_text[this], "|cffffff99" + R2SW(sc__Ability_prototype_getCarculatedMaxCooldown(s__AbilityIcon_target[this]), 2, 2) + "|r\n|cff999999/" + R2SW(s__Ability_prototype_cooldown_min[s__AbilityIcon_target[this]], 2, 2) + "|r")
 				
-				call BlzFrameSetText(s__AbilityIcon_tooltip_stat_bonus_text1[this], s__STAT_TYPE_NAME[(LoadInteger(Ability___HASH, (s__Ability_prototype_id[s__AbilityIcon_target[this]] ), s__Ability_INDEX_BONUS_STAT + ( 0)))] + " +" + s__ConstantString_statStringReal((LoadInteger(Ability___HASH, (s__Ability_prototype_id[s__AbilityIcon_target[this]] ), s__Ability_INDEX_BONUS_STAT + ( 0))) , s__Ability_stat_bonus1[s__AbilityIcon_target[this]] , 1)) // INLINED!!
-				call BlzFrameSetText(s__AbilityIcon_tooltip_stat_bonus_text2[this], s__STAT_TYPE_NAME[(LoadInteger(Ability___HASH, (s__Ability_prototype_id[s__AbilityIcon_target[this]] ), s__Ability_INDEX_BONUS_STAT + ( 1)))] + " +" + s__ConstantString_statStringReal((LoadInteger(Ability___HASH, (s__Ability_prototype_id[s__AbilityIcon_target[this]] ), s__Ability_INDEX_BONUS_STAT + ( 1))) , s__Ability_stat_bonus2[s__AbilityIcon_target[this]] , 1)) // INLINED!!
+				call BlzFrameSetText(s__AbilityIcon_tooltip_stat_bonus_text1[this], s__STAT_TYPE_NAME[(LoadInteger(Ability__HASH, (s__Ability_prototype_id[s__AbilityIcon_target[this]] ), s__Ability_INDEX_BONUS_STAT + ( 0)))] + " +" + s__ConstantString_statStringReal((LoadInteger(Ability__HASH, (s__Ability_prototype_id[s__AbilityIcon_target[this]] ), s__Ability_INDEX_BONUS_STAT + ( 0))) , s__Ability_stat_bonus1[s__AbilityIcon_target[this]] , 1)) // INLINED!!
+				call BlzFrameSetText(s__AbilityIcon_tooltip_stat_bonus_text2[this], s__STAT_TYPE_NAME[(LoadInteger(Ability__HASH, (s__Ability_prototype_id[s__AbilityIcon_target[this]] ), s__Ability_INDEX_BONUS_STAT + ( 1)))] + " +" + s__ConstantString_statStringReal((LoadInteger(Ability__HASH, (s__Ability_prototype_id[s__AbilityIcon_target[this]] ), s__Ability_INDEX_BONUS_STAT + ( 1))) , s__Ability_stat_bonus2[s__AbilityIcon_target[this]] , 1)) // INLINED!!
 			endif
   endfunction
 
@@ -13014,7 +13253,7 @@ endfunction
 				endif
 				call BlzFrameSetTexture(s__AbilityIcon_tooltip_icon[this], "ReplaceableTextures\\CommandButtons\\" + s__Ability_prototype_icon[s__AbilityIcon_target[this]] + ".blp", 0, true)
 				
-				call BlzFrameSetText(s__AbilityIcon_tooltip_name[this], TIER_STRING_COLOR[(LoadInteger(Ability___HASH, (s__Ability_prototype_id[s__AbilityIcon_target[this]]), s__Ability_INDEX_TIER))] + "Lv." + I2S(s__Ability_prototype_level[s__AbilityIcon_target[this]]) + " " + s__Ability_prototype_name[s__AbilityIcon_target[this]] + "|r") // INLINED!!
+				call BlzFrameSetText(s__AbilityIcon_tooltip_name[this], TIER_STRING_COLOR[(LoadInteger(Ability__HASH, (s__Ability_prototype_id[s__AbilityIcon_target[this]]), s__Ability_INDEX_TIER))] + "Lv." + I2S(s__Ability_prototype_level[s__AbilityIcon_target[this]]) + " " + s__Ability_prototype_name[s__AbilityIcon_target[this]] + "|r") // INLINED!!
 				
 				if s__Ability_prototype_smart[s__AbilityIcon_target[this]] == 0 then
 					call BlzFrameSetText(s__AbilityIcon_hotkey_text[this], "|cff999999" + (s__User_OSKEY_INDEX_TO_STRING[(s__AbilityIcon_index[this])]) + "|r") // INLINED!!
@@ -13040,8 +13279,8 @@ endfunction
 				set s=s
 				call BlzFrameSetText(s__AbilityIcon_tooltip_tag[this], s)
 				
-				call BlzFrameSetTexture(s__AbilityIcon_tooltip_stat_bonus_icon1[this], STAT_TYPE_ICON[(LoadInteger(Ability___HASH, (s__Ability_prototype_id[s__AbilityIcon_target[this]] ), s__Ability_INDEX_BONUS_STAT + ( 0)))], 0, true) // INLINED!!
-				call BlzFrameSetTexture(s__AbilityIcon_tooltip_stat_bonus_icon2[this], STAT_TYPE_ICON[(LoadInteger(Ability___HASH, (s__Ability_prototype_id[s__AbilityIcon_target[this]] ), s__Ability_INDEX_BONUS_STAT + ( 1)))], 0, true) // INLINED!!
+				call BlzFrameSetTexture(s__AbilityIcon_tooltip_stat_bonus_icon1[this], STAT_TYPE_ICON[(LoadInteger(Ability__HASH, (s__Ability_prototype_id[s__AbilityIcon_target[this]] ), s__Ability_INDEX_BONUS_STAT + ( 0)))], 0, true) // INLINED!!
+				call BlzFrameSetTexture(s__AbilityIcon_tooltip_stat_bonus_icon2[this], STAT_TYPE_ICON[(LoadInteger(Ability__HASH, (s__Ability_prototype_id[s__AbilityIcon_target[this]] ), s__Ability_INDEX_BONUS_STAT + ( 1)))], 0, true) // INLINED!!
 				
 				call BlzFrameSetVisible(s__AbilityIcon_unique[this], s__Ability_signiture[s__AbilityIcon_target[this]])
 				
@@ -13101,7 +13340,7 @@ endfunction
 			call BlzFrameSetVisible(s__AbilityIcon_nem_backdrop[this], false)
 			set s__AbilityIcon_cooldown_backdrop[this]=BlzCreateFrameByType("BACKDROP", "", s__AbilityIcon_icon_container[this], "", 0)
 			call BlzFrameSetPoint(s__AbilityIcon_cooldown_backdrop[this], FRAMEPOINT_BOTTOMLEFT, pivot, FRAMEPOINT_BOTTOMLEFT, 0., 0.)
-			call BlzFrameSetPoint(s__AbilityIcon_cooldown_backdrop[this], FRAMEPOINT_TOPRIGHT, pivot, FRAMEPOINT_BOTTOMLEFT, (((UI__ABILITY_ICON_SIZE)*1.0) / 1800.), (((UI__ABILITY_ICON_SIZE)*1.0) / 1800.) / 2) // INLINED!!
+			call BlzFrameSetPoint(s__AbilityIcon_cooldown_backdrop[this], FRAMEPOINT_TOPRIGHT, pivot, FRAMEPOINT_BOTTOMLEFT, (((UI___ABILITY_ICON_SIZE)*1.0) / 1800.), (((UI___ABILITY_ICON_SIZE)*1.0) / 1800.) / 2) // INLINED!!
 			call BlzFrameSetTexture(s__AbilityIcon_cooldown_backdrop[this], "Textures\\Black32.blp", 0, true)
 			call BlzFrameSetAlpha(s__AbilityIcon_cooldown_backdrop[this], 128)
 			set s__AbilityIcon_cooldown_text_backdrop[this]=BlzCreateFrameByType("BACKDROP", "", s__AbilityIcon_icon_container[this], "", 0)
@@ -13123,11 +13362,11 @@ endfunction
 			call BlzFrameSetText(s__AbilityIcon_hotkey_text[this], "|cffffcc00" + (s__User_OSKEY_INDEX_TO_STRING[(s__AbilityIcon_index[this])]) + "|r") // INLINED!!
 			set s__AbilityIcon_gauge_backdrop[this]=BlzCreateFrameByType("BACKDROP", "", s__AbilityIcon_icon_container[this], "", 0)
 			call BlzFrameSetPoint(s__AbilityIcon_gauge_backdrop[this], FRAMEPOINT_TOPLEFT, pivot, FRAMEPOINT_BOTTOMLEFT, 0., 0.)
-			call BlzFrameSetSize(s__AbilityIcon_gauge_backdrop[this], (((UI__ABILITY_ICON_SIZE)*1.0) / 1800.), (((8)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetSize(s__AbilityIcon_gauge_backdrop[this], (((UI___ABILITY_ICON_SIZE)*1.0) / 1800.), (((8)*1.0) / 1800.)) // INLINED!!
 			call BlzFrameSetTexture(s__AbilityIcon_gauge_backdrop[this], "ui\\feedback\\buildprogressbar\\min-hud-human-buildprogressbar-border.blp", 0, true)
 			set s__AbilityIcon_gauge_fill[this]=BlzCreateFrameByType("BACKDROP", "", s__AbilityIcon_gauge_backdrop[this], "", 0)
 			call BlzFrameSetPoint(s__AbilityIcon_gauge_fill[this], FRAMEPOINT_TOPLEFT, s__AbilityIcon_gauge_backdrop[this], FRAMEPOINT_TOPLEFT, 0., 0.)
-			call BlzFrameSetSize(s__AbilityIcon_gauge_fill[this], (((UI__ABILITY_ICON_SIZE / 2)*1.0) / 1800.), (((8)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetSize(s__AbilityIcon_gauge_fill[this], (((UI___ABILITY_ICON_SIZE / 2)*1.0) / 1800.), (((8)*1.0) / 1800.)) // INLINED!!
 			call BlzFrameSetTexture(s__AbilityIcon_gauge_fill[this], "ui\\feedback\\buildprogressbar\\min-hud-human-buildprogressbar-fill.blp", 0, true)
 			set s__AbilityIcon_extra_backdrop[this]=BlzCreateFrameByType("BACKDROP", "", s__AbilityIcon_icon_container[this], "", 0)
 			call BlzFrameSetPoint(s__AbilityIcon_extra_backdrop[this], FRAMEPOINT_BOTTOMRIGHT, pivot, FRAMEPOINT_BOTTOMRIGHT, 0., 0.)
@@ -13142,7 +13381,7 @@ endfunction
 			set s__AbilityIcon_weapon_particle[this]=BlzCreateFrameByType("SPRITE", "", s__AbilityIcon_icon_container[this], "", 0)
 			call BlzFrameSetPoint(s__AbilityIcon_weapon_particle[this], FRAMEPOINT_BOTTOMLEFT, s__AbilityIcon_icon_backdrop[this], FRAMEPOINT_BOTTOMLEFT, 0., 0.)
 			call BlzFrameSetModel(s__AbilityIcon_weapon_particle[this], "UI\\Feedback\\ui-weaponabilityparticle.mdl", 0)
-			call BlzFrameSetSize(s__AbilityIcon_weapon_particle[this], (((UI__ABILITY_ICON_SIZE)*1.0) / 1800.), (((UI__ABILITY_ICON_SIZE)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetSize(s__AbilityIcon_weapon_particle[this], (((UI___ABILITY_ICON_SIZE)*1.0) / 1800.), (((UI___ABILITY_ICON_SIZE)*1.0) / 1800.)) // INLINED!!
 			call BlzFrameSetVisible(s__AbilityIcon_weapon_particle[this], false)
 			
 			set s__AbilityIcon_tooltip_mouseover[this]=BlzCreateFrameByType("BUTTON", "", s__AbilityIcon_icon_container[this], "", 0)
@@ -13159,7 +13398,7 @@ endfunction
 			call BlzFrameSetTexture(s__AbilityIcon_tooltip_backdrop[this], "replaceabletextures\\teamcolor\\teamcolor24.blp", 0, true)
 			set s__AbilityIcon_tooltip_text[this]=BlzCreateFrame("MyAbilTooltip", s__AbilityIcon_tooltip_container[this], 0, 0)
 			call BlzFrameSetTextAlignment(s__AbilityIcon_tooltip_text[this], TEXT_JUSTIFY_BOTTOM, TEXT_JUSTIFY_LEFT)
-			call BlzFrameSetPoint(s__AbilityIcon_tooltip_text[this], FRAMEPOINT_BOTTOM, FRAME_ORIGIN, FRAMEPOINT_BOTTOM, 0., (((UI__ABILITY_TOOLTIP_OFFSET_Y + s__AbilityIcon_TOOLTIP_STAT_BONUS_HEIGHT)*1.0) / 1800.) + 0.005) // INLINED!!
+			call BlzFrameSetPoint(s__AbilityIcon_tooltip_text[this], FRAMEPOINT_BOTTOM, FRAME_ORIGIN, FRAMEPOINT_BOTTOM, 0., (((UI___ABILITY_TOOLTIP_OFFSET_Y + s__AbilityIcon_TOOLTIP_STAT_BONUS_HEIGHT)*1.0) / 1800.) + 0.005) // INLINED!!
 			set s__AbilityIcon_tooltip_header[this]=BlzCreateFrameByType("FRAME", "", s__AbilityIcon_tooltip_container[this], "", 0)
 			call BlzFrameSetPoint(s__AbilityIcon_tooltip_header[this], FRAMEPOINT_BOTTOMLEFT, s__AbilityIcon_tooltip_text[this], FRAMEPOINT_TOPLEFT, 0., 0.)
 			call BlzFrameSetPoint(s__AbilityIcon_tooltip_header[this], FRAMEPOINT_TOPRIGHT, s__AbilityIcon_tooltip_text[this], FRAMEPOINT_TOPRIGHT, 0., (((s__AbilityIcon_TOOLTIP_HEADER_HEIGHT)*1.0) / 1800.)) // INLINED!!
@@ -13185,7 +13424,7 @@ endfunction
 			call BlzFrameSetTexture(s__AbilityIcon_tooltip_manacost_backdrop[this], "ui\\widgets\\tooltips\\human\\tooltipmanaicon.blp", 0, true)
 			set s__AbilityIcon_tooltip_cooldown_text[this]=BlzCreateFrame("MyText", s__AbilityIcon_tooltip_container[this], 0, 0)
 			call BlzFrameSetPoint(s__AbilityIcon_tooltip_cooldown_text[this], FRAMEPOINT_TOPRIGHT, s__AbilityIcon_tooltip_manacost_text[this], FRAMEPOINT_BOTTOMRIGHT, 0., - 0.005)
-			call BlzFrameSetSize(s__AbilityIcon_tooltip_cooldown_text[this], (((s__AbilityIcon_TOOLTIP_SUB_WIDTH)*1.0) / 1800.), (((s__AbilityIcon_TOOLTIP_SUB_HEIGHT)*1.0) / 1800.)) // INLINED!!
+			//call BlzFrameSetSize(.tooltip_cooldown_text,Math.px2Size(TOOLTIP_SUB_WIDTH),Math.px2Size(TOOLTIP_SUB_HEIGHT))
 			call BlzFrameSetTextAlignment(s__AbilityIcon_tooltip_cooldown_text[this], TEXT_JUSTIFY_TOP, TEXT_JUSTIFY_RIGHT)
 			set s__AbilityIcon_tooltip_cooldown_backdrop[this]=BlzCreateFrameByType("BACKDROP", "", s__AbilityIcon_tooltip_container[this], "", 0)
 			call BlzFrameSetPoint(s__AbilityIcon_tooltip_cooldown_backdrop[this], FRAMEPOINT_TOPRIGHT, s__AbilityIcon_tooltip_cooldown_text[this], FRAMEPOINT_TOPLEFT, 0., 0.)
@@ -13526,10 +13765,10 @@ endfunction
   function s__UI_refreshPeriodic takes integer this returns nothing
 			
 			call BlzFrameSetVisible(s__UI_hp_fill[this], sc__Unit_prototype__get_maxhp(s__UI_target[this]) > 0.)
-			call BlzFrameSetPoint(s__UI_hp_fill[this], FRAMEPOINT_TOPRIGHT, FRAME_HP_BAR, FRAMEPOINT_TOPLEFT, (((UI__BAR_WIDTH)*1.0) / 1800.) * ( sc__Unit_prototype__get_hp(s__UI_target[this]) / sc__Unit_prototype__get_maxhp(s__UI_target[this]) ), 0.) // INLINED!!
+			call BlzFrameSetPoint(s__UI_hp_fill[this], FRAMEPOINT_TOPRIGHT, FRAME_HP_BAR, FRAMEPOINT_TOPLEFT, (((UI___BAR_WIDTH)*1.0) / 1800.) * ( sc__Unit_prototype__get_hp(s__UI_target[this]) / sc__Unit_prototype__get_maxhp(s__UI_target[this]) ), 0.) // INLINED!!
 			call BlzFrameSetVisible(s__UI_mp_fill[this], sc__Unit_prototype__get_maxmp(s__UI_target[this]) > 0.)
 			if sc__Unit_prototype__get_maxmp(s__UI_target[this]) > 0. then
-				call BlzFrameSetPoint(s__UI_mp_fill[this], FRAMEPOINT_TOPRIGHT, FRAME_MP_BAR, FRAMEPOINT_TOPLEFT, (((UI__BAR_WIDTH)*1.0) / 1800.) * ( sc__Unit_prototype__get_mp(s__UI_target[this]) / sc__Unit_prototype__get_maxmp(s__UI_target[this]) ), 0.) // INLINED!!
+				call BlzFrameSetPoint(s__UI_mp_fill[this], FRAMEPOINT_TOPRIGHT, FRAME_MP_BAR, FRAMEPOINT_TOPLEFT, (((UI___BAR_WIDTH)*1.0) / 1800.) * ( sc__Unit_prototype__get_mp(s__UI_target[this]) / sc__Unit_prototype__get_maxmp(s__UI_target[this]) ), 0.) // INLINED!!
 			endif
 			call BlzFrameSetText(s__UI_hp_text[this], I2S(R2I(sc__Unit_prototype__get_hp(s__UI_target[this]))) + " / " + I2S(R2I(sc__Unit_prototype__get_maxhp(s__UI_target[this]))) + " (+" + R2SW(sc__Unit_prototype__get_hpregen(s__UI_target[this]), 1, 1) + ")")
 			call BlzFrameSetVisible(s__UI_mp_text[this], sc__Unit_prototype__get_maxmp(s__UI_target[this]) > 0.)
@@ -13538,7 +13777,7 @@ endfunction
 			call BlzFrameSetText(s__UI_level_text[this], " Lv." + I2S((s__Unit_prototype_level_true[(s__UI_target[this])])) + " ") // INLINED!!
 			
 			call BlzFrameSetVisible(s__UI_exp_fill[this], s__Unit_prototype_exp[s__UI_target[this]] > 0.)
-			call BlzFrameSetPoint(s__UI_exp_fill[this], FRAMEPOINT_TOPRIGHT, FRAME_EXP_BAR, FRAMEPOINT_TOPLEFT, (((UI__STAT1_WIDTH)*1.0) / 1800.) * ( I2R(s__Unit_prototype_exp[s__UI_target[this]]) / I2R(s__Unit_prototype_exp_max[s__UI_target[this]]) ), 0.) // INLINED!!
+			call BlzFrameSetPoint(s__UI_exp_fill[this], FRAMEPOINT_TOPRIGHT, FRAME_EXP_BAR, FRAMEPOINT_TOPLEFT, (((UI___STAT1_WIDTH)*1.0) / 1800.) * ( I2R(s__Unit_prototype_exp[s__UI_target[this]]) / I2R(s__Unit_prototype_exp_max[s__UI_target[this]]) ), 0.) // INLINED!!
 			call BlzFrameSetText(s__UI_exp_text[this], R2SW(I2R(s__Unit_prototype_exp[s__UI_target[this]]) / I2R(s__Unit_prototype_exp_max[s__UI_target[this]]), 1, 1) + "%")
 			
 			call s__UI_refreshAbilityIcons(this)
@@ -13595,7 +13834,7 @@ endfunction
 			call BlzFrameSetAllPoints(s__UI_hp_text[this], FRAME_HP_BAR)
 			call BlzFrameSetTextAlignment(s__UI_hp_text[this], TEXT_JUSTIFY_CENTER, TEXT_JUSTIFY_CENTER)
 			set s__UI_hp_icon[this]=BlzCreateFrameByType("BACKDROP", "", s__UI_container[this], "", 0)
-			call BlzFrameSetPoint(s__UI_hp_icon[this], FRAMEPOINT_TOPLEFT, s__UI_hp_text[this], FRAMEPOINT_TOPLEFT, (((UI__BAR_HEIGHT - 20)*1.0) / 1800.) / 2, - (((UI__BAR_HEIGHT - 20)*1.0) / 1800.) / 2) // INLINED!!
+			call BlzFrameSetPoint(s__UI_hp_icon[this], FRAMEPOINT_TOPLEFT, s__UI_hp_text[this], FRAMEPOINT_TOPLEFT, (((UI___BAR_HEIGHT - 20)*1.0) / 1800.) / 2, - (((UI___BAR_HEIGHT - 20)*1.0) / 1800.) / 2) // INLINED!!
 			call BlzFrameSetSize(s__UI_hp_icon[this], (((20)*1.0) / 1800.), (((20)*1.0) / 1800.)) // INLINED!!
 			call BlzFrameSetTexture(s__UI_hp_icon[this], "ui\\widgets\\tooltips\\human\\tooltiphpicon.blp", 0, true)
 			set s__UI_mp_fill[this]=BlzCreateFrameByType("BACKDROP", "", s__UI_container[this], "", 0)
@@ -13605,7 +13844,7 @@ endfunction
 			call BlzFrameSetAllPoints(s__UI_mp_text[this], FRAME_MP_BAR)
 			call BlzFrameSetTextAlignment(s__UI_mp_text[this], TEXT_JUSTIFY_CENTER, TEXT_JUSTIFY_CENTER)
 			set s__UI_mp_icon[this]=BlzCreateFrameByType("BACKDROP", "", s__UI_container[this], "", 0)
-			call BlzFrameSetPoint(s__UI_mp_icon[this], FRAMEPOINT_TOPLEFT, s__UI_mp_text[this], FRAMEPOINT_TOPLEFT, (((UI__BAR_HEIGHT - 20)*1.0) / 1800.) / 2, - (((UI__BAR_HEIGHT - 20)*1.0) / 1800.) / 2) // INLINED!!
+			call BlzFrameSetPoint(s__UI_mp_icon[this], FRAMEPOINT_TOPLEFT, s__UI_mp_text[this], FRAMEPOINT_TOPLEFT, (((UI___BAR_HEIGHT - 20)*1.0) / 1800.) / 2, - (((UI___BAR_HEIGHT - 20)*1.0) / 1800.) / 2) // INLINED!!
 			call BlzFrameSetSize(s__UI_mp_icon[this], (((20)*1.0) / 1800.), (((20)*1.0) / 1800.)) // INLINED!!
 			call BlzFrameSetTexture(s__UI_mp_icon[this], "ui\\widgets\\tooltips\\human\\tooltipmanaicon.blp", 0, true)
 			
@@ -13621,7 +13860,7 @@ endfunction
 			set s__UI_exp_fill[this]=BlzCreateFrameByType("BACKDROP", "", s__UI_container[this], "", 0)
 			call BlzFrameSetPoint(s__UI_exp_fill[this], FRAMEPOINT_BOTTOMLEFT, FRAME_EXP_BAR, FRAMEPOINT_BOTTOMLEFT, 0., 0.)
 			call BlzFrameSetTexture(s__UI_exp_fill[this], "replaceabletextures\\teamcolor\\teamcolor15.blp", 0, true)
-			call BlzFrameSetPoint(s__UI_exp_fill[this], FRAMEPOINT_TOPRIGHT, FRAME_EXP_BAR, FRAMEPOINT_TOPLEFT, (((UI__STAT1_WIDTH)*1.0) / 1800.) * 0.5, 0.) // INLINED!!
+			call BlzFrameSetPoint(s__UI_exp_fill[this], FRAMEPOINT_TOPRIGHT, FRAME_EXP_BAR, FRAMEPOINT_TOPLEFT, (((UI___STAT1_WIDTH)*1.0) / 1800.) * 0.5, 0.) // INLINED!!
 			set s__UI_exp_text[this]=BlzCreateFrame("MyTextSmall", s__UI_container[this], 0, 0)
 			call BlzFrameSetPoint(s__UI_exp_text[this], FRAMEPOINT_BOTTOM, FRAME_EXP_BAR, FRAMEPOINT_BOTTOM, 0., 0.)
 			call BlzFrameSetTextAlignment(s__UI_exp_text[this], TEXT_JUSTIFY_BOTTOM, TEXT_JUSTIFY_CENTER)
@@ -13674,7 +13913,7 @@ endfunction
 			endloop
 			
 			set s__UI_ability_error[this]=BlzCreateFrame("MyText", s__UI_container[this], 0, 0)
-			call BlzFrameSetPoint(s__UI_ability_error[this], FRAMEPOINT_BOTTOM, FRAME_ORIGIN, FRAMEPOINT_BOTTOM, 0., (((UI__ABILITY_ERROR_OFFSET_Y)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetPoint(s__UI_ability_error[this], FRAMEPOINT_BOTTOM, FRAME_ORIGIN, FRAMEPOINT_BOTTOM, 0., (((UI___ABILITY_ERROR_OFFSET_Y)*1.0) / 1800.)) // INLINED!!
 			call BlzFrameSetTextAlignment(s__UI_ability_error[this], TEXT_JUSTIFY_BOTTOM, TEXT_JUSTIFY_CENTER)
 			
 			call s__UI_setTarget(this,(s__User_FOCUSUNIT[GetPlayerId((p))])) // INLINED!!
@@ -13788,10 +14027,10 @@ endfunction
    local framehandle f= null
    local framehandle bf= null
    local integer i= 0
-   local real c_inset= (((UI__ABILITY_CONTAINER_HEIGHT - UI__ABILITY_ICON_SIZE)*1.0) / 1800.) / 2. // INLINED!!
-   local real c_width= (((UI__ABILITY_CONTAINER_WIDTH)*1.0) / 1800.) - ( c_inset * 2 ) // INLINED!!
+   local real c_inset= (((UI___ABILITY_CONTAINER_HEIGHT - UI___ABILITY_ICON_SIZE)*1.0) / 1800.) / 2. // INLINED!!
+   local real c_width= (((UI___ABILITY_CONTAINER_WIDTH)*1.0) / 1800.) - ( c_inset * 2 ) // INLINED!!
    local real c_cell= c_width / 10.
-   local real c_padding= c_cell - (((UI__ABILITY_ICON_SIZE)*1.0) / 1800.) // INLINED!!
+   local real c_padding= c_cell - (((UI___ABILITY_ICON_SIZE)*1.0) / 1800.) // INLINED!!
    local trigger t= null
 			set FRAME_ORIGIN=BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0)
 			set FRAME_GAME_UI=BlzCreateFrameByType("FRAME", "", FRAME_ORIGIN, "", 0)
@@ -13801,54 +14040,54 @@ endfunction
 			set FRAME_MINIMAP=BlzGetOriginFrame(ORIGIN_FRAME_MINIMAP, 0)
 			call BlzFrameSetVisible(FRAME_MINIMAP, true)
 			call BlzFrameClearAllPoints(FRAME_MINIMAP)
-			call BlzFrameSetPoint(FRAME_MINIMAP, FRAMEPOINT_BOTTOMLEFT, FRAME_ORIGIN, FRAMEPOINT_BOTTOMLEFT, (((UI__MINIMAP_OFFSET_X + UI__MINIMAP_BORDER)*1.0) / 1800.), (((UI__MINIMAP_OFFSET_Y + UI__MINIMAP_BORDER)*1.0) / 1800.)) // INLINED!!
-			call BlzFrameSetPoint(FRAME_MINIMAP, FRAMEPOINT_TOPRIGHT, FRAME_ORIGIN, FRAMEPOINT_BOTTOMLEFT, (((UI__MINIMAP_OFFSET_X + UI__MINIMAP_BORDER + UI__MINIMAP_SIZE)*1.0) / 1800.), (((UI__MINIMAP_OFFSET_Y + UI__MINIMAP_BORDER + UI__MINIMAP_SIZE)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetPoint(FRAME_MINIMAP, FRAMEPOINT_BOTTOMLEFT, FRAME_ORIGIN, FRAMEPOINT_BOTTOMLEFT, (((UI___MINIMAP_OFFSET_X + UI___MINIMAP_BORDER)*1.0) / 1800.), (((UI___MINIMAP_OFFSET_Y + UI___MINIMAP_BORDER)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetPoint(FRAME_MINIMAP, FRAMEPOINT_TOPRIGHT, FRAME_ORIGIN, FRAMEPOINT_BOTTOMLEFT, (((UI___MINIMAP_OFFSET_X + UI___MINIMAP_BORDER + UI___MINIMAP_SIZE)*1.0) / 1800.), (((UI___MINIMAP_OFFSET_Y + UI___MINIMAP_BORDER + UI___MINIMAP_SIZE)*1.0) / 1800.)) // INLINED!!
 			set FRAME_MINIMAP_BACKDROP=BlzCreateFrameByType("BACKDROP", "", BlzGetOriginFrame(ORIGIN_FRAME_WORLD_FRAME, 0), "", 0)
-			call BlzFrameSetPoint(FRAME_MINIMAP_BACKDROP, FRAMEPOINT_BOTTOMLEFT, FRAME_ORIGIN, FRAMEPOINT_BOTTOMLEFT, (((UI__MINIMAP_OFFSET_X)*1.0) / 1800.), (((UI__MINIMAP_OFFSET_Y)*1.0) / 1800.)) // INLINED!!
-			call BlzFrameSetSize(FRAME_MINIMAP_BACKDROP, (((UI__MINIMAP_SIZE + UI__MINIMAP_BORDER * 2)*1.0) / 1800.), (((UI__MINIMAP_SIZE + UI__MINIMAP_BORDER * 2)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetPoint(FRAME_MINIMAP_BACKDROP, FRAMEPOINT_BOTTOMLEFT, FRAME_ORIGIN, FRAMEPOINT_BOTTOMLEFT, (((UI___MINIMAP_OFFSET_X)*1.0) / 1800.), (((UI___MINIMAP_OFFSET_Y)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetSize(FRAME_MINIMAP_BACKDROP, (((UI___MINIMAP_SIZE + UI___MINIMAP_BORDER * 2)*1.0) / 1800.), (((UI___MINIMAP_SIZE + UI___MINIMAP_BORDER * 2)*1.0) / 1800.)) // INLINED!!
 			call BlzFrameSetTexture(FRAME_MINIMAP_BACKDROP, "ReplaceableTextures\\teamcolor\\teamcolor27.blp", 0, true)
 			call BlzFrameSetAlpha(FRAME_MINIMAP_BACKDROP, 128)
 			
 			set FRAME_PORTRAIT_BACKDROP=BlzCreateFrameByType("BACKDROP", "", BlzGetOriginFrame(ORIGIN_FRAME_WORLD_FRAME, 0), "", 0)
-			call BlzFrameSetPoint(FRAME_PORTRAIT_BACKDROP, FRAMEPOINT_TOPLEFT, FRAME_ORIGIN, FRAMEPOINT_BOTTOM, (((UI__PORTRAIT_OFFSET_X)*1.0) / 1800.), (((UI__PORTRAIT_OFFSET_Y + UI__PORTRAIT_BORDER + UI__PORTRAIT_SIZE)*1.0) / 1800.)) // INLINED!!
-			call BlzFrameSetSize(FRAME_PORTRAIT_BACKDROP, (((UI__PORTRAIT_SIZE)*1.0) / 1800.), (((UI__PORTRAIT_SIZE)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetPoint(FRAME_PORTRAIT_BACKDROP, FRAMEPOINT_TOPLEFT, FRAME_ORIGIN, FRAMEPOINT_BOTTOM, (((UI___PORTRAIT_OFFSET_X)*1.0) / 1800.), (((UI___PORTRAIT_OFFSET_Y + UI___PORTRAIT_BORDER + UI___PORTRAIT_SIZE)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetSize(FRAME_PORTRAIT_BACKDROP, (((UI___PORTRAIT_SIZE)*1.0) / 1800.), (((UI___PORTRAIT_SIZE)*1.0) / 1800.)) // INLINED!!
 			call BlzFrameSetTexture(FRAME_PORTRAIT_BACKDROP, "ReplaceableTextures\\teamcolor\\teamcolor27.blp", 0, true)
 			call BlzFrameSetAlpha(FRAME_PORTRAIT_BACKDROP, 128)
 			set FRAME_PORTRAIT=BlzGetOriginFrame(ORIGIN_FRAME_PORTRAIT, 0)
 			call BlzFrameSetVisible(FRAME_PORTRAIT, true)
 			call BlzFrameClearAllPoints(FRAME_PORTRAIT)
-			call BlzFrameSetAbsPoint(FRAME_PORTRAIT, FRAMEPOINT_TOPLEFT, (((( 1920 / 2 ) + UI__PORTRAIT_OFFSET_X)*1.0) / 1800.) * 0.75, (((UI__PORTRAIT_OFFSET_Y + UI__PORTRAIT_BORDER + UI__PORTRAIT_SIZE)*1.0) / 1800.)) // INLINED!!
-			call BlzFrameSetAbsPoint(FRAME_PORTRAIT, FRAMEPOINT_BOTTOMRIGHT, (((( 1920 / 2 ) + UI__PORTRAIT_SIZE + UI__PORTRAIT_OFFSET_X)*1.0) / 1800.) * 0.75, (((UI__PORTRAIT_OFFSET_Y + UI__PORTRAIT_BORDER)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetAbsPoint(FRAME_PORTRAIT, FRAMEPOINT_TOPLEFT, (((( 1920 / 2 ) + UI___PORTRAIT_OFFSET_X)*1.0) / 1800.) * 0.75, (((UI___PORTRAIT_OFFSET_Y + UI___PORTRAIT_BORDER + UI___PORTRAIT_SIZE)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetAbsPoint(FRAME_PORTRAIT, FRAMEPOINT_BOTTOMRIGHT, (((( 1920 / 2 ) + UI___PORTRAIT_SIZE + UI___PORTRAIT_OFFSET_X)*1.0) / 1800.) * 0.75, (((UI___PORTRAIT_OFFSET_Y + UI___PORTRAIT_BORDER)*1.0) / 1800.)) // INLINED!!
 			
 			set FRAME_HP_BAR=BlzCreateFrameByType("BACKDROP", "", FRAME_GAME_UI, "", 0)
-			call BlzFrameSetPoint(FRAME_HP_BAR, FRAMEPOINT_BOTTOMLEFT, FRAME_ORIGIN, FRAMEPOINT_BOTTOM, (((- UI__BAR_WIDTH / 2)*1.0) / 1800.), (((UI__HP_BAR_OFFSET_Y)*1.0) / 1800.)) // INLINED!!
-			call BlzFrameSetSize(FRAME_HP_BAR, (((UI__BAR_WIDTH)*1.0) / 1800.), (((UI__BAR_HEIGHT)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetPoint(FRAME_HP_BAR, FRAMEPOINT_BOTTOMLEFT, FRAME_ORIGIN, FRAMEPOINT_BOTTOM, (((- UI___BAR_WIDTH / 2)*1.0) / 1800.), (((UI___HP_BAR_OFFSET_Y)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetSize(FRAME_HP_BAR, (((UI___BAR_WIDTH)*1.0) / 1800.), (((UI___BAR_HEIGHT)*1.0) / 1800.)) // INLINED!!
 			call BlzFrameSetTexture(FRAME_HP_BAR, "ReplaceableTextures\\teamcolor\\teamcolor10.blp", 0, true)
 			call BlzFrameSetAlpha(FRAME_HP_BAR, 96)
 			set FRAME_MP_BAR=BlzCreateFrameByType("BACKDROP", "", FRAME_GAME_UI, "", 0)
-			call BlzFrameSetPoint(FRAME_MP_BAR, FRAMEPOINT_BOTTOMLEFT, FRAME_ORIGIN, FRAMEPOINT_BOTTOM, (((- UI__BAR_WIDTH / 2)*1.0) / 1800.), (((UI__MP_BAR_OFFSET_Y)*1.0) / 1800.)) // INLINED!!
-			call BlzFrameSetSize(FRAME_MP_BAR, (((UI__BAR_WIDTH)*1.0) / 1800.), (((UI__BAR_HEIGHT)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetPoint(FRAME_MP_BAR, FRAMEPOINT_BOTTOMLEFT, FRAME_ORIGIN, FRAMEPOINT_BOTTOM, (((- UI___BAR_WIDTH / 2)*1.0) / 1800.), (((UI___MP_BAR_OFFSET_Y)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetSize(FRAME_MP_BAR, (((UI___BAR_WIDTH)*1.0) / 1800.), (((UI___BAR_HEIGHT)*1.0) / 1800.)) // INLINED!!
 			call BlzFrameSetTexture(FRAME_MP_BAR, "ReplaceableTextures\\teamcolor\\teamcolor13.blp", 0, true)
 			call BlzFrameSetAlpha(FRAME_MP_BAR, 96)
 			
 			set FRAME_ABILITY_CONTAINER=BlzCreateFrameByType("BACKDROP", "", FRAME_GAME_UI, "", 0)
-			call BlzFrameSetPoint(FRAME_ABILITY_CONTAINER, FRAMEPOINT_BOTTOMLEFT, FRAME_ORIGIN, FRAMEPOINT_BOTTOM, (((- UI__ABILITY_CONTAINER_WIDTH / 2)*1.0) / 1800.), (((UI__ABILITY_CONTAINER_OFFSET_Y)*1.0) / 1800.)) // INLINED!!
-			call BlzFrameSetSize(FRAME_ABILITY_CONTAINER, (((UI__ABILITY_CONTAINER_WIDTH)*1.0) / 1800.), (((UI__ABILITY_CONTAINER_HEIGHT)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetPoint(FRAME_ABILITY_CONTAINER, FRAMEPOINT_BOTTOMLEFT, FRAME_ORIGIN, FRAMEPOINT_BOTTOM, (((- UI___ABILITY_CONTAINER_WIDTH / 2)*1.0) / 1800.), (((UI___ABILITY_CONTAINER_OFFSET_Y)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetSize(FRAME_ABILITY_CONTAINER, (((UI___ABILITY_CONTAINER_WIDTH)*1.0) / 1800.), (((UI___ABILITY_CONTAINER_HEIGHT)*1.0) / 1800.)) // INLINED!!
 			call BlzFrameSetTexture(FRAME_ABILITY_CONTAINER, "Textures\\Black32.blp", 0, true)
 			call BlzFrameSetAlpha(FRAME_ABILITY_CONTAINER, 128)
 			
 			loop
 				exitwhen i >= 10
 				set s__FRAME_ABILITY_ICON[i]= BlzCreateFrameByType("BACKDROP", "", FRAME_GAME_UI, "", 0)
-				call BlzFrameSetPoint(s__FRAME_ABILITY_ICON[i], FRAMEPOINT_TOPLEFT, FRAME_ABILITY_CONTAINER, FRAMEPOINT_TOPLEFT, c_inset + ( c_padding / 2. ) + ( i * c_cell ), (((- ( UI__ABILITY_CONTAINER_HEIGHT - UI__ABILITY_ICON_SIZE ) / 2)*1.0) / 1800.)) // INLINED!!
-				call BlzFrameSetSize(s__FRAME_ABILITY_ICON[i], (((UI__ABILITY_ICON_SIZE)*1.0) / 1800.), (((UI__ABILITY_ICON_SIZE)*1.0) / 1800.)) // INLINED!!
+				call BlzFrameSetPoint(s__FRAME_ABILITY_ICON[i], FRAMEPOINT_TOPLEFT, FRAME_ABILITY_CONTAINER, FRAMEPOINT_TOPLEFT, c_inset + ( c_padding / 2. ) + ( i * c_cell ), (((- ( UI___ABILITY_CONTAINER_HEIGHT - UI___ABILITY_ICON_SIZE ) / 2)*1.0) / 1800.)) // INLINED!!
+				call BlzFrameSetSize(s__FRAME_ABILITY_ICON[i], (((UI___ABILITY_ICON_SIZE)*1.0) / 1800.), (((UI___ABILITY_ICON_SIZE)*1.0) / 1800.)) // INLINED!!
 				call BlzFrameSetTexture(s__FRAME_ABILITY_ICON[i], "ReplaceableTextures\\CommandButtons\\BTNBlackIcon.blp", 0, true)
 				set i=i + 1
 			endloop
 			
 			set FRAME_STAT1=BlzCreateFrameByType("BACKDROP", "", FRAME_GAME_UI, "", 0)
 			call BlzFrameSetPoint(FRAME_STAT1, FRAMEPOINT_TOPLEFT, FRAME_PORTRAIT_BACKDROP, FRAMEPOINT_TOPRIGHT, 0., 0.)
-			call BlzFrameSetPoint(FRAME_STAT1, FRAMEPOINT_BOTTOMRIGHT, FRAME_PORTRAIT_BACKDROP, FRAMEPOINT_BOTTOMRIGHT, (((UI__STAT1_WIDTH)*1.0) / 1800.), 0.) // INLINED!!
+			call BlzFrameSetPoint(FRAME_STAT1, FRAMEPOINT_BOTTOMRIGHT, FRAME_PORTRAIT_BACKDROP, FRAMEPOINT_BOTTOMRIGHT, (((UI___STAT1_WIDTH)*1.0) / 1800.), 0.) // INLINED!!
 			call BlzFrameSetTexture(FRAME_STAT1, "replaceabletextures\\teamcolor\\teamcolor27.blp", 0, true)
 			call BlzFrameSetAlpha(FRAME_STAT1, 200)
 			set FRAME_STAT2=BlzCreateFrameByType("BACKDROP", "", FRAME_GAME_UI, "", 0)
@@ -13859,15 +14098,15 @@ endfunction
 			
 			set FRAME_EXP_BAR=BlzCreateFrameByType("BACKDROP", "", FRAME_GAME_UI, "", 0)
 			call BlzFrameSetPoint(FRAME_EXP_BAR, FRAMEPOINT_BOTTOMLEFT, FRAME_STAT1, FRAMEPOINT_BOTTOMLEFT, 0., 0.)
-			call BlzFrameSetPoint(FRAME_EXP_BAR, FRAMEPOINT_TOPRIGHT, FRAME_STAT1, FRAMEPOINT_BOTTOMRIGHT, 0., (((UI__EXP_BAR_HEIGHT)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetPoint(FRAME_EXP_BAR, FRAMEPOINT_TOPRIGHT, FRAME_STAT1, FRAMEPOINT_BOTTOMRIGHT, 0., (((UI___EXP_BAR_HEIGHT)*1.0) / 1800.)) // INLINED!!
 			call BlzFrameSetTexture(FRAME_EXP_BAR, "replaceabletextures\\teamcolor\\teamcolor03.blp", 0, true)
 			
 			set FRAME_MAKE_POTION=BlzCreateFrameByType("FRAME", "", FRAME_GAME_UI, "", 0)
 			call BlzFrameSetPoint(FRAME_MAKE_POTION, FRAMEPOINT_TOPLEFT, FRAME_ORIGIN, FRAMEPOINT_TOPLEFT, 0, 0)
 			
 			set FRAME_SKILL_SHOP_BACKDROP=BlzCreateFrame("EMEdge", FRAME_GAME_UI, 0, 0)
-			call BlzFrameSetPoint(FRAME_SKILL_SHOP_BACKDROP, FRAMEPOINT_TOP, FRAME_ORIGIN, FRAMEPOINT_TOP, 0., (((UI__SKILL_SHOP_OFFSET_Y)*1.0) / 1800.)) // INLINED!!
-			call BlzFrameSetSize(FRAME_SKILL_SHOP_BACKDROP, (((UI__SKILL_SHOP_WIDTH)*1.0) / 1800.), (((UI__SKILL_SHOP_HEIGHT)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetPoint(FRAME_SKILL_SHOP_BACKDROP, FRAMEPOINT_TOP, FRAME_ORIGIN, FRAMEPOINT_TOP, 0., (((UI___SKILL_SHOP_OFFSET_Y)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetSize(FRAME_SKILL_SHOP_BACKDROP, (((UI___SKILL_SHOP_WIDTH)*1.0) / 1800.), (((UI___SKILL_SHOP_HEIGHT)*1.0) / 1800.)) // INLINED!!
 			set f=BlzCreateFrame("MyTextBox", FRAME_SKILL_SHOP_BACKDROP, 0, 0)
 			set bf=f
 			set f=BlzCreateFrame("MyTextLarge", FRAME_SKILL_SHOP_BACKDROP, 0, 0)
@@ -13877,14 +14116,14 @@ endfunction
 			call BlzFrameSetPoint(bf, FRAMEPOINT_BOTTOMLEFT, f, FRAMEPOINT_BOTTOMLEFT, - 0.005, - 0.005)
 			call BlzFrameSetPoint(bf, FRAMEPOINT_TOPRIGHT, f, FRAMEPOINT_TOPRIGHT, 0.005, 0.005)
 			set FRAME_SKILL_SHOP=BlzCreateFrameByType("BACKDROP", "", FRAME_GAME_UI, "", 0)
-			call BlzFrameSetPoint(FRAME_SKILL_SHOP, FRAMEPOINT_TOP, FRAME_SKILL_SHOP_BACKDROP, FRAMEPOINT_TOP, 0., - (((UI__SKILL_SHOP_INSET)*1.0) / 1800.)) // INLINED!!
-			call BlzFrameSetSize(FRAME_SKILL_SHOP, (((UI__SKILL_SHOP_WIDTH - UI__SKILL_SHOP_INSET * 2)*1.0) / 1800.), (((UI__SKILL_SHOP_HEIGHT - UI__SKILL_SHOP_INSET * 2)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetPoint(FRAME_SKILL_SHOP, FRAMEPOINT_TOP, FRAME_SKILL_SHOP_BACKDROP, FRAMEPOINT_TOP, 0., - (((UI___SKILL_SHOP_INSET)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetSize(FRAME_SKILL_SHOP, (((UI___SKILL_SHOP_WIDTH - UI___SKILL_SHOP_INSET * 2)*1.0) / 1800.), (((UI___SKILL_SHOP_HEIGHT - UI___SKILL_SHOP_INSET * 2)*1.0) / 1800.)) // INLINED!!
 			call BlzFrameSetAlpha(FRAME_SKILL_SHOP, 0)
 			call BlzFrameSetVisible(FRAME_SKILL_SHOP_BACKDROP, false)
 			
 			set FRAME_SLOT_CHANGER=BlzCreateFrame("MBEdge", FRAME_GAME_UI, 0, 0)
-			call BlzFrameSetPoint(FRAME_SLOT_CHANGER, FRAMEPOINT_CENTER, FRAME_ORIGIN, FRAMEPOINT_CENTER, 0., (((UI__SLOT_CHANGER_OFFSET_Y)*1.0) / 1800.)) // INLINED!!
-			call BlzFrameSetSize(FRAME_SLOT_CHANGER, (((UI__SLOT_CHANGER_WIDTH)*1.0) / 1800.), (((UI__SLOT_CHANGER_HEIGHT)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetPoint(FRAME_SLOT_CHANGER, FRAMEPOINT_CENTER, FRAME_ORIGIN, FRAMEPOINT_CENTER, 0., (((UI___SLOT_CHANGER_OFFSET_Y)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetSize(FRAME_SLOT_CHANGER, (((UI___SLOT_CHANGER_WIDTH)*1.0) / 1800.), (((UI___SLOT_CHANGER_HEIGHT)*1.0) / 1800.)) // INLINED!!
 			call BlzFrameSetVisible(FRAME_SLOT_CHANGER, false)
 			set f=BlzCreateFrame("MyTextBox", FRAME_SLOT_CHANGER, 0, 0)
 			set bf=f
@@ -14416,6 +14655,10 @@ endfunction
 
 		
 
+  function s__UnitMovement_explosionFillUnits takes integer this,group g returns nothing
+			call sc__Group_fillUnitsInRange(g , sc__Actor__get_x(this) , sc__Actor__get_y(this) , s__UnitMovement_radius_explosion[this])
+  endfunction
+
   function s__UnitMovement_explosionFilter takes integer this,integer target returns boolean
 			if not s__UnitMovement_affectFilter(this,target) then
 				return false
@@ -14431,15 +14674,23 @@ endfunction
   function s__UnitMovement_explosionAction takes integer this returns nothing
    local integer i= 0
    local unit u= null
+   local group g= sc__Group_new()
+			call sc__UnitMovement_explosionFillUnits(this,g)
 			loop
-				set u=BlzGroupUnitAt(UnitPrototype_GROUP, i)
+				set u=BlzGroupUnitAt(g, i)
 				exitwhen u == null
-				if s__UnitMovement_explosionFilter(this,sc__Unit_prototype_get(u)) then
-					call sc__UnitMovement_executeExplosion(this,sc__Unit_prototype_get(u))
-					call GroupAddUnit(s__UnitMovement_group_wave[this], u)
+				if not IsUnitType(u, UNIT_TYPE_DEAD) then
+					if sc__Unit_prototype_get(u) > 0 then
+						if s__UnitMovement_explosionFilter(this,sc__Unit_prototype_get(u)) then
+							call sc__UnitMovement_executeExplosion(this,sc__Unit_prototype_get(u))
+							call GroupAddUnit(s__UnitMovement_group_wave[this], u)
+						endif
+					endif
 				endif
 				set i=i + 1
 			endloop
+			call sc__Group_release(g)
+			set g=null
 			set u=null
   endfunction
 
@@ -17708,13 +17959,13 @@ endfunction
 				call BlzFrameSetText(BlzGetFrameByName("SkillShopBuyButtonText", this), "|c99999999판매됨|r")
 			else
 				
-				call BlzFrameSetTexture(s__SkillShopWidget_icon[this], "ReplaceableTextures\\CommandButtons\\" + (LoadStr(Ability___HASH, (id), s__Ability_INDEX_ICON_PATH)) + ".blp", 0, true) // INLINED!!
-				call BlzFrameSetTexture(s__SkillShopWidget_tier_border[this], "Textures\\ability_border_tier" + I2S((LoadInteger(Ability___HASH, (id), s__Ability_INDEX_TIER))) + ".blp", 0, true) // INLINED!!
+				call BlzFrameSetTexture(s__SkillShopWidget_icon[this], "ReplaceableTextures\\CommandButtons\\" + (LoadStr(Ability__HASH, (id), s__Ability_INDEX_ICON_PATH)) + ".blp", 0, true) // INLINED!!
+				call BlzFrameSetTexture(s__SkillShopWidget_tier_border[this], "Textures\\ability_border_tier" + I2S((LoadInteger(Ability__HASH, (id), s__Ability_INDEX_TIER))) + ".blp", 0, true) // INLINED!!
 				call BlzFrameSetVisible(s__SkillShopWidget_tier_border[this], true)
 				
 				call BlzFrameSetVisible(s__SkillShopWidget_info_weapon_backdrop[this], sc__Ability_getTypeTag(id , 0) == ABILITY_STRING_WEAPON)
 				
-				call BlzFrameSetText(s__SkillShopWidget_name[this], TIER_STRING_COLOR[(LoadInteger(Ability___HASH, (id), s__Ability_INDEX_TIER))] + (LoadStr(Ability___HASH, (id), s__Ability_INDEX_NAME)) + "|r") // INLINED!!
+				call BlzFrameSetText(s__SkillShopWidget_name[this], TIER_STRING_COLOR[(LoadInteger(Ability__HASH, (id), s__Ability_INDEX_TIER))] + (LoadStr(Ability__HASH, (id), s__Ability_INDEX_NAME)) + "|r") // INLINED!!
 				
 				set i=1
 				loop
@@ -17731,11 +17982,11 @@ endfunction
 				
 				set s=s + "\n\n|cff00ffff능력치 보너스 :|r"
 				call BlzFrameSetText(s__SkillShopWidget_tag[this], s)
-				call BlzFrameSetTexture(s__SkillShopWidget_bonus_stat1[this], STAT_TYPE_ICON[(LoadInteger(Ability___HASH, (id ), s__Ability_INDEX_BONUS_STAT + ( 0)))], 0, true) // INLINED!!
-				call BlzFrameSetTexture(s__SkillShopWidget_bonus_stat2[this], STAT_TYPE_ICON[(LoadInteger(Ability___HASH, (id ), s__Ability_INDEX_BONUS_STAT + ( 1)))], 0, true) // INLINED!!
+				call BlzFrameSetTexture(s__SkillShopWidget_bonus_stat1[this], STAT_TYPE_ICON[(LoadInteger(Ability__HASH, (id ), s__Ability_INDEX_BONUS_STAT + ( 0)))], 0, true) // INLINED!!
+				call BlzFrameSetTexture(s__SkillShopWidget_bonus_stat2[this], STAT_TYPE_ICON[(LoadInteger(Ability__HASH, (id ), s__Ability_INDEX_BONUS_STAT + ( 1)))], 0, true) // INLINED!!
 				
 				call BlzFrameSetPoint(BlzGetFrameByName("SkillShopBuyButtonText", this), FRAMEPOINT_CENTER, s__SkillShopWidget_btn[this], FRAMEPOINT_CENTER, (((12)*1.0) / 1800.), 0.) // INLINED!!
-				call BlzFrameSetText(BlzGetFrameByName("SkillShopBuyButtonText", this), "|cffffcc00" + I2S((LoadInteger(Ability___HASH, (id), s__Ability_INDEX_COST))) + "|r") // INLINED!!
+				call BlzFrameSetText(BlzGetFrameByName("SkillShopBuyButtonText", this), "|cffffcc00" + I2S((LoadInteger(Ability__HASH, (id), s__Ability_INDEX_COST))) + "|r") // INLINED!!
 			endif
   endfunction
 
@@ -17749,7 +18000,7 @@ endfunction
 			
 			if BlzGetTriggerFrameEvent() == FRAMEEVENT_CONTROL_CLICK then
 				
-				if (GetPlayerState((p), PLAYER_STATE_RESOURCE_GOLD)) >= (LoadInteger(Ability___HASH, (s__SkillShopWidget_id[this]), s__Ability_INDEX_COST)) then // INLINED!!
+				if (GetPlayerState((p), PLAYER_STATE_RESOURCE_GOLD)) >= (LoadInteger(Ability__HASH, (s__SkillShopWidget_id[this]), s__Ability_INDEX_COST)) then // INLINED!!
 					set i=s__Unit_prototype_addAbility((s__User_FOCUSUNIT[GetPlayerId((p))]),s__SkillShopWidget_id[this]) // INLINED!!
 					set ti=i
 					
@@ -17761,7 +18012,7 @@ endfunction
 							endif
 						endif
 						
-						call sc__User_addGold(p , - 1 * (LoadInteger(Ability___HASH, (s__SkillShopWidget_id[this]), s__Ability_INDEX_COST))) // INLINED!!
+						call sc__User_addGold(p , - 1 * (LoadInteger(Ability__HASH, (s__SkillShopWidget_id[this]), s__Ability_INDEX_COST))) // INLINED!!
 						
 						call s__SkillShopWidget_setTarget(this,0)
 						set ABILITY_UI_REFRESH_PLAYER=GetTriggerPlayer()
@@ -17943,7 +18194,7 @@ endfunction
 
   function s__SkillShop_setLevel takes integer this,integer nv returns nothing
 			set s__SkillShop_level[this]=nv
-			set s__SkillShop_exp_max[this]=SkillShop__MAX_EXP[s__SkillShop_level[this]]
+			set s__SkillShop_exp_max[this]=SkillShop___MAX_EXP[s__SkillShop_level[this]]
 			call BlzFrameSetVisible(s__SkillShop_btn_donate[this], s__SkillShop_level[this] > 1)
 			call BlzFrameSetVisible(s__SkillShop_btn_refresh[this], s__SkillShop_level[this] > 1)
 			call s__SkillShop_refreshChanceText(this)
@@ -18374,17 +18625,17 @@ endfunction
 				set i=i + 1
 			endloop
 			
-			set SkillShop__MAX_EXP[1]=2
-			set SkillShop__MAX_EXP[2]=6
-			set SkillShop__MAX_EXP[3]=10
-			set SkillShop__MAX_EXP[4]=20
-			set SkillShop__MAX_EXP[5]=36
-			set SkillShop__MAX_EXP[6]=56
-			set SkillShop__MAX_EXP[7]=80
-			set SkillShop__MAX_EXP[8]=112
-			set SkillShop__MAX_EXP[9]=144
-			set SkillShop__MAX_EXP[10]=176
-			set SkillShop__MAX_EXP[11]=210
+			set SkillShop___MAX_EXP[1]=2
+			set SkillShop___MAX_EXP[2]=6
+			set SkillShop___MAX_EXP[3]=10
+			set SkillShop___MAX_EXP[4]=20
+			set SkillShop___MAX_EXP[5]=36
+			set SkillShop___MAX_EXP[6]=56
+			set SkillShop___MAX_EXP[7]=80
+			set SkillShop___MAX_EXP[8]=112
+			set SkillShop___MAX_EXP[9]=144
+			set SkillShop___MAX_EXP[10]=176
+			set SkillShop___MAX_EXP[11]=210
   endfunction
 
 
@@ -18416,7 +18667,7 @@ endfunction
 				if (s__User_FOCUSUNIT[GetPlayerId((s__SlotChanger_owner[this]))]) <= 0 or a <= 0 then // INLINED!!
 					call BlzFrameSetTexture(f, "ReplaceableTextures\\CommandButtons\\BTNBlackIcon.blp", 0, true)
 				else
-					call BlzFrameSetTexture(f, "ReplaceableTextures\\CommandButtons\\" + (LoadStr(Ability___HASH, (s__Ability_prototype_id[a]), s__Ability_INDEX_ICON_PATH)) + ".blp", 0, true) // INLINED!!
+					call BlzFrameSetTexture(f, "ReplaceableTextures\\CommandButtons\\" + (LoadStr(Ability__HASH, (s__Ability_prototype_id[a]), s__Ability_INDEX_ICON_PATH)) + ".blp", 0, true) // INLINED!!
 				endif
 				
 				set f=LoadFrameHandle(s__UI_HASH, this, s__UI_INDEX_SLOT_CHANGER_BUTTON + i)
@@ -19077,68 +19328,68 @@ endfunction
 
 
   function s__Ability_getTypeTier takes integer id returns integer
-			return LoadInteger(Ability___HASH, id, s__Ability_INDEX_TIER)
+			return LoadInteger(Ability__HASH, id, s__Ability_INDEX_TIER)
   endfunction
 
   function s__Ability_setTypeTier takes integer id,integer val returns nothing
-			call SaveInteger(Ability___HASH, id, s__Ability_INDEX_TIER, val)
+			call SaveInteger(Ability__HASH, id, s__Ability_INDEX_TIER, val)
   endfunction
 
   function s__Ability_addRandomAbility takes integer id,integer table_num returns nothing
 			if table_num < s__Ability_TABLE_INDEX_LIMIT then
-				call SaveInteger(Ability___HASH, table_num, s__Ability_TABLE_INDEX[table_num], id)
+				call SaveInteger(Ability__HASH, table_num, s__Ability_TABLE_INDEX[table_num], id)
 				set s__Ability_TABLE_INDEX[table_num]=s__Ability_TABLE_INDEX[table_num] + 1
 			endif
   endfunction
 
   function s__Ability_getRandomAbility takes integer table_num returns integer
    local integer i= GetRandomInt(0, s__Ability_TABLE_INDEX[table_num] - 1)
-			return LoadInteger(Ability___HASH, table_num, i)
+			return LoadInteger(Ability__HASH, table_num, i)
   endfunction
 
   function s__Ability_getTypeTooltip takes integer id returns string
-			if HaveSavedString(Ability___HASH, id, s__Ability_INDEX_TOOLTIP) then
-				return LoadStr(Ability___HASH, id, s__Ability_INDEX_TOOLTIP)
+			if HaveSavedString(Ability__HASH, id, s__Ability_INDEX_TOOLTIP) then
+				return LoadStr(Ability__HASH, id, s__Ability_INDEX_TOOLTIP)
 			else
 				return "ToolTip Missing"
 			endif
   endfunction
 
   function s__Ability_setTypeTooltip takes integer id,string val returns nothing
-			call SaveStr(Ability___HASH, id, s__Ability_INDEX_TOOLTIP, val)
+			call SaveStr(Ability__HASH, id, s__Ability_INDEX_TOOLTIP, val)
   endfunction
 
   function s__Ability_getTypeCost takes integer id returns integer
-			return LoadInteger(Ability___HASH, id, s__Ability_INDEX_COST)
+			return LoadInteger(Ability__HASH, id, s__Ability_INDEX_COST)
   endfunction
 
   function s__Ability_setTypeCost takes integer id,integer val returns nothing
-			call SaveInteger(Ability___HASH, id, s__Ability_INDEX_COST, val)
+			call SaveInteger(Ability__HASH, id, s__Ability_INDEX_COST, val)
   endfunction
 
   function s__Ability_getTypeName takes integer id returns string
-			return LoadStr(Ability___HASH, id, s__Ability_INDEX_NAME)
+			return LoadStr(Ability__HASH, id, s__Ability_INDEX_NAME)
   endfunction
 
   function s__Ability_setTypeName takes integer id,string val returns nothing
-			call SaveStr(Ability___HASH, id, s__Ability_INDEX_NAME, val)
+			call SaveStr(Ability__HASH, id, s__Ability_INDEX_NAME, val)
   endfunction
 
   function s__Ability_getTypeIconPath takes integer id returns string
-			return LoadStr(Ability___HASH, id, s__Ability_INDEX_ICON_PATH)
+			return LoadStr(Ability__HASH, id, s__Ability_INDEX_ICON_PATH)
   endfunction
 
   function s__Ability_setTypeIconPath takes integer id,string val returns nothing
-			call SaveStr(Ability___HASH, id, s__Ability_INDEX_ICON_PATH, val)
+			call SaveStr(Ability__HASH, id, s__Ability_INDEX_ICON_PATH, val)
   endfunction
 
   function s__Ability_getTypeBonusStatIndex takes integer id,integer slot returns integer
-			return LoadInteger(Ability___HASH, id, s__Ability_INDEX_BONUS_STAT + slot)
+			return LoadInteger(Ability__HASH, id, s__Ability_INDEX_BONUS_STAT + slot)
   endfunction
 
   function s__Ability_setTypeBonusStatIndex takes integer id,integer slot,integer index returns nothing
 			if slot == 0 or slot == 1 then
-				call SaveInteger(Ability___HASH, id, s__Ability_INDEX_BONUS_STAT + slot, index)
+				call SaveInteger(Ability__HASH, id, s__Ability_INDEX_BONUS_STAT + slot, index)
 			endif
   endfunction
 
@@ -19146,8 +19397,8 @@ endfunction
    local integer i= 0
 			loop
 				exitwhen i >= s__Ability_INDEX_ICON_PATH
-				if not HaveSavedString(Ability___HASH, id, i) then
-					call SaveStr(Ability___HASH, id, i, val)
+				if not HaveSavedString(Ability__HASH, id, i) then
+					call SaveStr(Ability__HASH, id, i, val)
 					exitwhen true
 				endif
 				set i=i + 1
@@ -19155,8 +19406,8 @@ endfunction
   endfunction
 
   function s__Ability_getTypeTag takes integer id,integer index returns string
-			if HaveSavedString(Ability___HASH, id, index) and index < s__Ability_INDEX_ICON_PATH then
-				return LoadStr(Ability___HASH, id, index)
+			if HaveSavedString(Ability__HASH, id, index) and index < s__Ability_INDEX_ICON_PATH then
+				return LoadStr(Ability__HASH, id, index)
 			else
 				return ""
 			endif
@@ -19191,12 +19442,12 @@ endfunction
   endfunction
 
   function s__Ability_plusStatValue takes integer this,integer v returns nothing
-   local integer ind1= (LoadInteger(Ability___HASH, (s__Ability_prototype_id[this] ), s__Ability_INDEX_BONUS_STAT + ( 0))) // INLINED!!
-   local integer ind2= (LoadInteger(Ability___HASH, (s__Ability_prototype_id[this] ), s__Ability_INDEX_BONUS_STAT + ( 1))) // INLINED!!
-			call s__Unit_prototype_plusStatValue(s__Ability_prototype_owner[this],ind1 , v * s__STAT_NORMAL_VALUE[ind1] * (LoadInteger(Ability___HASH, (s__Ability_prototype_id[this]), s__Ability_INDEX_TIER)) * 0.5) // INLINED!!
-			call s__Unit_prototype_plusStatValue(s__Ability_prototype_owner[this],ind2 , v * s__STAT_NORMAL_VALUE[ind2] * (LoadInteger(Ability___HASH, (s__Ability_prototype_id[this]), s__Ability_INDEX_TIER)) * 0.5) // INLINED!!
-			set s__Ability_stat_bonus1[this]=s__Ability_stat_bonus1[this] + v * s__STAT_NORMAL_VALUE[ind1] * (LoadInteger(Ability___HASH, (s__Ability_prototype_id[this]), s__Ability_INDEX_TIER)) * 0.5 // INLINED!!
-			set s__Ability_stat_bonus2[this]=s__Ability_stat_bonus2[this] + v * s__STAT_NORMAL_VALUE[ind2] * (LoadInteger(Ability___HASH, (s__Ability_prototype_id[this]), s__Ability_INDEX_TIER)) * 0.5 // INLINED!!
+   local integer ind1= (LoadInteger(Ability__HASH, (s__Ability_prototype_id[this] ), s__Ability_INDEX_BONUS_STAT + ( 0))) // INLINED!!
+   local integer ind2= (LoadInteger(Ability__HASH, (s__Ability_prototype_id[this] ), s__Ability_INDEX_BONUS_STAT + ( 1))) // INLINED!!
+			call s__Unit_prototype_plusStatValue(s__Ability_prototype_owner[this],ind1 , v * s__STAT_NORMAL_VALUE[ind1] * (LoadInteger(Ability__HASH, (s__Ability_prototype_id[this]), s__Ability_INDEX_TIER)) * 0.5) // INLINED!!
+			call s__Unit_prototype_plusStatValue(s__Ability_prototype_owner[this],ind2 , v * s__STAT_NORMAL_VALUE[ind2] * (LoadInteger(Ability__HASH, (s__Ability_prototype_id[this]), s__Ability_INDEX_TIER)) * 0.5) // INLINED!!
+			set s__Ability_stat_bonus1[this]=s__Ability_stat_bonus1[this] + v * s__STAT_NORMAL_VALUE[ind1] * (LoadInteger(Ability__HASH, (s__Ability_prototype_id[this]), s__Ability_INDEX_TIER)) * 0.5 // INLINED!!
+			set s__Ability_stat_bonus2[this]=s__Ability_stat_bonus2[this] + v * s__STAT_NORMAL_VALUE[ind2] * (LoadInteger(Ability__HASH, (s__Ability_prototype_id[this]), s__Ability_INDEX_TIER)) * 0.5 // INLINED!!
   endfunction
 
   function s__Ability_addLevel takes integer this,integer v returns nothing
@@ -19210,8 +19461,8 @@ endfunction
 
   function s__Ability_onDeath takes integer this returns nothing
    local integer ui= s__UI_THIS[GetPlayerId((GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE)))))] // INLINED!!
-			call s__Unit_prototype_plusStatValue(s__Ability_prototype_owner[this],(LoadInteger(Ability___HASH, (s__Ability_prototype_id[this] ), s__Ability_INDEX_BONUS_STAT + ( 0))) , - s__Ability_stat_bonus1[this]) // INLINED!!
-			call s__Unit_prototype_plusStatValue(s__Ability_prototype_owner[this],(LoadInteger(Ability___HASH, (s__Ability_prototype_id[this] ), s__Ability_INDEX_BONUS_STAT + ( 1))) , - s__Ability_stat_bonus2[this]) // INLINED!!
+			call s__Unit_prototype_plusStatValue(s__Ability_prototype_owner[this],(LoadInteger(Ability__HASH, (s__Ability_prototype_id[this] ), s__Ability_INDEX_BONUS_STAT + ( 0))) , - s__Ability_stat_bonus1[this]) // INLINED!!
+			call s__Unit_prototype_plusStatValue(s__Ability_prototype_owner[this],(LoadInteger(Ability__HASH, (s__Ability_prototype_id[this] ), s__Ability_INDEX_BONUS_STAT + ( 1))) , - s__Ability_stat_bonus2[this]) // INLINED!!
 			call sc__Ability_deactivate(this)
 			if ui > 0 then
 				call s__UI_refreshAbilityIconsTarget(ui)
@@ -19232,9 +19483,9 @@ endfunction
 			call BlzFrameSetEnable(BlzGetTriggerFrame(), true)
 			if BlzGetTriggerFrameEvent() == FRAMEEVENT_CONTROL_CLICK then
 				set CharacterSelect_CHINGHO_ID[GetPlayerId(GetTriggerPlayer())]=s__ChinghoWidget_id[this]
-				set CharacterSelect__PANEL_REFRESH_PLAYER=GetTriggerPlayer()
-				call TriggerEvaluate(CharacterSelect__PANEL_REFRESH_REQUEST)
-				set CharacterSelect__PANEL_REFRESH_PLAYER=null
+				set CharacterSelect___PANEL_REFRESH_PLAYER=GetTriggerPlayer()
+				call TriggerEvaluate(CharacterSelect___PANEL_REFRESH_REQUEST)
+				set CharacterSelect___PANEL_REFRESH_PLAYER=null
 			endif
   endfunction
 
@@ -19244,8 +19495,8 @@ endfunction
 			set s__ChinghoWidget_id[this]=cid
 			set s__ChinghoWidget_btn[this]=BlzCreateFrame("ChinghoSelectButton", parent, 0, this)
 			
-			call BlzFrameSetPoint((s__ChinghoWidget_btn[this] ), ( FRAMEPOINT_TOPLEFT ), ( CharacterSelect__CHINGHO ), ( FRAMEPOINT_TOPLEFT ), (( 16 )*1.0) / 1800., (( - 16 - 64 * ModuloInteger(index, CharacterSelect__CHINGHO_PER_PAGE))*1.0) / 1800.) // INLINED!!
-			call BlzFrameSetSize((s__ChinghoWidget_btn[this] ), (( CharacterSelect__CHINGHO_WIDTH - 32 )*1.0) / 1800., (( 64)*1.0) / 1800.) // INLINED!!
+			call BlzFrameSetPoint((s__ChinghoWidget_btn[this] ), ( FRAMEPOINT_TOPLEFT ), ( CharacterSelect___CHINGHO ), ( FRAMEPOINT_TOPLEFT ), (( 16 )*1.0) / 1800., (( - 16 - 64 * ModuloInteger(index, CharacterSelect___CHINGHO_PER_PAGE))*1.0) / 1800.) // INLINED!!
+			call BlzFrameSetSize((s__ChinghoWidget_btn[this] ), (( CharacterSelect___CHINGHO_WIDTH - 32 )*1.0) / 1800., (( 64)*1.0) / 1800.) // INLINED!!
 			
 			set f=BlzGetFrameByName("ChinghoSelectButtonIcon1", this)
 			call BlzFrameSetPoint((f ), ( FRAMEPOINT_TOPLEFT ), ( s__ChinghoWidget_btn[this] ), ( FRAMEPOINT_TOPLEFT ), (( 8 )*1.0) / 1800., (( - 8)*1.0) / 1800.) // INLINED!!
@@ -19253,7 +19504,7 @@ endfunction
 			if cid < 0 then
 				call BlzFrameSetTexture(f, "ReplaceableTextures\\CommandButtons\\BTNSelectHeroOn.blp", 0, true)
 			else
-				call BlzFrameSetTexture(f, "replaceabletextures\\commandbuttons\\" + (LoadStr(Ability___HASH, (cid), s__Ability_INDEX_ICON_PATH)) + ".blp", 0, true) // INLINED!!
+				call BlzFrameSetTexture(f, "replaceabletextures\\commandbuttons\\" + (LoadStr(Ability__HASH, (cid), s__Ability_INDEX_ICON_PATH)) + ".blp", 0, true) // INLINED!!
 			endif
 			set f=BlzGetFrameByName("ChinghoSelectButtonIcon2", this)
 			call BlzFrameSetPoint((f ), ( FRAMEPOINT_TOPRIGHT ), ( s__ChinghoWidget_btn[this] ), ( FRAMEPOINT_TOPRIGHT ), (( - 8 )*1.0) / 1800., (( - 8)*1.0) / 1800.) // INLINED!!
@@ -19261,7 +19512,7 @@ endfunction
 			if cid < 0 then
 				call BlzFrameSetTexture(f, "ReplaceableTextures\\CommandButtons\\BTNSelectHeroOn.blp", 0, true)
 			else
-				call BlzFrameSetTexture(f, "replaceabletextures\\commandbuttons\\" + (LoadStr(Ability___HASH, (cid), s__Ability_INDEX_ICON_PATH)) + ".blp", 0, true) // INLINED!!
+				call BlzFrameSetTexture(f, "replaceabletextures\\commandbuttons\\" + (LoadStr(Ability__HASH, (cid), s__Ability_INDEX_ICON_PATH)) + ".blp", 0, true) // INLINED!!
 			endif
 			
 			set f=BlzGetFrameByName("ChinghoSelectButtonText", this)
@@ -19269,7 +19520,7 @@ endfunction
 			if cid < 0 then
 				call BlzFrameSetText(f, "???")
 			else
-				call BlzFrameSetText(f, (LoadStr(Ability___HASH, (cid), s__Ability_INDEX_NAME))) // INLINED!!
+				call BlzFrameSetText(f, (LoadStr(Ability__HASH, (cid), s__Ability_INDEX_NAME))) // INLINED!!
 			endif
 			
 			set s__ChinghoWidget_main_trigger[this]=s__Trigger_new(this)
@@ -19315,9 +19566,9 @@ endfunction
 			call BlzFrameSetEnable(BlzGetTriggerFrame(), true)
 			if BlzGetTriggerFrameEvent() == FRAMEEVENT_CONTROL_CLICK then
 				set CharacterSelect_ID[GetPlayerId(GetTriggerPlayer())]=s__CharacterWidget_id[this]
-				set CharacterSelect__PANEL_REFRESH_PLAYER=GetTriggerPlayer()
-				call TriggerEvaluate(CharacterSelect__PANEL_REFRESH_REQUEST)
-				set CharacterSelect__PANEL_REFRESH_PLAYER=null
+				set CharacterSelect___PANEL_REFRESH_PLAYER=GetTriggerPlayer()
+				call TriggerEvaluate(CharacterSelect___PANEL_REFRESH_REQUEST)
+				set CharacterSelect___PANEL_REFRESH_PLAYER=null
 			endif
   endfunction
 
@@ -19325,14 +19576,14 @@ endfunction
    local integer this= s__CharacterWidget__allocate()
    local framehandle f= null
 			set s__CharacterWidget_id[this]=uid
-			set s__CharacterWidget_btn[this]=BlzCreateFrame("CharacterWidgetButton", CharacterSelect__CONTAINER, 0, this)
+			set s__CharacterWidget_btn[this]=BlzCreateFrame("CharacterWidgetButton", CharacterSelect___CONTAINER, 0, this)
 			
-			call BlzFrameSetPoint(s__CharacterWidget_btn[this], FRAMEPOINT_TOPLEFT, CharacterSelect__CONTAINER, FRAMEPOINT_TOPLEFT, (((( CharacterSelect__WIDGET_INSET + CharacterSelect__WIDGET_SIZE ) * ModuloInteger(index, CharacterSelect__PER_ROW) + CharacterSelect__WIDGET_INSET / 2)*1.0) / 1800.), (((( CharacterSelect__WIDGET_INSET + CharacterSelect__WIDGET_SIZE ) * - R2I(index / CharacterSelect__PER_ROW) - CharacterSelect__WIDGET_INSET / 2)*1.0) / 1800.)) // INLINED!!
-			call BlzFrameSetSize(s__CharacterWidget_btn[this], (((CharacterSelect__WIDGET_SIZE)*1.0) / 1800.), (((CharacterSelect__WIDGET_SIZE)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetPoint(s__CharacterWidget_btn[this], FRAMEPOINT_TOPLEFT, CharacterSelect___CONTAINER, FRAMEPOINT_TOPLEFT, (((( CharacterSelect___WIDGET_INSET + CharacterSelect___WIDGET_SIZE ) * ModuloInteger(index, CharacterSelect___PER_ROW) + CharacterSelect___WIDGET_INSET / 2)*1.0) / 1800.), (((( CharacterSelect___WIDGET_INSET + CharacterSelect___WIDGET_SIZE ) * - R2I(index / CharacterSelect___PER_ROW) - CharacterSelect___WIDGET_INSET / 2)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetSize(s__CharacterWidget_btn[this], (((CharacterSelect___WIDGET_SIZE)*1.0) / 1800.), (((CharacterSelect___WIDGET_SIZE)*1.0) / 1800.)) // INLINED!!
 			
 			set f=BlzGetFrameByName("CharacterWidgetButtonIcon", this)
 			call BlzFrameSetPoint(f, FRAMEPOINT_CENTER, s__CharacterWidget_btn[this], FRAMEPOINT_CENTER, 0., 0.)
-			call BlzFrameSetSize(f, (((CharacterSelect__WIDGET_SIZE - CharacterSelect__WIDGET_INSET)*1.0) / 1800.), (((CharacterSelect__WIDGET_SIZE - CharacterSelect__WIDGET_INSET)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetSize(f, (((CharacterSelect___WIDGET_SIZE - CharacterSelect___WIDGET_INSET)*1.0) / 1800.), (((CharacterSelect___WIDGET_SIZE - CharacterSelect___WIDGET_INSET)*1.0) / 1800.)) // INLINED!!
 			if uid < 0 then
 				call BlzFrameSetTexture(f, "ReplaceableTextures\\CommandButtons\\BTNSelectHeroOn.blp", 0, true)
 			else
@@ -19396,8 +19647,8 @@ endfunction
 				call BlzFrameSetText(s__CharacterInfoPanel_name[this], "???")
 			elseif uid > 0 then
 				call BlzFrameSetTexture(s__CharacterInfoPanel_character[this], "replaceableTextures\\commandbuttons\\" + s__UnitData_getIconPath(uid) + ".blp", 0, true)
-				call BlzFrameSetTexture(s__CharacterInfoPanel_a1[this], "replaceableTextures\\commandbuttons\\" + (LoadStr(Ability___HASH, (s__UnitData_getInitialAbility(uid , 0)), s__Ability_INDEX_ICON_PATH)) + ".blp", 0, true) // INLINED!!
-				call BlzFrameSetTexture(s__CharacterInfoPanel_a2[this], "replaceableTextures\\commandbuttons\\" + (LoadStr(Ability___HASH, (s__UnitData_getInitialAbility(uid , 1)), s__Ability_INDEX_ICON_PATH)) + ".blp", 0, true) // INLINED!!
+				call BlzFrameSetTexture(s__CharacterInfoPanel_a1[this], "replaceableTextures\\commandbuttons\\" + (LoadStr(Ability__HASH, (s__UnitData_getInitialAbility(uid , 0)), s__Ability_INDEX_ICON_PATH)) + ".blp", 0, true) // INLINED!!
+				call BlzFrameSetTexture(s__CharacterInfoPanel_a2[this], "replaceableTextures\\commandbuttons\\" + (LoadStr(Ability__HASH, (s__UnitData_getInitialAbility(uid , 1)), s__Ability_INDEX_ICON_PATH)) + ".blp", 0, true) // INLINED!!
 				call BlzFrameSetText(s__CharacterInfoPanel_name[this], GetObjectName(uid))
 			else
 				call BlzFrameSetTexture(s__CharacterInfoPanel_character[this], "ReplaceableTextures\\CommandButtons\\BTNBlackIcon.blp", 0, true)
@@ -19409,14 +19660,14 @@ endfunction
 
   function s__CharacterInfoPanel_create takes player owner returns integer
    local integer this= s__CharacterInfoPanel__allocate()
-			set s__CharacterInfoPanel_container[this]=BlzCreateFrameByType("FRAME", "", CharacterSelect__PANEL_CONTAINER, "", 0)
+			set s__CharacterInfoPanel_container[this]=BlzCreateFrameByType("FRAME", "", CharacterSelect___PANEL_CONTAINER, "", 0)
 			set s__CharacterInfoPanel_character[this]=BlzCreateFrameByType("BACKDROP", "", s__CharacterInfoPanel_container[this], "", 0)
 			set s__CharacterInfoPanel_a1[this]=BlzCreateFrameByType("BACKDROP", "", s__CharacterInfoPanel_container[this], "", 0)
 			set s__CharacterInfoPanel_a2[this]=BlzCreateFrameByType("BACKDROP", "", s__CharacterInfoPanel_container[this], "", 0)
-			call BlzFrameSetPoint((s__CharacterInfoPanel_character[this] ), ( FRAMEPOINT_TOPLEFT ), ( CharacterSelect__PANEL_CONTAINER ), ( FRAMEPOINT_TOPLEFT ), (( 32 )*1.0) / 1800., (( - 32)*1.0) / 1800.) // INLINED!!
+			call BlzFrameSetPoint((s__CharacterInfoPanel_character[this] ), ( FRAMEPOINT_TOPLEFT ), ( CharacterSelect___PANEL_CONTAINER ), ( FRAMEPOINT_TOPLEFT ), (( 32 )*1.0) / 1800., (( - 32)*1.0) / 1800.) // INLINED!!
 			call BlzFrameSetSize((s__CharacterInfoPanel_character[this] ), (( 64 )*1.0) / 1800., (( 64)*1.0) / 1800.) // INLINED!!
 			call BlzFrameSetTexture(s__CharacterInfoPanel_character[this], "replaceableTextures\\commandbuttons\\btnblackicon.blp", 0, true)
-			call BlzFrameSetPoint((s__CharacterInfoPanel_a1[this] ), ( FRAMEPOINT_BOTTOMLEFT ), ( CharacterSelect__PANEL_CONTAINER ), ( FRAMEPOINT_BOTTOMLEFT ), (( 32 )*1.0) / 1800., (( 32)*1.0) / 1800.) // INLINED!!
+			call BlzFrameSetPoint((s__CharacterInfoPanel_a1[this] ), ( FRAMEPOINT_BOTTOMLEFT ), ( CharacterSelect___PANEL_CONTAINER ), ( FRAMEPOINT_BOTTOMLEFT ), (( 32 )*1.0) / 1800., (( 32)*1.0) / 1800.) // INLINED!!
 			call BlzFrameSetSize((s__CharacterInfoPanel_a1[this] ), (( 64 )*1.0) / 1800., (( 64)*1.0) / 1800.) // INLINED!!
 			call BlzFrameSetTexture(s__CharacterInfoPanel_a1[this], "replaceableTextures\\commandbuttons\\btnblackicon.blp", 0, true)
 			call BlzFrameSetPoint((s__CharacterInfoPanel_a2[this] ), ( FRAMEPOINT_BOTTOMLEFT ), ( s__CharacterInfoPanel_a1[this] ), ( FRAMEPOINT_BOTTOMRIGHT ), (( 16 )*1.0) / 1800., (( 0)*1.0) / 1800.) // INLINED!!
@@ -19429,9 +19680,9 @@ endfunction
 			call BlzFrameSetText(s__CharacterInfoPanel_a_title[this], "보유 능력 : ")
 			
 			set s__CharacterInfoPanel_tool_backdrop[this]=BlzCreateFrame("MyTextBox", s__CharacterInfoPanel_container[this], 0, 0)
-			call BlzFrameSetPoint((s__CharacterInfoPanel_tool_backdrop[this] ), ( FRAMEPOINT_TOP ), ( CharacterSelect__PANEL_CONTAINER ), ( FRAMEPOINT_TOP ), (( 0 )*1.0) / 1800., (( - 96)*1.0) / 1800.) // INLINED!!
+			call BlzFrameSetPoint((s__CharacterInfoPanel_tool_backdrop[this] ), ( FRAMEPOINT_TOP ), ( CharacterSelect___PANEL_CONTAINER ), ( FRAMEPOINT_TOP ), (( 0 )*1.0) / 1800., (( - 96)*1.0) / 1800.) // INLINED!!
 			call BlzFrameSetPoint((s__CharacterInfoPanel_tool_backdrop[this] ), ( FRAMEPOINT_LEFT ), ( s__CharacterInfoPanel_a2[this] ), ( FRAMEPOINT_RIGHT ), (( 32 )*1.0) / 1800., (( 0)*1.0) / 1800.) // INLINED!!
-			call BlzFrameSetPoint((s__CharacterInfoPanel_tool_backdrop[this] ), ( FRAMEPOINT_BOTTOMRIGHT ), ( CharacterSelect__PANEL_CONTAINER ), ( FRAMEPOINT_BOTTOMRIGHT ), (( - 16 )*1.0) / 1800., (( 16)*1.0) / 1800.) // INLINED!!
+			call BlzFrameSetPoint((s__CharacterInfoPanel_tool_backdrop[this] ), ( FRAMEPOINT_BOTTOMRIGHT ), ( CharacterSelect___PANEL_CONTAINER ), ( FRAMEPOINT_BOTTOMRIGHT ), (( - 16 )*1.0) / 1800., (( 16)*1.0) / 1800.) // INLINED!!
 			set s__CharacterInfoPanel_tool_text[this]=BlzCreateFrame("MyText", s__CharacterInfoPanel_container[this], 0, 0)
 			call BlzFrameSetPoint(s__CharacterInfoPanel_tool_text[this], FRAMEPOINT_TOPLEFT, s__CharacterInfoPanel_tool_backdrop[this], FRAMEPOINT_TOPLEFT, 0.005, - 0.005)
 			call BlzFrameSetPoint(s__CharacterInfoPanel_tool_text[this], FRAMEPOINT_BOTTOMRIGHT, s__CharacterInfoPanel_tool_backdrop[this], FRAMEPOINT_BOTTOMRIGHT, - 0.005, 0.005)
@@ -19505,11 +19756,11 @@ endfunction
 				exitwhen i >= PLAYER_MAX
 				if CharacterSelect_ID[i] < 0 then
 					
-					set CharacterSelect_ID[i]=s__CharacterWidget_id[s__CharacterSelect_WIDGET[GetRandomInt(1, CharacterSelect__WIDGET_INDEX - 1)]]
+					set CharacterSelect_ID[i]=s__CharacterWidget_id[s__CharacterSelect_WIDGET[GetRandomInt(1, CharacterSelect___WIDGET_INDEX - 1)]]
 				endif
 				if CharacterSelect_CHINGHO_ID[i] < 0 then
 					
-					set CharacterSelect_CHINGHO_ID[i]=s__ChinghoWidget_id[s__CharacterSelect_CHINGHO_WIDGET[GetRandomInt(1, CharacterSelect__CHINGHO_WIDGET_INDEX - 1)]]
+					set CharacterSelect_CHINGHO_ID[i]=s__ChinghoWidget_id[s__CharacterSelect_CHINGHO_WIDGET[GetRandomInt(1, CharacterSelect___CHINGHO_WIDGET_INDEX - 1)]]
 				endif
 				set i=i + 1
 			endloop
@@ -19518,16 +19769,16 @@ endfunction
   function s__CharacterSelect_playerSetChinghoPage takes player p,integer index returns nothing
    local integer i= 0
 			if index < 0 then
-				set CharacterSelect__CHINGHO_PAGE_INDEX[GetPlayerId(p)]=0
-			elseif index > CharacterSelect__CHINGHO_PAGE_MAX then
-				set CharacterSelect__CHINGHO_PAGE_INDEX[GetPlayerId(p)]=CharacterSelect__CHINGHO_PAGE_MAX
+				set CharacterSelect___CHINGHO_PAGE_INDEX[GetPlayerId(p)]=0
+			elseif index > CharacterSelect___CHINGHO_PAGE_MAX then
+				set CharacterSelect___CHINGHO_PAGE_INDEX[GetPlayerId(p)]=CharacterSelect___CHINGHO_PAGE_MAX
 			else
-				set CharacterSelect__CHINGHO_PAGE_INDEX[GetPlayerId(p)]=index
+				set CharacterSelect___CHINGHO_PAGE_INDEX[GetPlayerId(p)]=index
 			endif
 			loop
-				exitwhen i > CharacterSelect__CHINGHO_PAGE_MAX
+				exitwhen i > CharacterSelect___CHINGHO_PAGE_MAX
 				if GetLocalPlayer() == p then
-					call BlzFrameSetVisible(CharacterSelect__CHINGHO_PAGE[i], i == CharacterSelect__CHINGHO_PAGE_INDEX[GetPlayerId(p)])
+					call BlzFrameSetVisible(CharacterSelect___CHINGHO_PAGE[i], i == CharacterSelect___CHINGHO_PAGE_INDEX[GetPlayerId(p)])
 				endif
 				set i=i + 1
 			endloop
@@ -19536,7 +19787,7 @@ endfunction
   function s__CharacterSelect_disableWidgetsForPlayer takes player p returns nothing
    local integer i= 0
 			loop
-				exitwhen i >= CharacterSelect__WIDGET_INDEX
+				exitwhen i >= CharacterSelect___WIDGET_INDEX
 				if s__CharacterSelect_WIDGET[i] > 0 then
 					if GetLocalPlayer() == p then
 						call BlzFrameSetEnable(s__CharacterWidget_btn[s__CharacterSelect_WIDGET[i]], false)
@@ -19547,18 +19798,18 @@ endfunction
   endfunction
 
   function s__CharacterSelect_panelRefresh takes nothing returns nothing
-			if CharacterSelect__PANEL_REFRESH_PLAYER == null then
+			if CharacterSelect___PANEL_REFRESH_PLAYER == null then
 				return
 			endif
-			call s__CharacterInfoPanel_setTarget(s__CharacterSelect_PANEL[GetPlayerId(CharacterSelect__PANEL_REFRESH_PLAYER)],CharacterSelect_ID[GetPlayerId(CharacterSelect__PANEL_REFRESH_PLAYER)])
-			call s__CharacterInfoPanel_setChinghoTarget(s__CharacterSelect_PANEL[GetPlayerId(CharacterSelect__PANEL_REFRESH_PLAYER)],CharacterSelect_CHINGHO_ID[GetPlayerId(CharacterSelect__PANEL_REFRESH_PLAYER)])
+			call s__CharacterInfoPanel_setTarget(s__CharacterSelect_PANEL[GetPlayerId(CharacterSelect___PANEL_REFRESH_PLAYER)],CharacterSelect_ID[GetPlayerId(CharacterSelect___PANEL_REFRESH_PLAYER)])
+			call s__CharacterInfoPanel_setChinghoTarget(s__CharacterSelect_PANEL[GetPlayerId(CharacterSelect___PANEL_REFRESH_PLAYER)],CharacterSelect_CHINGHO_ID[GetPlayerId(CharacterSelect___PANEL_REFRESH_PLAYER)])
   endfunction
 
   function s__CharacterSelect_checkReadyState takes nothing returns boolean
    local integer i= 0
 			loop
 				exitwhen i >= PLAYER_MAX
-				if not CharacterSelect__READY[i] then
+				if not CharacterSelect___READY[i] then
 					return false
 				endif
 				set i=i + 1
@@ -19572,31 +19823,31 @@ endfunction
 			endif
 			set s__CharacterSelect_PANEL[pid]=0
 			set CharacterSelect_ID[pid]=0
-			set CharacterSelect__READY[pid]=true
+			set CharacterSelect___READY[pid]=true
 			if s__CharacterSelect_checkReadyState() then
 				call TriggerEvaluate(st__CharacterSelect_finish) // INLINED!!
 			endif
   endfunction
 
   function s__CharacterSelect_createWidget takes integer uid returns nothing
-			set s__CharacterSelect_WIDGET[CharacterSelect__WIDGET_INDEX]=s__CharacterWidget_create(CharacterSelect__WIDGET_INDEX , uid)
-			set CharacterSelect__WIDGET_INDEX=CharacterSelect__WIDGET_INDEX + 1
+			set s__CharacterSelect_WIDGET[CharacterSelect___WIDGET_INDEX]=s__CharacterWidget_create(CharacterSelect___WIDGET_INDEX , uid)
+			set CharacterSelect___WIDGET_INDEX=CharacterSelect___WIDGET_INDEX + 1
   endfunction
 
   function s__CharacterSelect_createChinghoWidget takes integer cid returns nothing
-			if CharacterSelect__CHINGHO_PAGE[R2I(CharacterSelect__CHINGHO_WIDGET_INDEX / CharacterSelect__CHINGHO_PER_PAGE)] == null then
-				set CharacterSelect__CHINGHO_PAGE[R2I(CharacterSelect__CHINGHO_WIDGET_INDEX / CharacterSelect__CHINGHO_PER_PAGE)]=BlzCreateFrameByType("FRAME", "", CharacterSelect__CHINGHO, "", 0)
-				call BlzFrameSetVisible(CharacterSelect__CHINGHO_PAGE[R2I(CharacterSelect__CHINGHO_WIDGET_INDEX / CharacterSelect__CHINGHO_PER_PAGE)], false)
+			if CharacterSelect___CHINGHO_PAGE[R2I(CharacterSelect___CHINGHO_WIDGET_INDEX / CharacterSelect___CHINGHO_PER_PAGE)] == null then
+				set CharacterSelect___CHINGHO_PAGE[R2I(CharacterSelect___CHINGHO_WIDGET_INDEX / CharacterSelect___CHINGHO_PER_PAGE)]=BlzCreateFrameByType("FRAME", "", CharacterSelect___CHINGHO, "", 0)
+				call BlzFrameSetVisible(CharacterSelect___CHINGHO_PAGE[R2I(CharacterSelect___CHINGHO_WIDGET_INDEX / CharacterSelect___CHINGHO_PER_PAGE)], false)
 			endif
-			set s__CharacterSelect_CHINGHO_WIDGET[CharacterSelect__CHINGHO_WIDGET_INDEX]=s__ChinghoWidget_create(CharacterSelect__CHINGHO_WIDGET_INDEX , cid , CharacterSelect__CHINGHO_PAGE[R2I(CharacterSelect__CHINGHO_WIDGET_INDEX / CharacterSelect__CHINGHO_PER_PAGE)])
-			set CharacterSelect__CHINGHO_PAGE_MAX=R2I(CharacterSelect__CHINGHO_WIDGET_INDEX / CharacterSelect__CHINGHO_PER_PAGE)
-			set CharacterSelect__CHINGHO_WIDGET_INDEX=CharacterSelect__CHINGHO_WIDGET_INDEX + 1
+			set s__CharacterSelect_CHINGHO_WIDGET[CharacterSelect___CHINGHO_WIDGET_INDEX]=s__ChinghoWidget_create(CharacterSelect___CHINGHO_WIDGET_INDEX , cid , CharacterSelect___CHINGHO_PAGE[R2I(CharacterSelect___CHINGHO_WIDGET_INDEX / CharacterSelect___CHINGHO_PER_PAGE)])
+			set CharacterSelect___CHINGHO_PAGE_MAX=R2I(CharacterSelect___CHINGHO_WIDGET_INDEX / CharacterSelect___CHINGHO_PER_PAGE)
+			set CharacterSelect___CHINGHO_WIDGET_INDEX=CharacterSelect___CHINGHO_WIDGET_INDEX + 1
   endfunction
 
   function s__CharacterSelect_removeFade takes nothing returns nothing
 //textmacro instance: destroyFrame("FADE")
-	call BlzDestroyFrame(CharacterSelect__FADE)
-	set CharacterSelect__FADE=null
+	call BlzDestroyFrame(CharacterSelect___FADE)
+	set CharacterSelect___FADE=null
 //end of: destroyFrame("FADE")
 			call DestroyTrigger(GetTriggeringTrigger())
   endfunction
@@ -19611,52 +19862,52 @@ endfunction
 	set CharacterSelect_BACKGROUND=null
 //end of: destroyFrame("BACKGROUND")
 //textmacro instance: destroyFrame("CONTAINER")
-	call BlzDestroyFrame(CharacterSelect__CONTAINER)
-	set CharacterSelect__CONTAINER=null
+	call BlzDestroyFrame(CharacterSelect___CONTAINER)
+	set CharacterSelect___CONTAINER=null
 //end of: destroyFrame("CONTAINER")
 //textmacro instance: destroyFrame("CONFIRM")
-	call BlzDestroyFrame(CharacterSelect__CONFIRM)
-	set CharacterSelect__CONFIRM=null
+	call BlzDestroyFrame(CharacterSelect___CONFIRM)
+	set CharacterSelect___CONFIRM=null
 //end of: destroyFrame("CONFIRM")
 //textmacro instance: destroyFrame("CHINGHO_HEADER_BACKDROP")
-	call BlzDestroyFrame(CharacterSelect__CHINGHO_HEADER_BACKDROP)
-	set CharacterSelect__CHINGHO_HEADER_BACKDROP=null
+	call BlzDestroyFrame(CharacterSelect___CHINGHO_HEADER_BACKDROP)
+	set CharacterSelect___CHINGHO_HEADER_BACKDROP=null
 //end of: destroyFrame("CHINGHO_HEADER_BACKDROP")
 //textmacro instance: destroyFrame("CHINGHO_HEADER_TEXT")
-	call BlzDestroyFrame(CharacterSelect__CHINGHO_HEADER_TEXT)
-	set CharacterSelect__CHINGHO_HEADER_TEXT=null
+	call BlzDestroyFrame(CharacterSelect___CHINGHO_HEADER_TEXT)
+	set CharacterSelect___CHINGHO_HEADER_TEXT=null
 //end of: destroyFrame("CHINGHO_HEADER_TEXT")
 //textmacro instance: destroyFrame("CHINGHO_PAGE_NEXT")
-	call BlzDestroyFrame(CharacterSelect__CHINGHO_PAGE_NEXT)
-	set CharacterSelect__CHINGHO_PAGE_NEXT=null
+	call BlzDestroyFrame(CharacterSelect___CHINGHO_PAGE_NEXT)
+	set CharacterSelect___CHINGHO_PAGE_NEXT=null
 //end of: destroyFrame("CHINGHO_PAGE_NEXT")
 //textmacro instance: destroyFrame("CHINGHO_PAGE_PREV")
-	call BlzDestroyFrame(CharacterSelect__CHINGHO_PAGE_PREV)
-	set CharacterSelect__CHINGHO_PAGE_PREV=null
+	call BlzDestroyFrame(CharacterSelect___CHINGHO_PAGE_PREV)
+	set CharacterSelect___CHINGHO_PAGE_PREV=null
 //end of: destroyFrame("CHINGHO_PAGE_PREV")
 //textmacro instance: destroyFrame("PANEL_CONTAINER")
-	call BlzDestroyFrame(CharacterSelect__PANEL_CONTAINER)
-	set CharacterSelect__PANEL_CONTAINER=null
+	call BlzDestroyFrame(CharacterSelect___PANEL_CONTAINER)
+	set CharacterSelect___PANEL_CONTAINER=null
 //end of: destroyFrame("PANEL_CONTAINER")
 //textmacro instance: destroyFrame("PANEL_HEADER_BACKDROP")
-	call BlzDestroyFrame(CharacterSelect__PANEL_HEADER_BACKDROP)
-	set CharacterSelect__PANEL_HEADER_BACKDROP=null
+	call BlzDestroyFrame(CharacterSelect___PANEL_HEADER_BACKDROP)
+	set CharacterSelect___PANEL_HEADER_BACKDROP=null
 //end of: destroyFrame("PANEL_HEADER_BACKDROP")
 //textmacro instance: destroyFrame("PANEL_HEADER_TEXT")
-	call BlzDestroyFrame(CharacterSelect__PANEL_HEADER_TEXT)
-	set CharacterSelect__PANEL_HEADER_TEXT=null
+	call BlzDestroyFrame(CharacterSelect___PANEL_HEADER_TEXT)
+	set CharacterSelect___PANEL_HEADER_TEXT=null
 //end of: destroyFrame("PANEL_HEADER_TEXT")
 			loop
-				exitwhen i > CharacterSelect__CHINGHO_PAGE_MAX
+				exitwhen i > CharacterSelect___CHINGHO_PAGE_MAX
 //textmacro instance: destroyFrame("CHINGHO_PAGE[i]")
-	call BlzDestroyFrame(CharacterSelect__CHINGHO_PAGE[i])
-	set CharacterSelect__CHINGHO_PAGE[i]=null
+	call BlzDestroyFrame(CharacterSelect___CHINGHO_PAGE[i])
+	set CharacterSelect___CHINGHO_PAGE[i]=null
 //end of: destroyFrame("CHINGHO_PAGE[i]")
 				set i=i + 1
 			endloop
 			set i=0
 			loop
-				exitwhen i >= CharacterSelect__WIDGET_INDEX
+				exitwhen i >= CharacterSelect___WIDGET_INDEX
 				if s__CharacterSelect_WIDGET[i] > 0 then
 					call s__CharacterWidget_deallocate(s__CharacterSelect_WIDGET[i])
 				endif
@@ -19664,7 +19915,7 @@ endfunction
 			endloop
 			set i=0
 			loop
-				exitwhen i >= CharacterSelect__CHINGHO_WIDGET_INDEX
+				exitwhen i >= CharacterSelect___CHINGHO_WIDGET_INDEX
 				if s__CharacterSelect_CHINGHO_WIDGET[i] > 0 then
 					call s__ChinghoWidget_deallocate(s__CharacterSelect_CHINGHO_WIDGET[i])
 				endif
@@ -19688,17 +19939,17 @@ endfunction
   function s__CharacterSelect_finish takes nothing returns nothing
    local trigger t= CreateTrigger()
 //textmacro instance: destroyTriggerAndCondition("MAIN_TRIGGER","MAIN_COND")
-		call TriggerRemoveCondition(CharacterSelect__MAIN_TRIGGER, CharacterSelect__MAIN_COND)
-		call s__Trigger_remove(CharacterSelect__MAIN_TRIGGER)
-		set CharacterSelect__MAIN_TRIGGER=null
-		set CharacterSelect__MAIN_COND=null
+		call TriggerRemoveCondition(CharacterSelect___MAIN_TRIGGER, CharacterSelect___MAIN_COND)
+		call s__Trigger_remove(CharacterSelect___MAIN_TRIGGER)
+		set CharacterSelect___MAIN_TRIGGER=null
+		set CharacterSelect___MAIN_COND=null
 //end of: destroyTriggerAndCondition("MAIN_TRIGGER","MAIN_COND")
 			call TriggerRegisterTimerEvent(t, 2., false)
 			call TriggerAddCondition(t, Condition(function s__CharacterSelect_end))
-			set CharacterSelect__FADE=BlzCreateFrameByType("SPRITE", "", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), "", 0)
-			call BlzFrameSetModel(CharacterSelect__FADE, "ui\\characterselectfade.mdl", 0)
-			call BlzFrameSetAbsPoint(CharacterSelect__FADE, FRAMEPOINT_BOTTOMLEFT, 0., 0.)
-			call BlzFrameSetSize(CharacterSelect__FADE, 1., 1.)
+			set CharacterSelect___FADE=BlzCreateFrameByType("SPRITE", "", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), "", 0)
+			call BlzFrameSetModel(CharacterSelect___FADE, "ui\\characterselectfade.mdl", 0)
+			call BlzFrameSetAbsPoint(CharacterSelect___FADE, FRAMEPOINT_BOTTOMLEFT, 0., 0.)
+			call BlzFrameSetSize(CharacterSelect___FADE, 1., 1.)
 			set t=null
   endfunction
 
@@ -19709,27 +19960,27 @@ endfunction
 				return
 			
 			elseif GetTriggerEventId() == EVENT_GAME_TIMER_EXPIRED then
-				set CharacterSelect__TIME=CharacterSelect__TIME - 1
-				if CharacterSelect__TIME <= 0 then
+				set CharacterSelect___TIME=CharacterSelect___TIME - 1
+				if CharacterSelect___TIME <= 0 then
 					call s__CharacterSelect_finish()
 				else
-					call BlzFrameSetText(CharacterSelect__HEADER_TEXT, "캐릭터 선택 (" + I2S(CharacterSelect__TIME) + ")")
+					call BlzFrameSetText(CharacterSelect___HEADER_TEXT, "캐릭터 선택 (" + I2S(CharacterSelect___TIME) + ")")
 				endif
 				return
 			
-			elseif BlzGetTriggerFrame() == CharacterSelect__CONFIRM then
+			elseif BlzGetTriggerFrame() == CharacterSelect___CONFIRM then
 				if GetLocalPlayer() == GetTriggerPlayer() then
-					if not CharacterSelect__CONFIRM_DISABLE then
-						call BlzFrameSetEnable(CharacterSelect__CONFIRM, false)
-						call BlzFrameSetEnable(CharacterSelect__CONFIRM, true)
+					if not CharacterSelect___CONFIRM_DISABLE then
+						call BlzFrameSetEnable(CharacterSelect___CONFIRM, false)
+						call BlzFrameSetEnable(CharacterSelect___CONFIRM, true)
 					endif
 				endif
 				if BlzGetTriggerFrameEvent() == FRAMEEVENT_CONTROL_CLICK then
 					if CharacterSelect_ID[GetPlayerId(GetTriggerPlayer())] != 0 then
-						set CharacterSelect__READY[GetPlayerId(GetTriggerPlayer())]=true
+						set CharacterSelect___READY[GetPlayerId(GetTriggerPlayer())]=true
 						if GetLocalPlayer() == GetTriggerPlayer() then
-							call BlzFrameSetEnable(CharacterSelect__CONFIRM, false)
-							set CharacterSelect__CONFIRM_DISABLE=true
+							call BlzFrameSetEnable(CharacterSelect___CONFIRM, false)
+							set CharacterSelect___CONFIRM_DISABLE=true
 						endif
 						call s__CharacterSelect_disableWidgetsForPlayer(GetTriggerPlayer())
 						if s__CharacterSelect_checkReadyState() then
@@ -19739,23 +19990,23 @@ endfunction
 				endif
 				return
 			
-			elseif BlzGetTriggerFrame() == CharacterSelect__CHINGHO_PAGE_NEXT then
+			elseif BlzGetTriggerFrame() == CharacterSelect___CHINGHO_PAGE_NEXT then
 				if GetLocalPlayer() == GetTriggerPlayer() then
 					call BlzFrameSetEnable(BlzGetTriggerFrame(), false)
 					call BlzFrameSetEnable(BlzGetTriggerFrame(), true)
 				endif
 				if BlzGetTriggerFrameEvent() == FRAMEEVENT_CONTROL_CLICK then
-					call s__CharacterSelect_playerSetChinghoPage(GetTriggerPlayer() , CharacterSelect__CHINGHO_PAGE_INDEX[GetPlayerId(GetTriggerPlayer())] + 1)
+					call s__CharacterSelect_playerSetChinghoPage(GetTriggerPlayer() , CharacterSelect___CHINGHO_PAGE_INDEX[GetPlayerId(GetTriggerPlayer())] + 1)
 				endif
 				return
 			
-			elseif BlzGetTriggerFrame() == CharacterSelect__CHINGHO_PAGE_PREV then
+			elseif BlzGetTriggerFrame() == CharacterSelect___CHINGHO_PAGE_PREV then
 				if GetLocalPlayer() == GetTriggerPlayer() then
 					call BlzFrameSetEnable(BlzGetTriggerFrame(), false)
 					call BlzFrameSetEnable(BlzGetTriggerFrame(), true)
 				endif
 				if BlzGetTriggerFrameEvent() == FRAMEEVENT_CONTROL_CLICK then
-					call s__CharacterSelect_playerSetChinghoPage(GetTriggerPlayer() , CharacterSelect__CHINGHO_PAGE_INDEX[GetPlayerId(GetTriggerPlayer())] - 1)
+					call s__CharacterSelect_playerSetChinghoPage(GetTriggerPlayer() , CharacterSelect___CHINGHO_PAGE_INDEX[GetPlayerId(GetTriggerPlayer())] - 1)
 				endif
 				return
 			endif
@@ -19766,21 +20017,21 @@ endfunction
    local framehandle origin= BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0)
    local framehandle f= null
 			
-			set CharacterSelect__CONTAINER=BlzCreateFrame("MBEdge", origin, 0, 0)
-			call BlzFrameSetAbsPoint(CharacterSelect__CONTAINER, FRAMEPOINT_CENTER, (((( 1920 - 480 ) * 0.5 + CharacterSelect__OFFSET_X)*1.0) / 1800.), (((560 + CharacterSelect__OFFSET_Y)*1.0) / 1800.)) // INLINED!!
-			call BlzFrameSetSize(CharacterSelect__CONTAINER, (((CharacterSelect__WIDTH)*1.0) / 1800.), (((CharacterSelect__HEIGHT)*1.0) / 1800.)) // INLINED!!
-			set CharacterSelect__HEADER_BACKDROP=BlzCreateFrame("MyTextBox", CharacterSelect__CONTAINER, 0, 0)
-			set CharacterSelect__HEADER_TEXT=BlzCreateFrame("MyTextLarge", CharacterSelect__CONTAINER, 0, 0)
-			call BlzFrameSetPoint(CharacterSelect__HEADER_TEXT, FRAMEPOINT_BOTTOMLEFT, CharacterSelect__CONTAINER, FRAMEPOINT_TOPLEFT, 0., 0.)
-			call BlzFrameSetText(CharacterSelect__HEADER_TEXT, "캐릭터 선택 (" + I2S(CharacterSelect__TIME) + ")")
-			call BlzFrameSetPoint(CharacterSelect__HEADER_BACKDROP, FRAMEPOINT_BOTTOMLEFT, CharacterSelect__HEADER_TEXT, FRAMEPOINT_BOTTOMLEFT, - 0.005, - 0.005)
-			call BlzFrameSetPoint(CharacterSelect__HEADER_BACKDROP, FRAMEPOINT_TOPRIGHT, CharacterSelect__HEADER_TEXT, FRAMEPOINT_TOPRIGHT, 0.005, 0.005)
+			set CharacterSelect___CONTAINER=BlzCreateFrame("MBEdge", origin, 0, 0)
+			call BlzFrameSetAbsPoint(CharacterSelect___CONTAINER, FRAMEPOINT_CENTER, (((( 1920 - 480 ) * 0.5 + CharacterSelect___OFFSET_X)*1.0) / 1800.), (((560 + CharacterSelect___OFFSET_Y)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetSize(CharacterSelect___CONTAINER, (((CharacterSelect___WIDTH)*1.0) / 1800.), (((CharacterSelect___HEIGHT)*1.0) / 1800.)) // INLINED!!
+			set CharacterSelect___HEADER_BACKDROP=BlzCreateFrame("MyTextBox", CharacterSelect___CONTAINER, 0, 0)
+			set CharacterSelect___HEADER_TEXT=BlzCreateFrame("MyTextLarge", CharacterSelect___CONTAINER, 0, 0)
+			call BlzFrameSetPoint(CharacterSelect___HEADER_TEXT, FRAMEPOINT_BOTTOMLEFT, CharacterSelect___CONTAINER, FRAMEPOINT_TOPLEFT, 0., 0.)
+			call BlzFrameSetText(CharacterSelect___HEADER_TEXT, "캐릭터 선택 (" + I2S(CharacterSelect___TIME) + ")")
+			call BlzFrameSetPoint(CharacterSelect___HEADER_BACKDROP, FRAMEPOINT_BOTTOMLEFT, CharacterSelect___HEADER_TEXT, FRAMEPOINT_BOTTOMLEFT, - 0.005, - 0.005)
+			call BlzFrameSetPoint(CharacterSelect___HEADER_BACKDROP, FRAMEPOINT_TOPRIGHT, CharacterSelect___HEADER_TEXT, FRAMEPOINT_TOPRIGHT, 0.005, 0.005)
 			
-			set CharacterSelect__MAIN_TRIGGER=CreateTrigger()
-			set CharacterSelect__MAIN_COND=TriggerAddCondition(CharacterSelect__MAIN_TRIGGER, Condition(function s__CharacterSelect_cond))
-			call TriggerRegisterTimerEvent(CharacterSelect__MAIN_TRIGGER, 1., true)
-			set CharacterSelect__PANEL_REFRESH_REQUEST=CreateTrigger()
-			call TriggerAddCondition(CharacterSelect__PANEL_REFRESH_REQUEST, Condition(function s__CharacterSelect_panelRefresh))
+			set CharacterSelect___MAIN_TRIGGER=CreateTrigger()
+			set CharacterSelect___MAIN_COND=TriggerAddCondition(CharacterSelect___MAIN_TRIGGER, Condition(function s__CharacterSelect_cond))
+			call TriggerRegisterTimerEvent(CharacterSelect___MAIN_TRIGGER, 1., true)
+			set CharacterSelect___PANEL_REFRESH_REQUEST=CreateTrigger()
+			call TriggerAddCondition(CharacterSelect___PANEL_REFRESH_REQUEST, Condition(function s__CharacterSelect_panelRefresh))
 			
 			call s__CharacterSelect_createWidget(- 2)
 			call s__CharacterSelect_createWidget('HR00')
@@ -19792,31 +20043,31 @@ endfunction
 			call s__CharacterSelect_createWidget('U003')
 			call s__CharacterSelect_createWidget('U004')
 			
-			set CharacterSelect__CHINGHO=BlzCreateFrame("MBEdge", CharacterSelect__CONTAINER, 0, 0)
-			call BlzFrameSetPoint(CharacterSelect__CHINGHO, FRAMEPOINT_TOPLEFT, CharacterSelect__CONTAINER, FRAMEPOINT_TOPRIGHT, (((32)*1.0) / 1800.), 0.) // INLINED!!
-			call BlzFrameSetSize(CharacterSelect__CHINGHO, (((CharacterSelect__CHINGHO_WIDTH)*1.0) / 1800.), (((CharacterSelect__CHINGHO_HEIGHT)*1.0) / 1800.)) // INLINED!!
-			set CharacterSelect__CHINGHO_HEADER_BACKDROP=BlzCreateFrame("MyTextBox", CharacterSelect__CHINGHO, 0, 0)
-			set CharacterSelect__CHINGHO_HEADER_TEXT=BlzCreateFrame("MyTextLarge", CharacterSelect__CHINGHO, 0, 0)
-			call BlzFrameSetPoint(CharacterSelect__CHINGHO_HEADER_TEXT, FRAMEPOINT_BOTTOMLEFT, CharacterSelect__CHINGHO, FRAMEPOINT_TOPLEFT, 0., 0.)
-			call BlzFrameSetText(CharacterSelect__CHINGHO_HEADER_TEXT, "칭호 선택")
-			call BlzFrameSetPoint(CharacterSelect__CHINGHO_HEADER_BACKDROP, FRAMEPOINT_BOTTOMLEFT, CharacterSelect__CHINGHO_HEADER_TEXT, FRAMEPOINT_BOTTOMLEFT, - 0.005, - 0.005)
-			call BlzFrameSetPoint(CharacterSelect__CHINGHO_HEADER_BACKDROP, FRAMEPOINT_TOPRIGHT, CharacterSelect__CHINGHO_HEADER_TEXT, FRAMEPOINT_TOPRIGHT, 0.005, 0.005)
-			set CharacterSelect__CHINGHO_PAGE_NEXT=BlzCreateFrame("ChinghoSelectPageNextButton", CharacterSelect__CHINGHO, 0, 0)
-			call BlzFrameSetPoint((CharacterSelect__CHINGHO_PAGE_NEXT ), ( FRAMEPOINT_BOTTOMRIGHT ), ( CharacterSelect__CHINGHO ), ( FRAMEPOINT_BOTTOMRIGHT ), (( - 16 )*1.0) / 1800., (( 16)*1.0) / 1800.) // INLINED!!
-			call BlzFrameSetSize((CharacterSelect__CHINGHO_PAGE_NEXT ), (( 48 )*1.0) / 1800., (( 48)*1.0) / 1800.) // INLINED!!
+			set CharacterSelect___CHINGHO=BlzCreateFrame("MBEdge", CharacterSelect___CONTAINER, 0, 0)
+			call BlzFrameSetPoint(CharacterSelect___CHINGHO, FRAMEPOINT_TOPLEFT, CharacterSelect___CONTAINER, FRAMEPOINT_TOPRIGHT, (((32)*1.0) / 1800.), 0.) // INLINED!!
+			call BlzFrameSetSize(CharacterSelect___CHINGHO, (((CharacterSelect___CHINGHO_WIDTH)*1.0) / 1800.), (((CharacterSelect___CHINGHO_HEIGHT)*1.0) / 1800.)) // INLINED!!
+			set CharacterSelect___CHINGHO_HEADER_BACKDROP=BlzCreateFrame("MyTextBox", CharacterSelect___CHINGHO, 0, 0)
+			set CharacterSelect___CHINGHO_HEADER_TEXT=BlzCreateFrame("MyTextLarge", CharacterSelect___CHINGHO, 0, 0)
+			call BlzFrameSetPoint(CharacterSelect___CHINGHO_HEADER_TEXT, FRAMEPOINT_BOTTOMLEFT, CharacterSelect___CHINGHO, FRAMEPOINT_TOPLEFT, 0., 0.)
+			call BlzFrameSetText(CharacterSelect___CHINGHO_HEADER_TEXT, "칭호 선택")
+			call BlzFrameSetPoint(CharacterSelect___CHINGHO_HEADER_BACKDROP, FRAMEPOINT_BOTTOMLEFT, CharacterSelect___CHINGHO_HEADER_TEXT, FRAMEPOINT_BOTTOMLEFT, - 0.005, - 0.005)
+			call BlzFrameSetPoint(CharacterSelect___CHINGHO_HEADER_BACKDROP, FRAMEPOINT_TOPRIGHT, CharacterSelect___CHINGHO_HEADER_TEXT, FRAMEPOINT_TOPRIGHT, 0.005, 0.005)
+			set CharacterSelect___CHINGHO_PAGE_NEXT=BlzCreateFrame("ChinghoSelectPageNextButton", CharacterSelect___CHINGHO, 0, 0)
+			call BlzFrameSetPoint((CharacterSelect___CHINGHO_PAGE_NEXT ), ( FRAMEPOINT_BOTTOMRIGHT ), ( CharacterSelect___CHINGHO ), ( FRAMEPOINT_BOTTOMRIGHT ), (( - 16 )*1.0) / 1800., (( 16)*1.0) / 1800.) // INLINED!!
+			call BlzFrameSetSize((CharacterSelect___CHINGHO_PAGE_NEXT ), (( 48 )*1.0) / 1800., (( 48)*1.0) / 1800.) // INLINED!!
 			set f=BlzGetFrameByName("ChinghoSelectPageNextButtonText", 0)
-			call BlzFrameSetPoint(f, FRAMEPOINT_CENTER, CharacterSelect__CHINGHO_PAGE_NEXT, FRAMEPOINT_CENTER, 0., 0.)
+			call BlzFrameSetPoint(f, FRAMEPOINT_CENTER, CharacterSelect___CHINGHO_PAGE_NEXT, FRAMEPOINT_CENTER, 0., 0.)
 			call BlzFrameSetText(f, "▶")
-			call BlzTriggerRegisterFrameEvent(CharacterSelect__MAIN_TRIGGER, CharacterSelect__CHINGHO_PAGE_NEXT, FRAMEEVENT_CONTROL_CLICK)
-			call BlzTriggerRegisterFrameEvent(CharacterSelect__MAIN_TRIGGER, CharacterSelect__CHINGHO_PAGE_NEXT, FRAMEEVENT_MOUSE_LEAVE)
-			set CharacterSelect__CHINGHO_PAGE_PREV=BlzCreateFrame("ChinghoSelectPagePrevButton", CharacterSelect__CHINGHO, 0, 0)
-			call BlzFrameSetPoint((CharacterSelect__CHINGHO_PAGE_PREV ), ( FRAMEPOINT_BOTTOMRIGHT ), ( CharacterSelect__CHINGHO_PAGE_NEXT ), ( FRAMEPOINT_BOTTOMLEFT ), (( - 16 )*1.0) / 1800., (( 0)*1.0) / 1800.) // INLINED!!
-			call BlzFrameSetSize((CharacterSelect__CHINGHO_PAGE_PREV ), (( 48 )*1.0) / 1800., (( 48)*1.0) / 1800.) // INLINED!!
+			call BlzTriggerRegisterFrameEvent(CharacterSelect___MAIN_TRIGGER, CharacterSelect___CHINGHO_PAGE_NEXT, FRAMEEVENT_CONTROL_CLICK)
+			call BlzTriggerRegisterFrameEvent(CharacterSelect___MAIN_TRIGGER, CharacterSelect___CHINGHO_PAGE_NEXT, FRAMEEVENT_MOUSE_LEAVE)
+			set CharacterSelect___CHINGHO_PAGE_PREV=BlzCreateFrame("ChinghoSelectPagePrevButton", CharacterSelect___CHINGHO, 0, 0)
+			call BlzFrameSetPoint((CharacterSelect___CHINGHO_PAGE_PREV ), ( FRAMEPOINT_BOTTOMRIGHT ), ( CharacterSelect___CHINGHO_PAGE_NEXT ), ( FRAMEPOINT_BOTTOMLEFT ), (( - 16 )*1.0) / 1800., (( 0)*1.0) / 1800.) // INLINED!!
+			call BlzFrameSetSize((CharacterSelect___CHINGHO_PAGE_PREV ), (( 48 )*1.0) / 1800., (( 48)*1.0) / 1800.) // INLINED!!
 			set f=BlzGetFrameByName("ChinghoSelectPagePrevButtonText", 0)
-			call BlzFrameSetPoint(f, FRAMEPOINT_CENTER, CharacterSelect__CHINGHO_PAGE_PREV, FRAMEPOINT_CENTER, 0., 0.)
+			call BlzFrameSetPoint(f, FRAMEPOINT_CENTER, CharacterSelect___CHINGHO_PAGE_PREV, FRAMEPOINT_CENTER, 0., 0.)
 			call BlzFrameSetText(f, "◀")
-			call BlzTriggerRegisterFrameEvent(CharacterSelect__MAIN_TRIGGER, CharacterSelect__CHINGHO_PAGE_PREV, FRAMEEVENT_CONTROL_CLICK)
-			call BlzTriggerRegisterFrameEvent(CharacterSelect__MAIN_TRIGGER, CharacterSelect__CHINGHO_PAGE_PREV, FRAMEEVENT_MOUSE_LEAVE)
+			call BlzTriggerRegisterFrameEvent(CharacterSelect___MAIN_TRIGGER, CharacterSelect___CHINGHO_PAGE_PREV, FRAMEEVENT_CONTROL_CLICK)
+			call BlzTriggerRegisterFrameEvent(CharacterSelect___MAIN_TRIGGER, CharacterSelect___CHINGHO_PAGE_PREV, FRAMEEVENT_MOUSE_LEAVE)
 			
 			call s__CharacterSelect_createChinghoWidget(- 2)
 			call s__CharacterSelect_createChinghoWidget('C000')
@@ -19829,42 +20080,42 @@ endfunction
 			call s__CharacterSelect_createChinghoWidget('C007')
 			call s__CharacterSelect_createChinghoWidget('C008')
 			
-			set CharacterSelect__PANEL_CONTAINER=BlzCreateFrame("MBEdge", CharacterSelect__CONTAINER, 0, 0)
-			call BlzFrameSetPoint(CharacterSelect__PANEL_CONTAINER, FRAMEPOINT_TOPLEFT, CharacterSelect__CONTAINER, FRAMEPOINT_BOTTOMLEFT, 0., (((- 32)*1.0) / 1800.)) // INLINED!!
-			call BlzFrameSetSize(CharacterSelect__PANEL_CONTAINER, (((CharacterSelect__WIDTH)*1.0) / 1800.), (((CharacterSelect__CHINGHO_HEIGHT - 32 - CharacterSelect__HEIGHT)*1.0) / 1800.)) // INLINED!!
-			set CharacterSelect__PANEL_HEADER_BACKDROP=BlzCreateFrame("MyTextBox", CharacterSelect__PANEL_CONTAINER, 0, 0)
-			set CharacterSelect__PANEL_HEADER_TEXT=BlzCreateFrame("MyTextLarge", CharacterSelect__PANEL_CONTAINER, 0, 0)
-			call BlzFrameSetPoint(CharacterSelect__PANEL_HEADER_TEXT, FRAMEPOINT_BOTTOMLEFT, CharacterSelect__PANEL_CONTAINER, FRAMEPOINT_TOPLEFT, 0., 0.)
-			call BlzFrameSetText(CharacterSelect__PANEL_HEADER_TEXT, "캐릭터&칭호")
-			call BlzFrameSetPoint(CharacterSelect__PANEL_HEADER_BACKDROP, FRAMEPOINT_BOTTOMLEFT, CharacterSelect__PANEL_HEADER_TEXT, FRAMEPOINT_BOTTOMLEFT, - 0.005, - 0.005)
-			call BlzFrameSetPoint(CharacterSelect__PANEL_HEADER_BACKDROP, FRAMEPOINT_TOPRIGHT, CharacterSelect__PANEL_HEADER_TEXT, FRAMEPOINT_TOPRIGHT, 0.005, 0.005)
+			set CharacterSelect___PANEL_CONTAINER=BlzCreateFrame("MBEdge", CharacterSelect___CONTAINER, 0, 0)
+			call BlzFrameSetPoint(CharacterSelect___PANEL_CONTAINER, FRAMEPOINT_TOPLEFT, CharacterSelect___CONTAINER, FRAMEPOINT_BOTTOMLEFT, 0., (((- 32)*1.0) / 1800.)) // INLINED!!
+			call BlzFrameSetSize(CharacterSelect___PANEL_CONTAINER, (((CharacterSelect___WIDTH)*1.0) / 1800.), (((CharacterSelect___CHINGHO_HEIGHT - 32 - CharacterSelect___HEIGHT)*1.0) / 1800.)) // INLINED!!
+			set CharacterSelect___PANEL_HEADER_BACKDROP=BlzCreateFrame("MyTextBox", CharacterSelect___PANEL_CONTAINER, 0, 0)
+			set CharacterSelect___PANEL_HEADER_TEXT=BlzCreateFrame("MyTextLarge", CharacterSelect___PANEL_CONTAINER, 0, 0)
+			call BlzFrameSetPoint(CharacterSelect___PANEL_HEADER_TEXT, FRAMEPOINT_BOTTOMLEFT, CharacterSelect___PANEL_CONTAINER, FRAMEPOINT_TOPLEFT, 0., 0.)
+			call BlzFrameSetText(CharacterSelect___PANEL_HEADER_TEXT, "캐릭터&칭호")
+			call BlzFrameSetPoint(CharacterSelect___PANEL_HEADER_BACKDROP, FRAMEPOINT_BOTTOMLEFT, CharacterSelect___PANEL_HEADER_TEXT, FRAMEPOINT_BOTTOMLEFT, - 0.005, - 0.005)
+			call BlzFrameSetPoint(CharacterSelect___PANEL_HEADER_BACKDROP, FRAMEPOINT_TOPRIGHT, CharacterSelect___PANEL_HEADER_TEXT, FRAMEPOINT_TOPRIGHT, 0.005, 0.005)
 			
-			set CharacterSelect__CONFIRM=BlzCreateFrame("CharacterSelectConfirmButton", CharacterSelect__CONTAINER, 0, 0)
-			call BlzFrameSetPoint(CharacterSelect__CONFIRM, FRAMEPOINT_BOTTOM, origin, FRAMEPOINT_BOTTOM, 0., 0.025)
-			call BlzFrameSetSize(CharacterSelect__CONFIRM, (((128)*1.0) / 1800.), (((48)*1.0) / 1800.)) // INLINED!!
+			set CharacterSelect___CONFIRM=BlzCreateFrame("CharacterSelectConfirmButton", CharacterSelect___CONTAINER, 0, 0)
+			call BlzFrameSetPoint(CharacterSelect___CONFIRM, FRAMEPOINT_BOTTOM, origin, FRAMEPOINT_BOTTOM, 0., 0.025)
+			call BlzFrameSetSize(CharacterSelect___CONFIRM, (((128)*1.0) / 1800.), (((48)*1.0) / 1800.)) // INLINED!!
 			set f=BlzGetFrameByName("CharacterSelectConfirmButtonText", 0)
-			call BlzFrameSetPoint(f, FRAMEPOINT_CENTER, CharacterSelect__CONFIRM, FRAMEPOINT_CENTER, 0., 0.)
+			call BlzFrameSetPoint(f, FRAMEPOINT_CENTER, CharacterSelect___CONFIRM, FRAMEPOINT_CENTER, 0., 0.)
 			call BlzFrameSetText(f, "결정")
-			call BlzFrameSetScale(CharacterSelect__CONFIRM, 1.5)
-			call BlzTriggerRegisterFrameEvent(CharacterSelect__MAIN_TRIGGER, CharacterSelect__CONFIRM, FRAMEEVENT_CONTROL_CLICK)
-			call BlzTriggerRegisterFrameEvent(CharacterSelect__MAIN_TRIGGER, CharacterSelect__CONFIRM, FRAMEEVENT_MOUSE_LEAVE)
+			call BlzFrameSetScale(CharacterSelect___CONFIRM, 1.5)
+			call BlzTriggerRegisterFrameEvent(CharacterSelect___MAIN_TRIGGER, CharacterSelect___CONFIRM, FRAMEEVENT_CONTROL_CLICK)
+			call BlzTriggerRegisterFrameEvent(CharacterSelect___MAIN_TRIGGER, CharacterSelect___CONFIRM, FRAMEEVENT_MOUSE_LEAVE)
 			
 			loop
 				exitwhen i >= PLAYER_MAX
-				set CharacterSelect__CHINGHO_PAGE_INDEX[i]=0
+				set CharacterSelect___CHINGHO_PAGE_INDEX[i]=0
 				if GetPlayerSlotState(Player(i)) == PLAYER_SLOT_STATE_PLAYING and GetPlayerController(Player(i)) == MAP_CONTROL_USER then
 					set CharacterSelect_CHINGHO_ID[i]=- 2
 					set CharacterSelect_ID[i]=- 2
-					set CharacterSelect__READY[i]=false
+					set CharacterSelect___READY[i]=false
 					set s__CharacterSelect_PANEL[i]=s__CharacterInfoPanel_create(Player(i))
 					
-					call TriggerRegisterPlayerEventLeave(CharacterSelect__MAIN_TRIGGER, Player(i))
+					call TriggerRegisterPlayerEventLeave(CharacterSelect___MAIN_TRIGGER, Player(i))
 					call s__CharacterSelect_playerSetChinghoPage(Player(i) , 0)
 				else
 					set CharacterSelect_CHINGHO_ID[i]='C000'
 					set CharacterSelect_ID[i]=0
 					set s__CharacterSelect_PANEL[i]=0
-					set CharacterSelect__READY[i]=true
+					set CharacterSelect___READY[i]=true
 				endif
 				set i=i + 1
 			endloop
@@ -20294,6 +20545,10 @@ endfunction
 			return s__Movement_flag_target[s__Object_movement[this]]
   endfunction
 
+  function s__Missile__get_flag_target_location takes integer this returns boolean
+			return s__Movement_flag_target_location[s__Object_movement[this]]
+  endfunction
+
   function s__Missile__get_flag_curve takes integer this returns boolean
 			return s__Movement_flag_curve[s__Object_movement[this]]
   endfunction
@@ -20367,6 +20622,10 @@ endfunction
 
   function s__Missile_setTargetLocation takes integer this,real x,real y,real z returns nothing
 			call sc__Movement_setTargetLocation(s__Object_movement[this],x , y , z)
+  endfunction
+
+  function s__Missile_resetTargetLocation takes integer this returns nothing
+			set s__Movement_flag_target_location[(s__Object_movement[this])]=false // INLINED!!
   endfunction
 
   function s__Missile__get_target takes integer this returns integer
@@ -20479,6 +20738,10 @@ endfunction
 
 		
 
+  function s__Missile_explosionFillUnits takes integer this,group g returns nothing
+			call s__Group_fillUnitsInRange(g , sc__Object__get_x(this) , sc__Object__get_y(this) , (s__Missile_radius_explosion_true[(this)])) // INLINED!!
+  endfunction
+
   function s__Missile_explosionFilter takes integer this,integer target returns boolean
 			if not s__Missile_affectFilter(this,target) then
 				return false
@@ -20494,15 +20757,23 @@ endfunction
   function s__Missile_explosionAction takes integer this returns nothing
    local integer i= 0
    local unit u= null
+   local group g= s__Group_new()
+			call sc__Missile_explosionFillUnits(this,g)
 			loop
-				set u=BlzGroupUnitAt(UnitPrototype_GROUP, i)
+				set u=BlzGroupUnitAt(g, i)
 				exitwhen u == null
-				if s__Missile_explosionFilter(this,s__Unit_prototype_get(u)) then
-					call sc__Missile_executeExplosion(this,s__Unit_prototype_get(u))
-					call GroupAddUnit(s__Missile_group_wave[this], u)
+				if not IsUnitType(u, UNIT_TYPE_DEAD) then
+					if s__Unit_prototype_get(u) > 0 then
+						if s__Missile_explosionFilter(this,s__Unit_prototype_get(u)) then
+							call sc__Missile_executeExplosion(this,s__Unit_prototype_get(u))
+							call GroupAddUnit(s__Missile_group_wave[this], u)
+						endif
+					endif
 				endif
 				set i=i + 1
 			endloop
+			call ReleaseGroup((g)) // INLINED!!
+			set g=null
 			set u=null
   endfunction
 
@@ -20694,12 +20965,23 @@ endfunction
 					call sc__Missile_onBound(this)
 				endif
 			endif
-			if s__Missile_flag_collision[this] and not s__Missile_want_kill[this] then
+			if s__Missile_want_kill[this] then
+				return
+			endif
+			if (s__Movement_flag_target_location[s__Object_movement[(this)]]) then // INLINED!!
+				if s__Math_distancePoints3D(sc__Object__get_x(this) , sc__Object__get_y(this) , sc__Object__get_z(this) , (s__Movement_target_x[s__Object_movement[(this)]]) , (s__Movement_target_y[s__Object_movement[(this)]]) , (s__Movement_target_z[s__Object_movement[(this)]])) <= ( (s__Movement_velo[s__Object_movement[(this)]]) * TIMER_TICK ) / 2. then // INLINED!!
+					set s__Missile_want_kill[this]=true
+				endif
+			endif
+			if s__Missile_flag_collision[this] then
 				if s__Missile_collisionAction(this) then
 					set s__Missile_want_kill[this]=true
 				endif
 			endif
-			if s__Missile_flag_wave[this] and not s__Missile_want_kill[this] then
+			if s__Missile_want_kill[this] then
+				return
+			endif
+			if s__Missile_flag_wave[this] then
 				set s__Missile_wave_timeout[this]=s__Missile_wave_timeout[this] + TIMER_TICK
 				if s__Missile_wave_timeout[this] >= s__Missile_wave_interval[this] or s__Missile_wave_interval[this] <= 0. then
 					call sc__Missile_beforeWave(this)
@@ -20804,6 +21086,11 @@ endfunction
   endfunction
 
   function s__Movement__set_curve takes integer this,integer cv returns nothing
+			if cv <= 0 then
+				if s__Movement_curve_true[this] > 0 then
+					call sc__Object_deallocate(s__Movement_curve_true[this])
+				endif
+			endif
 			set s__Movement_curve_true[this]=cv
 			set s__Movement_flag_curve[this]=cv > 0
   endfunction
@@ -20813,6 +21100,10 @@ endfunction
 			set s__Movement_target_x[this]=x
 			set s__Movement_target_y[this]=y
 			set s__Movement_target_z[this]=z
+  endfunction
+
+  function s__Movement_resetTargetLocation takes integer this returns nothing
+			set s__Movement_flag_target_location[this]=false
   endfunction
 
   function s__Movement_carculateNextPosition takes integer this returns nothing
@@ -21053,7 +21344,7 @@ endfunction
    local integer u= 0
 			loop
 				exitwhen i >= 10
-				set u=s__Unit_create(PLAYER_UNDEAD , 'HR00' , 5350 , 5350 , 0)
+				set u=s__Unit_create(PLAYER_UNDEAD , 'HR00' , 1024 , 0 , 0)
 				call s__Unit_prototype_plusStatus(u,STATUS_CAST)
 				//call u.plusStatValue(STAT_TYPE_HPREGEN,100.)
 				set i=i + 1
@@ -21150,7 +21441,7 @@ endfunction
 				exitwhen i >= PLAYER_MAX
 				if GetPlayerSlotState(Player(i)) == PLAYER_SLOT_STATE_PLAYING and GetPlayerController(Player(i)) == MAP_CONTROL_USER then
 					call s__Game_initForPlayer(Player(i) , CharacterSelect_ID[i] , CharacterSelect_CHINGHO_ID[i])
-					call TriggerRegisterPlayerEventLeave(Game__LEAVE_TRIGGER, Player(i))
+					call TriggerRegisterPlayerEventLeave(Game___LEAVE_TRIGGER, Player(i))
 				endif
 				set i=i + 1
 			endloop
@@ -21161,7 +21452,7 @@ endfunction
 			
 			call s__Round_init()
 			
-			call TriggerAddCondition(Game__LEAVE_TRIGGER, Condition(function s__Game_playerLeave))
+			call TriggerAddCondition(Game___LEAVE_TRIGGER, Condition(function s__Game_playerLeave))
   endfunction
 
   function s__Game_start takes nothing returns nothing
@@ -21186,7 +21477,7 @@ endfunction
 				call s__Game_spawnDummy()
 				call s__SkillShop_setLevel(s__SkillShop_THIS[0],10)
 				set t=CreateTrigger()
-				call BlzTriggerRegisterPlayerKeyEvent(t, Player(0), OSKEY_P, 0, true)
+				call BlzTriggerRegisterPlayerKeyEvent(t, Player(0), OSKEY_O, 0, true)
 				call TriggerAddCondition(t, Condition(function s__Game_spawnDummy))
 				
 			else
@@ -21532,49 +21823,49 @@ endfunction
 
 
 
-  function s__Wave__spawner_timerAction takes nothing returns nothing
+  function s__Wave___spawner_timerAction takes nothing returns nothing
    local integer this= (sg__TimerUtils__Data_get(GetHandleId(((GetExpiredTimer()))) * HASH_UP / HASH_DOWN + HASH_BIAS)) // INLINED!!
    local integer u= 0
-			if not HaveSavedInteger(Wave__HASH, s__Wave__spawner_index[this], s__Wave__spawner_count[this]) then
-				call sc__Wave__spawner_deallocate(this)
+			if not HaveSavedInteger(Wave___HASH, s__Wave___spawner_index[this], s__Wave___spawner_count[this]) then
+				call sc__Wave___spawner_deallocate(this)
 				return
 			endif
-			set u=s__Undead_new(LoadInteger(Wave__HASH, s__Wave__spawner_index[this], s__Wave__spawner_count[this]) , GetRectCenterX(Wave__RECT[s__Wave__spawner_position[this]]) , GetRectCenterY(Wave__RECT[s__Wave__spawner_position[this]]) , s__Wave__spawner_position[this])
-			if s__Unit_prototype_getStatus(s__Guardians_GUARDIAN[s__Wave__spawner_position[this]],STATUS_DEAD) <= 0 then
-				call IssueTargetOrder((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((u))]), s__Agent_INDEX_ORIGIN_HANDLE)), ("attack" ), ( (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(s__Guardians_GUARDIAN[s__Wave__spawner_position[this]])]), s__Agent_INDEX_ORIGIN_HANDLE)))) // INLINED!!
+			set u=s__Undead_new(LoadInteger(Wave___HASH, s__Wave___spawner_index[this], s__Wave___spawner_count[this]) , GetRectCenterX(Wave___RECT[s__Wave___spawner_position[this]]) , GetRectCenterY(Wave___RECT[s__Wave___spawner_position[this]]) , s__Wave___spawner_position[this])
+			if s__Unit_prototype_getStatus(s__Guardians_GUARDIAN[s__Wave___spawner_position[this]],STATUS_DEAD) <= 0 then
+				call IssueTargetOrder((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((u))]), s__Agent_INDEX_ORIGIN_HANDLE)), ("attack" ), ( (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(s__Guardians_GUARDIAN[s__Wave___spawner_position[this]])]), s__Agent_INDEX_ORIGIN_HANDLE)))) // INLINED!!
 			else
 				call IssuePointOrder((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((u))]), s__Agent_INDEX_ORIGIN_HANDLE)), ("attack" ), (( (GetRectCenterX(gg_rct_spawn)) )*1.0), (( (GetRectCenterY(gg_rct_spawn)))*1.0)) // INLINED!!
 			endif
-			call s__Unit_prototype__set_level(u,s__Wave__spawner_level[this])
-			set s__Wave__spawner_count[this]=s__Wave__spawner_count[this] + 1
+			call s__Unit_prototype__set_level(u,s__Wave___spawner_level[this])
+			set s__Wave___spawner_count[this]=s__Wave___spawner_count[this] + 1
   endfunction
 
-  function s__Wave__spawner_create takes integer index,integer level,integer position returns integer
-   local integer this= s__Wave__spawner__allocate()
-			set s__Wave__spawner_main_timer[this]=s__Timer_new(this)
-			set s__Wave__spawner_index[this]=index
-			set s__Wave__spawner_level[this]=level
-			set s__Wave__spawner_position[this]=position
-			call PingMinimapEx(GetRectCenterX(Wave__RECT[s__Wave__spawner_position[this]]), GetRectCenterY(Wave__RECT[s__Wave__spawner_position[this]]), 2.5, 0, 0, 0, true)
-			call TimerStart((s__Wave__spawner_main_timer[this] ), (( 0.75 )*1.0), ( true ), ( function s__Wave__spawner_timerAction)) // INLINED!!
+  function s__Wave___spawner_create takes integer index,integer level,integer position returns integer
+   local integer this= s__Wave___spawner__allocate()
+			set s__Wave___spawner_main_timer[this]=s__Timer_new(this)
+			set s__Wave___spawner_index[this]=index
+			set s__Wave___spawner_level[this]=level
+			set s__Wave___spawner_position[this]=position
+			call PingMinimapEx(GetRectCenterX(Wave___RECT[s__Wave___spawner_position[this]]), GetRectCenterY(Wave___RECT[s__Wave___spawner_position[this]]), 2.5, 0, 0, 0, true)
+			call TimerStart((s__Wave___spawner_main_timer[this] ), (( 0.75 )*1.0), ( true ), ( function s__Wave___spawner_timerAction)) // INLINED!!
 			return this
   endfunction
 
-  function s__Wave__spawner_onDestroy takes integer this returns nothing
-			call ReleaseTimer((s__Wave__spawner_main_timer[this])) // INLINED!!
-			set s__Wave__spawner_main_timer[this]=null
+  function s__Wave___spawner_onDestroy takes integer this returns nothing
+			call ReleaseTimer((s__Wave___spawner_main_timer[this])) // INLINED!!
+			set s__Wave___spawner_main_timer[this]=null
   endfunction
 
-//Generated destructor of Wave__spawner
-function s__Wave__spawner_deallocate takes integer this returns nothing
+//Generated destructor of Wave___spawner
+function s__Wave___spawner_deallocate takes integer this returns nothing
     if this==null then
         return
-    elseif (si__Wave__spawner_V[this]!=-1) then
+    elseif (si__Wave___spawner_V[this]!=-1) then
         return
     endif
-    call s__Wave__spawner_onDestroy(this)
-    set si__Wave__spawner_V[this]=si__Wave__spawner_F
-    set si__Wave__spawner_F=this
+    call s__Wave___spawner_onDestroy(this)
+    set si__Wave___spawner_V[this]=si__Wave___spawner_F
+    set si__Wave___spawner_F=this
 endfunction
 
 
@@ -21585,10 +21876,10 @@ endfunction
    local integer j= 0
    local integer random= GetRandomInt(0, s__Wave_MAX_INDEX)
    local integer u= 0
-			call s__Wave__spawner_create(random , s__Round_ROUND + 1 , 0)
-			call s__Wave__spawner_create(random , s__Round_ROUND + 1 , 1)
-			call s__Wave__spawner_create(random , s__Round_ROUND + 1 , 2)
-			call s__Wave__spawner_create(random , s__Round_ROUND + 1 , 3)
+			call s__Wave___spawner_create(random , s__Round_ROUND + 1 , 0)
+			call s__Wave___spawner_create(random , s__Round_ROUND + 1 , 1)
+			call s__Wave___spawner_create(random , s__Round_ROUND + 1 , 2)
+			call s__Wave___spawner_create(random , s__Round_ROUND + 1 , 3)
   endfunction
 
   function s__Wave_addWaveData takes integer index,integer uid returns nothing
@@ -21599,7 +21890,7 @@ endfunction
 				set s__Wave_INDEX=0
 			endif
 			set s__Wave_LAST_INDEX=index
-			call SaveInteger(Wave__HASH, index, s__Wave_INDEX, uid)
+			call SaveInteger(Wave___HASH, index, s__Wave_INDEX, uid)
 			set s__Wave_INDEX=s__Wave_INDEX + 1
   endfunction
 
@@ -21728,10 +22019,10 @@ endfunction
 
   function s__Wave_onInit takes nothing returns nothing
 			call s__Wave_initWaveData()
-			set Wave__RECT[0]=gg_rct_GateNorth
-			set Wave__RECT[1]=gg_rct_GateWest
-			set Wave__RECT[2]=gg_rct_GateEast
-			set Wave__RECT[3]=gg_rct_GateSouth
+			set Wave___RECT[0]=gg_rct_GateNorth
+			set Wave___RECT[1]=gg_rct_GateWest
+			set Wave___RECT[2]=gg_rct_GateEast
+			set Wave___RECT[3]=gg_rct_GateSouth
   endfunction
 
 
@@ -21975,17 +22266,17 @@ endfunction
 
 //textmacro instance: buffEnd()
 
-   function BuffStun___new takes integer caster,integer target,real duration returns integer
+   function BuffStun__new takes integer caster,integer target,real duration returns integer
     local integer b= 0
-				if BuffStun___INDIVISUAL == 2 then
-					set b=s__BuffStun_main__allocate(BuffStun___ID , caster , target , duration , BuffStun___NAME)
-					set s__Buff_icon[b]=BuffStun___ICON_PATH
+				if BuffStun__INDIVISUAL == 2 then
+					set b=s__BuffStun_main__allocate(BuffStun__ID , caster , target , duration , BuffStun__NAME)
+					set s__Buff_icon[b]=BuffStun__ICON_PATH
 					call s__BuffStun_main_init(b)
-				elseif BuffStun___INDIVISUAL == 1 then
-					set b=s__Buff_getMatchingCasterAndTarget(caster , target , BuffStun___ID)
+				elseif BuffStun__INDIVISUAL == 1 then
+					set b=s__Buff_getMatchingCasterAndTarget(caster , target , BuffStun__ID)
 					if b == 0 then
-						set b=s__BuffStun_main__allocate(BuffStun___ID , caster , target , duration , BuffStun___NAME)
-						set s__Buff_icon[b]=BuffStun___ICON_PATH
+						set b=s__BuffStun_main__allocate(BuffStun__ID , caster , target , duration , BuffStun__NAME)
+						set s__Buff_icon[b]=BuffStun__ICON_PATH
 						call s__BuffStun_main_init(b)
 					else
 						if duration > (s__Buff_duration_true[(b)]) then // INLINED!!
@@ -21997,11 +22288,11 @@ endfunction
 						set s__Buff_caster[b]=caster
 						call s__BuffStun_main_update(b)
 					endif
-				elseif BuffStun___INDIVISUAL == 0 then
-					set b=s__Buff_getUnitBuffById(target , BuffStun___ID)
+				elseif BuffStun__INDIVISUAL == 0 then
+					set b=s__Buff_getUnitBuffById(target , BuffStun__ID)
 					if b == 0 then
-						set b=s__BuffStun_main__allocate(BuffStun___ID , caster , target , duration , BuffStun___NAME)
-						set s__Buff_icon[b]=BuffStun___ICON_PATH
+						set b=s__BuffStun_main__allocate(BuffStun__ID , caster , target , duration , BuffStun__NAME)
+						set s__Buff_icon[b]=BuffStun__ICON_PATH
 						call s__BuffStun_main_init(b)
 					else
 						if duration > (s__Buff_duration_true[(b)]) then // INLINED!!
@@ -22017,14 +22308,14 @@ endfunction
 				return b
 			endfunction
 
-   function BuffStun___cond takes nothing returns nothing
-				if BUFF_CREATE_ID == BuffStun___ID and BUFF_CREATE_TARGET > 0 then
-					set BUFF_LAST_CREATED=BuffStun___new(BUFF_CREATE_CASTER , BUFF_CREATE_TARGET , BUFF_CREATE_DURATION)
+   function BuffStun__cond takes nothing returns nothing
+				if BUFF_CREATE_ID == BuffStun__ID and BUFF_CREATE_TARGET > 0 then
+					set BUFF_LAST_CREATED=BuffStun__new(BUFF_CREATE_CASTER , BUFF_CREATE_TARGET , BUFF_CREATE_DURATION)
 				endif
 			endfunction
 
-   function BuffStun___init takes nothing returns nothing
-				call TriggerAddCondition(BUFF_CREATE_TRIGGER, Condition(function BuffStun___cond))
+   function BuffStun__init takes nothing returns nothing
+				call TriggerAddCondition(BUFF_CREATE_TRIGGER, Condition(function BuffStun__cond))
 			endfunction
 
 //end of: buffEnd()
@@ -22052,17 +22343,17 @@ endfunction
 
 //textmacro instance: buffEnd()
 
-   function BuffEnsn___new takes integer caster,integer target,real duration returns integer
+   function BuffEnsn__new takes integer caster,integer target,real duration returns integer
     local integer b= 0
-				if BuffEnsn___INDIVISUAL == 2 then
-					set b=s__BuffEnsn_main__allocate(BuffEnsn___ID , caster , target , duration , BuffEnsn___NAME)
-					set s__Buff_icon[b]=BuffEnsn___ICON_PATH
+				if BuffEnsn__INDIVISUAL == 2 then
+					set b=s__BuffEnsn_main__allocate(BuffEnsn__ID , caster , target , duration , BuffEnsn__NAME)
+					set s__Buff_icon[b]=BuffEnsn__ICON_PATH
 					call s__Unit_prototype_plusStatus(s__Buff_target[(b)],STATUS_ENSNARE) // INLINED!!
-				elseif BuffEnsn___INDIVISUAL == 1 then
-					set b=s__Buff_getMatchingCasterAndTarget(caster , target , BuffEnsn___ID)
+				elseif BuffEnsn__INDIVISUAL == 1 then
+					set b=s__Buff_getMatchingCasterAndTarget(caster , target , BuffEnsn__ID)
 					if b == 0 then
-						set b=s__BuffEnsn_main__allocate(BuffEnsn___ID , caster , target , duration , BuffEnsn___NAME)
-						set s__Buff_icon[b]=BuffEnsn___ICON_PATH
+						set b=s__BuffEnsn_main__allocate(BuffEnsn__ID , caster , target , duration , BuffEnsn__NAME)
+						set s__Buff_icon[b]=BuffEnsn__ICON_PATH
 						call s__Unit_prototype_plusStatus(s__Buff_target[(b)],STATUS_ENSNARE) // INLINED!!
 					else
 						if duration > (s__Buff_duration_true[(b)]) then // INLINED!!
@@ -22074,11 +22365,11 @@ endfunction
 						set s__Buff_caster[b]=caster
 						call s__BuffEnsn_main_update(b)
 					endif
-				elseif BuffEnsn___INDIVISUAL == 0 then
-					set b=s__Buff_getUnitBuffById(target , BuffEnsn___ID)
+				elseif BuffEnsn__INDIVISUAL == 0 then
+					set b=s__Buff_getUnitBuffById(target , BuffEnsn__ID)
 					if b == 0 then
-						set b=s__BuffEnsn_main__allocate(BuffEnsn___ID , caster , target , duration , BuffEnsn___NAME)
-						set s__Buff_icon[b]=BuffEnsn___ICON_PATH
+						set b=s__BuffEnsn_main__allocate(BuffEnsn__ID , caster , target , duration , BuffEnsn__NAME)
+						set s__Buff_icon[b]=BuffEnsn__ICON_PATH
 						call s__Unit_prototype_plusStatus(s__Buff_target[(b)],STATUS_ENSNARE) // INLINED!!
 					else
 						if duration > (s__Buff_duration_true[(b)]) then // INLINED!!
@@ -22094,14 +22385,14 @@ endfunction
 				return b
 			endfunction
 
-   function BuffEnsn___cond takes nothing returns nothing
-				if BUFF_CREATE_ID == BuffEnsn___ID and BUFF_CREATE_TARGET > 0 then
-					set BUFF_LAST_CREATED=BuffEnsn___new(BUFF_CREATE_CASTER , BUFF_CREATE_TARGET , BUFF_CREATE_DURATION)
+   function BuffEnsn__cond takes nothing returns nothing
+				if BUFF_CREATE_ID == BuffEnsn__ID and BUFF_CREATE_TARGET > 0 then
+					set BUFF_LAST_CREATED=BuffEnsn__new(BUFF_CREATE_CASTER , BUFF_CREATE_TARGET , BUFF_CREATE_DURATION)
 				endif
 			endfunction
 
-   function BuffEnsn___init takes nothing returns nothing
-				call TriggerAddCondition(BUFF_CREATE_TRIGGER, Condition(function BuffEnsn___cond))
+   function BuffEnsn__init takes nothing returns nothing
+				call TriggerAddCondition(BUFF_CREATE_TRIGGER, Condition(function BuffEnsn__cond))
 			endfunction
 
 //end of: buffEnd()
@@ -22128,7 +22419,7 @@ endfunction
 // BEGIN IMPORT OF C:\war3lib\maps\SkillArchive\Unit\GeneratedUnitData.j
 // scope UnitHR00 begins
 //textmacro instance: unitDataHeader("HR00","BTNFootman")
- function UnitHR00___init takes nothing returns nothing
+ function UnitHR00__init takes nothing returns nothing
 		set s__UnitData_ID='HR00'
 		call SaveStr(s__UnitData_HASH, s__UnitData_ID, s__UnitData_INDEX_EXTERNAL + 0, ("BTNFootman")) // INLINED!!
 //end of: unitDataHeader("HR00","BTNFootman")
@@ -22141,7 +22432,7 @@ endfunction
 
 // scope UnitHR09 begins
 //textmacro instance: unitDataHeader("HR09","BTNVillagerMan1")
- function UnitHR09___init takes nothing returns nothing
+ function UnitHR09__init takes nothing returns nothing
 		set s__UnitData_ID='HR09'
 		call SaveStr(s__UnitData_HASH, s__UnitData_ID, s__UnitData_INDEX_EXTERNAL + 0, ("BTNVillagerMan1")) // INLINED!!
 //end of: unitDataHeader("HR09","BTNVillagerMan1")
@@ -22154,7 +22445,7 @@ endfunction
 
 // scope UnitHR07 begins
 //textmacro instance: unitDataHeader("HR07","BTNAssassin")
- function UnitHR07___init takes nothing returns nothing
+ function UnitHR07__init takes nothing returns nothing
 		set s__UnitData_ID='HR07'
 		call SaveStr(s__UnitData_HASH, s__UnitData_ID, s__UnitData_INDEX_EXTERNAL + 0, ("BTNAssassin")) // INLINED!!
 //end of: unitDataHeader("HR07","BTNAssassin")
@@ -22167,7 +22458,7 @@ endfunction
 
 // scope UnitG000 begins
 //textmacro instance: unitDataHeader("G000","BTNArmorGolem")
- function UnitG000___init takes nothing returns nothing
+ function UnitG000__init takes nothing returns nothing
 		set s__UnitData_ID='G000'
 		call SaveStr(s__UnitData_HASH, s__UnitData_ID, s__UnitData_INDEX_EXTERNAL + 0, ("BTNArmorGolem")) // INLINED!!
 //end of: unitDataHeader("G000","BTNArmorGolem")
@@ -22179,7 +22470,7 @@ endfunction
 
 // scope UnitG001 begins
 //textmacro instance: unitDataHeader("G001","BTNTreeOfEternity")
- function UnitG001___init takes nothing returns nothing
+ function UnitG001__init takes nothing returns nothing
 		set s__UnitData_ID='G001'
 		call SaveStr(s__UnitData_HASH, s__UnitData_ID, s__UnitData_INDEX_EXTERNAL + 0, ("BTNTreeOfEternity")) // INLINED!!
 //end of: unitDataHeader("G001","BTNTreeOfEternity")
@@ -22192,7 +22483,7 @@ endfunction
 
 // scope UnitU000 begins
 //textmacro instance: unitDataHeader("U000","BTNGhoul")
- function UnitU000___init takes nothing returns nothing
+ function UnitU000__init takes nothing returns nothing
 		set s__UnitData_ID='U000'
 		call SaveStr(s__UnitData_HASH, s__UnitData_ID, s__UnitData_INDEX_EXTERNAL + 0, ("BTNGhoul")) // INLINED!!
 //end of: unitDataHeader("U000","BTNGhoul")
@@ -22205,7 +22496,7 @@ endfunction
 
 // scope UnitU001 begins
 //textmacro instance: unitDataHeader("U001","BTNCryptFiend")
- function UnitU001___init takes nothing returns nothing
+ function UnitU001__init takes nothing returns nothing
 		set s__UnitData_ID='U001'
 		call SaveStr(s__UnitData_HASH, s__UnitData_ID, s__UnitData_INDEX_EXTERNAL + 0, ("BTNCryptFiend")) // INLINED!!
 //end of: unitDataHeader("U001","BTNCryptFiend")
@@ -22217,7 +22508,7 @@ endfunction
 
 // scope UnitU002 begins
 //textmacro instance: unitDataHeader("U002","BTNGargoyle")
- function UnitU002___init takes nothing returns nothing
+ function UnitU002__init takes nothing returns nothing
 		set s__UnitData_ID='U002'
 		call SaveStr(s__UnitData_HASH, s__UnitData_ID, s__UnitData_INDEX_EXTERNAL + 0, ("BTNGargoyle")) // INLINED!!
 //end of: unitDataHeader("U002","BTNGargoyle")
@@ -22229,7 +22520,7 @@ endfunction
 
 // scope UnitU003 begins
 //textmacro instance: unitDataHeader("U003","BTNNecromancer")
- function UnitU003___init takes nothing returns nothing
+ function UnitU003__init takes nothing returns nothing
 		set s__UnitData_ID='U003'
 		call SaveStr(s__UnitData_HASH, s__UnitData_ID, s__UnitData_INDEX_EXTERNAL + 0, ("BTNNecromancer")) // INLINED!!
 //end of: unitDataHeader("U003","BTNNecromancer")
@@ -22241,7 +22532,7 @@ endfunction
 
 // scope UnitU004 begins
 //textmacro instance: unitDataHeader("U004","BTNAbomination")
- function UnitU004___init takes nothing returns nothing
+ function UnitU004__init takes nothing returns nothing
 		set s__UnitData_ID='U004'
 		call SaveStr(s__UnitData_HASH, s__UnitData_ID, s__UnitData_INDEX_EXTERNAL + 0, ("BTNAbomination")) // INLINED!!
 //end of: unitDataHeader("U004","BTNAbomination")
@@ -22279,16 +22570,16 @@ endfunction
 	
 	
    function s__Ability0000_mv_executeExplosion takes integer this,integer target returns nothing
-    local integer kn= s__knockback_create(target , Ability0000___KNOCKBACK_DISTANCE / Ability0000___KNOCKABCK_DURATION , sc__Object__get_yaw((s__Actor_actor[(this)]))) // INLINED!!
+    local integer kn= s__knockback_create(target , Ability0000__KNOCKBACK_DISTANCE / Ability0000__KNOCKABCK_DURATION , sc__Object__get_yaw((s__Actor_actor[(this)]))) // INLINED!!
 				set s__Movement_z_velo[kn]=300.
-				set s__Movement_gravity[kn]=( 300. * 2 ) / Ability0000___KNOCKABCK_DURATION
-				set s__Actor_duration[kn]=Ability0000___KNOCKABCK_DURATION
-				set s__UnitMovement_damage_id[this]=Ability0000___ID
+				set s__Movement_gravity[kn]=( 300. * 2 ) / Ability0000__KNOCKABCK_DURATION
+				set s__Actor_duration[kn]=Ability0000__KNOCKABCK_DURATION
+				set s__UnitMovement_damage_id[this]=Ability0000__ID
 				call s__UnitMovement_setDamageFlag((this),DAMAGE_TYPE_PHYSICAL , ATTACK_TYPE_SPELL , false , true , INTERVAL_TYPE_SINGLE , VECTOR_TYPE_OUTTER , true , true) // INLINED!!
 				if target == sc__Movement__get_target(this) then
-					set s__UnitMovement_damage[this]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[(this)])),STAT_TYPE_ATTACK)) * Ability0000___DAMAGE_PER_ATTACK_ALTERNATE ) * ( 1 + Ability0000___DAMAGE_PER_LEVEL * ( s__UnitMovement_level[this] - 1 ) ) // INLINED!!
+					set s__UnitMovement_damage[this]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[(this)])),STAT_TYPE_ATTACK)) * Ability0000__DAMAGE_PER_ATTACK_ALTERNATE ) * ( 1 + Ability0000__DAMAGE_PER_LEVEL * ( s__UnitMovement_level[this] - 1 ) ) // INLINED!!
 				else
-					set s__UnitMovement_damage[this]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[(this)])),STAT_TYPE_ATTACK)) * Ability0000___DAMAGE_PER_ATTACK ) * ( 1 + Ability0000___DAMAGE_PER_LEVEL * ( s__UnitMovement_level[this] - 1 ) ) // INLINED!!
+					set s__UnitMovement_damage[this]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[(this)])),STAT_TYPE_ATTACK)) * Ability0000__DAMAGE_PER_ATTACK ) * ( 1 + Ability0000__DAMAGE_PER_LEVEL * ( s__UnitMovement_level[this] - 1 ) ) // INLINED!!
 				endif
 				call s__UnitMovement_damageTarget(this,target)
 				call s__Effect_kill(s__Effect_setScale(s__Effect_create(EF_ROCK , sc__Object__get_x(target) , sc__Object__get_y(target) , sc__Object__get_z(target) + s__Object_pivot_z[target] , 0),2.5))
@@ -22299,17 +22590,17 @@ endfunction
 				call s__Movement__set_target(this,target)
 				call s__UnitMovement_explosionAction(this)
 				set s__Actor_want_destroy[this]=true
-				call s__UnitActor_create((s__Actor_actor[(this)]) , 0 , 0. , 0. , 0 , Ability0000___BACKSWING , true) // INLINED!!
+				call s__UnitActor_create((s__Actor_actor[(this)]) , 0 , 0. , 0. , 0 , Ability0000__BACKSWING , true) // INLINED!!
    endfunction
 	
    function s__Ability0000_mv_create takes integer u,real yaw,integer level returns integer
-    local integer this= s__Ability0000_mv__allocate(u , Ability0000___CHARGE_SPEED , yaw)
+    local integer this= s__Ability0000_mv__allocate(u , Ability0000__CHARGE_SPEED , yaw)
 				set s__Movement_use_collision[this]=true
-				set s__Actor_duration[this]=Ability0000___CHARGE_DURATION
+				set s__Actor_duration[this]=Ability0000__CHARGE_DURATION
 				set s__Movement_refresh_facing[this]=false
 				set s__UnitMovement_level[this]=level
 				set s__UnitMovement_flag_collision[this]=true
-				set s__UnitMovement_radius_target[this]=Ability0000___COLRAD
+				set s__UnitMovement_radius_target[this]=Ability0000__COLRAD
 				set s__UnitMovement_radius_explosion[this]=125.
 				call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((1.0 * s__Unit_prototype__get_attack_speed((s__Actor_actor[(this)])))*1.0)) // INLINED!!
 				call s__Unit_prototype_queueAnim((s__Actor_actor[(this)]),"stand") // INLINED!!
@@ -22338,22 +22629,22 @@ endfunction
 				call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((s__Unit_prototype__get_attack_speed((s__Actor_actor[(this)])))*1.0)) // INLINED!!
 				call SetUnitFacing((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Actor_actor[(this)]))]), s__Agent_INDEX_ORIGIN_HANDLE)), s__Ability0000_actor_angle[this]) // INLINED!!
 				set s__UnitActor_suspend_ensnare[this]=true
-				set s__Actor_progress_bar[this]=s__ProgressBar_create(Ability0000___NAME , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+				set s__Actor_progress_bar[this]=s__ProgressBar_create(Ability0000__NAME , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
 				return this
    endfunction
 	
 
 
-   function s__Ability0000___ind_beforeRefresh takes integer this returns nothing
+   function s__Ability0000__ind_beforeRefresh takes integer this returns nothing
 				set s__LineIndicator_x[this]=sc__Object__get_x(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
 				set s__LineIndicator_y[this]=sc__Object__get_y(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
 				set s__LineIndicator_yaw[this]=s__Math_anglePoints(s__LineIndicator_x[this] , s__LineIndicator_y[this] , (s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))])) // INLINED!!
-				set s__LineIndicator_range[this]=( Ability0000___CHARGE_SPEED * Ability0000___CHARGE_DURATION )
-				set s__LineIndicator_width[this]=Ability0000___COLRAD
+				set s__LineIndicator_range[this]=( Ability0000__CHARGE_SPEED * Ability0000__CHARGE_DURATION )
+				set s__LineIndicator_width[this]=Ability0000__COLRAD
    endfunction
 
-   function s__Ability0000___ind_create takes integer abil,player owner returns integer
-    local integer this= s__Ability0000___ind__allocate(abil , owner)
+   function s__Ability0000__ind_create takes integer abil,player owner returns integer
+    local integer this= s__Ability0000__ind__allocate(abil , owner)
 				call s__Effect_setColor(s__LineIndicator_ef[this],255 , R2I(0.65 * 255) , 0)
 				return this
    endfunction
@@ -22361,7 +22652,7 @@ endfunction
 	
 	
    function s__Ability0000_main_relativeTooltip takes integer this returns string
-				return "지정한 방향으로 약진하여 충돌하는 대상과 대상 주변의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_ATTACK , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_ATTACK)) * Ability0000___DAMAGE_PER_ATTACK ) * ( 1 + Ability0000___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 " + DAMAGE_STRING_PHYSICAL + "를 입히고 밀쳐냅니다.\n가장 가까운 적은 " + s__ConstantString_statStringReal(STAT_TYPE_ATTACK , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_ATTACK)) * Ability0000___DAMAGE_PER_ATTACK_ALTERNATE ) * ( 1 + Ability0000___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 피해량이 대신 적용됩니다." // INLINED!!
+				return "지정한 방향으로 약진하여 충돌하는 대상과 대상 주변의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_ATTACK , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_ATTACK)) * Ability0000__DAMAGE_PER_ATTACK ) * ( 1 + Ability0000__DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 " + DAMAGE_STRING_PHYSICAL + "를 입히고 밀쳐냅니다.\n가장 가까운 적은 " + s__ConstantString_statStringReal(STAT_TYPE_ATTACK , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_ATTACK)) * Ability0000__DAMAGE_PER_ATTACK_ALTERNATE ) * ( 1 + Ability0000__DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 피해량이 대신 적용됩니다." // INLINED!!
    endfunction
 	
    function s__Ability0000_main_execute takes integer this returns nothing
@@ -22376,37 +22667,37 @@ endfunction
 				set s__Ability_prototype_cooldown_max[this]=8.
 				set s__Ability_prototype_cooldown_min[this]=2.
 				set s__Ability_prototype_cast_delay[this]=0.25
-				set s__Ability_prototype_indicator[this]=s__Ability0000___ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+				set s__Ability_prototype_indicator[this]=s__Ability0000__ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
 				call s__Ability_plusStatValue(this,5)
    endfunction
 	
    function s__Ability0000_main_onInit takes nothing returns nothing
-				call s__Ability_addTypeTag(Ability0000___ID , ABILITY_STRING_TARGET_LOCATION)
-				call s__Ability_addTypeTag(Ability0000___ID , ABILITY_TAG_IRON)
-				call SaveStr(Ability___HASH, (Ability0000___ID ), s__Ability_INDEX_TOOLTIP, ( "단거리 돌진,\n충돌 시 범위피해")) // INLINED!!
+				call s__Ability_addTypeTag(Ability0000__ID , ABILITY_STRING_TARGET_LOCATION)
+				call s__Ability_addTypeTag(Ability0000__ID , ABILITY_TAG_IRON)
+				call SaveStr(Ability__HASH, (Ability0000__ID ), s__Ability_INDEX_TOOLTIP, ( "단거리 돌진,\n충돌 시 범위피해")) // INLINED!!
    endfunction
 	
 	
 //textmacro instance: abilityDataEnd()
- function Ability0000___act takes nothing returns nothing
+ function Ability0000__act takes nothing returns nothing
   local integer a= 0
-		if ABILITY_CREATE_ID == Ability0000___ID then
+		if ABILITY_CREATE_ID == Ability0000__ID then
 			set a=s__Ability0000_main__allocate()
-			set s__Ability_prototype_id[a]=Ability0000___ID
-			set s__Ability_prototype_name[a]=Ability0000___NAME
-			set s__Ability_prototype_icon[a]=Ability0000___ICON_PATH
+			set s__Ability_prototype_id[a]=Ability0000__ID
+			set s__Ability_prototype_name[a]=Ability0000__NAME
+			set s__Ability_prototype_icon[a]=Ability0000__ICON_PATH
 			set ABILITY_LAST_CREATED=a
 		endif
 	endfunction
 
- function Ability0000___init takes nothing returns nothing
-		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0000___act))
-		call SaveStr(Ability___HASH, (Ability0000___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0000___ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Ability0000___ID ), s__Ability_INDEX_NAME, ( Ability0000___NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0000___ID ), s__Ability_INDEX_TIER, ( Ability0000___TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0000___ID ), s__Ability_INDEX_COST, ( Ability0000___COST)) // INLINED!!
-		call s__Ability_setTypeBonusStatIndex(Ability0000___ID , 0 , Ability0000___STAT_INDEX1)
-		call s__Ability_setTypeBonusStatIndex(Ability0000___ID , 1 , Ability0000___STAT_INDEX2)
+ function Ability0000__init takes nothing returns nothing
+		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0000__act))
+		call SaveStr(Ability__HASH, (Ability0000__ID ), s__Ability_INDEX_ICON_PATH, ( Ability0000__ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0000__ID ), s__Ability_INDEX_NAME, ( Ability0000__NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0000__ID ), s__Ability_INDEX_TIER, ( Ability0000__TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0000__ID ), s__Ability_INDEX_COST, ( Ability0000__COST)) // INLINED!!
+		call s__Ability_setTypeBonusStatIndex(Ability0000__ID , 0 , Ability0000__STAT_INDEX1)
+		call s__Ability_setTypeBonusStatIndex(Ability0000__ID , 1 , Ability0000__STAT_INDEX2)
 	endfunction
 //end of: abilityDataEnd()
 // scope Ability0000 ends
@@ -22421,9 +22712,9 @@ endfunction
 
 
    function s__Ability0001_explosion_executeExplosion takes integer this,integer target returns nothing
-				set s__Explosion_damage_id[this]=Ability0001___ID
+				set s__Explosion_damage_id[this]=Ability0001__ID
 				call s__Explosion_damageTarget(this,target)
-				call s__Effect_kill(s__Effect_createAttatched(Ability0001___EFFECT_PATH2 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(target)]), s__Agent_INDEX_ORIGIN_HANDLE)) , "origin")) // INLINED!!
+				call s__Effect_kill(s__Effect_createAttatched(Ability0001__EFFECT_PATH2 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(target)]), s__Agent_INDEX_ORIGIN_HANDLE)) , "origin")) // INLINED!!
    endfunction
 
 	
@@ -22431,10 +22722,10 @@ endfunction
 
    function s__Ability0001_a2_onComplete takes integer this returns nothing
     local integer lh= s__Lightning_create("CLSB" , sc__Object__get_x(s__Ability0001_a2_effect_1[this]) , sc__Object__get_y(s__Ability0001_a2_effect_1[this]) , sc__Object__get_z(s__Ability0001_a2_effect_1[this]) , sc__Object__get_x(s__Ability0001_a2_effect_2[this]) , sc__Object__get_y(s__Ability0001_a2_effect_2[this]) , sc__Object__get_z(s__Ability0001_a2_effect_2[this]))
-    local integer lex= s__Ability0001_explosion__allocate((s__Actor_actor[((this))]) , sc__Object__get_x(s__Ability0001_a2_effect_1[this]) , sc__Object__get_y(s__Ability0001_a2_effect_1[this]) , sc__Object__get_x(s__Ability0001_a2_effect_2[this]) , sc__Object__get_y(s__Ability0001_a2_effect_2[this]) , Ability0001___BALL_RADIUS) // INLINED!!
+    local integer lex= s__Ability0001_explosion__allocate((s__Actor_actor[((this))]) , sc__Object__get_x(s__Ability0001_a2_effect_1[this]) , sc__Object__get_y(s__Ability0001_a2_effect_1[this]) , sc__Object__get_x(s__Ability0001_a2_effect_2[this]) , sc__Object__get_y(s__Ability0001_a2_effect_2[this]) , Ability0001__BALL_RADIUS) // INLINED!!
 				call s__Lightning_setDuration(lh,0.25)
 				set s__Lightning_fade[lh]=3.
-				set s__Explosion_damage[lex]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[(this)])),STAT_TYPE_MAGICPOWER)) * Ability0001___DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0001___DAMAGE_PER_LEVEL * ( s__UnitActor_level[this] - 1 ) ) // INLINED!!
+				set s__Explosion_damage[lex]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[(this)])),STAT_TYPE_MAGICPOWER)) * Ability0001__DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0001__DAMAGE_PER_LEVEL * ( s__UnitActor_level[this] - 1 ) ) // INLINED!!
 				call s__Explosion_activate(lex)
    endfunction
 
@@ -22445,14 +22736,14 @@ endfunction
 					else
 						call s__Square_setLocalColor(s__Ability0001_a2_sq[this],1. , 0. , 0. , s__Line__Line_a[s__Ability0001_a2_sq[this]])
 					endif
-					call sc__Object__set_z(s__Ability0001_a2_effect_1[this],sc__Object__get_z(s__Ability0001_a2_effect_1[this]) + ( Ability0001___BALL_HEIGHT / Ability0001___BALL_UP ) * TIMER_TICK)
+					call sc__Object__set_z(s__Ability0001_a2_effect_1[this],sc__Object__get_z(s__Ability0001_a2_effect_1[this]) + ( Ability0001__BALL_HEIGHT / Ability0001__BALL_UP ) * TIMER_TICK)
 					call sc__Object__set_z(s__Ability0001_a2_effect_2[this],sc__Object__get_z(s__Ability0001_a2_effect_1[this]))
-					call s__Effect_setAlpha(s__Ability0001_a2_effect_1[this],R2I(( s__Actor_timeout[this] / Ability0001___BALL_UP ) * 255))
-					call s__Effect_setAlpha(s__Ability0001_a2_effect_2[this],R2I(( s__Actor_timeout[this] / Ability0001___BALL_UP ) * 255))
-					if s__Actor_timeout[this] >= Ability0001___BALL_UP then
+					call s__Effect_setAlpha(s__Ability0001_a2_effect_1[this],R2I(( s__Actor_timeout[this] / Ability0001__BALL_UP ) * 255))
+					call s__Effect_setAlpha(s__Ability0001_a2_effect_2[this],R2I(( s__Actor_timeout[this] / Ability0001__BALL_UP ) * 255))
+					if s__Actor_timeout[this] >= Ability0001__BALL_UP then
 						call s__Effect_setAlpha(s__Ability0001_a2_effect_1[this],255)
 						call s__Effect_setAlpha(s__Ability0001_a2_effect_2[this],255)
-						call sc__Object__set_z(s__Ability0001_a2_effect_1[this],Ability0001___BALL_HEIGHT)
+						call sc__Object__set_z(s__Ability0001_a2_effect_1[this],Ability0001__BALL_HEIGHT)
 						call sc__Object__set_z(s__Ability0001_a2_effect_2[this],sc__Object__get_z(s__Ability0001_a2_effect_1[this]))
 						call s__Actor_stageNext(this)
 					endif
@@ -22460,10 +22751,10 @@ endfunction
    endfunction
 
    function s__Ability0001_a2_create takes integer caster,real x,real y,real angle,integer level returns integer
-    local integer this= s__Ability0001_a2__allocate(caster , 0 , x , y , level , Ability0001___DELAY , false)
-				set s__Ability0001_a2_sq[this]=s__Square_create((((x )*1.0) + (( - Ability0001___BALL_RADIUS )*1.0) * Cos((( angle)*1.0) * bj_DEGTORAD)) , (((y )*1.0) + (( - Ability0001___BALL_RADIUS )*1.0) * Sin((( angle)*1.0) * bj_DEGTORAD)) , 0. , Ability0001___BALL_DISTANCE + Ability0001___BALL_RADIUS * 2 , angle , Ability0001___BALL_RADIUS , null) // INLINED!!
-				set s__Ability0001_a2_effect_1[this]=s__Effect_create(Ability0001___EFFECT_PATH1 , x , y , 0. , 270.)
-				set s__Ability0001_a2_effect_2[this]=s__Effect_create(Ability0001___EFFECT_PATH1 , (((x )*1.0) + (( Ability0001___BALL_DISTANCE )*1.0) * Cos((( angle)*1.0) * bj_DEGTORAD)) , (((y )*1.0) + (( Ability0001___BALL_DISTANCE )*1.0) * Sin((( angle)*1.0) * bj_DEGTORAD)) , 0. , 270.) // INLINED!!
+    local integer this= s__Ability0001_a2__allocate(caster , 0 , x , y , level , Ability0001__DELAY , false)
+				set s__Ability0001_a2_sq[this]=s__Square_create((((x )*1.0) + (( - Ability0001__BALL_RADIUS )*1.0) * Cos((( angle)*1.0) * bj_DEGTORAD)) , (((y )*1.0) + (( - Ability0001__BALL_RADIUS )*1.0) * Sin((( angle)*1.0) * bj_DEGTORAD)) , 0. , Ability0001__BALL_DISTANCE + Ability0001__BALL_RADIUS * 2 , angle , Ability0001__BALL_RADIUS , null) // INLINED!!
+				set s__Ability0001_a2_effect_1[this]=s__Effect_create(Ability0001__EFFECT_PATH1 , x , y , 0. , 270.)
+				set s__Ability0001_a2_effect_2[this]=s__Effect_create(Ability0001__EFFECT_PATH1 , (((x )*1.0) + (( Ability0001__BALL_DISTANCE )*1.0) * Cos((( angle)*1.0) * bj_DEGTORAD)) , (((y )*1.0) + (( Ability0001__BALL_DISTANCE )*1.0) * Sin((( angle)*1.0) * bj_DEGTORAD)) , 0. , 270.) // INLINED!!
 				call s__Effect_setAlpha(s__Ability0001_a2_effect_1[this],0)
 				call s__Effect_setAlpha(s__Ability0001_a2_effect_2[this],0)
 				set s__Ability0001_a2_angle[this]=angle
@@ -22471,8 +22762,8 @@ endfunction
 				set s__Line__Line_refresh_color[s__Ability0001_a2_sq[this]]=false
 				set s__Line__Line_permanent[s__Ability0001_a2_sq[this]]=true
 				call s__Square_setColor(s__Ability0001_a2_sq[this],0 , 0.3 , 1. , 0.)
-				set s__Line__Line_alphaaxis[(s__Ability0001_a2_sq[this])]=1 / ((Ability0001___BALL_UP)*1.0) // INLINED!!
-				call s__Line__Line_setFadeOutPoint(s__Ability0001_a2_sq[this],Ability0001___DELAY , 0.25)
+				set s__Line__Line_alphaaxis[(s__Ability0001_a2_sq[this])]=1 / ((Ability0001__BALL_UP)*1.0) // INLINED!!
+				call s__Line__Line_setFadeOutPoint(s__Ability0001_a2_sq[this],Ability0001__DELAY , 0.25)
 				return this
    endfunction
 
@@ -22489,13 +22780,13 @@ endfunction
    endfunction
 	
    function s__Ability0001_actor_create takes integer caster,real x,real y,real x2,real y2,integer level returns integer
-    local integer this= s__Ability0001_actor__allocate(caster , 0 , x , y , level , Ability0001___CAST , true)
+    local integer this= s__Ability0001_actor__allocate(caster , 0 , x , y , level , Ability0001__CAST , true)
 				set s__Actor_x2[this]=x2
 				set s__Actor_y2[this]=y2
 				call SetUnitFacing((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Actor_actor[(this)]))]), s__Agent_INDEX_ORIGIN_HANDLE)), s__Math_anglePoints(sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , x , y)) // INLINED!!
 				call s__Unit_prototype_setAnim((s__Actor_actor[(this)]),"attack") // INLINED!!
 				call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((2.)*1.0)) // INLINED!!
-				set s__Actor_progress_bar[this]=s__ProgressBar_create(Ability0001___NAME , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+				set s__Actor_progress_bar[this]=s__ProgressBar_create(Ability0001__NAME , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
 				return this
    endfunction
 
@@ -22506,16 +22797,16 @@ endfunction
 
 
 
-   function s__Ability0001___ind_beforeRefresh takes integer this returns nothing
+   function s__Ability0001__ind_beforeRefresh takes integer this returns nothing
 				set s__LineIndicator_yaw[this]=s__Math_anglePoints(s__Ability_prototype_command_x_temp[s__AbilityIndicator_abil[this]] , s__Ability_prototype_command_y_temp[s__AbilityIndicator_abil[this]] , (s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))])) // INLINED!!
-				set s__LineIndicator_x[this]=(((s__Ability_prototype_command_x_temp[s__AbilityIndicator_abil[this]] )*1.0) + (( - Ability0001___BALL_RADIUS )*1.0) * Cos((( s__LineIndicator_yaw[this])*1.0) * bj_DEGTORAD)) // INLINED!!
-				set s__LineIndicator_y[this]=(((s__Ability_prototype_command_y_temp[s__AbilityIndicator_abil[this]] )*1.0) + (( - Ability0001___BALL_RADIUS )*1.0) * Sin((( s__LineIndicator_yaw[this])*1.0) * bj_DEGTORAD)) // INLINED!!
-				set s__LineIndicator_range[this]=Ability0001___BALL_DISTANCE + Ability0001___BALL_RADIUS * 2
-				set s__LineIndicator_width[this]=Ability0001___BALL_RADIUS
+				set s__LineIndicator_x[this]=(((s__Ability_prototype_command_x_temp[s__AbilityIndicator_abil[this]] )*1.0) + (( - Ability0001__BALL_RADIUS )*1.0) * Cos((( s__LineIndicator_yaw[this])*1.0) * bj_DEGTORAD)) // INLINED!!
+				set s__LineIndicator_y[this]=(((s__Ability_prototype_command_y_temp[s__AbilityIndicator_abil[this]] )*1.0) + (( - Ability0001__BALL_RADIUS )*1.0) * Sin((( s__LineIndicator_yaw[this])*1.0) * bj_DEGTORAD)) // INLINED!!
+				set s__LineIndicator_range[this]=Ability0001__BALL_DISTANCE + Ability0001__BALL_RADIUS * 2
+				set s__LineIndicator_width[this]=Ability0001__BALL_RADIUS
    endfunction
 
-   function s__Ability0001___ind_create takes integer abil,player owner returns integer
-    local integer this= s__Ability0001___ind__allocate(abil , owner)
+   function s__Ability0001__ind_create takes integer abil,player owner returns integer
+    local integer this= s__Ability0001__ind__allocate(abil , owner)
 				call s__Effect_setColor(s__LineIndicator_ef[this],0 , R2I(0.3 * 255) , 255)
 				call s__Effect_setColor(s__AbilityIndicator_circle[this],0 , R2I(0.3 * 255) , 255)
 				return this
@@ -22524,7 +22815,7 @@ endfunction
 	
 	
    function s__Ability0001_main_relativeTooltip takes integer this returns string
-				return "직선 범위 내의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0001___DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0001___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 " + DAMAGE_STRING_MAGICAL + "를 입힙니다." // INLINED!!
+				return "직선 범위 내의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0001__DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0001__DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 " + DAMAGE_STRING_MAGICAL + "를 입힙니다." // INLINED!!
    endfunction
 
    function s__Ability0001_main_execute takes integer this returns nothing
@@ -22534,43 +22825,43 @@ endfunction
    function s__Ability0001_main_init takes integer this returns nothing
 				set s__Ability_prototype_manacost[this]=27
 				set s__Ability_prototype_is_active[this]=true
-				set s__Ability_prototype_cast_range[this]=Ability0001___RANGE
+				set s__Ability_prototype_cast_range[this]=Ability0001__RANGE
 				set s__Ability_prototype_cooldown_max[this]=6.7
 				set s__Ability_prototype_cooldown_min[this]=0.5
 				set s__Ability_prototype_preserve_order[this]=false
 				set s__Ability_prototype_drag_to_use[this]=true
-				set s__Ability_prototype_indicator[this]=s__Ability0001___ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+				set s__Ability_prototype_indicator[this]=s__Ability0001__ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
 				call s__Ability_plusStatValue(this,5)
    endfunction
 	
    function s__Ability0001_main_onInit takes nothing returns nothing
-				call s__Ability_addTypeTag(Ability0001___ID , ABILITY_STRING_DRAG_TO_USE)
-				call s__Ability_addTypeTag(Ability0001___ID , ABILITY_TAG_MAGIC)
-				call s__Ability_addTypeTag(Ability0001___ID , ABILITY_TAG_LIGHTNING)
-				call SaveStr(Ability___HASH, (Ability0001___ID ), s__Ability_INDEX_TOOLTIP, ( "직선영역 범위피해\n ")) // INLINED!!
+				call s__Ability_addTypeTag(Ability0001__ID , ABILITY_STRING_DRAG_TO_USE)
+				call s__Ability_addTypeTag(Ability0001__ID , ABILITY_TAG_MAGIC)
+				call s__Ability_addTypeTag(Ability0001__ID , ABILITY_TAG_LIGHTNING)
+				call SaveStr(Ability__HASH, (Ability0001__ID ), s__Ability_INDEX_TOOLTIP, ( "직선영역 범위피해\n ")) // INLINED!!
    endfunction
 
 	
 //textmacro instance: abilityDataEnd()
- function Ability0001___act takes nothing returns nothing
+ function Ability0001__act takes nothing returns nothing
   local integer a= 0
-		if ABILITY_CREATE_ID == Ability0001___ID then
+		if ABILITY_CREATE_ID == Ability0001__ID then
 			set a=s__Ability0001_main__allocate()
-			set s__Ability_prototype_id[a]=Ability0001___ID
-			set s__Ability_prototype_name[a]=Ability0001___NAME
-			set s__Ability_prototype_icon[a]=Ability0001___ICON_PATH
+			set s__Ability_prototype_id[a]=Ability0001__ID
+			set s__Ability_prototype_name[a]=Ability0001__NAME
+			set s__Ability_prototype_icon[a]=Ability0001__ICON_PATH
 			set ABILITY_LAST_CREATED=a
 		endif
 	endfunction
 
- function Ability0001___init takes nothing returns nothing
-		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0001___act))
-		call SaveStr(Ability___HASH, (Ability0001___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0001___ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Ability0001___ID ), s__Ability_INDEX_NAME, ( Ability0001___NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0001___ID ), s__Ability_INDEX_TIER, ( Ability0001___TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0001___ID ), s__Ability_INDEX_COST, ( Ability0001___COST)) // INLINED!!
-		call s__Ability_setTypeBonusStatIndex(Ability0001___ID , 0 , Ability0001___STAT_INDEX1)
-		call s__Ability_setTypeBonusStatIndex(Ability0001___ID , 1 , Ability0001___STAT_INDEX2)
+ function Ability0001__init takes nothing returns nothing
+		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0001__act))
+		call SaveStr(Ability__HASH, (Ability0001__ID ), s__Ability_INDEX_ICON_PATH, ( Ability0001__ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0001__ID ), s__Ability_INDEX_NAME, ( Ability0001__NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0001__ID ), s__Ability_INDEX_TIER, ( Ability0001__TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0001__ID ), s__Ability_INDEX_COST, ( Ability0001__COST)) // INLINED!!
+		call s__Ability_setTypeBonusStatIndex(Ability0001__ID , 0 , Ability0001__STAT_INDEX1)
+		call s__Ability_setTypeBonusStatIndex(Ability0001__ID , 1 , Ability0001__STAT_INDEX2)
 	endfunction
 //end of: abilityDataEnd()
 // scope Ability0001 ends
@@ -22590,16 +22881,16 @@ endfunction
    endfunction
 
    function s__Ability0002_actor_onComplete takes integer this returns nothing
-    local real nx= (((sc__Object__get_x((s__Actor_actor[(this)])) )*1.0) + (( Ability0002___STARTAT )*1.0) * Cos((( sc__Object__get_yaw((s__Actor_actor[(this)])))*1.0) * bj_DEGTORAD)) // INLINED!!
-    local real ny= (((sc__Object__get_y((s__Actor_actor[(this)])) )*1.0) + (( Ability0002___STARTAT )*1.0) * Sin((( sc__Object__get_yaw((s__Actor_actor[(this)])))*1.0) * bj_DEGTORAD)) // INLINED!!
-    local integer ms= s__Missile_create((s__Actor_actor[(this)]) , Ability0002___EFFECT_PATH1 , nx , ny , sc__Object__get_z((s__Actor_actor[(this)])) + s__Object_pivot_z[(s__Actor_actor[(this)])] , sc__Object__get_yaw((s__Actor_actor[(this)]))) // INLINED!!
-				set s__Missile_damage_id[ms]=Ability0002___ID
-				set s__Missile_damage[ms]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[((this))])),STAT_TYPE_ATTACK)) * Ability0002___DAMAGE_PER_ATTACK ) * ( 1 + Ability0002___DAMAGE_PER_LEVEL * ( s__UnitActor_level[this] - 1 ) * s__Unit_prototype__get_attack_speed((s__Actor_actor[((this))])) ) // INLINED!!
+    local real nx= (((sc__Object__get_x((s__Actor_actor[(this)])) )*1.0) + (( Ability0002__STARTAT )*1.0) * Cos((( sc__Object__get_yaw((s__Actor_actor[(this)])))*1.0) * bj_DEGTORAD)) // INLINED!!
+    local real ny= (((sc__Object__get_y((s__Actor_actor[(this)])) )*1.0) + (( Ability0002__STARTAT )*1.0) * Sin((( sc__Object__get_yaw((s__Actor_actor[(this)])))*1.0) * bj_DEGTORAD)) // INLINED!!
+    local integer ms= s__Missile_create((s__Actor_actor[(this)]) , Ability0002__EFFECT_PATH1 , nx , ny , sc__Object__get_z((s__Actor_actor[(this)])) + s__Object_pivot_z[(s__Actor_actor[(this)])] , sc__Object__get_yaw((s__Actor_actor[(this)]))) // INLINED!!
+				set s__Missile_damage_id[ms]=Ability0002__ID
+				set s__Missile_damage[ms]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[((this))])),STAT_TYPE_ATTACK)) * Ability0002__DAMAGE_PER_ATTACK ) * ( 1 + Ability0002__DAMAGE_PER_LEVEL * ( s__UnitActor_level[this] - 1 ) * s__Unit_prototype__get_attack_speed((s__Actor_actor[((this))])) ) // INLINED!!
 				set s__Missile_attack_type[ms]=ATTACK_TYPE_SPELL
-				set s__Missile_radius_target[ms]=Ability0002___VELO * TIMER_TICK * 0.5
-				set s__Movement_velo[s__Object_movement[(ms)]]=((Ability0002___VELO)*1.0) // INLINED!!
+				set s__Missile_radius_target[ms]=Ability0002__VELO * TIMER_TICK * 0.5
+				set s__Movement_velo[s__Object_movement[(ms)]]=((Ability0002__VELO)*1.0) // INLINED!!
 				call s__Missile__set_target((ms),(s__UnitActor_target[this])) // INLINED!!
-				call s__UnitActor_create((s__Actor_actor[(this)]) , 0 , 0. , 0. , 0 , Ability0002___BACKSWING , true) // INLINED!!
+				call s__UnitActor_create((s__Actor_actor[(this)]) , 0 , 0. , 0. , 0 , Ability0002__BACKSWING , true) // INLINED!!
    endfunction
 
    function s__Ability0002_actor_periodicAction takes integer this returns nothing
@@ -22612,15 +22903,15 @@ endfunction
    endfunction
 	
    function s__Ability0002_actor_create takes integer caster,integer target,integer level returns integer
-    local integer this= s__Ability0002_actor__allocate(caster , target , 0. , 0. , level , Ability0002___DELAY , true)
-				set s__Actor_progress_bar[this]=s__ProgressBar_create(Ability0002___NAME , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+    local integer this= s__Ability0002_actor__allocate(caster , target , 0. , 0. , level , Ability0002__DELAY , true)
+				set s__Actor_progress_bar[this]=s__ProgressBar_create(Ability0002__NAME , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
 				set s__UnitActor_suspend_rclick[this]=true
 				set s__Ability0002_actor_lh[this]=s__Lightning_createOO("LSER" , (s__Actor_actor[(this)]) , s__UnitActor_target[this]) // INLINED!!
 				set s__Lightning_oz1[s__Ability0002_actor_lh[this]]=s__Object_pivot_z[(s__Actor_actor[(this)])] // INLINED!!
 				set s__Lightning_oz2[s__Ability0002_actor_lh[this]]=s__Object_pivot_z[s__UnitActor_target[this]]
 				call s__Lightning_refreshPosition(s__Ability0002_actor_lh[this])
 				call s__Lightning_setColor(s__Ability0002_actor_lh[this],1. , 0. , 0.)
-				set s__Ability0002_actor_aim[this]=s__Effect_createAttatched(Ability0002___EFFECT_PATH2 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(s__UnitActor_target[this])]), s__Agent_INDEX_ORIGIN_HANDLE)) , "overhead") // INLINED!!
+				set s__Ability0002_actor_aim[this]=s__Effect_createAttatched(Ability0002__EFFECT_PATH2 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(s__UnitActor_target[this])]), s__Agent_INDEX_ORIGIN_HANDLE)) , "overhead") // INLINED!!
 				return this
    endfunction
 
@@ -22634,7 +22925,7 @@ endfunction
 	
 
    function s__Ability0002_main_relativeTooltip takes integer this returns string
-				return "정신집중 후 대상에게 강력한 탄환을 발사하여 " + s__ConstantString_statStringReal(STAT_TYPE_ATTACK , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_ATTACK)) * Ability0002___DAMAGE_PER_ATTACK ) * ( 1 + Ability0002___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) * s__Unit_prototype__get_attack_speed(s__Ability_prototype_owner[this]) ) , 1) + "의 " + DAMAGE_STRING_PHYSICAL + "를 입힙니다.\n\n - 공격속도에 비례해 피해량이 증가합니다. (위 수치는 증가량이 반영된 수치입니다.)" // INLINED!!
+				return "정신집중 후 대상에게 강력한 탄환을 발사하여 " + s__ConstantString_statStringReal(STAT_TYPE_ATTACK , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_ATTACK)) * Ability0002__DAMAGE_PER_ATTACK ) * ( 1 + Ability0002__DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) * s__Unit_prototype__get_attack_speed(s__Ability_prototype_owner[this]) ) , 1) + "의 " + DAMAGE_STRING_PHYSICAL + "를 입힙니다.\n\n - 공격속도에 비례해 피해량이 증가합니다. (위 수치는 증가량이 반영된 수치입니다.)" // INLINED!!
    endfunction
 
    function s__Ability0002_main_basicAttack takes integer this,integer target returns nothing
@@ -22644,38 +22935,38 @@ endfunction
    function s__Ability0002_main_init takes integer this returns nothing
 				set s__Ability_prototype_weapon_delay[this]=0.5
 				set s__Ability_prototype_weapon_range[this]=650.
-				set s__Ability_prototype_cast_delay[this]=Ability0002___DELAY
+				set s__Ability_prototype_cast_delay[this]=Ability0002__DELAY
 				call s__Ability_plusStatValue(this,5)
    endfunction
 
    function s__Ability0002_main_onInit takes nothing returns nothing
-				call s__Ability_addTypeTag(Ability0002___ID , ABILITY_STRING_WEAPON)
-				call s__Ability_addTypeTag(Ability0002___ID , ABILITY_TAG_FIREARM)
-				call s__Ability_addTypeTag(Ability0002___ID , ABILITY_TAG_SHOOTING)
-				call SaveStr(Ability___HASH, (Ability0002___ID ), s__Ability_INDEX_TOOLTIP, ( "정신 집중 후\n단일 대상 공격")) // INLINED!!
+				call s__Ability_addTypeTag(Ability0002__ID , ABILITY_STRING_WEAPON)
+				call s__Ability_addTypeTag(Ability0002__ID , ABILITY_TAG_FIREARM)
+				call s__Ability_addTypeTag(Ability0002__ID , ABILITY_TAG_SHOOTING)
+				call SaveStr(Ability__HASH, (Ability0002__ID ), s__Ability_INDEX_TOOLTIP, ( "정신 집중 후\n단일 대상 공격")) // INLINED!!
    endfunction
 	
 	
 //textmacro instance: abilityDataEnd()
- function Ability0002___act takes nothing returns nothing
+ function Ability0002__act takes nothing returns nothing
   local integer a= 0
-		if ABILITY_CREATE_ID == Ability0002___ID then
+		if ABILITY_CREATE_ID == Ability0002__ID then
 			set a=s__Ability0002_main__allocate()
-			set s__Ability_prototype_id[a]=Ability0002___ID
-			set s__Ability_prototype_name[a]=Ability0002___NAME
-			set s__Ability_prototype_icon[a]=Ability0002___ICON_PATH
+			set s__Ability_prototype_id[a]=Ability0002__ID
+			set s__Ability_prototype_name[a]=Ability0002__NAME
+			set s__Ability_prototype_icon[a]=Ability0002__ICON_PATH
 			set ABILITY_LAST_CREATED=a
 		endif
 	endfunction
 
- function Ability0002___init takes nothing returns nothing
-		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0002___act))
-		call SaveStr(Ability___HASH, (Ability0002___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0002___ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Ability0002___ID ), s__Ability_INDEX_NAME, ( Ability0002___NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0002___ID ), s__Ability_INDEX_TIER, ( Ability0002___TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0002___ID ), s__Ability_INDEX_COST, ( Ability0002___COST)) // INLINED!!
-		call s__Ability_setTypeBonusStatIndex(Ability0002___ID , 0 , Ability0002___STAT_INDEX1)
-		call s__Ability_setTypeBonusStatIndex(Ability0002___ID , 1 , Ability0002___STAT_INDEX2)
+ function Ability0002__init takes nothing returns nothing
+		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0002__act))
+		call SaveStr(Ability__HASH, (Ability0002__ID ), s__Ability_INDEX_ICON_PATH, ( Ability0002__ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0002__ID ), s__Ability_INDEX_NAME, ( Ability0002__NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0002__ID ), s__Ability_INDEX_TIER, ( Ability0002__TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0002__ID ), s__Ability_INDEX_COST, ( Ability0002__COST)) // INLINED!!
+		call s__Ability_setTypeBonusStatIndex(Ability0002__ID , 0 , Ability0002__STAT_INDEX1)
+		call s__Ability_setTypeBonusStatIndex(Ability0002__ID , 1 , Ability0002__STAT_INDEX2)
 	endfunction
 //end of: abilityDataEnd()
 // scope Ability0002 ends
@@ -22690,43 +22981,43 @@ endfunction
 	
 
 
-   function s__Ability0003___ball_periodicAction takes integer this returns nothing
-				call s__Effect_setPosition(s__Ability0003___ball_l[this],sc__Object__get_x(this) , sc__Object__get_y(this) , 5.)
+   function s__Ability0003__ball_periodicAction takes integer this returns nothing
+				call s__Effect_setPosition(s__Ability0003__ball_l[this],sc__Object__get_x(this) , sc__Object__get_y(this) , 5.)
    endfunction
 
-   function s__Ability0003___ball_executeTarget takes integer this,integer target returns nothing
+   function s__Ability0003__ball_executeTarget takes integer this,integer target returns nothing
 				call DoNothing()
    endfunction
 
-   function s__Ability0003___ball_afterExplosion takes integer this returns nothing
-    local integer c= s__Circle_create(sc__Object__get_x(this) , sc__Object__get_y(this) , 5. , Ability0003___EXPRAD)
+   function s__Ability0003__ball_afterExplosion takes integer this returns nothing
+    local integer c= s__Circle_create(sc__Object__get_x(this) , sc__Object__get_y(this) , 5. , Ability0003__EXPRAD)
 				call s__Effect_setColor(c,255 , 153 , 0)
 				set s__Circle_alpha[c]=0.66
 				call s__Circle_setFadeOutPoint(c,0.25 , 0.75)
-				call s__Effect_setDuration(s__Effect_create(Ability0003___EFFECT_PATH2 , sc__Object__get_x(this) , sc__Object__get_y(this) , 0. , 0.),1.5)
-				call sc__Object_deallocate(s__Ability0003___ball_l[this])
-				set s__Ability0003___ball_l[this]=0
+				call s__Effect_setDuration(s__Effect_create(Ability0003__EFFECT_PATH2 , sc__Object__get_x(this) , sc__Object__get_y(this) , 0. , 0.),1.5)
+				call sc__Object_deallocate(s__Ability0003__ball_l[this])
+				set s__Ability0003__ball_l[this]=0
    endfunction
 
-   function s__Ability0003___ball_create takes integer owner,real x,real y,real z,real yaw,integer level returns integer
-    local integer this= s__Ability0003___ball__allocate(owner , Ability0003___EFFECT_PATH1 , x , y , z , yaw)
-				set s__Movement_velo[s__Object_movement[(this)]]=((Ability0003___VELO)*1.0) // INLINED!!
-				set s__Missile_damage[this]=( (s__Unit_prototype_getCarculatedStatValue((s__Missile_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0003___DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0003___DAMAGE_PER_LEVEL * ( level - 1 ) ) // INLINED!!
-				set s__Missile_damage_id[this]=Ability0003___ID
-				call s__Missile_setCollision(this,Ability0003___COLRAD)
-				call s__Missile__set_radius_explosion((this),((Ability0003___EXPRAD)*1.0)) // INLINED!!
-				call s__Effect_setDuration(this,( Ability0003___RANGE - Ability0003___STARTAT ) / Ability0003___VELO)
+   function s__Ability0003__ball_create takes integer owner,real x,real y,real z,real yaw,integer level returns integer
+    local integer this= s__Ability0003__ball__allocate(owner , Ability0003__EFFECT_PATH1 , x , y , z , yaw)
+				set s__Movement_velo[s__Object_movement[(this)]]=((Ability0003__VELO)*1.0) // INLINED!!
+				set s__Missile_damage[this]=( (s__Unit_prototype_getCarculatedStatValue((s__Missile_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0003__DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0003__DAMAGE_PER_LEVEL * ( level - 1 ) ) // INLINED!!
+				set s__Missile_damage_id[this]=Ability0003__ID
+				call s__Missile_setCollision(this,Ability0003__COLRAD)
+				call s__Missile__set_radius_explosion((this),((Ability0003__EXPRAD)*1.0)) // INLINED!!
+				call s__Effect_setDuration(this,( Ability0003__RANGE - Ability0003__STARTAT ) / Ability0003__VELO)
 				call s__Missile_setDamageFlag((this),DAMAGE_TYPE_MAGICAL , ATTACK_TYPE_SPELL , false , true , INTERVAL_TYPE_SINGLE , VECTOR_TYPE_OUTTER , true , true) // INLINED!!
-				set s__Ability0003___ball_l[this]=s__Circle_create(x , y , 5. , Ability0003___COLRAD)
-				call s__Effect_setColor(s__Ability0003___ball_l[this],255 , 153 , 0)
-				set s__Circle_alpha[s__Ability0003___ball_l[this]]=0.5
+				set s__Ability0003__ball_l[this]=s__Circle_create(x , y , 5. , Ability0003__COLRAD)
+				call s__Effect_setColor(s__Ability0003__ball_l[this],255 , 153 , 0)
+				set s__Circle_alpha[s__Ability0003__ball_l[this]]=0.5
 				return this
    endfunction
 
-   function s__Ability0003___ball_onDestroy takes integer this returns nothing
-				if s__Ability0003___ball_l[this] != 0 then
-					call s__Circle_setFadeOutPoint(s__Ability0003___ball_l[this],0. , 1.5)
-					set s__Ability0003___ball_l[this]=0
+   function s__Ability0003__ball_onDestroy takes integer this returns nothing
+				if s__Ability0003__ball_l[this] != 0 then
+					call s__Circle_setFadeOutPoint(s__Ability0003__ball_l[this],0. , 1.5)
+					set s__Ability0003__ball_l[this]=0
 				endif
    endfunction
 
@@ -22734,8 +23025,8 @@ endfunction
 	
 
    function s__Ability0003_actor_onComplete takes integer this returns nothing
-    local integer ms= s__Ability0003___ball_create((s__Actor_actor[(this)]) , (((sc__Object__get_x((s__Actor_actor[(this)])) )*1.0) + (( Ability0003___STARTAT )*1.0) * Cos((( s__Math_anglePoints(sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , sc__Actor__get_x(this) , sc__Actor__get_y(this)))*1.0) * bj_DEGTORAD)) , (((sc__Object__get_y((s__Actor_actor[(this)])) )*1.0) + (( Ability0003___STARTAT )*1.0) * Sin((( s__Math_anglePoints(sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , sc__Actor__get_x(this) , sc__Actor__get_y(this)))*1.0) * bj_DEGTORAD)) , sc__Object__get_z((s__Actor_actor[(this)])) + s__Object_pivot_z[(s__Actor_actor[(this)])] , s__Ability0003_actor_angle[this] , s__UnitActor_level[this]) // INLINED!!
-				call s__UnitActor_create((s__Actor_actor[(this)]) , 0 , 0. , 0. , 0 , Ability0003___BACKSWING , true) // INLINED!!
+    local integer ms= s__Ability0003__ball_create((s__Actor_actor[(this)]) , (((sc__Object__get_x((s__Actor_actor[(this)])) )*1.0) + (( Ability0003__STARTAT )*1.0) * Cos((( s__Math_anglePoints(sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , sc__Actor__get_x(this) , sc__Actor__get_y(this)))*1.0) * bj_DEGTORAD)) , (((sc__Object__get_y((s__Actor_actor[(this)])) )*1.0) + (( Ability0003__STARTAT )*1.0) * Sin((( s__Math_anglePoints(sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , sc__Actor__get_x(this) , sc__Actor__get_y(this)))*1.0) * bj_DEGTORAD)) , sc__Object__get_z((s__Actor_actor[(this)])) + s__Object_pivot_z[(s__Actor_actor[(this)])] , s__Ability0003_actor_angle[this] , s__UnitActor_level[this]) // INLINED!!
+				call s__UnitActor_create((s__Actor_actor[(this)]) , 0 , 0. , 0. , 0 , Ability0003__BACKSWING , true) // INLINED!!
    endfunction
 	
    function s__Ability0003_actor_create takes integer u,real x,real y,real delay,integer level returns integer
@@ -22744,7 +23035,7 @@ endfunction
 				call s__Unit_prototype_setAnim((s__Actor_actor[(this)]),"attack") // INLINED!!
 				call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((1.66)*1.0)) // INLINED!!
 				call SetUnitFacing((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Actor_actor[(this)]))]), s__Agent_INDEX_ORIGIN_HANDLE)), s__Math_anglePoints(sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , x , y)) // INLINED!!
-				set s__Actor_progress_bar[this]=s__ProgressBar_create(Ability0003___NAME , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+				set s__Actor_progress_bar[this]=s__ProgressBar_create(Ability0003__NAME , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
 				return this
    endfunction
 
@@ -22755,16 +23046,16 @@ endfunction
 	
 	
 
-   function s__Ability0003___ind_beforeRefresh takes integer this returns nothing
+   function s__Ability0003__ind_beforeRefresh takes integer this returns nothing
 				set s__LineIndicator_x[this]=sc__Object__get_x(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
 				set s__LineIndicator_y[this]=sc__Object__get_y(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
 				set s__LineIndicator_yaw[this]=s__Math_anglePoints(s__LineIndicator_x[this] , s__LineIndicator_y[this] , (s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))])) // INLINED!!
-				set s__LineIndicator_range[this]=Ability0003___RANGE + Ability0003___COLRAD
-				set s__LineIndicator_width[this]=Ability0003___COLRAD
+				set s__LineIndicator_range[this]=Ability0003__RANGE + Ability0003__COLRAD
+				set s__LineIndicator_width[this]=Ability0003__COLRAD
    endfunction
 
-   function s__Ability0003___ind_create takes integer abil,player owner returns integer
-    local integer this= s__Ability0003___ind__allocate(abil , owner)
+   function s__Ability0003__ind_create takes integer abil,player owner returns integer
+    local integer this= s__Ability0003__ind__allocate(abil , owner)
 				call s__Effect_setColor(s__LineIndicator_ef[this],255 , R2I(0.65 * 255) , 0)
 				call s__Effect_setColor(s__AbilityIndicator_circle[this],255 , R2I(0.65 * 255) , 0)
 				return this
@@ -22773,7 +23064,7 @@ endfunction
 
 	
    function s__Ability0003_main_relativeTooltip takes integer this returns string
-				return "지정한 방향으로 화염구를 발사하여 적과 닿으면 범위 내의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0003___DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0003___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 " + DAMAGE_STRING_MAGICAL + "를 입힙니다." // INLINED!!
+				return "지정한 방향으로 화염구를 발사하여 적과 닿으면 범위 내의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0003__DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0003__DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 " + DAMAGE_STRING_MAGICAL + "를 입힙니다." // INLINED!!
    endfunction
 	
    function s__Ability0003_main_execute takes integer this returns nothing
@@ -22785,40 +23076,40 @@ endfunction
 				set s__Ability_prototype_preserve_order[this]=false
 				set s__Ability_prototype_cooldown_max[this]=5.5
 				set s__Ability_prototype_cooldown_min[this]=0.5
-				set s__Ability_prototype_cast_delay[this]=Ability0003___DELAY
+				set s__Ability_prototype_cast_delay[this]=Ability0003__DELAY
 				set s__Ability_prototype_manacost[this]=25
-				set s__Ability_prototype_indicator[this]=s__Ability0003___ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+				set s__Ability_prototype_indicator[this]=s__Ability0003__ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
 				call s__Ability_plusStatValue(this,5)
    endfunction
 	
    function s__Ability0003_main_onInit takes nothing returns nothing
-				call s__Ability_addTypeTag(Ability0003___ID , ABILITY_STRING_TARGET_LOCATION)
-				call s__Ability_addTypeTag(Ability0003___ID , ABILITY_TAG_MAGIC)
-				call s__Ability_addTypeTag(Ability0003___ID , ABILITY_TAG_FIRE)
-				call SaveStr(Ability___HASH, (Ability0003___ID ), s__Ability_INDEX_TOOLTIP, ( "범위피해 투사체 발사\n ")) // INLINED!!
+				call s__Ability_addTypeTag(Ability0003__ID , ABILITY_STRING_TARGET_LOCATION)
+				call s__Ability_addTypeTag(Ability0003__ID , ABILITY_TAG_MAGIC)
+				call s__Ability_addTypeTag(Ability0003__ID , ABILITY_TAG_FIRE)
+				call SaveStr(Ability__HASH, (Ability0003__ID ), s__Ability_INDEX_TOOLTIP, ( "범위피해 투사체 발사\n ")) // INLINED!!
    endfunction
 	
 	
 //textmacro instance: abilityDataEnd()
- function Ability0003___act takes nothing returns nothing
+ function Ability0003__act takes nothing returns nothing
   local integer a= 0
-		if ABILITY_CREATE_ID == Ability0003___ID then
+		if ABILITY_CREATE_ID == Ability0003__ID then
 			set a=s__Ability0003_main__allocate()
-			set s__Ability_prototype_id[a]=Ability0003___ID
-			set s__Ability_prototype_name[a]=Ability0003___NAME
-			set s__Ability_prototype_icon[a]=Ability0003___ICON_PATH
+			set s__Ability_prototype_id[a]=Ability0003__ID
+			set s__Ability_prototype_name[a]=Ability0003__NAME
+			set s__Ability_prototype_icon[a]=Ability0003__ICON_PATH
 			set ABILITY_LAST_CREATED=a
 		endif
 	endfunction
 
- function Ability0003___init takes nothing returns nothing
-		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0003___act))
-		call SaveStr(Ability___HASH, (Ability0003___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0003___ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Ability0003___ID ), s__Ability_INDEX_NAME, ( Ability0003___NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0003___ID ), s__Ability_INDEX_TIER, ( Ability0003___TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0003___ID ), s__Ability_INDEX_COST, ( Ability0003___COST)) // INLINED!!
-		call s__Ability_setTypeBonusStatIndex(Ability0003___ID , 0 , Ability0003___STAT_INDEX1)
-		call s__Ability_setTypeBonusStatIndex(Ability0003___ID , 1 , Ability0003___STAT_INDEX2)
+ function Ability0003__init takes nothing returns nothing
+		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0003__act))
+		call SaveStr(Ability__HASH, (Ability0003__ID ), s__Ability_INDEX_ICON_PATH, ( Ability0003__ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0003__ID ), s__Ability_INDEX_NAME, ( Ability0003__NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0003__ID ), s__Ability_INDEX_TIER, ( Ability0003__TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0003__ID ), s__Ability_INDEX_COST, ( Ability0003__COST)) // INLINED!!
+		call s__Ability_setTypeBonusStatIndex(Ability0003__ID , 0 , Ability0003__STAT_INDEX1)
+		call s__Ability_setTypeBonusStatIndex(Ability0003__ID , 1 , Ability0003__STAT_INDEX2)
 	endfunction
 //end of: abilityDataEnd()
 // scope Ability0003 ends
@@ -22840,73 +23131,73 @@ endfunction
 		
 
 
-  function s__Ability0004___chain_setDamagePosition takes integer this,real x,real y returns nothing
-			set s__Ability0004___chain_damage_x[this]=x
-			set s__Ability0004___chain_damage_y[this]=y
+  function s__Ability0004__chain_setDamagePosition takes integer this,real x,real y returns nothing
+			set s__Ability0004__chain_damage_x[this]=x
+			set s__Ability0004__chain_damage_y[this]=y
   endfunction
 
-  function s__Ability0004___chain_applyDamageFlag takes integer this returns nothing
-			call s__Damage_setFlag(s__Ability0004___chain_damage_type[this] , s__Ability0004___chain_attack_type[this] , s__Ability0004___chain_is_target[this] , s__Ability0004___chain_is_aoe[this] , s__Ability0004___chain_interval_type[this] , s__Ability0004___chain_vector_type[this] , s__Ability0004___chain_is_onhit[this] , s__Ability0004___chain_is_ranged[this])
-			set DAMAGE_ID=s__Ability0004___chain_damage_id[this]
-			set USE_DAMAGE_POSITION=s__Ability0004___chain_use_damage_position[this]
-			if s__Ability0004___chain_use_damage_position[this] then
-				set DAMAGE_X=s__Ability0004___chain_damage_x[this]
-				set DAMAGE_Y=s__Ability0004___chain_damage_y[this]
+  function s__Ability0004__chain_applyDamageFlag takes integer this returns nothing
+			call s__Damage_setFlag(s__Ability0004__chain_damage_type[this] , s__Ability0004__chain_attack_type[this] , s__Ability0004__chain_is_target[this] , s__Ability0004__chain_is_aoe[this] , s__Ability0004__chain_interval_type[this] , s__Ability0004__chain_vector_type[this] , s__Ability0004__chain_is_onhit[this] , s__Ability0004__chain_is_ranged[this])
+			set DAMAGE_ID=s__Ability0004__chain_damage_id[this]
+			set USE_DAMAGE_POSITION=s__Ability0004__chain_use_damage_position[this]
+			if s__Ability0004__chain_use_damage_position[this] then
+				set DAMAGE_X=s__Ability0004__chain_damage_x[this]
+				set DAMAGE_Y=s__Ability0004__chain_damage_y[this]
 			endif
   endfunction
 
-  function s__Ability0004___chain_damageTarget takes integer this,integer target returns real
-			call s__Ability0004___chain_applyDamageFlag(this)
-			return (s__Damage_unitDamageTarget(((s__Actor_actor[((this))])) , (target ) , (( s__Ability0004___chain_damage[this] )*1.0) , ( s__Ability0004___chain_weapon_type[this]))) // INLINED!!
+  function s__Ability0004__chain_damageTarget takes integer this,integer target returns real
+			call s__Ability0004__chain_applyDamageFlag(this)
+			return (s__Damage_unitDamageTarget(((s__Actor_actor[((this))])) , (target ) , (( s__Ability0004__chain_damage[this] )*1.0) , ( s__Ability0004__chain_weapon_type[this]))) // INLINED!!
   endfunction
 
-  function s__Ability0004___chain_setDamageFlag takes integer this,integer damage,integer attack,boolean target,boolean aoe,integer interval,integer vector,boolean onhit,boolean ranged returns nothing
-			set s__Ability0004___chain_damage_type[this]=damage
-			set s__Ability0004___chain_attack_type[this]=attack
-			set s__Ability0004___chain_is_target[this]=target
-			set s__Ability0004___chain_is_aoe[this]=aoe
-			set s__Ability0004___chain_interval_type[this]=interval
-			set s__Ability0004___chain_vector_type[this]=vector
-			set s__Ability0004___chain_is_onhit[this]=onhit
-			set s__Ability0004___chain_is_ranged[this]=ranged
+  function s__Ability0004__chain_setDamageFlag takes integer this,integer damage,integer attack,boolean target,boolean aoe,integer interval,integer vector,boolean onhit,boolean ranged returns nothing
+			set s__Ability0004__chain_damage_type[this]=damage
+			set s__Ability0004__chain_attack_type[this]=attack
+			set s__Ability0004__chain_is_target[this]=target
+			set s__Ability0004__chain_is_aoe[this]=aoe
+			set s__Ability0004__chain_interval_type[this]=interval
+			set s__Ability0004__chain_vector_type[this]=vector
+			set s__Ability0004__chain_is_onhit[this]=onhit
+			set s__Ability0004__chain_is_ranged[this]=ranged
   endfunction
 
-  function s__Ability0004___chain_damageFlagTemplateMeleeAttack takes integer this returns nothing
-			call s__Ability0004___chain_setDamageFlag(this,DAMAGE_TYPE_PHYSICAL , ATTACK_TYPE_BASIC , true , false , INTERVAL_TYPE_SINGLE , VECTOR_TYPE_OUTTER , true , false)
+  function s__Ability0004__chain_damageFlagTemplateMeleeAttack takes integer this returns nothing
+			call s__Ability0004__chain_setDamageFlag(this,DAMAGE_TYPE_PHYSICAL , ATTACK_TYPE_BASIC , true , false , INTERVAL_TYPE_SINGLE , VECTOR_TYPE_OUTTER , true , false)
   endfunction
 
-  function s__Ability0004___chain_damageFlagTemplateRangedAttack takes integer this returns nothing
-			call s__Ability0004___chain_setDamageFlag(this,DAMAGE_TYPE_PHYSICAL , ATTACK_TYPE_BASIC , true , false , INTERVAL_TYPE_SINGLE , VECTOR_TYPE_OUTTER , true , true)
+  function s__Ability0004__chain_damageFlagTemplateRangedAttack takes integer this returns nothing
+			call s__Ability0004__chain_setDamageFlag(this,DAMAGE_TYPE_PHYSICAL , ATTACK_TYPE_BASIC , true , false , INTERVAL_TYPE_SINGLE , VECTOR_TYPE_OUTTER , true , true)
   endfunction
 
-  function s__Ability0004___chain_damageFlagTemplateMagicalExplosion takes integer this returns nothing
-			call s__Ability0004___chain_setDamageFlag(this,DAMAGE_TYPE_MAGICAL , ATTACK_TYPE_SPELL , false , true , INTERVAL_TYPE_SINGLE , VECTOR_TYPE_OUTTER , true , true)
+  function s__Ability0004__chain_damageFlagTemplateMagicalExplosion takes integer this returns nothing
+			call s__Ability0004__chain_setDamageFlag(this,DAMAGE_TYPE_MAGICAL , ATTACK_TYPE_SPELL , false , true , INTERVAL_TYPE_SINGLE , VECTOR_TYPE_OUTTER , true , true)
   endfunction
 
-  function s__Ability0004___chain_damageFlagTemplatePhysicalExplosion takes integer this returns nothing
-			call s__Ability0004___chain_setDamageFlag(this,DAMAGE_TYPE_PHYSICAL , ATTACK_TYPE_SPELL , false , true , INTERVAL_TYPE_SINGLE , VECTOR_TYPE_OUTTER , true , true)
+  function s__Ability0004__chain_damageFlagTemplatePhysicalExplosion takes integer this returns nothing
+			call s__Ability0004__chain_setDamageFlag(this,DAMAGE_TYPE_PHYSICAL , ATTACK_TYPE_SPELL , false , true , INTERVAL_TYPE_SINGLE , VECTOR_TYPE_OUTTER , true , true)
   endfunction
 
-  function s__Ability0004___chain_damageFlagTemplateTargetMagic takes integer this returns nothing
-			call s__Ability0004___chain_setDamageFlag(this,DAMAGE_TYPE_MAGICAL , ATTACK_TYPE_SPELL , true , false , INTERVAL_TYPE_SINGLE , VECTOR_TYPE_OUTTER , true , true)
+  function s__Ability0004__chain_damageFlagTemplateTargetMagic takes integer this returns nothing
+			call s__Ability0004__chain_setDamageFlag(this,DAMAGE_TYPE_MAGICAL , ATTACK_TYPE_SPELL , true , false , INTERVAL_TYPE_SINGLE , VECTOR_TYPE_OUTTER , true , true)
   endfunction
 
-  function s__Ability0004___chain_damageFlagTemplateDOT takes integer this returns nothing
-			call s__Ability0004___chain_setDamageFlag(this,DAMAGE_TYPE_MAGICAL , ATTACK_TYPE_ETC , false , false , INTERVAL_TYPE_PERIODIC , VECTOR_TYPE_INNER , false , true)
+  function s__Ability0004__chain_damageFlagTemplateDOT takes integer this returns nothing
+			call s__Ability0004__chain_setDamageFlag(this,DAMAGE_TYPE_MAGICAL , ATTACK_TYPE_ETC , false , false , INTERVAL_TYPE_PERIODIC , VECTOR_TYPE_INNER , false , true)
   endfunction
 
 
 
-  function s__Ability0004___chain_affectFilter takes integer this,integer target returns boolean
-			if ( not s__Ability0004___chain_affect_enemy[this] and (IsUnitEnemy((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((target))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[((this))])))]), s__Agent_INDEX_ORIGIN_HANDLE))))))) ) then // INLINED!!
+  function s__Ability0004__chain_affectFilter takes integer this,integer target returns boolean
+			if ( not s__Ability0004__chain_affect_enemy[this] and (IsUnitEnemy((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((target))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[((this))])))]), s__Agent_INDEX_ORIGIN_HANDLE))))))) ) then // INLINED!!
 				return false
-			elseif ( not s__Ability0004___chain_affect_ally[this] and (IsUnitAlly((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((target))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[((this))])))]), s__Agent_INDEX_ORIGIN_HANDLE))))))) ) then // INLINED!!
+			elseif ( not s__Ability0004__chain_affect_ally[this] and (IsUnitAlly((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((target))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[((this))])))]), s__Agent_INDEX_ORIGIN_HANDLE))))))) ) then // INLINED!!
 				return false
-			elseif ( not s__Ability0004___chain_affect_invincible[this] and s__Unit_prototype_getStatus(target,STATUS_INVINCIBLE) > 0 ) then
+			elseif ( not s__Ability0004__chain_affect_invincible[this] and s__Unit_prototype_getStatus(target,STATUS_INVINCIBLE) > 0 ) then
 				return false
-			elseif ( not s__Ability0004___chain_affect_evasion[this] and s__Unit_prototype_getStatus(target,STATUS_EVASION) > 0 ) then
+			elseif ( not s__Ability0004__chain_affect_evasion[this] and s__Unit_prototype_getStatus(target,STATUS_EVASION) > 0 ) then
 				return false
-			elseif ( not s__Ability0004___chain_affect_self[this] and target == (s__Actor_actor[((this))]) ) then // INLINED!!
+			elseif ( not s__Ability0004__chain_affect_self[this] and target == (s__Actor_actor[((this))]) ) then // INLINED!!
 				return false
 			elseif s__Unit_prototype_isUnitType(target,UNIT_TYPE_DEAD) then
 				return false
@@ -22916,60 +23207,72 @@ endfunction
   endfunction
 
 
-  function s__Ability0004___chain_rangeFilter takes integer this,integer target returns boolean
-			return (IsUnitInRangeXY((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((target))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((sc__Actor__get_x(this) )*1.0), (( sc__Actor__get_y(this) )*1.0), (( s__Ability0004___chain_radius_explosion[this])*1.0))) // INLINED!!
+  function s__Ability0004__chain_rangeFilter takes integer this,integer target returns boolean
+			return (IsUnitInRangeXY((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((target))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((sc__Actor__get_x(this) )*1.0), (( sc__Actor__get_y(this) )*1.0), (( s__Ability0004__chain_radius_explosion[this])*1.0))) // INLINED!!
   endfunction
 
 
 		
 
-  function s__Ability0004___chain_explosionFilter takes integer this,integer target returns boolean
-			if not s__Ability0004___chain_affectFilter(this,target) then
+  function s__Ability0004__chain_explosionFillUnits takes integer this,group g returns nothing
+			call s__Group_fillUnitsInRange(g , sc__Actor__get_x(this) , sc__Actor__get_y(this) , s__Ability0004__chain_radius_explosion[this])
+  endfunction
+
+  function s__Ability0004__chain_explosionFilter takes integer this,integer target returns boolean
+			if not s__Ability0004__chain_affectFilter(this,target) then
 				return false
-			elseif not s__Ability0004___chain_rangeFilter(this,target) then
+			elseif not s__Ability0004__chain_rangeFilter(this,target) then
 				return false
-			elseif not sc__Ability0004___chain_explosionFilterAdditional(this,target) then
+			elseif not sc__Ability0004__chain_explosionFilterAdditional(this,target) then
 				return false
 			else
 				return true
 			endif
   endfunction
 
-  function s__Ability0004___chain_explosionAction takes integer this returns nothing
+  function s__Ability0004__chain_explosionAction takes integer this returns nothing
    local integer i= 0
    local unit u= null
+   local group g= s__Group_new()
+			call s__Ability0004__chain_explosionFillUnits(this,g)
 			loop
-				set u=BlzGroupUnitAt(UnitPrototype_GROUP, i)
+				set u=BlzGroupUnitAt(g, i)
 				exitwhen u == null
-				if s__Ability0004___chain_explosionFilter(this,s__Unit_prototype_get(u)) then
-					call sc__Ability0004___chain_executeExplosion(this,s__Unit_prototype_get(u))
-					call GroupAddUnit(s__Ability0004___chain_group_wave[this], u)
+				if not IsUnitType(u, UNIT_TYPE_DEAD) then
+					if s__Unit_prototype_get(u) > 0 then
+						if s__Ability0004__chain_explosionFilter(this,s__Unit_prototype_get(u)) then
+							call sc__Ability0004__chain_executeExplosion(this,s__Unit_prototype_get(u))
+							call GroupAddUnit(s__Ability0004__chain_group_wave[this], u)
+						endif
+					endif
 				endif
 				set i=i + 1
 			endloop
+			call ReleaseGroup((g)) // INLINED!!
+			set g=null
 			set u=null
   endfunction
 
 
-   function s__Ability0004___chain_explosionFilterAdditional takes integer this,integer target returns boolean
-				return not IsUnitInGroup((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(target)]), s__Agent_INDEX_ORIGIN_HANDLE)), s__Ability0004___chain_already[this]) // INLINED!!
+   function s__Ability0004__chain_explosionFilterAdditional takes integer this,integer target returns boolean
+				return not IsUnitInGroup((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(target)]), s__Agent_INDEX_ORIGIN_HANDLE)), s__Ability0004__chain_already[this]) // INLINED!!
    endfunction
 	
-   function s__Ability0004___chain_executeExplosion takes integer this,integer target returns nothing
+   function s__Ability0004__chain_executeExplosion takes integer this,integer target returns nothing
 				call DoNothing()
    endfunction
 
-   function s__Ability0004___chain_killFilter takes integer this returns boolean
-				if s__Ability0004___chain_count[this] <= 0 then
+   function s__Ability0004__chain_killFilter takes integer this returns boolean
+				if s__Ability0004__chain_count[this] <= 0 then
 					return true
 				else
 					
-					set s__Ability0004___chain_target_previous[this]=s__UnitActor_target[this]
-					set s__UnitActor_target[this]=s__Unit_prototype_get(s__Group_getNearest(s__Ability0004___chain_group_wave[this] , sc__Actor__get_x(this) , sc__Actor__get_y(this) , null))
+					set s__Ability0004__chain_target_previous[this]=s__UnitActor_target[this]
+					set s__UnitActor_target[this]=s__Unit_prototype_get(s__Group_getNearest(s__Ability0004__chain_group_wave[this] , sc__Actor__get_x(this) , sc__Actor__get_y(this) , null))
 					
 					if s__UnitActor_target[this] != 0 then
 						set s__Actor_timeout[this]=0.
-						set s__Actor_duration[this]=Ability0004___INTERVAL
+						set s__Actor_duration[this]=Ability0004__INTERVAL
 						call sc__Actor__set_x(this,sc__Object__get_x(s__UnitActor_target[this]))
 						call sc__Actor__set_y(this,sc__Object__get_y(s__UnitActor_target[this]))
 						return false
@@ -22980,64 +23283,64 @@ endfunction
 				endif
    endfunction
 
-   function s__Ability0004___chain_onComplete takes integer this returns nothing
+   function s__Ability0004__chain_onComplete takes integer this returns nothing
 				
-    local integer l= s__Lightning_createOO("CLPB" , s__Ability0004___chain_target_previous[this] , s__UnitActor_target[this])
-				set s__Lightning_oz1[l]=s__Object_pivot_z[s__Ability0004___chain_target_previous[this]]
+    local integer l= s__Lightning_createOO("CLPB" , s__Ability0004__chain_target_previous[this] , s__UnitActor_target[this])
+				set s__Lightning_oz1[l]=s__Object_pivot_z[s__Ability0004__chain_target_previous[this]]
 				set s__Lightning_oz2[l]=s__Object_pivot_z[s__UnitActor_target[this]]
 				set s__Lightning_duration[l]=0.45
 				set s__Lightning_alpha[l]=1.5
 				set s__Lightning_fade[l]=1.
 				
-				call s__Ability0004___chain_damageTarget(this,s__UnitActor_target[this])
-				set s__Ability0004___chain_damage[this]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[((this))])),STAT_TYPE_MAGICPOWER)) * Ability0004___DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0004___DAMAGE_PER_LEVEL * ( s__UnitActor_level[this] - 1 ) ) // INLINED!!
+				call s__Ability0004__chain_damageTarget(this,s__UnitActor_target[this])
+				set s__Ability0004__chain_damage[this]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[((this))])),STAT_TYPE_MAGICPOWER)) * Ability0004__DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0004__DAMAGE_PER_LEVEL * ( s__UnitActor_level[this] - 1 ) ) // INLINED!!
 				
-				call s__Effect_kill(s__Effect_createAttatched(Ability0004___EFFECT_PATH1 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(s__UnitActor_target[this])]), s__Agent_INDEX_ORIGIN_HANDLE)) , "chest")) // INLINED!!
+				call s__Effect_kill(s__Effect_createAttatched(Ability0004__EFFECT_PATH1 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(s__UnitActor_target[this])]), s__Agent_INDEX_ORIGIN_HANDLE)) , "chest")) // INLINED!!
 				
 				if s__Actor_progress_bar[this] != 0 then
 					call s__ProgressBar_deallocate(s__Actor_progress_bar[this])
 					set s__Actor_progress_bar[this]=0
 				endif
 				
-				set s__Ability0004___chain_count[this]=s__Ability0004___chain_count[this] - 1
+				set s__Ability0004__chain_count[this]=s__Ability0004__chain_count[this] - 1
 				
-				call GroupAddUnit(s__Ability0004___chain_already[this], (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(s__UnitActor_target[this])]), s__Agent_INDEX_ORIGIN_HANDLE))) // INLINED!!
+				call GroupAddUnit(s__Ability0004__chain_already[this], (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(s__UnitActor_target[this])]), s__Agent_INDEX_ORIGIN_HANDLE))) // INLINED!!
 				
-				call GroupClear(s__Ability0004___chain_group_wave[this])
-				call s__Ability0004___chain_explosionAction(this)
+				call GroupClear(s__Ability0004__chain_group_wave[this])
+				call s__Ability0004__chain_explosionAction(this)
    endfunction
 
-   function s__Ability0004___chain_create takes integer caster,integer target,integer level,integer count returns integer
-    local integer this= s__Ability0004___chain__allocate(caster , target , sc__Object__get_x(target) , sc__Object__get_y(target) , level , Ability0004___INTERVAL , false)
-				call s__Effect_kill(s__Effect_createAttatched(Ability0004___EFFECT_PATH1 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Actor_actor[(this)]))]), s__Agent_INDEX_ORIGIN_HANDLE)) , "chest")) // INLINED!!
-				set s__Actor_progress_bar[this]=s__ProgressBar_create(Ability0004___NAME , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
-				set s__Ability0004___chain_target_previous[this]=(s__Actor_actor[(this)]) // INLINED!!
-				set s__Ability0004___chain_group_wave[this]=s__Group_new()
-				set s__Ability0004___chain_already[this]=s__Group_new()
-				set s__Ability0004___chain_count[this]=count
-				set s__Ability0004___chain_damage[this]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[((this))])),STAT_TYPE_MAGICPOWER)) * Ability0004___DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0004___DAMAGE_PER_LEVEL * ( s__UnitActor_level[this] - 1 ) ) + ( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[((this))])),STAT_TYPE_ACCURACY)) * Ability0004___DAMAGE_PER_ACCURACY ) * ( 1 + Ability0004___DAMAGE_PER_LEVEL * ( s__UnitActor_level[this] - 1 ) ) // INLINED!!
-				call s__Ability0004___chain_setDamageFlag((this),DAMAGE_TYPE_MAGICAL , ATTACK_TYPE_SPELL , true , false , INTERVAL_TYPE_SINGLE , VECTOR_TYPE_OUTTER , true , true) // INLINED!!
-				set s__Ability0004___chain_damage_id[this]=Ability0004___ID
-				set s__Ability0004___chain_weapon_type[this]=WEAPON_TYPE_METAL_LIGHT_CHOP
+   function s__Ability0004__chain_create takes integer caster,integer target,integer level,integer count returns integer
+    local integer this= s__Ability0004__chain__allocate(caster , target , sc__Object__get_x(target) , sc__Object__get_y(target) , level , Ability0004__INTERVAL , false)
+				call s__Effect_kill(s__Effect_createAttatched(Ability0004__EFFECT_PATH1 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Actor_actor[(this)]))]), s__Agent_INDEX_ORIGIN_HANDLE)) , "chest")) // INLINED!!
+				set s__Actor_progress_bar[this]=s__ProgressBar_create(Ability0004__NAME , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+				set s__Ability0004__chain_target_previous[this]=(s__Actor_actor[(this)]) // INLINED!!
+				set s__Ability0004__chain_group_wave[this]=s__Group_new()
+				set s__Ability0004__chain_already[this]=s__Group_new()
+				set s__Ability0004__chain_count[this]=count
+				set s__Ability0004__chain_damage[this]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[((this))])),STAT_TYPE_MAGICPOWER)) * Ability0004__DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0004__DAMAGE_PER_LEVEL * ( s__UnitActor_level[this] - 1 ) ) + ( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[((this))])),STAT_TYPE_ACCURACY)) * Ability0004__DAMAGE_PER_ACCURACY ) * ( 1 + Ability0004__DAMAGE_PER_LEVEL * ( s__UnitActor_level[this] - 1 ) ) // INLINED!!
+				call s__Ability0004__chain_setDamageFlag((this),DAMAGE_TYPE_MAGICAL , ATTACK_TYPE_SPELL , true , false , INTERVAL_TYPE_SINGLE , VECTOR_TYPE_OUTTER , true , true) // INLINED!!
+				set s__Ability0004__chain_damage_id[this]=Ability0004__ID
+				set s__Ability0004__chain_weapon_type[this]=WEAPON_TYPE_METAL_LIGHT_CHOP
 				call s__UnitActor_suspendFree(this)
 				return this
    endfunction
 
-   function s__Ability0004___chain_onDestroy takes integer this returns nothing
-				call ReleaseGroup((s__Ability0004___chain_group_wave[this])) // INLINED!!
-				call ReleaseGroup((s__Ability0004___chain_already[this])) // INLINED!!
-				set s__Ability0004___chain_group_wave[this]=null
-				set s__Ability0004___chain_already[this]=null
+   function s__Ability0004__chain_onDestroy takes integer this returns nothing
+				call ReleaseGroup((s__Ability0004__chain_group_wave[this])) // INLINED!!
+				call ReleaseGroup((s__Ability0004__chain_already[this])) // INLINED!!
+				set s__Ability0004__chain_group_wave[this]=null
+				set s__Ability0004__chain_already[this]=null
    endfunction
 
 
 	
    function s__Ability0004_actor_create takes integer u,integer target,real delay,integer level returns integer
-    local integer this= s__Ability0004_actor__allocate(u , target , 0. , 0. , level , delay + Ability0004___BACKSWING , true)
+    local integer this= s__Ability0004_actor__allocate(u , target , 0. , 0. , level , delay + Ability0004__BACKSWING , true)
 				call s__Unit_prototype_setAnim((s__Actor_actor[(this)]),"attack") // INLINED!!
 				call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((1.66)*1.0)) // INLINED!!
 				call SetUnitFacing((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Actor_actor[(this)]))]), s__Agent_INDEX_ORIGIN_HANDLE)), s__Math_anglePoints(sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , sc__Object__get_x(s__UnitActor_target[this]) , sc__Object__get_y(s__UnitActor_target[this]))) // INLINED!!
-				call s__Ability0004___chain_create(u , target , level , Ability0004___TARGET_MAX)
+				call s__Ability0004__chain_create(u , target , level , Ability0004__TARGET_MAX)
 				return this
    endfunction
 
@@ -23049,7 +23352,7 @@ endfunction
 	
 	
    function s__Ability0004_main_relativeTooltip takes integer this returns string
-				return "대상을 포함한 최대 " + STRING_COLOR_CONSTANT + I2S(Ability0004___TARGET_MAX) + "기|r의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0004___DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0004___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 " + DAMAGE_STRING_MAGICAL + "를 입힙니다.\n첫 대상에게는 피해량이 " + s__ConstantString_statStringReal(STAT_TYPE_ACCURACY , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_ACCURACY)) * Ability0004___DAMAGE_PER_ACCURACY ) * ( 1 + Ability0004___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + " 만큼 증가합니다." // INLINED!!
+				return "대상을 포함한 최대 " + STRING_COLOR_CONSTANT + I2S(Ability0004__TARGET_MAX) + "기|r의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0004__DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0004__DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 " + DAMAGE_STRING_MAGICAL + "를 입힙니다.\n첫 대상에게는 피해량이 " + s__ConstantString_statStringReal(STAT_TYPE_ACCURACY , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_ACCURACY)) * Ability0004__DAMAGE_PER_ACCURACY ) * ( 1 + Ability0004__DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + " 만큼 증가합니다." // INLINED!!
    endfunction
 	
    function s__Ability0004_main_execute takes integer this returns nothing
@@ -23060,43 +23363,43 @@ endfunction
 				set s__Ability_prototype_manacost[this]=22
 				set s__Ability_prototype_is_active[this]=true
 				set s__Ability_prototype_is_target[this]=true
-				set s__Ability_prototype_cast_range[this]=Ability0004___RANGE
+				set s__Ability_prototype_cast_range[this]=Ability0004__RANGE
 				set s__Ability_prototype_preserve_order[this]=false
 				set s__Ability_prototype_cooldown_max[this]=5.3
 				set s__Ability_prototype_cooldown_min[this]=0.5
-				set s__Ability_prototype_cast_delay[this]=Ability0004___INTERVAL
+				set s__Ability_prototype_cast_delay[this]=Ability0004__INTERVAL
 				set s__Ability_prototype_indicator[this]=s__AbilityIndicator_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
 				call s__Ability_plusStatValue(this,5)
    endfunction
 	
    function s__Ability0004_main_onInit takes nothing returns nothing
-				call s__Ability_addTypeTag(Ability0004___ID , ABILITY_STRING_TARGET_UNIT)
-				call s__Ability_addTypeTag(Ability0004___ID , ABILITY_TAG_MAGIC)
-				call s__Ability_addTypeTag(Ability0004___ID , ABILITY_TAG_LIGHTNING)
-				call SaveStr(Ability___HASH, (Ability0004___ID ), s__Ability_INDEX_TOOLTIP, ( "다수의 적 연쇄공격\n ")) // INLINED!!
+				call s__Ability_addTypeTag(Ability0004__ID , ABILITY_STRING_TARGET_UNIT)
+				call s__Ability_addTypeTag(Ability0004__ID , ABILITY_TAG_MAGIC)
+				call s__Ability_addTypeTag(Ability0004__ID , ABILITY_TAG_LIGHTNING)
+				call SaveStr(Ability__HASH, (Ability0004__ID ), s__Ability_INDEX_TOOLTIP, ( "다수의 적 연쇄공격\n ")) // INLINED!!
    endfunction
 	
 	
 //textmacro instance: abilityDataEnd()
- function Ability0004___act takes nothing returns nothing
+ function Ability0004__act takes nothing returns nothing
   local integer a= 0
-		if ABILITY_CREATE_ID == Ability0004___ID then
+		if ABILITY_CREATE_ID == Ability0004__ID then
 			set a=s__Ability0004_main__allocate()
-			set s__Ability_prototype_id[a]=Ability0004___ID
-			set s__Ability_prototype_name[a]=Ability0004___NAME
-			set s__Ability_prototype_icon[a]=Ability0004___ICON_PATH
+			set s__Ability_prototype_id[a]=Ability0004__ID
+			set s__Ability_prototype_name[a]=Ability0004__NAME
+			set s__Ability_prototype_icon[a]=Ability0004__ICON_PATH
 			set ABILITY_LAST_CREATED=a
 		endif
 	endfunction
 
- function Ability0004___init takes nothing returns nothing
-		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0004___act))
-		call SaveStr(Ability___HASH, (Ability0004___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0004___ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Ability0004___ID ), s__Ability_INDEX_NAME, ( Ability0004___NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0004___ID ), s__Ability_INDEX_TIER, ( Ability0004___TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0004___ID ), s__Ability_INDEX_COST, ( Ability0004___COST)) // INLINED!!
-		call s__Ability_setTypeBonusStatIndex(Ability0004___ID , 0 , Ability0004___STAT_INDEX1)
-		call s__Ability_setTypeBonusStatIndex(Ability0004___ID , 1 , Ability0004___STAT_INDEX2)
+ function Ability0004__init takes nothing returns nothing
+		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0004__act))
+		call SaveStr(Ability__HASH, (Ability0004__ID ), s__Ability_INDEX_ICON_PATH, ( Ability0004__ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0004__ID ), s__Ability_INDEX_NAME, ( Ability0004__NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0004__ID ), s__Ability_INDEX_TIER, ( Ability0004__TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0004__ID ), s__Ability_INDEX_COST, ( Ability0004__COST)) // INLINED!!
+		call s__Ability_setTypeBonusStatIndex(Ability0004__ID , 0 , Ability0004__STAT_INDEX1)
+		call s__Ability_setTypeBonusStatIndex(Ability0004__ID , 1 , Ability0004__STAT_INDEX2)
 	endfunction
 //end of: abilityDataEnd()
 // scope Ability0004 ends
@@ -23170,7 +23473,7 @@ endfunction
 				call s__Ability_addTypeTag(Ability0005___ID , ABILITY_STRING_TARGET_UNIT)
 				call s__Ability_addTypeTag(Ability0005___ID , ABILITY_TAG_MAGIC)
 				call s__Ability_addTypeTag(Ability0005___ID , ABILITY_TAG_DIVINE)
-				call SaveStr(Ability___HASH, (Ability0005___ID ), s__Ability_INDEX_TOOLTIP, ( "단일대상 회복\n ")) // INLINED!!
+				call SaveStr(Ability__HASH, (Ability0005___ID ), s__Ability_INDEX_TOOLTIP, ( "단일대상 회복\n ")) // INLINED!!
    endfunction
 	
 	
@@ -23188,10 +23491,10 @@ endfunction
 
  function Ability0005___init takes nothing returns nothing
 		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0005___act))
-		call SaveStr(Ability___HASH, (Ability0005___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0005___ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Ability0005___ID ), s__Ability_INDEX_NAME, ( Ability0005___NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0005___ID ), s__Ability_INDEX_TIER, ( Ability0005___TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0005___ID ), s__Ability_INDEX_COST, ( Ability0005___COST)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0005___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0005___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0005___ID ), s__Ability_INDEX_NAME, ( Ability0005___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0005___ID ), s__Ability_INDEX_TIER, ( Ability0005___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0005___ID ), s__Ability_INDEX_COST, ( Ability0005___COST)) // INLINED!!
 		call s__Ability_setTypeBonusStatIndex(Ability0005___ID , 0 , Ability0005___STAT_INDEX1)
 		call s__Ability_setTypeBonusStatIndex(Ability0005___ID , 1 , Ability0005___STAT_INDEX2)
 	endfunction
@@ -23254,7 +23557,7 @@ endfunction
    function s__Ability0006_main_onInit takes nothing returns nothing
 				call s__Ability_addTypeTag(Ability0006___ID , ABILITY_STRING_TARGET_LOCATION)
 				call s__Ability_addTypeTag(Ability0006___ID , ABILITY_TAG_MAGIC)
-				call SaveStr(Ability___HASH, (Ability0006___ID ), s__Ability_INDEX_TOOLTIP, ( "순간이동\n ")) // INLINED!!
+				call SaveStr(Ability__HASH, (Ability0006___ID ), s__Ability_INDEX_TOOLTIP, ( "순간이동\n ")) // INLINED!!
    endfunction
 	
 	
@@ -23272,10 +23575,10 @@ endfunction
 
  function Ability0006___init takes nothing returns nothing
 		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0006___act))
-		call SaveStr(Ability___HASH, (Ability0006___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0006___ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Ability0006___ID ), s__Ability_INDEX_NAME, ( Ability0006___NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0006___ID ), s__Ability_INDEX_TIER, ( Ability0006___TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0006___ID ), s__Ability_INDEX_COST, ( Ability0006___COST)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0006___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0006___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0006___ID ), s__Ability_INDEX_NAME, ( Ability0006___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0006___ID ), s__Ability_INDEX_TIER, ( Ability0006___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0006___ID ), s__Ability_INDEX_COST, ( Ability0006___COST)) // INLINED!!
 		call s__Ability_setTypeBonusStatIndex(Ability0006___ID , 0 , Ability0006___STAT_INDEX1)
 		call s__Ability_setTypeBonusStatIndex(Ability0006___ID , 1 , Ability0006___STAT_INDEX2)
 	endfunction
@@ -23394,7 +23697,7 @@ endfunction
    function s__Ability0007_main_onInit takes nothing returns nothing
 				call s__Ability_addTypeTag(Ability0007___ID , ABILITY_STRING_TARGET_LOCATION)
 				call s__Ability_addTypeTag(Ability0007___ID , ABILITY_TAG_ASSASSINATE)
-				call SaveStr(Ability___HASH, (Ability0007___ID ), s__Ability_INDEX_TOOLTIP, ( "순간이동 및\n직선 범위공격")) // INLINED!!
+				call SaveStr(Ability__HASH, (Ability0007___ID ), s__Ability_INDEX_TOOLTIP, ( "순간이동 및\n직선 범위공격")) // INLINED!!
    endfunction
 	
 	
@@ -23412,10 +23715,10 @@ endfunction
 
  function Ability0007___init takes nothing returns nothing
 		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0007___act))
-		call SaveStr(Ability___HASH, (Ability0007___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0007___ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Ability0007___ID ), s__Ability_INDEX_NAME, ( Ability0007___NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0007___ID ), s__Ability_INDEX_TIER, ( Ability0007___TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0007___ID ), s__Ability_INDEX_COST, ( Ability0007___COST)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0007___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0007___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0007___ID ), s__Ability_INDEX_NAME, ( Ability0007___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0007___ID ), s__Ability_INDEX_TIER, ( Ability0007___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0007___ID ), s__Ability_INDEX_COST, ( Ability0007___COST)) // INLINED!!
 		call s__Ability_setTypeBonusStatIndex(Ability0007___ID , 0 , Ability0007___STAT_INDEX1)
 		call s__Ability_setTypeBonusStatIndex(Ability0007___ID , 1 , Ability0007___STAT_INDEX2)
 	endfunction
@@ -23526,7 +23829,7 @@ endfunction
 				call s__Ability_addTypeTag(Ability0008___ID , ABILITY_STRING_TARGET_LOCATION)
 				call s__Ability_addTypeTag(Ability0008___ID , ABILITY_TAG_ARCHERY)
 				call s__Ability_addTypeTag(Ability0008___ID , ABILITY_TAG_SHOOTING)
-				call SaveStr(Ability___HASH, (Ability0008___ID ), s__Ability_INDEX_TOOLTIP, ( "다수의 투사체 발사\n")) // INLINED!!
+				call SaveStr(Ability__HASH, (Ability0008___ID ), s__Ability_INDEX_TOOLTIP, ( "다수의 투사체 발사\n")) // INLINED!!
    endfunction
 	
 	
@@ -23544,10 +23847,10 @@ endfunction
 
  function Ability0008___init takes nothing returns nothing
 		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0008___act))
-		call SaveStr(Ability___HASH, (Ability0008___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0008___ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Ability0008___ID ), s__Ability_INDEX_NAME, ( Ability0008___NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0008___ID ), s__Ability_INDEX_TIER, ( Ability0008___TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0008___ID ), s__Ability_INDEX_COST, ( Ability0008___COST)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0008___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0008___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0008___ID ), s__Ability_INDEX_NAME, ( Ability0008___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0008___ID ), s__Ability_INDEX_TIER, ( Ability0008___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0008___ID ), s__Ability_INDEX_COST, ( Ability0008___COST)) // INLINED!!
 		call s__Ability_setTypeBonusStatIndex(Ability0008___ID , 0 , Ability0008___STAT_INDEX1)
 		call s__Ability_setTypeBonusStatIndex(Ability0008___ID , 1 , Ability0008___STAT_INDEX2)
 	endfunction
@@ -23620,7 +23923,7 @@ endfunction
 				call s__Ability_addTypeTag(Abilityu000___ID , ABILITY_STRING_TARGET_UNIT)
 				call s__Ability_addTypeTag(Abilityu000___ID , ABILITY_TAG_BRAWL)
 				call s__Ability_addTypeTag(Abilityu000___ID , ABILITY_TAG_UNDEAD)
-				call SaveStr(Ability___HASH, (Abilityu000___ID ), s__Ability_INDEX_TOOLTIP, ( "대상에게 돌진\n ")) // INLINED!!
+				call SaveStr(Ability__HASH, (Abilityu000___ID ), s__Ability_INDEX_TOOLTIP, ( "대상에게 돌진\n ")) // INLINED!!
    endfunction
 	
 	
@@ -23638,10 +23941,10 @@ endfunction
 
  function Abilityu000___init takes nothing returns nothing
 		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Abilityu000___act))
-		call SaveStr(Ability___HASH, (Abilityu000___ID ), s__Ability_INDEX_ICON_PATH, ( Abilityu000___ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Abilityu000___ID ), s__Ability_INDEX_NAME, ( Abilityu000___NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Abilityu000___ID ), s__Ability_INDEX_TIER, ( Abilityu000___TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Abilityu000___ID ), s__Ability_INDEX_COST, ( Abilityu000___COST)) // INLINED!!
+		call SaveStr(Ability__HASH, (Abilityu000___ID ), s__Ability_INDEX_ICON_PATH, ( Abilityu000___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Abilityu000___ID ), s__Ability_INDEX_NAME, ( Abilityu000___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Abilityu000___ID ), s__Ability_INDEX_TIER, ( Abilityu000___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Abilityu000___ID ), s__Ability_INDEX_COST, ( Abilityu000___COST)) // INLINED!!
 		call s__Ability_setTypeBonusStatIndex(Abilityu000___ID , 0 , Abilityu000___STAT_INDEX1)
 		call s__Ability_setTypeBonusStatIndex(Abilityu000___ID , 1 , Abilityu000___STAT_INDEX2)
 	endfunction
@@ -23792,7 +24095,7 @@ endfunction
 				call s__Ability_addTypeTag(Abilityu001___ID , ABILITY_STRING_WEAPON)
 				call s__Ability_addTypeTag(Abilityu001___ID , ABILITY_TAG_BUG)
 				call s__Ability_addTypeTag(Abilityu001___ID , ABILITY_TAG_UNDEAD)
-				call SaveStr(Ability___HASH, (Abilityu001___ID ), s__Ability_INDEX_TOOLTIP, ( "거미떼 공격,\n대상 이동속도 감소")) // INLINED!!
+				call SaveStr(Ability__HASH, (Abilityu001___ID ), s__Ability_INDEX_TOOLTIP, ( "거미떼 공격,\n대상 이동속도 감소")) // INLINED!!
    endfunction
 	
 	
@@ -23810,10 +24113,10 @@ endfunction
 
  function Abilityu001___init takes nothing returns nothing
 		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Abilityu001___act))
-		call SaveStr(Ability___HASH, (Abilityu001___ID ), s__Ability_INDEX_ICON_PATH, ( Abilityu001___ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Abilityu001___ID ), s__Ability_INDEX_NAME, ( Abilityu001___NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Abilityu001___ID ), s__Ability_INDEX_TIER, ( Abilityu001___TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Abilityu001___ID ), s__Ability_INDEX_COST, ( Abilityu001___COST)) // INLINED!!
+		call SaveStr(Ability__HASH, (Abilityu001___ID ), s__Ability_INDEX_ICON_PATH, ( Abilityu001___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Abilityu001___ID ), s__Ability_INDEX_NAME, ( Abilityu001___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Abilityu001___ID ), s__Ability_INDEX_TIER, ( Abilityu001___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Abilityu001___ID ), s__Ability_INDEX_COST, ( Abilityu001___COST)) // INLINED!!
 		call s__Ability_setTypeBonusStatIndex(Abilityu001___ID , 0 , Abilityu001___STAT_INDEX1)
 		call s__Ability_setTypeBonusStatIndex(Abilityu001___ID , 1 , Abilityu001___STAT_INDEX2)
 	endfunction
@@ -24306,7 +24609,7 @@ endfunction
 				call s__Ability_addTypeTag(Ability0010___ID3 , ABILITY_TAG_POISON)
 				call s__Ability_addTypeTag(Ability0010___ID3 , ABILITY_TAG_DRUG)
 				
-				call SaveStr(Ability___HASH, (Ability0010___ID ), s__Ability_INDEX_TOOLTIP, ( "여러 가지 물약 제조\n및 투척")) // INLINED!!
+				call SaveStr(Ability__HASH, (Ability0010___ID ), s__Ability_INDEX_TOOLTIP, ( "여러 가지 물약 제조\n및 투척")) // INLINED!!
 				
 				set s__Ability0010_main_INDEX_BTN_CREATE=0 * s__Ability0010_main_POTION_TYPE_MAX
 				set s__Ability0010_main_INDEX_BTN_SET=1 * s__Ability0010_main_POTION_TYPE_MAX
@@ -24341,10 +24644,10 @@ endfunction
 
  function Ability0010___init takes nothing returns nothing
 		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0010___act))
-		call SaveStr(Ability___HASH, (Ability0010___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0010___ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Ability0010___ID ), s__Ability_INDEX_NAME, ( Ability0010___NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0010___ID ), s__Ability_INDEX_TIER, ( Ability0010___TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0010___ID ), s__Ability_INDEX_COST, ( Ability0010___COST)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0010___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0010___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0010___ID ), s__Ability_INDEX_NAME, ( Ability0010___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0010___ID ), s__Ability_INDEX_TIER, ( Ability0010___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0010___ID ), s__Ability_INDEX_COST, ( Ability0010___COST)) // INLINED!!
 		call s__Ability_setTypeBonusStatIndex(Ability0010___ID , 0 , Ability0010___STAT_INDEX1)
 		call s__Ability_setTypeBonusStatIndex(Ability0010___ID , 1 , Ability0010___STAT_INDEX2)
 	endfunction
@@ -24463,7 +24766,7 @@ endfunction
    function s__Ability0013_main_onInit takes nothing returns nothing
 				call s__Ability_addTypeTag(Ability0013___ID , ABILITY_STRING_IMMEDIATE)
 				call s__Ability_addTypeTag(Ability0013___ID , ABILITY_TAG_IRON)
-				call SaveStr(Ability___HASH, (Ability0013___ID ), s__Ability_INDEX_TOOLTIP, ( "주변 적 연속공격\n ")) // INLINED!!
+				call SaveStr(Ability__HASH, (Ability0013___ID ), s__Ability_INDEX_TOOLTIP, ( "주변 적 연속공격\n ")) // INLINED!!
    endfunction
 	
 	
@@ -24481,10 +24784,10 @@ endfunction
 
  function Ability0013___init takes nothing returns nothing
 		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0013___act))
-		call SaveStr(Ability___HASH, (Ability0013___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0013___ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Ability0013___ID ), s__Ability_INDEX_NAME, ( Ability0013___NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0013___ID ), s__Ability_INDEX_TIER, ( Ability0013___TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0013___ID ), s__Ability_INDEX_COST, ( Ability0013___COST)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0013___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0013___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0013___ID ), s__Ability_INDEX_NAME, ( Ability0013___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0013___ID ), s__Ability_INDEX_TIER, ( Ability0013___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0013___ID ), s__Ability_INDEX_COST, ( Ability0013___COST)) // INLINED!!
 		call s__Ability_setTypeBonusStatIndex(Ability0013___ID , 0 , Ability0013___STAT_INDEX1)
 		call s__Ability_setTypeBonusStatIndex(Ability0013___ID , 1 , Ability0013___STAT_INDEX2)
 	endfunction
@@ -24616,7 +24919,7 @@ endfunction
 				call s__Ability_addTypeTag(Ability0014___ID , ABILITY_STRING_WEAPON)
 				call s__Ability_addTypeTag(Ability0014___ID , ABILITY_TAG_CARDMAGIC)
 				call s__Ability_addTypeTag(Ability0014___ID , ABILITY_TAG_THROW)
-				call SaveStr(Ability___HASH, (Ability0014___ID ), s__Ability_INDEX_TOOLTIP, ( "무작위 피해유형을 가진\n카드 투척")) // INLINED!!
+				call SaveStr(Ability__HASH, (Ability0014___ID ), s__Ability_INDEX_TOOLTIP, ( "무작위 피해유형을 가진\n카드 투척")) // INLINED!!
    endfunction
 	
 	
@@ -24634,10 +24937,10 @@ endfunction
 
  function Ability0014___init takes nothing returns nothing
 		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0014___act))
-		call SaveStr(Ability___HASH, (Ability0014___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0014___ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Ability0014___ID ), s__Ability_INDEX_NAME, ( Ability0014___NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0014___ID ), s__Ability_INDEX_TIER, ( Ability0014___TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0014___ID ), s__Ability_INDEX_COST, ( Ability0014___COST)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0014___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0014___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0014___ID ), s__Ability_INDEX_NAME, ( Ability0014___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0014___ID ), s__Ability_INDEX_TIER, ( Ability0014___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0014___ID ), s__Ability_INDEX_COST, ( Ability0014___COST)) // INLINED!!
 		call s__Ability_setTypeBonusStatIndex(Ability0014___ID , 0 , Ability0014___STAT_INDEX1)
 		call s__Ability_setTypeBonusStatIndex(Ability0014___ID , 1 , Ability0014___STAT_INDEX2)
 	endfunction
@@ -24851,7 +25154,7 @@ endfunction
 				call s__Ability_addTypeTag(Ability0015___ID , ABILITY_STRING_TARGET_LOCATION)
 				call s__Ability_addTypeTag(Ability0015___ID , ABILITY_TAG_MAGIC)
 				call s__Ability_addTypeTag(Ability0015___ID , ABILITY_TAG_DARK)
-				call SaveStr(Ability___HASH, (Ability0015___ID ), s__Ability_INDEX_TOOLTIP, ( "장거리 직선 범위공격\n")) // INLINED!!
+				call SaveStr(Ability__HASH, (Ability0015___ID ), s__Ability_INDEX_TOOLTIP, ( "장거리 직선 범위공격\n")) // INLINED!!
    endfunction
 	
 	
@@ -24869,10 +25172,10 @@ endfunction
 
  function Ability0015___init takes nothing returns nothing
 		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0015___act))
-		call SaveStr(Ability___HASH, (Ability0015___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0015___ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Ability0015___ID ), s__Ability_INDEX_NAME, ( Ability0015___NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0015___ID ), s__Ability_INDEX_TIER, ( Ability0015___TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0015___ID ), s__Ability_INDEX_COST, ( Ability0015___COST)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0015___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0015___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0015___ID ), s__Ability_INDEX_NAME, ( Ability0015___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0015___ID ), s__Ability_INDEX_TIER, ( Ability0015___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0015___ID ), s__Ability_INDEX_COST, ( Ability0015___COST)) // INLINED!!
 		call s__Ability_setTypeBonusStatIndex(Ability0015___ID , 0 , Ability0015___STAT_INDEX1)
 		call s__Ability_setTypeBonusStatIndex(Ability0015___ID , 1 , Ability0015___STAT_INDEX2)
 	endfunction
@@ -24979,7 +25282,7 @@ endfunction
 				call s__Ability_addTypeTag(Ability0016___ID , ABILITY_STRING_TARGET_UNIT)
 				call s__Ability_addTypeTag(Ability0016___ID , ABILITY_TAG_IRON)
 				call s__Ability_addTypeTag(Ability0016___ID , ABILITY_TAG_THROW)
-				call SaveStr(Ability___HASH, (Ability0016___ID ), s__Ability_INDEX_TOOLTIP, ( "단일 대상에게\n수리검 투척")) // INLINED!!
+				call SaveStr(Ability__HASH, (Ability0016___ID ), s__Ability_INDEX_TOOLTIP, ( "단일 대상에게\n수리검 투척")) // INLINED!!
    endfunction
 	
 	
@@ -24997,10 +25300,10 @@ endfunction
 
  function Ability0016___init takes nothing returns nothing
 		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0016___act))
-		call SaveStr(Ability___HASH, (Ability0016___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0016___ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Ability0016___ID ), s__Ability_INDEX_NAME, ( Ability0016___NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0016___ID ), s__Ability_INDEX_TIER, ( Ability0016___TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0016___ID ), s__Ability_INDEX_COST, ( Ability0016___COST)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0016___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0016___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0016___ID ), s__Ability_INDEX_NAME, ( Ability0016___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0016___ID ), s__Ability_INDEX_TIER, ( Ability0016___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0016___ID ), s__Ability_INDEX_COST, ( Ability0016___COST)) // INLINED!!
 		call s__Ability_setTypeBonusStatIndex(Ability0016___ID , 0 , Ability0016___STAT_INDEX1)
 		call s__Ability_setTypeBonusStatIndex(Ability0016___ID , 1 , Ability0016___STAT_INDEX2)
 	endfunction
@@ -25173,7 +25476,7 @@ endfunction
    function s__Abilityu010_main_onInit takes nothing returns nothing
 				call s__Ability_addTypeTag(Abilityu010___ID , ABILITY_STRING_IMMEDIATE)
 				call s__Ability_addTypeTag(Abilityu010___ID , ABILITY_TAG_UNDEAD)
-				call SaveStr(Ability___HASH, (Abilityu010___ID ), s__Ability_INDEX_TOOLTIP, ( "공격속도 급증 및 체력 희생\n ")) // INLINED!!
+				call SaveStr(Ability__HASH, (Abilityu010___ID ), s__Ability_INDEX_TOOLTIP, ( "공격속도 급증 및 체력 희생\n ")) // INLINED!!
    endfunction
 	
 	
@@ -25191,10 +25494,10 @@ endfunction
 
  function Abilityu010___init takes nothing returns nothing
 		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Abilityu010___act))
-		call SaveStr(Ability___HASH, (Abilityu010___ID ), s__Ability_INDEX_ICON_PATH, ( Abilityu010___ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Abilityu010___ID ), s__Ability_INDEX_NAME, ( Abilityu010___NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Abilityu010___ID ), s__Ability_INDEX_TIER, ( Abilityu010___TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Abilityu010___ID ), s__Ability_INDEX_COST, ( Abilityu010___COST)) // INLINED!!
+		call SaveStr(Ability__HASH, (Abilityu010___ID ), s__Ability_INDEX_ICON_PATH, ( Abilityu010___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Abilityu010___ID ), s__Ability_INDEX_NAME, ( Abilityu010___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Abilityu010___ID ), s__Ability_INDEX_TIER, ( Abilityu010___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Abilityu010___ID ), s__Ability_INDEX_COST, ( Abilityu010___COST)) // INLINED!!
 		call s__Ability_setTypeBonusStatIndex(Abilityu010___ID , 0 , Abilityu010___STAT_INDEX1)
 		call s__Ability_setTypeBonusStatIndex(Abilityu010___ID , 1 , Abilityu010___STAT_INDEX2)
 	endfunction
@@ -25384,7 +25687,7 @@ endfunction
 				call s__Ability_addTypeTag(Abilityu011___ID , ABILITY_STRING_PASSIVE)
 				call s__Ability_addTypeTag(Abilityu011___ID , ABILITY_TAG_POISON)
 				call s__Ability_addTypeTag(Abilityu011___ID , ABILITY_TAG_UNDEAD)
-				call SaveStr(Ability___HASH, (Abilityu011___ID ), s__Ability_INDEX_TOOLTIP, ( "지속 범위피해 및\n대상 받는 치유량 감소")) // INLINED!!
+				call SaveStr(Ability__HASH, (Abilityu011___ID ), s__Ability_INDEX_TOOLTIP, ( "지속 범위피해 및\n대상 받는 치유량 감소")) // INLINED!!
 				call TriggerAddCondition(Abilityu011___DESTROY_REQUEST, Condition(function s__Abilityu011_main_destroyRequest))
    endfunction
 	
@@ -25403,10 +25706,10 @@ endfunction
 
  function Abilityu011___init takes nothing returns nothing
 		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Abilityu011___act))
-		call SaveStr(Ability___HASH, (Abilityu011___ID ), s__Ability_INDEX_ICON_PATH, ( Abilityu011___ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Abilityu011___ID ), s__Ability_INDEX_NAME, ( Abilityu011___NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Abilityu011___ID ), s__Ability_INDEX_TIER, ( Abilityu011___TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Abilityu011___ID ), s__Ability_INDEX_COST, ( Abilityu011___COST)) // INLINED!!
+		call SaveStr(Ability__HASH, (Abilityu011___ID ), s__Ability_INDEX_ICON_PATH, ( Abilityu011___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Abilityu011___ID ), s__Ability_INDEX_NAME, ( Abilityu011___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Abilityu011___ID ), s__Ability_INDEX_TIER, ( Abilityu011___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Abilityu011___ID ), s__Ability_INDEX_COST, ( Abilityu011___COST)) // INLINED!!
 		call s__Ability_setTypeBonusStatIndex(Abilityu011___ID , 0 , Abilityu011___STAT_INDEX1)
 		call s__Ability_setTypeBonusStatIndex(Abilityu011___ID , 1 , Abilityu011___STAT_INDEX2)
 	endfunction
@@ -25540,7 +25843,7 @@ endfunction
 				call s__Ability_addTypeTag(Ability0020___ID , ABILITY_STRING_TARGET_LOCATION)
 				call s__Ability_addTypeTag(Ability0020___ID , ABILITY_TAG_FIREARM)
 				call s__Ability_addTypeTag(Ability0020___ID , ABILITY_TAG_SHOOTING)
-				call SaveStr(Ability___HASH, (Ability0020___ID ), s__Ability_INDEX_TOOLTIP, ( "다수의 투사체 연사")) // INLINED!!
+				call SaveStr(Ability__HASH, (Ability0020___ID ), s__Ability_INDEX_TOOLTIP, ( "다수의 투사체 연사")) // INLINED!!
    endfunction
 	
 	
@@ -25558,10 +25861,10 @@ endfunction
 
  function Ability0020___init takes nothing returns nothing
 		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0020___act))
-		call SaveStr(Ability___HASH, (Ability0020___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0020___ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Ability0020___ID ), s__Ability_INDEX_NAME, ( Ability0020___NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0020___ID ), s__Ability_INDEX_TIER, ( Ability0020___TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0020___ID ), s__Ability_INDEX_COST, ( Ability0020___COST)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0020___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0020___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0020___ID ), s__Ability_INDEX_NAME, ( Ability0020___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0020___ID ), s__Ability_INDEX_TIER, ( Ability0020___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0020___ID ), s__Ability_INDEX_COST, ( Ability0020___COST)) // INLINED!!
 		call s__Ability_setTypeBonusStatIndex(Ability0020___ID , 0 , Ability0020___STAT_INDEX1)
 		call s__Ability_setTypeBonusStatIndex(Ability0020___ID , 1 , Ability0020___STAT_INDEX2)
 	endfunction
@@ -25783,7 +26086,7 @@ endfunction
   function s__Ability0021_main_onInit takes nothing returns nothing
 			call s__Ability_addTypeTag(Ability0021___ID , ABILITY_STRING_TARGET_LOCATION)
 			call s__Ability_addTypeTag(Ability0021___ID , ABILITY_TAG_MAGIC)
-			call SaveStr(Ability___HASH, (Ability0021___ID ), s__Ability_INDEX_TOOLTIP, ( "이동속도, 회피치\n감소 영역 전개")) // INLINED!!
+			call SaveStr(Ability__HASH, (Ability0021___ID ), s__Ability_INDEX_TOOLTIP, ( "이동속도, 회피치\n감소 영역 전개")) // INLINED!!
   endfunction
 
 	
@@ -25801,10 +26104,10 @@ endfunction
 
  function Ability0021___init takes nothing returns nothing
 		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0021___act))
-		call SaveStr(Ability___HASH, (Ability0021___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0021___ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Ability0021___ID ), s__Ability_INDEX_NAME, ( Ability0021___NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0021___ID ), s__Ability_INDEX_TIER, ( Ability0021___TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0021___ID ), s__Ability_INDEX_COST, ( Ability0021___COST)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0021___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0021___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0021___ID ), s__Ability_INDEX_NAME, ( Ability0021___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0021___ID ), s__Ability_INDEX_TIER, ( Ability0021___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0021___ID ), s__Ability_INDEX_COST, ( Ability0021___COST)) // INLINED!!
 		call s__Ability_setTypeBonusStatIndex(Ability0021___ID , 0 , Ability0021___STAT_INDEX1)
 		call s__Ability_setTypeBonusStatIndex(Ability0021___ID , 1 , Ability0021___STAT_INDEX2)
 	endfunction
@@ -25982,7 +26285,7 @@ endfunction
    function s__Ability0030_main_onInit takes nothing returns nothing
 				call s__Ability_addTypeTag(Ability0030___ID , ABILITY_STRING_TARGET_LOCATION)
 				call s__Ability_addTypeTag(Ability0030___ID , ABILITY_TAG_FIREARM)
-				call SaveStr(Ability___HASH, (Ability0030___ID ), s__Ability_INDEX_TOOLTIP, ( "연발 미사일 컨테이너 소환\n ")) // INLINED!!
+				call SaveStr(Ability__HASH, (Ability0030___ID ), s__Ability_INDEX_TOOLTIP, ( "연발 미사일 컨테이너 소환\n ")) // INLINED!!
    endfunction
 	
 	
@@ -26000,20 +26303,208 @@ endfunction
 
  function Ability0030___init takes nothing returns nothing
 		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0030___act))
-		call SaveStr(Ability___HASH, (Ability0030___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0030___ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Ability0030___ID ), s__Ability_INDEX_NAME, ( Ability0030___NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0030___ID ), s__Ability_INDEX_TIER, ( Ability0030___TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0030___ID ), s__Ability_INDEX_COST, ( Ability0030___COST)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0030___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0030___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0030___ID ), s__Ability_INDEX_NAME, ( Ability0030___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0030___ID ), s__Ability_INDEX_TIER, ( Ability0030___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0030___ID ), s__Ability_INDEX_COST, ( Ability0030___COST)) // INLINED!!
 		call s__Ability_setTypeBonusStatIndex(Ability0030___ID , 0 , Ability0030___STAT_INDEX1)
 		call s__Ability_setTypeBonusStatIndex(Ability0030___ID , 1 , Ability0030___STAT_INDEX2)
 	endfunction
 //end of: abilityDataEnd()
 // scope Ability0030 ends
 
+
+// scope Ability0031 begins
+//textmacro instance: abilityDataHeader("0031","유성 낙하","BTNFireRocks","4","STAT_TYPE_MAGICPOWER","STAT_TYPE_MAXMP")
+
+		
+//end of: abilityDataHeader("0031","유성 낙하","BTNFireRocks","4","STAT_TYPE_MAGICPOWER","STAT_TYPE_MAXMP")
+
+
+
+
+  function s__Ability0031___ball_periodicAction takes integer this returns nothing
+			if s__Ability0031___ball_c[this] > 0 then
+				call sc__Object__set_x(s__Ability0031___ball_c[this],sc__Object__get_x(this))
+				call sc__Object__set_y(s__Ability0031___ball_c[this],sc__Object__get_y(this))
+			endif
+			if s__Ability0031___ball_stage[this] == 1 then
+				set s__Ability0031___ball_to[this]=s__Ability0031___ball_to[this] + TIMER_TICK
+				if s__Ability0031___ball_to[this] >= Ability0031___EFFECT_INTERVAL then
+					call s__Effect_setAnimSpeed(s__Effect_setDuration(s__Effect_setPitch(s__Effect_create(Ability0031___EFFECT_PATH2 , sc__Object__get_x(this) , sc__Object__get_y(this) , 125. , sc__Object__get_yaw(this)),- 90),1.0),2.)
+					set s__Ability0031___ball_to[this]=s__Ability0031___ball_to[this] - Ability0031___EFFECT_INTERVAL
+				endif
+			endif
+  endfunction
+
+  function s__Ability0031___ball_afterWave takes integer this returns nothing
+   local real d= SquareRoot(GetRandomReal(0, ( Ability0031___EXPRAD / 2 ) * ( Ability0031___EXPRAD / 2 )))
+   local real a= GetRandomReal(0, 360)
+			call s__Effect_setPitch(s__Effect_setScale(s__Effect_setDuration(s__Effect_create(Ability0031___EFFECT_PATH3 , (((sc__Object__get_x(this) )*1.0) + (( d )*1.0) * Cos((( a)*1.0) * bj_DEGTORAD)) , (((sc__Object__get_y(this) )*1.0) + (( d )*1.0) * Sin((( a)*1.0) * bj_DEGTORAD)) , 0. , sc__Object__get_yaw(this)),1.5),2.),- 30.) // INLINED!!
+  endfunction
+
+  function s__Ability0031___ball_executeWave takes integer this,integer target returns nothing
+			call s__Missile_damageTarget(this,target)
+			call s__Effect_setPitch(s__Effect_setDuration(s__Effect_setScale(s__Effect_create(Ability0031___EFFECT_PATH2 , sc__Object__get_x(target) , sc__Object__get_y(target) , sc__Object__get_z(target) + 55. , sc__Object__get_yaw(this)),0.5),1.5),- 90)
+  endfunction
+
+  function s__Ability0031___ball_afterExplosion takes integer this returns nothing
+   local integer ef= s__Effect_create(Ability0031___EFFECT_PATH2 , sc__Object__get_x(this) , sc__Object__get_y(this) , 125. , sc__Object__get_yaw(this))
+			call s__Effect_setDuration(ef,1.0)
+			call s__Effect_setPitch(ef,- 90)
+			set s__Movement_flag_target_location[(s__Object_movement[(this)])]=false // INLINED!!
+			call s__Movement__set_curve(s__Object_movement[this],0)
+			set s__Movement_refresh_facing[s__Object_movement[this]]=false
+			set s__Movement_velo[s__Object_movement[(this)]]=((Ability0031___VELO)*1.0) // INLINED!!
+			call sc__Object__set_pitch(this,20.)
+			call s__Effect_setDuration(this,Ability0031___RANGE_SECOND / Ability0031___VELO)
+			call s__Missile__set_radius_wave((this),((Ability0031___EXPRAD)*1.0)) // INLINED!!
+			call s__Effect_setColor(this,255 , 255 , 153)
+			set s__Ability0031___ball_c[this]=s__Circle_create(sc__Object__get_x(this) , sc__Object__get_y(this) , 1. , Ability0031___EXPRAD)
+			call s__Effect_setColor(s__Ability0031___ball_c[this],255 , R2I(0.65 * 255) , 0)
+			call s__Circle_fadeIn(s__Ability0031___ball_c[this],Ability0031___CAST)
+  endfunction
+
+  function s__Ability0031___ball_executeExplosion takes integer this,integer target returns nothing
+
+  endfunction
+
+  function s__Ability0031___ball_killFilter takes integer this returns boolean
+			if s__Ability0031___ball_stage[this] == 0 then
+				set s__Ability0031___ball_stage[this]=1
+				set s__Missile_want_kill[this]=false
+				return false
+			endif
+			return true
+  endfunction
+
+  function s__Ability0031___ball_create takes integer caster,real x,real y,real angle,integer level returns integer
+   local real tx= (((x )*1.0) + (( Ability0031___BALL_DIST )*1.0) * Cos((( angle + 180)*1.0) * bj_DEGTORAD)) // INLINED!!
+   local real ty= (((y )*1.0) + (( Ability0031___BALL_DIST )*1.0) * Sin((( angle + 180)*1.0) * bj_DEGTORAD)) // INLINED!!
+   local integer this= s__Ability0031___ball__allocate(caster , Ability0031___EFFECT_PATH1 , tx , ty , Ability0031___BALL_HEIGHT , angle)
+			call s__Effect_setYaw(this,90.)
+			call s__Movement__set_curve(s__Object_movement[this],s__Bezier2__allocate(tx , ty , Ability0031___BALL_HEIGHT , x , y , 0.))
+			set s__Curve_overtime[(s__Movement_curve_true[(s__Object_movement[this])])]=Ability0031___DELAY // INLINED!!
+			call s__Curve_setX((s__Movement_curve_true[(s__Object_movement[this])]),INDEX_POINT_MIDDLE , tx) // INLINED!!
+			call s__Curve_setY((s__Movement_curve_true[(s__Object_movement[this])]),INDEX_POINT_MIDDLE , ty) // INLINED!!
+			call s__Curve_setZ((s__Movement_curve_true[(s__Object_movement[this])]),INDEX_POINT_MIDDLE , 0.) // INLINED!!
+			set s__Movement_refresh_facing[s__Object_movement[this]]=true
+			call sc__Object__set_offset_z(this,125.)
+			call s__Effect_setScale(this,2.)
+			set s__Ability0031___ball_level[this]=level
+			call sc__Movement_setTargetLocation(s__Object_movement[(this)],((x )*1.0) , (( y )*1.0) , (( 0.)*1.0)) // INLINED!!
+			call s__Missile__set_radius_explosion((this),((Ability0031___EXPRAD)*1.0)) // INLINED!!
+			call s__Missile_setDamageFlag((this),DAMAGE_TYPE_MAGICAL , ATTACK_TYPE_SPELL , false , true , INTERVAL_TYPE_SINGLE , VECTOR_TYPE_OUTTER , true , true) // INLINED!!
+			set s__Missile_damage_id[this]=Ability0031___ID
+			set s__Missile_damage[this]=( (s__Unit_prototype_getCarculatedStatValue((s__Missile_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0031___DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0031___DAMAGE_PER_LEVEL * ( s__Ability0031___ball_level[this] - 1 ) ) // INLINED!!
+			return this
+  endfunction
+
+  function s__Ability0031___ball_onDestroy takes integer this returns nothing
+			if s__Ability0031___ball_c[this] > 0 then
+				call s__Circle_setFadeOutPoint(s__Ability0031___ball_c[this],0. , 1.25)
+			endif
+			set s__Ability0031___ball_c[this]=0
+  endfunction
+
+
+
+
+  function s__Ability0031___actor_onComplete takes integer this returns nothing
+			call s__Ability0031___ball_create((s__Actor_actor[(this)]) , sc__Actor__get_x(this) , sc__Actor__get_y(this) , s__Ability0031___actor_angle[this] , s__UnitActor_level[this]) // INLINED!!
+  endfunction
+
+  function s__Ability0031___actor_create takes integer caster,real x,real y,real angle,integer level returns integer
+   local integer this= s__Ability0031___actor__allocate(caster , 0 , x , y , level , Ability0031___CAST , true)
+			call s__Unit_prototype_setAnim((s__Actor_actor[(this)]),"attack") // INLINED!!
+			call s__Unit_prototype_setAnim((s__Actor_actor[(this)]),"spell") // INLINED!!
+			call s__Unit_prototype_queueAnim((s__Actor_actor[(this)]),"stand ready") // INLINED!!
+			call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((1.66)*1.0)) // INLINED!!
+			set s__Ability0031___actor_angle[this]=angle
+			return this
+  endfunction
+
+  function s__Ability0031___actor_onDestroy takes integer this returns nothing
+			call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((1.)*1.0)) // INLINED!!
+  endfunction
+
+
+
+  function s__Ability0031___ind_beforeRefresh takes integer this returns nothing
+			set s__LineIndicator_yaw[this]=s__Math_anglePoints(s__Ability_prototype_command_x_temp[s__AbilityIndicator_abil[this]] , s__Ability_prototype_command_y_temp[s__AbilityIndicator_abil[this]] , (s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))])) // INLINED!!
+			set s__LineIndicator_x[this]=(((s__Ability_prototype_command_x_temp[s__AbilityIndicator_abil[this]] )*1.0) + (( - Ability0031___EXPRAD )*1.0) * Cos((( s__LineIndicator_yaw[this])*1.0) * bj_DEGTORAD)) // INLINED!!
+			set s__LineIndicator_y[this]=(((s__Ability_prototype_command_y_temp[s__AbilityIndicator_abil[this]] )*1.0) + (( - Ability0031___EXPRAD )*1.0) * Sin((( s__LineIndicator_yaw[this])*1.0) * bj_DEGTORAD)) // INLINED!!
+			set s__LineIndicator_range[this]=Ability0031___RANGE_SECOND + Ability0031___EXPRAD * 2
+			set s__LineIndicator_width[this]=Ability0031___EXPRAD
+  endfunction
+
+  function s__Ability0031___ind_create takes integer abil,player owner returns integer
+   local integer this= s__Ability0031___ind__allocate(abil , owner)
+			call s__Effect_setColor(s__LineIndicator_ef[this],255 , R2I(0.65 * 255) , 0)
+			call s__Effect_setColor(s__AbilityIndicator_circle[this],255 , R2I(0.65 * 255) , 0)
+			return this
+  endfunction
+
+
+
+  function s__Ability0031_main_relativeTooltip takes integer this returns string
+			return "지정 범위 내의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0031___DAMAGE_PER_MAGICPOWER ) , 1) + "의 " + DAMAGE_STRING_MAGICAL + "를 입힙니다." // INLINED!!
+  endfunction
+
+  function s__Ability0031_main_execute takes integer this returns nothing
+   local integer a= s__Ability0031___actor_create(s__Ability_prototype_owner[this] , s__Ability_prototype_command_x[this] , s__Ability_prototype_command_y[this] , s__Math_anglePoints(s__Ability_prototype_command_x[this] , s__Ability_prototype_command_y[this] , s__Ability_prototype_command_x2[this] , s__Ability_prototype_command_y2[this]) , s__Ability_prototype_level[this])
+  endfunction
+
+  function s__Ability0031_main_init takes integer this returns nothing
+			set s__Ability_prototype_drag_to_use[this]=true
+			set s__Ability_prototype_is_active[this]=true
+			set s__Ability_prototype_cast_range[this]=Ability0031___RANGE
+			set s__Ability_prototype_preserve_order[this]=false
+			set s__Ability_prototype_cooldown_max[this]=0 //9.
+			set s__Ability_prototype_cooldown_min[this]=0 //3.
+			set s__Ability_prototype_manacost[this]=0 //55
+			set s__Ability_prototype_indicator[this]=s__Ability0031___ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+			call s__Ability_plusStatValue(this,5)
+  endfunction
+
+  function s__Ability0031_main_onInit takes nothing returns nothing
+			call s__Ability_addTypeTag(Ability0031___ID , ABILITY_STRING_DRAG_TO_USE)
+			call s__Ability_addTypeTag(Ability0031___ID , ABILITY_TAG_FIRE)
+			call s__Ability_addTypeTag(Ability0031___ID , ABILITY_TAG_MAGIC)
+			call SaveStr(Ability__HASH, (Ability0031___ID ), s__Ability_INDEX_TOOLTIP, ( "직선범위 적 공격\n ")) // INLINED!!
+  endfunction
+
+	
+//textmacro instance: abilityDataEnd()
+ function Ability0031___act takes nothing returns nothing
+  local integer a= 0
+		if ABILITY_CREATE_ID == Ability0031___ID then
+			set a=s__Ability0031_main__allocate()
+			set s__Ability_prototype_id[a]=Ability0031___ID
+			set s__Ability_prototype_name[a]=Ability0031___NAME
+			set s__Ability_prototype_icon[a]=Ability0031___ICON_PATH
+			set ABILITY_LAST_CREATED=a
+		endif
+	endfunction
+
+ function Ability0031___init takes nothing returns nothing
+		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0031___act))
+		call SaveStr(Ability__HASH, (Ability0031___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0031___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0031___ID ), s__Ability_INDEX_NAME, ( Ability0031___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0031___ID ), s__Ability_INDEX_TIER, ( Ability0031___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0031___ID ), s__Ability_INDEX_COST, ( Ability0031___COST)) // INLINED!!
+		call s__Ability_setTypeBonusStatIndex(Ability0031___ID , 0 , Ability0031___STAT_INDEX1)
+		call s__Ability_setTypeBonusStatIndex(Ability0031___ID , 1 , Ability0031___STAT_INDEX2)
+	endfunction
+//end of: abilityDataEnd()
+// scope Ability0031 ends
+
+
 // scope AddRandomAbility4 begins
 
- function AddRandomAbility4__init takes nothing returns nothing
+ function AddRandomAbility4___init takes nothing returns nothing
 		call s__Ability_addRandomAbility('0030' , 4)
+		call s__Ability_addRandomAbility('0031' , 4)
 	endfunction
 
 // scope AddRandomAbility4 ends
@@ -26030,47 +26521,47 @@ endfunction
 
 
 
-  function s__Ability0040__mystruct_act takes nothing returns nothing
+  function s__Ability0040___mystruct_act takes nothing returns nothing
    local integer this= (sg__TimerUtils__Data_get(GetHandleId(((GetExpiredTimer()))) * HASH_UP / HASH_DOWN + HASH_BIAS)) // INLINED!!
-			set s__Ability0040__mystruct_timeout[this]=s__Ability0040__mystruct_timeout[this] + TIMER_TICK
-			call sc__Object__set_z(s__Ability0040__mystruct_ef[this],sc__Object__get_z(s__Ability0040__mystruct_ef[this]) + 500 * TIMER_TICK)
-			call s__Effect_setAlpha(s__Ability0040__mystruct_ef[this],R2I(Ability0040__ALPHA * ( s__Ability0040__mystruct_DURATION - s__Ability0040__mystruct_timeout[this] )))
-			if s__Ability0040__mystruct_timeout[this] >= 0.6 and not s__Ability0040__mystruct_b[this] then
-				call s__Effect_setAnim(s__Ability0040__mystruct_ef[this],ANIM_TYPE_STAND)
-				set s__Ability0040__mystruct_b[this]=true
+			set s__Ability0040___mystruct_timeout[this]=s__Ability0040___mystruct_timeout[this] + TIMER_TICK
+			call sc__Object__set_z(s__Ability0040___mystruct_ef[this],sc__Object__get_z(s__Ability0040___mystruct_ef[this]) + 500 * TIMER_TICK)
+			call s__Effect_setAlpha(s__Ability0040___mystruct_ef[this],R2I(Ability0040___ALPHA * ( s__Ability0040___mystruct_DURATION - s__Ability0040___mystruct_timeout[this] )))
+			if s__Ability0040___mystruct_timeout[this] >= 0.6 and not s__Ability0040___mystruct_b[this] then
+				call s__Effect_setAnim(s__Ability0040___mystruct_ef[this],ANIM_TYPE_STAND)
+				set s__Ability0040___mystruct_b[this]=true
 			endif
-			if s__Ability0040__mystruct_timeout[this] >= s__Ability0040__mystruct_DURATION then
-				call sc__Ability0040__mystruct_deallocate(this)
+			if s__Ability0040___mystruct_timeout[this] >= s__Ability0040___mystruct_DURATION then
+				call sc__Ability0040___mystruct_deallocate(this)
 			endif
   endfunction
 
-  function s__Ability0040__mystruct_create takes integer ef returns integer
-   local integer this= s__Ability0040__mystruct__allocate()
-			set s__Ability0040__mystruct_ef[this]=ef
-			set s__Ability0040__mystruct_t[this]=s__Timer_new(this)
-			call s__Effect_setAnimSpeed(s__Ability0040__mystruct_ef[this],1.)
-			call TimerStart((s__Ability0040__mystruct_t[this] ), (( TIMER_TICK )*1.0), ( true ), ( function s__Ability0040__mystruct_act)) // INLINED!!
+  function s__Ability0040___mystruct_create takes integer ef returns integer
+   local integer this= s__Ability0040___mystruct__allocate()
+			set s__Ability0040___mystruct_ef[this]=ef
+			set s__Ability0040___mystruct_t[this]=s__Timer_new(this)
+			call s__Effect_setAnimSpeed(s__Ability0040___mystruct_ef[this],1.)
+			call TimerStart((s__Ability0040___mystruct_t[this] ), (( TIMER_TICK )*1.0), ( true ), ( function s__Ability0040___mystruct_act)) // INLINED!!
 			return this
   endfunction
 
-  function s__Ability0040__mystruct_onDestroy takes integer this returns nothing
-			set s__Effect_want_remove[s__Ability0040__mystruct_ef[this]]=true
-			call sc__Object_deallocate(s__Ability0040__mystruct_ef[this])
-			call ReleaseTimer((s__Ability0040__mystruct_t[this])) // INLINED!!
-			set s__Ability0040__mystruct_ef[this]=0
-			set s__Ability0040__mystruct_t[this]=null
+  function s__Ability0040___mystruct_onDestroy takes integer this returns nothing
+			set s__Effect_want_remove[s__Ability0040___mystruct_ef[this]]=true
+			call sc__Object_deallocate(s__Ability0040___mystruct_ef[this])
+			call ReleaseTimer((s__Ability0040___mystruct_t[this])) // INLINED!!
+			set s__Ability0040___mystruct_ef[this]=0
+			set s__Ability0040___mystruct_t[this]=null
   endfunction
 
-//Generated destructor of Ability0040__mystruct
-function s__Ability0040__mystruct_deallocate takes integer this returns nothing
+//Generated destructor of Ability0040___mystruct
+function s__Ability0040___mystruct_deallocate takes integer this returns nothing
     if this==null then
         return
-    elseif (si__Ability0040__mystruct_V[this]!=-1) then
+    elseif (si__Ability0040___mystruct_V[this]!=-1) then
         return
     endif
-    call s__Ability0040__mystruct_onDestroy(this)
-    set si__Ability0040__mystruct_V[this]=si__Ability0040__mystruct_F
-    set si__Ability0040__mystruct_F=this
+    call s__Ability0040___mystruct_onDestroy(this)
+    set si__Ability0040___mystruct_V[this]=si__Ability0040___mystruct_F
+    set si__Ability0040___mystruct_F=this
 endfunction
 
 
@@ -26078,11 +26569,11 @@ endfunction
 
 
   function s__Ability0040_explosion_beforeExplosion takes integer this returns nothing
-   local integer e= s__Effect_create(Ability0040__EFFECT_PATH3 , (((s__Explosion_x[this] )*1.0) + (( Ability0040__EXPRAD / 2 )*1.0) * Cos((( GetRandomReal(0, 360))*1.0) * bj_DEGTORAD)) , (((s__Explosion_y[this] )*1.0) + (( Ability0040__EXPRAD / 2 )*1.0) * Sin((( GetRandomReal(0, 360))*1.0) * bj_DEGTORAD)) , GetRandomReal(2, 55) , 270) // INLINED!!
+   local integer e= s__Effect_create(Ability0040___EFFECT_PATH3 , (((s__Explosion_x[this] )*1.0) + (( Ability0040___EXPRAD / 2 )*1.0) * Cos((( GetRandomReal(0, 360))*1.0) * bj_DEGTORAD)) , (((s__Explosion_y[this] )*1.0) + (( Ability0040___EXPRAD / 2 )*1.0) * Sin((( GetRandomReal(0, 360))*1.0) * bj_DEGTORAD)) , GetRandomReal(2, 55) , 270) // INLINED!!
 			call s__Effect_setDuration(e,1.25)
 			call s__Effect_setScale(e,GetRandomReal(0.25, 0.75))
 			set e=0
-			set e=s__Effect_create(Ability0040__EFFECT_PATH4 , (((sc__Object__get_x(s__Ability0040_explosion_ef[this]) )*1.0) + (( Ability0040__FIRE_OFFSET )*1.0) * Cos((( sc__Object__get_yaw(s__Ability0040_explosion_ef[this]))*1.0) * bj_DEGTORAD)) , (((sc__Object__get_y(s__Ability0040_explosion_ef[this]) )*1.0) + (( Ability0040__FIRE_OFFSET )*1.0) * Sin((( sc__Object__get_yaw(s__Ability0040_explosion_ef[this]))*1.0) * bj_DEGTORAD)) , Ability0040__DRAGON_DIST - Ability0040__FIRE_OFFSET , sc__Object__get_yaw(s__Ability0040_explosion_ef[this])) // INLINED!!
+			set e=s__Effect_create(Ability0040___EFFECT_PATH4 , (((sc__Object__get_x(s__Ability0040_explosion_ef[this]) )*1.0) + (( Ability0040___FIRE_OFFSET )*1.0) * Cos((( sc__Object__get_yaw(s__Ability0040_explosion_ef[this]))*1.0) * bj_DEGTORAD)) , (((sc__Object__get_y(s__Ability0040_explosion_ef[this]) )*1.0) + (( Ability0040___FIRE_OFFSET )*1.0) * Sin((( sc__Object__get_yaw(s__Ability0040_explosion_ef[this]))*1.0) * bj_DEGTORAD)) , Ability0040___DRAGON_DIST - Ability0040___FIRE_OFFSET , sc__Object__get_yaw(s__Ability0040_explosion_ef[this])) // INLINED!!
 			call s__Effect_setPitch(e,135)
 			call s__Effect_setDuration(e,1.5)
 			call s__Effect_setAnimSpeed(e,2.)
@@ -26090,7 +26581,7 @@ endfunction
   endfunction
 
   function s__Ability0040_explosion_executeExplosion takes integer this,integer target returns nothing
-   local integer e= s__Effect_create(Ability0040__EFFECT_PATH2 , sc__Object__get_x(target) , sc__Object__get_y(target) , sc__Object__get_z(target) + s__Object_pivot_z[target] , 270)
+   local integer e= s__Effect_create(Ability0040___EFFECT_PATH2 , sc__Object__get_x(target) , sc__Object__get_y(target) , sc__Object__get_z(target) + s__Object_pivot_z[target] , 270)
    local integer bf= 0
 			call s__Effect_kill(e)
 			if IsUnitInGroup((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(target)]), s__Agent_INDEX_ORIGIN_HANDLE)), s__Explosion_group_wave[this]) then // INLINED!!
@@ -26107,16 +26598,16 @@ endfunction
    local integer this= s__Ability0040_explosion__allocate(caster , x , y , rad)
 			set s__Ability0040_explosion_level[this]=level
 			set s__Explosion_interval_type[this]=INTERVAL_TYPE_PERIODIC
-			set s__Explosion_interval[this]=Ability0040__INTERVAL
-			set s__Explosion_damage_id[this]=Ability0040__ID
-			set s__Explosion_count[this]=Ability0040__COUNT
-			set s__Ability0040_explosion_c[this]=s__Circle_create(s__Explosion_x[this] , s__Explosion_y[this] , 2. , Ability0040__EXPRAD)
+			set s__Explosion_interval[this]=Ability0040___INTERVAL
+			set s__Explosion_damage_id[this]=Ability0040___ID
+			set s__Explosion_count[this]=Ability0040___COUNT
+			set s__Ability0040_explosion_c[this]=s__Circle_create(s__Explosion_x[this] , s__Explosion_y[this] , 2. , Ability0040___EXPRAD)
 			call s__Effect_setColor(s__Ability0040_explosion_c[this],255 , R2I(255 * 0.65) , 0)
 			call s__Effect_setAlpha(s__Ability0040_explosion_c[this],0)
 			call s__Circle_fadeIn(s__Ability0040_explosion_c[this],0.45)
 			set s__Ability0040_explosion_ef[this]=ef
 			call s__Effect_setAnimSpeed(s__Ability0040_explosion_ef[this],0.)
-			set s__Ability0040_explosion_ef2[this]=s__Effect_create(Ability0040__EFFECT_PATH5 , s__Explosion_x[this] , s__Explosion_y[this] , 0. , 0.)
+			set s__Ability0040_explosion_ef2[this]=s__Effect_create(Ability0040___EFFECT_PATH5 , s__Explosion_x[this] , s__Explosion_y[this] , 0. , 0.)
 			call s__Effect_setScale(s__Ability0040_explosion_ef2[this],0.75)
 			call s__Effect_setAnimSpeed(s__Ability0040_explosion_ef2[this],2.)
 			return this
@@ -26125,7 +26616,7 @@ endfunction
   function s__Ability0040_explosion_onDestroy takes integer this returns nothing
 			call s__Circle_setFadeOutPoint(s__Ability0040_explosion_c[this],0.01 , 0.75)
 			set s__Ability0040_explosion_c[this]=0
-			call s__Ability0040__mystruct_create(s__Ability0040_explosion_ef[this])
+			call s__Ability0040___mystruct_create(s__Ability0040_explosion_ef[this])
 			set s__Ability0040_explosion_ef[this]=0
 			call s__Effect_kill(s__Ability0040_explosion_ef2[this])
   endfunction
@@ -26136,10 +26627,10 @@ endfunction
   function s__Ability0040_actor_periodicAction takes integer this returns nothing
    local integer ex= 0
 			if s__Actor_stage[this] == 0 then
-				call sc__Object__set_z(s__Ability0040_actor_ef[this],Ability0040__DRAGON_DIST + ( 500. - ( 500. * s__Actor_timeout[this] / Ability0040__CAST ) ))
-				if s__Actor_timeout[this] >= Ability0040__CAST then
-					set ex=s__Ability0040_explosion_create((s__Actor_actor[(this)]) , sc__Actor__get_x(this) , sc__Actor__get_y(this) , Ability0040__EXPRAD , s__UnitActor_level[this] , s__Ability0040_actor_ef[this]) // INLINED!!
-					set s__Explosion_damage[ex]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[(this)])),STAT_TYPE_MAGICPOWER)) * Ability0040__DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0040__DAMAGE_PER_LEVEL * ( s__UnitActor_level[this] - 1 ) ) // INLINED!!
+				call sc__Object__set_z(s__Ability0040_actor_ef[this],Ability0040___DRAGON_DIST + ( 500. - ( 500. * s__Actor_timeout[this] / Ability0040___CAST ) ))
+				if s__Actor_timeout[this] >= Ability0040___CAST then
+					set ex=s__Ability0040_explosion_create((s__Actor_actor[(this)]) , sc__Actor__get_x(this) , sc__Actor__get_y(this) , Ability0040___EXPRAD , s__UnitActor_level[this] , s__Ability0040_actor_ef[this]) // INLINED!!
+					set s__Explosion_damage[ex]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[(this)])),STAT_TYPE_MAGICPOWER)) * Ability0040___DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0040___DAMAGE_PER_LEVEL * ( s__UnitActor_level[this] - 1 ) ) // INLINED!!
 					call s__Explosion_activate(ex)
 					set s__Actor_stage[this]=1
 					set s__Actor_timeout[this]=0.
@@ -26151,7 +26642,7 @@ endfunction
 					call sc__Object__set_offset_z(s__Ability0040_actor_ef[this],- 2.5)
 				endif
 				set s__Ability0040_actor_b[this]=not s__Ability0040_actor_b[this]
-				if s__Actor_timeout[this] >= Ability0040__COUNT * Ability0040__INTERVAL then
+				if s__Actor_timeout[this] >= Ability0040___COUNT * Ability0040___INTERVAL then
 					set s__Actor_want_destroy[this]=true
 				endif
 			endif
@@ -26161,8 +26652,8 @@ endfunction
    local real a= s__Math_anglePoints(sc__Object__get_x(caster) , sc__Object__get_y(caster) , x , y)
    local integer this= s__Ability0040_actor__allocate(caster , 0 , x , y , level , - 1 , false)
 			call s__UnitActor_suspendFree(this)
-			set s__Ability0040_actor_ef[this]=s__Effect_create(Ability0040__EFFECT_PATH1 , (((x )*1.0) + (( - Ability0040__DRAGON_DIST )*1.0) * Cos((( a)*1.0) * bj_DEGTORAD)) , (((y )*1.0) + (( - Ability0040__DRAGON_DIST )*1.0) * Sin((( a)*1.0) * bj_DEGTORAD)) , Ability0040__DRAGON_DIST + ( 500. ) , a) // INLINED!!
-			call s__Effect_setAlpha(s__Ability0040_actor_ef[this],Ability0040__ALPHA)
+			set s__Ability0040_actor_ef[this]=s__Effect_create(Ability0040___EFFECT_PATH1 , (((x )*1.0) + (( - Ability0040___DRAGON_DIST )*1.0) * Cos((( a)*1.0) * bj_DEGTORAD)) , (((y )*1.0) + (( - Ability0040___DRAGON_DIST )*1.0) * Sin((( a)*1.0) * bj_DEGTORAD)) , Ability0040___DRAGON_DIST + ( 500. ) , a) // INLINED!!
+			call s__Effect_setAlpha(s__Ability0040_actor_ef[this],Ability0040___ALPHA)
 			call s__Effect_setAnim(s__Ability0040_actor_ef[this],ANIM_TYPE_ATTACK)
 			call s__Effect_setScale(s__Ability0040_actor_ef[this],3.)
 			call s__Effect_setAnimSpeed(s__Ability0040_actor_ef[this],1.2)
@@ -26177,38 +26668,38 @@ endfunction
 
 
 
-  function s__Ability0040__ind_refresh takes integer this returns nothing
-			call s__Effect_setPosition(s__Ability0040__ind_c[this],(s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))]) , 2.) // INLINED!!
+  function s__Ability0040___ind_refresh takes integer this returns nothing
+			call s__Effect_setPosition(s__Ability0040___ind_c[this],(s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))]) , 2.) // INLINED!!
   endfunction
 
-  function s__Ability0040__ind_show takes integer this,boolean flag returns nothing
+  function s__Ability0040___ind_show takes integer this,boolean flag returns nothing
 			if flag then
 				if GetLocalPlayer() == s__AbilityIndicator_owner[this] then
-					call BlzSetSpecialEffectAlpha((LoadEffectHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability0040__ind_c[this]))]), s__Agent_INDEX_ORIGIN_HANDLE)), (192)) // INLINED!!
+					call BlzSetSpecialEffectAlpha((LoadEffectHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability0040___ind_c[this]))]), s__Agent_INDEX_ORIGIN_HANDLE)), (192)) // INLINED!!
 				endif
 			else
-				call BlzSetSpecialEffectAlpha((LoadEffectHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability0040__ind_c[this]))]), s__Agent_INDEX_ORIGIN_HANDLE)), (0)) // INLINED!!
+				call BlzSetSpecialEffectAlpha((LoadEffectHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability0040___ind_c[this]))]), s__Agent_INDEX_ORIGIN_HANDLE)), (0)) // INLINED!!
 			endif
   endfunction
 
-  function s__Ability0040__ind_create takes integer abil,player owner returns integer
-   local integer this= s__Ability0040__ind__allocate(abil , owner)
-			set s__Ability0040__ind_c[this]=s__Effect_create("Effects\\RCircle.mdl" , 0. , 0. , 2. , 270.)
-			call s__Effect_setScale(s__Ability0040__ind_c[this],Ability0040__EXPRAD / 100.)
-			call BlzSetSpecialEffectAlpha((LoadEffectHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability0040__ind_c[this]))]), s__Agent_INDEX_ORIGIN_HANDLE)), (0)) // INLINED!!
-			call s__Effect_setColor(s__Ability0040__ind_c[this],255 , R2I(255 * 0.65) , 0)
+  function s__Ability0040___ind_create takes integer abil,player owner returns integer
+   local integer this= s__Ability0040___ind__allocate(abil , owner)
+			set s__Ability0040___ind_c[this]=s__Effect_create("Effects\\RCircle.mdl" , 0. , 0. , 2. , 270.)
+			call s__Effect_setScale(s__Ability0040___ind_c[this],Ability0040___EXPRAD / 100.)
+			call BlzSetSpecialEffectAlpha((LoadEffectHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability0040___ind_c[this]))]), s__Agent_INDEX_ORIGIN_HANDLE)), (0)) // INLINED!!
+			call s__Effect_setColor(s__Ability0040___ind_c[this],255 , R2I(255 * 0.65) , 0)
 			call s__Effect_setColor(s__AbilityIndicator_circle[this],255 , R2I(255 * 0.65) , 0)
 			return this
   endfunction
 
-  function s__Ability0040__ind_onDestroy takes integer this returns nothing
-			call sc__Object_deallocate(s__Ability0040__ind_c[this])
+  function s__Ability0040___ind_onDestroy takes integer this returns nothing
+			call sc__Object_deallocate(s__Ability0040___ind_c[this])
   endfunction
 
 
 
   function s__Ability0040_main_relativeTooltip takes integer this returns string
-			return "매 " + STRING_COLOR_CONSTANT + R2SW(Ability0040__INTERVAL, 1, 1) + "초|r마다 지정 범위 내의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0040__DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0040__DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 " + DAMAGE_STRING_MAGICAL + "를 입힙니다. 해당 공격은 대상의 저항력을 " + STRING_COLOR_CONSTANT + R2SW(Ability0040__IGNORE_GUARD * 100, 1, 1) + "%|r 무시하며 총 " + STRING_COLOR_CONSTANT + I2S(Ability0040__COUNT) + "회|r 공격합니다.\n\n|cff999999다른 행동 중에 사용할 수 있습니다.|r" // INLINED!!
+			return STRING_COLOR_CONSTANT + R2SW(Ability0040___INTERVAL * Ability0040___COUNT, 1, 1) + "초|r에 걸쳐 범위 내의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0040___DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0040___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + " ~ " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0040___DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0040___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) * Ability0040___COUNT , 1) + "의 " + DAMAGE_STRING_MAGICAL + "를 입힙니다. 해당 공격은 대상의 저항력을 " + STRING_COLOR_CONSTANT + R2SW(Ability0040___IGNORE_GUARD * 100, 1, 1) + "%|r 무시합니다.\n\n|cff999999다른 행동 중에 사용할 수 있습니다.|r" // INLINED!!
   endfunction
 
   function s__Ability0040_main_execute takes integer this returns nothing
@@ -26217,66 +26708,66 @@ endfunction
 
   function s__Ability0040_main_init takes integer this returns nothing
 			set s__Ability_prototype_is_active[this]=true
-			set s__Ability_prototype_cast_range[this]=Ability0040__RANGE
+			set s__Ability_prototype_cast_range[this]=Ability0040___RANGE
 			set s__Ability_prototype_preserve_order[this]=true
 			set s__Ability_prototype_useable_cast[this]=true
-			set s__Ability_prototype_cooldown_max[this]=25.
+			set s__Ability_prototype_cooldown_max[this]=10.
 			set s__Ability_prototype_cooldown_min[this]=5.
-			set s__Ability_prototype_manacost[this]=100
-			set s__Ability_prototype_indicator[this]=s__Ability0040__ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+			set s__Ability_prototype_manacost[this]=85
+			set s__Ability_prototype_indicator[this]=s__Ability0040___ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
 			call s__Ability_plusStatValue(this,5)
   endfunction
 
   function s__Ability0040_main_onInit takes nothing returns nothing
-			call s__Ability_addTypeTag(Ability0040__ID , ABILITY_STRING_TARGET_LOCATION)
-			call s__Ability_addTypeTag(Ability0040__ID , ABILITY_TAG_FIRE)
-			call s__Ability_addTypeTag(Ability0040__ID , ABILITY_TAG_DRAGON)
-			call SaveStr(Ability___HASH, (Ability0040__ID ), s__Ability_INDEX_TOOLTIP, ( "지정 범위 초토화\n ")) // INLINED!!
+			call s__Ability_addTypeTag(Ability0040___ID , ABILITY_STRING_TARGET_LOCATION)
+			call s__Ability_addTypeTag(Ability0040___ID , ABILITY_TAG_FIRE)
+			call s__Ability_addTypeTag(Ability0040___ID , ABILITY_TAG_DRAGON)
+			call SaveStr(Ability__HASH, (Ability0040___ID ), s__Ability_INDEX_TOOLTIP, ( "지정 범위 초토화\n ")) // INLINED!!
   endfunction
 
 	
 //textmacro instance: abilityDataEnd()
- function Ability0040__act takes nothing returns nothing
+ function Ability0040___act takes nothing returns nothing
   local integer a= 0
-		if ABILITY_CREATE_ID == Ability0040__ID then
+		if ABILITY_CREATE_ID == Ability0040___ID then
 			set a=s__Ability0040_main__allocate()
-			set s__Ability_prototype_id[a]=Ability0040__ID
-			set s__Ability_prototype_name[a]=Ability0040__NAME
-			set s__Ability_prototype_icon[a]=Ability0040__ICON_PATH
+			set s__Ability_prototype_id[a]=Ability0040___ID
+			set s__Ability_prototype_name[a]=Ability0040___NAME
+			set s__Ability_prototype_icon[a]=Ability0040___ICON_PATH
 			set ABILITY_LAST_CREATED=a
 		endif
 	endfunction
 
- function Ability0040__init takes nothing returns nothing
-		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0040__act))
-		call SaveStr(Ability___HASH, (Ability0040__ID ), s__Ability_INDEX_ICON_PATH, ( Ability0040__ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Ability0040__ID ), s__Ability_INDEX_NAME, ( Ability0040__NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0040__ID ), s__Ability_INDEX_TIER, ( Ability0040__TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0040__ID ), s__Ability_INDEX_COST, ( Ability0040__COST)) // INLINED!!
-		call s__Ability_setTypeBonusStatIndex(Ability0040__ID , 0 , Ability0040__STAT_INDEX1)
-		call s__Ability_setTypeBonusStatIndex(Ability0040__ID , 1 , Ability0040__STAT_INDEX2)
+ function Ability0040___init takes nothing returns nothing
+		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0040___act))
+		call SaveStr(Ability__HASH, (Ability0040___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0040___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0040___ID ), s__Ability_INDEX_NAME, ( Ability0040___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0040___ID ), s__Ability_INDEX_TIER, ( Ability0040___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0040___ID ), s__Ability_INDEX_COST, ( Ability0040___COST)) // INLINED!!
+		call s__Ability_setTypeBonusStatIndex(Ability0040___ID , 0 , Ability0040___STAT_INDEX1)
+		call s__Ability_setTypeBonusStatIndex(Ability0040___ID , 1 , Ability0040___STAT_INDEX2)
 	endfunction
 //end of: abilityDataEnd()
 // scope Ability0040 ends
 
 
 // scope Ability0041 begins
-//textmacro instance: abilityDataHeader("0041","종막: 이스보셋","BTNBlackArrows","5","STAT_TYPE_ATTACK","STAT_TYPE_MAXMP")
+//textmacro instance: abilityDataHeader("0041","종막: 이스보셋","BTNIsubosete","5","STAT_TYPE_ATTACK","STAT_TYPE_MAXMP")
 
 		
-//end of: abilityDataHeader("0041","종막: 이스보셋","BTNBlackArrows","5","STAT_TYPE_ATTACK","STAT_TYPE_MAXMP")
+//end of: abilityDataHeader("0041","종막: 이스보셋","BTNIsubosete","5","STAT_TYPE_ATTACK","STAT_TYPE_MAXMP")
 
 
 
-  function s__Ability0041__ind_beforeRefresh takes integer this returns nothing
+  function s__Ability0041___ind_beforeRefresh takes integer this returns nothing
 			set s__SectorIndicator_x[this]=sc__Object__get_x(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
 			set s__SectorIndicator_y[this]=sc__Object__get_y(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
 			set s__SectorIndicator_yaw[this]=s__Math_anglePoints(s__SectorIndicator_x[this] , s__SectorIndicator_y[this] , (s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))])) // INLINED!!
-			set s__SectorIndicator_range[this]=Ability0041__RANGE + Ability0041__COLRAD
+			set s__SectorIndicator_range[this]=Ability0041___RANGE + Ability0041___COLRAD
   endfunction
 
-  function s__Ability0041__ind_create takes integer abil,player owner returns integer
-   local integer this= s__Ability0041__ind__allocate(abil , owner , "30")
+  function s__Ability0041___ind_create takes integer abil,player owner returns integer
+   local integer this= s__Ability0041___ind__allocate(abil , owner , "30")
 			call s__Effect_setColor(s__SectorIndicator_ef[this],200 , 0 , 222)
 			call s__Effect_setColor(s__AbilityIndicator_circle[this],200 , 0 , 222)
 			return this
@@ -26284,18 +26775,18 @@ endfunction
 
 
 
-  function s__Ability0041__bullet_executeWave takes integer this,integer target returns nothing
+  function s__Ability0041___bullet_executeWave takes integer this,integer target returns nothing
 			call s__Missile_damageTarget(this,target)
-			call s__Effect_setDuration(s__Effect_create(Ability0041__EFFECT_PATH4 , sc__Object__get_x(target) , sc__Object__get_y(target) , sc__Object__get_z(target) + s__Object_pivot_z[target] , 0.),1.5)
+			call s__Effect_setDuration(s__Effect_create(Ability0041___EFFECT_PATH4 , sc__Object__get_x(target) , sc__Object__get_y(target) , sc__Object__get_z(target) + s__Object_pivot_z[target] , 0.),1.5)
   endfunction
 
-  function s__Ability0041__bullet_create takes integer owner,real x,real y,real z,real yaw,integer level returns integer
-   local integer this= s__Ability0041__bullet__allocate(owner , Ability0041__EFFECT_PATH3 , x , y , z , yaw)
-			set s__Movement_velo[s__Object_movement[(this)]]=((Ability0041__VELO)*1.0) // INLINED!!
-			set s__Missile_damage[this]=( (s__Unit_prototype_getCarculatedStatValue((s__Missile_owner[this]),STAT_TYPE_ATTACK)) * Ability0041__DAMAGE_PER_ATTACK ) * ( 1 + Ability0041__DAMAGE_PER_LEVEL * ( level - 1 ) ) // INLINED!!
-			set s__Missile_damage_id[this]=Ability0041__ID
-			call s__Missile__set_radius_wave((this),((Ability0041__COLRAD)*1.0)) // INLINED!!
-			call s__Effect_setDuration(this,( Ability0041__RANGE - Ability0041__STARTAT ) / Ability0041__VELO)
+  function s__Ability0041___bullet_create takes integer owner,real x,real y,real z,real yaw,integer level returns integer
+   local integer this= s__Ability0041___bullet__allocate(owner , Ability0041___EFFECT_PATH3 , x , y , z , yaw)
+			set s__Movement_velo[s__Object_movement[(this)]]=((Ability0041___VELO)*1.0) // INLINED!!
+			set s__Missile_damage[this]=( (s__Unit_prototype_getCarculatedStatValue((s__Missile_owner[this]),STAT_TYPE_ATTACK)) * Ability0041___DAMAGE_PER_ATTACK ) * ( 1 + Ability0041___DAMAGE_PER_LEVEL * ( level - 1 ) ) // INLINED!!
+			set s__Missile_damage_id[this]=Ability0041___ID
+			call s__Missile__set_radius_wave((this),((Ability0041___COLRAD)*1.0)) // INLINED!!
+			call s__Effect_setDuration(this,( Ability0041___RANGE - Ability0041___STARTAT ) / Ability0041___VELO)
 			call s__Missile_setDamageFlag((this),DAMAGE_TYPE_MAGICAL , ATTACK_TYPE_SPELL , true , false , INTERVAL_TYPE_SINGLE , VECTOR_TYPE_OUTTER , true , true) // INLINED!!
 			call s__Effect_setScale(this,1.33)
 			set s__Missile_damage_type[this]=DAMAGE_TYPE_PHYSICAL
@@ -26306,141 +26797,143 @@ endfunction
 
 
 
-  function s__Ability0041__fire_shot takes integer this returns nothing
+  function s__Ability0041___fire_shot takes integer this returns nothing
    local integer i= 0
    local integer ms= 0
    local integer mg= s__MissileGroup_create()
    local real a= 0.
 			loop
-				exitwhen i >= Ability0041__COUNT
-				set a=s__Ability0041__fire_angle[this] - ( ( Ability0041__WIDTH * 0.8 ) / 2 ) + ( ( Ability0041__WIDTH * 0.8 ) * i ) / ( Ability0041__COUNT - 1 ) + GetRandomReal(- 3, 3)
-				set ms=s__Ability0041__bullet_create((s__Actor_actor[(this)]) , (((sc__Object__get_x((s__Actor_actor[(this)])) )*1.0) + (( Ability0041__STARTAT )*1.0) * Cos((( a)*1.0) * bj_DEGTORAD)) , (((sc__Object__get_y((s__Actor_actor[(this)])) )*1.0) + (( Ability0041__STARTAT )*1.0) * Sin((( a)*1.0) * bj_DEGTORAD)) , sc__Object__get_z((s__Actor_actor[(this)])) + s__Object_pivot_z[(s__Actor_actor[(this)])] , a , s__UnitActor_level[this]) // INLINED!!
+				exitwhen i >= Ability0041___COUNT
+				set a=s__Ability0041___fire_angle[this] - ( ( Ability0041___WIDTH * 0.8 ) / 2 ) + ( ( Ability0041___WIDTH * 0.8 ) * i ) / ( Ability0041___COUNT - 1 ) + GetRandomReal(- 3, 3)
+				set ms=s__Ability0041___bullet_create((s__Actor_actor[(this)]) , (((sc__Object__get_x((s__Actor_actor[(this)])) )*1.0) + (( Ability0041___STARTAT )*1.0) * Cos((( a)*1.0) * bj_DEGTORAD)) , (((sc__Object__get_y((s__Actor_actor[(this)])) )*1.0) + (( Ability0041___STARTAT )*1.0) * Sin((( a)*1.0) * bj_DEGTORAD)) , sc__Object__get_z((s__Actor_actor[(this)])) + s__Object_pivot_z[(s__Actor_actor[(this)])] , a , s__UnitActor_level[this]) // INLINED!!
 				call s__MissileGroup_add(mg,ms)
 				set i=i + 1
 			endloop
-			set s__Ability0041__fire_count[this]=s__Ability0041__fire_count[this] - 1
+			set s__Ability0041___fire_count[this]=s__Ability0041___fire_count[this] - 1
   endfunction
 
-  function s__Ability0041__fire_onComplete takes integer this returns nothing
-			if s__Ability0041__fire_count[this] > 0 then
-				call s__Ability0041__fire_shot(this)
+  function s__Ability0041___fire_onComplete takes integer this returns nothing
+			if s__Ability0041___fire_count[this] > 0 then
+				call s__Ability0041___fire_shot(this)
 			endif
   endfunction
 
-  function s__Ability0041__fire_periodicAction takes integer this returns nothing
-			set s__Ability0041__fire_timeout2[this]=s__Ability0041__fire_timeout2[this] + TIMER_TICK
-			if s__Ability0041__fire_timeout2[this] >= Ability0041__INTERVAL then
+  function s__Ability0041___fire_periodicAction takes integer this returns nothing
+			call s__Effect_setPosition(s__Ability0041___fire_ef[this],sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , 0.) // INLINED!!
+			call s__Effect_setPosition(s__Ability0041___fire_burst[this],(((sc__Object__get_x((s__Actor_actor[(this)])) )*1.0) + (( 100 )*1.0) * Cos((( s__Ability0041___fire_angle[this])*1.0) * bj_DEGTORAD)) , (((sc__Object__get_y((s__Actor_actor[(this)])) )*1.0) + (( 100 )*1.0) * Sin((( s__Ability0041___fire_angle[this])*1.0) * bj_DEGTORAD)) , 57.5) // INLINED!!
+			set s__Ability0041___fire_timeout2[this]=s__Ability0041___fire_timeout2[this] + TIMER_TICK
+			if s__Ability0041___fire_timeout2[this] >= Ability0041___INTERVAL then
 				
-				if s__Ability0041__fire_count[this] > 0 then
-					call s__Ability0041__fire_shot(this)
+				if s__Ability0041___fire_count[this] > 0 then
+					call s__Ability0041___fire_shot(this)
 					call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((4.)*1.0)) // INLINED!!
 					call s__Unit_prototype_setAnim((s__Actor_actor[(this)]),"attack") // INLINED!!
 				endif
 				
-				set s__Ability0041__fire_timeout2[this]=s__Ability0041__fire_timeout2[this] - Ability0041__INTERVAL
+				set s__Ability0041___fire_timeout2[this]=s__Ability0041___fire_timeout2[this] - Ability0041___INTERVAL
 			endif
   endfunction
 
-  function s__Ability0041__fire_create takes integer caster,integer level,real angle,integer ef returns integer
-   local integer this= s__Ability0041__fire__allocate(caster , 0 , 0. , 0. , level , Ability0041__INTERVAL * Ability0041__COUNT_WAVE , true)
-			set s__Ability0041__fire_angle[this]=angle
-			set s__Ability0041__fire_ef[this]=ef
-			set s__Ability0041__fire_burst[this]=s__Effect_create(Ability0041__EFFECT_PATH2 , (((sc__Object__get_x((s__Actor_actor[(this)])) )*1.0) + (( 100 )*1.0) * Cos((( s__Ability0041__fire_angle[this])*1.0) * bj_DEGTORAD)) , (((sc__Object__get_y((s__Actor_actor[(this)])) )*1.0) + (( 100 )*1.0) * Sin((( s__Ability0041__fire_angle[this])*1.0) * bj_DEGTORAD)) , 57.5 , s__Ability0041__fire_angle[this]) // INLINED!!
-			call s__Effect_setPitch(s__Ability0041__fire_burst[this],- 90)
+  function s__Ability0041___fire_create takes integer caster,integer level,real angle,integer ef returns integer
+   local integer this= s__Ability0041___fire__allocate(caster , 0 , 0. , 0. , level , Ability0041___INTERVAL * Ability0041___COUNT_WAVE , true)
+			set s__Ability0041___fire_angle[this]=angle
+			set s__Ability0041___fire_ef[this]=ef
+			set s__Ability0041___fire_burst[this]=s__Effect_create(Ability0041___EFFECT_PATH2 , (((sc__Object__get_x((s__Actor_actor[(this)])) )*1.0) + (( 100 )*1.0) * Cos((( s__Ability0041___fire_angle[this])*1.0) * bj_DEGTORAD)) , (((sc__Object__get_y((s__Actor_actor[(this)])) )*1.0) + (( 100 )*1.0) * Sin((( s__Ability0041___fire_angle[this])*1.0) * bj_DEGTORAD)) , 57.5 , s__Ability0041___fire_angle[this]) // INLINED!!
+			call s__Effect_setPitch(s__Ability0041___fire_burst[this],- 90)
 			call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((4.)*1.0)) // INLINED!!
 			call s__Unit_prototype_setAnim((s__Actor_actor[(this)]),"attack") // INLINED!!
-			set s__Actor_progress_bar[this]=s__ProgressBar_create(Ability0041__NAME , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+			set s__Actor_progress_bar[this]=s__ProgressBar_create(Ability0041___NAME , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
 			set s__ProgressBar_reverse[s__Actor_progress_bar[this]]=true
 			set s__UnitActor_suspend_rclick[this]=true
 			return this
   endfunction
 
-  function s__Ability0041__fire_onDestroy takes integer this returns nothing
+  function s__Ability0041___fire_onDestroy takes integer this returns nothing
 			call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((1.)*1.0)) // INLINED!!
-			call s__Effect_kill(s__Ability0041__fire_ef[this])
-			set s__Effect_want_remove[s__Ability0041__fire_burst[this]]=true
-			call sc__Object_deallocate(s__Ability0041__fire_burst[this])
-			call s__UnitActor_create((s__Actor_actor[(this)]) , 0 , 0. , 0. , 0 , Ability0041__BACKSWING , true) // INLINED!!
+			call s__Effect_kill(s__Ability0041___fire_ef[this])
+			set s__Effect_want_remove[s__Ability0041___fire_burst[this]]=true
+			call sc__Object_deallocate(s__Ability0041___fire_burst[this])
+			call s__UnitActor_create((s__Actor_actor[(this)]) , 0 , 0. , 0. , 0 , Ability0041___BACKSWING , true) // INLINED!!
   endfunction
 
 
 
 
-  function s__Ability0041__prepare_onComplete takes integer this returns nothing
-			call s__Ability0041__fire_create((s__Actor_actor[(this)]) , s__UnitActor_level[this] , s__Ability0041__prepare_a[this] , s__Ability0041__prepare_ef[this]) // INLINED!!
-			set s__Ability0041__prepare_ef[this]=0
+  function s__Ability0041___prepare_onComplete takes integer this returns nothing
+			call s__Ability0041___fire_create((s__Actor_actor[(this)]) , s__UnitActor_level[this] , s__Ability0041___prepare_a[this] , s__Ability0041___prepare_ef[this]) // INLINED!!
+			set s__Ability0041___prepare_ef[this]=0
   endfunction
 
-  function s__Ability0041__prepare_create takes integer caster,real x,real y,integer level returns integer
-   local integer this= s__Ability0041__prepare__allocate(caster , 0 , x , y , level , Ability0041__CAST , true)
-			set s__Ability0041__prepare_a[this]=s__Math_anglePoints(sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , sc__Actor__get_x(this) , sc__Actor__get_y(this)) // INLINED!!
-			set s__Ability0041__prepare_ef[this]=s__Effect_create(Ability0041__EFFECT_PATH1 , sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , 0. , s__Ability0041__prepare_a[this]) // INLINED!!
-			set s__Actor_progress_bar[this]=s__ProgressBar_create(Ability0041__NAME , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
-			call SetUnitFacing((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Actor_actor[(this)]))]), s__Agent_INDEX_ORIGIN_HANDLE)), s__Ability0041__prepare_a[this]) // INLINED!!
+  function s__Ability0041___prepare_create takes integer caster,real x,real y,integer level returns integer
+   local integer this= s__Ability0041___prepare__allocate(caster , 0 , x , y , level , Ability0041___CAST , true)
+			set s__Ability0041___prepare_a[this]=s__Math_anglePoints(sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , sc__Actor__get_x(this) , sc__Actor__get_y(this)) // INLINED!!
+			set s__Ability0041___prepare_ef[this]=s__Effect_create(Ability0041___EFFECT_PATH1 , sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , 0. , s__Ability0041___prepare_a[this]) // INLINED!!
+			set s__Actor_progress_bar[this]=s__ProgressBar_create(Ability0041___NAME , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+			call SetUnitFacing((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Actor_actor[(this)]))]), s__Agent_INDEX_ORIGIN_HANDLE)), s__Ability0041___prepare_a[this]) // INLINED!!
 			return this
   endfunction
 
-  function s__Ability0041__prepare_onDestroy takes integer this returns nothing
-			if s__Ability0041__prepare_ef[this] > 0 then
-				call sc__Object_deallocate(s__Ability0041__prepare_ef[this])
+  function s__Ability0041___prepare_onDestroy takes integer this returns nothing
+			if s__Ability0041___prepare_ef[this] > 0 then
+				call sc__Object_deallocate(s__Ability0041___prepare_ef[this])
 			endif
-			set s__Ability0041__prepare_ef[this]=0
+			set s__Ability0041___prepare_ef[this]=0
   endfunction
 
 
 
   function s__Ability0041_main_relativeTooltip takes integer this returns string
-			return "매 " + STRING_COLOR_CONSTANT + R2SW(Ability0041__INTERVAL, 1, 1) + "초|r마다 지정 범위 내의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_ATTACK , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_ATTACK)) * Ability0041__DAMAGE_PER_ATTACK ) * ( 1 + Ability0041__DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 " + DAMAGE_STRING_PHYSICAL + "를 입힙니다.\n총 " + STRING_COLOR_CONSTANT + I2S(Ability0041__COUNT_WAVE) + "회|r 공격합니다." // INLINED!!
+			return STRING_COLOR_CONSTANT + R2SW(Ability0041___COUNT_WAVE * Ability0041___INTERVAL, 1, 1) + "초|r간 정신집중하여 전방의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_ATTACK , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_ATTACK)) * Ability0041___DAMAGE_PER_ATTACK ) * ( 1 + Ability0041___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + " ~ " + s__ConstantString_statStringReal(STAT_TYPE_ATTACK , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_ATTACK)) * Ability0041___DAMAGE_PER_ATTACK ) * ( 1 + Ability0041___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) * Ability0041___COUNT_WAVE , 1) + "의 " + DAMAGE_STRING_PHYSICAL + "를 입힙니다." // INLINED!!
   endfunction
 
   function s__Ability0041_main_execute takes integer this returns nothing
-   local integer a= s__Ability0041__prepare_create(s__Ability_prototype_owner[this] , s__Ability_prototype_command_x[this] , s__Ability_prototype_command_y[this] , s__Ability_prototype_level[this])
+   local integer a= s__Ability0041___prepare_create(s__Ability_prototype_owner[this] , s__Ability_prototype_command_x[this] , s__Ability_prototype_command_y[this] , s__Ability_prototype_level[this])
   endfunction
 
   function s__Ability0041_main_init takes integer this returns nothing
 			set s__Ability_prototype_is_active[this]=true
 			set s__Ability_prototype_cooldown_max[this]=0 //4.
 			set s__Ability_prototype_cooldown_min[this]=0 //4.
-			set s__Ability_prototype_manacost[this]=0 //200
-			set s__Ability_prototype_indicator[this]=s__Ability0041__ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+			set s__Ability_prototype_manacost[this]=125
+			set s__Ability_prototype_indicator[this]=s__Ability0041___ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
 			call s__Ability_plusStatValue(this,5)
   endfunction
 
   function s__Ability0041_main_onInit takes nothing returns nothing
-			call s__Ability_addTypeTag(Ability0041__ID , ABILITY_STRING_TARGET_LOCATION)
-			call s__Ability_addTypeTag(Ability0041__ID , ABILITY_TAG_SHOOTING)
-			call s__Ability_addTypeTag(Ability0041__ID , ABILITY_TAG_DARK)
-			call SaveStr(Ability___HASH, (Ability0041__ID ), s__Ability_INDEX_TOOLTIP, ( "무차별 난사\n ")) // INLINED!!
+			call s__Ability_addTypeTag(Ability0041___ID , ABILITY_STRING_TARGET_LOCATION)
+			call s__Ability_addTypeTag(Ability0041___ID , ABILITY_TAG_SHOOTING)
+			call s__Ability_addTypeTag(Ability0041___ID , ABILITY_TAG_DARK)
+			call SaveStr(Ability__HASH, (Ability0041___ID ), s__Ability_INDEX_TOOLTIP, ( "무차별 난사\n ")) // INLINED!!
   endfunction
 
 	
 //textmacro instance: abilityDataEnd()
- function Ability0041__act takes nothing returns nothing
+ function Ability0041___act takes nothing returns nothing
   local integer a= 0
-		if ABILITY_CREATE_ID == Ability0041__ID then
+		if ABILITY_CREATE_ID == Ability0041___ID then
 			set a=s__Ability0041_main__allocate()
-			set s__Ability_prototype_id[a]=Ability0041__ID
-			set s__Ability_prototype_name[a]=Ability0041__NAME
-			set s__Ability_prototype_icon[a]=Ability0041__ICON_PATH
+			set s__Ability_prototype_id[a]=Ability0041___ID
+			set s__Ability_prototype_name[a]=Ability0041___NAME
+			set s__Ability_prototype_icon[a]=Ability0041___ICON_PATH
 			set ABILITY_LAST_CREATED=a
 		endif
 	endfunction
 
- function Ability0041__init takes nothing returns nothing
-		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0041__act))
-		call SaveStr(Ability___HASH, (Ability0041__ID ), s__Ability_INDEX_ICON_PATH, ( Ability0041__ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (Ability0041__ID ), s__Ability_INDEX_NAME, ( Ability0041__NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0041__ID ), s__Ability_INDEX_TIER, ( Ability0041__TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (Ability0041__ID ), s__Ability_INDEX_COST, ( Ability0041__COST)) // INLINED!!
-		call s__Ability_setTypeBonusStatIndex(Ability0041__ID , 0 , Ability0041__STAT_INDEX1)
-		call s__Ability_setTypeBonusStatIndex(Ability0041__ID , 1 , Ability0041__STAT_INDEX2)
+ function Ability0041___init takes nothing returns nothing
+		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function Ability0041___act))
+		call SaveStr(Ability__HASH, (Ability0041___ID ), s__Ability_INDEX_ICON_PATH, ( Ability0041___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (Ability0041___ID ), s__Ability_INDEX_NAME, ( Ability0041___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0041___ID ), s__Ability_INDEX_TIER, ( Ability0041___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (Ability0041___ID ), s__Ability_INDEX_COST, ( Ability0041___COST)) // INLINED!!
+		call s__Ability_setTypeBonusStatIndex(Ability0041___ID , 0 , Ability0041___STAT_INDEX1)
+		call s__Ability_setTypeBonusStatIndex(Ability0041___ID , 1 , Ability0041___STAT_INDEX2)
 	endfunction
 //end of: abilityDataEnd()
 // scope Ability0041 ends
 
 // scope AddRandomAbility5 begins
 
- function AddRandomAbility5__init takes nothing returns nothing
+ function AddRandomAbility5___init takes nothing returns nothing
 		call s__Ability_addRandomAbility('0040' , 5)
 		call s__Ability_addRandomAbility('0041' , 5)
 	endfunction
@@ -26468,30 +26961,30 @@ endfunction
    endfunction
 	
    function s__AbilityC000_main_onInit takes nothing returns nothing
-				call SaveStr(Ability___HASH, (AbilityC000__ID ), s__Ability_INDEX_TOOLTIP, ( "아직은 풋풋한 느낌")) // INLINED!!
+				call SaveStr(Ability__HASH, (AbilityC000___ID ), s__Ability_INDEX_TOOLTIP, ( "아직은 풋풋한 느낌")) // INLINED!!
    endfunction
 
 	
 //textmacro instance: abilityDataEnd()
- function AbilityC000__act takes nothing returns nothing
+ function AbilityC000___act takes nothing returns nothing
   local integer a= 0
-		if ABILITY_CREATE_ID == AbilityC000__ID then
+		if ABILITY_CREATE_ID == AbilityC000___ID then
 			set a=s__AbilityC000_main__allocate()
-			set s__Ability_prototype_id[a]=AbilityC000__ID
-			set s__Ability_prototype_name[a]=AbilityC000__NAME
-			set s__Ability_prototype_icon[a]=AbilityC000__ICON_PATH
+			set s__Ability_prototype_id[a]=AbilityC000___ID
+			set s__Ability_prototype_name[a]=AbilityC000___NAME
+			set s__Ability_prototype_icon[a]=AbilityC000___ICON_PATH
 			set ABILITY_LAST_CREATED=a
 		endif
 	endfunction
 
- function AbilityC000__init takes nothing returns nothing
-		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function AbilityC000__act))
-		call SaveStr(Ability___HASH, (AbilityC000__ID ), s__Ability_INDEX_ICON_PATH, ( AbilityC000__ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (AbilityC000__ID ), s__Ability_INDEX_NAME, ( AbilityC000__NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (AbilityC000__ID ), s__Ability_INDEX_TIER, ( AbilityC000__TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (AbilityC000__ID ), s__Ability_INDEX_COST, ( AbilityC000__COST)) // INLINED!!
-		call s__Ability_setTypeBonusStatIndex(AbilityC000__ID , 0 , AbilityC000__STAT_INDEX1)
-		call s__Ability_setTypeBonusStatIndex(AbilityC000__ID , 1 , AbilityC000__STAT_INDEX2)
+ function AbilityC000___init takes nothing returns nothing
+		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function AbilityC000___act))
+		call SaveStr(Ability__HASH, (AbilityC000___ID ), s__Ability_INDEX_ICON_PATH, ( AbilityC000___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (AbilityC000___ID ), s__Ability_INDEX_NAME, ( AbilityC000___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (AbilityC000___ID ), s__Ability_INDEX_TIER, ( AbilityC000___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (AbilityC000___ID ), s__Ability_INDEX_COST, ( AbilityC000___COST)) // INLINED!!
+		call s__Ability_setTypeBonusStatIndex(AbilityC000___ID , 0 , AbilityC000___STAT_INDEX1)
+		call s__Ability_setTypeBonusStatIndex(AbilityC000___ID , 1 , AbilityC000___STAT_INDEX2)
 	endfunction
 //end of: abilityDataEnd()
 // scope AbilityC000 ends
@@ -26513,30 +27006,30 @@ endfunction
    endfunction
 	
    function s__AbilityC001_main_onInit takes nothing returns nothing
-				call SaveStr(Ability___HASH, (AbilityC001__ID ), s__Ability_INDEX_TOOLTIP, ( "나의 역가드를 알까?")) // INLINED!!
+				call SaveStr(Ability__HASH, (AbilityC001___ID ), s__Ability_INDEX_TOOLTIP, ( "나의 역가드를 알까?")) // INLINED!!
    endfunction
 
 	
 //textmacro instance: abilityDataEnd()
- function AbilityC001__act takes nothing returns nothing
+ function AbilityC001___act takes nothing returns nothing
   local integer a= 0
-		if ABILITY_CREATE_ID == AbilityC001__ID then
+		if ABILITY_CREATE_ID == AbilityC001___ID then
 			set a=s__AbilityC001_main__allocate()
-			set s__Ability_prototype_id[a]=AbilityC001__ID
-			set s__Ability_prototype_name[a]=AbilityC001__NAME
-			set s__Ability_prototype_icon[a]=AbilityC001__ICON_PATH
+			set s__Ability_prototype_id[a]=AbilityC001___ID
+			set s__Ability_prototype_name[a]=AbilityC001___NAME
+			set s__Ability_prototype_icon[a]=AbilityC001___ICON_PATH
 			set ABILITY_LAST_CREATED=a
 		endif
 	endfunction
 
- function AbilityC001__init takes nothing returns nothing
-		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function AbilityC001__act))
-		call SaveStr(Ability___HASH, (AbilityC001__ID ), s__Ability_INDEX_ICON_PATH, ( AbilityC001__ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (AbilityC001__ID ), s__Ability_INDEX_NAME, ( AbilityC001__NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (AbilityC001__ID ), s__Ability_INDEX_TIER, ( AbilityC001__TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (AbilityC001__ID ), s__Ability_INDEX_COST, ( AbilityC001__COST)) // INLINED!!
-		call s__Ability_setTypeBonusStatIndex(AbilityC001__ID , 0 , AbilityC001__STAT_INDEX1)
-		call s__Ability_setTypeBonusStatIndex(AbilityC001__ID , 1 , AbilityC001__STAT_INDEX2)
+ function AbilityC001___init takes nothing returns nothing
+		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function AbilityC001___act))
+		call SaveStr(Ability__HASH, (AbilityC001___ID ), s__Ability_INDEX_ICON_PATH, ( AbilityC001___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (AbilityC001___ID ), s__Ability_INDEX_NAME, ( AbilityC001___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (AbilityC001___ID ), s__Ability_INDEX_TIER, ( AbilityC001___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (AbilityC001___ID ), s__Ability_INDEX_COST, ( AbilityC001___COST)) // INLINED!!
+		call s__Ability_setTypeBonusStatIndex(AbilityC001___ID , 0 , AbilityC001___STAT_INDEX1)
+		call s__Ability_setTypeBonusStatIndex(AbilityC001___ID , 1 , AbilityC001___STAT_INDEX2)
 	endfunction
 //end of: abilityDataEnd()
 // scope AbilityC001 ends
@@ -26558,30 +27051,30 @@ endfunction
    endfunction
 	
    function s__AbilityC002_main_onInit takes nothing returns nothing
-				call SaveStr(Ability___HASH, (AbilityC002__ID ), s__Ability_INDEX_TOOLTIP, ( "어중간하게 미쳐있는 사람")) // INLINED!!
+				call SaveStr(Ability__HASH, (AbilityC002___ID ), s__Ability_INDEX_TOOLTIP, ( "어중간하게 미쳐있는 사람")) // INLINED!!
    endfunction
 
 	
 //textmacro instance: abilityDataEnd()
- function AbilityC002__act takes nothing returns nothing
+ function AbilityC002___act takes nothing returns nothing
   local integer a= 0
-		if ABILITY_CREATE_ID == AbilityC002__ID then
+		if ABILITY_CREATE_ID == AbilityC002___ID then
 			set a=s__AbilityC002_main__allocate()
-			set s__Ability_prototype_id[a]=AbilityC002__ID
-			set s__Ability_prototype_name[a]=AbilityC002__NAME
-			set s__Ability_prototype_icon[a]=AbilityC002__ICON_PATH
+			set s__Ability_prototype_id[a]=AbilityC002___ID
+			set s__Ability_prototype_name[a]=AbilityC002___NAME
+			set s__Ability_prototype_icon[a]=AbilityC002___ICON_PATH
 			set ABILITY_LAST_CREATED=a
 		endif
 	endfunction
 
- function AbilityC002__init takes nothing returns nothing
-		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function AbilityC002__act))
-		call SaveStr(Ability___HASH, (AbilityC002__ID ), s__Ability_INDEX_ICON_PATH, ( AbilityC002__ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (AbilityC002__ID ), s__Ability_INDEX_NAME, ( AbilityC002__NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (AbilityC002__ID ), s__Ability_INDEX_TIER, ( AbilityC002__TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (AbilityC002__ID ), s__Ability_INDEX_COST, ( AbilityC002__COST)) // INLINED!!
-		call s__Ability_setTypeBonusStatIndex(AbilityC002__ID , 0 , AbilityC002__STAT_INDEX1)
-		call s__Ability_setTypeBonusStatIndex(AbilityC002__ID , 1 , AbilityC002__STAT_INDEX2)
+ function AbilityC002___init takes nothing returns nothing
+		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function AbilityC002___act))
+		call SaveStr(Ability__HASH, (AbilityC002___ID ), s__Ability_INDEX_ICON_PATH, ( AbilityC002___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (AbilityC002___ID ), s__Ability_INDEX_NAME, ( AbilityC002___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (AbilityC002___ID ), s__Ability_INDEX_TIER, ( AbilityC002___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (AbilityC002___ID ), s__Ability_INDEX_COST, ( AbilityC002___COST)) // INLINED!!
+		call s__Ability_setTypeBonusStatIndex(AbilityC002___ID , 0 , AbilityC002___STAT_INDEX1)
+		call s__Ability_setTypeBonusStatIndex(AbilityC002___ID , 1 , AbilityC002___STAT_INDEX2)
 	endfunction
 //end of: abilityDataEnd()
 // scope AbilityC002 ends
@@ -26603,30 +27096,30 @@ endfunction
    endfunction
 	
    function s__AbilityC003_main_onInit takes nothing returns nothing
-				call SaveStr(Ability___HASH, (AbilityC003__ID ), s__Ability_INDEX_TOOLTIP, ( "무럭무럭 자라나는 DreamTree")) // INLINED!!
+				call SaveStr(Ability__HASH, (AbilityC003___ID ), s__Ability_INDEX_TOOLTIP, ( "무럭무럭 자라나는 DreamTree")) // INLINED!!
    endfunction
 
 	
 //textmacro instance: abilityDataEnd()
- function AbilityC003__act takes nothing returns nothing
+ function AbilityC003___act takes nothing returns nothing
   local integer a= 0
-		if ABILITY_CREATE_ID == AbilityC003__ID then
+		if ABILITY_CREATE_ID == AbilityC003___ID then
 			set a=s__AbilityC003_main__allocate()
-			set s__Ability_prototype_id[a]=AbilityC003__ID
-			set s__Ability_prototype_name[a]=AbilityC003__NAME
-			set s__Ability_prototype_icon[a]=AbilityC003__ICON_PATH
+			set s__Ability_prototype_id[a]=AbilityC003___ID
+			set s__Ability_prototype_name[a]=AbilityC003___NAME
+			set s__Ability_prototype_icon[a]=AbilityC003___ICON_PATH
 			set ABILITY_LAST_CREATED=a
 		endif
 	endfunction
 
- function AbilityC003__init takes nothing returns nothing
-		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function AbilityC003__act))
-		call SaveStr(Ability___HASH, (AbilityC003__ID ), s__Ability_INDEX_ICON_PATH, ( AbilityC003__ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (AbilityC003__ID ), s__Ability_INDEX_NAME, ( AbilityC003__NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (AbilityC003__ID ), s__Ability_INDEX_TIER, ( AbilityC003__TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (AbilityC003__ID ), s__Ability_INDEX_COST, ( AbilityC003__COST)) // INLINED!!
-		call s__Ability_setTypeBonusStatIndex(AbilityC003__ID , 0 , AbilityC003__STAT_INDEX1)
-		call s__Ability_setTypeBonusStatIndex(AbilityC003__ID , 1 , AbilityC003__STAT_INDEX2)
+ function AbilityC003___init takes nothing returns nothing
+		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function AbilityC003___act))
+		call SaveStr(Ability__HASH, (AbilityC003___ID ), s__Ability_INDEX_ICON_PATH, ( AbilityC003___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (AbilityC003___ID ), s__Ability_INDEX_NAME, ( AbilityC003___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (AbilityC003___ID ), s__Ability_INDEX_TIER, ( AbilityC003___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (AbilityC003___ID ), s__Ability_INDEX_COST, ( AbilityC003___COST)) // INLINED!!
+		call s__Ability_setTypeBonusStatIndex(AbilityC003___ID , 0 , AbilityC003___STAT_INDEX1)
+		call s__Ability_setTypeBonusStatIndex(AbilityC003___ID , 1 , AbilityC003___STAT_INDEX2)
 	endfunction
 //end of: abilityDataEnd()
 // scope AbilityC003 ends
@@ -26648,30 +27141,30 @@ endfunction
    endfunction
 	
    function s__AbilityC004_main_onInit takes nothing returns nothing
-				call SaveStr(Ability___HASH, (AbilityC004__ID ), s__Ability_INDEX_TOOLTIP, ( "어떠한 역경도 이겨낼 준비가 되어있는 자")) // INLINED!!
+				call SaveStr(Ability__HASH, (AbilityC004___ID ), s__Ability_INDEX_TOOLTIP, ( "어떠한 역경도 이겨낼 준비가 되어있는 자")) // INLINED!!
    endfunction
 
 	
 //textmacro instance: abilityDataEnd()
- function AbilityC004__act takes nothing returns nothing
+ function AbilityC004___act takes nothing returns nothing
   local integer a= 0
-		if ABILITY_CREATE_ID == AbilityC004__ID then
+		if ABILITY_CREATE_ID == AbilityC004___ID then
 			set a=s__AbilityC004_main__allocate()
-			set s__Ability_prototype_id[a]=AbilityC004__ID
-			set s__Ability_prototype_name[a]=AbilityC004__NAME
-			set s__Ability_prototype_icon[a]=AbilityC004__ICON_PATH
+			set s__Ability_prototype_id[a]=AbilityC004___ID
+			set s__Ability_prototype_name[a]=AbilityC004___NAME
+			set s__Ability_prototype_icon[a]=AbilityC004___ICON_PATH
 			set ABILITY_LAST_CREATED=a
 		endif
 	endfunction
 
- function AbilityC004__init takes nothing returns nothing
-		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function AbilityC004__act))
-		call SaveStr(Ability___HASH, (AbilityC004__ID ), s__Ability_INDEX_ICON_PATH, ( AbilityC004__ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (AbilityC004__ID ), s__Ability_INDEX_NAME, ( AbilityC004__NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (AbilityC004__ID ), s__Ability_INDEX_TIER, ( AbilityC004__TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (AbilityC004__ID ), s__Ability_INDEX_COST, ( AbilityC004__COST)) // INLINED!!
-		call s__Ability_setTypeBonusStatIndex(AbilityC004__ID , 0 , AbilityC004__STAT_INDEX1)
-		call s__Ability_setTypeBonusStatIndex(AbilityC004__ID , 1 , AbilityC004__STAT_INDEX2)
+ function AbilityC004___init takes nothing returns nothing
+		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function AbilityC004___act))
+		call SaveStr(Ability__HASH, (AbilityC004___ID ), s__Ability_INDEX_ICON_PATH, ( AbilityC004___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (AbilityC004___ID ), s__Ability_INDEX_NAME, ( AbilityC004___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (AbilityC004___ID ), s__Ability_INDEX_TIER, ( AbilityC004___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (AbilityC004___ID ), s__Ability_INDEX_COST, ( AbilityC004___COST)) // INLINED!!
+		call s__Ability_setTypeBonusStatIndex(AbilityC004___ID , 0 , AbilityC004___STAT_INDEX1)
+		call s__Ability_setTypeBonusStatIndex(AbilityC004___ID , 1 , AbilityC004___STAT_INDEX2)
 	endfunction
 //end of: abilityDataEnd()
 // scope AbilityC004 ends
@@ -26693,30 +27186,30 @@ endfunction
    endfunction
 	
    function s__AbilityC005_main_onInit takes nothing returns nothing
-				call SaveStr(Ability___HASH, (AbilityC005__ID ), s__Ability_INDEX_TOOLTIP, ( "불순한 것들은 전부 내가 처리할테니 안심하라구")) // INLINED!!
+				call SaveStr(Ability__HASH, (AbilityC005___ID ), s__Ability_INDEX_TOOLTIP, ( "불순한 것들은 전부 내가 처리할테니 안심하라구")) // INLINED!!
    endfunction
 
 	
 //textmacro instance: abilityDataEnd()
- function AbilityC005__act takes nothing returns nothing
+ function AbilityC005___act takes nothing returns nothing
   local integer a= 0
-		if ABILITY_CREATE_ID == AbilityC005__ID then
+		if ABILITY_CREATE_ID == AbilityC005___ID then
 			set a=s__AbilityC005_main__allocate()
-			set s__Ability_prototype_id[a]=AbilityC005__ID
-			set s__Ability_prototype_name[a]=AbilityC005__NAME
-			set s__Ability_prototype_icon[a]=AbilityC005__ICON_PATH
+			set s__Ability_prototype_id[a]=AbilityC005___ID
+			set s__Ability_prototype_name[a]=AbilityC005___NAME
+			set s__Ability_prototype_icon[a]=AbilityC005___ICON_PATH
 			set ABILITY_LAST_CREATED=a
 		endif
 	endfunction
 
- function AbilityC005__init takes nothing returns nothing
-		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function AbilityC005__act))
-		call SaveStr(Ability___HASH, (AbilityC005__ID ), s__Ability_INDEX_ICON_PATH, ( AbilityC005__ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (AbilityC005__ID ), s__Ability_INDEX_NAME, ( AbilityC005__NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (AbilityC005__ID ), s__Ability_INDEX_TIER, ( AbilityC005__TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (AbilityC005__ID ), s__Ability_INDEX_COST, ( AbilityC005__COST)) // INLINED!!
-		call s__Ability_setTypeBonusStatIndex(AbilityC005__ID , 0 , AbilityC005__STAT_INDEX1)
-		call s__Ability_setTypeBonusStatIndex(AbilityC005__ID , 1 , AbilityC005__STAT_INDEX2)
+ function AbilityC005___init takes nothing returns nothing
+		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function AbilityC005___act))
+		call SaveStr(Ability__HASH, (AbilityC005___ID ), s__Ability_INDEX_ICON_PATH, ( AbilityC005___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (AbilityC005___ID ), s__Ability_INDEX_NAME, ( AbilityC005___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (AbilityC005___ID ), s__Ability_INDEX_TIER, ( AbilityC005___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (AbilityC005___ID ), s__Ability_INDEX_COST, ( AbilityC005___COST)) // INLINED!!
+		call s__Ability_setTypeBonusStatIndex(AbilityC005___ID , 0 , AbilityC005___STAT_INDEX1)
+		call s__Ability_setTypeBonusStatIndex(AbilityC005___ID , 1 , AbilityC005___STAT_INDEX2)
 	endfunction
 //end of: abilityDataEnd()
 // scope AbilityC005 ends
@@ -26738,30 +27231,30 @@ endfunction
    endfunction
 	
    function s__AbilityC006_main_onInit takes nothing returns nothing
-				call SaveStr(Ability___HASH, (AbilityC006__ID ), s__Ability_INDEX_TOOLTIP, ( "모두가 어리광부리고싶어하는 스타일")) // INLINED!!
+				call SaveStr(Ability__HASH, (AbilityC006___ID ), s__Ability_INDEX_TOOLTIP, ( "모두가 어리광부리고싶어하는 스타일")) // INLINED!!
    endfunction
 
 	
 //textmacro instance: abilityDataEnd()
- function AbilityC006__act takes nothing returns nothing
+ function AbilityC006___act takes nothing returns nothing
   local integer a= 0
-		if ABILITY_CREATE_ID == AbilityC006__ID then
+		if ABILITY_CREATE_ID == AbilityC006___ID then
 			set a=s__AbilityC006_main__allocate()
-			set s__Ability_prototype_id[a]=AbilityC006__ID
-			set s__Ability_prototype_name[a]=AbilityC006__NAME
-			set s__Ability_prototype_icon[a]=AbilityC006__ICON_PATH
+			set s__Ability_prototype_id[a]=AbilityC006___ID
+			set s__Ability_prototype_name[a]=AbilityC006___NAME
+			set s__Ability_prototype_icon[a]=AbilityC006___ICON_PATH
 			set ABILITY_LAST_CREATED=a
 		endif
 	endfunction
 
- function AbilityC006__init takes nothing returns nothing
-		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function AbilityC006__act))
-		call SaveStr(Ability___HASH, (AbilityC006__ID ), s__Ability_INDEX_ICON_PATH, ( AbilityC006__ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (AbilityC006__ID ), s__Ability_INDEX_NAME, ( AbilityC006__NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (AbilityC006__ID ), s__Ability_INDEX_TIER, ( AbilityC006__TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (AbilityC006__ID ), s__Ability_INDEX_COST, ( AbilityC006__COST)) // INLINED!!
-		call s__Ability_setTypeBonusStatIndex(AbilityC006__ID , 0 , AbilityC006__STAT_INDEX1)
-		call s__Ability_setTypeBonusStatIndex(AbilityC006__ID , 1 , AbilityC006__STAT_INDEX2)
+ function AbilityC006___init takes nothing returns nothing
+		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function AbilityC006___act))
+		call SaveStr(Ability__HASH, (AbilityC006___ID ), s__Ability_INDEX_ICON_PATH, ( AbilityC006___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (AbilityC006___ID ), s__Ability_INDEX_NAME, ( AbilityC006___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (AbilityC006___ID ), s__Ability_INDEX_TIER, ( AbilityC006___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (AbilityC006___ID ), s__Ability_INDEX_COST, ( AbilityC006___COST)) // INLINED!!
+		call s__Ability_setTypeBonusStatIndex(AbilityC006___ID , 0 , AbilityC006___STAT_INDEX1)
+		call s__Ability_setTypeBonusStatIndex(AbilityC006___ID , 1 , AbilityC006___STAT_INDEX2)
 	endfunction
 //end of: abilityDataEnd()
 // scope AbilityC006 ends
@@ -26783,30 +27276,30 @@ endfunction
    endfunction
 	
    function s__AbilityC007_main_onInit takes nothing returns nothing
-				call SaveStr(Ability___HASH, (AbilityC007__ID ), s__Ability_INDEX_TOOLTIP, ( "최신 유행을 선도하는 자들")) // INLINED!!
+				call SaveStr(Ability__HASH, (AbilityC007___ID ), s__Ability_INDEX_TOOLTIP, ( "최신 유행을 선도하는 자들")) // INLINED!!
    endfunction
 
 	
 //textmacro instance: abilityDataEnd()
- function AbilityC007__act takes nothing returns nothing
+ function AbilityC007___act takes nothing returns nothing
   local integer a= 0
-		if ABILITY_CREATE_ID == AbilityC007__ID then
+		if ABILITY_CREATE_ID == AbilityC007___ID then
 			set a=s__AbilityC007_main__allocate()
-			set s__Ability_prototype_id[a]=AbilityC007__ID
-			set s__Ability_prototype_name[a]=AbilityC007__NAME
-			set s__Ability_prototype_icon[a]=AbilityC007__ICON_PATH
+			set s__Ability_prototype_id[a]=AbilityC007___ID
+			set s__Ability_prototype_name[a]=AbilityC007___NAME
+			set s__Ability_prototype_icon[a]=AbilityC007___ICON_PATH
 			set ABILITY_LAST_CREATED=a
 		endif
 	endfunction
 
- function AbilityC007__init takes nothing returns nothing
-		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function AbilityC007__act))
-		call SaveStr(Ability___HASH, (AbilityC007__ID ), s__Ability_INDEX_ICON_PATH, ( AbilityC007__ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (AbilityC007__ID ), s__Ability_INDEX_NAME, ( AbilityC007__NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (AbilityC007__ID ), s__Ability_INDEX_TIER, ( AbilityC007__TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (AbilityC007__ID ), s__Ability_INDEX_COST, ( AbilityC007__COST)) // INLINED!!
-		call s__Ability_setTypeBonusStatIndex(AbilityC007__ID , 0 , AbilityC007__STAT_INDEX1)
-		call s__Ability_setTypeBonusStatIndex(AbilityC007__ID , 1 , AbilityC007__STAT_INDEX2)
+ function AbilityC007___init takes nothing returns nothing
+		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function AbilityC007___act))
+		call SaveStr(Ability__HASH, (AbilityC007___ID ), s__Ability_INDEX_ICON_PATH, ( AbilityC007___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (AbilityC007___ID ), s__Ability_INDEX_NAME, ( AbilityC007___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (AbilityC007___ID ), s__Ability_INDEX_TIER, ( AbilityC007___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (AbilityC007___ID ), s__Ability_INDEX_COST, ( AbilityC007___COST)) // INLINED!!
+		call s__Ability_setTypeBonusStatIndex(AbilityC007___ID , 0 , AbilityC007___STAT_INDEX1)
+		call s__Ability_setTypeBonusStatIndex(AbilityC007___ID , 1 , AbilityC007___STAT_INDEX2)
 	endfunction
 //end of: abilityDataEnd()
 // scope AbilityC007 ends
@@ -26828,30 +27321,30 @@ endfunction
    endfunction
 	
    function s__AbilityC008_main_onInit takes nothing returns nothing
-				call SaveStr(Ability___HASH, (AbilityC008__ID ), s__Ability_INDEX_TOOLTIP, ( "태양보다 뜨거운 밤의 열기를 만끽하라")) // INLINED!!
+				call SaveStr(Ability__HASH, (AbilityC008___ID ), s__Ability_INDEX_TOOLTIP, ( "태양보다 뜨거운 밤의 열기를 만끽하라")) // INLINED!!
    endfunction
 
 	
 //textmacro instance: abilityDataEnd()
- function AbilityC008__act takes nothing returns nothing
+ function AbilityC008___act takes nothing returns nothing
   local integer a= 0
-		if ABILITY_CREATE_ID == AbilityC008__ID then
+		if ABILITY_CREATE_ID == AbilityC008___ID then
 			set a=s__AbilityC008_main__allocate()
-			set s__Ability_prototype_id[a]=AbilityC008__ID
-			set s__Ability_prototype_name[a]=AbilityC008__NAME
-			set s__Ability_prototype_icon[a]=AbilityC008__ICON_PATH
+			set s__Ability_prototype_id[a]=AbilityC008___ID
+			set s__Ability_prototype_name[a]=AbilityC008___NAME
+			set s__Ability_prototype_icon[a]=AbilityC008___ICON_PATH
 			set ABILITY_LAST_CREATED=a
 		endif
 	endfunction
 
- function AbilityC008__init takes nothing returns nothing
-		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function AbilityC008__act))
-		call SaveStr(Ability___HASH, (AbilityC008__ID ), s__Ability_INDEX_ICON_PATH, ( AbilityC008__ICON_PATH)) // INLINED!!
-		call SaveStr(Ability___HASH, (AbilityC008__ID ), s__Ability_INDEX_NAME, ( AbilityC008__NAME)) // INLINED!!
-		call SaveInteger(Ability___HASH, (AbilityC008__ID ), s__Ability_INDEX_TIER, ( AbilityC008__TIER)) // INLINED!!
-		call SaveInteger(Ability___HASH, (AbilityC008__ID ), s__Ability_INDEX_COST, ( AbilityC008__COST)) // INLINED!!
-		call s__Ability_setTypeBonusStatIndex(AbilityC008__ID , 0 , AbilityC008__STAT_INDEX1)
-		call s__Ability_setTypeBonusStatIndex(AbilityC008__ID , 1 , AbilityC008__STAT_INDEX2)
+ function AbilityC008___init takes nothing returns nothing
+		call TriggerAddCondition(ABILITY_CREATE_TRIGGER, Condition(function AbilityC008___act))
+		call SaveStr(Ability__HASH, (AbilityC008___ID ), s__Ability_INDEX_ICON_PATH, ( AbilityC008___ICON_PATH)) // INLINED!!
+		call SaveStr(Ability__HASH, (AbilityC008___ID ), s__Ability_INDEX_NAME, ( AbilityC008___NAME)) // INLINED!!
+		call SaveInteger(Ability__HASH, (AbilityC008___ID ), s__Ability_INDEX_TIER, ( AbilityC008___TIER)) // INLINED!!
+		call SaveInteger(Ability__HASH, (AbilityC008___ID ), s__Ability_INDEX_COST, ( AbilityC008___COST)) // INLINED!!
+		call s__Ability_setTypeBonusStatIndex(AbilityC008___ID , 0 , AbilityC008___STAT_INDEX1)
+		call s__Ability_setTypeBonusStatIndex(AbilityC008___ID , 1 , AbilityC008___STAT_INDEX2)
 	endfunction
 //end of: abilityDataEnd()
 // scope AbilityC008 ends
@@ -27269,28 +27762,28 @@ function main takes nothing returns nothing
     call CreateCameras()
     call InitBlizzard()
 
-call ExecuteFunc("jasshelper__initstructs1699117953")
+call ExecuteFunc("jasshelper__initstructs1774870843")
 call ExecuteFunc("Base64__init")
 call ExecuteFunc("FixCam__main")
 call ExecuteFunc("TimerUtils__init")
 call ExecuteFunc("YouCantAttackAlly__init")
-call TriggerAddCondition(BUFF_CREATE_TRIGGER, Condition(function BuffStun___cond)) // INLINED!!
-call TriggerAddCondition(BUFF_CREATE_TRIGGER, Condition(function BuffEnsn___cond)) // INLINED!!
-call UnitHR00___init()
-call UnitHR09___init()
-call UnitHR07___init()
-call UnitG000___init()
-call UnitG001___init()
-call UnitU000___init()
-call UnitU001___init()
-call UnitU002___init()
-call UnitU003___init()
-call UnitU004___init()
-call Ability0000___init()
-call Ability0001___init()
-call Ability0002___init()
-call Ability0003___init()
-call Ability0004___init()
+call TriggerAddCondition(BUFF_CREATE_TRIGGER, Condition(function BuffStun__cond)) // INLINED!!
+call TriggerAddCondition(BUFF_CREATE_TRIGGER, Condition(function BuffEnsn__cond)) // INLINED!!
+call UnitHR00__init()
+call UnitHR09__init()
+call UnitHR07__init()
+call UnitG000__init()
+call UnitG001__init()
+call UnitU000__init()
+call UnitU001__init()
+call UnitU002__init()
+call UnitU003__init()
+call UnitU004__init()
+call Ability0000__init()
+call Ability0001__init()
+call Ability0002__init()
+call Ability0003__init()
+call Ability0004__init()
 call Ability0005___init()
 call Ability0006___init()
 call Ability0007___init()
@@ -27314,19 +27807,20 @@ call TriggerAddCondition(BUFF_CREATE_TRIGGER, Condition(function Buff0021___cond
 call Ability0021___init()
 call AddRandomAbility3___init()
 call Ability0030___init()
-call s__Ability_addRandomAbility('0030' , 4) // INLINED!!
-call Ability0040__init()
-call Ability0041__init()
-call AddRandomAbility5__init()
-call AbilityC000__init()
-call AbilityC001__init()
-call AbilityC002__init()
-call AbilityC003__init()
-call AbilityC004__init()
-call AbilityC005__init()
-call AbilityC006__init()
-call AbilityC007__init()
-call AbilityC008__init()
+call Ability0031___init()
+call AddRandomAbility4___init()
+call Ability0040___init()
+call Ability0041___init()
+call AddRandomAbility5___init()
+call AbilityC000___init()
+call AbilityC001___init()
+call AbilityC002___init()
+call AbilityC003___init()
+call AbilityC004___init()
+call AbilityC005___init()
+call AbilityC006___init()
+call AbilityC007___init()
+call AbilityC008___init()
 
     set udg_EVENT_VALUE=0.00 // INLINED!!
 
@@ -27537,6 +28031,10 @@ local integer target=f__arg_integer1
 set f__result_boolean= sc__Unit_prototype_inRange(target,s__Explosion_x[this] , s__Explosion_y[this] , s__Explosion_radius_explosion[this])
    return true
 endfunction
+function sa__Explosion_explosionFillUnits takes nothing returns boolean
+    call s__Explosion_explosionFillUnits(f__arg_this,f__arg_group1)
+   return true
+endfunction
 function sa__Explosion_beforeExplosion takes nothing returns boolean
 local integer this=f__arg_this
    return true
@@ -27581,6 +28079,10 @@ local integer this=f__arg_this
 			set s__Explosion_group_wave[this]=null
    return true
 endfunction
+function sa__LineExplosion_explosionFillUnits takes nothing returns boolean
+    call s__LineExplosion_explosionFillUnits(f__arg_this,f__arg_group1)
+   return true
+endfunction
 function sa__LineExplosion_rangeFilter takes nothing returns boolean
 local integer this=f__arg_this
 local integer target=f__arg_integer1
@@ -27606,12 +28108,12 @@ local integer target=f__arg_integer1
 set f__result_boolean= sc__Unit_prototype_inSector(target,s__Explosion_x[this] , s__Explosion_y[this] , s__Explosion_radius_explosion[this] , s__SectorExplosion_angle[this] , s__SectorExplosion_width[this])
    return true
 endfunction
-function sa__Ability0041__ind_beforeRefresh takes nothing returns boolean
+function sa__Ability0041___ind_beforeRefresh takes nothing returns boolean
 local integer this=f__arg_this
 			set s__SectorIndicator_x[this]=sc__Object__get_x(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
 			set s__SectorIndicator_y[this]=sc__Object__get_y(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
 			set s__SectorIndicator_yaw[this]=s__Math_anglePoints(s__SectorIndicator_x[this] , s__SectorIndicator_y[this] , (s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))])) // INLINED!!
-			set s__SectorIndicator_range[this]=Ability0041__RANGE + Ability0041__COLRAD
+			set s__SectorIndicator_range[this]=Ability0041___RANGE + Ability0041___COLRAD
    return true
 endfunction
 function sa__Math_distancePoints takes nothing returns boolean
@@ -27624,26 +28126,26 @@ local real y2=f__arg_real4
 set f__result_real= SquareRoot(dx * dx + dy * dy)
    return true
 endfunction
-function sa__Ability0040__ind_refresh takes nothing returns boolean
+function sa__Ability0040___ind_refresh takes nothing returns boolean
 local integer this=f__arg_this
-			call s__Effect_setPosition(s__Ability0040__ind_c[this],(s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))]) , 2.) // INLINED!!
+			call s__Effect_setPosition(s__Ability0040___ind_c[this],(s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))]) , 2.) // INLINED!!
    return true
 endfunction
-function sa__Ability0040__ind_show takes nothing returns boolean
+function sa__Ability0040___ind_show takes nothing returns boolean
 local integer this=f__arg_this
 local boolean flag=f__arg_boolean1
 			if flag then
 				if GetLocalPlayer() == s__AbilityIndicator_owner[this] then
-					call BlzSetSpecialEffectAlpha((LoadEffectHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability0040__ind_c[this]))]), s__Agent_INDEX_ORIGIN_HANDLE)), (192)) // INLINED!!
+					call BlzSetSpecialEffectAlpha((LoadEffectHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability0040___ind_c[this]))]), s__Agent_INDEX_ORIGIN_HANDLE)), (192)) // INLINED!!
 				endif
 			else
-				call BlzSetSpecialEffectAlpha((LoadEffectHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability0040__ind_c[this]))]), s__Agent_INDEX_ORIGIN_HANDLE)), (0)) // INLINED!!
+				call BlzSetSpecialEffectAlpha((LoadEffectHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability0040___ind_c[this]))]), s__Agent_INDEX_ORIGIN_HANDLE)), (0)) // INLINED!!
 			endif
    return true
 endfunction
-function sa__Ability0040__ind_onDestroy takes nothing returns boolean
+function sa__Ability0040___ind_onDestroy takes nothing returns boolean
 local integer this=f__arg_this
-			call sc__Object_deallocate(s__Ability0040__ind_c[this])
+			call sc__Object_deallocate(s__Ability0040___ind_c[this])
     set f__arg_this=this
    return true
 endfunction
@@ -27659,11 +28161,11 @@ local integer this=f__arg_this
 endfunction
 function sa__Ability0040_explosion_beforeExplosion takes nothing returns boolean
 local integer this=f__arg_this
-   local integer e= s__Effect_create(Ability0040__EFFECT_PATH3 , (((s__Explosion_x[this] )*1.0) + (( Ability0040__EXPRAD / 2 )*1.0) * Cos((( GetRandomReal(0, 360))*1.0) * bj_DEGTORAD)) , (((s__Explosion_y[this] )*1.0) + (( Ability0040__EXPRAD / 2 )*1.0) * Sin((( GetRandomReal(0, 360))*1.0) * bj_DEGTORAD)) , GetRandomReal(2, 55) , 270) // INLINED!!
+   local integer e= s__Effect_create(Ability0040___EFFECT_PATH3 , (((s__Explosion_x[this] )*1.0) + (( Ability0040___EXPRAD / 2 )*1.0) * Cos((( GetRandomReal(0, 360))*1.0) * bj_DEGTORAD)) , (((s__Explosion_y[this] )*1.0) + (( Ability0040___EXPRAD / 2 )*1.0) * Sin((( GetRandomReal(0, 360))*1.0) * bj_DEGTORAD)) , GetRandomReal(2, 55) , 270) // INLINED!!
 			call s__Effect_setDuration(e,1.25)
 			call s__Effect_setScale(e,GetRandomReal(0.25, 0.75))
 			set e=0
-			set e=s__Effect_create(Ability0040__EFFECT_PATH4 , (((sc__Object__get_x(s__Ability0040_explosion_ef[this]) )*1.0) + (( Ability0040__FIRE_OFFSET )*1.0) * Cos((( sc__Object__get_yaw(s__Ability0040_explosion_ef[this]))*1.0) * bj_DEGTORAD)) , (((sc__Object__get_y(s__Ability0040_explosion_ef[this]) )*1.0) + (( Ability0040__FIRE_OFFSET )*1.0) * Sin((( sc__Object__get_yaw(s__Ability0040_explosion_ef[this]))*1.0) * bj_DEGTORAD)) , Ability0040__DRAGON_DIST - Ability0040__FIRE_OFFSET , sc__Object__get_yaw(s__Ability0040_explosion_ef[this])) // INLINED!!
+			set e=s__Effect_create(Ability0040___EFFECT_PATH4 , (((sc__Object__get_x(s__Ability0040_explosion_ef[this]) )*1.0) + (( Ability0040___FIRE_OFFSET )*1.0) * Cos((( sc__Object__get_yaw(s__Ability0040_explosion_ef[this]))*1.0) * bj_DEGTORAD)) , (((sc__Object__get_y(s__Ability0040_explosion_ef[this]) )*1.0) + (( Ability0040___FIRE_OFFSET )*1.0) * Sin((( sc__Object__get_yaw(s__Ability0040_explosion_ef[this]))*1.0) * bj_DEGTORAD)) , Ability0040___DRAGON_DIST - Ability0040___FIRE_OFFSET , sc__Object__get_yaw(s__Ability0040_explosion_ef[this])) // INLINED!!
 			call s__Effect_setPitch(e,135)
 			call s__Effect_setDuration(e,1.5)
 			call s__Effect_setAnimSpeed(e,2.)
@@ -27673,7 +28175,7 @@ endfunction
 function sa__Ability0040_explosion_executeExplosion takes nothing returns boolean
 local integer this=f__arg_this
 local integer target=f__arg_integer1
-   local integer e= s__Effect_create(Ability0040__EFFECT_PATH2 , sc__Object__get_x(target) , sc__Object__get_y(target) , sc__Object__get_z(target) + s__Object_pivot_z[target] , 270)
+   local integer e= s__Effect_create(Ability0040___EFFECT_PATH2 , sc__Object__get_x(target) , sc__Object__get_y(target) , sc__Object__get_z(target) + s__Object_pivot_z[target] , 270)
    local integer bf= 0
 			call s__Effect_kill(e)
 			if IsUnitInGroup((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(target)]), s__Agent_INDEX_ORIGIN_HANDLE)), s__Explosion_group_wave[this]) then // INLINED!!
@@ -27690,19 +28192,19 @@ function sa__Ability0040_explosion_onDestroy takes nothing returns boolean
 local integer this=f__arg_this
 			call s__Circle_setFadeOutPoint(s__Ability0040_explosion_c[this],0.01 , 0.75)
 			set s__Ability0040_explosion_c[this]=0
-			call s__Ability0040__mystruct_create(s__Ability0040_explosion_ef[this])
+			call s__Ability0040___mystruct_create(s__Ability0040_explosion_ef[this])
 			set s__Ability0040_explosion_ef[this]=0
 			call s__Effect_kill(s__Ability0040_explosion_ef2[this])
     set f__arg_this=this
    return true
 endfunction
-function sa__Ability0040__mystruct_onDestroy takes nothing returns boolean
+function sa__Ability0040___mystruct_onDestroy takes nothing returns boolean
 local integer this=f__arg_this
-			set s__Effect_want_remove[s__Ability0040__mystruct_ef[this]]=true
-			call sc__Object_deallocate(s__Ability0040__mystruct_ef[this])
-			call ReleaseTimer((s__Ability0040__mystruct_t[this])) // INLINED!!
-			set s__Ability0040__mystruct_ef[this]=0
-			set s__Ability0040__mystruct_t[this]=null
+			set s__Effect_want_remove[s__Ability0040___mystruct_ef[this]]=true
+			call sc__Object_deallocate(s__Ability0040___mystruct_ef[this])
+			call ReleaseTimer((s__Ability0040___mystruct_t[this])) // INLINED!!
+			set s__Ability0040___mystruct_ef[this]=0
+			set s__Ability0040___mystruct_t[this]=null
    return true
 endfunction
 function sa__Mover_onDestroy takes nothing returns boolean
@@ -27722,13 +28224,13 @@ local integer this=f__arg_this
 			call RemoveSavedInteger(s__Mover_HASH, s__Mover_owner[this], 0)
    return true
 endfunction
-function sa__Ability0030___ind_beforeRefresh takes nothing returns boolean
+function sa__Ability0031___ind_beforeRefresh takes nothing returns boolean
 local integer this=f__arg_this
-				set s__LineIndicator_yaw[this]=s__Math_anglePoints(sc__Object__get_x(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]]) , sc__Object__get_y(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]]) , (s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))])) // INLINED!!
-				set s__LineIndicator_x[this]=(((sc__Object__get_x(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]]) )*1.0) + (( - Ability0030___EXPRAD )*1.0) * Cos((( s__LineIndicator_yaw[this])*1.0) * bj_DEGTORAD)) // INLINED!!
-				set s__LineIndicator_y[this]=(((sc__Object__get_y(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]]) )*1.0) + (( - Ability0030___EXPRAD )*1.0) * Sin((( s__LineIndicator_yaw[this])*1.0) * bj_DEGTORAD)) // INLINED!!
-				set s__LineIndicator_range[this]=Ability0030___RANGE + Ability0030___EXPRAD * 2
-				set s__LineIndicator_width[this]=Ability0030___EXPRAD
+			set s__LineIndicator_yaw[this]=s__Math_anglePoints(s__Ability_prototype_command_x_temp[s__AbilityIndicator_abil[this]] , s__Ability_prototype_command_y_temp[s__AbilityIndicator_abil[this]] , (s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))])) // INLINED!!
+			set s__LineIndicator_x[this]=(((s__Ability_prototype_command_x_temp[s__AbilityIndicator_abil[this]] )*1.0) + (( - Ability0031___EXPRAD )*1.0) * Cos((( s__LineIndicator_yaw[this])*1.0) * bj_DEGTORAD)) // INLINED!!
+			set s__LineIndicator_y[this]=(((s__Ability_prototype_command_y_temp[s__AbilityIndicator_abil[this]] )*1.0) + (( - Ability0031___EXPRAD )*1.0) * Sin((( s__LineIndicator_yaw[this])*1.0) * bj_DEGTORAD)) // INLINED!!
+			set s__LineIndicator_range[this]=Ability0031___RANGE_SECOND + Ability0031___EXPRAD * 2
+			set s__LineIndicator_width[this]=Ability0031___EXPRAD
    return true
 endfunction
 function sa__Object__get_x takes nothing returns boolean
@@ -27900,6 +28402,58 @@ local integer this=f__arg_this
 	set s__ProgressBar_text[this]=null
    return true
 endfunction
+function sa__Ability0030___ind_beforeRefresh takes nothing returns boolean
+local integer this=f__arg_this
+				set s__LineIndicator_yaw[this]=s__Math_anglePoints(sc__Object__get_x(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]]) , sc__Object__get_y(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]]) , (s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))])) // INLINED!!
+				set s__LineIndicator_x[this]=(((sc__Object__get_x(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]]) )*1.0) + (( - Ability0030___EXPRAD )*1.0) * Cos((( s__LineIndicator_yaw[this])*1.0) * bj_DEGTORAD)) // INLINED!!
+				set s__LineIndicator_y[this]=(((sc__Object__get_y(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]]) )*1.0) + (( - Ability0030___EXPRAD )*1.0) * Sin((( s__LineIndicator_yaw[this])*1.0) * bj_DEGTORAD)) // INLINED!!
+				set s__LineIndicator_range[this]=Ability0030___RANGE + Ability0030___EXPRAD * 2
+				set s__LineIndicator_width[this]=Ability0030___EXPRAD
+   return true
+endfunction
+function sa__Tombstone_onDestroy takes nothing returns boolean
+local integer this=f__arg_this
+   local integer eff= sc__Effect_setDuration(sc__Effect_setAnim(sc__Effect_create(s__Tombstone_EFFECT_PATH2 , sc__Object__get_x(s__Tombstone_owner[this]) , sc__Object__get_y(s__Tombstone_owner[this]) , 0. , 270.),ANIM_TYPE_DEATH),3.33)
+			set s__Effect_want_remove[eff]=true
+			call sc__Timer_release(s__Tombstone_main_timer[this])
+			set s__Tombstone_main_timer[this]=null
+			set s__Effect_want_remove[s__Tombstone_ef[this]]=true
+			call sc__Object_deallocate(s__Tombstone_ef[this])
+			set s__Tombstone_ef[this]=0
+	call BlzDestroyFrame(s__Tombstone_text[this])
+	set s__Tombstone_text[this]=null
+			set s__Tombstone_THIS[s__Tombstone_owner[this]]=0
+   return true
+endfunction
+function sa__TreeOfLife_addLevel takes nothing returns boolean
+
+			call sc__Unit_prototype__set_level(s__TreeOfLife_UNIT,(s__Unit_prototype_level_true[(s__TreeOfLife_UNIT)]) + 1) // INLINED!!
+   return true
+endfunction
+function sa__TreeOfLife_end takes nothing returns boolean
+
+			call sc__Unit_prototype_plusStatus(s__TreeOfLife_UNIT,STATUS_DEAD)
+			call PauseTimer((s__TreeOfLife_MAIN_TIMER)) // INLINED!!
+			call s__TreeOfLife__set_HP(0.)
+			call TriggerEvaluate(st__Game_defeat) // INLINED!!
+   return true
+endfunction
+function sa__Trigger_getData takes nothing returns boolean
+    set f__result_integer=(LoadInteger(s__Trigger_HASH, GetHandleId((f__arg_trigger1)), 0)) // INLINED!!
+   return true
+endfunction
+function sa__Trigger_new takes nothing returns boolean
+local integer data=f__arg_integer1
+			set Trigger__GENERIC=null
+			set Trigger__GENERIC=CreateTrigger()
+			call SaveInteger(s__Trigger_HASH, GetHandleId((Trigger__GENERIC )), 0, ( data)) // INLINED!!
+set f__result_trigger= Trigger__GENERIC
+   return true
+endfunction
+function sa__Trigger_remove takes nothing returns boolean
+    call s__Trigger_remove(f__arg_trigger1)
+   return true
+endfunction
 function sa__Ability0021___ind_refresh takes nothing returns boolean
 local integer this=f__arg_this
 			call s__Effect_setPosition(s__Ability0021___ind_c[this],(s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))]) , 2.) // INLINED!!
@@ -27923,18 +28477,16 @@ local integer this=f__arg_this
     set f__arg_this=this
    return true
 endfunction
-function sa__Tombstone_onDestroy takes nothing returns boolean
+function sa__ChinghoFrame_onDestroy takes nothing returns boolean
 local integer this=f__arg_this
-   local integer eff= sc__Effect_setDuration(sc__Effect_setAnim(sc__Effect_create(s__Tombstone_EFFECT_PATH2 , sc__Object__get_x(s__Tombstone_owner[this]) , sc__Object__get_y(s__Tombstone_owner[this]) , 0. , 270.),ANIM_TYPE_DEATH),3.33)
-			set s__Effect_want_remove[eff]=true
-			call sc__Timer_release(s__Tombstone_main_timer[this])
-			set s__Tombstone_main_timer[this]=null
-			set s__Effect_want_remove[s__Tombstone_ef[this]]=true
-			call sc__Object_deallocate(s__Tombstone_ef[this])
-			set s__Tombstone_ef[this]=0
-	call BlzDestroyFrame(s__Tombstone_text[this])
-	set s__Tombstone_text[this]=null
-			set s__Tombstone_THIS[s__Tombstone_owner[this]]=0
+	call BlzDestroyFrame(s__ChinghoFrame_backdrop[this])
+	set s__ChinghoFrame_backdrop[this]=null
+	call BlzDestroyFrame(s__ChinghoFrame_icon1[this])
+	set s__ChinghoFrame_icon1[this]=null
+	call BlzDestroyFrame(s__ChinghoFrame_icon2[this])
+	set s__ChinghoFrame_icon2[this]=null
+	call BlzDestroyFrame(s__ChinghoFrame_name[this])
+	set s__ChinghoFrame_name[this]=null
    return true
 endfunction
 function sa__Ability0021_explosion_beforeExplosion takes nothing returns boolean
@@ -27993,19 +28545,6 @@ local integer this=f__arg_this
     set f__arg_this=this
    return true
 endfunction
-function sa__TreeOfLife_addLevel takes nothing returns boolean
-
-			call sc__Unit_prototype__set_level(s__TreeOfLife_UNIT,(s__Unit_prototype_level_true[(s__TreeOfLife_UNIT)]) + 1) // INLINED!!
-   return true
-endfunction
-function sa__TreeOfLife_end takes nothing returns boolean
-
-			call sc__Unit_prototype_plusStatus(s__TreeOfLife_UNIT,STATUS_DEAD)
-			call PauseTimer((s__TreeOfLife_MAIN_TIMER)) // INLINED!!
-			call s__TreeOfLife__set_HP(0.)
-			call TriggerEvaluate(st__Game_defeat) // INLINED!!
-   return true
-endfunction
 function sa__Ability0020___ind_beforeRefresh takes nothing returns boolean
 local integer this=f__arg_this
 				set s__LineIndicator_x[this]=sc__Object__get_x(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
@@ -28013,99 +28552,6 @@ local integer this=f__arg_this
 				set s__LineIndicator_yaw[this]=s__Math_anglePoints(s__LineIndicator_x[this] , s__LineIndicator_y[this] , (s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))])) // INLINED!!
 				set s__LineIndicator_range[this]=Ability0020___RANGE
 				set s__LineIndicator_width[this]=Ability0020___COLRAD
-   return true
-endfunction
-function sa__Trigger_getData takes nothing returns boolean
-    set f__result_integer=(LoadInteger(s__Trigger_HASH, GetHandleId((f__arg_trigger1)), 0)) // INLINED!!
-   return true
-endfunction
-function sa__Trigger_new takes nothing returns boolean
-local integer data=f__arg_integer1
-			set Trigger__GENERIC=null
-			set Trigger__GENERIC=CreateTrigger()
-			call SaveInteger(s__Trigger_HASH, GetHandleId((Trigger__GENERIC )), 0, ( data)) // INLINED!!
-set f__result_trigger= Trigger__GENERIC
-   return true
-endfunction
-function sa__Trigger_remove takes nothing returns boolean
-    call s__Trigger_remove(f__arg_trigger1)
-   return true
-endfunction
-function sa__ChinghoFrame_onDestroy takes nothing returns boolean
-local integer this=f__arg_this
-	call BlzDestroyFrame(s__ChinghoFrame_backdrop[this])
-	set s__ChinghoFrame_backdrop[this]=null
-	call BlzDestroyFrame(s__ChinghoFrame_icon1[this])
-	set s__ChinghoFrame_icon1[this]=null
-	call BlzDestroyFrame(s__ChinghoFrame_icon2[this])
-	set s__ChinghoFrame_icon2[this]=null
-	call BlzDestroyFrame(s__ChinghoFrame_name[this])
-	set s__ChinghoFrame_name[this]=null
-   return true
-endfunction
-function sa__Abilityu011___exx_executeExplosion takes nothing returns boolean
-local integer this=f__arg_this
-local integer target=f__arg_integer1
-				if s__Explosion_damageTarget(this,target) > 0. then
-					call s__Buff_add(s__Explosion_owner[this] , target , Abilityu011___ID , Abilityu011___DURATION)
-				endif
-   return true
-endfunction
-function sa__Abilityu011___exx_beforeExplosion takes nothing returns boolean
-local integer this=f__arg_this
-				set s__Explosion_x[this]=sc__Object__get_x(s__Explosion_owner[this])
-				set s__Explosion_y[this]=sc__Object__get_y(s__Explosion_owner[this])
-				set s__Explosion_damage[this]=( (s__Unit_prototype_getCarculatedStatValue((s__Explosion_owner[this]),STAT_TYPE_HPREGEN)) * Abilityu011___DAMAGE_PER_HPREGEN ) * ( 1 + Abilityu011___DAMAGE_PER_LEVEL * ( s__Abilityu011___exx_level[this] - 1 ) ) // INLINED!!
-   return true
-endfunction
-function sa__Abilityu011___exx_onDestroy takes nothing returns boolean
-local integer this=f__arg_this
-				call s__Effect_kill(s__Abilityu011___exx_ef[this])
-				set s__Abilityu011___exx_ef[this]=0
-				set Abilityu011___DESTROY_REQUEST_ABILITY=s__Abilityu011___exx_a[this]
-				call TriggerEvaluate(Abilityu011___DESTROY_REQUEST)
-				set Abilityu011___DESTROY_REQUEST_ABILITY=0
-    set f__arg_this=this
-   return true
-endfunction
-function sa__Buffu011_main_update takes nothing returns boolean
-local integer this=f__arg_this
-   return true
-endfunction
-function sa__Buffu011_main_init takes nothing returns boolean
-local integer this=f__arg_this
-			call s__Buff_addEffect(this,s__Effect_createAttatched(s__Buffu011_main_EFFECT_PATH1 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(s__Buff_target[this])]), s__Agent_INDEX_ORIGIN_HANDLE)) , "head")) // INLINED!!
-			call s__Unit_prototype_divideStatValue(s__Buff_target[this],STAT_TYPE_HEAL_AMP , ( 1 / ( 1 - s__Buffu011_main_REDUCE ) ) - 1)
-   return true
-endfunction
-function sa__Buffu011_main_onDestroy takes nothing returns boolean
-local integer this=f__arg_this
-			call s__Unit_prototype_divideStatValue(s__Buff_target[this],STAT_TYPE_HEAL_AMP , - ( ( 1 / ( 1 - s__Buffu011_main_REDUCE ) ) - 1 ))
-    set f__arg_this=this
-   return true
-endfunction
-function sa__Buffu010_main_update takes nothing returns boolean
-local integer this=f__arg_this
-   return true
-endfunction
-function sa__Buffu010_main_init takes nothing returns boolean
-local integer this=f__arg_this
-			call s__Buff_addEffect(this,s__Effect_createAttatched(s__Buffu010_main_EFFECT_PATH1 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(s__Buff_target[this])]), s__Agent_INDEX_ORIGIN_HANDLE)) , "overhead")) // INLINED!!
-			call s__Unit_prototype_plusStatValue(s__Buff_target[this],STAT_TYPE_ATTACK_SPEED , s__Buffu010_main_ATTACK_SPEED_BONUS)
-			set s__Buffu010_main_main_trigger[this]=s__Trigger_new(this)
-			set s__Buffu010_main_main_cond[this]=TriggerAddCondition(s__Buffu010_main_main_trigger[this], Condition(function s__Buffu010_main_cond))
-			call TriggerRegisterVariableEvent((s__Buffu010_main_main_trigger[this] ), "udg_EVENT_VALUE", EQUAL, (( DAMAGE_EVENT_MODIFY_STAT)*1.0)) // INLINED!!
-			call TriggerRegisterVariableEvent((s__Buffu010_main_main_trigger[this]), "udg_EVENT_VALUE", EQUAL, WEAPON_CHANGE_EVENT) // INLINED!!
-   return true
-endfunction
-function sa__Buffu010_main_onDestroy takes nothing returns boolean
-local integer this=f__arg_this
-			call s__Unit_prototype_plusStatValue(s__Buff_target[this],STAT_TYPE_ATTACK_SPEED , - s__Buffu010_main_ATTACK_SPEED_BONUS)
-		call TriggerRemoveCondition(s__Buffu010_main_main_trigger[this], s__Buffu010_main_main_cond[this])
-		call s__Trigger_remove(s__Buffu010_main_main_trigger[this])
-		set s__Buffu010_main_main_trigger[this]=null
-		set s__Buffu010_main_main_cond[this]=null
-    set f__arg_this=this
    return true
 endfunction
 function sa__AbilityIcon_onDestroy takes nothing returns boolean
@@ -28196,9 +28642,74 @@ local integer this=f__arg_this
     set f__arg_this=this
    return true
 endfunction
+function sa__Abilityu011___exx_executeExplosion takes nothing returns boolean
+local integer this=f__arg_this
+local integer target=f__arg_integer1
+				if s__Explosion_damageTarget(this,target) > 0. then
+					call s__Buff_add(s__Explosion_owner[this] , target , Abilityu011___ID , Abilityu011___DURATION)
+				endif
+   return true
+endfunction
+function sa__Abilityu011___exx_beforeExplosion takes nothing returns boolean
+local integer this=f__arg_this
+				set s__Explosion_x[this]=sc__Object__get_x(s__Explosion_owner[this])
+				set s__Explosion_y[this]=sc__Object__get_y(s__Explosion_owner[this])
+				set s__Explosion_damage[this]=( (s__Unit_prototype_getCarculatedStatValue((s__Explosion_owner[this]),STAT_TYPE_HPREGEN)) * Abilityu011___DAMAGE_PER_HPREGEN ) * ( 1 + Abilityu011___DAMAGE_PER_LEVEL * ( s__Abilityu011___exx_level[this] - 1 ) ) // INLINED!!
+   return true
+endfunction
+function sa__Abilityu011___exx_onDestroy takes nothing returns boolean
+local integer this=f__arg_this
+				call s__Effect_kill(s__Abilityu011___exx_ef[this])
+				set s__Abilityu011___exx_ef[this]=0
+				set Abilityu011___DESTROY_REQUEST_ABILITY=s__Abilityu011___exx_a[this]
+				call TriggerEvaluate(Abilityu011___DESTROY_REQUEST)
+				set Abilityu011___DESTROY_REQUEST_ABILITY=0
+    set f__arg_this=this
+   return true
+endfunction
+function sa__Buffu011_main_update takes nothing returns boolean
+local integer this=f__arg_this
+   return true
+endfunction
+function sa__Buffu011_main_init takes nothing returns boolean
+local integer this=f__arg_this
+			call s__Buff_addEffect(this,s__Effect_createAttatched(s__Buffu011_main_EFFECT_PATH1 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(s__Buff_target[this])]), s__Agent_INDEX_ORIGIN_HANDLE)) , "head")) // INLINED!!
+			call s__Unit_prototype_divideStatValue(s__Buff_target[this],STAT_TYPE_HEAL_AMP , ( 1 / ( 1 - s__Buffu011_main_REDUCE ) ) - 1)
+   return true
+endfunction
+function sa__Buffu011_main_onDestroy takes nothing returns boolean
+local integer this=f__arg_this
+			call s__Unit_prototype_divideStatValue(s__Buff_target[this],STAT_TYPE_HEAL_AMP , - ( ( 1 / ( 1 - s__Buffu011_main_REDUCE ) ) - 1 ))
+    set f__arg_this=this
+   return true
+endfunction
 function sa__Closeable_close takes nothing returns boolean
 local integer this=f__arg_this
 set f__result_boolean= true
+   return true
+endfunction
+function sa__Buffu010_main_update takes nothing returns boolean
+local integer this=f__arg_this
+   return true
+endfunction
+function sa__Buffu010_main_init takes nothing returns boolean
+local integer this=f__arg_this
+			call s__Buff_addEffect(this,s__Effect_createAttatched(s__Buffu010_main_EFFECT_PATH1 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(s__Buff_target[this])]), s__Agent_INDEX_ORIGIN_HANDLE)) , "overhead")) // INLINED!!
+			call s__Unit_prototype_plusStatValue(s__Buff_target[this],STAT_TYPE_ATTACK_SPEED , s__Buffu010_main_ATTACK_SPEED_BONUS)
+			set s__Buffu010_main_main_trigger[this]=s__Trigger_new(this)
+			set s__Buffu010_main_main_cond[this]=TriggerAddCondition(s__Buffu010_main_main_trigger[this], Condition(function s__Buffu010_main_cond))
+			call TriggerRegisterVariableEvent((s__Buffu010_main_main_trigger[this] ), "udg_EVENT_VALUE", EQUAL, (( DAMAGE_EVENT_MODIFY_STAT)*1.0)) // INLINED!!
+			call TriggerRegisterVariableEvent((s__Buffu010_main_main_trigger[this]), "udg_EVENT_VALUE", EQUAL, WEAPON_CHANGE_EVENT) // INLINED!!
+   return true
+endfunction
+function sa__Buffu010_main_onDestroy takes nothing returns boolean
+local integer this=f__arg_this
+			call s__Unit_prototype_plusStatValue(s__Buff_target[this],STAT_TYPE_ATTACK_SPEED , - s__Buffu010_main_ATTACK_SPEED_BONUS)
+		call TriggerRemoveCondition(s__Buffu010_main_main_trigger[this], s__Buffu010_main_main_cond[this])
+		call s__Trigger_remove(s__Buffu010_main_main_trigger[this])
+		set s__Buffu010_main_main_trigger[this]=null
+		set s__Buffu010_main_main_cond[this]=null
+    set f__arg_this=this
    return true
 endfunction
 function sa__UI_onDestroy takes nothing returns boolean
@@ -28259,15 +28770,6 @@ local integer this=f__arg_this
 	set s__UI_ability_error[this]=null
 			call sc__Timer_release(s__UI_main_timer[this])
 			set s__UI_main_timer[this]=null
-   return true
-endfunction
-function sa__Ability0015___ind_beforeRefresh takes nothing returns boolean
-local integer this=f__arg_this
-				set s__LineIndicator_x[this]=sc__Object__get_x(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
-				set s__LineIndicator_y[this]=sc__Object__get_y(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
-				set s__LineIndicator_yaw[this]=s__Math_anglePoints(s__LineIndicator_x[this] , s__LineIndicator_y[this] , (s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))])) // INLINED!!
-				set s__LineIndicator_range[this]=s__Ability_prototype_cast_range[s__AbilityIndicator_abil[this]]
-				set s__LineIndicator_width[this]=Ability0015___COLRAD
    return true
 endfunction
 function sa__Ability_prototype_addValue takes nothing returns boolean
@@ -28559,13 +29061,6 @@ local integer this=f__arg_this
 			endif
    return true
 endfunction
-function sa__Ability0015___exp_executeExplosion takes nothing returns boolean
-local integer this=f__arg_this
-local integer target=f__arg_integer1
-				call s__Explosion_damageTarget(this,target)
-				call s__Effect_setDuration(s__Effect_createAttatched(Ability0015___EFFECT_PATH2 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(target)]), s__Agent_INDEX_ORIGIN_HANDLE)) , "origin"),1.5) // INLINED!!
-   return true
-endfunction
 function sa__Actor__get_x takes nothing returns boolean
 local integer this=f__arg_this
 set f__result_real= s__Actor_x_true[this]
@@ -28644,6 +29139,15 @@ local integer this=f__arg_this
 			set s__CloseUI_owner[this]=null
    return true
 endfunction
+function sa__Ability0015___ind_beforeRefresh takes nothing returns boolean
+local integer this=f__arg_this
+				set s__LineIndicator_x[this]=sc__Object__get_x(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
+				set s__LineIndicator_y[this]=sc__Object__get_y(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
+				set s__LineIndicator_yaw[this]=s__Math_anglePoints(s__LineIndicator_x[this] , s__LineIndicator_y[this] , (s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))])) // INLINED!!
+				set s__LineIndicator_range[this]=s__Ability_prototype_cast_range[s__AbilityIndicator_abil[this]]
+				set s__LineIndicator_width[this]=Ability0015___COLRAD
+   return true
+endfunction
 function sa__Curve_getCarculatedX takes nothing returns boolean
 local integer this=f__arg_this
 local real v=f__arg_real1
@@ -28701,6 +29205,13 @@ local integer this=f__arg_this
     set f__arg_this=this
    return true
 endfunction
+function sa__Ability0015___exp_executeExplosion takes nothing returns boolean
+local integer this=f__arg_this
+local integer target=f__arg_integer1
+				call s__Explosion_damageTarget(this,target)
+				call s__Effect_setDuration(s__Effect_createAttatched(Ability0015___EFFECT_PATH2 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(target)]), s__Agent_INDEX_ORIGIN_HANDLE)) , "origin"),1.5) // INLINED!!
+   return true
+endfunction
 function sa__Bezier_create takes nothing returns boolean
 local real x1=f__arg_real1
 local real y1=f__arg_real2
@@ -28739,30 +29250,6 @@ local real v=f__arg_real1
 set f__result_real= z1 + ( z2 - z1 ) * v + sc__Object__get_offset_z(this)
    return true
 endfunction
-function sa__Ability0013___exp_executeExplosion takes nothing returns boolean
-local integer this=f__arg_this
-local integer target=f__arg_integer1
-    local integer ef= 0
-				if IsUnitInGroup((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(target)]), s__Agent_INDEX_ORIGIN_HANDLE)), s__Explosion_group_wave[this]) then // INLINED!!
-					set s__Explosion_damage[this]=( (s__Unit_prototype_getCarculatedStatValue((s__Explosion_owner[this]),STAT_TYPE_ATTACK)) * Ability0013___DAMAGE_PER_ATTACK ) * ( 1 + Ability0013___DAMAGE_PER_LEVEL * ( s__Ability0013___exp_level[this] - 1 ) ) // INLINED!!
-				else
-					set s__Explosion_damage[this]=( (s__Unit_prototype_getCarculatedStatValue((s__Explosion_owner[this]),STAT_TYPE_ATTACK)) * Ability0013___DAMAGE_PER_ATTACK ) * ( 1 + Ability0013___DAMAGE_PER_LEVEL * ( s__Ability0013___exp_level[this] - 1 ) ) // INLINED!!
-				endif
-				call s__Explosion_damageTarget(this,target)
-				call s__Effect_setDuration(s__Effect_createAttatched(Ability0013___EFFECT_PATH2 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(target)]), s__Agent_INDEX_ORIGIN_HANDLE)) , "chest"),1.5) // INLINED!!
-				set ef=s__Effect_create(Ability0013___EFFECT_PATH3 , sc__Object__get_x(target) + GetRandomReal(- 25, 25) , sc__Object__get_y(target) , sc__Object__get_z(target) + s__Object_pivot_z[target] + GetRandomReal(- 25, 25) , 270.)
-				call s__Effect_setRoll(ef,GetRandomReal(0., 360.))
-				call s__Effect_setMatrixScale(ef,1.25 , 1.25 , 2.)
-				call s__Effect_setAlpha(ef,192)
-				call s__Effect_setDuration(ef,1.0)
-   return true
-endfunction
-function sa__Ability0013___exp_beforeExplosion takes nothing returns boolean
-local integer this=f__arg_this
-				set s__Explosion_x[this]=sc__Object__get_x(s__Explosion_owner[this])
-				set s__Explosion_y[this]=sc__Object__get_y(s__Explosion_owner[this])
-   return true
-endfunction
 function sa__Bezier3_getCarculatedX takes nothing returns boolean
 local integer this=f__arg_this
 local real v=f__arg_real1
@@ -28796,29 +29283,6 @@ local real v=f__arg_real1
 set f__result_real= z1 + ( z2 - z1 ) * v + sc__Object__get_offset_z(this)
    return true
 endfunction
-function sa__Ability0010___ind_refresh takes nothing returns boolean
-local integer this=f__arg_this
-				call s__Effect_setPosition(s__Ability0010___ind_c[this],(s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))]) , 2.) // INLINED!!
-   return true
-endfunction
-function sa__Ability0010___ind_show takes nothing returns boolean
-local integer this=f__arg_this
-local boolean flag=f__arg_boolean1
-				if flag then
-					if GetLocalPlayer() == s__AbilityIndicator_owner[this] then
-						call BlzSetSpecialEffectAlpha((LoadEffectHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability0010___ind_c[this]))]), s__Agent_INDEX_ORIGIN_HANDLE)), (192)) // INLINED!!
-					endif
-				else
-					call BlzSetSpecialEffectAlpha((LoadEffectHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability0010___ind_c[this]))]), s__Agent_INDEX_ORIGIN_HANDLE)), (0)) // INLINED!!
-				endif
-   return true
-endfunction
-function sa__Ability0010___ind_onDestroy takes nothing returns boolean
-local integer this=f__arg_this
-				call sc__Object_deallocate(s__Ability0010___ind_c[this])
-    set f__arg_this=this
-   return true
-endfunction
 function sa__Group_new takes nothing returns boolean
 
 			set Group__RETURNGROUP=null
@@ -28842,6 +29306,30 @@ function sa__Group_getNearest takes nothing returns boolean
     set f__result_unit=s__Group_getNearest(f__arg_group1,f__arg_real1,f__arg_real2,f__arg_unit1)
    return true
 endfunction
+function sa__Ability0013___exp_executeExplosion takes nothing returns boolean
+local integer this=f__arg_this
+local integer target=f__arg_integer1
+    local integer ef= 0
+				if IsUnitInGroup((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(target)]), s__Agent_INDEX_ORIGIN_HANDLE)), s__Explosion_group_wave[this]) then // INLINED!!
+					set s__Explosion_damage[this]=( (s__Unit_prototype_getCarculatedStatValue((s__Explosion_owner[this]),STAT_TYPE_ATTACK)) * Ability0013___DAMAGE_PER_ATTACK ) * ( 1 + Ability0013___DAMAGE_PER_LEVEL * ( s__Ability0013___exp_level[this] - 1 ) ) // INLINED!!
+				else
+					set s__Explosion_damage[this]=( (s__Unit_prototype_getCarculatedStatValue((s__Explosion_owner[this]),STAT_TYPE_ATTACK)) * Ability0013___DAMAGE_PER_ATTACK ) * ( 1 + Ability0013___DAMAGE_PER_LEVEL * ( s__Ability0013___exp_level[this] - 1 ) ) // INLINED!!
+				endif
+				call s__Explosion_damageTarget(this,target)
+				call s__Effect_setDuration(s__Effect_createAttatched(Ability0013___EFFECT_PATH2 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(target)]), s__Agent_INDEX_ORIGIN_HANDLE)) , "chest"),1.5) // INLINED!!
+				set ef=s__Effect_create(Ability0013___EFFECT_PATH3 , sc__Object__get_x(target) + GetRandomReal(- 25, 25) , sc__Object__get_y(target) , sc__Object__get_z(target) + s__Object_pivot_z[target] + GetRandomReal(- 25, 25) , 270.)
+				call s__Effect_setRoll(ef,GetRandomReal(0., 360.))
+				call s__Effect_setMatrixScale(ef,1.25 , 1.25 , 2.)
+				call s__Effect_setAlpha(ef,192)
+				call s__Effect_setDuration(ef,1.0)
+   return true
+endfunction
+function sa__Ability0013___exp_beforeExplosion takes nothing returns boolean
+local integer this=f__arg_this
+				set s__Explosion_x[this]=sc__Object__get_x(s__Explosion_owner[this])
+				set s__Explosion_y[this]=sc__Object__get_y(s__Explosion_owner[this])
+   return true
+endfunction
 function sa__Lightning_onDestroy takes nothing returns boolean
 local integer this=f__arg_this
 			call ReleaseTimer(s__Lightning_t[this])
@@ -28849,6 +29337,29 @@ local integer this=f__arg_this
 			set s__Lightning_t[this]=null
 			set s__Lightning_l[this]=null
 			set s__Lightning_visible_player[this]=null
+    set f__arg_this=this
+   return true
+endfunction
+function sa__Ability0010___ind_refresh takes nothing returns boolean
+local integer this=f__arg_this
+				call s__Effect_setPosition(s__Ability0010___ind_c[this],(s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))]) , 2.) // INLINED!!
+   return true
+endfunction
+function sa__Ability0010___ind_show takes nothing returns boolean
+local integer this=f__arg_this
+local boolean flag=f__arg_boolean1
+				if flag then
+					if GetLocalPlayer() == s__AbilityIndicator_owner[this] then
+						call BlzSetSpecialEffectAlpha((LoadEffectHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability0010___ind_c[this]))]), s__Agent_INDEX_ORIGIN_HANDLE)), (192)) // INLINED!!
+					endif
+				else
+					call BlzSetSpecialEffectAlpha((LoadEffectHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability0010___ind_c[this]))]), s__Agent_INDEX_ORIGIN_HANDLE)), (0)) // INLINED!!
+				endif
+   return true
+endfunction
+function sa__Ability0010___ind_onDestroy takes nothing returns boolean
+local integer this=f__arg_this
+				call sc__Object_deallocate(s__Ability0010___ind_c[this])
     set f__arg_this=this
    return true
 endfunction
@@ -28992,29 +29503,6 @@ local integer this=f__arg_this
 			call RemoveSavedHandle(Line__HASH, this, i)
 			set i=i + 1
 		endloop
-    set f__arg_this=this
-   return true
-endfunction
-function sa__Buffu001_main_addValue takes nothing returns boolean
-local integer this=f__arg_this
-			set s__Buffu001_main_val[this]=s__Buffu001_main_val[this] + s__Buffu001_main_SLOW
-			call s__Unit_prototype_minusStatValue(s__Buff_target[this],STAT_TYPE_MOVEMENT_SPEED , s__Buffu001_main_SLOW)
-   return true
-endfunction
-function sa__Buffu001_main_update takes nothing returns boolean
-local integer this=f__arg_this
-			call s__Buffu001_main_addValue(this)
-   return true
-endfunction
-function sa__Buffu001_main_init takes nothing returns boolean
-local integer this=f__arg_this
-			call s__Buffu001_main_addValue(this)
-			call s__Buff_addEffect(this,s__Effect_createAttatched(s__Buffu001_main_EFFECT_PATH1 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(s__Buff_target[this])]), s__Agent_INDEX_ORIGIN_HANDLE)) , "chest")) // INLINED!!
-   return true
-endfunction
-function sa__Buffu001_main_onDestroy takes nothing returns boolean
-local integer this=f__arg_this
-			call s__Unit_prototype_minusStatValue(s__Buff_target[this],STAT_TYPE_MOVEMENT_SPEED , - s__Buffu001_main_val[this])
     set f__arg_this=this
    return true
 endfunction
@@ -29206,12 +29694,27 @@ return true
 set f__result_integer= 0
    return true
 endfunction
-function sa__Ability0008___ind_beforeRefresh takes nothing returns boolean
+function sa__Buffu001_main_addValue takes nothing returns boolean
 local integer this=f__arg_this
-				set s__SectorIndicator_x[this]=sc__Object__get_x(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
-				set s__SectorIndicator_y[this]=sc__Object__get_y(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
-				set s__SectorIndicator_yaw[this]=s__Math_anglePoints(s__SectorIndicator_x[this] , s__SectorIndicator_y[this] , (s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))])) // INLINED!!
-				set s__SectorIndicator_range[this]=Ability0008___RANGE + Ability0008___COLRAD
+			set s__Buffu001_main_val[this]=s__Buffu001_main_val[this] + s__Buffu001_main_SLOW
+			call s__Unit_prototype_minusStatValue(s__Buff_target[this],STAT_TYPE_MOVEMENT_SPEED , s__Buffu001_main_SLOW)
+   return true
+endfunction
+function sa__Buffu001_main_update takes nothing returns boolean
+local integer this=f__arg_this
+			call s__Buffu001_main_addValue(this)
+   return true
+endfunction
+function sa__Buffu001_main_init takes nothing returns boolean
+local integer this=f__arg_this
+			call s__Buffu001_main_addValue(this)
+			call s__Buff_addEffect(this,s__Effect_createAttatched(s__Buffu001_main_EFFECT_PATH1 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(s__Buff_target[this])]), s__Agent_INDEX_ORIGIN_HANDLE)) , "chest")) // INLINED!!
+   return true
+endfunction
+function sa__Buffu001_main_onDestroy takes nothing returns boolean
+local integer this=f__arg_this
+			call s__Unit_prototype_minusStatValue(s__Buff_target[this],STAT_TYPE_MOVEMENT_SPEED , - s__Buffu001_main_val[this])
+    set f__arg_this=this
    return true
 endfunction
 function sa__SlotChanger_stateDefault takes nothing returns boolean
@@ -29269,29 +29772,12 @@ local integer b=f__arg_integer3
 			set s__InstantText_B=b
    return true
 endfunction
-function sa__Ability0007___ind_beforeRefresh takes nothing returns boolean
+function sa__Ability0008___ind_beforeRefresh takes nothing returns boolean
 local integer this=f__arg_this
-				set s__LineIndicator_x[this]=sc__Object__get_x(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
-				set s__LineIndicator_y[this]=sc__Object__get_y(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
-				set s__LineIndicator_yaw[this]=s__Math_anglePoints(s__LineIndicator_x[this] , s__LineIndicator_y[this] , (s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))])) // INLINED!!
-				set s__LineIndicator_range[this]=Ability0007___RANGE_MAX
-				set s__LineIndicator_width[this]=Ability0007___EXPRAD
-   return true
-endfunction
-function sa__Ability0007___exp_executeExplosion takes nothing returns boolean
-local integer this=f__arg_this
-local integer target=f__arg_integer1
-    local integer ef= s__Effect_create(Ability0007___EFFECT_PATH2 , sc__Object__get_x(target) , sc__Object__get_y(target) , sc__Object__get_z(target) + s__Object_pivot_z[target] , 270.)
-				call s__Effect_setScale(ef,2.)
-				call s__Effect_setRoll(ef,45.)
-				call s__Effect_setColor(ef,255 , 0 , 255)
-				call s__Effect_setDuration(ef,1.0)
-				set ef=s__Effect_setDuration(s__Effect_createAttatched(Ability0007___EFFECT_PATH3 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(target)]), s__Agent_INDEX_ORIGIN_HANDLE)) , "chest"),1.5) // INLINED!!
-				call s__Explosion_damageTarget(this,target)
-				if not s__Ability0007___exp_b[this] then
-					call s__Unit_prototype_restoreMP(s__Explosion_owner[this],Ability0007___MANA_RESTORE)
-					set s__Ability0007___exp_b[this]=true
-				endif
+				set s__SectorIndicator_x[this]=sc__Object__get_x(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
+				set s__SectorIndicator_y[this]=sc__Object__get_y(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
+				set s__SectorIndicator_yaw[this]=s__Math_anglePoints(s__SectorIndicator_x[this] , s__SectorIndicator_y[this] , (s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))])) // INLINED!!
+				set s__SectorIndicator_range[this]=Ability0008___RANGE + Ability0008___COLRAD
    return true
 endfunction
 function sa__Timer_getData takes nothing returns boolean
@@ -29347,21 +29833,46 @@ local player p=f__arg_player1
 set f__result_integer= s__User_FOCUSUNIT[GetPlayerId(p)]
    return true
 endfunction
+function sa__Ability0007___ind_beforeRefresh takes nothing returns boolean
+local integer this=f__arg_this
+				set s__LineIndicator_x[this]=sc__Object__get_x(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
+				set s__LineIndicator_y[this]=sc__Object__get_y(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
+				set s__LineIndicator_yaw[this]=s__Math_anglePoints(s__LineIndicator_x[this] , s__LineIndicator_y[this] , (s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))])) // INLINED!!
+				set s__LineIndicator_range[this]=Ability0007___RANGE_MAX
+				set s__LineIndicator_width[this]=Ability0007___EXPRAD
+   return true
+endfunction
+function sa__Ability0007___exp_executeExplosion takes nothing returns boolean
+local integer this=f__arg_this
+local integer target=f__arg_integer1
+    local integer ef= s__Effect_create(Ability0007___EFFECT_PATH2 , sc__Object__get_x(target) , sc__Object__get_y(target) , sc__Object__get_z(target) + s__Object_pivot_z[target] , 270.)
+				call s__Effect_setScale(ef,2.)
+				call s__Effect_setRoll(ef,45.)
+				call s__Effect_setColor(ef,255 , 0 , 255)
+				call s__Effect_setDuration(ef,1.0)
+				set ef=s__Effect_setDuration(s__Effect_createAttatched(Ability0007___EFFECT_PATH3 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(target)]), s__Agent_INDEX_ORIGIN_HANDLE)) , "chest"),1.5) // INLINED!!
+				call s__Explosion_damageTarget(this,target)
+				if not s__Ability0007___exp_b[this] then
+					call s__Unit_prototype_restoreMP(s__Explosion_owner[this],Ability0007___MANA_RESTORE)
+					set s__Ability0007___exp_b[this]=true
+				endif
+   return true
+endfunction
 function sa__Ability_getTypeTier takes nothing returns boolean
 local integer id=f__arg_integer1
-set f__result_integer= LoadInteger(Ability___HASH, id, s__Ability_INDEX_TIER)
+set f__result_integer= LoadInteger(Ability__HASH, id, s__Ability_INDEX_TIER)
    return true
 endfunction
 function sa__Ability_getRandomAbility takes nothing returns boolean
 local integer table_num=f__arg_integer1
    local integer i= GetRandomInt(0, s__Ability_TABLE_INDEX[table_num] - 1)
-set f__result_integer= LoadInteger(Ability___HASH, table_num, i)
+set f__result_integer= LoadInteger(Ability__HASH, table_num, i)
    return true
 endfunction
 function sa__Ability_getTypeTooltip takes nothing returns boolean
 local integer id=f__arg_integer1
-			if HaveSavedString(Ability___HASH, id, s__Ability_INDEX_TOOLTIP) then
-set f__result_string= LoadStr(Ability___HASH, id, s__Ability_INDEX_TOOLTIP)
+			if HaveSavedString(Ability__HASH, id, s__Ability_INDEX_TOOLTIP) then
+set f__result_string= LoadStr(Ability__HASH, id, s__Ability_INDEX_TOOLTIP)
 return true
 			else
 set f__result_string= "ToolTip Missing"
@@ -29371,30 +29882,30 @@ return true
 endfunction
 function sa__Ability_getTypeCost takes nothing returns boolean
 local integer id=f__arg_integer1
-set f__result_integer= LoadInteger(Ability___HASH, id, s__Ability_INDEX_COST)
+set f__result_integer= LoadInteger(Ability__HASH, id, s__Ability_INDEX_COST)
    return true
 endfunction
 function sa__Ability_getTypeName takes nothing returns boolean
 local integer id=f__arg_integer1
-set f__result_string= LoadStr(Ability___HASH, id, s__Ability_INDEX_NAME)
+set f__result_string= LoadStr(Ability__HASH, id, s__Ability_INDEX_NAME)
    return true
 endfunction
 function sa__Ability_getTypeIconPath takes nothing returns boolean
 local integer id=f__arg_integer1
-set f__result_string= LoadStr(Ability___HASH, id, s__Ability_INDEX_ICON_PATH)
+set f__result_string= LoadStr(Ability__HASH, id, s__Ability_INDEX_ICON_PATH)
    return true
 endfunction
 function sa__Ability_getTypeBonusStatIndex takes nothing returns boolean
 local integer id=f__arg_integer1
 local integer slot=f__arg_integer2
-set f__result_integer= LoadInteger(Ability___HASH, id, s__Ability_INDEX_BONUS_STAT + slot)
+set f__result_integer= LoadInteger(Ability__HASH, id, s__Ability_INDEX_BONUS_STAT + slot)
    return true
 endfunction
 function sa__Ability_getTypeTag takes nothing returns boolean
 local integer id=f__arg_integer1
 local integer index=f__arg_integer2
-			if HaveSavedString(Ability___HASH, id, index) and index < s__Ability_INDEX_ICON_PATH then
-set f__result_string= LoadStr(Ability___HASH, id, index)
+			if HaveSavedString(Ability__HASH, id, index) and index < s__Ability_INDEX_ICON_PATH then
+set f__result_string= LoadStr(Ability__HASH, id, index)
 return true
 			else
 set f__result_string= ""
@@ -29424,12 +29935,52 @@ endfunction
 function sa__Ability_onDeath takes nothing returns boolean
 local integer this=f__arg_this
    local integer ui= s__UI_THIS[GetPlayerId((GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE)))))] // INLINED!!
-			call s__Unit_prototype_plusStatValue(s__Ability_prototype_owner[this],(LoadInteger(Ability___HASH, (s__Ability_prototype_id[this] ), s__Ability_INDEX_BONUS_STAT + ( 0))) , - s__Ability_stat_bonus1[this]) // INLINED!!
-			call s__Unit_prototype_plusStatValue(s__Ability_prototype_owner[this],(LoadInteger(Ability___HASH, (s__Ability_prototype_id[this] ), s__Ability_INDEX_BONUS_STAT + ( 1))) , - s__Ability_stat_bonus2[this]) // INLINED!!
+			call s__Unit_prototype_plusStatValue(s__Ability_prototype_owner[this],(LoadInteger(Ability__HASH, (s__Ability_prototype_id[this] ), s__Ability_INDEX_BONUS_STAT + ( 0))) , - s__Ability_stat_bonus1[this]) // INLINED!!
+			call s__Unit_prototype_plusStatValue(s__Ability_prototype_owner[this],(LoadInteger(Ability__HASH, (s__Ability_prototype_id[this] ), s__Ability_INDEX_BONUS_STAT + ( 1))) , - s__Ability_stat_bonus2[this]) // INLINED!!
 			call sc__Ability_deactivate(this)
 			if ui > 0 then
 				call s__UI_refreshAbilityIconsTarget(ui)
 			endif
+   return true
+endfunction
+function sa__Ability0005_main_relativeTooltip takes nothing returns boolean
+local integer this=f__arg_this
+set f__result_string= "대상 아군 유닛의 체력을 " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0005___HEAL_PER_MAGICPOWER ) * ( 1 + Ability0005___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "+" + s__ConstantString_statStringReal(STAT_TYPE_MAXHP , ( (GetUnitState((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE)), UNIT_STATE_MAX_LIFE)) * Ability0005___HEAL_PER_MAXHP ) * ( 1 + Ability0005___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + " 만큼 회복시킵니다." // INLINED!!
+   return true
+endfunction
+function sa__Ability0005_main_targetFilterAdditional takes nothing returns boolean
+local integer this=f__arg_this
+local integer target=f__arg_integer1
+				if (GetUnitState((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((target))]), s__Agent_INDEX_ORIGIN_HANDLE)), UNIT_STATE_LIFE)) < (GetUnitState((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((target))]), s__Agent_INDEX_ORIGIN_HANDLE)), UNIT_STATE_MAX_LIFE)) then // INLINED!!
+set f__result_boolean= true
+return true
+				else
+					set ERROR_MESSAGE="대상의 체력이 가득 찼습니다."
+set f__result_boolean= false
+return true
+				endif
+   return true
+endfunction
+function sa__Ability0005_main_execute takes nothing returns boolean
+local integer this=f__arg_this
+				call s__Ability0005_actor_create(s__Ability_prototype_owner[this] , s__Unit_prototype_get(s__Ability_prototype_command_target[this]) , s__Ability_prototype_cast_delay[this] , s__Ability_prototype_level[this])
+   return true
+endfunction
+function sa__Ability0005_main_init takes nothing returns boolean
+local integer this=f__arg_this
+				set s__Ability_prototype_target_useable_enemy[this]=false
+				set s__Ability_prototype_target_useable_ally[this]=true
+				set s__Ability_prototype_target_useable_self[this]=true
+				set s__Ability_prototype_manacost[this]=35
+				set s__Ability_prototype_is_active[this]=true
+				set s__Ability_prototype_is_target[this]=true
+				set s__Ability_prototype_cast_range[this]=Ability0005___RANGE
+				set s__Ability_prototype_preserve_order[this]=false
+				set s__Ability_prototype_cooldown_max[this]=8.
+				set s__Ability_prototype_cooldown_min[this]=2.
+				set s__Ability_prototype_cast_delay[this]=Ability0005___DELAY
+				set s__Ability_prototype_indicator[this]=s__AbilityIndicator_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+				call s__Ability_plusStatValue(this,5)
    return true
 endfunction
 function sa__ChinghoWidget_onDestroy takes nothing returns boolean
@@ -29442,6 +29993,30 @@ local integer this=f__arg_this
 	set s__ChinghoWidget_btn[this]=null
    return true
 endfunction
+function sa__Ability0004_main_relativeTooltip takes nothing returns boolean
+local integer this=f__arg_this
+set f__result_string= "대상을 포함한 최대 " + STRING_COLOR_CONSTANT + I2S(Ability0004__TARGET_MAX) + "기|r의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0004__DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0004__DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 " + DAMAGE_STRING_MAGICAL + "를 입힙니다.\n첫 대상에게는 피해량이 " + s__ConstantString_statStringReal(STAT_TYPE_ACCURACY , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_ACCURACY)) * Ability0004__DAMAGE_PER_ACCURACY ) * ( 1 + Ability0004__DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + " 만큼 증가합니다." // INLINED!!
+   return true
+endfunction
+function sa__Ability0004_main_execute takes nothing returns boolean
+local integer this=f__arg_this
+				call s__Ability0004_actor_create(s__Ability_prototype_owner[this] , s__Unit_prototype_get(s__Ability_prototype_command_target[this]) , s__Ability_prototype_cast_delay[this] , s__Ability_prototype_level[this])
+   return true
+endfunction
+function sa__Ability0004_main_init takes nothing returns boolean
+local integer this=f__arg_this
+				set s__Ability_prototype_manacost[this]=22
+				set s__Ability_prototype_is_active[this]=true
+				set s__Ability_prototype_is_target[this]=true
+				set s__Ability_prototype_cast_range[this]=Ability0004__RANGE
+				set s__Ability_prototype_preserve_order[this]=false
+				set s__Ability_prototype_cooldown_max[this]=5.3
+				set s__Ability_prototype_cooldown_min[this]=0.5
+				set s__Ability_prototype_cast_delay[this]=Ability0004__INTERVAL
+				set s__Ability_prototype_indicator[this]=s__AbilityIndicator_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+				call s__Ability_plusStatValue(this,5)
+   return true
+endfunction
 function sa__CharacterWidget_onDestroy takes nothing returns boolean
 local integer this=f__arg_this
 		call TriggerRemoveCondition(s__CharacterWidget_main_trigger[this], s__CharacterWidget_main_cond[this])
@@ -29450,37 +30025,6 @@ local integer this=f__arg_this
 		set s__CharacterWidget_main_cond[this]=null
 	call BlzDestroyFrame(s__CharacterWidget_btn[this])
 	set s__CharacterWidget_btn[this]=null
-   return true
-endfunction
-function sa__Ability0003_main_relativeTooltip takes nothing returns boolean
-local integer this=f__arg_this
-set f__result_string= "지정한 방향으로 화염구를 발사하여 적과 닿으면 범위 내의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0003___DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0003___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 " + DAMAGE_STRING_MAGICAL + "를 입힙니다." // INLINED!!
-   return true
-endfunction
-function sa__Ability0003_main_execute takes nothing returns boolean
-local integer this=f__arg_this
-				call s__Ability0003_actor_create(s__Ability_prototype_owner[this] , s__Ability_prototype_command_x[this] , s__Ability_prototype_command_y[this] , s__Ability_prototype_cast_delay[this] , s__Ability_prototype_level[this])
-   return true
-endfunction
-function sa__Ability0003_main_init takes nothing returns boolean
-local integer this=f__arg_this
-				set s__Ability_prototype_is_active[this]=true
-				set s__Ability_prototype_preserve_order[this]=false
-				set s__Ability_prototype_cooldown_max[this]=5.5
-				set s__Ability_prototype_cooldown_min[this]=0.5
-				set s__Ability_prototype_cast_delay[this]=Ability0003___DELAY
-				set s__Ability_prototype_manacost[this]=25
-				set s__Ability_prototype_indicator[this]=s__Ability0003___ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
-				call s__Ability_plusStatValue(this,5)
-   return true
-endfunction
-function sa__Ability0003___ind_beforeRefresh takes nothing returns boolean
-local integer this=f__arg_this
-				set s__LineIndicator_x[this]=sc__Object__get_x(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
-				set s__LineIndicator_y[this]=sc__Object__get_y(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
-				set s__LineIndicator_yaw[this]=s__Math_anglePoints(s__LineIndicator_x[this] , s__LineIndicator_y[this] , (s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))])) // INLINED!!
-				set s__LineIndicator_range[this]=Ability0003___RANGE + Ability0003___COLRAD
-				set s__LineIndicator_width[this]=Ability0003___COLRAD
    return true
 endfunction
 function sa__CharacterInfoPanel_onDestroy takes nothing returns boolean
@@ -29504,39 +30048,51 @@ local integer this=f__arg_this
 			call s__ChinghoFrame_deallocate(s__CharacterInfoPanel_cf[this])
    return true
 endfunction
+function sa__Ability0003_main_relativeTooltip takes nothing returns boolean
+local integer this=f__arg_this
+set f__result_string= "지정한 방향으로 화염구를 발사하여 적과 닿으면 범위 내의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0003__DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0003__DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 " + DAMAGE_STRING_MAGICAL + "를 입힙니다." // INLINED!!
+   return true
+endfunction
+function sa__Ability0003_main_execute takes nothing returns boolean
+local integer this=f__arg_this
+				call s__Ability0003_actor_create(s__Ability_prototype_owner[this] , s__Ability_prototype_command_x[this] , s__Ability_prototype_command_y[this] , s__Ability_prototype_cast_delay[this] , s__Ability_prototype_level[this])
+   return true
+endfunction
+function sa__Ability0003_main_init takes nothing returns boolean
+local integer this=f__arg_this
+				set s__Ability_prototype_is_active[this]=true
+				set s__Ability_prototype_preserve_order[this]=false
+				set s__Ability_prototype_cooldown_max[this]=5.5
+				set s__Ability_prototype_cooldown_min[this]=0.5
+				set s__Ability_prototype_cast_delay[this]=Ability0003__DELAY
+				set s__Ability_prototype_manacost[this]=25
+				set s__Ability_prototype_indicator[this]=s__Ability0003__ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+				call s__Ability_plusStatValue(this,5)
+   return true
+endfunction
+function sa__Ability0003__ind_beforeRefresh takes nothing returns boolean
+local integer this=f__arg_this
+				set s__LineIndicator_x[this]=sc__Object__get_x(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
+				set s__LineIndicator_y[this]=sc__Object__get_y(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
+				set s__LineIndicator_yaw[this]=s__Math_anglePoints(s__LineIndicator_x[this] , s__LineIndicator_y[this] , (s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))])) // INLINED!!
+				set s__LineIndicator_range[this]=Ability0003__RANGE + Ability0003__COLRAD
+				set s__LineIndicator_width[this]=Ability0003__COLRAD
+   return true
+endfunction
 function sa__CharacterSelect_finish takes nothing returns boolean
 
    local trigger t= CreateTrigger()
-		call TriggerRemoveCondition(CharacterSelect__MAIN_TRIGGER, CharacterSelect__MAIN_COND)
-		call s__Trigger_remove(CharacterSelect__MAIN_TRIGGER)
-		set CharacterSelect__MAIN_TRIGGER=null
-		set CharacterSelect__MAIN_COND=null
+		call TriggerRemoveCondition(CharacterSelect___MAIN_TRIGGER, CharacterSelect___MAIN_COND)
+		call s__Trigger_remove(CharacterSelect___MAIN_TRIGGER)
+		set CharacterSelect___MAIN_TRIGGER=null
+		set CharacterSelect___MAIN_COND=null
 			call TriggerRegisterTimerEvent(t, 2., false)
 			call TriggerAddCondition(t, Condition(function s__CharacterSelect_end))
-			set CharacterSelect__FADE=BlzCreateFrameByType("SPRITE", "", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), "", 0)
-			call BlzFrameSetModel(CharacterSelect__FADE, "ui\\characterselectfade.mdl", 0)
-			call BlzFrameSetAbsPoint(CharacterSelect__FADE, FRAMEPOINT_BOTTOMLEFT, 0., 0.)
-			call BlzFrameSetSize(CharacterSelect__FADE, 1., 1.)
+			set CharacterSelect___FADE=BlzCreateFrameByType("SPRITE", "", BlzGetOriginFrame(ORIGIN_FRAME_GAME_UI, 0), "", 0)
+			call BlzFrameSetModel(CharacterSelect___FADE, "ui\\characterselectfade.mdl", 0)
+			call BlzFrameSetAbsPoint(CharacterSelect___FADE, FRAMEPOINT_BOTTOMLEFT, 0., 0.)
+			call BlzFrameSetSize(CharacterSelect___FADE, 1., 1.)
 			set t=null
-   return true
-endfunction
-function sa__Ability0002_main_relativeTooltip takes nothing returns boolean
-local integer this=f__arg_this
-set f__result_string= "정신집중 후 대상에게 강력한 탄환을 발사하여 " + s__ConstantString_statStringReal(STAT_TYPE_ATTACK , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_ATTACK)) * Ability0002___DAMAGE_PER_ATTACK ) * ( 1 + Ability0002___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) * s__Unit_prototype__get_attack_speed(s__Ability_prototype_owner[this]) ) , 1) + "의 " + DAMAGE_STRING_PHYSICAL + "를 입힙니다.\n\n - 공격속도에 비례해 피해량이 증가합니다. (위 수치는 증가량이 반영된 수치입니다.)" // INLINED!!
-   return true
-endfunction
-function sa__Ability0002_main_basicAttack takes nothing returns boolean
-local integer this=f__arg_this
-local integer target=f__arg_integer1
-    local integer ac= s__Ability0002_actor_create(s__Ability_prototype_owner[this] , target , s__Ability_prototype_level[this])
-   return true
-endfunction
-function sa__Ability0002_main_init takes nothing returns boolean
-local integer this=f__arg_this
-				set s__Ability_prototype_weapon_delay[this]=0.5
-				set s__Ability_prototype_weapon_range[this]=650.
-				set s__Ability_prototype_cast_delay[this]=Ability0002___DELAY
-				call s__Ability_plusStatValue(this,5)
    return true
 endfunction
 function sa__GuardianFrame_onDestroy takes nothing returns boolean
@@ -29560,36 +30116,23 @@ local integer this=f__arg_this
 			set s__GuardianFrame_THIS[s__GuardianFrame_index[this]]=0
    return true
 endfunction
-function sa__Ability0001_main_relativeTooltip takes nothing returns boolean
+function sa__Ability0002_main_relativeTooltip takes nothing returns boolean
 local integer this=f__arg_this
-set f__result_string= "직선 범위 내의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0001___DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0001___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 " + DAMAGE_STRING_MAGICAL + "를 입힙니다." // INLINED!!
+set f__result_string= "정신집중 후 대상에게 강력한 탄환을 발사하여 " + s__ConstantString_statStringReal(STAT_TYPE_ATTACK , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_ATTACK)) * Ability0002__DAMAGE_PER_ATTACK ) * ( 1 + Ability0002__DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) * s__Unit_prototype__get_attack_speed(s__Ability_prototype_owner[this]) ) , 1) + "의 " + DAMAGE_STRING_PHYSICAL + "를 입힙니다.\n\n - 공격속도에 비례해 피해량이 증가합니다. (위 수치는 증가량이 반영된 수치입니다.)" // INLINED!!
    return true
 endfunction
-function sa__Ability0001_main_execute takes nothing returns boolean
+function sa__Ability0002_main_basicAttack takes nothing returns boolean
 local integer this=f__arg_this
-				call s__Ability0001_actor_create(s__Ability_prototype_owner[this] , s__Ability_prototype_command_x[this] , s__Ability_prototype_command_y[this] , s__Ability_prototype_command_x2[this] , s__Ability_prototype_command_y2[this] , s__Ability_prototype_level[this])
+local integer target=f__arg_integer1
+    local integer ac= s__Ability0002_actor_create(s__Ability_prototype_owner[this] , target , s__Ability_prototype_level[this])
    return true
 endfunction
-function sa__Ability0001_main_init takes nothing returns boolean
+function sa__Ability0002_main_init takes nothing returns boolean
 local integer this=f__arg_this
-				set s__Ability_prototype_manacost[this]=27
-				set s__Ability_prototype_is_active[this]=true
-				set s__Ability_prototype_cast_range[this]=Ability0001___RANGE
-				set s__Ability_prototype_cooldown_max[this]=6.7
-				set s__Ability_prototype_cooldown_min[this]=0.5
-				set s__Ability_prototype_preserve_order[this]=false
-				set s__Ability_prototype_drag_to_use[this]=true
-				set s__Ability_prototype_indicator[this]=s__Ability0001___ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+				set s__Ability_prototype_weapon_delay[this]=0.5
+				set s__Ability_prototype_weapon_range[this]=650.
+				set s__Ability_prototype_cast_delay[this]=Ability0002__DELAY
 				call s__Ability_plusStatValue(this,5)
-   return true
-endfunction
-function sa__Ability0001___ind_beforeRefresh takes nothing returns boolean
-local integer this=f__arg_this
-				set s__LineIndicator_yaw[this]=s__Math_anglePoints(s__Ability_prototype_command_x_temp[s__AbilityIndicator_abil[this]] , s__Ability_prototype_command_y_temp[s__AbilityIndicator_abil[this]] , (s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))])) // INLINED!!
-				set s__LineIndicator_x[this]=(((s__Ability_prototype_command_x_temp[s__AbilityIndicator_abil[this]] )*1.0) + (( - Ability0001___BALL_RADIUS )*1.0) * Cos((( s__LineIndicator_yaw[this])*1.0) * bj_DEGTORAD)) // INLINED!!
-				set s__LineIndicator_y[this]=(((s__Ability_prototype_command_y_temp[s__AbilityIndicator_abil[this]] )*1.0) + (( - Ability0001___BALL_RADIUS )*1.0) * Sin((( s__LineIndicator_yaw[this])*1.0) * bj_DEGTORAD)) // INLINED!!
-				set s__LineIndicator_range[this]=Ability0001___BALL_DISTANCE + Ability0001___BALL_RADIUS * 2
-				set s__LineIndicator_width[this]=Ability0001___BALL_RADIUS
    return true
 endfunction
 function sa__Guardians_addLevel takes nothing returns boolean
@@ -29602,6 +30145,38 @@ function sa__Guardians_addLevel takes nothing returns boolean
 				set ef=s__Effect_setDuration(s__Effect_createAttatched("Abilities\\Spells\\Other\\Levelup\\LevelupCaster.mdl" , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(s__Guardians_GUARDIAN[i])]), s__Agent_INDEX_ORIGIN_HANDLE)) , "origin"),1.5) // INLINED!!
 				set i=i + 1
 			endloop
+   return true
+endfunction
+function sa__Ability0001_main_relativeTooltip takes nothing returns boolean
+local integer this=f__arg_this
+set f__result_string= "직선 범위 내의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0001__DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0001__DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 " + DAMAGE_STRING_MAGICAL + "를 입힙니다." // INLINED!!
+   return true
+endfunction
+function sa__Ability0001_main_execute takes nothing returns boolean
+local integer this=f__arg_this
+				call s__Ability0001_actor_create(s__Ability_prototype_owner[this] , s__Ability_prototype_command_x[this] , s__Ability_prototype_command_y[this] , s__Ability_prototype_command_x2[this] , s__Ability_prototype_command_y2[this] , s__Ability_prototype_level[this])
+   return true
+endfunction
+function sa__Ability0001_main_init takes nothing returns boolean
+local integer this=f__arg_this
+				set s__Ability_prototype_manacost[this]=27
+				set s__Ability_prototype_is_active[this]=true
+				set s__Ability_prototype_cast_range[this]=Ability0001__RANGE
+				set s__Ability_prototype_cooldown_max[this]=6.7
+				set s__Ability_prototype_cooldown_min[this]=0.5
+				set s__Ability_prototype_preserve_order[this]=false
+				set s__Ability_prototype_drag_to_use[this]=true
+				set s__Ability_prototype_indicator[this]=s__Ability0001__ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+				call s__Ability_plusStatValue(this,5)
+   return true
+endfunction
+function sa__Ability0001__ind_beforeRefresh takes nothing returns boolean
+local integer this=f__arg_this
+				set s__LineIndicator_yaw[this]=s__Math_anglePoints(s__Ability_prototype_command_x_temp[s__AbilityIndicator_abil[this]] , s__Ability_prototype_command_y_temp[s__AbilityIndicator_abil[this]] , (s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))])) // INLINED!!
+				set s__LineIndicator_x[this]=(((s__Ability_prototype_command_x_temp[s__AbilityIndicator_abil[this]] )*1.0) + (( - Ability0001__BALL_RADIUS )*1.0) * Cos((( s__LineIndicator_yaw[this])*1.0) * bj_DEGTORAD)) // INLINED!!
+				set s__LineIndicator_y[this]=(((s__Ability_prototype_command_y_temp[s__AbilityIndicator_abil[this]] )*1.0) + (( - Ability0001__BALL_RADIUS )*1.0) * Sin((( s__LineIndicator_yaw[this])*1.0) * bj_DEGTORAD)) // INLINED!!
+				set s__LineIndicator_range[this]=Ability0001__BALL_DISTANCE + Ability0001__BALL_RADIUS * 2
+				set s__LineIndicator_width[this]=Ability0001__BALL_RADIUS
    return true
 endfunction
 function sa__Movement__get_x takes nothing returns boolean
@@ -29639,6 +30214,11 @@ endfunction
 function sa__Movement__set_curve takes nothing returns boolean
 local integer this=f__arg_this
 local integer cv=f__arg_integer1
+			if cv <= 0 then
+				if s__Movement_curve_true[this] > 0 then
+					call sc__Object_deallocate(s__Movement_curve_true[this])
+				endif
+			endif
 			set s__Movement_curve_true[this]=cv
 			set s__Movement_flag_curve[this]=cv > 0
    return true
@@ -29652,6 +30232,11 @@ local real z=f__arg_real3
 			set s__Movement_target_x[this]=x
 			set s__Movement_target_y[this]=y
 			set s__Movement_target_z[this]=z
+   return true
+endfunction
+function sa__Movement_resetTargetLocation takes nothing returns boolean
+local integer this=f__arg_this
+			set s__Movement_flag_target_location[this]=false
    return true
 endfunction
 function sa__Movement_onSuspend takes nothing returns boolean
@@ -29714,46 +30299,6 @@ local integer this=f__arg_this
     set f__arg_this=this
    return true
 endfunction
-function sa__Ability0001_explosion_executeExplosion takes nothing returns boolean
-local integer this=f__arg_this
-local integer target=f__arg_integer1
-				set s__Explosion_damage_id[this]=Ability0001___ID
-				call s__Explosion_damageTarget(this,target)
-				call s__Effect_kill(s__Effect_createAttatched(Ability0001___EFFECT_PATH2 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(target)]), s__Agent_INDEX_ORIGIN_HANDLE)) , "origin")) // INLINED!!
-   return true
-endfunction
-function sa__Ability0000_main_relativeTooltip takes nothing returns boolean
-local integer this=f__arg_this
-set f__result_string= "지정한 방향으로 약진하여 충돌하는 대상과 대상 주변의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_ATTACK , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_ATTACK)) * Ability0000___DAMAGE_PER_ATTACK ) * ( 1 + Ability0000___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 " + DAMAGE_STRING_PHYSICAL + "를 입히고 밀쳐냅니다.\n가장 가까운 적은 " + s__ConstantString_statStringReal(STAT_TYPE_ATTACK , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_ATTACK)) * Ability0000___DAMAGE_PER_ATTACK_ALTERNATE ) * ( 1 + Ability0000___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 피해량이 대신 적용됩니다." // INLINED!!
-   return true
-endfunction
-function sa__Ability0000_main_execute takes nothing returns boolean
-local integer this=f__arg_this
-				call s__Ability0000_actor_create(s__Ability_prototype_owner[this] , s__Ability_prototype_command_x[this] , s__Ability_prototype_command_y[this] , s__Ability_prototype_getCarculatedCastDelayByAttackSpeed(this) , s__Ability_prototype_level[this])
-   return true
-endfunction
-function sa__Ability0000_main_init takes nothing returns boolean
-local integer this=f__arg_this
-				set s__Ability_prototype_manacost[this]=25
-				set s__Ability_prototype_is_active[this]=true
-				set s__Ability_prototype_useable_ensnare[this]=false
-				set s__Ability_prototype_preserve_order[this]=false
-				set s__Ability_prototype_cooldown_max[this]=8.
-				set s__Ability_prototype_cooldown_min[this]=2.
-				set s__Ability_prototype_cast_delay[this]=0.25
-				set s__Ability_prototype_indicator[this]=s__Ability0000___ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
-				call s__Ability_plusStatValue(this,5)
-   return true
-endfunction
-function sa__Ability0000___ind_beforeRefresh takes nothing returns boolean
-local integer this=f__arg_this
-				set s__LineIndicator_x[this]=sc__Object__get_x(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
-				set s__LineIndicator_y[this]=sc__Object__get_y(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
-				set s__LineIndicator_yaw[this]=s__Math_anglePoints(s__LineIndicator_x[this] , s__LineIndicator_y[this] , (s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))])) // INLINED!!
-				set s__LineIndicator_range[this]=( Ability0000___CHARGE_SPEED * Ability0000___CHARGE_DURATION )
-				set s__LineIndicator_width[this]=Ability0000___COLRAD
-   return true
-endfunction
 function sa__Game_defeat takes nothing returns boolean
 
    local integer i= 0
@@ -29795,20 +30340,72 @@ function sa__Game_endSelect takes nothing returns boolean
 				exitwhen i >= PLAYER_MAX
 				if GetPlayerSlotState(Player(i)) == PLAYER_SLOT_STATE_PLAYING and GetPlayerController(Player(i)) == MAP_CONTROL_USER then
 					call s__Game_initForPlayer(Player(i) , CharacterSelect_ID[i] , CharacterSelect_CHINGHO_ID[i])
-					call TriggerRegisterPlayerEventLeave(Game__LEAVE_TRIGGER, Player(i))
+					call TriggerRegisterPlayerEventLeave(Game___LEAVE_TRIGGER, Player(i))
 				endif
 				set i=i + 1
 			endloop
 			call s__TreeOfLife_init()
 			call s__Guardians_init()
 			call s__Round_init()
-			call TriggerAddCondition(Game__LEAVE_TRIGGER, Condition(function s__Game_playerLeave))
+			call TriggerAddCondition(Game___LEAVE_TRIGGER, Condition(function s__Game_playerLeave))
    return true
 endfunction
-function sa__Wave__spawner_onDestroy takes nothing returns boolean
+function sa__Ability0001_explosion_executeExplosion takes nothing returns boolean
 local integer this=f__arg_this
-			call ReleaseTimer((s__Wave__spawner_main_timer[this])) // INLINED!!
-			set s__Wave__spawner_main_timer[this]=null
+local integer target=f__arg_integer1
+				set s__Explosion_damage_id[this]=Ability0001__ID
+				call s__Explosion_damageTarget(this,target)
+				call s__Effect_kill(s__Effect_createAttatched(Ability0001__EFFECT_PATH2 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(target)]), s__Agent_INDEX_ORIGIN_HANDLE)) , "origin")) // INLINED!!
+   return true
+endfunction
+function sa__Ability0000_main_relativeTooltip takes nothing returns boolean
+local integer this=f__arg_this
+set f__result_string= "지정한 방향으로 약진하여 충돌하는 대상과 대상 주변의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_ATTACK , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_ATTACK)) * Ability0000__DAMAGE_PER_ATTACK ) * ( 1 + Ability0000__DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 " + DAMAGE_STRING_PHYSICAL + "를 입히고 밀쳐냅니다.\n가장 가까운 적은 " + s__ConstantString_statStringReal(STAT_TYPE_ATTACK , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_ATTACK)) * Ability0000__DAMAGE_PER_ATTACK_ALTERNATE ) * ( 1 + Ability0000__DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 피해량이 대신 적용됩니다." // INLINED!!
+   return true
+endfunction
+function sa__Ability0000_main_execute takes nothing returns boolean
+local integer this=f__arg_this
+				call s__Ability0000_actor_create(s__Ability_prototype_owner[this] , s__Ability_prototype_command_x[this] , s__Ability_prototype_command_y[this] , s__Ability_prototype_getCarculatedCastDelayByAttackSpeed(this) , s__Ability_prototype_level[this])
+   return true
+endfunction
+function sa__Ability0000_main_init takes nothing returns boolean
+local integer this=f__arg_this
+				set s__Ability_prototype_manacost[this]=25
+				set s__Ability_prototype_is_active[this]=true
+				set s__Ability_prototype_useable_ensnare[this]=false
+				set s__Ability_prototype_preserve_order[this]=false
+				set s__Ability_prototype_cooldown_max[this]=8.
+				set s__Ability_prototype_cooldown_min[this]=2.
+				set s__Ability_prototype_cast_delay[this]=0.25
+				set s__Ability_prototype_indicator[this]=s__Ability0000__ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+				call s__Ability_plusStatValue(this,5)
+   return true
+endfunction
+function sa__Ability0000__ind_beforeRefresh takes nothing returns boolean
+local integer this=f__arg_this
+				set s__LineIndicator_x[this]=sc__Object__get_x(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
+				set s__LineIndicator_y[this]=sc__Object__get_y(s__Ability_prototype_owner[s__AbilityIndicator_abil[this]])
+				set s__LineIndicator_yaw[this]=s__Math_anglePoints(s__LineIndicator_x[this] , s__LineIndicator_y[this] , (s__s__Mouse_X[GetPlayerId((s__AbilityIndicator_owner[this]))]) , (s__s__Mouse_Y[GetPlayerId((s__AbilityIndicator_owner[this]))])) // INLINED!!
+				set s__LineIndicator_range[this]=( Ability0000__CHARGE_SPEED * Ability0000__CHARGE_DURATION )
+				set s__LineIndicator_width[this]=Ability0000__COLRAD
+   return true
+endfunction
+function sa__Wave___spawner_onDestroy takes nothing returns boolean
+local integer this=f__arg_this
+			call ReleaseTimer((s__Wave___spawner_main_timer[this])) // INLINED!!
+			set s__Wave___spawner_main_timer[this]=null
+   return true
+endfunction
+function sa__Wave_spawn takes nothing returns boolean
+
+   local integer i= 0
+   local integer j= 0
+   local integer random= GetRandomInt(0, s__Wave_MAX_INDEX)
+   local integer u= 0
+			call s__Wave___spawner_create(random , s__Round_ROUND + 1 , 0)
+			call s__Wave___spawner_create(random , s__Round_ROUND + 1 , 1)
+			call s__Wave___spawner_create(random , s__Round_ROUND + 1 , 2)
+			call s__Wave___spawner_create(random , s__Round_ROUND + 1 , 3)
    return true
 endfunction
 function sa__BuffEnsn_main_update takes nothing returns boolean
@@ -29866,18 +30463,6 @@ local player p=f__arg_player1
 		call BlzTriggerRegisterPlayerSyncEvent(RIGHT_CLICK_RECEIVE, p, "GRM", false)
    return true
 endfunction
-function sa__Wave_spawn takes nothing returns boolean
-
-   local integer i= 0
-   local integer j= 0
-   local integer random= GetRandomInt(0, s__Wave_MAX_INDEX)
-   local integer u= 0
-			call s__Wave__spawner_create(random , s__Round_ROUND + 1 , 0)
-			call s__Wave__spawner_create(random , s__Round_ROUND + 1 , 1)
-			call s__Wave__spawner_create(random , s__Round_ROUND + 1 , 2)
-			call s__Wave__spawner_create(random , s__Round_ROUND + 1 , 3)
-   return true
-endfunction
 function sa__Agent_create takes nothing returns boolean
 local agent a=f__arg_agent1
    local integer this= s__Agent__allocate()
@@ -29924,12 +30509,12 @@ local integer this=f__arg_this
 endfunction
 function sa__Ability0041_main_relativeTooltip takes nothing returns boolean
 local integer this=f__arg_this
-set f__result_string= "매 " + STRING_COLOR_CONSTANT + R2SW(Ability0041__INTERVAL, 1, 1) + "초|r마다 지정 범위 내의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_ATTACK , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_ATTACK)) * Ability0041__DAMAGE_PER_ATTACK ) * ( 1 + Ability0041__DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 " + DAMAGE_STRING_PHYSICAL + "를 입힙니다.\n총 " + STRING_COLOR_CONSTANT + I2S(Ability0041__COUNT_WAVE) + "회|r 공격합니다." // INLINED!!
+set f__result_string= STRING_COLOR_CONSTANT + R2SW(Ability0041___COUNT_WAVE * Ability0041___INTERVAL, 1, 1) + "초|r간 정신집중하여 전방의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_ATTACK , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_ATTACK)) * Ability0041___DAMAGE_PER_ATTACK ) * ( 1 + Ability0041___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + " ~ " + s__ConstantString_statStringReal(STAT_TYPE_ATTACK , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_ATTACK)) * Ability0041___DAMAGE_PER_ATTACK ) * ( 1 + Ability0041___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) * Ability0041___COUNT_WAVE , 1) + "의 " + DAMAGE_STRING_PHYSICAL + "를 입힙니다." // INLINED!!
    return true
 endfunction
 function sa__Ability0041_main_execute takes nothing returns boolean
 local integer this=f__arg_this
-   local integer a= s__Ability0041__prepare_create(s__Ability_prototype_owner[this] , s__Ability_prototype_command_x[this] , s__Ability_prototype_command_y[this] , s__Ability_prototype_level[this])
+   local integer a= s__Ability0041___prepare_create(s__Ability_prototype_owner[this] , s__Ability_prototype_command_x[this] , s__Ability_prototype_command_y[this] , s__Ability_prototype_level[this])
    return true
 endfunction
 function sa__Ability0041_main_init takes nothing returns boolean
@@ -29937,14 +30522,14 @@ local integer this=f__arg_this
 			set s__Ability_prototype_is_active[this]=true
 			set s__Ability_prototype_cooldown_max[this]=0 //4.
 			set s__Ability_prototype_cooldown_min[this]=0 //4.
-			set s__Ability_prototype_manacost[this]=0 //200
-			set s__Ability_prototype_indicator[this]=s__Ability0041__ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+			set s__Ability_prototype_manacost[this]=125
+			set s__Ability_prototype_indicator[this]=s__Ability0041___ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
 			call s__Ability_plusStatValue(this,5)
    return true
 endfunction
 function sa__Ability0040_main_relativeTooltip takes nothing returns boolean
 local integer this=f__arg_this
-set f__result_string= "매 " + STRING_COLOR_CONSTANT + R2SW(Ability0040__INTERVAL, 1, 1) + "초|r마다 지정 범위 내의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0040__DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0040__DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 " + DAMAGE_STRING_MAGICAL + "를 입힙니다. 해당 공격은 대상의 저항력을 " + STRING_COLOR_CONSTANT + R2SW(Ability0040__IGNORE_GUARD * 100, 1, 1) + "%|r 무시하며 총 " + STRING_COLOR_CONSTANT + I2S(Ability0040__COUNT) + "회|r 공격합니다.\n\n|cff999999다른 행동 중에 사용할 수 있습니다.|r" // INLINED!!
+set f__result_string= STRING_COLOR_CONSTANT + R2SW(Ability0040___INTERVAL * Ability0040___COUNT, 1, 1) + "초|r에 걸쳐 범위 내의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0040___DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0040___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + " ~ " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0040___DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0040___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) * Ability0040___COUNT , 1) + "의 " + DAMAGE_STRING_MAGICAL + "를 입힙니다. 해당 공격은 대상의 저항력을 " + STRING_COLOR_CONSTANT + R2SW(Ability0040___IGNORE_GUARD * 100, 1, 1) + "%|r 무시합니다.\n\n|cff999999다른 행동 중에 사용할 수 있습니다.|r" // INLINED!!
    return true
 endfunction
 function sa__Ability0040_main_execute takes nothing returns boolean
@@ -29955,13 +30540,36 @@ endfunction
 function sa__Ability0040_main_init takes nothing returns boolean
 local integer this=f__arg_this
 			set s__Ability_prototype_is_active[this]=true
-			set s__Ability_prototype_cast_range[this]=Ability0040__RANGE
+			set s__Ability_prototype_cast_range[this]=Ability0040___RANGE
 			set s__Ability_prototype_preserve_order[this]=true
 			set s__Ability_prototype_useable_cast[this]=true
-			set s__Ability_prototype_cooldown_max[this]=25.
+			set s__Ability_prototype_cooldown_max[this]=10.
 			set s__Ability_prototype_cooldown_min[this]=5.
-			set s__Ability_prototype_manacost[this]=100
-			set s__Ability_prototype_indicator[this]=s__Ability0040__ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+			set s__Ability_prototype_manacost[this]=85
+			set s__Ability_prototype_indicator[this]=s__Ability0040___ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+			call s__Ability_plusStatValue(this,5)
+   return true
+endfunction
+function sa__Ability0031_main_relativeTooltip takes nothing returns boolean
+local integer this=f__arg_this
+set f__result_string= "지정 범위 내의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0031___DAMAGE_PER_MAGICPOWER ) , 1) + "의 " + DAMAGE_STRING_MAGICAL + "를 입힙니다." // INLINED!!
+   return true
+endfunction
+function sa__Ability0031_main_execute takes nothing returns boolean
+local integer this=f__arg_this
+   local integer a= s__Ability0031___actor_create(s__Ability_prototype_owner[this] , s__Ability_prototype_command_x[this] , s__Ability_prototype_command_y[this] , s__Math_anglePoints(s__Ability_prototype_command_x[this] , s__Ability_prototype_command_y[this] , s__Ability_prototype_command_x2[this] , s__Ability_prototype_command_y2[this]) , s__Ability_prototype_level[this])
+   return true
+endfunction
+function sa__Ability0031_main_init takes nothing returns boolean
+local integer this=f__arg_this
+			set s__Ability_prototype_drag_to_use[this]=true
+			set s__Ability_prototype_is_active[this]=true
+			set s__Ability_prototype_cast_range[this]=Ability0031___RANGE
+			set s__Ability_prototype_preserve_order[this]=false
+			set s__Ability_prototype_cooldown_max[this]=0 //9.
+			set s__Ability_prototype_cooldown_min[this]=0 //3.
+			set s__Ability_prototype_manacost[this]=0 //55
+			set s__Ability_prototype_indicator[this]=s__Ability0031___ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
 			call s__Ability_plusStatValue(this,5)
    return true
 endfunction
@@ -30130,80 +30738,6 @@ local integer this=f__arg_this
 				call s__Ability_plusStatValue(this,5)
    return true
 endfunction
-function sa__Ability0015_main_relativeTooltip takes nothing returns boolean
-local integer this=f__arg_this
-set f__result_string= "직선 범위 내의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0015___DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0015___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 " + DAMAGE_STRING_MAGICAL + "를 입히는 파동을 방출합니다. 스킬 버튼을 오래 누를 수록 사거리가 증가합니다." // INLINED!!
-   return true
-endfunction
-function sa__Ability0015_main_beforeRelease takes nothing returns boolean
-local integer this=f__arg_this
-				if s__Ability_prototype_pressing[this] then
-					set s__Ability_prototype_command_x[this]=(s__s__Mouse_X[GetPlayerId(((GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))))]) // INLINED!!
-					set s__Ability_prototype_command_y[this]=(s__s__Mouse_Y[GetPlayerId(((GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))))]) // INLINED!!
-					set s__Ability0015_main_range_temp[this]=s__Ability_prototype_cast_range[this]
-					set s__Ability_prototype_cast_range[this]=- 1.
-					if s__Ability_prototype_link_actor[this] > 0 then
-						set s__Ability_prototype_useable_cast[this]=true
-					endif
-				endif
-   return true
-endfunction
-function sa__Ability0015_main_onRelease takes nothing returns boolean
-local integer this=f__arg_this
-				if s__Ability_prototype_link_actor[this] > 0 then
-					call sc__Actor_deallocate(s__Ability_prototype_link_actor[this])
-				endif
-				set s__Ability_prototype_cast_range[this]=- 1.
-				set s__Ability_prototype_useable_cast[this]=false
-   return true
-endfunction
-function sa__Ability0015_main_onRightClick takes nothing returns boolean
-local integer this=f__arg_this
-				if s__Ability_prototype_link_actor[this] <= 0 then
-					call s__Ability_prototype_setPressState(this,false)
-				endif
-   return true
-endfunction
-function sa__Ability0015_main_execute takes nothing returns boolean
-local integer this=f__arg_this
-    local integer a= 0
-				if s__Ability_prototype_link_actor[this] > 0 then
-					call sc__Actor_deallocate(s__Ability_prototype_link_actor[this])
-					set s__Ability_prototype_link_actor[this]=0
-				endif
-				set a=s__Ability0015_actor_create(s__Ability_prototype_owner[this] , s__Ability_prototype_command_x[this] , s__Ability_prototype_command_y[this] , s__Ability_prototype_level[this] , s__Ability0015_main_range_temp[this])
-				set s__Ability_prototype_cast_range[this]=- 1.
-				set s__Ability_prototype_useable_cast[this]=false
-   return true
-endfunction
-function sa__Ability0015_main_onPress takes nothing returns boolean
-local integer this=f__arg_this
-    local integer a= 0
-				set s__Ability_prototype_useable_cast[this]=false
-				if s__Ability_prototype_costFilter(this) and s__Ability_prototype_enableFilter(this) then
-					if s__Ability_prototype_castFilter(this) then
-						set a=s__Ability0015_charge_create(s__Ability_prototype_owner[this])
-						call s__Ability_prototype_linkActor(this,a)
-					endif
-					set s__Ability_prototype_cast_range[this]=Ability0015___RANGE_INITIAL
-				else
-					call s__Ability_prototype_sendError(this)
-				endif
-   return true
-endfunction
-function sa__Ability0015_main_init takes nothing returns boolean
-local integer this=f__arg_this
-				set s__Ability_prototype_is_active[this]=true
-				set s__Ability_prototype_preserve_order[this]=false
-				set s__Ability_prototype_cooldown_max[this]=7.5
-				set s__Ability_prototype_cooldown_min[this]=2.
-				set s__Ability_prototype_manacost[this]=25
-				set s__Ability_prototype_indicator[this]=s__Ability0015___ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
-				set s__Ability_prototype_drag_to_use[this]=true
-				set s__Ability_prototype_cancle_rightclick[this]=false
-				call s__Ability_plusStatValue(this,5)
-   return true
-endfunction
 function sa__UnitActor_rightClick takes nothing returns boolean
 local integer this=f__arg_this
    return true
@@ -30270,30 +30804,6 @@ local integer this=f__arg_this
     set f__arg_this=this
    return true
 endfunction
-function sa__Ability0004_main_relativeTooltip takes nothing returns boolean
-local integer this=f__arg_this
-set f__result_string= "대상을 포함한 최대 " + STRING_COLOR_CONSTANT + I2S(Ability0004___TARGET_MAX) + "기|r의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0004___DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0004___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 " + DAMAGE_STRING_MAGICAL + "를 입힙니다.\n첫 대상에게는 피해량이 " + s__ConstantString_statStringReal(STAT_TYPE_ACCURACY , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_ACCURACY)) * Ability0004___DAMAGE_PER_ACCURACY ) * ( 1 + Ability0004___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + " 만큼 증가합니다." // INLINED!!
-   return true
-endfunction
-function sa__Ability0004_main_execute takes nothing returns boolean
-local integer this=f__arg_this
-				call s__Ability0004_actor_create(s__Ability_prototype_owner[this] , s__Unit_prototype_get(s__Ability_prototype_command_target[this]) , s__Ability_prototype_cast_delay[this] , s__Ability_prototype_level[this])
-   return true
-endfunction
-function sa__Ability0004_main_init takes nothing returns boolean
-local integer this=f__arg_this
-				set s__Ability_prototype_manacost[this]=22
-				set s__Ability_prototype_is_active[this]=true
-				set s__Ability_prototype_is_target[this]=true
-				set s__Ability_prototype_cast_range[this]=Ability0004___RANGE
-				set s__Ability_prototype_preserve_order[this]=false
-				set s__Ability_prototype_cooldown_max[this]=5.3
-				set s__Ability_prototype_cooldown_min[this]=0.5
-				set s__Ability_prototype_cast_delay[this]=Ability0004___INTERVAL
-				set s__Ability_prototype_indicator[this]=s__AbilityIndicator_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
-				call s__Ability_plusStatValue(this,5)
-   return true
-endfunction
 function sa__Ability0005_actor_onComplete takes nothing returns boolean
 local integer this=f__arg_this
 				call s__Unit_prototype_restoreHP(s__UnitActor_target[this],( ( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[((this))])),STAT_TYPE_MAGICPOWER)) * Ability0005___HEAL_PER_MAGICPOWER ) * ( 1 + Ability0005___DAMAGE_PER_LEVEL * ( s__UnitActor_level[this] - 1 ) ) ) + ( ( (GetUnitState((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[((this))])))]), s__Agent_INDEX_ORIGIN_HANDLE)), UNIT_STATE_MAX_LIFE)) * Ability0005___HEAL_PER_MAXHP ) * ( 1 + Ability0005___DAMAGE_PER_LEVEL * ( s__UnitActor_level[this] - 1 ) ) )) // INLINED!!
@@ -30305,46 +30815,6 @@ local integer this=f__arg_this
 				call s__Unit_prototype_queueAnim((s__Actor_actor[(this)]),"stand ready") // INLINED!!
 				call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((1.)*1.0)) // INLINED!!
     set f__arg_this=this
-   return true
-endfunction
-function sa__Ability0005_main_relativeTooltip takes nothing returns boolean
-local integer this=f__arg_this
-set f__result_string= "대상 아군 유닛의 체력을 " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0005___HEAL_PER_MAGICPOWER ) * ( 1 + Ability0005___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "+" + s__ConstantString_statStringReal(STAT_TYPE_MAXHP , ( (GetUnitState((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE)), UNIT_STATE_MAX_LIFE)) * Ability0005___HEAL_PER_MAXHP ) * ( 1 + Ability0005___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + " 만큼 회복시킵니다." // INLINED!!
-   return true
-endfunction
-function sa__Ability0005_main_targetFilterAdditional takes nothing returns boolean
-local integer this=f__arg_this
-local integer target=f__arg_integer1
-				if (GetUnitState((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((target))]), s__Agent_INDEX_ORIGIN_HANDLE)), UNIT_STATE_LIFE)) < (GetUnitState((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((target))]), s__Agent_INDEX_ORIGIN_HANDLE)), UNIT_STATE_MAX_LIFE)) then // INLINED!!
-set f__result_boolean= true
-return true
-				else
-					set ERROR_MESSAGE="대상의 체력이 가득 찼습니다."
-set f__result_boolean= false
-return true
-				endif
-   return true
-endfunction
-function sa__Ability0005_main_execute takes nothing returns boolean
-local integer this=f__arg_this
-				call s__Ability0005_actor_create(s__Ability_prototype_owner[this] , s__Unit_prototype_get(s__Ability_prototype_command_target[this]) , s__Ability_prototype_cast_delay[this] , s__Ability_prototype_level[this])
-   return true
-endfunction
-function sa__Ability0005_main_init takes nothing returns boolean
-local integer this=f__arg_this
-				set s__Ability_prototype_target_useable_enemy[this]=false
-				set s__Ability_prototype_target_useable_ally[this]=true
-				set s__Ability_prototype_target_useable_self[this]=true
-				set s__Ability_prototype_manacost[this]=35
-				set s__Ability_prototype_is_active[this]=true
-				set s__Ability_prototype_is_target[this]=true
-				set s__Ability_prototype_cast_range[this]=Ability0005___RANGE
-				set s__Ability_prototype_preserve_order[this]=false
-				set s__Ability_prototype_cooldown_max[this]=8.
-				set s__Ability_prototype_cooldown_min[this]=2.
-				set s__Ability_prototype_cast_delay[this]=Ability0005___DELAY
-				set s__Ability_prototype_indicator[this]=s__AbilityIndicator_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
-				call s__Ability_plusStatValue(this,5)
    return true
 endfunction
 function sa__Ability0006_main_getMaxCooldown takes nothing returns boolean
@@ -30597,6 +31067,10 @@ local integer target=f__arg_integer1
 			call s__UnitMovement_damageTarget(this,target)
    return true
 endfunction
+function sa__UnitMovement_explosionFillUnits takes nothing returns boolean
+    call s__UnitMovement_explosionFillUnits(f__arg_this,f__arg_group1)
+   return true
+endfunction
 function sa__UnitMovement_collisionFilterAdditional takes nothing returns boolean
 local integer this=f__arg_this
 local integer target=f__arg_integer1
@@ -30707,6 +31181,176 @@ local integer this=f__arg_this
 				set s__Ability_prototype_weapon_range[this]=500.
 				set s__Ability_prototype_count[this]=0
 				call s__Ability_plusStatValue(this,5)
+   return true
+endfunction
+function sa__Ability0010_make_periodicAction takes nothing returns boolean
+local integer this=f__arg_this
+				call s__Effect_setPosition(s__Ability0010_make_ef[this],sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , 25.) // INLINED!!
+   return true
+endfunction
+function sa__Ability0010_make_onComplete takes nothing returns boolean
+local integer this=f__arg_this
+    local integer ta= s__Unit_prototype_getAbilityById((s__Actor_actor[(this)]),Ability0010___ID) // INLINED!!
+				if ta > 0 then
+					call s__Effect_setDuration(s__Effect_create(Ability0010___EFFECT_PATH9 , sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , 0. , 270.),1.5) // INLINED!!
+					set Ability0010___POTION_ADD_ABILITY=ta
+					set Ability0010___POTION_ADD_INDEX=s__Ability0010_make_potion_index[this]
+					call TriggerEvaluate(Ability0010___POTION_ADD_TRIGGER)
+				else
+				endif
+   return true
+endfunction
+function sa__Ability0010_make_onSuspend takes nothing returns boolean
+local integer this=f__arg_this
+				call SetUnitState((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), UNIT_STATE_MANA, (((GetUnitState((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), UNIT_STATE_MANA)) + s__Ability0010_make_mp[this])*1.0)) // INLINED!!
+   return true
+endfunction
+function sa__Ability0010_make_onDestroy takes nothing returns boolean
+local integer this=f__arg_this
+				call sc__Object_deallocate(s__Ability0010_make_ef[this])
+    set f__arg_this=this
+   return true
+endfunction
+function sa__Ability0010_actor_onComplete takes nothing returns boolean
+local integer this=f__arg_this
+				call s__Ability0010_potion_create((s__Actor_actor[(this)]) , sc__Actor__get_x(this) , sc__Actor__get_y(this) , s__UnitActor_level[this] , s__Ability0010_actor_potion_index[this]) // INLINED!!
+				call s__UnitActor_create((s__Actor_actor[(this)]) , 0 , 0. , 0. , 0 , Ability0010___BACKSWING , true) // INLINED!!
+   return true
+endfunction
+function sa__Ability0010_actor_onSuspend takes nothing returns boolean
+local integer this=f__arg_this
+    local integer p= s__Ability0010_potion_create((s__Actor_actor[(this)]) , sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , s__UnitActor_level[this] , s__Ability0010_actor_potion_index[this]) // INLINED!!
+				set s__Missile_want_kill[p]=true
+   return true
+endfunction
+function sa__Ability0010_actor_onDestroy takes nothing returns boolean
+local integer this=f__arg_this
+				call s__Unit_prototype_queueAnim((s__Actor_actor[(this)]),"stand ready") // INLINED!!
+				call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((1.)*1.0)) // INLINED!!
+    set f__arg_this=this
+   return true
+endfunction
+function sa__Ability0010_main_iconClick takes nothing returns boolean
+local integer this=f__arg_this
+				call s__Ability0010_main_switchUI(this)
+   return true
+endfunction
+function sa__Ability0010_main_relativeTooltip takes nothing returns boolean
+local integer this=f__arg_this
+set f__result_string= "|cff00ffff아이콘 클릭 : |r물약 제조 UI를 열거나 닫습니다. 숫자가 표시된 버튼을 클릭하면 해당 물약을 제조하며, 물약 아이콘을 클릭하면 사용할 물약 종류를 해당 물약으로 설정합니다.\n물약 제조에는 " + STRING_COLOR_CONSTANT + I2S(Ability0010___MANACOST2) + "|r의 마나와 " + STRING_COLOR_CONSTANT + R2SW(Ability0010___CHANNELING, 1, 1) + "초|r의 정신집중이 필요합니다.\n총 물약 소지 개수는 " + STRING_COLOR_CONSTANT + I2S(Ability0010___POTION_MAX + Ability0010___POTION_MAX_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 )) + "개|r를 초과할 수 없습니다.\n\n|cff00ffff사용 시 : |r물약 제조 UI에서 선택된 물약을 대상 지점으로 투척합니다. 물약 투척이 방해받으면 시전자의 위치에서 폭발합니다."
+   return true
+endfunction
+function sa__Ability0010_main_useFilterAdditional takes nothing returns boolean
+local integer this=f__arg_this
+				if LoadInteger(s__Ability0010_main_HASH, this, s__Ability0010_main_INDEX_POTION_COUNT + s__Ability0010_main_potion_index[this]) > 0 then
+set f__result_boolean= true
+return true
+				else
+					set ERROR_MESSAGE="선택된 종류의 물약을 가지고 있지 않습니다."
+set f__result_boolean= false
+return true
+				endif
+   return true
+endfunction
+function sa__Ability0010_main_execute takes nothing returns boolean
+local integer this=f__arg_this
+				call s__Ability0010_actor_create(s__Ability_prototype_owner[this] , s__Ability_prototype_command_x[this] , s__Ability_prototype_command_y[this] , s__Ability_prototype_cast_delay[this] , s__Ability_prototype_level[this] , s__Ability0010_main_potion_index[this])
+				call SaveInteger(s__Ability0010_main_HASH, this, s__Ability0010_main_INDEX_POTION_COUNT + s__Ability0010_main_potion_index[this], LoadInteger(s__Ability0010_main_HASH, this, s__Ability0010_main_INDEX_POTION_COUNT + s__Ability0010_main_potion_index[this]) - 1)
+				call s__Ability0010_main_refreshButton(this)
+   return true
+endfunction
+function sa__Ability0010_main_update takes nothing returns boolean
+local integer this=f__arg_this
+				call s__Ability0010_main_refreshTooltip(this)
+   return true
+endfunction
+function sa__Ability0010_main_init takes nothing returns boolean
+local integer this=f__arg_this
+    local integer i= 0
+    local framehandle f= null
+    local framehandle bf= null
+				set s__Ability_prototype_is_active[this]=true
+				set s__Ability_prototype_preserve_order[this]=false
+				set s__Ability_prototype_cooldown_max[this]=0.5
+				set s__Ability_prototype_cooldown_min[this]=0.5
+				set s__Ability_prototype_cast_delay[this]=Ability0010___DELAY
+				set s__Ability_prototype_cast_range[this]=Ability0010___RANGE
+				set s__Ability_prototype_manacost[this]=0
+				set s__Ability_prototype_indicator[this]=s__Ability0010___ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+				call s__Ability_plusStatValue(this,5)
+				set s__Ability0010_main_keypress[this]=s__Trigger_new(this)
+				set s__Ability0010_main_keypress_cond[this]=TriggerAddCondition(s__Ability0010_main_keypress[this], Condition(function s__Ability0010_main_click))
+				set s__Ability0010_main_container[this]=BlzCreateFrame("MBEdge", FRAME_MAKE_POTION, 0, 0)
+				call BlzFrameSetPoint(s__Ability0010_main_container[this], FRAMEPOINT_BOTTOMRIGHT, FRAME_STAT2, FRAMEPOINT_TOPRIGHT, 0., 0.)
+				call BlzFrameSetSize(s__Ability0010_main_container[this], (((( 80 * s__Ability0010_main_POTION_TYPE_MAX ) + 16)*1.0) / 1800.), (((144)*1.0) / 1800.)) // INLINED!!
+				call BlzFrameSetVisible(s__Ability0010_main_container[this], false)
+				loop
+					exitwhen i >= s__Ability0010_main_POTION_TYPE_MAX
+					call SaveInteger(s__Ability0010_main_HASH, this, s__Ability0010_main_INDEX_POTION_COUNT + i, 0)
+					set f=s__Ability0010_main_setFrame(this,s__Ability0010_main_INDEX_BTN_SET + i , BlzCreateFrame("MakePotionSetButton", s__Ability0010_main_container[this], 0, this * s__Ability0010_main_POTION_TYPE_MAX + i))
+					call BlzFrameSetPoint(f, FRAMEPOINT_TOPLEFT, s__Ability0010_main_container[this], FRAMEPOINT_TOPLEFT, (((16 + 80 * i)*1.0) / 1800.), (((- 16)*1.0) / 1800.)) // INLINED!!
+					call BlzFrameSetSize(f, (((64)*1.0) / 1800.), (((64)*1.0) / 1800.)) // INLINED!!
+					call BlzTriggerRegisterFrameEvent(s__Ability0010_main_keypress[this], f, FRAMEEVENT_CONTROL_CLICK)
+					call BlzTriggerRegisterFrameEvent(s__Ability0010_main_keypress[this], f, FRAMEEVENT_MOUSE_LEAVE)
+					set bf=f
+					set f=BlzGetFrameByName("MakePotionSetButtonIcon", this * s__Ability0010_main_POTION_TYPE_MAX + i)
+					call BlzFrameSetPoint(f, FRAMEPOINT_CENTER, bf, FRAMEPOINT_CENTER, 0., 0.)
+					call BlzFrameSetSize(f, (((48)*1.0) / 1800.), (((48)*1.0) / 1800.)) // INLINED!!
+					call BlzFrameSetTexture(f, s__Ability0010_main_POTION_ICON_PATH[i], 0, true)
+					set f=s__Ability0010_main_setFrame(this,s__Ability0010_main_INDEX_BTN_CREATE + i , BlzCreateFrame("MakePotionCreateButton", s__Ability0010_main_container[this], 0, this * s__Ability0010_main_POTION_TYPE_MAX + i))
+					call BlzFrameSetPoint(f, FRAMEPOINT_TOP, bf, FRAMEPOINT_BOTTOM, 0., 0.)
+					call BlzFrameSetSize(f, (((48)*1.0) / 1800.), (((48)*1.0) / 1800.)) // INLINED!!
+					call BlzTriggerRegisterFrameEvent(s__Ability0010_main_keypress[this], f, FRAMEEVENT_CONTROL_CLICK)
+					call BlzTriggerRegisterFrameEvent(s__Ability0010_main_keypress[this], f, FRAMEEVENT_MOUSE_LEAVE)
+					set bf=f
+					set f=BlzGetFrameByName("MakePotionCreateButtonText", this * s__Ability0010_main_POTION_TYPE_MAX + i)
+					call BlzFrameSetPoint(f, FRAMEPOINT_CENTER, s__Ability0010_main_container[this], FRAMEPOINT_CENTER, 0., 0.)
+					call BlzFrameSetTextAlignment(f, TEXT_JUSTIFY_CENTER, TEXT_JUSTIFY_CENTER)
+					call BlzFrameSetText(f, "|cff00cc000|r")
+					set bf=f
+					set f=s__Ability0010_main_setFrame(this,s__Ability0010_main_INDEX_COUNT_TEXT + i , BlzCreateFrame("MyText", s__Ability0010_main_container[this], 0, this * s__Ability0010_main_POTION_TYPE_MAX + i))
+					call BlzFrameSetPoint(f, FRAMEPOINT_BOTTOM, s__Ability0010_main_getFrame(this,s__Ability0010_main_INDEX_BTN_SET + i), FRAMEPOINT_TOP, 0., 0.)
+					call BlzFrameSetTextAlignment(f, TEXT_JUSTIFY_BOTTOM, TEXT_JUSTIFY_CENTER)
+					call BlzFrameSetText(f, "|cffff0000▼|r")
+					call BlzFrameSetVisible(f, false)
+					set f=s__Ability0010_main_setFrame(this,s__Ability0010_main_INDEX_TOOLTIP_CONTAINER + i , BlzCreateFrameByType("FRAME", "", s__Ability0010_main_getFrame(this,s__Ability0010_main_INDEX_BTN_SET + i), "", 0))
+					call BlzFrameSetAbsPoint(f, FRAMEPOINT_TOPLEFT, 0., 0.)
+					call BlzFrameSetTooltip(s__Ability0010_main_getFrame(this,s__Ability0010_main_INDEX_BTN_SET + i), f)
+					set bf=f
+					set f=s__Ability0010_main_setFrame(this,s__Ability0010_main_INDEX_TOOLTIP_BACKDROP + i , BlzCreateFrameByType("BACKDROP", "", bf, "", 0))
+					call BlzFrameSetTexture(f, "Textures\\black32.blp", 0, true)
+					call BlzFrameSetAlpha(f, 128)
+					set bf=f
+					set f=s__Ability0010_main_setFrame(this,s__Ability0010_main_INDEX_TOOLTIP_TEXT + i , BlzCreateFrame("MyText", s__Ability0010_main_getFrame(this,s__Ability0010_main_INDEX_TOOLTIP_CONTAINER + i), 0, 0))
+					call BlzFrameSetPoint(f, FRAMEPOINT_BOTTOM, s__Ability0010_main_container[this], FRAMEPOINT_TOP, 0., 0.005)
+					call BlzFrameSetTextAlignment(f, TEXT_JUSTIFY_BOTTOM, TEXT_JUSTIFY_CENTER)
+					call BlzFrameSetPoint(bf, FRAMEPOINT_TOPRIGHT, f, FRAMEPOINT_TOPRIGHT, 0.005, 0.005)
+					call BlzFrameSetPoint(bf, FRAMEPOINT_BOTTOMLEFT, f, FRAMEPOINT_BOTTOMLEFT, - 0.005, - 0.005)
+					set i=i + 1
+				endloop
+				call s__Ability0010_main_refreshButton(this)
+				set f=null
+				set bf=null
+   return true
+endfunction
+function sa__Ability0010_main_deactivate takes nothing returns boolean
+local integer this=f__arg_this
+    local integer i= 0
+				loop
+					exitwhen i >= s__Ability0010_main_POTION_TYPE_MAX
+					call s__Ability0010_main_setFrame(this,s__Ability0010_main_INDEX_BTN_CREATE + i , null)
+					call s__Ability0010_main_setFrame(this,s__Ability0010_main_INDEX_BTN_SET + i , null)
+					call s__Ability0010_main_setFrame(this,s__Ability0010_main_INDEX_TOOLTIP_BACKDROP + i , null)
+					call s__Ability0010_main_setFrame(this,s__Ability0010_main_INDEX_TOOLTIP_TEXT + i , null)
+					call RemoveSavedInteger(s__Ability0010_main_HASH, this, s__Ability0010_main_INDEX_POTION_COUNT + i)
+					set i=i + 1
+				endloop
+	call BlzDestroyFrame(s__Ability0010_main_container[this])
+	set s__Ability0010_main_container[this]=null
+				call TriggerRemoveCondition(s__Ability0010_main_keypress[this], s__Ability0010_main_keypress_cond[this])
+				call s__Trigger_remove(s__Ability0010_main_keypress[this])
+				set s__Ability0010_main_keypress[this]=null
+				set s__Ability0010_main_keypress_cond[this]=null
    return true
 endfunction
 function sa__Effect__get_origin_effect takes nothing returns boolean
@@ -30986,176 +31630,6 @@ local integer this=f__arg_this
     set f__arg_this=this
    return true
 endfunction
-function sa__Ability0010_make_periodicAction takes nothing returns boolean
-local integer this=f__arg_this
-				call s__Effect_setPosition(s__Ability0010_make_ef[this],sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , 25.) // INLINED!!
-   return true
-endfunction
-function sa__Ability0010_make_onComplete takes nothing returns boolean
-local integer this=f__arg_this
-    local integer ta= s__Unit_prototype_getAbilityById((s__Actor_actor[(this)]),Ability0010___ID) // INLINED!!
-				if ta > 0 then
-					call s__Effect_setDuration(s__Effect_create(Ability0010___EFFECT_PATH9 , sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , 0. , 270.),1.5) // INLINED!!
-					set Ability0010___POTION_ADD_ABILITY=ta
-					set Ability0010___POTION_ADD_INDEX=s__Ability0010_make_potion_index[this]
-					call TriggerEvaluate(Ability0010___POTION_ADD_TRIGGER)
-				else
-				endif
-   return true
-endfunction
-function sa__Ability0010_make_onSuspend takes nothing returns boolean
-local integer this=f__arg_this
-				call SetUnitState((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), UNIT_STATE_MANA, (((GetUnitState((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), UNIT_STATE_MANA)) + s__Ability0010_make_mp[this])*1.0)) // INLINED!!
-   return true
-endfunction
-function sa__Ability0010_make_onDestroy takes nothing returns boolean
-local integer this=f__arg_this
-				call sc__Object_deallocate(s__Ability0010_make_ef[this])
-    set f__arg_this=this
-   return true
-endfunction
-function sa__Ability0010_actor_onComplete takes nothing returns boolean
-local integer this=f__arg_this
-				call s__Ability0010_potion_create((s__Actor_actor[(this)]) , sc__Actor__get_x(this) , sc__Actor__get_y(this) , s__UnitActor_level[this] , s__Ability0010_actor_potion_index[this]) // INLINED!!
-				call s__UnitActor_create((s__Actor_actor[(this)]) , 0 , 0. , 0. , 0 , Ability0010___BACKSWING , true) // INLINED!!
-   return true
-endfunction
-function sa__Ability0010_actor_onSuspend takes nothing returns boolean
-local integer this=f__arg_this
-    local integer p= s__Ability0010_potion_create((s__Actor_actor[(this)]) , sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , s__UnitActor_level[this] , s__Ability0010_actor_potion_index[this]) // INLINED!!
-				set s__Missile_want_kill[p]=true
-   return true
-endfunction
-function sa__Ability0010_actor_onDestroy takes nothing returns boolean
-local integer this=f__arg_this
-				call s__Unit_prototype_queueAnim((s__Actor_actor[(this)]),"stand ready") // INLINED!!
-				call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((1.)*1.0)) // INLINED!!
-    set f__arg_this=this
-   return true
-endfunction
-function sa__Ability0010_main_iconClick takes nothing returns boolean
-local integer this=f__arg_this
-				call s__Ability0010_main_switchUI(this)
-   return true
-endfunction
-function sa__Ability0010_main_relativeTooltip takes nothing returns boolean
-local integer this=f__arg_this
-set f__result_string= "|cff00ffff아이콘 클릭 : |r물약 제조 UI를 열거나 닫습니다. 숫자가 표시된 버튼을 클릭하면 해당 물약을 제조하며, 물약 아이콘을 클릭하면 사용할 물약 종류를 해당 물약으로 설정합니다.\n물약 제조에는 " + STRING_COLOR_CONSTANT + I2S(Ability0010___MANACOST2) + "|r의 마나와 " + STRING_COLOR_CONSTANT + R2SW(Ability0010___CHANNELING, 1, 1) + "초|r의 정신집중이 필요합니다.\n총 물약 소지 개수는 " + STRING_COLOR_CONSTANT + I2S(Ability0010___POTION_MAX + Ability0010___POTION_MAX_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 )) + "개|r를 초과할 수 없습니다.\n\n|cff00ffff사용 시 : |r물약 제조 UI에서 선택된 물약을 대상 지점으로 투척합니다. 물약 투척이 방해받으면 시전자의 위치에서 폭발합니다."
-   return true
-endfunction
-function sa__Ability0010_main_useFilterAdditional takes nothing returns boolean
-local integer this=f__arg_this
-				if LoadInteger(s__Ability0010_main_HASH, this, s__Ability0010_main_INDEX_POTION_COUNT + s__Ability0010_main_potion_index[this]) > 0 then
-set f__result_boolean= true
-return true
-				else
-					set ERROR_MESSAGE="선택된 종류의 물약을 가지고 있지 않습니다."
-set f__result_boolean= false
-return true
-				endif
-   return true
-endfunction
-function sa__Ability0010_main_execute takes nothing returns boolean
-local integer this=f__arg_this
-				call s__Ability0010_actor_create(s__Ability_prototype_owner[this] , s__Ability_prototype_command_x[this] , s__Ability_prototype_command_y[this] , s__Ability_prototype_cast_delay[this] , s__Ability_prototype_level[this] , s__Ability0010_main_potion_index[this])
-				call SaveInteger(s__Ability0010_main_HASH, this, s__Ability0010_main_INDEX_POTION_COUNT + s__Ability0010_main_potion_index[this], LoadInteger(s__Ability0010_main_HASH, this, s__Ability0010_main_INDEX_POTION_COUNT + s__Ability0010_main_potion_index[this]) - 1)
-				call s__Ability0010_main_refreshButton(this)
-   return true
-endfunction
-function sa__Ability0010_main_update takes nothing returns boolean
-local integer this=f__arg_this
-				call s__Ability0010_main_refreshTooltip(this)
-   return true
-endfunction
-function sa__Ability0010_main_init takes nothing returns boolean
-local integer this=f__arg_this
-    local integer i= 0
-    local framehandle f= null
-    local framehandle bf= null
-				set s__Ability_prototype_is_active[this]=true
-				set s__Ability_prototype_preserve_order[this]=false
-				set s__Ability_prototype_cooldown_max[this]=0.5
-				set s__Ability_prototype_cooldown_min[this]=0.5
-				set s__Ability_prototype_cast_delay[this]=Ability0010___DELAY
-				set s__Ability_prototype_cast_range[this]=Ability0010___RANGE
-				set s__Ability_prototype_manacost[this]=0
-				set s__Ability_prototype_indicator[this]=s__Ability0010___ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
-				call s__Ability_plusStatValue(this,5)
-				set s__Ability0010_main_keypress[this]=s__Trigger_new(this)
-				set s__Ability0010_main_keypress_cond[this]=TriggerAddCondition(s__Ability0010_main_keypress[this], Condition(function s__Ability0010_main_click))
-				set s__Ability0010_main_container[this]=BlzCreateFrame("MBEdge", FRAME_MAKE_POTION, 0, 0)
-				call BlzFrameSetPoint(s__Ability0010_main_container[this], FRAMEPOINT_BOTTOMRIGHT, FRAME_STAT2, FRAMEPOINT_TOPRIGHT, 0., 0.)
-				call BlzFrameSetSize(s__Ability0010_main_container[this], (((( 80 * s__Ability0010_main_POTION_TYPE_MAX ) + 16)*1.0) / 1800.), (((144)*1.0) / 1800.)) // INLINED!!
-				call BlzFrameSetVisible(s__Ability0010_main_container[this], false)
-				loop
-					exitwhen i >= s__Ability0010_main_POTION_TYPE_MAX
-					call SaveInteger(s__Ability0010_main_HASH, this, s__Ability0010_main_INDEX_POTION_COUNT + i, 0)
-					set f=s__Ability0010_main_setFrame(this,s__Ability0010_main_INDEX_BTN_SET + i , BlzCreateFrame("MakePotionSetButton", s__Ability0010_main_container[this], 0, this * s__Ability0010_main_POTION_TYPE_MAX + i))
-					call BlzFrameSetPoint(f, FRAMEPOINT_TOPLEFT, s__Ability0010_main_container[this], FRAMEPOINT_TOPLEFT, (((16 + 80 * i)*1.0) / 1800.), (((- 16)*1.0) / 1800.)) // INLINED!!
-					call BlzFrameSetSize(f, (((64)*1.0) / 1800.), (((64)*1.0) / 1800.)) // INLINED!!
-					call BlzTriggerRegisterFrameEvent(s__Ability0010_main_keypress[this], f, FRAMEEVENT_CONTROL_CLICK)
-					call BlzTriggerRegisterFrameEvent(s__Ability0010_main_keypress[this], f, FRAMEEVENT_MOUSE_LEAVE)
-					set bf=f
-					set f=BlzGetFrameByName("MakePotionSetButtonIcon", this * s__Ability0010_main_POTION_TYPE_MAX + i)
-					call BlzFrameSetPoint(f, FRAMEPOINT_CENTER, bf, FRAMEPOINT_CENTER, 0., 0.)
-					call BlzFrameSetSize(f, (((48)*1.0) / 1800.), (((48)*1.0) / 1800.)) // INLINED!!
-					call BlzFrameSetTexture(f, s__Ability0010_main_POTION_ICON_PATH[i], 0, true)
-					set f=s__Ability0010_main_setFrame(this,s__Ability0010_main_INDEX_BTN_CREATE + i , BlzCreateFrame("MakePotionCreateButton", s__Ability0010_main_container[this], 0, this * s__Ability0010_main_POTION_TYPE_MAX + i))
-					call BlzFrameSetPoint(f, FRAMEPOINT_TOP, bf, FRAMEPOINT_BOTTOM, 0., 0.)
-					call BlzFrameSetSize(f, (((48)*1.0) / 1800.), (((48)*1.0) / 1800.)) // INLINED!!
-					call BlzTriggerRegisterFrameEvent(s__Ability0010_main_keypress[this], f, FRAMEEVENT_CONTROL_CLICK)
-					call BlzTriggerRegisterFrameEvent(s__Ability0010_main_keypress[this], f, FRAMEEVENT_MOUSE_LEAVE)
-					set bf=f
-					set f=BlzGetFrameByName("MakePotionCreateButtonText", this * s__Ability0010_main_POTION_TYPE_MAX + i)
-					call BlzFrameSetPoint(f, FRAMEPOINT_CENTER, s__Ability0010_main_container[this], FRAMEPOINT_CENTER, 0., 0.)
-					call BlzFrameSetTextAlignment(f, TEXT_JUSTIFY_CENTER, TEXT_JUSTIFY_CENTER)
-					call BlzFrameSetText(f, "|cff00cc000|r")
-					set bf=f
-					set f=s__Ability0010_main_setFrame(this,s__Ability0010_main_INDEX_COUNT_TEXT + i , BlzCreateFrame("MyText", s__Ability0010_main_container[this], 0, this * s__Ability0010_main_POTION_TYPE_MAX + i))
-					call BlzFrameSetPoint(f, FRAMEPOINT_BOTTOM, s__Ability0010_main_getFrame(this,s__Ability0010_main_INDEX_BTN_SET + i), FRAMEPOINT_TOP, 0., 0.)
-					call BlzFrameSetTextAlignment(f, TEXT_JUSTIFY_BOTTOM, TEXT_JUSTIFY_CENTER)
-					call BlzFrameSetText(f, "|cffff0000▼|r")
-					call BlzFrameSetVisible(f, false)
-					set f=s__Ability0010_main_setFrame(this,s__Ability0010_main_INDEX_TOOLTIP_CONTAINER + i , BlzCreateFrameByType("FRAME", "", s__Ability0010_main_getFrame(this,s__Ability0010_main_INDEX_BTN_SET + i), "", 0))
-					call BlzFrameSetAbsPoint(f, FRAMEPOINT_TOPLEFT, 0., 0.)
-					call BlzFrameSetTooltip(s__Ability0010_main_getFrame(this,s__Ability0010_main_INDEX_BTN_SET + i), f)
-					set bf=f
-					set f=s__Ability0010_main_setFrame(this,s__Ability0010_main_INDEX_TOOLTIP_BACKDROP + i , BlzCreateFrameByType("BACKDROP", "", bf, "", 0))
-					call BlzFrameSetTexture(f, "Textures\\black32.blp", 0, true)
-					call BlzFrameSetAlpha(f, 128)
-					set bf=f
-					set f=s__Ability0010_main_setFrame(this,s__Ability0010_main_INDEX_TOOLTIP_TEXT + i , BlzCreateFrame("MyText", s__Ability0010_main_getFrame(this,s__Ability0010_main_INDEX_TOOLTIP_CONTAINER + i), 0, 0))
-					call BlzFrameSetPoint(f, FRAMEPOINT_BOTTOM, s__Ability0010_main_container[this], FRAMEPOINT_TOP, 0., 0.005)
-					call BlzFrameSetTextAlignment(f, TEXT_JUSTIFY_BOTTOM, TEXT_JUSTIFY_CENTER)
-					call BlzFrameSetPoint(bf, FRAMEPOINT_TOPRIGHT, f, FRAMEPOINT_TOPRIGHT, 0.005, 0.005)
-					call BlzFrameSetPoint(bf, FRAMEPOINT_BOTTOMLEFT, f, FRAMEPOINT_BOTTOMLEFT, - 0.005, - 0.005)
-					set i=i + 1
-				endloop
-				call s__Ability0010_main_refreshButton(this)
-				set f=null
-				set bf=null
-   return true
-endfunction
-function sa__Ability0010_main_deactivate takes nothing returns boolean
-local integer this=f__arg_this
-    local integer i= 0
-				loop
-					exitwhen i >= s__Ability0010_main_POTION_TYPE_MAX
-					call s__Ability0010_main_setFrame(this,s__Ability0010_main_INDEX_BTN_CREATE + i , null)
-					call s__Ability0010_main_setFrame(this,s__Ability0010_main_INDEX_BTN_SET + i , null)
-					call s__Ability0010_main_setFrame(this,s__Ability0010_main_INDEX_TOOLTIP_BACKDROP + i , null)
-					call s__Ability0010_main_setFrame(this,s__Ability0010_main_INDEX_TOOLTIP_TEXT + i , null)
-					call RemoveSavedInteger(s__Ability0010_main_HASH, this, s__Ability0010_main_INDEX_POTION_COUNT + i)
-					set i=i + 1
-				endloop
-	call BlzDestroyFrame(s__Ability0010_main_container[this])
-	set s__Ability0010_main_container[this]=null
-				call TriggerRemoveCondition(s__Ability0010_main_keypress[this], s__Ability0010_main_keypress_cond[this])
-				call s__Trigger_remove(s__Ability0010_main_keypress[this])
-				set s__Ability0010_main_keypress[this]=null
-				set s__Ability0010_main_keypress_cond[this]=null
-   return true
-endfunction
 function sa__Ability0013_actor_periodicAction takes nothing returns boolean
 local integer this=f__arg_this
 				set s__Ability0013_actor_anim_progress[this]=s__Ability0013_actor_anim_progress[this] + TIMER_TICK
@@ -31290,6 +31764,135 @@ local integer this=f__arg_this
 				set s__Ability_prototype_weapon_delay[this]=1.
 				set s__Ability_prototype_weapon_range[this]=550.
 				set s__Ability_prototype_count[this]=0
+				call s__Ability_plusStatValue(this,5)
+   return true
+endfunction
+function sa__Ability0015_actor_periodicAction takes nothing returns boolean
+local integer this=f__arg_this
+				if s__Ability0015_actor_sq[this] > 0 then
+					call s__Line__Line_setPosition(s__Ability0015_actor_sq[this],sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , 2.) // INLINED!!
+				endif
+   return true
+endfunction
+function sa__Ability0015_actor_onComplete takes nothing returns boolean
+local integer this=f__arg_this
+    local integer ex= s__Ability0015___exp_create((s__Actor_actor[(this)]) , (((sc__Object__get_x((s__Actor_actor[(this)])) )*1.0) + (( Ability0015___COLRAD )*1.0) * Cos((( s__Ability0015_actor_angle[this])*1.0) * bj_DEGTORAD)) , (((sc__Object__get_y((s__Actor_actor[(this)])) )*1.0) + (( Ability0015___COLRAD )*1.0) * Sin((( s__Ability0015_actor_angle[this])*1.0) * bj_DEGTORAD)) , (((sc__Object__get_x((s__Actor_actor[(this)])) )*1.0) + (( s__Ability0015_actor_range[this] - Ability0015___COLRAD )*1.0) * Cos((( s__Ability0015_actor_angle[this])*1.0) * bj_DEGTORAD)) , (((sc__Object__get_y((s__Actor_actor[(this)])) )*1.0) + (( s__Ability0015_actor_range[this] - Ability0015___COLRAD )*1.0) * Sin((( s__Ability0015_actor_angle[this])*1.0) * bj_DEGTORAD)) , Ability0015___COLRAD , s__UnitActor_level[this]) // INLINED!!
+				call s__Explosion_activate(ex)
+				call s__UnitActor_create((s__Actor_actor[(this)]) , 0 , 0. , 0. , 0 , Ability0015___BACKSWING , true) // INLINED!!
+				call s__Unit_prototype_queueAnim((s__Actor_actor[(this)]),"stand ready") // INLINED!!
+				call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((1.)*1.0)) // INLINED!!
+				set s__Line__Line_alphaaxis[s__Ability0015_actor_sq[this]]=- 1. / 0.5
+   return true
+endfunction
+function sa__Ability0015_actor_onSuspend takes nothing returns boolean
+local integer this=f__arg_this
+				call s__Unit_prototype_queueAnim((s__Actor_actor[(this)]),"stand ready") // INLINED!!
+				call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((1.)*1.0)) // INLINED!!
+				call sc__Line__Line_deallocate(s__Ability0015_actor_sq[this])
+				set s__Ability0015_actor_sq[this]=0
+   return true
+endfunction
+function sa__Ability0015_actor_onDestroy takes nothing returns boolean
+local integer this=f__arg_this
+				set s__Ability0015_actor_sq[this]=0
+    set f__arg_this=this
+   return true
+endfunction
+function sa__Ability0015_charge_periodicAction takes nothing returns boolean
+local integer this=f__arg_this
+				call s__Effect_setPosition(s__Ability0015_charge_ef[this],sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , sc__Object__get_z((s__Actor_actor[(this)])) + 125) // INLINED!!
+				set s__Ability_prototype_cast_range[s__UnitActor_link_ability[this]]=s__Ability_prototype_cast_range[s__UnitActor_link_ability[this]] + ( ( Ability0015___RANGE_MAX - Ability0015___RANGE_INITIAL ) * TIMER_TICK ) / Ability0015___CHARGE_MAX_AT
+				call s__Effect_setScale(s__Ability0015_charge_ef[this],(s__Effect_scale_true[(s__Ability0015_charge_ef[this])]) + TIMER_TICK) // INLINED!!
+				if s__Ability_prototype_cast_range[s__UnitActor_link_ability[this]] > Ability0015___RANGE_MAX then
+					set s__Ability_prototype_cast_range[s__UnitActor_link_ability[this]]=Ability0015___RANGE_MAX
+					call s__Effect_setScale(s__Ability0015_charge_ef[this],3.0)
+				endif
+				if s__Actor_timeout[this] >= 0.25 and s__Actor_stage[this] == 0 then
+					call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((0.)*1.0)) // INLINED!!
+					set s__Actor_stage[this]=1
+				endif
+   return true
+endfunction
+function sa__Ability0015_charge_onDestroy takes nothing returns boolean
+local integer this=f__arg_this
+				call s__Mover_deallocate(s__Ability0015_charge_mv[this])
+				set s__Ability0015_charge_mv[this]=0
+				call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((1.0)*1.0)) // INLINED!!
+				call sc__Object_deallocate(s__Ability0015_charge_ef[this])
+    set f__arg_this=this
+   return true
+endfunction
+function sa__Ability0015_main_relativeTooltip takes nothing returns boolean
+local integer this=f__arg_this
+set f__result_string= "직선 범위 내의 적들에게 " + s__ConstantString_statStringReal(STAT_TYPE_MAGICPOWER , ( (s__Unit_prototype_getCarculatedStatValue((s__Ability_prototype_owner[this]),STAT_TYPE_MAGICPOWER)) * Ability0015___DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0015___DAMAGE_PER_LEVEL * ( s__Ability_prototype_level[this] - 1 ) ) , 1) + "의 " + DAMAGE_STRING_MAGICAL + "를 입히는 파동을 방출합니다. 스킬 버튼을 오래 누를 수록 사거리가 증가합니다." // INLINED!!
+   return true
+endfunction
+function sa__Ability0015_main_beforeRelease takes nothing returns boolean
+local integer this=f__arg_this
+				if s__Ability_prototype_pressing[this] then
+					set s__Ability_prototype_command_x[this]=(s__s__Mouse_X[GetPlayerId(((GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))))]) // INLINED!!
+					set s__Ability_prototype_command_y[this]=(s__s__Mouse_Y[GetPlayerId(((GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))))]) // INLINED!!
+					set s__Ability0015_main_range_temp[this]=s__Ability_prototype_cast_range[this]
+					set s__Ability_prototype_cast_range[this]=- 1.
+					if s__Ability_prototype_link_actor[this] > 0 then
+						set s__Ability_prototype_useable_cast[this]=true
+					endif
+				endif
+   return true
+endfunction
+function sa__Ability0015_main_onRelease takes nothing returns boolean
+local integer this=f__arg_this
+				if s__Ability_prototype_link_actor[this] > 0 then
+					call sc__Actor_deallocate(s__Ability_prototype_link_actor[this])
+				endif
+				set s__Ability_prototype_cast_range[this]=- 1.
+				set s__Ability_prototype_useable_cast[this]=false
+   return true
+endfunction
+function sa__Ability0015_main_onRightClick takes nothing returns boolean
+local integer this=f__arg_this
+				if s__Ability_prototype_link_actor[this] <= 0 then
+					call s__Ability_prototype_setPressState(this,false)
+				endif
+   return true
+endfunction
+function sa__Ability0015_main_execute takes nothing returns boolean
+local integer this=f__arg_this
+    local integer a= 0
+				if s__Ability_prototype_link_actor[this] > 0 then
+					call sc__Actor_deallocate(s__Ability_prototype_link_actor[this])
+					set s__Ability_prototype_link_actor[this]=0
+				endif
+				set a=s__Ability0015_actor_create(s__Ability_prototype_owner[this] , s__Ability_prototype_command_x[this] , s__Ability_prototype_command_y[this] , s__Ability_prototype_level[this] , s__Ability0015_main_range_temp[this])
+				set s__Ability_prototype_cast_range[this]=- 1.
+				set s__Ability_prototype_useable_cast[this]=false
+   return true
+endfunction
+function sa__Ability0015_main_onPress takes nothing returns boolean
+local integer this=f__arg_this
+    local integer a= 0
+				set s__Ability_prototype_useable_cast[this]=false
+				if s__Ability_prototype_costFilter(this) and s__Ability_prototype_enableFilter(this) then
+					if s__Ability_prototype_castFilter(this) then
+						set a=s__Ability0015_charge_create(s__Ability_prototype_owner[this])
+						call s__Ability_prototype_linkActor(this,a)
+					endif
+					set s__Ability_prototype_cast_range[this]=Ability0015___RANGE_INITIAL
+				else
+					call s__Ability_prototype_sendError(this)
+				endif
+   return true
+endfunction
+function sa__Ability0015_main_init takes nothing returns boolean
+local integer this=f__arg_this
+				set s__Ability_prototype_is_active[this]=true
+				set s__Ability_prototype_preserve_order[this]=false
+				set s__Ability_prototype_cooldown_max[this]=7.5
+				set s__Ability_prototype_cooldown_min[this]=2.
+				set s__Ability_prototype_manacost[this]=25
+				set s__Ability_prototype_indicator[this]=s__Ability0015___ind_create(this , (GetOwningPlayer((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Ability_prototype_owner[this]))]), s__Agent_INDEX_ORIGIN_HANDLE))))) // INLINED!!
+				set s__Ability_prototype_drag_to_use[this]=true
+				set s__Ability_prototype_cancle_rightclick[this]=false
 				call s__Ability_plusStatValue(this,5)
    return true
 endfunction
@@ -31850,6 +32453,40 @@ local integer this=f__arg_this
     set f__arg_this=this
    return true
 endfunction
+function sa__Ability0000_mv_executeExplosion takes nothing returns boolean
+local integer this=f__arg_this
+local integer target=f__arg_integer1
+    local integer kn= s__knockback_create(target , Ability0000__KNOCKBACK_DISTANCE / Ability0000__KNOCKABCK_DURATION , sc__Object__get_yaw((s__Actor_actor[(this)]))) // INLINED!!
+				set s__Movement_z_velo[kn]=300.
+				set s__Movement_gravity[kn]=( 300. * 2 ) / Ability0000__KNOCKABCK_DURATION
+				set s__Actor_duration[kn]=Ability0000__KNOCKABCK_DURATION
+				set s__UnitMovement_damage_id[this]=Ability0000__ID
+				call s__UnitMovement_setDamageFlag((this),DAMAGE_TYPE_PHYSICAL , ATTACK_TYPE_SPELL , false , true , INTERVAL_TYPE_SINGLE , VECTOR_TYPE_OUTTER , true , true) // INLINED!!
+				if target == sc__Movement__get_target(this) then
+					set s__UnitMovement_damage[this]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[(this)])),STAT_TYPE_ATTACK)) * Ability0000__DAMAGE_PER_ATTACK_ALTERNATE ) * ( 1 + Ability0000__DAMAGE_PER_LEVEL * ( s__UnitMovement_level[this] - 1 ) ) // INLINED!!
+				else
+					set s__UnitMovement_damage[this]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[(this)])),STAT_TYPE_ATTACK)) * Ability0000__DAMAGE_PER_ATTACK ) * ( 1 + Ability0000__DAMAGE_PER_LEVEL * ( s__UnitMovement_level[this] - 1 ) ) // INLINED!!
+				endif
+				call s__UnitMovement_damageTarget(this,target)
+				call s__Effect_kill(s__Effect_setScale(s__Effect_create(EF_ROCK , sc__Object__get_x(target) , sc__Object__get_y(target) , sc__Object__get_z(target) + s__Object_pivot_z[target] , 0),2.5))
+				call s__Buff_add(0 , target , 'Stun' , 0.5)
+   return true
+endfunction
+function sa__Ability0000_mv_executeTarget takes nothing returns boolean
+local integer this=f__arg_this
+local integer target=f__arg_integer1
+				call s__Movement__set_target(this,target)
+				call s__UnitMovement_explosionAction(this)
+				set s__Actor_want_destroy[this]=true
+				call s__UnitActor_create((s__Actor_actor[(this)]) , 0 , 0. , 0. , 0 , Ability0000__BACKSWING , true) // INLINED!!
+   return true
+endfunction
+function sa__Ability0000_mv_onDestroy takes nothing returns boolean
+local integer this=f__arg_this
+				call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((1.0)*1.0)) // INLINED!!
+    set f__arg_this=this
+   return true
+endfunction
 function sa__AbilityC005_main_init takes nothing returns boolean
 local integer this=f__arg_this
    return true
@@ -31877,38 +32514,13 @@ local integer this=f__arg_this
     set f__arg_this=this
    return true
 endfunction
-function sa__Ability0000_mv_executeExplosion takes nothing returns boolean
+function sa__Ability0000_actor_periodicAction takes nothing returns boolean
 local integer this=f__arg_this
-local integer target=f__arg_integer1
-    local integer kn= s__knockback_create(target , Ability0000___KNOCKBACK_DISTANCE / Ability0000___KNOCKABCK_DURATION , sc__Object__get_yaw((s__Actor_actor[(this)]))) // INLINED!!
-				set s__Movement_z_velo[kn]=300.
-				set s__Movement_gravity[kn]=( 300. * 2 ) / Ability0000___KNOCKABCK_DURATION
-				set s__Actor_duration[kn]=Ability0000___KNOCKABCK_DURATION
-				set s__UnitMovement_damage_id[this]=Ability0000___ID
-				call s__UnitMovement_setDamageFlag((this),DAMAGE_TYPE_PHYSICAL , ATTACK_TYPE_SPELL , false , true , INTERVAL_TYPE_SINGLE , VECTOR_TYPE_OUTTER , true , true) // INLINED!!
-				if target == sc__Movement__get_target(this) then
-					set s__UnitMovement_damage[this]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[(this)])),STAT_TYPE_ATTACK)) * Ability0000___DAMAGE_PER_ATTACK_ALTERNATE ) * ( 1 + Ability0000___DAMAGE_PER_LEVEL * ( s__UnitMovement_level[this] - 1 ) ) // INLINED!!
-				else
-					set s__UnitMovement_damage[this]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[(this)])),STAT_TYPE_ATTACK)) * Ability0000___DAMAGE_PER_ATTACK ) * ( 1 + Ability0000___DAMAGE_PER_LEVEL * ( s__UnitMovement_level[this] - 1 ) ) // INLINED!!
-				endif
-				call s__UnitMovement_damageTarget(this,target)
-				call s__Effect_kill(s__Effect_setScale(s__Effect_create(EF_ROCK , sc__Object__get_x(target) , sc__Object__get_y(target) , sc__Object__get_z(target) + s__Object_pivot_z[target] , 0),2.5))
-				call s__Buff_add(0 , target , 'Stun' , 0.5)
    return true
 endfunction
-function sa__Ability0000_mv_executeTarget takes nothing returns boolean
+function sa__Ability0000_actor_onComplete takes nothing returns boolean
 local integer this=f__arg_this
-local integer target=f__arg_integer1
-				call s__Movement__set_target(this,target)
-				call s__UnitMovement_explosionAction(this)
-				set s__Actor_want_destroy[this]=true
-				call s__UnitActor_create((s__Actor_actor[(this)]) , 0 , 0. , 0. , 0 , Ability0000___BACKSWING , true) // INLINED!!
-   return true
-endfunction
-function sa__Ability0000_mv_onDestroy takes nothing returns boolean
-local integer this=f__arg_this
-				call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((1.0)*1.0)) // INLINED!!
-    set f__arg_this=this
+				call s__Ability0000_mv_create((s__Actor_actor[(this)]) , s__Ability0000_actor_angle[this] , s__UnitActor_level[this]) // INLINED!!
    return true
 endfunction
 function sa__Unit_create takes nothing returns boolean
@@ -31929,140 +32541,6 @@ local integer this=f__arg_this
 			if s__Unit_chingho[this] > 0 then
 				call sc__Ability_prototype_deallocate(s__Unit_chingho[this])
 			endif
-    set f__arg_this=this
-   return true
-endfunction
-function sa__Ability0000_actor_periodicAction takes nothing returns boolean
-local integer this=f__arg_this
-   return true
-endfunction
-function sa__Ability0000_actor_onComplete takes nothing returns boolean
-local integer this=f__arg_this
-				call s__Ability0000_mv_create((s__Actor_actor[(this)]) , s__Ability0000_actor_angle[this] , s__UnitActor_level[this]) // INLINED!!
-   return true
-endfunction
-function sa__Ability0015_actor_periodicAction takes nothing returns boolean
-local integer this=f__arg_this
-				if s__Ability0015_actor_sq[this] > 0 then
-					call s__Line__Line_setPosition(s__Ability0015_actor_sq[this],sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , 2.) // INLINED!!
-				endif
-   return true
-endfunction
-function sa__Ability0015_actor_onComplete takes nothing returns boolean
-local integer this=f__arg_this
-    local integer ex= s__Ability0015___exp_create((s__Actor_actor[(this)]) , (((sc__Object__get_x((s__Actor_actor[(this)])) )*1.0) + (( Ability0015___COLRAD )*1.0) * Cos((( s__Ability0015_actor_angle[this])*1.0) * bj_DEGTORAD)) , (((sc__Object__get_y((s__Actor_actor[(this)])) )*1.0) + (( Ability0015___COLRAD )*1.0) * Sin((( s__Ability0015_actor_angle[this])*1.0) * bj_DEGTORAD)) , (((sc__Object__get_x((s__Actor_actor[(this)])) )*1.0) + (( s__Ability0015_actor_range[this] - Ability0015___COLRAD )*1.0) * Cos((( s__Ability0015_actor_angle[this])*1.0) * bj_DEGTORAD)) , (((sc__Object__get_y((s__Actor_actor[(this)])) )*1.0) + (( s__Ability0015_actor_range[this] - Ability0015___COLRAD )*1.0) * Sin((( s__Ability0015_actor_angle[this])*1.0) * bj_DEGTORAD)) , Ability0015___COLRAD , s__UnitActor_level[this]) // INLINED!!
-				call s__Explosion_activate(ex)
-				call s__UnitActor_create((s__Actor_actor[(this)]) , 0 , 0. , 0. , 0 , Ability0015___BACKSWING , true) // INLINED!!
-				call s__Unit_prototype_queueAnim((s__Actor_actor[(this)]),"stand ready") // INLINED!!
-				call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((1.)*1.0)) // INLINED!!
-				set s__Line__Line_alphaaxis[s__Ability0015_actor_sq[this]]=- 1. / 0.5
-   return true
-endfunction
-function sa__Ability0015_actor_onSuspend takes nothing returns boolean
-local integer this=f__arg_this
-				call s__Unit_prototype_queueAnim((s__Actor_actor[(this)]),"stand ready") // INLINED!!
-				call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((1.)*1.0)) // INLINED!!
-				call sc__Line__Line_deallocate(s__Ability0015_actor_sq[this])
-				set s__Ability0015_actor_sq[this]=0
-   return true
-endfunction
-function sa__Ability0015_actor_onDestroy takes nothing returns boolean
-local integer this=f__arg_this
-				set s__Ability0015_actor_sq[this]=0
-    set f__arg_this=this
-   return true
-endfunction
-function sa__Ability0015_charge_periodicAction takes nothing returns boolean
-local integer this=f__arg_this
-				call s__Effect_setPosition(s__Ability0015_charge_ef[this],sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , sc__Object__get_z((s__Actor_actor[(this)])) + 125) // INLINED!!
-				set s__Ability_prototype_cast_range[s__UnitActor_link_ability[this]]=s__Ability_prototype_cast_range[s__UnitActor_link_ability[this]] + ( ( Ability0015___RANGE_MAX - Ability0015___RANGE_INITIAL ) * TIMER_TICK ) / Ability0015___CHARGE_MAX_AT
-				call s__Effect_setScale(s__Ability0015_charge_ef[this],(s__Effect_scale_true[(s__Ability0015_charge_ef[this])]) + TIMER_TICK) // INLINED!!
-				if s__Ability_prototype_cast_range[s__UnitActor_link_ability[this]] > Ability0015___RANGE_MAX then
-					set s__Ability_prototype_cast_range[s__UnitActor_link_ability[this]]=Ability0015___RANGE_MAX
-					call s__Effect_setScale(s__Ability0015_charge_ef[this],3.0)
-				endif
-				if s__Actor_timeout[this] >= 0.25 and s__Actor_stage[this] == 0 then
-					call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((0.)*1.0)) // INLINED!!
-					set s__Actor_stage[this]=1
-				endif
-   return true
-endfunction
-function sa__Ability0015_charge_onDestroy takes nothing returns boolean
-local integer this=f__arg_this
-				call s__Mover_deallocate(s__Ability0015_charge_mv[this])
-				set s__Ability0015_charge_mv[this]=0
-				call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((1.0)*1.0)) // INLINED!!
-				call sc__Object_deallocate(s__Ability0015_charge_ef[this])
-    set f__arg_this=this
-   return true
-endfunction
-function sa__Ability0004___chain_rangeFilter takes nothing returns boolean
-local integer this=f__arg_this
-local integer target=f__arg_integer1
-set f__result_boolean= (IsUnitInRangeXY((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((target))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((sc__Actor__get_x(this) )*1.0), (( sc__Actor__get_y(this) )*1.0), (( s__Ability0004___chain_radius_explosion[this])*1.0))) // INLINED!!
-   return true
-endfunction
-function sa__Ability0004___chain_explosionFilterAdditional takes nothing returns boolean
-local integer this=f__arg_this
-local integer target=f__arg_integer1
-set f__result_boolean= not IsUnitInGroup((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(target)]), s__Agent_INDEX_ORIGIN_HANDLE)), s__Ability0004___chain_already[this]) // INLINED!!
-   return true
-endfunction
-function sa__Ability0004___chain_executeExplosion takes nothing returns boolean
-local integer this=f__arg_this
-local integer target=f__arg_integer1
-				call DoNothing()
-   return true
-endfunction
-function sa__Ability0004___chain_killFilter takes nothing returns boolean
-local integer this=f__arg_this
-				if s__Ability0004___chain_count[this] <= 0 then
-set f__result_boolean= true
-return true
-				else
-					set s__Ability0004___chain_target_previous[this]=s__UnitActor_target[this]
-					set s__UnitActor_target[this]=s__Unit_prototype_get(s__Group_getNearest(s__Ability0004___chain_group_wave[this] , sc__Actor__get_x(this) , sc__Actor__get_y(this) , null))
-					if s__UnitActor_target[this] != 0 then
-						set s__Actor_timeout[this]=0.
-						set s__Actor_duration[this]=Ability0004___INTERVAL
-						call sc__Actor__set_x(this,sc__Object__get_x(s__UnitActor_target[this]))
-						call sc__Actor__set_y(this,sc__Object__get_y(s__UnitActor_target[this]))
-set f__result_boolean= false
-return true
-					else
-set f__result_boolean= true
-return true
-					endif
-				endif
-   return true
-endfunction
-function sa__Ability0004___chain_onComplete takes nothing returns boolean
-local integer this=f__arg_this
-    local integer l= s__Lightning_createOO("CLPB" , s__Ability0004___chain_target_previous[this] , s__UnitActor_target[this])
-				set s__Lightning_oz1[l]=s__Object_pivot_z[s__Ability0004___chain_target_previous[this]]
-				set s__Lightning_oz2[l]=s__Object_pivot_z[s__UnitActor_target[this]]
-				set s__Lightning_duration[l]=0.45
-				set s__Lightning_alpha[l]=1.5
-				set s__Lightning_fade[l]=1.
-				call s__Ability0004___chain_damageTarget(this,s__UnitActor_target[this])
-				set s__Ability0004___chain_damage[this]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[((this))])),STAT_TYPE_MAGICPOWER)) * Ability0004___DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0004___DAMAGE_PER_LEVEL * ( s__UnitActor_level[this] - 1 ) ) // INLINED!!
-				call s__Effect_kill(s__Effect_createAttatched(Ability0004___EFFECT_PATH1 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(s__UnitActor_target[this])]), s__Agent_INDEX_ORIGIN_HANDLE)) , "chest")) // INLINED!!
-				if s__Actor_progress_bar[this] != 0 then
-					call s__ProgressBar_deallocate(s__Actor_progress_bar[this])
-					set s__Actor_progress_bar[this]=0
-				endif
-				set s__Ability0004___chain_count[this]=s__Ability0004___chain_count[this] - 1
-				call GroupAddUnit(s__Ability0004___chain_already[this], (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(s__UnitActor_target[this])]), s__Agent_INDEX_ORIGIN_HANDLE))) // INLINED!!
-				call GroupClear(s__Ability0004___chain_group_wave[this])
-				call s__Ability0004___chain_explosionAction(this)
-   return true
-endfunction
-function sa__Ability0004___chain_onDestroy takes nothing returns boolean
-local integer this=f__arg_this
-				call ReleaseGroup((s__Ability0004___chain_group_wave[this])) // INLINED!!
-				call ReleaseGroup((s__Ability0004___chain_already[this])) // INLINED!!
-				set s__Ability0004___chain_group_wave[this]=null
-				set s__Ability0004___chain_already[this]=null
     set f__arg_this=this
    return true
 endfunction
@@ -32124,16 +32602,130 @@ local integer this=f__arg_this
     set f__arg_this=this
    return true
 endfunction
+function sa__Ability0004__chain_rangeFilter takes nothing returns boolean
+local integer this=f__arg_this
+local integer target=f__arg_integer1
+set f__result_boolean= (IsUnitInRangeXY((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((target))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((sc__Actor__get_x(this) )*1.0), (( sc__Actor__get_y(this) )*1.0), (( s__Ability0004__chain_radius_explosion[this])*1.0))) // INLINED!!
+   return true
+endfunction
+function sa__Ability0004__chain_explosionFillUnits takes nothing returns boolean
+    call s__Ability0004__chain_explosionFillUnits(f__arg_this,f__arg_group1)
+   return true
+endfunction
+function sa__Ability0004__chain_explosionFilterAdditional takes nothing returns boolean
+local integer this=f__arg_this
+local integer target=f__arg_integer1
+set f__result_boolean= not IsUnitInGroup((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(target)]), s__Agent_INDEX_ORIGIN_HANDLE)), s__Ability0004__chain_already[this]) // INLINED!!
+   return true
+endfunction
+function sa__Ability0004__chain_executeExplosion takes nothing returns boolean
+local integer this=f__arg_this
+local integer target=f__arg_integer1
+				call DoNothing()
+   return true
+endfunction
+function sa__Ability0004__chain_killFilter takes nothing returns boolean
+local integer this=f__arg_this
+				if s__Ability0004__chain_count[this] <= 0 then
+set f__result_boolean= true
+return true
+				else
+					set s__Ability0004__chain_target_previous[this]=s__UnitActor_target[this]
+					set s__UnitActor_target[this]=s__Unit_prototype_get(s__Group_getNearest(s__Ability0004__chain_group_wave[this] , sc__Actor__get_x(this) , sc__Actor__get_y(this) , null))
+					if s__UnitActor_target[this] != 0 then
+						set s__Actor_timeout[this]=0.
+						set s__Actor_duration[this]=Ability0004__INTERVAL
+						call sc__Actor__set_x(this,sc__Object__get_x(s__UnitActor_target[this]))
+						call sc__Actor__set_y(this,sc__Object__get_y(s__UnitActor_target[this]))
+set f__result_boolean= false
+return true
+					else
+set f__result_boolean= true
+return true
+					endif
+				endif
+   return true
+endfunction
+function sa__Ability0004__chain_onComplete takes nothing returns boolean
+local integer this=f__arg_this
+    local integer l= s__Lightning_createOO("CLPB" , s__Ability0004__chain_target_previous[this] , s__UnitActor_target[this])
+				set s__Lightning_oz1[l]=s__Object_pivot_z[s__Ability0004__chain_target_previous[this]]
+				set s__Lightning_oz2[l]=s__Object_pivot_z[s__UnitActor_target[this]]
+				set s__Lightning_duration[l]=0.45
+				set s__Lightning_alpha[l]=1.5
+				set s__Lightning_fade[l]=1.
+				call s__Ability0004__chain_damageTarget(this,s__UnitActor_target[this])
+				set s__Ability0004__chain_damage[this]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[((this))])),STAT_TYPE_MAGICPOWER)) * Ability0004__DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0004__DAMAGE_PER_LEVEL * ( s__UnitActor_level[this] - 1 ) ) // INLINED!!
+				call s__Effect_kill(s__Effect_createAttatched(Ability0004__EFFECT_PATH1 , (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(s__UnitActor_target[this])]), s__Agent_INDEX_ORIGIN_HANDLE)) , "chest")) // INLINED!!
+				if s__Actor_progress_bar[this] != 0 then
+					call s__ProgressBar_deallocate(s__Actor_progress_bar[this])
+					set s__Actor_progress_bar[this]=0
+				endif
+				set s__Ability0004__chain_count[this]=s__Ability0004__chain_count[this] - 1
+				call GroupAddUnit(s__Ability0004__chain_already[this], (LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(s__UnitActor_target[this])]), s__Agent_INDEX_ORIGIN_HANDLE))) // INLINED!!
+				call GroupClear(s__Ability0004__chain_group_wave[this])
+				call s__Ability0004__chain_explosionAction(this)
+   return true
+endfunction
+function sa__Ability0004__chain_onDestroy takes nothing returns boolean
+local integer this=f__arg_this
+				call ReleaseGroup((s__Ability0004__chain_group_wave[this])) // INLINED!!
+				call ReleaseGroup((s__Ability0004__chain_already[this])) // INLINED!!
+				set s__Ability0004__chain_group_wave[this]=null
+				set s__Ability0004__chain_already[this]=null
+    set f__arg_this=this
+   return true
+endfunction
 function sa__Ability0003_actor_onComplete takes nothing returns boolean
 local integer this=f__arg_this
-    local integer ms= s__Ability0003___ball_create((s__Actor_actor[(this)]) , (((sc__Object__get_x((s__Actor_actor[(this)])) )*1.0) + (( Ability0003___STARTAT )*1.0) * Cos((( s__Math_anglePoints(sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , sc__Actor__get_x(this) , sc__Actor__get_y(this)))*1.0) * bj_DEGTORAD)) , (((sc__Object__get_y((s__Actor_actor[(this)])) )*1.0) + (( Ability0003___STARTAT )*1.0) * Sin((( s__Math_anglePoints(sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , sc__Actor__get_x(this) , sc__Actor__get_y(this)))*1.0) * bj_DEGTORAD)) , sc__Object__get_z((s__Actor_actor[(this)])) + s__Object_pivot_z[(s__Actor_actor[(this)])] , s__Ability0003_actor_angle[this] , s__UnitActor_level[this]) // INLINED!!
-				call s__UnitActor_create((s__Actor_actor[(this)]) , 0 , 0. , 0. , 0 , Ability0003___BACKSWING , true) // INLINED!!
+    local integer ms= s__Ability0003__ball_create((s__Actor_actor[(this)]) , (((sc__Object__get_x((s__Actor_actor[(this)])) )*1.0) + (( Ability0003__STARTAT )*1.0) * Cos((( s__Math_anglePoints(sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , sc__Actor__get_x(this) , sc__Actor__get_y(this)))*1.0) * bj_DEGTORAD)) , (((sc__Object__get_y((s__Actor_actor[(this)])) )*1.0) + (( Ability0003__STARTAT )*1.0) * Sin((( s__Math_anglePoints(sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , sc__Actor__get_x(this) , sc__Actor__get_y(this)))*1.0) * bj_DEGTORAD)) , sc__Object__get_z((s__Actor_actor[(this)])) + s__Object_pivot_z[(s__Actor_actor[(this)])] , s__Ability0003_actor_angle[this] , s__UnitActor_level[this]) // INLINED!!
+				call s__UnitActor_create((s__Actor_actor[(this)]) , 0 , 0. , 0. , 0 , Ability0003__BACKSWING , true) // INLINED!!
    return true
 endfunction
 function sa__Ability0003_actor_onDestroy takes nothing returns boolean
 local integer this=f__arg_this
 				call s__Unit_prototype_queueAnim((s__Actor_actor[(this)]),"stand ready") // INLINED!!
 				call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((1.)*1.0)) // INLINED!!
+    set f__arg_this=this
+   return true
+endfunction
+function sa__Ability0001_a2_onComplete takes nothing returns boolean
+local integer this=f__arg_this
+    local integer lh= s__Lightning_create("CLSB" , sc__Object__get_x(s__Ability0001_a2_effect_1[this]) , sc__Object__get_y(s__Ability0001_a2_effect_1[this]) , sc__Object__get_z(s__Ability0001_a2_effect_1[this]) , sc__Object__get_x(s__Ability0001_a2_effect_2[this]) , sc__Object__get_y(s__Ability0001_a2_effect_2[this]) , sc__Object__get_z(s__Ability0001_a2_effect_2[this]))
+    local integer lex= s__Ability0001_explosion__allocate((s__Actor_actor[((this))]) , sc__Object__get_x(s__Ability0001_a2_effect_1[this]) , sc__Object__get_y(s__Ability0001_a2_effect_1[this]) , sc__Object__get_x(s__Ability0001_a2_effect_2[this]) , sc__Object__get_y(s__Ability0001_a2_effect_2[this]) , Ability0001__BALL_RADIUS) // INLINED!!
+				call s__Lightning_setDuration(lh,0.25)
+				set s__Lightning_fade[lh]=3.
+				set s__Explosion_damage[lex]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[(this)])),STAT_TYPE_MAGICPOWER)) * Ability0001__DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0001__DAMAGE_PER_LEVEL * ( s__UnitActor_level[this] - 1 ) ) // INLINED!!
+				call s__Explosion_activate(lex)
+   return true
+endfunction
+function sa__Ability0001_a2_periodicAction takes nothing returns boolean
+local integer this=f__arg_this
+				if s__Actor_stage[this] == 0 then
+					if (IsUnitAlly((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), (GetLocalPlayer()))) then // INLINED!!
+						call s__Square_setLocalColor(s__Ability0001_a2_sq[this],0. , 1. , 0. , s__Line__Line_a[s__Ability0001_a2_sq[this]])
+					else
+						call s__Square_setLocalColor(s__Ability0001_a2_sq[this],1. , 0. , 0. , s__Line__Line_a[s__Ability0001_a2_sq[this]])
+					endif
+					call sc__Object__set_z(s__Ability0001_a2_effect_1[this],sc__Object__get_z(s__Ability0001_a2_effect_1[this]) + ( Ability0001__BALL_HEIGHT / Ability0001__BALL_UP ) * TIMER_TICK)
+					call sc__Object__set_z(s__Ability0001_a2_effect_2[this],sc__Object__get_z(s__Ability0001_a2_effect_1[this]))
+					call s__Effect_setAlpha(s__Ability0001_a2_effect_1[this],R2I(( s__Actor_timeout[this] / Ability0001__BALL_UP ) * 255))
+					call s__Effect_setAlpha(s__Ability0001_a2_effect_2[this],R2I(( s__Actor_timeout[this] / Ability0001__BALL_UP ) * 255))
+					if s__Actor_timeout[this] >= Ability0001__BALL_UP then
+						call s__Effect_setAlpha(s__Ability0001_a2_effect_1[this],255)
+						call s__Effect_setAlpha(s__Ability0001_a2_effect_2[this],255)
+						call sc__Object__set_z(s__Ability0001_a2_effect_1[this],Ability0001__BALL_HEIGHT)
+						call sc__Object__set_z(s__Ability0001_a2_effect_2[this],sc__Object__get_z(s__Ability0001_a2_effect_1[this]))
+						call s__Actor_stageNext(this)
+					endif
+				endif
+   return true
+endfunction
+function sa__Ability0001_a2_onDestroy takes nothing returns boolean
+local integer this=f__arg_this
+				call s__Effect_kill(s__Ability0001_a2_effect_1[this])
+				call s__Effect_kill(s__Ability0001_a2_effect_2[this])
+				call sc__Line__Line_deallocate(s__Ability0001_a2_sq[this])
     set f__arg_this=this
    return true
 endfunction
@@ -32160,6 +32752,10 @@ function sa__Missile_rangeFilter takes nothing returns boolean
 local integer this=f__arg_this
 local integer target=f__arg_integer1
 set f__result_boolean= (IsUnitInRangeXY((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((target))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((sc__Object__get_x(this) )*1.0), (( sc__Object__get_y(this) )*1.0), (( (s__Missile_radius_explosion_true[(this)]))*1.0))) // INLINED!!
+   return true
+endfunction
+function sa__Missile_explosionFillUnits takes nothing returns boolean
+    call s__Missile_explosionFillUnits(f__arg_this,f__arg_group1)
    return true
 endfunction
 function sa__Missile_waveFilterAdditional takes nothing returns boolean
@@ -32261,50 +32857,6 @@ local integer this=f__arg_this
 			set s__Missile_group_collision[this]=null
 			set s__Missile_group_link[this]=0
     set f__arg_this=this
-   return true
-endfunction
-function sa__Ability0002_actor_suspendFilterAdditional takes nothing returns boolean
-local integer this=f__arg_this
-set f__result_boolean= s__Unit_prototype_isUnitType(s__UnitActor_target[this],UNIT_TYPE_DEAD)
-   return true
-endfunction
-function sa__Ability0002_actor_onComplete takes nothing returns boolean
-local integer this=f__arg_this
-    local real nx= (((sc__Object__get_x((s__Actor_actor[(this)])) )*1.0) + (( Ability0002___STARTAT )*1.0) * Cos((( sc__Object__get_yaw((s__Actor_actor[(this)])))*1.0) * bj_DEGTORAD)) // INLINED!!
-    local real ny= (((sc__Object__get_y((s__Actor_actor[(this)])) )*1.0) + (( Ability0002___STARTAT )*1.0) * Sin((( sc__Object__get_yaw((s__Actor_actor[(this)])))*1.0) * bj_DEGTORAD)) // INLINED!!
-    local integer ms= s__Missile_create((s__Actor_actor[(this)]) , Ability0002___EFFECT_PATH1 , nx , ny , sc__Object__get_z((s__Actor_actor[(this)])) + s__Object_pivot_z[(s__Actor_actor[(this)])] , sc__Object__get_yaw((s__Actor_actor[(this)]))) // INLINED!!
-				set s__Missile_damage_id[ms]=Ability0002___ID
-				set s__Missile_damage[ms]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[((this))])),STAT_TYPE_ATTACK)) * Ability0002___DAMAGE_PER_ATTACK ) * ( 1 + Ability0002___DAMAGE_PER_LEVEL * ( s__UnitActor_level[this] - 1 ) * s__Unit_prototype__get_attack_speed((s__Actor_actor[((this))])) ) // INLINED!!
-				set s__Missile_attack_type[ms]=ATTACK_TYPE_SPELL
-				set s__Missile_radius_target[ms]=Ability0002___VELO * TIMER_TICK * 0.5
-				set s__Movement_velo[s__Object_movement[(ms)]]=((Ability0002___VELO)*1.0) // INLINED!!
-				call s__Missile__set_target((ms),(s__UnitActor_target[this])) // INLINED!!
-				call s__UnitActor_create((s__Actor_actor[(this)]) , 0 , 0. , 0. , 0 , Ability0002___BACKSWING , true) // INLINED!!
-   return true
-endfunction
-function sa__Ability0002_actor_periodicAction takes nothing returns boolean
-local integer this=f__arg_this
-				call SetUnitFacing((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Actor_actor[(this)]))]), s__Agent_INDEX_ORIGIN_HANDLE)), s__Math_anglePoints(sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , sc__Object__get_x(s__UnitActor_target[this]) , sc__Object__get_y(s__UnitActor_target[this]))) // INLINED!!
-				if s__Actor_duration_max[this] - s__Actor_timeout[this] < 0.25 and not s__Ability0002_actor_play[this] then
-					call s__Unit_prototype_setAnim((s__Actor_actor[(this)]),"attack") // INLINED!!
-					call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((2.)*1.0)) // INLINED!!
-					set s__Ability0002_actor_play[this]=true
-				endif
-   return true
-endfunction
-function sa__Ability0002_actor_onDestroy takes nothing returns boolean
-local integer this=f__arg_this
-				call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((1.)*1.0)) // INLINED!!
-				call sc__Object_deallocate(s__Ability0002_actor_aim[this])
-				call sc__Object_deallocate(s__Ability0002_actor_lh[this])
-    set f__arg_this=this
-   return true
-endfunction
-function sa__Ability0020___bullet_executeTarget takes nothing returns boolean
-local integer this=f__arg_this
-local integer target=f__arg_integer1
-				call s__Missile_damageTarget(this,target)
-				call s__Effect_setDuration(s__Effect_create(Ability0020___EFFECT_PATH2 , sc__Object__get_x(target) , sc__Object__get_y(target) , sc__Object__get_z(target) + s__Object_pivot_z[target] , 270),1.5)
    return true
 endfunction
 function sa__Ability0020_actor_onComplete takes nothing returns boolean
@@ -32459,14 +33011,134 @@ local integer this=f__arg_this
     set f__arg_this=this
    return true
 endfunction
+function sa__Ability0031___ball_periodicAction takes nothing returns boolean
+local integer this=f__arg_this
+			if s__Ability0031___ball_c[this] > 0 then
+				call sc__Object__set_x(s__Ability0031___ball_c[this],sc__Object__get_x(this))
+				call sc__Object__set_y(s__Ability0031___ball_c[this],sc__Object__get_y(this))
+			endif
+			if s__Ability0031___ball_stage[this] == 1 then
+				set s__Ability0031___ball_to[this]=s__Ability0031___ball_to[this] + TIMER_TICK
+				if s__Ability0031___ball_to[this] >= Ability0031___EFFECT_INTERVAL then
+					call s__Effect_setAnimSpeed(s__Effect_setDuration(s__Effect_setPitch(s__Effect_create(Ability0031___EFFECT_PATH2 , sc__Object__get_x(this) , sc__Object__get_y(this) , 125. , sc__Object__get_yaw(this)),- 90),1.0),2.)
+					set s__Ability0031___ball_to[this]=s__Ability0031___ball_to[this] - Ability0031___EFFECT_INTERVAL
+				endif
+			endif
+   return true
+endfunction
+function sa__Ability0031___ball_afterWave takes nothing returns boolean
+local integer this=f__arg_this
+   local real d= SquareRoot(GetRandomReal(0, ( Ability0031___EXPRAD / 2 ) * ( Ability0031___EXPRAD / 2 )))
+   local real a= GetRandomReal(0, 360)
+			call s__Effect_setPitch(s__Effect_setScale(s__Effect_setDuration(s__Effect_create(Ability0031___EFFECT_PATH3 , (((sc__Object__get_x(this) )*1.0) + (( d )*1.0) * Cos((( a)*1.0) * bj_DEGTORAD)) , (((sc__Object__get_y(this) )*1.0) + (( d )*1.0) * Sin((( a)*1.0) * bj_DEGTORAD)) , 0. , sc__Object__get_yaw(this)),1.5),2.),- 30.) // INLINED!!
+   return true
+endfunction
+function sa__Ability0031___ball_executeWave takes nothing returns boolean
+local integer this=f__arg_this
+local integer target=f__arg_integer1
+			call s__Missile_damageTarget(this,target)
+			call s__Effect_setPitch(s__Effect_setDuration(s__Effect_setScale(s__Effect_create(Ability0031___EFFECT_PATH2 , sc__Object__get_x(target) , sc__Object__get_y(target) , sc__Object__get_z(target) + 55. , sc__Object__get_yaw(this)),0.5),1.5),- 90)
+   return true
+endfunction
+function sa__Ability0031___ball_afterExplosion takes nothing returns boolean
+local integer this=f__arg_this
+   local integer ef= s__Effect_create(Ability0031___EFFECT_PATH2 , sc__Object__get_x(this) , sc__Object__get_y(this) , 125. , sc__Object__get_yaw(this))
+			call s__Effect_setDuration(ef,1.0)
+			call s__Effect_setPitch(ef,- 90)
+			set s__Movement_flag_target_location[(s__Object_movement[(this)])]=false // INLINED!!
+			call s__Movement__set_curve(s__Object_movement[this],0)
+			set s__Movement_refresh_facing[s__Object_movement[this]]=false
+			set s__Movement_velo[s__Object_movement[(this)]]=((Ability0031___VELO)*1.0) // INLINED!!
+			call sc__Object__set_pitch(this,20.)
+			call s__Effect_setDuration(this,Ability0031___RANGE_SECOND / Ability0031___VELO)
+			call s__Missile__set_radius_wave((this),((Ability0031___EXPRAD)*1.0)) // INLINED!!
+			call s__Effect_setColor(this,255 , 255 , 153)
+			set s__Ability0031___ball_c[this]=s__Circle_create(sc__Object__get_x(this) , sc__Object__get_y(this) , 1. , Ability0031___EXPRAD)
+			call s__Effect_setColor(s__Ability0031___ball_c[this],255 , R2I(0.65 * 255) , 0)
+			call s__Circle_fadeIn(s__Ability0031___ball_c[this],Ability0031___CAST)
+   return true
+endfunction
+function sa__Ability0031___ball_executeExplosion takes nothing returns boolean
+local integer this=f__arg_this
+local integer target=f__arg_integer1
+   return true
+endfunction
+function sa__Ability0031___ball_killFilter takes nothing returns boolean
+local integer this=f__arg_this
+			if s__Ability0031___ball_stage[this] == 0 then
+				set s__Ability0031___ball_stage[this]=1
+				set s__Missile_want_kill[this]=false
+set f__result_boolean= false
+return true
+			endif
+set f__result_boolean= true
+   return true
+endfunction
+function sa__Ability0031___ball_onDestroy takes nothing returns boolean
+local integer this=f__arg_this
+			if s__Ability0031___ball_c[this] > 0 then
+				call s__Circle_setFadeOutPoint(s__Ability0031___ball_c[this],0. , 1.25)
+			endif
+			set s__Ability0031___ball_c[this]=0
+    set f__arg_this=this
+   return true
+endfunction
+function sa__Ability0031___actor_onComplete takes nothing returns boolean
+local integer this=f__arg_this
+			call s__Ability0031___ball_create((s__Actor_actor[(this)]) , sc__Actor__get_x(this) , sc__Actor__get_y(this) , s__Ability0031___actor_angle[this] , s__UnitActor_level[this]) // INLINED!!
+   return true
+endfunction
+function sa__Ability0031___actor_onDestroy takes nothing returns boolean
+local integer this=f__arg_this
+			call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((1.)*1.0)) // INLINED!!
+    set f__arg_this=this
+   return true
+endfunction
+function sa__Ability0002_actor_suspendFilterAdditional takes nothing returns boolean
+local integer this=f__arg_this
+set f__result_boolean= s__Unit_prototype_isUnitType(s__UnitActor_target[this],UNIT_TYPE_DEAD)
+   return true
+endfunction
+function sa__Ability0002_actor_onComplete takes nothing returns boolean
+local integer this=f__arg_this
+    local real nx= (((sc__Object__get_x((s__Actor_actor[(this)])) )*1.0) + (( Ability0002__STARTAT )*1.0) * Cos((( sc__Object__get_yaw((s__Actor_actor[(this)])))*1.0) * bj_DEGTORAD)) // INLINED!!
+    local real ny= (((sc__Object__get_y((s__Actor_actor[(this)])) )*1.0) + (( Ability0002__STARTAT )*1.0) * Sin((( sc__Object__get_yaw((s__Actor_actor[(this)])))*1.0) * bj_DEGTORAD)) // INLINED!!
+    local integer ms= s__Missile_create((s__Actor_actor[(this)]) , Ability0002__EFFECT_PATH1 , nx , ny , sc__Object__get_z((s__Actor_actor[(this)])) + s__Object_pivot_z[(s__Actor_actor[(this)])] , sc__Object__get_yaw((s__Actor_actor[(this)]))) // INLINED!!
+				set s__Missile_damage_id[ms]=Ability0002__ID
+				set s__Missile_damage[ms]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[((this))])),STAT_TYPE_ATTACK)) * Ability0002__DAMAGE_PER_ATTACK ) * ( 1 + Ability0002__DAMAGE_PER_LEVEL * ( s__UnitActor_level[this] - 1 ) * s__Unit_prototype__get_attack_speed((s__Actor_actor[((this))])) ) // INLINED!!
+				set s__Missile_attack_type[ms]=ATTACK_TYPE_SPELL
+				set s__Missile_radius_target[ms]=Ability0002__VELO * TIMER_TICK * 0.5
+				set s__Movement_velo[s__Object_movement[(ms)]]=((Ability0002__VELO)*1.0) // INLINED!!
+				call s__Missile__set_target((ms),(s__UnitActor_target[this])) // INLINED!!
+				call s__UnitActor_create((s__Actor_actor[(this)]) , 0 , 0. , 0. , 0 , Ability0002__BACKSWING , true) // INLINED!!
+   return true
+endfunction
+function sa__Ability0002_actor_periodicAction takes nothing returns boolean
+local integer this=f__arg_this
+				call SetUnitFacing((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[((s__Actor_actor[(this)]))]), s__Agent_INDEX_ORIGIN_HANDLE)), s__Math_anglePoints(sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , sc__Object__get_x(s__UnitActor_target[this]) , sc__Object__get_y(s__UnitActor_target[this]))) // INLINED!!
+				if s__Actor_duration_max[this] - s__Actor_timeout[this] < 0.25 and not s__Ability0002_actor_play[this] then
+					call s__Unit_prototype_setAnim((s__Actor_actor[(this)]),"attack") // INLINED!!
+					call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((2.)*1.0)) // INLINED!!
+					set s__Ability0002_actor_play[this]=true
+				endif
+   return true
+endfunction
+function sa__Ability0002_actor_onDestroy takes nothing returns boolean
+local integer this=f__arg_this
+				call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((1.)*1.0)) // INLINED!!
+				call sc__Object_deallocate(s__Ability0002_actor_aim[this])
+				call sc__Object_deallocate(s__Ability0002_actor_lh[this])
+    set f__arg_this=this
+   return true
+endfunction
 function sa__Ability0040_actor_periodicAction takes nothing returns boolean
 local integer this=f__arg_this
    local integer ex= 0
 			if s__Actor_stage[this] == 0 then
-				call sc__Object__set_z(s__Ability0040_actor_ef[this],Ability0040__DRAGON_DIST + ( 500. - ( 500. * s__Actor_timeout[this] / Ability0040__CAST ) ))
-				if s__Actor_timeout[this] >= Ability0040__CAST then
-					set ex=s__Ability0040_explosion_create((s__Actor_actor[(this)]) , sc__Actor__get_x(this) , sc__Actor__get_y(this) , Ability0040__EXPRAD , s__UnitActor_level[this] , s__Ability0040_actor_ef[this]) // INLINED!!
-					set s__Explosion_damage[ex]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[(this)])),STAT_TYPE_MAGICPOWER)) * Ability0040__DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0040__DAMAGE_PER_LEVEL * ( s__UnitActor_level[this] - 1 ) ) // INLINED!!
+				call sc__Object__set_z(s__Ability0040_actor_ef[this],Ability0040___DRAGON_DIST + ( 500. - ( 500. * s__Actor_timeout[this] / Ability0040___CAST ) ))
+				if s__Actor_timeout[this] >= Ability0040___CAST then
+					set ex=s__Ability0040_explosion_create((s__Actor_actor[(this)]) , sc__Actor__get_x(this) , sc__Actor__get_y(this) , Ability0040___EXPRAD , s__UnitActor_level[this] , s__Ability0040_actor_ef[this]) // INLINED!!
+					set s__Explosion_damage[ex]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[(this)])),STAT_TYPE_MAGICPOWER)) * Ability0040___DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0040___DAMAGE_PER_LEVEL * ( s__UnitActor_level[this] - 1 ) ) // INLINED!!
 					call s__Explosion_activate(ex)
 					set s__Actor_stage[this]=1
 					set s__Actor_timeout[this]=0.
@@ -32478,7 +33150,7 @@ local integer this=f__arg_this
 					call sc__Object__set_offset_z(s__Ability0040_actor_ef[this],- 2.5)
 				endif
 				set s__Ability0040_actor_b[this]=not s__Ability0040_actor_b[this]
-				if s__Actor_timeout[this] >= Ability0040__COUNT * Ability0040__INTERVAL then
+				if s__Actor_timeout[this] >= Ability0040___COUNT * Ability0040___INTERVAL then
 					set s__Actor_want_destroy[this]=true
 				endif
 			endif
@@ -32502,95 +33174,57 @@ local integer this=f__arg_this
     set f__arg_this=this
    return true
 endfunction
-function sa__Ability0041__bullet_executeWave takes nothing returns boolean
+function sa__Ability0041___bullet_executeWave takes nothing returns boolean
 local integer this=f__arg_this
 local integer target=f__arg_integer1
 			call s__Missile_damageTarget(this,target)
-			call s__Effect_setDuration(s__Effect_create(Ability0041__EFFECT_PATH4 , sc__Object__get_x(target) , sc__Object__get_y(target) , sc__Object__get_z(target) + s__Object_pivot_z[target] , 0.),1.5)
+			call s__Effect_setDuration(s__Effect_create(Ability0041___EFFECT_PATH4 , sc__Object__get_x(target) , sc__Object__get_y(target) , sc__Object__get_z(target) + s__Object_pivot_z[target] , 0.),1.5)
    return true
 endfunction
-function sa__Ability0041__fire_onComplete takes nothing returns boolean
+function sa__Ability0041___fire_onComplete takes nothing returns boolean
 local integer this=f__arg_this
-			if s__Ability0041__fire_count[this] > 0 then
-				call s__Ability0041__fire_shot(this)
+			if s__Ability0041___fire_count[this] > 0 then
+				call s__Ability0041___fire_shot(this)
 			endif
    return true
 endfunction
-function sa__Ability0041__fire_periodicAction takes nothing returns boolean
+function sa__Ability0041___fire_periodicAction takes nothing returns boolean
 local integer this=f__arg_this
-			set s__Ability0041__fire_timeout2[this]=s__Ability0041__fire_timeout2[this] + TIMER_TICK
-			if s__Ability0041__fire_timeout2[this] >= Ability0041__INTERVAL then
-				if s__Ability0041__fire_count[this] > 0 then
-					call s__Ability0041__fire_shot(this)
+			call s__Effect_setPosition(s__Ability0041___fire_ef[this],sc__Object__get_x((s__Actor_actor[(this)])) , sc__Object__get_y((s__Actor_actor[(this)])) , 0.) // INLINED!!
+			call s__Effect_setPosition(s__Ability0041___fire_burst[this],(((sc__Object__get_x((s__Actor_actor[(this)])) )*1.0) + (( 100 )*1.0) * Cos((( s__Ability0041___fire_angle[this])*1.0) * bj_DEGTORAD)) , (((sc__Object__get_y((s__Actor_actor[(this)])) )*1.0) + (( 100 )*1.0) * Sin((( s__Ability0041___fire_angle[this])*1.0) * bj_DEGTORAD)) , 57.5) // INLINED!!
+			set s__Ability0041___fire_timeout2[this]=s__Ability0041___fire_timeout2[this] + TIMER_TICK
+			if s__Ability0041___fire_timeout2[this] >= Ability0041___INTERVAL then
+				if s__Ability0041___fire_count[this] > 0 then
+					call s__Ability0041___fire_shot(this)
 					call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((4.)*1.0)) // INLINED!!
 					call s__Unit_prototype_setAnim((s__Actor_actor[(this)]),"attack") // INLINED!!
 				endif
-				set s__Ability0041__fire_timeout2[this]=s__Ability0041__fire_timeout2[this] - Ability0041__INTERVAL
+				set s__Ability0041___fire_timeout2[this]=s__Ability0041___fire_timeout2[this] - Ability0041___INTERVAL
 			endif
    return true
 endfunction
-function sa__Ability0041__fire_onDestroy takes nothing returns boolean
+function sa__Ability0041___fire_onDestroy takes nothing returns boolean
 local integer this=f__arg_this
 			call SetUnitTimeScale((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), ((1.)*1.0)) // INLINED!!
-			call s__Effect_kill(s__Ability0041__fire_ef[this])
-			set s__Effect_want_remove[s__Ability0041__fire_burst[this]]=true
-			call sc__Object_deallocate(s__Ability0041__fire_burst[this])
-			call s__UnitActor_create((s__Actor_actor[(this)]) , 0 , 0. , 0. , 0 , Ability0041__BACKSWING , true) // INLINED!!
+			call s__Effect_kill(s__Ability0041___fire_ef[this])
+			set s__Effect_want_remove[s__Ability0041___fire_burst[this]]=true
+			call sc__Object_deallocate(s__Ability0041___fire_burst[this])
+			call s__UnitActor_create((s__Actor_actor[(this)]) , 0 , 0. , 0. , 0 , Ability0041___BACKSWING , true) // INLINED!!
     set f__arg_this=this
    return true
 endfunction
-function sa__Ability0041__prepare_onComplete takes nothing returns boolean
+function sa__Ability0041___prepare_onComplete takes nothing returns boolean
 local integer this=f__arg_this
-			call s__Ability0041__fire_create((s__Actor_actor[(this)]) , s__UnitActor_level[this] , s__Ability0041__prepare_a[this] , s__Ability0041__prepare_ef[this]) // INLINED!!
-			set s__Ability0041__prepare_ef[this]=0
+			call s__Ability0041___fire_create((s__Actor_actor[(this)]) , s__UnitActor_level[this] , s__Ability0041___prepare_a[this] , s__Ability0041___prepare_ef[this]) // INLINED!!
+			set s__Ability0041___prepare_ef[this]=0
    return true
 endfunction
-function sa__Ability0041__prepare_onDestroy takes nothing returns boolean
+function sa__Ability0041___prepare_onDestroy takes nothing returns boolean
 local integer this=f__arg_this
-			if s__Ability0041__prepare_ef[this] > 0 then
-				call sc__Object_deallocate(s__Ability0041__prepare_ef[this])
+			if s__Ability0041___prepare_ef[this] > 0 then
+				call sc__Object_deallocate(s__Ability0041___prepare_ef[this])
 			endif
-			set s__Ability0041__prepare_ef[this]=0
-    set f__arg_this=this
-   return true
-endfunction
-function sa__Ability0001_a2_onComplete takes nothing returns boolean
-local integer this=f__arg_this
-    local integer lh= s__Lightning_create("CLSB" , sc__Object__get_x(s__Ability0001_a2_effect_1[this]) , sc__Object__get_y(s__Ability0001_a2_effect_1[this]) , sc__Object__get_z(s__Ability0001_a2_effect_1[this]) , sc__Object__get_x(s__Ability0001_a2_effect_2[this]) , sc__Object__get_y(s__Ability0001_a2_effect_2[this]) , sc__Object__get_z(s__Ability0001_a2_effect_2[this]))
-    local integer lex= s__Ability0001_explosion__allocate((s__Actor_actor[((this))]) , sc__Object__get_x(s__Ability0001_a2_effect_1[this]) , sc__Object__get_y(s__Ability0001_a2_effect_1[this]) , sc__Object__get_x(s__Ability0001_a2_effect_2[this]) , sc__Object__get_y(s__Ability0001_a2_effect_2[this]) , Ability0001___BALL_RADIUS) // INLINED!!
-				call s__Lightning_setDuration(lh,0.25)
-				set s__Lightning_fade[lh]=3.
-				set s__Explosion_damage[lex]=( (s__Unit_prototype_getCarculatedStatValue(((s__Actor_actor[(this)])),STAT_TYPE_MAGICPOWER)) * Ability0001___DAMAGE_PER_MAGICPOWER ) * ( 1 + Ability0001___DAMAGE_PER_LEVEL * ( s__UnitActor_level[this] - 1 ) ) // INLINED!!
-				call s__Explosion_activate(lex)
-   return true
-endfunction
-function sa__Ability0001_a2_periodicAction takes nothing returns boolean
-local integer this=f__arg_this
-				if s__Actor_stage[this] == 0 then
-					if (IsUnitAlly((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(((s__Actor_actor[(this)])))]), s__Agent_INDEX_ORIGIN_HANDLE)), (GetLocalPlayer()))) then // INLINED!!
-						call s__Square_setLocalColor(s__Ability0001_a2_sq[this],0. , 1. , 0. , s__Line__Line_a[s__Ability0001_a2_sq[this]])
-					else
-						call s__Square_setLocalColor(s__Ability0001_a2_sq[this],1. , 0. , 0. , s__Line__Line_a[s__Ability0001_a2_sq[this]])
-					endif
-					call sc__Object__set_z(s__Ability0001_a2_effect_1[this],sc__Object__get_z(s__Ability0001_a2_effect_1[this]) + ( Ability0001___BALL_HEIGHT / Ability0001___BALL_UP ) * TIMER_TICK)
-					call sc__Object__set_z(s__Ability0001_a2_effect_2[this],sc__Object__get_z(s__Ability0001_a2_effect_1[this]))
-					call s__Effect_setAlpha(s__Ability0001_a2_effect_1[this],R2I(( s__Actor_timeout[this] / Ability0001___BALL_UP ) * 255))
-					call s__Effect_setAlpha(s__Ability0001_a2_effect_2[this],R2I(( s__Actor_timeout[this] / Ability0001___BALL_UP ) * 255))
-					if s__Actor_timeout[this] >= Ability0001___BALL_UP then
-						call s__Effect_setAlpha(s__Ability0001_a2_effect_1[this],255)
-						call s__Effect_setAlpha(s__Ability0001_a2_effect_2[this],255)
-						call sc__Object__set_z(s__Ability0001_a2_effect_1[this],Ability0001___BALL_HEIGHT)
-						call sc__Object__set_z(s__Ability0001_a2_effect_2[this],sc__Object__get_z(s__Ability0001_a2_effect_1[this]))
-						call s__Actor_stageNext(this)
-					endif
-				endif
-   return true
-endfunction
-function sa__Ability0001_a2_onDestroy takes nothing returns boolean
-local integer this=f__arg_this
-				call s__Effect_kill(s__Ability0001_a2_effect_1[this])
-				call s__Effect_kill(s__Ability0001_a2_effect_2[this])
-				call sc__Line__Line_deallocate(s__Ability0001_a2_sq[this])
+			set s__Ability0041___prepare_ef[this]=0
     set f__arg_this=this
    return true
 endfunction
@@ -32638,33 +33272,40 @@ local integer this=f__arg_this
 				call s__Circle_setFadeOutPoint(c,0 , 1.25)
    return true
 endfunction
-function sa__Ability0003___ball_periodicAction takes nothing returns boolean
+function sa__Ability0020___bullet_executeTarget takes nothing returns boolean
 local integer this=f__arg_this
-				call s__Effect_setPosition(s__Ability0003___ball_l[this],sc__Object__get_x(this) , sc__Object__get_y(this) , 5.)
+local integer target=f__arg_integer1
+				call s__Missile_damageTarget(this,target)
+				call s__Effect_setDuration(s__Effect_create(Ability0020___EFFECT_PATH2 , sc__Object__get_x(target) , sc__Object__get_y(target) , sc__Object__get_z(target) + s__Object_pivot_z[target] , 270),1.5)
    return true
 endfunction
-function sa__Ability0003___ball_executeTarget takes nothing returns boolean
+function sa__Ability0003__ball_periodicAction takes nothing returns boolean
+local integer this=f__arg_this
+				call s__Effect_setPosition(s__Ability0003__ball_l[this],sc__Object__get_x(this) , sc__Object__get_y(this) , 5.)
+   return true
+endfunction
+function sa__Ability0003__ball_executeTarget takes nothing returns boolean
 local integer this=f__arg_this
 local integer target=f__arg_integer1
 				call DoNothing()
    return true
 endfunction
-function sa__Ability0003___ball_afterExplosion takes nothing returns boolean
+function sa__Ability0003__ball_afterExplosion takes nothing returns boolean
 local integer this=f__arg_this
-    local integer c= s__Circle_create(sc__Object__get_x(this) , sc__Object__get_y(this) , 5. , Ability0003___EXPRAD)
+    local integer c= s__Circle_create(sc__Object__get_x(this) , sc__Object__get_y(this) , 5. , Ability0003__EXPRAD)
 				call s__Effect_setColor(c,255 , 153 , 0)
 				set s__Circle_alpha[c]=0.66
 				call s__Circle_setFadeOutPoint(c,0.25 , 0.75)
-				call s__Effect_setDuration(s__Effect_create(Ability0003___EFFECT_PATH2 , sc__Object__get_x(this) , sc__Object__get_y(this) , 0. , 0.),1.5)
-				call sc__Object_deallocate(s__Ability0003___ball_l[this])
-				set s__Ability0003___ball_l[this]=0
+				call s__Effect_setDuration(s__Effect_create(Ability0003__EFFECT_PATH2 , sc__Object__get_x(this) , sc__Object__get_y(this) , 0. , 0.),1.5)
+				call sc__Object_deallocate(s__Ability0003__ball_l[this])
+				set s__Ability0003__ball_l[this]=0
    return true
 endfunction
-function sa__Ability0003___ball_onDestroy takes nothing returns boolean
+function sa__Ability0003__ball_onDestroy takes nothing returns boolean
 local integer this=f__arg_this
-				if s__Ability0003___ball_l[this] != 0 then
-					call s__Circle_setFadeOutPoint(s__Ability0003___ball_l[this],0. , 1.5)
-					set s__Ability0003___ball_l[this]=0
+				if s__Ability0003__ball_l[this] != 0 then
+					call s__Circle_setFadeOutPoint(s__Ability0003__ball_l[this],0. , 1.5)
+					set s__Ability0003__ball_l[this]=0
 				endif
     set f__arg_this=this
    return true
@@ -32675,16 +33316,6 @@ local integer target=f__arg_integer1
 				if s__Missile_damageTarget(this,target) > 0. then
 					call s__Buff_add(s__Missile_owner[this] , target , Abilityu001___ID , Abilityu001___DURATION)
 				endif
-   return true
-endfunction
-function sa__Ability0008___arrow_executeTarget takes nothing returns boolean
-local integer this=f__arg_this
-local integer target=f__arg_integer1
-				if IsUnitInGroup((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(target)]), s__Agent_INDEX_ORIGIN_HANDLE)), s__Missile_group_wave[this]) then // INLINED!!
-					set s__Missile_damage[this]=s__Missile_damage[this] * Ability0008___DAMAGE_ADDITIONAL
-					set s__Missile_is_onhit[this]=false
-				endif
-				call s__Missile_damageTarget(this,target)
    return true
 endfunction
 function sa__Undead_isGuardianAlive takes nothing returns boolean
@@ -32844,9 +33475,29 @@ local integer this=f__arg_this
     set f__arg_this=this
    return true
 endfunction
+function sa__UndeadU001_init takes nothing returns boolean
+local integer this=f__arg_this
+			set s__Undead_acquire_range[this]=750.
+   return true
+endfunction
+function sa__UndeadU002_init takes nothing returns boolean
+local integer this=f__arg_this
+			set s__Undead_acquire_range[this]=750.
+   return true
+endfunction
 function sa__UndeadU003_init takes nothing returns boolean
 local integer this=f__arg_this
 			set s__Undead_acquire_range[this]=750.
+   return true
+endfunction
+function sa__Ability0008___arrow_executeTarget takes nothing returns boolean
+local integer this=f__arg_this
+local integer target=f__arg_integer1
+				if IsUnitInGroup((LoadUnitHandle(s__Agent_HASH, GetHandleId(s__Agent_origin_agent[(target)]), s__Agent_INDEX_ORIGIN_HANDLE)), s__Missile_group_wave[this]) then // INLINED!!
+					set s__Missile_damage[this]=s__Missile_damage[this] * Ability0008___DAMAGE_ADDITIONAL
+					set s__Missile_is_onhit[this]=false
+				endif
+				call s__Missile_damageTarget(this,target)
    return true
 endfunction
 function sa__UndeadU000_periodicAction takes nothing returns boolean
@@ -32878,18 +33529,8 @@ return true
 			endif
    return true
 endfunction
-function sa__UndeadU002_init takes nothing returns boolean
-local integer this=f__arg_this
-			set s__Undead_acquire_range[this]=750.
-   return true
-endfunction
-function sa__UndeadU001_init takes nothing returns boolean
-local integer this=f__arg_this
-			set s__Undead_acquire_range[this]=750.
-   return true
-endfunction
 
-function jasshelper__initstructs1699117953 takes nothing returns nothing
+function jasshelper__initstructs1774870843 takes nothing returns nothing
     set st__AbilityIndicator_setColor[1]=CreateTrigger()
     set st__AbilityIndicator_setColor[2]=st__AbilityIndicator_setColor[1]
     set st__AbilityIndicator_setColor[90]=st__AbilityIndicator_setColor[2]
@@ -32899,12 +33540,13 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__AbilityIndicator_setColor[135]=st__AbilityIndicator_setColor[2]
     set st__AbilityIndicator_setColor[147]=st__AbilityIndicator_setColor[2]
     set st__AbilityIndicator_setColor[157]=st__AbilityIndicator_setColor[2]
+    set st__AbilityIndicator_setColor[161]=st__AbilityIndicator_setColor[2]
     set st__AbilityIndicator_setColor[3]=st__AbilityIndicator_setColor[1]
     set st__AbilityIndicator_setColor[114]=st__AbilityIndicator_setColor[3]
-    set st__AbilityIndicator_setColor[164]=st__AbilityIndicator_setColor[3]
+    set st__AbilityIndicator_setColor[168]=st__AbilityIndicator_setColor[3]
     set st__AbilityIndicator_setColor[125]=st__AbilityIndicator_setColor[1]
     set st__AbilityIndicator_setColor[152]=st__AbilityIndicator_setColor[1]
-    set st__AbilityIndicator_setColor[162]=st__AbilityIndicator_setColor[1]
+    set st__AbilityIndicator_setColor[166]=st__AbilityIndicator_setColor[1]
     call TriggerAddCondition(st__AbilityIndicator_setColor[1],Condition( function sa__AbilityIndicator_setColor))
     call TriggerAddAction(st__AbilityIndicator_setColor[1], function sa__AbilityIndicator_setColor)
     set st__AbilityIndicator_refresh[1]=CreateTrigger()
@@ -32928,6 +33570,7 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__AbilityIndicator_refresh[135]=st__AbilityIndicator_refresh[2]
     set st__AbilityIndicator_refresh[147]=st__AbilityIndicator_refresh[2]
     set st__AbilityIndicator_refresh[157]=st__AbilityIndicator_refresh[2]
+    set st__AbilityIndicator_refresh[161]=st__AbilityIndicator_refresh[2]
     call TriggerAddCondition(st__AbilityIndicator_refresh[2],Condition( function sa__LineIndicator_refresh))
     call TriggerAddAction(st__AbilityIndicator_refresh[2], function sa__LineIndicator_refresh)
     set st__AbilityIndicator_show[2]=CreateTrigger()
@@ -32938,6 +33581,7 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__AbilityIndicator_show[135]=st__AbilityIndicator_show[2]
     set st__AbilityIndicator_show[147]=st__AbilityIndicator_show[2]
     set st__AbilityIndicator_show[157]=st__AbilityIndicator_show[2]
+    set st__AbilityIndicator_show[161]=st__AbilityIndicator_show[2]
     call TriggerAddCondition(st__AbilityIndicator_show[2],Condition( function sa__LineIndicator_show))
     call TriggerAddAction(st__AbilityIndicator_show[2], function sa__LineIndicator_show)
     set st__LineIndicator_create=CreateTrigger()
@@ -32950,6 +33594,7 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__AbilityIndicator_onDestroy[135]=st__AbilityIndicator_onDestroy[2]
     set st__AbilityIndicator_onDestroy[147]=st__AbilityIndicator_onDestroy[2]
     set st__AbilityIndicator_onDestroy[157]=st__AbilityIndicator_onDestroy[2]
+    set st__AbilityIndicator_onDestroy[161]=st__AbilityIndicator_onDestroy[2]
     call TriggerAddCondition(st__AbilityIndicator_onDestroy[2],Condition( function sa__LineIndicator_onDestroy))
     call TriggerAddCondition(st__AbilityIndicator_onDestroy[2],Condition( function sa__AbilityIndicator_onDestroy))
     set st__SectorIndicator_beforeRefresh[3]=CreateTrigger()
@@ -32957,19 +33602,19 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddAction(st__SectorIndicator_beforeRefresh[3], function sa__SectorIndicator_beforeRefresh)
     set st__AbilityIndicator_refresh[3]=CreateTrigger()
     set st__AbilityIndicator_refresh[114]=st__AbilityIndicator_refresh[3]
-    set st__AbilityIndicator_refresh[164]=st__AbilityIndicator_refresh[3]
+    set st__AbilityIndicator_refresh[168]=st__AbilityIndicator_refresh[3]
     call TriggerAddCondition(st__AbilityIndicator_refresh[3],Condition( function sa__SectorIndicator_refresh))
     call TriggerAddAction(st__AbilityIndicator_refresh[3], function sa__SectorIndicator_refresh)
     set st__AbilityIndicator_show[3]=CreateTrigger()
     set st__AbilityIndicator_show[114]=st__AbilityIndicator_show[3]
-    set st__AbilityIndicator_show[164]=st__AbilityIndicator_show[3]
+    set st__AbilityIndicator_show[168]=st__AbilityIndicator_show[3]
     call TriggerAddCondition(st__AbilityIndicator_show[3],Condition( function sa__SectorIndicator_show))
     call TriggerAddAction(st__AbilityIndicator_show[3], function sa__SectorIndicator_show)
     set st__SectorIndicator_create=CreateTrigger()
     call TriggerAddCondition(st__SectorIndicator_create,Condition( function sa__SectorIndicator_create))
     set st__AbilityIndicator_onDestroy[3]=CreateTrigger()
     set st__AbilityIndicator_onDestroy[114]=st__AbilityIndicator_onDestroy[3]
-    set st__AbilityIndicator_onDestroy[164]=st__AbilityIndicator_onDestroy[3]
+    set st__AbilityIndicator_onDestroy[168]=st__AbilityIndicator_onDestroy[3]
     call TriggerAddCondition(st__AbilityIndicator_onDestroy[3],Condition( function sa__SectorIndicator_onDestroy))
     call TriggerAddCondition(st__AbilityIndicator_onDestroy[3],Condition( function sa__AbilityIndicator_onDestroy))
     set st__Buff_addValue[6]=CreateTrigger()
@@ -33011,9 +33656,17 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Explosion_rangeFilter[127]=st__Explosion_rangeFilter[12]
     set st__Explosion_rangeFilter[143]=st__Explosion_rangeFilter[12]
     set st__Explosion_rangeFilter[150]=st__Explosion_rangeFilter[12]
-    set st__Explosion_rangeFilter[160]=st__Explosion_rangeFilter[12]
+    set st__Explosion_rangeFilter[164]=st__Explosion_rangeFilter[12]
     call TriggerAddCondition(st__Explosion_rangeFilter[12],Condition( function sa__Explosion_rangeFilter))
     call TriggerAddAction(st__Explosion_rangeFilter[12], function sa__Explosion_rangeFilter)
+    set st__Explosion_explosionFillUnits[12]=CreateTrigger()
+    set st__Explosion_explosionFillUnits[14]=st__Explosion_explosionFillUnits[12]
+    set st__Explosion_explosionFillUnits[127]=st__Explosion_explosionFillUnits[12]
+    set st__Explosion_explosionFillUnits[143]=st__Explosion_explosionFillUnits[12]
+    set st__Explosion_explosionFillUnits[150]=st__Explosion_explosionFillUnits[12]
+    set st__Explosion_explosionFillUnits[164]=st__Explosion_explosionFillUnits[12]
+    call TriggerAddCondition(st__Explosion_explosionFillUnits[12],Condition( function sa__Explosion_explosionFillUnits))
+    call TriggerAddAction(st__Explosion_explosionFillUnits[12], function sa__Explosion_explosionFillUnits)
     set st__Explosion_beforeExplosion[12]=CreateTrigger()
     set st__Explosion_beforeExplosion[13]=st__Explosion_beforeExplosion[12]
     set st__Explosion_beforeExplosion[92]=st__Explosion_beforeExplosion[13]
@@ -33031,7 +33684,7 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Explosion_afterExplosion[127]=st__Explosion_afterExplosion[12]
     set st__Explosion_afterExplosion[143]=st__Explosion_afterExplosion[12]
     set st__Explosion_afterExplosion[150]=st__Explosion_afterExplosion[12]
-    set st__Explosion_afterExplosion[160]=st__Explosion_afterExplosion[12]
+    set st__Explosion_afterExplosion[164]=st__Explosion_afterExplosion[12]
     call TriggerAddCondition(st__Explosion_afterExplosion[12],Condition( function sa__Explosion_afterExplosion))
     call TriggerAddAction(st__Explosion_afterExplosion[12], function sa__Explosion_afterExplosion)
     set st__Explosion_explosionFilterAdditional[12]=CreateTrigger()
@@ -33043,7 +33696,7 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Explosion_explosionFilterAdditional[127]=st__Explosion_explosionFilterAdditional[12]
     set st__Explosion_explosionFilterAdditional[143]=st__Explosion_explosionFilterAdditional[12]
     set st__Explosion_explosionFilterAdditional[150]=st__Explosion_explosionFilterAdditional[12]
-    set st__Explosion_explosionFilterAdditional[160]=st__Explosion_explosionFilterAdditional[12]
+    set st__Explosion_explosionFilterAdditional[164]=st__Explosion_explosionFilterAdditional[12]
     call TriggerAddCondition(st__Explosion_explosionFilterAdditional[12],Condition( function sa__Explosion_explosionFilterAdditional))
     call TriggerAddAction(st__Explosion_explosionFilterAdditional[12], function sa__Explosion_explosionFilterAdditional)
     set st__Explosion_executeExplosion[12]=CreateTrigger()
@@ -33061,6 +33714,12 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Explosion_onDestroy[14]=st__Explosion_onDestroy[12]
     set st__Explosion_onDestroy[127]=st__Explosion_onDestroy[12]
     call TriggerAddCondition(st__Explosion_onDestroy[12],Condition( function sa__Explosion_onDestroy))
+    set st__Explosion_explosionFillUnits[13]=CreateTrigger()
+    set st__Explosion_explosionFillUnits[92]=st__Explosion_explosionFillUnits[13]
+    set st__Explosion_explosionFillUnits[109]=st__Explosion_explosionFillUnits[13]
+    set st__Explosion_explosionFillUnits[133]=st__Explosion_explosionFillUnits[13]
+    call TriggerAddCondition(st__Explosion_explosionFillUnits[13],Condition( function sa__LineExplosion_explosionFillUnits))
+    call TriggerAddAction(st__Explosion_explosionFillUnits[13], function sa__LineExplosion_explosionFillUnits)
     set st__Explosion_rangeFilter[13]=CreateTrigger()
     set st__Explosion_rangeFilter[92]=st__Explosion_rangeFilter[13]
     set st__Explosion_rangeFilter[109]=st__Explosion_rangeFilter[13]
@@ -33072,38 +33731,38 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Explosion_rangeFilter[14]=CreateTrigger()
     call TriggerAddCondition(st__Explosion_rangeFilter[14],Condition( function sa__SectorExplosion_rangeFilter))
     call TriggerAddAction(st__Explosion_rangeFilter[14], function sa__SectorExplosion_rangeFilter)
-    set st__SectorIndicator_beforeRefresh[164]=CreateTrigger()
-    call TriggerAddCondition(st__SectorIndicator_beforeRefresh[164],Condition( function sa__Ability0041__ind_beforeRefresh))
-    call TriggerAddAction(st__SectorIndicator_beforeRefresh[164], function sa__Ability0041__ind_beforeRefresh)
+    set st__SectorIndicator_beforeRefresh[168]=CreateTrigger()
+    call TriggerAddCondition(st__SectorIndicator_beforeRefresh[168],Condition( function sa__Ability0041___ind_beforeRefresh))
+    call TriggerAddAction(st__SectorIndicator_beforeRefresh[168], function sa__Ability0041___ind_beforeRefresh)
     set st__Math_distancePoints=CreateTrigger()
     call TriggerAddCondition(st__Math_distancePoints,Condition( function sa__Math_distancePoints))
-    set st__AbilityIndicator_refresh[162]=CreateTrigger()
-    call TriggerAddCondition(st__AbilityIndicator_refresh[162],Condition( function sa__Ability0040__ind_refresh))
-    call TriggerAddAction(st__AbilityIndicator_refresh[162], function sa__Ability0040__ind_refresh)
-    set st__AbilityIndicator_show[162]=CreateTrigger()
-    call TriggerAddCondition(st__AbilityIndicator_show[162],Condition( function sa__Ability0040__ind_show))
-    call TriggerAddAction(st__AbilityIndicator_show[162], function sa__Ability0040__ind_show)
-    set st__AbilityIndicator_onDestroy[162]=CreateTrigger()
-    call TriggerAddCondition(st__AbilityIndicator_onDestroy[162],Condition( function sa__Ability0040__ind_onDestroy))
-    call TriggerAddCondition(st__AbilityIndicator_onDestroy[162],Condition( function sa__AbilityIndicator_onDestroy))
+    set st__AbilityIndicator_refresh[166]=CreateTrigger()
+    call TriggerAddCondition(st__AbilityIndicator_refresh[166],Condition( function sa__Ability0040___ind_refresh))
+    call TriggerAddAction(st__AbilityIndicator_refresh[166], function sa__Ability0040___ind_refresh)
+    set st__AbilityIndicator_show[166]=CreateTrigger()
+    call TriggerAddCondition(st__AbilityIndicator_show[166],Condition( function sa__Ability0040___ind_show))
+    call TriggerAddAction(st__AbilityIndicator_show[166], function sa__Ability0040___ind_show)
+    set st__AbilityIndicator_onDestroy[166]=CreateTrigger()
+    call TriggerAddCondition(st__AbilityIndicator_onDestroy[166],Condition( function sa__Ability0040___ind_onDestroy))
+    call TriggerAddCondition(st__AbilityIndicator_onDestroy[166],Condition( function sa__AbilityIndicator_onDestroy))
     set st__MissileGroup_onDestroy=CreateTrigger()
     call TriggerAddCondition(st__MissileGroup_onDestroy,Condition( function sa__MissileGroup_onDestroy))
-    set st__Explosion_beforeExplosion[160]=CreateTrigger()
-    call TriggerAddCondition(st__Explosion_beforeExplosion[160],Condition( function sa__Ability0040_explosion_beforeExplosion))
-    call TriggerAddAction(st__Explosion_beforeExplosion[160], function sa__Ability0040_explosion_beforeExplosion)
-    set st__Explosion_executeExplosion[160]=CreateTrigger()
-    call TriggerAddCondition(st__Explosion_executeExplosion[160],Condition( function sa__Ability0040_explosion_executeExplosion))
-    call TriggerAddAction(st__Explosion_executeExplosion[160], function sa__Ability0040_explosion_executeExplosion)
-    set st__Explosion_onDestroy[160]=CreateTrigger()
-    call TriggerAddCondition(st__Explosion_onDestroy[160],Condition( function sa__Ability0040_explosion_onDestroy))
-    call TriggerAddCondition(st__Explosion_onDestroy[160],Condition( function sa__Explosion_onDestroy))
-    set st__Ability0040__mystruct_onDestroy=CreateTrigger()
-    call TriggerAddCondition(st__Ability0040__mystruct_onDestroy,Condition( function sa__Ability0040__mystruct_onDestroy))
+    set st__Explosion_beforeExplosion[164]=CreateTrigger()
+    call TriggerAddCondition(st__Explosion_beforeExplosion[164],Condition( function sa__Ability0040_explosion_beforeExplosion))
+    call TriggerAddAction(st__Explosion_beforeExplosion[164], function sa__Ability0040_explosion_beforeExplosion)
+    set st__Explosion_executeExplosion[164]=CreateTrigger()
+    call TriggerAddCondition(st__Explosion_executeExplosion[164],Condition( function sa__Ability0040_explosion_executeExplosion))
+    call TriggerAddAction(st__Explosion_executeExplosion[164], function sa__Ability0040_explosion_executeExplosion)
+    set st__Explosion_onDestroy[164]=CreateTrigger()
+    call TriggerAddCondition(st__Explosion_onDestroy[164],Condition( function sa__Ability0040_explosion_onDestroy))
+    call TriggerAddCondition(st__Explosion_onDestroy[164],Condition( function sa__Explosion_onDestroy))
+    set st__Ability0040___mystruct_onDestroy=CreateTrigger()
+    call TriggerAddCondition(st__Ability0040___mystruct_onDestroy,Condition( function sa__Ability0040___mystruct_onDestroy))
     set st__Mover_onDestroy=CreateTrigger()
     call TriggerAddCondition(st__Mover_onDestroy,Condition( function sa__Mover_onDestroy))
-    set st__LineIndicator_beforeRefresh[157]=CreateTrigger()
-    call TriggerAddCondition(st__LineIndicator_beforeRefresh[157],Condition( function sa__Ability0030___ind_beforeRefresh))
-    call TriggerAddAction(st__LineIndicator_beforeRefresh[157], function sa__Ability0030___ind_beforeRefresh)
+    set st__LineIndicator_beforeRefresh[161]=CreateTrigger()
+    call TriggerAddCondition(st__LineIndicator_beforeRefresh[161],Condition( function sa__Ability0031___ind_beforeRefresh))
+    call TriggerAddAction(st__LineIndicator_beforeRefresh[161], function sa__Ability0031___ind_beforeRefresh)
     set st__Object__get_x[20]=CreateTrigger()
     set st__Object__get_x[4]=st__Object__get_x[20]
     set st__Object__get_x[55]=st__Object__get_x[20]
@@ -33465,7 +34124,8 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Object_setOrientation[145]=st__Object_setOrientation[78]
     set st__Object_setOrientation[154]=st__Object_setOrientation[78]
     set st__Object_setOrientation[155]=st__Object_setOrientation[78]
-    set st__Object_setOrientation[165]=st__Object_setOrientation[78]
+    set st__Object_setOrientation[159]=st__Object_setOrientation[78]
+    set st__Object_setOrientation[169]=st__Object_setOrientation[78]
     set st__Object_setOrientation[48]=st__Object_setOrientation[20]
     set st__Object_setOrientation[49]=st__Object_setOrientation[48]
     set st__Object_setOrientation[50]=st__Object_setOrientation[49]
@@ -33495,7 +34155,8 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Object_move[145]=st__Object_move[78]
     set st__Object_move[154]=st__Object_move[78]
     set st__Object_move[155]=st__Object_move[78]
-    set st__Object_move[165]=st__Object_move[78]
+    set st__Object_move[159]=st__Object_move[78]
+    set st__Object_move[169]=st__Object_move[78]
     set st__Object_move[48]=st__Object_move[20]
     set st__Object_move[49]=st__Object_move[48]
     set st__Object_move[50]=st__Object_move[49]
@@ -33507,6 +34168,21 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__Object_onDestroy[20],Condition( function sa__Object_onDestroy))
     set st__ProgressBar_onDestroy=CreateTrigger()
     call TriggerAddCondition(st__ProgressBar_onDestroy,Condition( function sa__ProgressBar_onDestroy))
+    set st__LineIndicator_beforeRefresh[157]=CreateTrigger()
+    call TriggerAddCondition(st__LineIndicator_beforeRefresh[157],Condition( function sa__Ability0030___ind_beforeRefresh))
+    call TriggerAddAction(st__LineIndicator_beforeRefresh[157], function sa__Ability0030___ind_beforeRefresh)
+    set st__Tombstone_onDestroy=CreateTrigger()
+    call TriggerAddCondition(st__Tombstone_onDestroy,Condition( function sa__Tombstone_onDestroy))
+    set st__TreeOfLife_addLevel=CreateTrigger()
+    call TriggerAddCondition(st__TreeOfLife_addLevel,Condition( function sa__TreeOfLife_addLevel))
+    set st__TreeOfLife_end=CreateTrigger()
+    call TriggerAddCondition(st__TreeOfLife_end,Condition( function sa__TreeOfLife_end))
+    set st__Trigger_getData=CreateTrigger()
+    call TriggerAddCondition(st__Trigger_getData,Condition( function sa__Trigger_getData))
+    set st__Trigger_new=CreateTrigger()
+    call TriggerAddCondition(st__Trigger_new,Condition( function sa__Trigger_new))
+    set st__Trigger_remove=CreateTrigger()
+    call TriggerAddCondition(st__Trigger_remove,Condition( function sa__Trigger_remove))
     set st__AbilityIndicator_refresh[152]=CreateTrigger()
     call TriggerAddCondition(st__AbilityIndicator_refresh[152],Condition( function sa__Ability0021___ind_refresh))
     call TriggerAddAction(st__AbilityIndicator_refresh[152], function sa__Ability0021___ind_refresh)
@@ -33516,8 +34192,8 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__AbilityIndicator_onDestroy[152]=CreateTrigger()
     call TriggerAddCondition(st__AbilityIndicator_onDestroy[152],Condition( function sa__Ability0021___ind_onDestroy))
     call TriggerAddCondition(st__AbilityIndicator_onDestroy[152],Condition( function sa__AbilityIndicator_onDestroy))
-    set st__Tombstone_onDestroy=CreateTrigger()
-    call TriggerAddCondition(st__Tombstone_onDestroy,Condition( function sa__Tombstone_onDestroy))
+    set st__ChinghoFrame_onDestroy=CreateTrigger()
+    call TriggerAddCondition(st__ChinghoFrame_onDestroy,Condition( function sa__ChinghoFrame_onDestroy))
     set st__Explosion_beforeExplosion[150]=CreateTrigger()
     call TriggerAddCondition(st__Explosion_beforeExplosion[150],Condition( function sa__Ability0021_explosion_beforeExplosion))
     call TriggerAddAction(st__Explosion_beforeExplosion[150], function sa__Ability0021_explosion_beforeExplosion)
@@ -33539,23 +34215,15 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Buff_onDestroy[149]=CreateTrigger()
     call TriggerAddCondition(st__Buff_onDestroy[149],Condition( function sa__Buff0021_main_onDestroy))
     call TriggerAddCondition(st__Buff_onDestroy[149],Condition( function sa__Buff_onDestroy))
-    set st__TreeOfLife_addLevel=CreateTrigger()
-    call TriggerAddCondition(st__TreeOfLife_addLevel,Condition( function sa__TreeOfLife_addLevel))
-    set st__TreeOfLife_end=CreateTrigger()
-    call TriggerAddCondition(st__TreeOfLife_end,Condition( function sa__TreeOfLife_end))
+    set st__IconFrame_onDestroy[28]=null
+    set st__IconFrame_onDestroy[29]=null
     set st__LineIndicator_beforeRefresh[147]=CreateTrigger()
     call TriggerAddCondition(st__LineIndicator_beforeRefresh[147],Condition( function sa__Ability0020___ind_beforeRefresh))
     call TriggerAddAction(st__LineIndicator_beforeRefresh[147], function sa__Ability0020___ind_beforeRefresh)
-    set st__Trigger_getData=CreateTrigger()
-    call TriggerAddCondition(st__Trigger_getData,Condition( function sa__Trigger_getData))
-    set st__Trigger_new=CreateTrigger()
-    call TriggerAddCondition(st__Trigger_new,Condition( function sa__Trigger_new))
-    set st__Trigger_remove=CreateTrigger()
-    call TriggerAddCondition(st__Trigger_remove,Condition( function sa__Trigger_remove))
-    set st__ChinghoFrame_onDestroy=CreateTrigger()
-    call TriggerAddCondition(st__ChinghoFrame_onDestroy,Condition( function sa__ChinghoFrame_onDestroy))
-    set st__IconFrame_onDestroy[28]=null
-    set st__IconFrame_onDestroy[29]=null
+    set st__IconFrame_onDestroy[30]=CreateTrigger()
+    call TriggerAddCondition(st__IconFrame_onDestroy[30],Condition( function sa__AbilityIcon_onDestroy))
+    set st__IconFrame_onDestroy[31]=CreateTrigger()
+    call TriggerAddCondition(st__IconFrame_onDestroy[31],Condition( function sa__StatIcon_onDestroy))
     set st__Explosion_executeExplosion[143]=CreateTrigger()
     call TriggerAddCondition(st__Explosion_executeExplosion[143],Condition( function sa__Abilityu011___exx_executeExplosion))
     call TriggerAddAction(st__Explosion_executeExplosion[143], function sa__Abilityu011___exx_executeExplosion)
@@ -33574,6 +34242,10 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Buff_onDestroy[142]=CreateTrigger()
     call TriggerAddCondition(st__Buff_onDestroy[142],Condition( function sa__Buffu011_main_onDestroy))
     call TriggerAddCondition(st__Buff_onDestroy[142],Condition( function sa__Buff_onDestroy))
+    set st__Closeable_close[32]=CreateTrigger()
+    call TriggerAddCondition(st__Closeable_close[32],Condition( function sa__Closeable_close))
+    call TriggerAddAction(st__Closeable_close[32], function sa__Closeable_close)
+    set st__Closeable_onDestroy[32]=null
     set st__Buff_update[140]=CreateTrigger()
     call TriggerAddCondition(st__Buff_update[140],Condition( function sa__Buffu010_main_update))
     call TriggerAddAction(st__Buff_update[140], function sa__Buffu010_main_update)
@@ -33583,31 +34255,20 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Buff_onDestroy[140]=CreateTrigger()
     call TriggerAddCondition(st__Buff_onDestroy[140],Condition( function sa__Buffu010_main_onDestroy))
     call TriggerAddCondition(st__Buff_onDestroy[140],Condition( function sa__Buff_onDestroy))
-    set st__IconFrame_onDestroy[30]=CreateTrigger()
-    call TriggerAddCondition(st__IconFrame_onDestroy[30],Condition( function sa__AbilityIcon_onDestroy))
-    set st__IconFrame_onDestroy[31]=CreateTrigger()
-    call TriggerAddCondition(st__IconFrame_onDestroy[31],Condition( function sa__StatIcon_onDestroy))
-    set st__Closeable_close[32]=CreateTrigger()
-    call TriggerAddCondition(st__Closeable_close[32],Condition( function sa__Closeable_close))
-    call TriggerAddAction(st__Closeable_close[32], function sa__Closeable_close)
-    set st__Closeable_onDestroy[32]=null
     set st__UI_onDestroy=CreateTrigger()
     call TriggerAddCondition(st__UI_onDestroy,Condition( function sa__UI_onDestroy))
-    set st__LineIndicator_beforeRefresh[135]=CreateTrigger()
-    call TriggerAddCondition(st__LineIndicator_beforeRefresh[135],Condition( function sa__Ability0015___ind_beforeRefresh))
-    call TriggerAddAction(st__LineIndicator_beforeRefresh[135], function sa__Ability0015___ind_beforeRefresh)
     set st__Ability_prototype_addValue[45]=CreateTrigger()
     set st__Ability_prototype_addValue[68]=st__Ability_prototype_addValue[45]
     set st__Ability_prototype_addValue[8]=st__Ability_prototype_addValue[68]
-    set st__Ability_prototype_addValue[169]=st__Ability_prototype_addValue[8]
-    set st__Ability_prototype_addValue[170]=st__Ability_prototype_addValue[8]
-    set st__Ability_prototype_addValue[171]=st__Ability_prototype_addValue[8]
-    set st__Ability_prototype_addValue[172]=st__Ability_prototype_addValue[8]
     set st__Ability_prototype_addValue[173]=st__Ability_prototype_addValue[8]
     set st__Ability_prototype_addValue[174]=st__Ability_prototype_addValue[8]
     set st__Ability_prototype_addValue[175]=st__Ability_prototype_addValue[8]
     set st__Ability_prototype_addValue[176]=st__Ability_prototype_addValue[8]
     set st__Ability_prototype_addValue[177]=st__Ability_prototype_addValue[8]
+    set st__Ability_prototype_addValue[178]=st__Ability_prototype_addValue[8]
+    set st__Ability_prototype_addValue[179]=st__Ability_prototype_addValue[8]
+    set st__Ability_prototype_addValue[180]=st__Ability_prototype_addValue[8]
+    set st__Ability_prototype_addValue[181]=st__Ability_prototype_addValue[8]
     set st__Ability_prototype_addValue[91]=st__Ability_prototype_addValue[68]
     set st__Ability_prototype_addValue[96]=st__Ability_prototype_addValue[68]
     set st__Ability_prototype_addValue[98]=st__Ability_prototype_addValue[68]
@@ -33629,8 +34290,9 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_addValue[148]=st__Ability_prototype_addValue[68]
     set st__Ability_prototype_addValue[153]=st__Ability_prototype_addValue[68]
     set st__Ability_prototype_addValue[158]=st__Ability_prototype_addValue[68]
-    set st__Ability_prototype_addValue[163]=st__Ability_prototype_addValue[68]
-    set st__Ability_prototype_addValue[168]=st__Ability_prototype_addValue[68]
+    set st__Ability_prototype_addValue[162]=st__Ability_prototype_addValue[68]
+    set st__Ability_prototype_addValue[167]=st__Ability_prototype_addValue[68]
+    set st__Ability_prototype_addValue[172]=st__Ability_prototype_addValue[68]
     call TriggerAddCondition(st__Ability_prototype_addValue[45],Condition( function sa__Ability_prototype_addValue))
     call TriggerAddAction(st__Ability_prototype_addValue[45], function sa__Ability_prototype_addValue)
     set st__Ability_prototype_addLevel[45]=CreateTrigger()
@@ -33639,15 +34301,15 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_addCount[45]=CreateTrigger()
     set st__Ability_prototype_addCount[68]=st__Ability_prototype_addCount[45]
     set st__Ability_prototype_addCount[8]=st__Ability_prototype_addCount[68]
-    set st__Ability_prototype_addCount[169]=st__Ability_prototype_addCount[8]
-    set st__Ability_prototype_addCount[170]=st__Ability_prototype_addCount[8]
-    set st__Ability_prototype_addCount[171]=st__Ability_prototype_addCount[8]
-    set st__Ability_prototype_addCount[172]=st__Ability_prototype_addCount[8]
     set st__Ability_prototype_addCount[173]=st__Ability_prototype_addCount[8]
     set st__Ability_prototype_addCount[174]=st__Ability_prototype_addCount[8]
     set st__Ability_prototype_addCount[175]=st__Ability_prototype_addCount[8]
     set st__Ability_prototype_addCount[176]=st__Ability_prototype_addCount[8]
     set st__Ability_prototype_addCount[177]=st__Ability_prototype_addCount[8]
+    set st__Ability_prototype_addCount[178]=st__Ability_prototype_addCount[8]
+    set st__Ability_prototype_addCount[179]=st__Ability_prototype_addCount[8]
+    set st__Ability_prototype_addCount[180]=st__Ability_prototype_addCount[8]
+    set st__Ability_prototype_addCount[181]=st__Ability_prototype_addCount[8]
     set st__Ability_prototype_addCount[91]=st__Ability_prototype_addCount[68]
     set st__Ability_prototype_addCount[96]=st__Ability_prototype_addCount[68]
     set st__Ability_prototype_addCount[98]=st__Ability_prototype_addCount[68]
@@ -33669,22 +34331,23 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_addCount[148]=st__Ability_prototype_addCount[68]
     set st__Ability_prototype_addCount[153]=st__Ability_prototype_addCount[68]
     set st__Ability_prototype_addCount[158]=st__Ability_prototype_addCount[68]
-    set st__Ability_prototype_addCount[163]=st__Ability_prototype_addCount[68]
-    set st__Ability_prototype_addCount[168]=st__Ability_prototype_addCount[68]
+    set st__Ability_prototype_addCount[162]=st__Ability_prototype_addCount[68]
+    set st__Ability_prototype_addCount[167]=st__Ability_prototype_addCount[68]
+    set st__Ability_prototype_addCount[172]=st__Ability_prototype_addCount[68]
     call TriggerAddCondition(st__Ability_prototype_addCount[45],Condition( function sa__Ability_prototype_addCount))
     call TriggerAddAction(st__Ability_prototype_addCount[45], function sa__Ability_prototype_addCount)
     set st__Ability_prototype_useCount[45]=CreateTrigger()
     set st__Ability_prototype_useCount[68]=st__Ability_prototype_useCount[45]
     set st__Ability_prototype_useCount[8]=st__Ability_prototype_useCount[68]
-    set st__Ability_prototype_useCount[169]=st__Ability_prototype_useCount[8]
-    set st__Ability_prototype_useCount[170]=st__Ability_prototype_useCount[8]
-    set st__Ability_prototype_useCount[171]=st__Ability_prototype_useCount[8]
-    set st__Ability_prototype_useCount[172]=st__Ability_prototype_useCount[8]
     set st__Ability_prototype_useCount[173]=st__Ability_prototype_useCount[8]
     set st__Ability_prototype_useCount[174]=st__Ability_prototype_useCount[8]
     set st__Ability_prototype_useCount[175]=st__Ability_prototype_useCount[8]
     set st__Ability_prototype_useCount[176]=st__Ability_prototype_useCount[8]
     set st__Ability_prototype_useCount[177]=st__Ability_prototype_useCount[8]
+    set st__Ability_prototype_useCount[178]=st__Ability_prototype_useCount[8]
+    set st__Ability_prototype_useCount[179]=st__Ability_prototype_useCount[8]
+    set st__Ability_prototype_useCount[180]=st__Ability_prototype_useCount[8]
+    set st__Ability_prototype_useCount[181]=st__Ability_prototype_useCount[8]
     set st__Ability_prototype_useCount[91]=st__Ability_prototype_useCount[68]
     set st__Ability_prototype_useCount[96]=st__Ability_prototype_useCount[68]
     set st__Ability_prototype_useCount[98]=st__Ability_prototype_useCount[68]
@@ -33706,8 +34369,9 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_useCount[148]=st__Ability_prototype_useCount[68]
     set st__Ability_prototype_useCount[153]=st__Ability_prototype_useCount[68]
     set st__Ability_prototype_useCount[158]=st__Ability_prototype_useCount[68]
-    set st__Ability_prototype_useCount[163]=st__Ability_prototype_useCount[68]
-    set st__Ability_prototype_useCount[168]=st__Ability_prototype_useCount[68]
+    set st__Ability_prototype_useCount[162]=st__Ability_prototype_useCount[68]
+    set st__Ability_prototype_useCount[167]=st__Ability_prototype_useCount[68]
+    set st__Ability_prototype_useCount[172]=st__Ability_prototype_useCount[68]
     call TriggerAddCondition(st__Ability_prototype_useCount[45],Condition( function sa__Ability_prototype_useCount))
     call TriggerAddAction(st__Ability_prototype_useCount[45], function sa__Ability_prototype_useCount)
     set st__Ability_prototype_getCarculatedManacost=CreateTrigger()
@@ -33715,15 +34379,15 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_getMaxCooldown[45]=CreateTrigger()
     set st__Ability_prototype_getMaxCooldown[68]=st__Ability_prototype_getMaxCooldown[45]
     set st__Ability_prototype_getMaxCooldown[8]=st__Ability_prototype_getMaxCooldown[68]
-    set st__Ability_prototype_getMaxCooldown[169]=st__Ability_prototype_getMaxCooldown[8]
-    set st__Ability_prototype_getMaxCooldown[170]=st__Ability_prototype_getMaxCooldown[8]
-    set st__Ability_prototype_getMaxCooldown[171]=st__Ability_prototype_getMaxCooldown[8]
-    set st__Ability_prototype_getMaxCooldown[172]=st__Ability_prototype_getMaxCooldown[8]
     set st__Ability_prototype_getMaxCooldown[173]=st__Ability_prototype_getMaxCooldown[8]
     set st__Ability_prototype_getMaxCooldown[174]=st__Ability_prototype_getMaxCooldown[8]
     set st__Ability_prototype_getMaxCooldown[175]=st__Ability_prototype_getMaxCooldown[8]
     set st__Ability_prototype_getMaxCooldown[176]=st__Ability_prototype_getMaxCooldown[8]
     set st__Ability_prototype_getMaxCooldown[177]=st__Ability_prototype_getMaxCooldown[8]
+    set st__Ability_prototype_getMaxCooldown[178]=st__Ability_prototype_getMaxCooldown[8]
+    set st__Ability_prototype_getMaxCooldown[179]=st__Ability_prototype_getMaxCooldown[8]
+    set st__Ability_prototype_getMaxCooldown[180]=st__Ability_prototype_getMaxCooldown[8]
+    set st__Ability_prototype_getMaxCooldown[181]=st__Ability_prototype_getMaxCooldown[8]
     set st__Ability_prototype_getMaxCooldown[91]=st__Ability_prototype_getMaxCooldown[68]
     set st__Ability_prototype_getMaxCooldown[96]=st__Ability_prototype_getMaxCooldown[68]
     set st__Ability_prototype_getMaxCooldown[98]=st__Ability_prototype_getMaxCooldown[68]
@@ -33744,8 +34408,9 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_getMaxCooldown[148]=st__Ability_prototype_getMaxCooldown[68]
     set st__Ability_prototype_getMaxCooldown[153]=st__Ability_prototype_getMaxCooldown[68]
     set st__Ability_prototype_getMaxCooldown[158]=st__Ability_prototype_getMaxCooldown[68]
-    set st__Ability_prototype_getMaxCooldown[163]=st__Ability_prototype_getMaxCooldown[68]
-    set st__Ability_prototype_getMaxCooldown[168]=st__Ability_prototype_getMaxCooldown[68]
+    set st__Ability_prototype_getMaxCooldown[162]=st__Ability_prototype_getMaxCooldown[68]
+    set st__Ability_prototype_getMaxCooldown[167]=st__Ability_prototype_getMaxCooldown[68]
+    set st__Ability_prototype_getMaxCooldown[172]=st__Ability_prototype_getMaxCooldown[68]
     call TriggerAddCondition(st__Ability_prototype_getMaxCooldown[45],Condition( function sa__Ability_prototype_getMaxCooldown))
     call TriggerAddAction(st__Ability_prototype_getMaxCooldown[45], function sa__Ability_prototype_getMaxCooldown)
     set st__Ability_prototype_getCarculatedMaxCooldown=CreateTrigger()
@@ -33756,29 +34421,29 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_relativeTooltip[45]=CreateTrigger()
     set st__Ability_prototype_relativeTooltip[68]=st__Ability_prototype_relativeTooltip[45]
     set st__Ability_prototype_relativeTooltip[8]=st__Ability_prototype_relativeTooltip[68]
-    set st__Ability_prototype_relativeTooltip[169]=st__Ability_prototype_relativeTooltip[8]
-    set st__Ability_prototype_relativeTooltip[170]=st__Ability_prototype_relativeTooltip[8]
-    set st__Ability_prototype_relativeTooltip[171]=st__Ability_prototype_relativeTooltip[8]
-    set st__Ability_prototype_relativeTooltip[172]=st__Ability_prototype_relativeTooltip[8]
     set st__Ability_prototype_relativeTooltip[173]=st__Ability_prototype_relativeTooltip[8]
     set st__Ability_prototype_relativeTooltip[174]=st__Ability_prototype_relativeTooltip[8]
     set st__Ability_prototype_relativeTooltip[175]=st__Ability_prototype_relativeTooltip[8]
     set st__Ability_prototype_relativeTooltip[176]=st__Ability_prototype_relativeTooltip[8]
     set st__Ability_prototype_relativeTooltip[177]=st__Ability_prototype_relativeTooltip[8]
+    set st__Ability_prototype_relativeTooltip[178]=st__Ability_prototype_relativeTooltip[8]
+    set st__Ability_prototype_relativeTooltip[179]=st__Ability_prototype_relativeTooltip[8]
+    set st__Ability_prototype_relativeTooltip[180]=st__Ability_prototype_relativeTooltip[8]
+    set st__Ability_prototype_relativeTooltip[181]=st__Ability_prototype_relativeTooltip[8]
     call TriggerAddCondition(st__Ability_prototype_relativeTooltip[45],Condition( function sa__Ability_prototype_relativeTooltip))
     call TriggerAddAction(st__Ability_prototype_relativeTooltip[45], function sa__Ability_prototype_relativeTooltip)
     set st__Ability_prototype_getCount[45]=CreateTrigger()
     set st__Ability_prototype_getCount[68]=st__Ability_prototype_getCount[45]
     set st__Ability_prototype_getCount[8]=st__Ability_prototype_getCount[68]
-    set st__Ability_prototype_getCount[169]=st__Ability_prototype_getCount[8]
-    set st__Ability_prototype_getCount[170]=st__Ability_prototype_getCount[8]
-    set st__Ability_prototype_getCount[171]=st__Ability_prototype_getCount[8]
-    set st__Ability_prototype_getCount[172]=st__Ability_prototype_getCount[8]
     set st__Ability_prototype_getCount[173]=st__Ability_prototype_getCount[8]
     set st__Ability_prototype_getCount[174]=st__Ability_prototype_getCount[8]
     set st__Ability_prototype_getCount[175]=st__Ability_prototype_getCount[8]
     set st__Ability_prototype_getCount[176]=st__Ability_prototype_getCount[8]
     set st__Ability_prototype_getCount[177]=st__Ability_prototype_getCount[8]
+    set st__Ability_prototype_getCount[178]=st__Ability_prototype_getCount[8]
+    set st__Ability_prototype_getCount[179]=st__Ability_prototype_getCount[8]
+    set st__Ability_prototype_getCount[180]=st__Ability_prototype_getCount[8]
+    set st__Ability_prototype_getCount[181]=st__Ability_prototype_getCount[8]
     set st__Ability_prototype_getCount[91]=st__Ability_prototype_getCount[68]
     set st__Ability_prototype_getCount[96]=st__Ability_prototype_getCount[68]
     set st__Ability_prototype_getCount[98]=st__Ability_prototype_getCount[68]
@@ -33800,22 +34465,23 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_getCount[148]=st__Ability_prototype_getCount[68]
     set st__Ability_prototype_getCount[153]=st__Ability_prototype_getCount[68]
     set st__Ability_prototype_getCount[158]=st__Ability_prototype_getCount[68]
-    set st__Ability_prototype_getCount[163]=st__Ability_prototype_getCount[68]
-    set st__Ability_prototype_getCount[168]=st__Ability_prototype_getCount[68]
+    set st__Ability_prototype_getCount[162]=st__Ability_prototype_getCount[68]
+    set st__Ability_prototype_getCount[167]=st__Ability_prototype_getCount[68]
+    set st__Ability_prototype_getCount[172]=st__Ability_prototype_getCount[68]
     call TriggerAddCondition(st__Ability_prototype_getCount[45],Condition( function sa__Ability_prototype_getCount))
     call TriggerAddAction(st__Ability_prototype_getCount[45], function sa__Ability_prototype_getCount)
     set st__Ability_prototype_onUnlink[45]=CreateTrigger()
     set st__Ability_prototype_onUnlink[68]=st__Ability_prototype_onUnlink[45]
     set st__Ability_prototype_onUnlink[8]=st__Ability_prototype_onUnlink[68]
-    set st__Ability_prototype_onUnlink[169]=st__Ability_prototype_onUnlink[8]
-    set st__Ability_prototype_onUnlink[170]=st__Ability_prototype_onUnlink[8]
-    set st__Ability_prototype_onUnlink[171]=st__Ability_prototype_onUnlink[8]
-    set st__Ability_prototype_onUnlink[172]=st__Ability_prototype_onUnlink[8]
     set st__Ability_prototype_onUnlink[173]=st__Ability_prototype_onUnlink[8]
     set st__Ability_prototype_onUnlink[174]=st__Ability_prototype_onUnlink[8]
     set st__Ability_prototype_onUnlink[175]=st__Ability_prototype_onUnlink[8]
     set st__Ability_prototype_onUnlink[176]=st__Ability_prototype_onUnlink[8]
     set st__Ability_prototype_onUnlink[177]=st__Ability_prototype_onUnlink[8]
+    set st__Ability_prototype_onUnlink[178]=st__Ability_prototype_onUnlink[8]
+    set st__Ability_prototype_onUnlink[179]=st__Ability_prototype_onUnlink[8]
+    set st__Ability_prototype_onUnlink[180]=st__Ability_prototype_onUnlink[8]
+    set st__Ability_prototype_onUnlink[181]=st__Ability_prototype_onUnlink[8]
     set st__Ability_prototype_onUnlink[91]=st__Ability_prototype_onUnlink[68]
     set st__Ability_prototype_onUnlink[96]=st__Ability_prototype_onUnlink[68]
     set st__Ability_prototype_onUnlink[98]=st__Ability_prototype_onUnlink[68]
@@ -33837,22 +34503,23 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_onUnlink[148]=st__Ability_prototype_onUnlink[68]
     set st__Ability_prototype_onUnlink[153]=st__Ability_prototype_onUnlink[68]
     set st__Ability_prototype_onUnlink[158]=st__Ability_prototype_onUnlink[68]
-    set st__Ability_prototype_onUnlink[163]=st__Ability_prototype_onUnlink[68]
-    set st__Ability_prototype_onUnlink[168]=st__Ability_prototype_onUnlink[68]
+    set st__Ability_prototype_onUnlink[162]=st__Ability_prototype_onUnlink[68]
+    set st__Ability_prototype_onUnlink[167]=st__Ability_prototype_onUnlink[68]
+    set st__Ability_prototype_onUnlink[172]=st__Ability_prototype_onUnlink[68]
     call TriggerAddCondition(st__Ability_prototype_onUnlink[45],Condition( function sa__Ability_prototype_onUnlink))
     call TriggerAddAction(st__Ability_prototype_onUnlink[45], function sa__Ability_prototype_onUnlink)
     set st__Ability_prototype_basicAttack[45]=CreateTrigger()
     set st__Ability_prototype_basicAttack[68]=st__Ability_prototype_basicAttack[45]
     set st__Ability_prototype_basicAttack[8]=st__Ability_prototype_basicAttack[68]
-    set st__Ability_prototype_basicAttack[169]=st__Ability_prototype_basicAttack[8]
-    set st__Ability_prototype_basicAttack[170]=st__Ability_prototype_basicAttack[8]
-    set st__Ability_prototype_basicAttack[171]=st__Ability_prototype_basicAttack[8]
-    set st__Ability_prototype_basicAttack[172]=st__Ability_prototype_basicAttack[8]
     set st__Ability_prototype_basicAttack[173]=st__Ability_prototype_basicAttack[8]
     set st__Ability_prototype_basicAttack[174]=st__Ability_prototype_basicAttack[8]
     set st__Ability_prototype_basicAttack[175]=st__Ability_prototype_basicAttack[8]
     set st__Ability_prototype_basicAttack[176]=st__Ability_prototype_basicAttack[8]
     set st__Ability_prototype_basicAttack[177]=st__Ability_prototype_basicAttack[8]
+    set st__Ability_prototype_basicAttack[178]=st__Ability_prototype_basicAttack[8]
+    set st__Ability_prototype_basicAttack[179]=st__Ability_prototype_basicAttack[8]
+    set st__Ability_prototype_basicAttack[180]=st__Ability_prototype_basicAttack[8]
+    set st__Ability_prototype_basicAttack[181]=st__Ability_prototype_basicAttack[8]
     set st__Ability_prototype_basicAttack[91]=st__Ability_prototype_basicAttack[68]
     set st__Ability_prototype_basicAttack[96]=st__Ability_prototype_basicAttack[68]
     set st__Ability_prototype_basicAttack[102]=st__Ability_prototype_basicAttack[68]
@@ -33871,22 +34538,23 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_basicAttack[148]=st__Ability_prototype_basicAttack[68]
     set st__Ability_prototype_basicAttack[153]=st__Ability_prototype_basicAttack[68]
     set st__Ability_prototype_basicAttack[158]=st__Ability_prototype_basicAttack[68]
-    set st__Ability_prototype_basicAttack[163]=st__Ability_prototype_basicAttack[68]
-    set st__Ability_prototype_basicAttack[168]=st__Ability_prototype_basicAttack[68]
+    set st__Ability_prototype_basicAttack[162]=st__Ability_prototype_basicAttack[68]
+    set st__Ability_prototype_basicAttack[167]=st__Ability_prototype_basicAttack[68]
+    set st__Ability_prototype_basicAttack[172]=st__Ability_prototype_basicAttack[68]
     call TriggerAddCondition(st__Ability_prototype_basicAttack[45],Condition( function sa__Ability_prototype_basicAttack))
     call TriggerAddAction(st__Ability_prototype_basicAttack[45], function sa__Ability_prototype_basicAttack)
     set st__Ability_prototype_execute[45]=CreateTrigger()
     set st__Ability_prototype_execute[68]=st__Ability_prototype_execute[45]
     set st__Ability_prototype_execute[8]=st__Ability_prototype_execute[68]
-    set st__Ability_prototype_execute[169]=st__Ability_prototype_execute[8]
-    set st__Ability_prototype_execute[170]=st__Ability_prototype_execute[8]
-    set st__Ability_prototype_execute[171]=st__Ability_prototype_execute[8]
-    set st__Ability_prototype_execute[172]=st__Ability_prototype_execute[8]
     set st__Ability_prototype_execute[173]=st__Ability_prototype_execute[8]
     set st__Ability_prototype_execute[174]=st__Ability_prototype_execute[8]
     set st__Ability_prototype_execute[175]=st__Ability_prototype_execute[8]
     set st__Ability_prototype_execute[176]=st__Ability_prototype_execute[8]
     set st__Ability_prototype_execute[177]=st__Ability_prototype_execute[8]
+    set st__Ability_prototype_execute[178]=st__Ability_prototype_execute[8]
+    set st__Ability_prototype_execute[179]=st__Ability_prototype_execute[8]
+    set st__Ability_prototype_execute[180]=st__Ability_prototype_execute[8]
+    set st__Ability_prototype_execute[181]=st__Ability_prototype_execute[8]
     set st__Ability_prototype_execute[98]=st__Ability_prototype_execute[68]
     set st__Ability_prototype_execute[121]=st__Ability_prototype_execute[68]
     set st__Ability_prototype_execute[132]=st__Ability_prototype_execute[68]
@@ -33899,15 +34567,15 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_targetFilterAdditional[45]=CreateTrigger()
     set st__Ability_prototype_targetFilterAdditional[68]=st__Ability_prototype_targetFilterAdditional[45]
     set st__Ability_prototype_targetFilterAdditional[8]=st__Ability_prototype_targetFilterAdditional[68]
-    set st__Ability_prototype_targetFilterAdditional[169]=st__Ability_prototype_targetFilterAdditional[8]
-    set st__Ability_prototype_targetFilterAdditional[170]=st__Ability_prototype_targetFilterAdditional[8]
-    set st__Ability_prototype_targetFilterAdditional[171]=st__Ability_prototype_targetFilterAdditional[8]
-    set st__Ability_prototype_targetFilterAdditional[172]=st__Ability_prototype_targetFilterAdditional[8]
     set st__Ability_prototype_targetFilterAdditional[173]=st__Ability_prototype_targetFilterAdditional[8]
     set st__Ability_prototype_targetFilterAdditional[174]=st__Ability_prototype_targetFilterAdditional[8]
     set st__Ability_prototype_targetFilterAdditional[175]=st__Ability_prototype_targetFilterAdditional[8]
     set st__Ability_prototype_targetFilterAdditional[176]=st__Ability_prototype_targetFilterAdditional[8]
     set st__Ability_prototype_targetFilterAdditional[177]=st__Ability_prototype_targetFilterAdditional[8]
+    set st__Ability_prototype_targetFilterAdditional[178]=st__Ability_prototype_targetFilterAdditional[8]
+    set st__Ability_prototype_targetFilterAdditional[179]=st__Ability_prototype_targetFilterAdditional[8]
+    set st__Ability_prototype_targetFilterAdditional[180]=st__Ability_prototype_targetFilterAdditional[8]
+    set st__Ability_prototype_targetFilterAdditional[181]=st__Ability_prototype_targetFilterAdditional[8]
     set st__Ability_prototype_targetFilterAdditional[91]=st__Ability_prototype_targetFilterAdditional[68]
     set st__Ability_prototype_targetFilterAdditional[96]=st__Ability_prototype_targetFilterAdditional[68]
     set st__Ability_prototype_targetFilterAdditional[98]=st__Ability_prototype_targetFilterAdditional[68]
@@ -33928,22 +34596,23 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_targetFilterAdditional[148]=st__Ability_prototype_targetFilterAdditional[68]
     set st__Ability_prototype_targetFilterAdditional[153]=st__Ability_prototype_targetFilterAdditional[68]
     set st__Ability_prototype_targetFilterAdditional[158]=st__Ability_prototype_targetFilterAdditional[68]
-    set st__Ability_prototype_targetFilterAdditional[163]=st__Ability_prototype_targetFilterAdditional[68]
-    set st__Ability_prototype_targetFilterAdditional[168]=st__Ability_prototype_targetFilterAdditional[68]
+    set st__Ability_prototype_targetFilterAdditional[162]=st__Ability_prototype_targetFilterAdditional[68]
+    set st__Ability_prototype_targetFilterAdditional[167]=st__Ability_prototype_targetFilterAdditional[68]
+    set st__Ability_prototype_targetFilterAdditional[172]=st__Ability_prototype_targetFilterAdditional[68]
     call TriggerAddCondition(st__Ability_prototype_targetFilterAdditional[45],Condition( function sa__Ability_prototype_targetFilterAdditional))
     call TriggerAddAction(st__Ability_prototype_targetFilterAdditional[45], function sa__Ability_prototype_targetFilterAdditional)
     set st__Ability_prototype_useFilterAdditional[45]=CreateTrigger()
     set st__Ability_prototype_useFilterAdditional[68]=st__Ability_prototype_useFilterAdditional[45]
     set st__Ability_prototype_useFilterAdditional[8]=st__Ability_prototype_useFilterAdditional[68]
-    set st__Ability_prototype_useFilterAdditional[169]=st__Ability_prototype_useFilterAdditional[8]
-    set st__Ability_prototype_useFilterAdditional[170]=st__Ability_prototype_useFilterAdditional[8]
-    set st__Ability_prototype_useFilterAdditional[171]=st__Ability_prototype_useFilterAdditional[8]
-    set st__Ability_prototype_useFilterAdditional[172]=st__Ability_prototype_useFilterAdditional[8]
     set st__Ability_prototype_useFilterAdditional[173]=st__Ability_prototype_useFilterAdditional[8]
     set st__Ability_prototype_useFilterAdditional[174]=st__Ability_prototype_useFilterAdditional[8]
     set st__Ability_prototype_useFilterAdditional[175]=st__Ability_prototype_useFilterAdditional[8]
     set st__Ability_prototype_useFilterAdditional[176]=st__Ability_prototype_useFilterAdditional[8]
     set st__Ability_prototype_useFilterAdditional[177]=st__Ability_prototype_useFilterAdditional[8]
+    set st__Ability_prototype_useFilterAdditional[178]=st__Ability_prototype_useFilterAdditional[8]
+    set st__Ability_prototype_useFilterAdditional[179]=st__Ability_prototype_useFilterAdditional[8]
+    set st__Ability_prototype_useFilterAdditional[180]=st__Ability_prototype_useFilterAdditional[8]
+    set st__Ability_prototype_useFilterAdditional[181]=st__Ability_prototype_useFilterAdditional[8]
     set st__Ability_prototype_useFilterAdditional[91]=st__Ability_prototype_useFilterAdditional[68]
     set st__Ability_prototype_useFilterAdditional[96]=st__Ability_prototype_useFilterAdditional[68]
     set st__Ability_prototype_useFilterAdditional[98]=st__Ability_prototype_useFilterAdditional[68]
@@ -33963,8 +34632,9 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_useFilterAdditional[148]=st__Ability_prototype_useFilterAdditional[68]
     set st__Ability_prototype_useFilterAdditional[153]=st__Ability_prototype_useFilterAdditional[68]
     set st__Ability_prototype_useFilterAdditional[158]=st__Ability_prototype_useFilterAdditional[68]
-    set st__Ability_prototype_useFilterAdditional[163]=st__Ability_prototype_useFilterAdditional[68]
-    set st__Ability_prototype_useFilterAdditional[168]=st__Ability_prototype_useFilterAdditional[68]
+    set st__Ability_prototype_useFilterAdditional[162]=st__Ability_prototype_useFilterAdditional[68]
+    set st__Ability_prototype_useFilterAdditional[167]=st__Ability_prototype_useFilterAdditional[68]
+    set st__Ability_prototype_useFilterAdditional[172]=st__Ability_prototype_useFilterAdditional[68]
     call TriggerAddCondition(st__Ability_prototype_useFilterAdditional[45],Condition( function sa__Ability_prototype_useFilterAdditional))
     call TriggerAddAction(st__Ability_prototype_useFilterAdditional[45], function sa__Ability_prototype_useFilterAdditional)
     set st__Ability_prototype_useRequest=CreateTrigger()
@@ -33977,15 +34647,15 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_update[45]=CreateTrigger()
     set st__Ability_prototype_update[68]=st__Ability_prototype_update[45]
     set st__Ability_prototype_update[8]=st__Ability_prototype_update[68]
-    set st__Ability_prototype_update[169]=st__Ability_prototype_update[8]
-    set st__Ability_prototype_update[170]=st__Ability_prototype_update[8]
-    set st__Ability_prototype_update[171]=st__Ability_prototype_update[8]
-    set st__Ability_prototype_update[172]=st__Ability_prototype_update[8]
     set st__Ability_prototype_update[173]=st__Ability_prototype_update[8]
     set st__Ability_prototype_update[174]=st__Ability_prototype_update[8]
     set st__Ability_prototype_update[175]=st__Ability_prototype_update[8]
     set st__Ability_prototype_update[176]=st__Ability_prototype_update[8]
     set st__Ability_prototype_update[177]=st__Ability_prototype_update[8]
+    set st__Ability_prototype_update[178]=st__Ability_prototype_update[8]
+    set st__Ability_prototype_update[179]=st__Ability_prototype_update[8]
+    set st__Ability_prototype_update[180]=st__Ability_prototype_update[8]
+    set st__Ability_prototype_update[181]=st__Ability_prototype_update[8]
     set st__Ability_prototype_update[91]=st__Ability_prototype_update[68]
     set st__Ability_prototype_update[96]=st__Ability_prototype_update[68]
     set st__Ability_prototype_update[98]=st__Ability_prototype_update[68]
@@ -34006,8 +34676,9 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_update[148]=st__Ability_prototype_update[68]
     set st__Ability_prototype_update[153]=st__Ability_prototype_update[68]
     set st__Ability_prototype_update[158]=st__Ability_prototype_update[68]
-    set st__Ability_prototype_update[163]=st__Ability_prototype_update[68]
-    set st__Ability_prototype_update[168]=st__Ability_prototype_update[68]
+    set st__Ability_prototype_update[162]=st__Ability_prototype_update[68]
+    set st__Ability_prototype_update[167]=st__Ability_prototype_update[68]
+    set st__Ability_prototype_update[172]=st__Ability_prototype_update[68]
     call TriggerAddCondition(st__Ability_prototype_update[45],Condition( function sa__Ability_prototype_update))
     call TriggerAddAction(st__Ability_prototype_update[45], function sa__Ability_prototype_update)
     set st__Ability_prototype_pressRequest=CreateTrigger()
@@ -34017,15 +34688,15 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_onRelease[45]=CreateTrigger()
     set st__Ability_prototype_onRelease[68]=st__Ability_prototype_onRelease[45]
     set st__Ability_prototype_onRelease[8]=st__Ability_prototype_onRelease[68]
-    set st__Ability_prototype_onRelease[169]=st__Ability_prototype_onRelease[8]
-    set st__Ability_prototype_onRelease[170]=st__Ability_prototype_onRelease[8]
-    set st__Ability_prototype_onRelease[171]=st__Ability_prototype_onRelease[8]
-    set st__Ability_prototype_onRelease[172]=st__Ability_prototype_onRelease[8]
     set st__Ability_prototype_onRelease[173]=st__Ability_prototype_onRelease[8]
     set st__Ability_prototype_onRelease[174]=st__Ability_prototype_onRelease[8]
     set st__Ability_prototype_onRelease[175]=st__Ability_prototype_onRelease[8]
     set st__Ability_prototype_onRelease[176]=st__Ability_prototype_onRelease[8]
     set st__Ability_prototype_onRelease[177]=st__Ability_prototype_onRelease[8]
+    set st__Ability_prototype_onRelease[178]=st__Ability_prototype_onRelease[8]
+    set st__Ability_prototype_onRelease[179]=st__Ability_prototype_onRelease[8]
+    set st__Ability_prototype_onRelease[180]=st__Ability_prototype_onRelease[8]
+    set st__Ability_prototype_onRelease[181]=st__Ability_prototype_onRelease[8]
     set st__Ability_prototype_onRelease[91]=st__Ability_prototype_onRelease[68]
     set st__Ability_prototype_onRelease[96]=st__Ability_prototype_onRelease[68]
     set st__Ability_prototype_onRelease[98]=st__Ability_prototype_onRelease[68]
@@ -34046,22 +34717,23 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_onRelease[148]=st__Ability_prototype_onRelease[68]
     set st__Ability_prototype_onRelease[153]=st__Ability_prototype_onRelease[68]
     set st__Ability_prototype_onRelease[158]=st__Ability_prototype_onRelease[68]
-    set st__Ability_prototype_onRelease[163]=st__Ability_prototype_onRelease[68]
-    set st__Ability_prototype_onRelease[168]=st__Ability_prototype_onRelease[68]
+    set st__Ability_prototype_onRelease[162]=st__Ability_prototype_onRelease[68]
+    set st__Ability_prototype_onRelease[167]=st__Ability_prototype_onRelease[68]
+    set st__Ability_prototype_onRelease[172]=st__Ability_prototype_onRelease[68]
     call TriggerAddCondition(st__Ability_prototype_onRelease[45],Condition( function sa__Ability_prototype_onRelease))
     call TriggerAddAction(st__Ability_prototype_onRelease[45], function sa__Ability_prototype_onRelease)
     set st__Ability_prototype_beforeRelease[45]=CreateTrigger()
     set st__Ability_prototype_beforeRelease[68]=st__Ability_prototype_beforeRelease[45]
     set st__Ability_prototype_beforeRelease[8]=st__Ability_prototype_beforeRelease[68]
-    set st__Ability_prototype_beforeRelease[169]=st__Ability_prototype_beforeRelease[8]
-    set st__Ability_prototype_beforeRelease[170]=st__Ability_prototype_beforeRelease[8]
-    set st__Ability_prototype_beforeRelease[171]=st__Ability_prototype_beforeRelease[8]
-    set st__Ability_prototype_beforeRelease[172]=st__Ability_prototype_beforeRelease[8]
     set st__Ability_prototype_beforeRelease[173]=st__Ability_prototype_beforeRelease[8]
     set st__Ability_prototype_beforeRelease[174]=st__Ability_prototype_beforeRelease[8]
     set st__Ability_prototype_beforeRelease[175]=st__Ability_prototype_beforeRelease[8]
     set st__Ability_prototype_beforeRelease[176]=st__Ability_prototype_beforeRelease[8]
     set st__Ability_prototype_beforeRelease[177]=st__Ability_prototype_beforeRelease[8]
+    set st__Ability_prototype_beforeRelease[178]=st__Ability_prototype_beforeRelease[8]
+    set st__Ability_prototype_beforeRelease[179]=st__Ability_prototype_beforeRelease[8]
+    set st__Ability_prototype_beforeRelease[180]=st__Ability_prototype_beforeRelease[8]
+    set st__Ability_prototype_beforeRelease[181]=st__Ability_prototype_beforeRelease[8]
     set st__Ability_prototype_beforeRelease[91]=st__Ability_prototype_beforeRelease[68]
     set st__Ability_prototype_beforeRelease[96]=st__Ability_prototype_beforeRelease[68]
     set st__Ability_prototype_beforeRelease[98]=st__Ability_prototype_beforeRelease[68]
@@ -34080,22 +34752,23 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_beforeRelease[148]=st__Ability_prototype_beforeRelease[68]
     set st__Ability_prototype_beforeRelease[153]=st__Ability_prototype_beforeRelease[68]
     set st__Ability_prototype_beforeRelease[158]=st__Ability_prototype_beforeRelease[68]
-    set st__Ability_prototype_beforeRelease[163]=st__Ability_prototype_beforeRelease[68]
-    set st__Ability_prototype_beforeRelease[168]=st__Ability_prototype_beforeRelease[68]
+    set st__Ability_prototype_beforeRelease[162]=st__Ability_prototype_beforeRelease[68]
+    set st__Ability_prototype_beforeRelease[167]=st__Ability_prototype_beforeRelease[68]
+    set st__Ability_prototype_beforeRelease[172]=st__Ability_prototype_beforeRelease[68]
     call TriggerAddCondition(st__Ability_prototype_beforeRelease[45],Condition( function sa__Ability_prototype_beforeRelease))
     call TriggerAddAction(st__Ability_prototype_beforeRelease[45], function sa__Ability_prototype_beforeRelease)
     set st__Ability_prototype_onKeyboard[45]=CreateTrigger()
     set st__Ability_prototype_onKeyboard[68]=st__Ability_prototype_onKeyboard[45]
     set st__Ability_prototype_onKeyboard[8]=st__Ability_prototype_onKeyboard[68]
-    set st__Ability_prototype_onKeyboard[169]=st__Ability_prototype_onKeyboard[8]
-    set st__Ability_prototype_onKeyboard[170]=st__Ability_prototype_onKeyboard[8]
-    set st__Ability_prototype_onKeyboard[171]=st__Ability_prototype_onKeyboard[8]
-    set st__Ability_prototype_onKeyboard[172]=st__Ability_prototype_onKeyboard[8]
     set st__Ability_prototype_onKeyboard[173]=st__Ability_prototype_onKeyboard[8]
     set st__Ability_prototype_onKeyboard[174]=st__Ability_prototype_onKeyboard[8]
     set st__Ability_prototype_onKeyboard[175]=st__Ability_prototype_onKeyboard[8]
     set st__Ability_prototype_onKeyboard[176]=st__Ability_prototype_onKeyboard[8]
     set st__Ability_prototype_onKeyboard[177]=st__Ability_prototype_onKeyboard[8]
+    set st__Ability_prototype_onKeyboard[178]=st__Ability_prototype_onKeyboard[8]
+    set st__Ability_prototype_onKeyboard[179]=st__Ability_prototype_onKeyboard[8]
+    set st__Ability_prototype_onKeyboard[180]=st__Ability_prototype_onKeyboard[8]
+    set st__Ability_prototype_onKeyboard[181]=st__Ability_prototype_onKeyboard[8]
     set st__Ability_prototype_onKeyboard[91]=st__Ability_prototype_onKeyboard[68]
     set st__Ability_prototype_onKeyboard[96]=st__Ability_prototype_onKeyboard[68]
     set st__Ability_prototype_onKeyboard[98]=st__Ability_prototype_onKeyboard[68]
@@ -34117,22 +34790,23 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_onKeyboard[148]=st__Ability_prototype_onKeyboard[68]
     set st__Ability_prototype_onKeyboard[153]=st__Ability_prototype_onKeyboard[68]
     set st__Ability_prototype_onKeyboard[158]=st__Ability_prototype_onKeyboard[68]
-    set st__Ability_prototype_onKeyboard[163]=st__Ability_prototype_onKeyboard[68]
-    set st__Ability_prototype_onKeyboard[168]=st__Ability_prototype_onKeyboard[68]
+    set st__Ability_prototype_onKeyboard[162]=st__Ability_prototype_onKeyboard[68]
+    set st__Ability_prototype_onKeyboard[167]=st__Ability_prototype_onKeyboard[68]
+    set st__Ability_prototype_onKeyboard[172]=st__Ability_prototype_onKeyboard[68]
     call TriggerAddCondition(st__Ability_prototype_onKeyboard[45],Condition( function sa__Ability_prototype_onKeyboard))
     call TriggerAddAction(st__Ability_prototype_onKeyboard[45], function sa__Ability_prototype_onKeyboard)
     set st__Ability_prototype_onPress[45]=CreateTrigger()
     set st__Ability_prototype_onPress[68]=st__Ability_prototype_onPress[45]
     set st__Ability_prototype_onPress[8]=st__Ability_prototype_onPress[68]
-    set st__Ability_prototype_onPress[169]=st__Ability_prototype_onPress[8]
-    set st__Ability_prototype_onPress[170]=st__Ability_prototype_onPress[8]
-    set st__Ability_prototype_onPress[171]=st__Ability_prototype_onPress[8]
-    set st__Ability_prototype_onPress[172]=st__Ability_prototype_onPress[8]
     set st__Ability_prototype_onPress[173]=st__Ability_prototype_onPress[8]
     set st__Ability_prototype_onPress[174]=st__Ability_prototype_onPress[8]
     set st__Ability_prototype_onPress[175]=st__Ability_prototype_onPress[8]
     set st__Ability_prototype_onPress[176]=st__Ability_prototype_onPress[8]
     set st__Ability_prototype_onPress[177]=st__Ability_prototype_onPress[8]
+    set st__Ability_prototype_onPress[178]=st__Ability_prototype_onPress[8]
+    set st__Ability_prototype_onPress[179]=st__Ability_prototype_onPress[8]
+    set st__Ability_prototype_onPress[180]=st__Ability_prototype_onPress[8]
+    set st__Ability_prototype_onPress[181]=st__Ability_prototype_onPress[8]
     set st__Ability_prototype_onPress[91]=st__Ability_prototype_onPress[68]
     set st__Ability_prototype_onPress[96]=st__Ability_prototype_onPress[68]
     set st__Ability_prototype_onPress[98]=st__Ability_prototype_onPress[68]
@@ -34153,22 +34827,23 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_onPress[148]=st__Ability_prototype_onPress[68]
     set st__Ability_prototype_onPress[153]=st__Ability_prototype_onPress[68]
     set st__Ability_prototype_onPress[158]=st__Ability_prototype_onPress[68]
-    set st__Ability_prototype_onPress[163]=st__Ability_prototype_onPress[68]
-    set st__Ability_prototype_onPress[168]=st__Ability_prototype_onPress[68]
+    set st__Ability_prototype_onPress[162]=st__Ability_prototype_onPress[68]
+    set st__Ability_prototype_onPress[167]=st__Ability_prototype_onPress[68]
+    set st__Ability_prototype_onPress[172]=st__Ability_prototype_onPress[68]
     call TriggerAddCondition(st__Ability_prototype_onPress[45],Condition( function sa__Ability_prototype_onPress))
     call TriggerAddAction(st__Ability_prototype_onPress[45], function sa__Ability_prototype_onPress)
     set st__Ability_prototype_beforePress[45]=CreateTrigger()
     set st__Ability_prototype_beforePress[68]=st__Ability_prototype_beforePress[45]
     set st__Ability_prototype_beforePress[8]=st__Ability_prototype_beforePress[68]
-    set st__Ability_prototype_beforePress[169]=st__Ability_prototype_beforePress[8]
-    set st__Ability_prototype_beforePress[170]=st__Ability_prototype_beforePress[8]
-    set st__Ability_prototype_beforePress[171]=st__Ability_prototype_beforePress[8]
-    set st__Ability_prototype_beforePress[172]=st__Ability_prototype_beforePress[8]
     set st__Ability_prototype_beforePress[173]=st__Ability_prototype_beforePress[8]
     set st__Ability_prototype_beforePress[174]=st__Ability_prototype_beforePress[8]
     set st__Ability_prototype_beforePress[175]=st__Ability_prototype_beforePress[8]
     set st__Ability_prototype_beforePress[176]=st__Ability_prototype_beforePress[8]
     set st__Ability_prototype_beforePress[177]=st__Ability_prototype_beforePress[8]
+    set st__Ability_prototype_beforePress[178]=st__Ability_prototype_beforePress[8]
+    set st__Ability_prototype_beforePress[179]=st__Ability_prototype_beforePress[8]
+    set st__Ability_prototype_beforePress[180]=st__Ability_prototype_beforePress[8]
+    set st__Ability_prototype_beforePress[181]=st__Ability_prototype_beforePress[8]
     set st__Ability_prototype_beforePress[91]=st__Ability_prototype_beforePress[68]
     set st__Ability_prototype_beforePress[96]=st__Ability_prototype_beforePress[68]
     set st__Ability_prototype_beforePress[98]=st__Ability_prototype_beforePress[68]
@@ -34188,22 +34863,23 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_beforePress[148]=st__Ability_prototype_beforePress[68]
     set st__Ability_prototype_beforePress[153]=st__Ability_prototype_beforePress[68]
     set st__Ability_prototype_beforePress[158]=st__Ability_prototype_beforePress[68]
-    set st__Ability_prototype_beforePress[163]=st__Ability_prototype_beforePress[68]
-    set st__Ability_prototype_beforePress[168]=st__Ability_prototype_beforePress[68]
+    set st__Ability_prototype_beforePress[162]=st__Ability_prototype_beforePress[68]
+    set st__Ability_prototype_beforePress[167]=st__Ability_prototype_beforePress[68]
+    set st__Ability_prototype_beforePress[172]=st__Ability_prototype_beforePress[68]
     call TriggerAddCondition(st__Ability_prototype_beforePress[45],Condition( function sa__Ability_prototype_beforePress))
     call TriggerAddAction(st__Ability_prototype_beforePress[45], function sa__Ability_prototype_beforePress)
     set st__Ability_prototype_getAttackSpeedValue[45]=CreateTrigger()
     set st__Ability_prototype_getAttackSpeedValue[68]=st__Ability_prototype_getAttackSpeedValue[45]
     set st__Ability_prototype_getAttackSpeedValue[8]=st__Ability_prototype_getAttackSpeedValue[68]
-    set st__Ability_prototype_getAttackSpeedValue[169]=st__Ability_prototype_getAttackSpeedValue[8]
-    set st__Ability_prototype_getAttackSpeedValue[170]=st__Ability_prototype_getAttackSpeedValue[8]
-    set st__Ability_prototype_getAttackSpeedValue[171]=st__Ability_prototype_getAttackSpeedValue[8]
-    set st__Ability_prototype_getAttackSpeedValue[172]=st__Ability_prototype_getAttackSpeedValue[8]
     set st__Ability_prototype_getAttackSpeedValue[173]=st__Ability_prototype_getAttackSpeedValue[8]
     set st__Ability_prototype_getAttackSpeedValue[174]=st__Ability_prototype_getAttackSpeedValue[8]
     set st__Ability_prototype_getAttackSpeedValue[175]=st__Ability_prototype_getAttackSpeedValue[8]
     set st__Ability_prototype_getAttackSpeedValue[176]=st__Ability_prototype_getAttackSpeedValue[8]
     set st__Ability_prototype_getAttackSpeedValue[177]=st__Ability_prototype_getAttackSpeedValue[8]
+    set st__Ability_prototype_getAttackSpeedValue[178]=st__Ability_prototype_getAttackSpeedValue[8]
+    set st__Ability_prototype_getAttackSpeedValue[179]=st__Ability_prototype_getAttackSpeedValue[8]
+    set st__Ability_prototype_getAttackSpeedValue[180]=st__Ability_prototype_getAttackSpeedValue[8]
+    set st__Ability_prototype_getAttackSpeedValue[181]=st__Ability_prototype_getAttackSpeedValue[8]
     set st__Ability_prototype_getAttackSpeedValue[91]=st__Ability_prototype_getAttackSpeedValue[68]
     set st__Ability_prototype_getAttackSpeedValue[96]=st__Ability_prototype_getAttackSpeedValue[68]
     set st__Ability_prototype_getAttackSpeedValue[98]=st__Ability_prototype_getAttackSpeedValue[68]
@@ -34225,22 +34901,23 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_getAttackSpeedValue[148]=st__Ability_prototype_getAttackSpeedValue[68]
     set st__Ability_prototype_getAttackSpeedValue[153]=st__Ability_prototype_getAttackSpeedValue[68]
     set st__Ability_prototype_getAttackSpeedValue[158]=st__Ability_prototype_getAttackSpeedValue[68]
-    set st__Ability_prototype_getAttackSpeedValue[163]=st__Ability_prototype_getAttackSpeedValue[68]
-    set st__Ability_prototype_getAttackSpeedValue[168]=st__Ability_prototype_getAttackSpeedValue[68]
+    set st__Ability_prototype_getAttackSpeedValue[162]=st__Ability_prototype_getAttackSpeedValue[68]
+    set st__Ability_prototype_getAttackSpeedValue[167]=st__Ability_prototype_getAttackSpeedValue[68]
+    set st__Ability_prototype_getAttackSpeedValue[172]=st__Ability_prototype_getAttackSpeedValue[68]
     call TriggerAddCondition(st__Ability_prototype_getAttackSpeedValue[45],Condition( function sa__Ability_prototype_getAttackSpeedValue))
     call TriggerAddAction(st__Ability_prototype_getAttackSpeedValue[45], function sa__Ability_prototype_getAttackSpeedValue)
     set st__Ability_prototype_leftClick[45]=CreateTrigger()
     set st__Ability_prototype_leftClick[68]=st__Ability_prototype_leftClick[45]
     set st__Ability_prototype_leftClick[8]=st__Ability_prototype_leftClick[68]
-    set st__Ability_prototype_leftClick[169]=st__Ability_prototype_leftClick[8]
-    set st__Ability_prototype_leftClick[170]=st__Ability_prototype_leftClick[8]
-    set st__Ability_prototype_leftClick[171]=st__Ability_prototype_leftClick[8]
-    set st__Ability_prototype_leftClick[172]=st__Ability_prototype_leftClick[8]
     set st__Ability_prototype_leftClick[173]=st__Ability_prototype_leftClick[8]
     set st__Ability_prototype_leftClick[174]=st__Ability_prototype_leftClick[8]
     set st__Ability_prototype_leftClick[175]=st__Ability_prototype_leftClick[8]
     set st__Ability_prototype_leftClick[176]=st__Ability_prototype_leftClick[8]
     set st__Ability_prototype_leftClick[177]=st__Ability_prototype_leftClick[8]
+    set st__Ability_prototype_leftClick[178]=st__Ability_prototype_leftClick[8]
+    set st__Ability_prototype_leftClick[179]=st__Ability_prototype_leftClick[8]
+    set st__Ability_prototype_leftClick[180]=st__Ability_prototype_leftClick[8]
+    set st__Ability_prototype_leftClick[181]=st__Ability_prototype_leftClick[8]
     set st__Ability_prototype_leftClick[91]=st__Ability_prototype_leftClick[68]
     set st__Ability_prototype_leftClick[96]=st__Ability_prototype_leftClick[68]
     set st__Ability_prototype_leftClick[98]=st__Ability_prototype_leftClick[68]
@@ -34262,22 +34939,23 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_leftClick[148]=st__Ability_prototype_leftClick[68]
     set st__Ability_prototype_leftClick[153]=st__Ability_prototype_leftClick[68]
     set st__Ability_prototype_leftClick[158]=st__Ability_prototype_leftClick[68]
-    set st__Ability_prototype_leftClick[163]=st__Ability_prototype_leftClick[68]
-    set st__Ability_prototype_leftClick[168]=st__Ability_prototype_leftClick[68]
+    set st__Ability_prototype_leftClick[162]=st__Ability_prototype_leftClick[68]
+    set st__Ability_prototype_leftClick[167]=st__Ability_prototype_leftClick[68]
+    set st__Ability_prototype_leftClick[172]=st__Ability_prototype_leftClick[68]
     call TriggerAddCondition(st__Ability_prototype_leftClick[45],Condition( function sa__Ability_prototype_leftClick))
     call TriggerAddAction(st__Ability_prototype_leftClick[45], function sa__Ability_prototype_leftClick)
     set st__Ability_prototype_onRightClick[45]=CreateTrigger()
     set st__Ability_prototype_onRightClick[68]=st__Ability_prototype_onRightClick[45]
     set st__Ability_prototype_onRightClick[8]=st__Ability_prototype_onRightClick[68]
-    set st__Ability_prototype_onRightClick[169]=st__Ability_prototype_onRightClick[8]
-    set st__Ability_prototype_onRightClick[170]=st__Ability_prototype_onRightClick[8]
-    set st__Ability_prototype_onRightClick[171]=st__Ability_prototype_onRightClick[8]
-    set st__Ability_prototype_onRightClick[172]=st__Ability_prototype_onRightClick[8]
     set st__Ability_prototype_onRightClick[173]=st__Ability_prototype_onRightClick[8]
     set st__Ability_prototype_onRightClick[174]=st__Ability_prototype_onRightClick[8]
     set st__Ability_prototype_onRightClick[175]=st__Ability_prototype_onRightClick[8]
     set st__Ability_prototype_onRightClick[176]=st__Ability_prototype_onRightClick[8]
     set st__Ability_prototype_onRightClick[177]=st__Ability_prototype_onRightClick[8]
+    set st__Ability_prototype_onRightClick[178]=st__Ability_prototype_onRightClick[8]
+    set st__Ability_prototype_onRightClick[179]=st__Ability_prototype_onRightClick[8]
+    set st__Ability_prototype_onRightClick[180]=st__Ability_prototype_onRightClick[8]
+    set st__Ability_prototype_onRightClick[181]=st__Ability_prototype_onRightClick[8]
     set st__Ability_prototype_onRightClick[91]=st__Ability_prototype_onRightClick[68]
     set st__Ability_prototype_onRightClick[96]=st__Ability_prototype_onRightClick[68]
     set st__Ability_prototype_onRightClick[98]=st__Ability_prototype_onRightClick[68]
@@ -34298,22 +34976,23 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_onRightClick[148]=st__Ability_prototype_onRightClick[68]
     set st__Ability_prototype_onRightClick[153]=st__Ability_prototype_onRightClick[68]
     set st__Ability_prototype_onRightClick[158]=st__Ability_prototype_onRightClick[68]
-    set st__Ability_prototype_onRightClick[163]=st__Ability_prototype_onRightClick[68]
-    set st__Ability_prototype_onRightClick[168]=st__Ability_prototype_onRightClick[68]
+    set st__Ability_prototype_onRightClick[162]=st__Ability_prototype_onRightClick[68]
+    set st__Ability_prototype_onRightClick[167]=st__Ability_prototype_onRightClick[68]
+    set st__Ability_prototype_onRightClick[172]=st__Ability_prototype_onRightClick[68]
     call TriggerAddCondition(st__Ability_prototype_onRightClick[45],Condition( function sa__Ability_prototype_onRightClick))
     call TriggerAddAction(st__Ability_prototype_onRightClick[45], function sa__Ability_prototype_onRightClick)
     set st__Ability_prototype_onStop[45]=CreateTrigger()
     set st__Ability_prototype_onStop[68]=st__Ability_prototype_onStop[45]
     set st__Ability_prototype_onStop[8]=st__Ability_prototype_onStop[68]
-    set st__Ability_prototype_onStop[169]=st__Ability_prototype_onStop[8]
-    set st__Ability_prototype_onStop[170]=st__Ability_prototype_onStop[8]
-    set st__Ability_prototype_onStop[171]=st__Ability_prototype_onStop[8]
-    set st__Ability_prototype_onStop[172]=st__Ability_prototype_onStop[8]
     set st__Ability_prototype_onStop[173]=st__Ability_prototype_onStop[8]
     set st__Ability_prototype_onStop[174]=st__Ability_prototype_onStop[8]
     set st__Ability_prototype_onStop[175]=st__Ability_prototype_onStop[8]
     set st__Ability_prototype_onStop[176]=st__Ability_prototype_onStop[8]
     set st__Ability_prototype_onStop[177]=st__Ability_prototype_onStop[8]
+    set st__Ability_prototype_onStop[178]=st__Ability_prototype_onStop[8]
+    set st__Ability_prototype_onStop[179]=st__Ability_prototype_onStop[8]
+    set st__Ability_prototype_onStop[180]=st__Ability_prototype_onStop[8]
+    set st__Ability_prototype_onStop[181]=st__Ability_prototype_onStop[8]
     set st__Ability_prototype_onStop[91]=st__Ability_prototype_onStop[68]
     set st__Ability_prototype_onStop[96]=st__Ability_prototype_onStop[68]
     set st__Ability_prototype_onStop[98]=st__Ability_prototype_onStop[68]
@@ -34335,22 +35014,23 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_onStop[148]=st__Ability_prototype_onStop[68]
     set st__Ability_prototype_onStop[153]=st__Ability_prototype_onStop[68]
     set st__Ability_prototype_onStop[158]=st__Ability_prototype_onStop[68]
-    set st__Ability_prototype_onStop[163]=st__Ability_prototype_onStop[68]
-    set st__Ability_prototype_onStop[168]=st__Ability_prototype_onStop[68]
+    set st__Ability_prototype_onStop[162]=st__Ability_prototype_onStop[68]
+    set st__Ability_prototype_onStop[167]=st__Ability_prototype_onStop[68]
+    set st__Ability_prototype_onStop[172]=st__Ability_prototype_onStop[68]
     call TriggerAddCondition(st__Ability_prototype_onStop[45],Condition( function sa__Ability_prototype_onStop))
     call TriggerAddAction(st__Ability_prototype_onStop[45], function sa__Ability_prototype_onStop)
     set st__Ability_prototype_stopButton[45]=CreateTrigger()
     set st__Ability_prototype_stopButton[68]=st__Ability_prototype_stopButton[45]
     set st__Ability_prototype_stopButton[8]=st__Ability_prototype_stopButton[68]
-    set st__Ability_prototype_stopButton[169]=st__Ability_prototype_stopButton[8]
-    set st__Ability_prototype_stopButton[170]=st__Ability_prototype_stopButton[8]
-    set st__Ability_prototype_stopButton[171]=st__Ability_prototype_stopButton[8]
-    set st__Ability_prototype_stopButton[172]=st__Ability_prototype_stopButton[8]
     set st__Ability_prototype_stopButton[173]=st__Ability_prototype_stopButton[8]
     set st__Ability_prototype_stopButton[174]=st__Ability_prototype_stopButton[8]
     set st__Ability_prototype_stopButton[175]=st__Ability_prototype_stopButton[8]
     set st__Ability_prototype_stopButton[176]=st__Ability_prototype_stopButton[8]
     set st__Ability_prototype_stopButton[177]=st__Ability_prototype_stopButton[8]
+    set st__Ability_prototype_stopButton[178]=st__Ability_prototype_stopButton[8]
+    set st__Ability_prototype_stopButton[179]=st__Ability_prototype_stopButton[8]
+    set st__Ability_prototype_stopButton[180]=st__Ability_prototype_stopButton[8]
+    set st__Ability_prototype_stopButton[181]=st__Ability_prototype_stopButton[8]
     set st__Ability_prototype_stopButton[91]=st__Ability_prototype_stopButton[68]
     set st__Ability_prototype_stopButton[96]=st__Ability_prototype_stopButton[68]
     set st__Ability_prototype_stopButton[98]=st__Ability_prototype_stopButton[68]
@@ -34372,8 +35052,9 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_stopButton[148]=st__Ability_prototype_stopButton[68]
     set st__Ability_prototype_stopButton[153]=st__Ability_prototype_stopButton[68]
     set st__Ability_prototype_stopButton[158]=st__Ability_prototype_stopButton[68]
-    set st__Ability_prototype_stopButton[163]=st__Ability_prototype_stopButton[68]
-    set st__Ability_prototype_stopButton[168]=st__Ability_prototype_stopButton[68]
+    set st__Ability_prototype_stopButton[162]=st__Ability_prototype_stopButton[68]
+    set st__Ability_prototype_stopButton[167]=st__Ability_prototype_stopButton[68]
+    set st__Ability_prototype_stopButton[172]=st__Ability_prototype_stopButton[68]
     call TriggerAddCondition(st__Ability_prototype_stopButton[45],Condition( function sa__Ability_prototype_stopButton))
     call TriggerAddAction(st__Ability_prototype_stopButton[45], function sa__Ability_prototype_stopButton)
     set st__Ability_prototype_essentialInit=CreateTrigger()
@@ -34408,16 +35089,14 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_onDestroy[148]=st__Ability_prototype_onDestroy[68]
     set st__Ability_prototype_onDestroy[153]=st__Ability_prototype_onDestroy[68]
     set st__Ability_prototype_onDestroy[158]=st__Ability_prototype_onDestroy[68]
-    set st__Ability_prototype_onDestroy[163]=st__Ability_prototype_onDestroy[68]
-    set st__Ability_prototype_onDestroy[168]=st__Ability_prototype_onDestroy[68]
+    set st__Ability_prototype_onDestroy[162]=st__Ability_prototype_onDestroy[68]
+    set st__Ability_prototype_onDestroy[167]=st__Ability_prototype_onDestroy[68]
+    set st__Ability_prototype_onDestroy[172]=st__Ability_prototype_onDestroy[68]
     call TriggerAddCondition(st__Ability_prototype_onDestroy[45],Condition( function sa__Ability_prototype_onDestroy))
     set st__Ability_prototype_new=CreateTrigger()
     call TriggerAddCondition(st__Ability_prototype_new,Condition( function sa__Ability_prototype_new))
     set st__Ability_prototype_sendSyncTarget=CreateTrigger()
     call TriggerAddCondition(st__Ability_prototype_sendSyncTarget,Condition( function sa__Ability_prototype_sendSyncTarget))
-    set st__Explosion_executeExplosion[133]=CreateTrigger()
-    call TriggerAddCondition(st__Explosion_executeExplosion[133],Condition( function sa__Ability0015___exp_executeExplosion))
-    call TriggerAddAction(st__Explosion_executeExplosion[133], function sa__Ability0015___exp_executeExplosion)
     set st__Actor__get_x[46]=CreateTrigger()
     set st__Actor__get_x[39]=st__Actor__get_x[46]
     set st__Actor__get_x[40]=st__Actor__get_x[39]
@@ -34443,9 +35122,10 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Actor__get_x[146]=st__Actor__get_x[39]
     set st__Actor__get_x[151]=st__Actor__get_x[39]
     set st__Actor__get_x[156]=st__Actor__get_x[39]
-    set st__Actor__get_x[161]=st__Actor__get_x[39]
-    set st__Actor__get_x[166]=st__Actor__get_x[39]
-    set st__Actor__get_x[167]=st__Actor__get_x[39]
+    set st__Actor__get_x[160]=st__Actor__get_x[39]
+    set st__Actor__get_x[165]=st__Actor__get_x[39]
+    set st__Actor__get_x[170]=st__Actor__get_x[39]
+    set st__Actor__get_x[171]=st__Actor__get_x[39]
     call TriggerAddCondition(st__Actor__get_x[46],Condition( function sa__Actor__get_x))
     call TriggerAddAction(st__Actor__get_x[46], function sa__Actor__get_x)
     set st__Actor__set_x[46]=CreateTrigger()
@@ -34473,9 +35153,10 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Actor__set_x[146]=st__Actor__set_x[39]
     set st__Actor__set_x[151]=st__Actor__set_x[39]
     set st__Actor__set_x[156]=st__Actor__set_x[39]
-    set st__Actor__set_x[161]=st__Actor__set_x[39]
-    set st__Actor__set_x[166]=st__Actor__set_x[39]
-    set st__Actor__set_x[167]=st__Actor__set_x[39]
+    set st__Actor__set_x[160]=st__Actor__set_x[39]
+    set st__Actor__set_x[165]=st__Actor__set_x[39]
+    set st__Actor__set_x[170]=st__Actor__set_x[39]
+    set st__Actor__set_x[171]=st__Actor__set_x[39]
     set st__Actor__set_x[79]=st__Actor__set_x[46]
     set st__Actor__set_x[42]=st__Actor__set_x[79]
     set st__Actor__set_x[43]=st__Actor__set_x[42]
@@ -34508,9 +35189,10 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Actor__get_y[146]=st__Actor__get_y[39]
     set st__Actor__get_y[151]=st__Actor__get_y[39]
     set st__Actor__get_y[156]=st__Actor__get_y[39]
-    set st__Actor__get_y[161]=st__Actor__get_y[39]
-    set st__Actor__get_y[166]=st__Actor__get_y[39]
-    set st__Actor__get_y[167]=st__Actor__get_y[39]
+    set st__Actor__get_y[160]=st__Actor__get_y[39]
+    set st__Actor__get_y[165]=st__Actor__get_y[39]
+    set st__Actor__get_y[170]=st__Actor__get_y[39]
+    set st__Actor__get_y[171]=st__Actor__get_y[39]
     call TriggerAddCondition(st__Actor__get_y[46],Condition( function sa__Actor__get_y))
     call TriggerAddAction(st__Actor__get_y[46], function sa__Actor__get_y)
     set st__Actor__set_y[46]=CreateTrigger()
@@ -34538,9 +35220,10 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Actor__set_y[146]=st__Actor__set_y[39]
     set st__Actor__set_y[151]=st__Actor__set_y[39]
     set st__Actor__set_y[156]=st__Actor__set_y[39]
-    set st__Actor__set_y[161]=st__Actor__set_y[39]
-    set st__Actor__set_y[166]=st__Actor__set_y[39]
-    set st__Actor__set_y[167]=st__Actor__set_y[39]
+    set st__Actor__set_y[160]=st__Actor__set_y[39]
+    set st__Actor__set_y[165]=st__Actor__set_y[39]
+    set st__Actor__set_y[170]=st__Actor__set_y[39]
+    set st__Actor__set_y[171]=st__Actor__set_y[39]
     set st__Actor__set_y[79]=st__Actor__set_y[46]
     set st__Actor__set_y[42]=st__Actor__set_y[79]
     set st__Actor__set_y[43]=st__Actor__set_y[42]
@@ -34583,9 +35266,10 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Actor_killFilter[146]=st__Actor_killFilter[39]
     set st__Actor_killFilter[151]=st__Actor_killFilter[39]
     set st__Actor_killFilter[156]=st__Actor_killFilter[39]
-    set st__Actor_killFilter[161]=st__Actor_killFilter[39]
-    set st__Actor_killFilter[166]=st__Actor_killFilter[39]
-    set st__Actor_killFilter[167]=st__Actor_killFilter[39]
+    set st__Actor_killFilter[160]=st__Actor_killFilter[39]
+    set st__Actor_killFilter[165]=st__Actor_killFilter[39]
+    set st__Actor_killFilter[170]=st__Actor_killFilter[39]
+    set st__Actor_killFilter[171]=st__Actor_killFilter[39]
     set st__Actor_killFilter[79]=st__Actor_killFilter[46]
     set st__Actor_killFilter[42]=st__Actor_killFilter[79]
     set st__Actor_killFilter[43]=st__Actor_killFilter[42]
@@ -34599,6 +35283,9 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__Actor_onDestroy[46],Condition( function sa__Actor_onDestroy))
     set st__CloseUI_onDestroy=CreateTrigger()
     call TriggerAddCondition(st__CloseUI_onDestroy,Condition( function sa__CloseUI_onDestroy))
+    set st__LineIndicator_beforeRefresh[135]=CreateTrigger()
+    call TriggerAddCondition(st__LineIndicator_beforeRefresh[135],Condition( function sa__Ability0015___ind_beforeRefresh))
+    call TriggerAddAction(st__LineIndicator_beforeRefresh[135], function sa__Ability0015___ind_beforeRefresh)
     set st__Curve_getCarculatedX[48]=CreateTrigger()
     set st__Curve_getCarculatedX[49]=st__Curve_getCarculatedX[48]
     call TriggerAddCondition(st__Curve_getCarculatedX[48],Condition( function sa__Curve_getCarculatedX))
@@ -34637,6 +35324,9 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Object_onDestroy[51]=st__Object_onDestroy[49]
     call TriggerAddCondition(st__Object_onDestroy[48],Condition( function sa__Curve_onDestroy))
     call TriggerAddCondition(st__Object_onDestroy[48],Condition( function sa__Object_onDestroy))
+    set st__Explosion_executeExplosion[133]=CreateTrigger()
+    call TriggerAddCondition(st__Explosion_executeExplosion[133],Condition( function sa__Ability0015___exp_executeExplosion))
+    call TriggerAddAction(st__Explosion_executeExplosion[133], function sa__Ability0015___exp_executeExplosion)
     set st__Bezier_create=CreateTrigger()
     call TriggerAddCondition(st__Bezier_create,Condition( function sa__Bezier_create))
     set st__Curve_getCarculatedX[50]=CreateTrigger()
@@ -34648,12 +35338,6 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Curve_getCarculatedZ[50]=CreateTrigger()
     call TriggerAddCondition(st__Curve_getCarculatedZ[50],Condition( function sa__Bezier2_getCarculatedZ))
     call TriggerAddAction(st__Curve_getCarculatedZ[50], function sa__Bezier2_getCarculatedZ)
-    set st__Explosion_executeExplosion[127]=CreateTrigger()
-    call TriggerAddCondition(st__Explosion_executeExplosion[127],Condition( function sa__Ability0013___exp_executeExplosion))
-    call TriggerAddAction(st__Explosion_executeExplosion[127], function sa__Ability0013___exp_executeExplosion)
-    set st__Explosion_beforeExplosion[127]=CreateTrigger()
-    call TriggerAddCondition(st__Explosion_beforeExplosion[127],Condition( function sa__Ability0013___exp_beforeExplosion))
-    call TriggerAddAction(st__Explosion_beforeExplosion[127], function sa__Ability0013___exp_beforeExplosion)
     set st__Curve_getCarculatedX[51]=CreateTrigger()
     call TriggerAddCondition(st__Curve_getCarculatedX[51],Condition( function sa__Bezier3_getCarculatedX))
     call TriggerAddAction(st__Curve_getCarculatedX[51], function sa__Bezier3_getCarculatedX)
@@ -34663,15 +35347,6 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Curve_getCarculatedZ[51]=CreateTrigger()
     call TriggerAddCondition(st__Curve_getCarculatedZ[51],Condition( function sa__Bezier3_getCarculatedZ))
     call TriggerAddAction(st__Curve_getCarculatedZ[51], function sa__Bezier3_getCarculatedZ)
-    set st__AbilityIndicator_refresh[125]=CreateTrigger()
-    call TriggerAddCondition(st__AbilityIndicator_refresh[125],Condition( function sa__Ability0010___ind_refresh))
-    call TriggerAddAction(st__AbilityIndicator_refresh[125], function sa__Ability0010___ind_refresh)
-    set st__AbilityIndicator_show[125]=CreateTrigger()
-    call TriggerAddCondition(st__AbilityIndicator_show[125],Condition( function sa__Ability0010___ind_show))
-    call TriggerAddAction(st__AbilityIndicator_show[125], function sa__Ability0010___ind_show)
-    set st__AbilityIndicator_onDestroy[125]=CreateTrigger()
-    call TriggerAddCondition(st__AbilityIndicator_onDestroy[125],Condition( function sa__Ability0010___ind_onDestroy))
-    call TriggerAddCondition(st__AbilityIndicator_onDestroy[125],Condition( function sa__AbilityIndicator_onDestroy))
     set st__Group_new=CreateTrigger()
     call TriggerAddCondition(st__Group_new,Condition( function sa__Group_new))
     set st__Group_release=CreateTrigger()
@@ -34682,9 +35357,24 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__Group_fillUnitsInRange,Condition( function sa__Group_fillUnitsInRange))
     set st__Group_getNearest=CreateTrigger()
     call TriggerAddCondition(st__Group_getNearest,Condition( function sa__Group_getNearest))
+    set st__Explosion_executeExplosion[127]=CreateTrigger()
+    call TriggerAddCondition(st__Explosion_executeExplosion[127],Condition( function sa__Ability0013___exp_executeExplosion))
+    call TriggerAddAction(st__Explosion_executeExplosion[127], function sa__Ability0013___exp_executeExplosion)
+    set st__Explosion_beforeExplosion[127]=CreateTrigger()
+    call TriggerAddCondition(st__Explosion_beforeExplosion[127],Condition( function sa__Ability0013___exp_beforeExplosion))
+    call TriggerAddAction(st__Explosion_beforeExplosion[127], function sa__Ability0013___exp_beforeExplosion)
     set st__Object_onDestroy[55]=CreateTrigger()
     call TriggerAddCondition(st__Object_onDestroy[55],Condition( function sa__Lightning_onDestroy))
     call TriggerAddCondition(st__Object_onDestroy[55],Condition( function sa__Object_onDestroy))
+    set st__AbilityIndicator_refresh[125]=CreateTrigger()
+    call TriggerAddCondition(st__AbilityIndicator_refresh[125],Condition( function sa__Ability0010___ind_refresh))
+    call TriggerAddAction(st__AbilityIndicator_refresh[125], function sa__Ability0010___ind_refresh)
+    set st__AbilityIndicator_show[125]=CreateTrigger()
+    call TriggerAddCondition(st__AbilityIndicator_show[125],Condition( function sa__Ability0010___ind_show))
+    call TriggerAddAction(st__AbilityIndicator_show[125], function sa__Ability0010___ind_show)
+    set st__AbilityIndicator_onDestroy[125]=CreateTrigger()
+    call TriggerAddCondition(st__AbilityIndicator_onDestroy[125],Condition( function sa__Ability0010___ind_onDestroy))
+    call TriggerAddCondition(st__AbilityIndicator_onDestroy[125],Condition( function sa__AbilityIndicator_onDestroy))
     set st__Line__Line_setColor[56]=CreateTrigger()
     call TriggerAddCondition(st__Line__Line_setColor[56],Condition( function sa__Line__Line_setColor))
     call TriggerAddAction(st__Line__Line_setColor[56], function sa__Line__Line_setColor)
@@ -34728,18 +35418,6 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Line__Line_onDestroy[58]=CreateTrigger()
     call TriggerAddCondition(st__Line__Line_onDestroy[58],Condition( function sa__DoubleLine_onDestroy))
     call TriggerAddCondition(st__Line__Line_onDestroy[58],Condition( function sa__Line__Line_onDestroy))
-    set st__Buff_addValue[118]=CreateTrigger()
-    call TriggerAddCondition(st__Buff_addValue[118],Condition( function sa__Buffu001_main_addValue))
-    call TriggerAddAction(st__Buff_addValue[118], function sa__Buffu001_main_addValue)
-    set st__Buff_update[118]=CreateTrigger()
-    call TriggerAddCondition(st__Buff_update[118],Condition( function sa__Buffu001_main_update))
-    call TriggerAddAction(st__Buff_update[118], function sa__Buffu001_main_update)
-    set st__Buff_init[118]=CreateTrigger()
-    call TriggerAddCondition(st__Buff_init[118],Condition( function sa__Buffu001_main_init))
-    call TriggerAddAction(st__Buff_init[118], function sa__Buffu001_main_init)
-    set st__Buff_onDestroy[118]=CreateTrigger()
-    call TriggerAddCondition(st__Buff_onDestroy[118],Condition( function sa__Buffu001_main_onDestroy))
-    call TriggerAddCondition(st__Buff_onDestroy[118],Condition( function sa__Buff_onDestroy))
     set st__Line__Line_refreshPosition[59]=CreateTrigger()
     call TriggerAddCondition(st__Line__Line_refreshPosition[59],Condition( function sa__Arrow_refreshPosition))
     call TriggerAddAction(st__Line__Line_refreshPosition[59], function sa__Arrow_refreshPosition)
@@ -34763,9 +35441,18 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__SkillShop_getTierChance,Condition( function sa__SkillShop_getTierChance))
     set st__Closeable_onDestroy[61]=CreateTrigger()
     call TriggerAddCondition(st__Closeable_onDestroy[61],Condition( function sa__SkillShop_onDestroy))
-    set st__SectorIndicator_beforeRefresh[114]=CreateTrigger()
-    call TriggerAddCondition(st__SectorIndicator_beforeRefresh[114],Condition( function sa__Ability0008___ind_beforeRefresh))
-    call TriggerAddAction(st__SectorIndicator_beforeRefresh[114], function sa__Ability0008___ind_beforeRefresh)
+    set st__Buff_addValue[118]=CreateTrigger()
+    call TriggerAddCondition(st__Buff_addValue[118],Condition( function sa__Buffu001_main_addValue))
+    call TriggerAddAction(st__Buff_addValue[118], function sa__Buffu001_main_addValue)
+    set st__Buff_update[118]=CreateTrigger()
+    call TriggerAddCondition(st__Buff_update[118],Condition( function sa__Buffu001_main_update))
+    call TriggerAddAction(st__Buff_update[118], function sa__Buffu001_main_update)
+    set st__Buff_init[118]=CreateTrigger()
+    call TriggerAddCondition(st__Buff_init[118],Condition( function sa__Buffu001_main_init))
+    call TriggerAddAction(st__Buff_init[118], function sa__Buffu001_main_init)
+    set st__Buff_onDestroy[118]=CreateTrigger()
+    call TriggerAddCondition(st__Buff_onDestroy[118],Condition( function sa__Buffu001_main_onDestroy))
+    call TriggerAddCondition(st__Buff_onDestroy[118],Condition( function sa__Buff_onDestroy))
     set st__SlotChanger_stateDefault=CreateTrigger()
     call TriggerAddCondition(st__SlotChanger_stateDefault,Condition( function sa__SlotChanger_stateDefault))
     set st__SlotChanger_close=CreateTrigger()
@@ -34774,12 +35461,9 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__SlotChanger_onDestroy,Condition( function sa__SlotChanger_onDestroy))
     set st__InstantText_setColor=CreateTrigger()
     call TriggerAddCondition(st__InstantText_setColor,Condition( function sa__InstantText_setColor))
-    set st__LineIndicator_beforeRefresh[110]=CreateTrigger()
-    call TriggerAddCondition(st__LineIndicator_beforeRefresh[110],Condition( function sa__Ability0007___ind_beforeRefresh))
-    call TriggerAddAction(st__LineIndicator_beforeRefresh[110], function sa__Ability0007___ind_beforeRefresh)
-    set st__Explosion_executeExplosion[109]=CreateTrigger()
-    call TriggerAddCondition(st__Explosion_executeExplosion[109],Condition( function sa__Ability0007___exp_executeExplosion))
-    call TriggerAddAction(st__Explosion_executeExplosion[109], function sa__Ability0007___exp_executeExplosion)
+    set st__SectorIndicator_beforeRefresh[114]=CreateTrigger()
+    call TriggerAddCondition(st__SectorIndicator_beforeRefresh[114],Condition( function sa__Ability0008___ind_beforeRefresh))
+    call TriggerAddAction(st__SectorIndicator_beforeRefresh[114], function sa__Ability0008___ind_beforeRefresh)
     set st__Timer_getData=CreateTrigger()
     call TriggerAddCondition(st__Timer_getData,Condition( function sa__Timer_getData))
     set st__Timer_getDataEx=CreateTrigger()
@@ -34800,6 +35484,12 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__User_addGold,Condition( function sa__User_addGold))
     set st__User_getFocusUnit=CreateTrigger()
     call TriggerAddCondition(st__User_getFocusUnit,Condition( function sa__User_getFocusUnit))
+    set st__LineIndicator_beforeRefresh[110]=CreateTrigger()
+    call TriggerAddCondition(st__LineIndicator_beforeRefresh[110],Condition( function sa__Ability0007___ind_beforeRefresh))
+    call TriggerAddAction(st__LineIndicator_beforeRefresh[110], function sa__Ability0007___ind_beforeRefresh)
+    set st__Explosion_executeExplosion[109]=CreateTrigger()
+    call TriggerAddCondition(st__Explosion_executeExplosion[109],Condition( function sa__Ability0007___exp_executeExplosion))
+    call TriggerAddAction(st__Explosion_executeExplosion[109], function sa__Ability0007___exp_executeExplosion)
     set st__Ability_getTypeTier=CreateTrigger()
     call TriggerAddCondition(st__Ability_getTypeTier,Condition( function sa__Ability_getTypeTier))
     set st__Ability_getRandomAbility=CreateTrigger()
@@ -34818,15 +35508,15 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__Ability_getTypeTag,Condition( function sa__Ability_getTypeTag))
     set st__Ability_prototype_iconClick[68]=CreateTrigger()
     set st__Ability_prototype_iconClick[8]=st__Ability_prototype_iconClick[68]
-    set st__Ability_prototype_iconClick[169]=st__Ability_prototype_iconClick[8]
-    set st__Ability_prototype_iconClick[170]=st__Ability_prototype_iconClick[8]
-    set st__Ability_prototype_iconClick[171]=st__Ability_prototype_iconClick[8]
-    set st__Ability_prototype_iconClick[172]=st__Ability_prototype_iconClick[8]
     set st__Ability_prototype_iconClick[173]=st__Ability_prototype_iconClick[8]
     set st__Ability_prototype_iconClick[174]=st__Ability_prototype_iconClick[8]
     set st__Ability_prototype_iconClick[175]=st__Ability_prototype_iconClick[8]
     set st__Ability_prototype_iconClick[176]=st__Ability_prototype_iconClick[8]
     set st__Ability_prototype_iconClick[177]=st__Ability_prototype_iconClick[8]
+    set st__Ability_prototype_iconClick[178]=st__Ability_prototype_iconClick[8]
+    set st__Ability_prototype_iconClick[179]=st__Ability_prototype_iconClick[8]
+    set st__Ability_prototype_iconClick[180]=st__Ability_prototype_iconClick[8]
+    set st__Ability_prototype_iconClick[181]=st__Ability_prototype_iconClick[8]
     set st__Ability_prototype_iconClick[91]=st__Ability_prototype_iconClick[68]
     set st__Ability_prototype_iconClick[96]=st__Ability_prototype_iconClick[68]
     set st__Ability_prototype_iconClick[98]=st__Ability_prototype_iconClick[68]
@@ -34847,21 +35537,22 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_iconClick[148]=st__Ability_prototype_iconClick[68]
     set st__Ability_prototype_iconClick[153]=st__Ability_prototype_iconClick[68]
     set st__Ability_prototype_iconClick[158]=st__Ability_prototype_iconClick[68]
-    set st__Ability_prototype_iconClick[163]=st__Ability_prototype_iconClick[68]
-    set st__Ability_prototype_iconClick[168]=st__Ability_prototype_iconClick[68]
+    set st__Ability_prototype_iconClick[162]=st__Ability_prototype_iconClick[68]
+    set st__Ability_prototype_iconClick[167]=st__Ability_prototype_iconClick[68]
+    set st__Ability_prototype_iconClick[172]=st__Ability_prototype_iconClick[68]
     call TriggerAddCondition(st__Ability_prototype_iconClick[68],Condition( function sa__Ability_iconClick))
     call TriggerAddAction(st__Ability_prototype_iconClick[68], function sa__Ability_iconClick)
     set st__Ability_prototype_addLevel[68]=CreateTrigger()
     set st__Ability_prototype_addLevel[8]=st__Ability_prototype_addLevel[68]
-    set st__Ability_prototype_addLevel[169]=st__Ability_prototype_addLevel[8]
-    set st__Ability_prototype_addLevel[170]=st__Ability_prototype_addLevel[8]
-    set st__Ability_prototype_addLevel[171]=st__Ability_prototype_addLevel[8]
-    set st__Ability_prototype_addLevel[172]=st__Ability_prototype_addLevel[8]
     set st__Ability_prototype_addLevel[173]=st__Ability_prototype_addLevel[8]
     set st__Ability_prototype_addLevel[174]=st__Ability_prototype_addLevel[8]
     set st__Ability_prototype_addLevel[175]=st__Ability_prototype_addLevel[8]
     set st__Ability_prototype_addLevel[176]=st__Ability_prototype_addLevel[8]
     set st__Ability_prototype_addLevel[177]=st__Ability_prototype_addLevel[8]
+    set st__Ability_prototype_addLevel[178]=st__Ability_prototype_addLevel[8]
+    set st__Ability_prototype_addLevel[179]=st__Ability_prototype_addLevel[8]
+    set st__Ability_prototype_addLevel[180]=st__Ability_prototype_addLevel[8]
+    set st__Ability_prototype_addLevel[181]=st__Ability_prototype_addLevel[8]
     set st__Ability_prototype_addLevel[91]=st__Ability_prototype_addLevel[68]
     set st__Ability_prototype_addLevel[96]=st__Ability_prototype_addLevel[68]
     set st__Ability_prototype_addLevel[98]=st__Ability_prototype_addLevel[68]
@@ -34883,21 +35574,22 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_addLevel[148]=st__Ability_prototype_addLevel[68]
     set st__Ability_prototype_addLevel[153]=st__Ability_prototype_addLevel[68]
     set st__Ability_prototype_addLevel[158]=st__Ability_prototype_addLevel[68]
-    set st__Ability_prototype_addLevel[163]=st__Ability_prototype_addLevel[68]
-    set st__Ability_prototype_addLevel[168]=st__Ability_prototype_addLevel[68]
+    set st__Ability_prototype_addLevel[162]=st__Ability_prototype_addLevel[68]
+    set st__Ability_prototype_addLevel[167]=st__Ability_prototype_addLevel[68]
+    set st__Ability_prototype_addLevel[172]=st__Ability_prototype_addLevel[68]
     call TriggerAddCondition(st__Ability_prototype_addLevel[68],Condition( function sa__Ability_addLevel))
     call TriggerAddAction(st__Ability_prototype_addLevel[68], function sa__Ability_addLevel)
     set st__Ability_deactivate[68]=CreateTrigger()
     set st__Ability_deactivate[8]=st__Ability_deactivate[68]
-    set st__Ability_deactivate[169]=st__Ability_deactivate[8]
-    set st__Ability_deactivate[170]=st__Ability_deactivate[8]
-    set st__Ability_deactivate[171]=st__Ability_deactivate[8]
-    set st__Ability_deactivate[172]=st__Ability_deactivate[8]
     set st__Ability_deactivate[173]=st__Ability_deactivate[8]
     set st__Ability_deactivate[174]=st__Ability_deactivate[8]
     set st__Ability_deactivate[175]=st__Ability_deactivate[8]
     set st__Ability_deactivate[176]=st__Ability_deactivate[8]
     set st__Ability_deactivate[177]=st__Ability_deactivate[8]
+    set st__Ability_deactivate[178]=st__Ability_deactivate[8]
+    set st__Ability_deactivate[179]=st__Ability_deactivate[8]
+    set st__Ability_deactivate[180]=st__Ability_deactivate[8]
+    set st__Ability_deactivate[181]=st__Ability_deactivate[8]
     set st__Ability_deactivate[91]=st__Ability_deactivate[68]
     set st__Ability_deactivate[96]=st__Ability_deactivate[68]
     set st__Ability_deactivate[98]=st__Ability_deactivate[68]
@@ -34918,21 +35610,22 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_deactivate[148]=st__Ability_deactivate[68]
     set st__Ability_deactivate[153]=st__Ability_deactivate[68]
     set st__Ability_deactivate[158]=st__Ability_deactivate[68]
-    set st__Ability_deactivate[163]=st__Ability_deactivate[68]
-    set st__Ability_deactivate[168]=st__Ability_deactivate[68]
+    set st__Ability_deactivate[162]=st__Ability_deactivate[68]
+    set st__Ability_deactivate[167]=st__Ability_deactivate[68]
+    set st__Ability_deactivate[172]=st__Ability_deactivate[68]
     call TriggerAddCondition(st__Ability_deactivate[68],Condition( function sa__Ability_deactivate))
     call TriggerAddAction(st__Ability_deactivate[68], function sa__Ability_deactivate)
     set st__Ability_prototype_onDeath[68]=CreateTrigger()
     set st__Ability_prototype_onDeath[8]=st__Ability_prototype_onDeath[68]
-    set st__Ability_prototype_onDeath[169]=st__Ability_prototype_onDeath[8]
-    set st__Ability_prototype_onDeath[170]=st__Ability_prototype_onDeath[8]
-    set st__Ability_prototype_onDeath[171]=st__Ability_prototype_onDeath[8]
-    set st__Ability_prototype_onDeath[172]=st__Ability_prototype_onDeath[8]
     set st__Ability_prototype_onDeath[173]=st__Ability_prototype_onDeath[8]
     set st__Ability_prototype_onDeath[174]=st__Ability_prototype_onDeath[8]
     set st__Ability_prototype_onDeath[175]=st__Ability_prototype_onDeath[8]
     set st__Ability_prototype_onDeath[176]=st__Ability_prototype_onDeath[8]
     set st__Ability_prototype_onDeath[177]=st__Ability_prototype_onDeath[8]
+    set st__Ability_prototype_onDeath[178]=st__Ability_prototype_onDeath[8]
+    set st__Ability_prototype_onDeath[179]=st__Ability_prototype_onDeath[8]
+    set st__Ability_prototype_onDeath[180]=st__Ability_prototype_onDeath[8]
+    set st__Ability_prototype_onDeath[181]=st__Ability_prototype_onDeath[8]
     set st__Ability_prototype_onDeath[91]=st__Ability_prototype_onDeath[68]
     set st__Ability_prototype_onDeath[96]=st__Ability_prototype_onDeath[68]
     set st__Ability_prototype_onDeath[98]=st__Ability_prototype_onDeath[68]
@@ -34954,14 +35647,38 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_onDeath[148]=st__Ability_prototype_onDeath[68]
     set st__Ability_prototype_onDeath[153]=st__Ability_prototype_onDeath[68]
     set st__Ability_prototype_onDeath[158]=st__Ability_prototype_onDeath[68]
-    set st__Ability_prototype_onDeath[163]=st__Ability_prototype_onDeath[68]
-    set st__Ability_prototype_onDeath[168]=st__Ability_prototype_onDeath[68]
+    set st__Ability_prototype_onDeath[162]=st__Ability_prototype_onDeath[68]
+    set st__Ability_prototype_onDeath[167]=st__Ability_prototype_onDeath[68]
+    set st__Ability_prototype_onDeath[172]=st__Ability_prototype_onDeath[68]
     call TriggerAddCondition(st__Ability_prototype_onDeath[68],Condition( function sa__Ability_onDeath))
     call TriggerAddAction(st__Ability_prototype_onDeath[68], function sa__Ability_onDeath)
+    set st__Ability_prototype_relativeTooltip[107]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_relativeTooltip[107],Condition( function sa__Ability0005_main_relativeTooltip))
+    call TriggerAddAction(st__Ability_prototype_relativeTooltip[107], function sa__Ability0005_main_relativeTooltip)
+    set st__Ability_prototype_targetFilterAdditional[107]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_targetFilterAdditional[107],Condition( function sa__Ability0005_main_targetFilterAdditional))
+    call TriggerAddAction(st__Ability_prototype_targetFilterAdditional[107], function sa__Ability0005_main_targetFilterAdditional)
+    set st__Ability_prototype_execute[107]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_execute[107],Condition( function sa__Ability0005_main_execute))
+    call TriggerAddAction(st__Ability_prototype_execute[107], function sa__Ability0005_main_execute)
+    set st__Ability_prototype_init[107]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_init[107],Condition( function sa__Ability0005_main_init))
+    call TriggerAddAction(st__Ability_prototype_init[107], function sa__Ability0005_main_init)
     set st__ChinghoWidget_onDestroy=CreateTrigger()
     call TriggerAddCondition(st__ChinghoWidget_onDestroy,Condition( function sa__ChinghoWidget_onDestroy))
+    set st__Ability_prototype_relativeTooltip[105]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_relativeTooltip[105],Condition( function sa__Ability0004_main_relativeTooltip))
+    call TriggerAddAction(st__Ability_prototype_relativeTooltip[105], function sa__Ability0004_main_relativeTooltip)
+    set st__Ability_prototype_execute[105]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_execute[105],Condition( function sa__Ability0004_main_execute))
+    call TriggerAddAction(st__Ability_prototype_execute[105], function sa__Ability0004_main_execute)
+    set st__Ability_prototype_init[105]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_init[105],Condition( function sa__Ability0004_main_init))
+    call TriggerAddAction(st__Ability_prototype_init[105], function sa__Ability0004_main_init)
     set st__CharacterWidget_onDestroy=CreateTrigger()
     call TriggerAddCondition(st__CharacterWidget_onDestroy,Condition( function sa__CharacterWidget_onDestroy))
+    set st__CharacterInfoPanel_onDestroy=CreateTrigger()
+    call TriggerAddCondition(st__CharacterInfoPanel_onDestroy,Condition( function sa__CharacterInfoPanel_onDestroy))
     set st__Ability_prototype_relativeTooltip[102]=CreateTrigger()
     call TriggerAddCondition(st__Ability_prototype_relativeTooltip[102],Condition( function sa__Ability0003_main_relativeTooltip))
     call TriggerAddAction(st__Ability_prototype_relativeTooltip[102], function sa__Ability0003_main_relativeTooltip)
@@ -34972,12 +35689,12 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__Ability_prototype_init[102],Condition( function sa__Ability0003_main_init))
     call TriggerAddAction(st__Ability_prototype_init[102], function sa__Ability0003_main_init)
     set st__LineIndicator_beforeRefresh[101]=CreateTrigger()
-    call TriggerAddCondition(st__LineIndicator_beforeRefresh[101],Condition( function sa__Ability0003___ind_beforeRefresh))
-    call TriggerAddAction(st__LineIndicator_beforeRefresh[101], function sa__Ability0003___ind_beforeRefresh)
-    set st__CharacterInfoPanel_onDestroy=CreateTrigger()
-    call TriggerAddCondition(st__CharacterInfoPanel_onDestroy,Condition( function sa__CharacterInfoPanel_onDestroy))
+    call TriggerAddCondition(st__LineIndicator_beforeRefresh[101],Condition( function sa__Ability0003__ind_beforeRefresh))
+    call TriggerAddAction(st__LineIndicator_beforeRefresh[101], function sa__Ability0003__ind_beforeRefresh)
     set st__CharacterSelect_finish=CreateTrigger()
     call TriggerAddCondition(st__CharacterSelect_finish,Condition( function sa__CharacterSelect_finish))
+    set st__GuardianFrame_onDestroy=CreateTrigger()
+    call TriggerAddCondition(st__GuardianFrame_onDestroy,Condition( function sa__GuardianFrame_onDestroy))
     set st__Ability_prototype_relativeTooltip[98]=CreateTrigger()
     call TriggerAddCondition(st__Ability_prototype_relativeTooltip[98],Condition( function sa__Ability0002_main_relativeTooltip))
     call TriggerAddAction(st__Ability_prototype_relativeTooltip[98], function sa__Ability0002_main_relativeTooltip)
@@ -34987,8 +35704,8 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_init[98]=CreateTrigger()
     call TriggerAddCondition(st__Ability_prototype_init[98],Condition( function sa__Ability0002_main_init))
     call TriggerAddAction(st__Ability_prototype_init[98], function sa__Ability0002_main_init)
-    set st__GuardianFrame_onDestroy=CreateTrigger()
-    call TriggerAddCondition(st__GuardianFrame_onDestroy,Condition( function sa__GuardianFrame_onDestroy))
+    set st__Guardians_addLevel=CreateTrigger()
+    call TriggerAddCondition(st__Guardians_addLevel,Condition( function sa__Guardians_addLevel))
     set st__Ability_prototype_relativeTooltip[96]=CreateTrigger()
     call TriggerAddCondition(st__Ability_prototype_relativeTooltip[96],Condition( function sa__Ability0001_main_relativeTooltip))
     call TriggerAddAction(st__Ability_prototype_relativeTooltip[96], function sa__Ability0001_main_relativeTooltip)
@@ -34999,10 +35716,8 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__Ability_prototype_init[96],Condition( function sa__Ability0001_main_init))
     call TriggerAddAction(st__Ability_prototype_init[96], function sa__Ability0001_main_init)
     set st__LineIndicator_beforeRefresh[95]=CreateTrigger()
-    call TriggerAddCondition(st__LineIndicator_beforeRefresh[95],Condition( function sa__Ability0001___ind_beforeRefresh))
-    call TriggerAddAction(st__LineIndicator_beforeRefresh[95], function sa__Ability0001___ind_beforeRefresh)
-    set st__Guardians_addLevel=CreateTrigger()
-    call TriggerAddCondition(st__Guardians_addLevel,Condition( function sa__Guardians_addLevel))
+    call TriggerAddCondition(st__LineIndicator_beforeRefresh[95],Condition( function sa__Ability0001__ind_beforeRefresh))
+    call TriggerAddAction(st__LineIndicator_beforeRefresh[95], function sa__Ability0001__ind_beforeRefresh)
     set st__Actor__get_x[79]=CreateTrigger()
     set st__Actor__get_x[42]=st__Actor__get_x[79]
     set st__Actor__get_x[43]=st__Actor__get_x[42]
@@ -35030,6 +35745,8 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__Movement__set_curve,Condition( function sa__Movement__set_curve))
     set st__Movement_setTargetLocation=CreateTrigger()
     call TriggerAddCondition(st__Movement_setTargetLocation,Condition( function sa__Movement_setTargetLocation))
+    set st__Movement_resetTargetLocation=CreateTrigger()
+    call TriggerAddCondition(st__Movement_resetTargetLocation,Condition( function sa__Movement_resetTargetLocation))
     set st__Actor_onSuspend[79]=CreateTrigger()
     call TriggerAddCondition(st__Actor_onSuspend[79],Condition( function sa__Movement_onSuspend))
     call TriggerAddAction(st__Actor_onSuspend[79], function sa__Movement_onSuspend)
@@ -35057,6 +35774,12 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Actor_onDestroy[79]=CreateTrigger()
     call TriggerAddCondition(st__Actor_onDestroy[79],Condition( function sa__Movement_onDestroy))
     call TriggerAddCondition(st__Actor_onDestroy[79],Condition( function sa__Actor_onDestroy))
+    set st__Game_defeat=CreateTrigger()
+    call TriggerAddCondition(st__Game_defeat,Condition( function sa__Game_defeat))
+    set st__Game_addLevel=CreateTrigger()
+    call TriggerAddCondition(st__Game_addLevel,Condition( function sa__Game_addLevel))
+    set st__Game_endSelect=CreateTrigger()
+    call TriggerAddCondition(st__Game_endSelect,Condition( function sa__Game_endSelect))
     set st__Explosion_executeExplosion[92]=CreateTrigger()
     call TriggerAddCondition(st__Explosion_executeExplosion[92],Condition( function sa__Ability0001_explosion_executeExplosion))
     call TriggerAddAction(st__Explosion_executeExplosion[92], function sa__Ability0001_explosion_executeExplosion)
@@ -35070,16 +35793,12 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__Ability_prototype_init[91],Condition( function sa__Ability0000_main_init))
     call TriggerAddAction(st__Ability_prototype_init[91], function sa__Ability0000_main_init)
     set st__LineIndicator_beforeRefresh[90]=CreateTrigger()
-    call TriggerAddCondition(st__LineIndicator_beforeRefresh[90],Condition( function sa__Ability0000___ind_beforeRefresh))
-    call TriggerAddAction(st__LineIndicator_beforeRefresh[90], function sa__Ability0000___ind_beforeRefresh)
-    set st__Game_defeat=CreateTrigger()
-    call TriggerAddCondition(st__Game_defeat,Condition( function sa__Game_defeat))
-    set st__Game_addLevel=CreateTrigger()
-    call TriggerAddCondition(st__Game_addLevel,Condition( function sa__Game_addLevel))
-    set st__Game_endSelect=CreateTrigger()
-    call TriggerAddCondition(st__Game_endSelect,Condition( function sa__Game_endSelect))
-    set st__Wave__spawner_onDestroy=CreateTrigger()
-    call TriggerAddCondition(st__Wave__spawner_onDestroy,Condition( function sa__Wave__spawner_onDestroy))
+    call TriggerAddCondition(st__LineIndicator_beforeRefresh[90],Condition( function sa__Ability0000__ind_beforeRefresh))
+    call TriggerAddAction(st__LineIndicator_beforeRefresh[90], function sa__Ability0000__ind_beforeRefresh)
+    set st__Wave___spawner_onDestroy=CreateTrigger()
+    call TriggerAddCondition(st__Wave___spawner_onDestroy,Condition( function sa__Wave___spawner_onDestroy))
+    set st__Wave_spawn=CreateTrigger()
+    call TriggerAddCondition(st__Wave_spawn,Condition( function sa__Wave_spawn))
     set st__Buff_update[87]=CreateTrigger()
     call TriggerAddCondition(st__Buff_update[87],Condition( function sa__BuffEnsn_main_update))
     call TriggerAddAction(st__Buff_update[87], function sa__BuffEnsn_main_update)
@@ -35104,49 +35823,56 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__Mouse_getY,Condition( function sa__Mouse_getY))
     set st__Mouse_activateRefresher=CreateTrigger()
     call TriggerAddCondition(st__Mouse_activateRefresher,Condition( function sa__Mouse_activateRefresher))
-    set st__Wave_spawn=CreateTrigger()
-    call TriggerAddCondition(st__Wave_spawn,Condition( function sa__Wave_spawn))
     set st__Agent_create=CreateTrigger()
     call TriggerAddCondition(st__Agent_create,Condition( function sa__Agent_create))
     set st__Object_onDestroy[4]=CreateTrigger()
     call TriggerAddCondition(st__Object_onDestroy[4],Condition( function sa__Agent_onDestroy))
     call TriggerAddCondition(st__Object_onDestroy[4],Condition( function sa__Object_onDestroy))
-    set st__Ability_prototype_init[171]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_init[171],Condition( function sa__AbilityC002_main_init))
-    call TriggerAddAction(st__Ability_prototype_init[171], function sa__AbilityC002_main_init)
-    set st__Ability_prototype_onDestroy[171]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_onDestroy[171],Condition( function sa__AbilityC002_main_onDestroy))
-    call TriggerAddCondition(st__Ability_prototype_onDestroy[171],Condition( function sa__Ability_prototype_onDestroy))
-    set st__Ability_prototype_init[170]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_init[170],Condition( function sa__AbilityC001_main_init))
-    call TriggerAddAction(st__Ability_prototype_init[170], function sa__AbilityC001_main_init)
-    set st__Ability_prototype_onDestroy[170]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_onDestroy[170],Condition( function sa__AbilityC001_main_onDestroy))
-    call TriggerAddCondition(st__Ability_prototype_onDestroy[170],Condition( function sa__Ability_prototype_onDestroy))
-    set st__Ability_prototype_init[169]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_init[169],Condition( function sa__AbilityC000_main_init))
-    call TriggerAddAction(st__Ability_prototype_init[169], function sa__AbilityC000_main_init)
-    set st__Ability_prototype_onDestroy[169]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_onDestroy[169],Condition( function sa__AbilityC000_main_onDestroy))
-    call TriggerAddCondition(st__Ability_prototype_onDestroy[169],Condition( function sa__Ability_prototype_onDestroy))
-    set st__Ability_prototype_relativeTooltip[168]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_relativeTooltip[168],Condition( function sa__Ability0041_main_relativeTooltip))
-    call TriggerAddAction(st__Ability_prototype_relativeTooltip[168], function sa__Ability0041_main_relativeTooltip)
-    set st__Ability_prototype_execute[168]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_execute[168],Condition( function sa__Ability0041_main_execute))
-    call TriggerAddAction(st__Ability_prototype_execute[168], function sa__Ability0041_main_execute)
-    set st__Ability_prototype_init[168]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_init[168],Condition( function sa__Ability0041_main_init))
-    call TriggerAddAction(st__Ability_prototype_init[168], function sa__Ability0041_main_init)
-    set st__Ability_prototype_relativeTooltip[163]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_relativeTooltip[163],Condition( function sa__Ability0040_main_relativeTooltip))
-    call TriggerAddAction(st__Ability_prototype_relativeTooltip[163], function sa__Ability0040_main_relativeTooltip)
-    set st__Ability_prototype_execute[163]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_execute[163],Condition( function sa__Ability0040_main_execute))
-    call TriggerAddAction(st__Ability_prototype_execute[163], function sa__Ability0040_main_execute)
-    set st__Ability_prototype_init[163]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_init[163],Condition( function sa__Ability0040_main_init))
-    call TriggerAddAction(st__Ability_prototype_init[163], function sa__Ability0040_main_init)
+    set st__Ability_prototype_init[175]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_init[175],Condition( function sa__AbilityC002_main_init))
+    call TriggerAddAction(st__Ability_prototype_init[175], function sa__AbilityC002_main_init)
+    set st__Ability_prototype_onDestroy[175]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_onDestroy[175],Condition( function sa__AbilityC002_main_onDestroy))
+    call TriggerAddCondition(st__Ability_prototype_onDestroy[175],Condition( function sa__Ability_prototype_onDestroy))
+    set st__Ability_prototype_init[174]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_init[174],Condition( function sa__AbilityC001_main_init))
+    call TriggerAddAction(st__Ability_prototype_init[174], function sa__AbilityC001_main_init)
+    set st__Ability_prototype_onDestroy[174]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_onDestroy[174],Condition( function sa__AbilityC001_main_onDestroy))
+    call TriggerAddCondition(st__Ability_prototype_onDestroy[174],Condition( function sa__Ability_prototype_onDestroy))
+    set st__Ability_prototype_init[173]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_init[173],Condition( function sa__AbilityC000_main_init))
+    call TriggerAddAction(st__Ability_prototype_init[173], function sa__AbilityC000_main_init)
+    set st__Ability_prototype_onDestroy[173]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_onDestroy[173],Condition( function sa__AbilityC000_main_onDestroy))
+    call TriggerAddCondition(st__Ability_prototype_onDestroy[173],Condition( function sa__Ability_prototype_onDestroy))
+    set st__Ability_prototype_relativeTooltip[172]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_relativeTooltip[172],Condition( function sa__Ability0041_main_relativeTooltip))
+    call TriggerAddAction(st__Ability_prototype_relativeTooltip[172], function sa__Ability0041_main_relativeTooltip)
+    set st__Ability_prototype_execute[172]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_execute[172],Condition( function sa__Ability0041_main_execute))
+    call TriggerAddAction(st__Ability_prototype_execute[172], function sa__Ability0041_main_execute)
+    set st__Ability_prototype_init[172]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_init[172],Condition( function sa__Ability0041_main_init))
+    call TriggerAddAction(st__Ability_prototype_init[172], function sa__Ability0041_main_init)
+    set st__Ability_prototype_relativeTooltip[167]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_relativeTooltip[167],Condition( function sa__Ability0040_main_relativeTooltip))
+    call TriggerAddAction(st__Ability_prototype_relativeTooltip[167], function sa__Ability0040_main_relativeTooltip)
+    set st__Ability_prototype_execute[167]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_execute[167],Condition( function sa__Ability0040_main_execute))
+    call TriggerAddAction(st__Ability_prototype_execute[167], function sa__Ability0040_main_execute)
+    set st__Ability_prototype_init[167]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_init[167],Condition( function sa__Ability0040_main_init))
+    call TriggerAddAction(st__Ability_prototype_init[167], function sa__Ability0040_main_init)
+    set st__Ability_prototype_relativeTooltip[162]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_relativeTooltip[162],Condition( function sa__Ability0031_main_relativeTooltip))
+    call TriggerAddAction(st__Ability_prototype_relativeTooltip[162], function sa__Ability0031_main_relativeTooltip)
+    set st__Ability_prototype_execute[162]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_execute[162],Condition( function sa__Ability0031_main_execute))
+    call TriggerAddAction(st__Ability_prototype_execute[162], function sa__Ability0031_main_execute)
+    set st__Ability_prototype_init[162]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_init[162],Condition( function sa__Ability0031_main_init))
+    call TriggerAddAction(st__Ability_prototype_init[162], function sa__Ability0031_main_init)
     set st__Ability_prototype_relativeTooltip[158]=CreateTrigger()
     call TriggerAddCondition(st__Ability_prototype_relativeTooltip[158],Condition( function sa__Ability0030_main_relativeTooltip))
     call TriggerAddAction(st__Ability_prototype_relativeTooltip[158], function sa__Ability0030_main_relativeTooltip)
@@ -35207,27 +35933,6 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_init[139]=CreateTrigger()
     call TriggerAddCondition(st__Ability_prototype_init[139],Condition( function sa__Ability0016_main_init))
     call TriggerAddAction(st__Ability_prototype_init[139], function sa__Ability0016_main_init)
-    set st__Ability_prototype_relativeTooltip[137]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_relativeTooltip[137],Condition( function sa__Ability0015_main_relativeTooltip))
-    call TriggerAddAction(st__Ability_prototype_relativeTooltip[137], function sa__Ability0015_main_relativeTooltip)
-    set st__Ability_prototype_beforeRelease[137]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_beforeRelease[137],Condition( function sa__Ability0015_main_beforeRelease))
-    call TriggerAddAction(st__Ability_prototype_beforeRelease[137], function sa__Ability0015_main_beforeRelease)
-    set st__Ability_prototype_onRelease[137]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_onRelease[137],Condition( function sa__Ability0015_main_onRelease))
-    call TriggerAddAction(st__Ability_prototype_onRelease[137], function sa__Ability0015_main_onRelease)
-    set st__Ability_prototype_onRightClick[137]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_onRightClick[137],Condition( function sa__Ability0015_main_onRightClick))
-    call TriggerAddAction(st__Ability_prototype_onRightClick[137], function sa__Ability0015_main_onRightClick)
-    set st__Ability_prototype_execute[137]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_execute[137],Condition( function sa__Ability0015_main_execute))
-    call TriggerAddAction(st__Ability_prototype_execute[137], function sa__Ability0015_main_execute)
-    set st__Ability_prototype_onPress[137]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_onPress[137],Condition( function sa__Ability0015_main_onPress))
-    call TriggerAddAction(st__Ability_prototype_onPress[137], function sa__Ability0015_main_onPress)
-    set st__Ability_prototype_init[137]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_init[137],Condition( function sa__Ability0015_main_init))
-    call TriggerAddAction(st__Ability_prototype_init[137], function sa__Ability0015_main_init)
     set st__UnitActor_rightClick[39]=CreateTrigger()
     set st__UnitActor_rightClick[40]=st__UnitActor_rightClick[39]
     set st__UnitActor_rightClick[41]=st__UnitActor_rightClick[39]
@@ -35252,9 +35957,10 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__UnitActor_rightClick[146]=st__UnitActor_rightClick[39]
     set st__UnitActor_rightClick[151]=st__UnitActor_rightClick[39]
     set st__UnitActor_rightClick[156]=st__UnitActor_rightClick[39]
-    set st__UnitActor_rightClick[161]=st__UnitActor_rightClick[39]
-    set st__UnitActor_rightClick[166]=st__UnitActor_rightClick[39]
-    set st__UnitActor_rightClick[167]=st__UnitActor_rightClick[39]
+    set st__UnitActor_rightClick[160]=st__UnitActor_rightClick[39]
+    set st__UnitActor_rightClick[165]=st__UnitActor_rightClick[39]
+    set st__UnitActor_rightClick[170]=st__UnitActor_rightClick[39]
+    set st__UnitActor_rightClick[171]=st__UnitActor_rightClick[39]
     call TriggerAddCondition(st__UnitActor_rightClick[39],Condition( function sa__UnitActor_rightClick))
     call TriggerAddAction(st__UnitActor_rightClick[39], function sa__UnitActor_rightClick)
     set st__Actor_onSuspend[39]=CreateTrigger()
@@ -35274,9 +35980,10 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Actor_onSuspend[146]=st__Actor_onSuspend[39]
     set st__Actor_onSuspend[151]=st__Actor_onSuspend[39]
     set st__Actor_onSuspend[156]=st__Actor_onSuspend[39]
-    set st__Actor_onSuspend[161]=st__Actor_onSuspend[39]
-    set st__Actor_onSuspend[166]=st__Actor_onSuspend[39]
-    set st__Actor_onSuspend[167]=st__Actor_onSuspend[39]
+    set st__Actor_onSuspend[160]=st__Actor_onSuspend[39]
+    set st__Actor_onSuspend[165]=st__Actor_onSuspend[39]
+    set st__Actor_onSuspend[170]=st__Actor_onSuspend[39]
+    set st__Actor_onSuspend[171]=st__Actor_onSuspend[39]
     call TriggerAddCondition(st__Actor_onSuspend[39],Condition( function sa__UnitActor_onSuspend))
     call TriggerAddAction(st__Actor_onSuspend[39], function sa__UnitActor_onSuspend)
     set st__Actor_onComplete[39]=CreateTrigger()
@@ -35284,7 +35991,7 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Actor_onComplete[104]=st__Actor_onComplete[39]
     set st__Actor_onComplete[128]=st__Actor_onComplete[39]
     set st__Actor_onComplete[136]=st__Actor_onComplete[39]
-    set st__Actor_onComplete[161]=st__Actor_onComplete[39]
+    set st__Actor_onComplete[165]=st__Actor_onComplete[39]
     call TriggerAddCondition(st__Actor_onComplete[39],Condition( function sa__UnitActor_onComplete))
     call TriggerAddAction(st__Actor_onComplete[39], function sa__UnitActor_onComplete)
     set st__Actor_periodicAction[39]=CreateTrigger()
@@ -35302,7 +36009,8 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Actor_periodicAction[130]=st__Actor_periodicAction[39]
     set st__Actor_periodicAction[151]=st__Actor_periodicAction[39]
     set st__Actor_periodicAction[156]=st__Actor_periodicAction[39]
-    set st__Actor_periodicAction[167]=st__Actor_periodicAction[39]
+    set st__Actor_periodicAction[160]=st__Actor_periodicAction[39]
+    set st__Actor_periodicAction[171]=st__Actor_periodicAction[39]
     call TriggerAddCondition(st__Actor_periodicAction[39],Condition( function sa__UnitActor_periodicAction))
     call TriggerAddAction(st__Actor_periodicAction[39], function sa__UnitActor_periodicAction)
     set st__UnitActor_suspendFilterAdditional[39]=CreateTrigger()
@@ -35328,9 +36036,10 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__UnitActor_suspendFilterAdditional[146]=st__UnitActor_suspendFilterAdditional[39]
     set st__UnitActor_suspendFilterAdditional[151]=st__UnitActor_suspendFilterAdditional[39]
     set st__UnitActor_suspendFilterAdditional[156]=st__UnitActor_suspendFilterAdditional[39]
-    set st__UnitActor_suspendFilterAdditional[161]=st__UnitActor_suspendFilterAdditional[39]
-    set st__UnitActor_suspendFilterAdditional[166]=st__UnitActor_suspendFilterAdditional[39]
-    set st__UnitActor_suspendFilterAdditional[167]=st__UnitActor_suspendFilterAdditional[39]
+    set st__UnitActor_suspendFilterAdditional[160]=st__UnitActor_suspendFilterAdditional[39]
+    set st__UnitActor_suspendFilterAdditional[165]=st__UnitActor_suspendFilterAdditional[39]
+    set st__UnitActor_suspendFilterAdditional[170]=st__UnitActor_suspendFilterAdditional[39]
+    set st__UnitActor_suspendFilterAdditional[171]=st__UnitActor_suspendFilterAdditional[39]
     call TriggerAddCondition(st__UnitActor_suspendFilterAdditional[39],Condition( function sa__UnitActor_suspendFilterAdditional))
     call TriggerAddAction(st__UnitActor_suspendFilterAdditional[39], function sa__UnitActor_suspendFilterAdditional)
     set st__Actor_suspendFilter[39]=CreateTrigger()
@@ -35357,9 +36066,10 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Actor_suspendFilter[146]=st__Actor_suspendFilter[39]
     set st__Actor_suspendFilter[151]=st__Actor_suspendFilter[39]
     set st__Actor_suspendFilter[156]=st__Actor_suspendFilter[39]
-    set st__Actor_suspendFilter[161]=st__Actor_suspendFilter[39]
-    set st__Actor_suspendFilter[166]=st__Actor_suspendFilter[39]
-    set st__Actor_suspendFilter[167]=st__Actor_suspendFilter[39]
+    set st__Actor_suspendFilter[160]=st__Actor_suspendFilter[39]
+    set st__Actor_suspendFilter[165]=st__Actor_suspendFilter[39]
+    set st__Actor_suspendFilter[170]=st__Actor_suspendFilter[39]
+    set st__Actor_suspendFilter[171]=st__Actor_suspendFilter[39]
     call TriggerAddCondition(st__Actor_suspendFilter[39],Condition( function sa__UnitActor_suspendFilter))
     call TriggerAddAction(st__Actor_suspendFilter[39], function sa__UnitActor_suspendFilter)
     set st__UnitActor_create=CreateTrigger()
@@ -35374,15 +36084,6 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__Actor_onDestroy[104],Condition( function sa__Ability0004_actor_onDestroy))
     call TriggerAddCondition(st__Actor_onDestroy[104],Condition( function sa__UnitActor_onDestroy))
     call TriggerAddCondition(st__Actor_onDestroy[104],Condition( function sa__Actor_onDestroy))
-    set st__Ability_prototype_relativeTooltip[105]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_relativeTooltip[105],Condition( function sa__Ability0004_main_relativeTooltip))
-    call TriggerAddAction(st__Ability_prototype_relativeTooltip[105], function sa__Ability0004_main_relativeTooltip)
-    set st__Ability_prototype_execute[105]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_execute[105],Condition( function sa__Ability0004_main_execute))
-    call TriggerAddAction(st__Ability_prototype_execute[105], function sa__Ability0004_main_execute)
-    set st__Ability_prototype_init[105]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_init[105],Condition( function sa__Ability0004_main_init))
-    call TriggerAddAction(st__Ability_prototype_init[105], function sa__Ability0004_main_init)
     set st__Actor_onComplete[106]=CreateTrigger()
     call TriggerAddCondition(st__Actor_onComplete[106],Condition( function sa__Ability0005_actor_onComplete))
     call TriggerAddAction(st__Actor_onComplete[106], function sa__Ability0005_actor_onComplete)
@@ -35390,18 +36091,6 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__Actor_onDestroy[106],Condition( function sa__Ability0005_actor_onDestroy))
     call TriggerAddCondition(st__Actor_onDestroy[106],Condition( function sa__UnitActor_onDestroy))
     call TriggerAddCondition(st__Actor_onDestroy[106],Condition( function sa__Actor_onDestroy))
-    set st__Ability_prototype_relativeTooltip[107]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_relativeTooltip[107],Condition( function sa__Ability0005_main_relativeTooltip))
-    call TriggerAddAction(st__Ability_prototype_relativeTooltip[107], function sa__Ability0005_main_relativeTooltip)
-    set st__Ability_prototype_targetFilterAdditional[107]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_targetFilterAdditional[107],Condition( function sa__Ability0005_main_targetFilterAdditional))
-    call TriggerAddAction(st__Ability_prototype_targetFilterAdditional[107], function sa__Ability0005_main_targetFilterAdditional)
-    set st__Ability_prototype_execute[107]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_execute[107],Condition( function sa__Ability0005_main_execute))
-    call TriggerAddAction(st__Ability_prototype_execute[107], function sa__Ability0005_main_execute)
-    set st__Ability_prototype_init[107]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_init[107],Condition( function sa__Ability0005_main_init))
-    call TriggerAddAction(st__Ability_prototype_init[107], function sa__Ability0005_main_init)
     set st__Ability_prototype_getMaxCooldown[108]=CreateTrigger()
     call TriggerAddCondition(st__Ability_prototype_getMaxCooldown[108],Condition( function sa__Ability0006_main_getMaxCooldown))
     call TriggerAddAction(st__Ability_prototype_getMaxCooldown[108], function sa__Ability0006_main_getMaxCooldown)
@@ -35519,6 +36208,12 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__UnitMovement_executeWave[116]=st__UnitMovement_executeWave[42]
     call TriggerAddCondition(st__UnitMovement_executeWave[42],Condition( function sa__UnitMovement_executeWave))
     call TriggerAddAction(st__UnitMovement_executeWave[42], function sa__UnitMovement_executeWave)
+    set st__UnitMovement_explosionFillUnits[42]=CreateTrigger()
+    set st__UnitMovement_explosionFillUnits[43]=st__UnitMovement_explosionFillUnits[42]
+    set st__UnitMovement_explosionFillUnits[88]=st__UnitMovement_explosionFillUnits[42]
+    set st__UnitMovement_explosionFillUnits[116]=st__UnitMovement_explosionFillUnits[42]
+    call TriggerAddCondition(st__UnitMovement_explosionFillUnits[42],Condition( function sa__UnitMovement_explosionFillUnits))
+    call TriggerAddAction(st__UnitMovement_explosionFillUnits[42], function sa__UnitMovement_explosionFillUnits)
     set st__UnitMovement_collisionFilterAdditional[42]=CreateTrigger()
     set st__UnitMovement_collisionFilterAdditional[43]=st__UnitMovement_collisionFilterAdditional[42]
     set st__UnitMovement_collisionFilterAdditional[88]=st__UnitMovement_collisionFilterAdditional[42]
@@ -35584,368 +36279,6 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_init[121]=CreateTrigger()
     call TriggerAddCondition(st__Ability_prototype_init[121],Condition( function sa__Abilityu001_main_init))
     call TriggerAddAction(st__Ability_prototype_init[121], function sa__Abilityu001_main_init)
-    set st__Effect__get_origin_effect=CreateTrigger()
-    call TriggerAddCondition(st__Effect__get_origin_effect,Condition( function sa__Effect__get_origin_effect))
-    set st__Object__get_x[53]=CreateTrigger()
-    set st__Object__get_x[73]=st__Object__get_x[53]
-    set st__Object__get_x[74]=st__Object__get_x[53]
-    set st__Object__get_x[78]=st__Object__get_x[53]
-    set st__Object__get_x[99]=st__Object__get_x[78]
-    set st__Object__get_x[112]=st__Object__get_x[78]
-    set st__Object__get_x[119]=st__Object__get_x[78]
-    set st__Object__get_x[122]=st__Object__get_x[78]
-    set st__Object__get_x[145]=st__Object__get_x[78]
-    set st__Object__get_x[154]=st__Object__get_x[78]
-    set st__Object__get_x[155]=st__Object__get_x[78]
-    set st__Object__get_x[165]=st__Object__get_x[78]
-    call TriggerAddCondition(st__Object__get_x[53],Condition( function sa__Effect__get_x))
-    call TriggerAddAction(st__Object__get_x[53], function sa__Effect__get_x)
-    set st__Object__get_offset_x[53]=CreateTrigger()
-    set st__Object__get_offset_x[73]=st__Object__get_offset_x[53]
-    set st__Object__get_offset_x[74]=st__Object__get_offset_x[53]
-    set st__Object__get_offset_x[78]=st__Object__get_offset_x[53]
-    set st__Object__get_offset_x[99]=st__Object__get_offset_x[78]
-    set st__Object__get_offset_x[112]=st__Object__get_offset_x[78]
-    set st__Object__get_offset_x[119]=st__Object__get_offset_x[78]
-    set st__Object__get_offset_x[122]=st__Object__get_offset_x[78]
-    set st__Object__get_offset_x[145]=st__Object__get_offset_x[78]
-    set st__Object__get_offset_x[154]=st__Object__get_offset_x[78]
-    set st__Object__get_offset_x[155]=st__Object__get_offset_x[78]
-    set st__Object__get_offset_x[165]=st__Object__get_offset_x[78]
-    call TriggerAddCondition(st__Object__get_offset_x[53],Condition( function sa__Effect__get_offset_x))
-    call TriggerAddAction(st__Object__get_offset_x[53], function sa__Effect__get_offset_x)
-    set st__Object__get_y[53]=CreateTrigger()
-    set st__Object__get_y[73]=st__Object__get_y[53]
-    set st__Object__get_y[74]=st__Object__get_y[53]
-    set st__Object__get_y[78]=st__Object__get_y[53]
-    set st__Object__get_y[99]=st__Object__get_y[78]
-    set st__Object__get_y[112]=st__Object__get_y[78]
-    set st__Object__get_y[119]=st__Object__get_y[78]
-    set st__Object__get_y[122]=st__Object__get_y[78]
-    set st__Object__get_y[145]=st__Object__get_y[78]
-    set st__Object__get_y[154]=st__Object__get_y[78]
-    set st__Object__get_y[155]=st__Object__get_y[78]
-    set st__Object__get_y[165]=st__Object__get_y[78]
-    call TriggerAddCondition(st__Object__get_y[53],Condition( function sa__Effect__get_y))
-    call TriggerAddAction(st__Object__get_y[53], function sa__Effect__get_y)
-    set st__Object__get_offset_y[53]=CreateTrigger()
-    set st__Object__get_offset_y[73]=st__Object__get_offset_y[53]
-    set st__Object__get_offset_y[74]=st__Object__get_offset_y[53]
-    set st__Object__get_offset_y[78]=st__Object__get_offset_y[53]
-    set st__Object__get_offset_y[99]=st__Object__get_offset_y[78]
-    set st__Object__get_offset_y[112]=st__Object__get_offset_y[78]
-    set st__Object__get_offset_y[119]=st__Object__get_offset_y[78]
-    set st__Object__get_offset_y[122]=st__Object__get_offset_y[78]
-    set st__Object__get_offset_y[145]=st__Object__get_offset_y[78]
-    set st__Object__get_offset_y[154]=st__Object__get_offset_y[78]
-    set st__Object__get_offset_y[155]=st__Object__get_offset_y[78]
-    set st__Object__get_offset_y[165]=st__Object__get_offset_y[78]
-    call TriggerAddCondition(st__Object__get_offset_y[53],Condition( function sa__Effect__get_offset_y))
-    call TriggerAddAction(st__Object__get_offset_y[53], function sa__Effect__get_offset_y)
-    set st__Object__get_z[53]=CreateTrigger()
-    set st__Object__get_z[73]=st__Object__get_z[53]
-    set st__Object__get_z[74]=st__Object__get_z[53]
-    set st__Object__get_z[78]=st__Object__get_z[53]
-    set st__Object__get_z[99]=st__Object__get_z[78]
-    set st__Object__get_z[112]=st__Object__get_z[78]
-    set st__Object__get_z[119]=st__Object__get_z[78]
-    set st__Object__get_z[122]=st__Object__get_z[78]
-    set st__Object__get_z[145]=st__Object__get_z[78]
-    set st__Object__get_z[154]=st__Object__get_z[78]
-    set st__Object__get_z[155]=st__Object__get_z[78]
-    set st__Object__get_z[165]=st__Object__get_z[78]
-    call TriggerAddCondition(st__Object__get_z[53],Condition( function sa__Effect__get_z))
-    call TriggerAddAction(st__Object__get_z[53], function sa__Effect__get_z)
-    set st__Object__get_offset_z[53]=CreateTrigger()
-    set st__Object__get_offset_z[73]=st__Object__get_offset_z[53]
-    set st__Object__get_offset_z[74]=st__Object__get_offset_z[53]
-    set st__Object__get_offset_z[78]=st__Object__get_offset_z[53]
-    set st__Object__get_offset_z[99]=st__Object__get_offset_z[78]
-    set st__Object__get_offset_z[112]=st__Object__get_offset_z[78]
-    set st__Object__get_offset_z[119]=st__Object__get_offset_z[78]
-    set st__Object__get_offset_z[122]=st__Object__get_offset_z[78]
-    set st__Object__get_offset_z[145]=st__Object__get_offset_z[78]
-    set st__Object__get_offset_z[154]=st__Object__get_offset_z[78]
-    set st__Object__get_offset_z[155]=st__Object__get_offset_z[78]
-    set st__Object__get_offset_z[165]=st__Object__get_offset_z[78]
-    call TriggerAddCondition(st__Object__get_offset_z[53],Condition( function sa__Effect__get_offset_z))
-    call TriggerAddAction(st__Object__get_offset_z[53], function sa__Effect__get_offset_z)
-    set st__Object__get_yaw[53]=CreateTrigger()
-    set st__Object__get_yaw[73]=st__Object__get_yaw[53]
-    set st__Object__get_yaw[74]=st__Object__get_yaw[53]
-    set st__Object__get_yaw[78]=st__Object__get_yaw[53]
-    set st__Object__get_yaw[99]=st__Object__get_yaw[78]
-    set st__Object__get_yaw[112]=st__Object__get_yaw[78]
-    set st__Object__get_yaw[119]=st__Object__get_yaw[78]
-    set st__Object__get_yaw[122]=st__Object__get_yaw[78]
-    set st__Object__get_yaw[145]=st__Object__get_yaw[78]
-    set st__Object__get_yaw[154]=st__Object__get_yaw[78]
-    set st__Object__get_yaw[155]=st__Object__get_yaw[78]
-    set st__Object__get_yaw[165]=st__Object__get_yaw[78]
-    call TriggerAddCondition(st__Object__get_yaw[53],Condition( function sa__Effect__get_yaw))
-    call TriggerAddAction(st__Object__get_yaw[53], function sa__Effect__get_yaw)
-    set st__Object__get_offset_yaw[53]=CreateTrigger()
-    set st__Object__get_offset_yaw[73]=st__Object__get_offset_yaw[53]
-    set st__Object__get_offset_yaw[74]=st__Object__get_offset_yaw[53]
-    set st__Object__get_offset_yaw[78]=st__Object__get_offset_yaw[53]
-    set st__Object__get_offset_yaw[99]=st__Object__get_offset_yaw[78]
-    set st__Object__get_offset_yaw[112]=st__Object__get_offset_yaw[78]
-    set st__Object__get_offset_yaw[119]=st__Object__get_offset_yaw[78]
-    set st__Object__get_offset_yaw[122]=st__Object__get_offset_yaw[78]
-    set st__Object__get_offset_yaw[145]=st__Object__get_offset_yaw[78]
-    set st__Object__get_offset_yaw[154]=st__Object__get_offset_yaw[78]
-    set st__Object__get_offset_yaw[155]=st__Object__get_offset_yaw[78]
-    set st__Object__get_offset_yaw[165]=st__Object__get_offset_yaw[78]
-    call TriggerAddCondition(st__Object__get_offset_yaw[53],Condition( function sa__Effect__get_offset_yaw))
-    call TriggerAddAction(st__Object__get_offset_yaw[53], function sa__Effect__get_offset_yaw)
-    set st__Object__get_pitch[53]=CreateTrigger()
-    set st__Object__get_pitch[73]=st__Object__get_pitch[53]
-    set st__Object__get_pitch[74]=st__Object__get_pitch[53]
-    set st__Object__get_pitch[78]=st__Object__get_pitch[53]
-    set st__Object__get_pitch[99]=st__Object__get_pitch[78]
-    set st__Object__get_pitch[112]=st__Object__get_pitch[78]
-    set st__Object__get_pitch[119]=st__Object__get_pitch[78]
-    set st__Object__get_pitch[122]=st__Object__get_pitch[78]
-    set st__Object__get_pitch[145]=st__Object__get_pitch[78]
-    set st__Object__get_pitch[154]=st__Object__get_pitch[78]
-    set st__Object__get_pitch[155]=st__Object__get_pitch[78]
-    set st__Object__get_pitch[165]=st__Object__get_pitch[78]
-    call TriggerAddCondition(st__Object__get_pitch[53],Condition( function sa__Effect__get_pitch))
-    call TriggerAddAction(st__Object__get_pitch[53], function sa__Effect__get_pitch)
-    set st__Object__get_offset_pitch[53]=CreateTrigger()
-    set st__Object__get_offset_pitch[73]=st__Object__get_offset_pitch[53]
-    set st__Object__get_offset_pitch[74]=st__Object__get_offset_pitch[53]
-    set st__Object__get_offset_pitch[78]=st__Object__get_offset_pitch[53]
-    set st__Object__get_offset_pitch[99]=st__Object__get_offset_pitch[78]
-    set st__Object__get_offset_pitch[112]=st__Object__get_offset_pitch[78]
-    set st__Object__get_offset_pitch[119]=st__Object__get_offset_pitch[78]
-    set st__Object__get_offset_pitch[122]=st__Object__get_offset_pitch[78]
-    set st__Object__get_offset_pitch[145]=st__Object__get_offset_pitch[78]
-    set st__Object__get_offset_pitch[154]=st__Object__get_offset_pitch[78]
-    set st__Object__get_offset_pitch[155]=st__Object__get_offset_pitch[78]
-    set st__Object__get_offset_pitch[165]=st__Object__get_offset_pitch[78]
-    call TriggerAddCondition(st__Object__get_offset_pitch[53],Condition( function sa__Effect__get_offset_pitch))
-    call TriggerAddAction(st__Object__get_offset_pitch[53], function sa__Effect__get_offset_pitch)
-    set st__Object__get_roll[53]=CreateTrigger()
-    set st__Object__get_roll[73]=st__Object__get_roll[53]
-    set st__Object__get_roll[74]=st__Object__get_roll[53]
-    set st__Object__get_roll[78]=st__Object__get_roll[53]
-    set st__Object__get_roll[99]=st__Object__get_roll[78]
-    set st__Object__get_roll[112]=st__Object__get_roll[78]
-    set st__Object__get_roll[119]=st__Object__get_roll[78]
-    set st__Object__get_roll[122]=st__Object__get_roll[78]
-    set st__Object__get_roll[145]=st__Object__get_roll[78]
-    set st__Object__get_roll[154]=st__Object__get_roll[78]
-    set st__Object__get_roll[155]=st__Object__get_roll[78]
-    set st__Object__get_roll[165]=st__Object__get_roll[78]
-    call TriggerAddCondition(st__Object__get_roll[53],Condition( function sa__Effect__get_roll))
-    call TriggerAddAction(st__Object__get_roll[53], function sa__Effect__get_roll)
-    set st__Object__get_offset_roll[53]=CreateTrigger()
-    set st__Object__get_offset_roll[73]=st__Object__get_offset_roll[53]
-    set st__Object__get_offset_roll[74]=st__Object__get_offset_roll[53]
-    set st__Object__get_offset_roll[78]=st__Object__get_offset_roll[53]
-    set st__Object__get_offset_roll[99]=st__Object__get_offset_roll[78]
-    set st__Object__get_offset_roll[112]=st__Object__get_offset_roll[78]
-    set st__Object__get_offset_roll[119]=st__Object__get_offset_roll[78]
-    set st__Object__get_offset_roll[122]=st__Object__get_offset_roll[78]
-    set st__Object__get_offset_roll[145]=st__Object__get_offset_roll[78]
-    set st__Object__get_offset_roll[154]=st__Object__get_offset_roll[78]
-    set st__Object__get_offset_roll[155]=st__Object__get_offset_roll[78]
-    set st__Object__get_offset_roll[165]=st__Object__get_offset_roll[78]
-    call TriggerAddCondition(st__Object__get_offset_roll[53],Condition( function sa__Effect__get_offset_roll))
-    call TriggerAddAction(st__Object__get_offset_roll[53], function sa__Effect__get_offset_roll)
-    set st__Object__set_x[53]=CreateTrigger()
-    set st__Object__set_x[73]=st__Object__set_x[53]
-    set st__Object__set_x[74]=st__Object__set_x[53]
-    set st__Object__set_x[78]=st__Object__set_x[53]
-    set st__Object__set_x[99]=st__Object__set_x[78]
-    set st__Object__set_x[112]=st__Object__set_x[78]
-    set st__Object__set_x[119]=st__Object__set_x[78]
-    set st__Object__set_x[122]=st__Object__set_x[78]
-    set st__Object__set_x[145]=st__Object__set_x[78]
-    set st__Object__set_x[154]=st__Object__set_x[78]
-    set st__Object__set_x[155]=st__Object__set_x[78]
-    set st__Object__set_x[165]=st__Object__set_x[78]
-    call TriggerAddCondition(st__Object__set_x[53],Condition( function sa__Effect__set_x))
-    call TriggerAddAction(st__Object__set_x[53], function sa__Effect__set_x)
-    set st__Object__set_offset_x[53]=CreateTrigger()
-    set st__Object__set_offset_x[73]=st__Object__set_offset_x[53]
-    set st__Object__set_offset_x[74]=st__Object__set_offset_x[53]
-    set st__Object__set_offset_x[78]=st__Object__set_offset_x[53]
-    set st__Object__set_offset_x[99]=st__Object__set_offset_x[78]
-    set st__Object__set_offset_x[112]=st__Object__set_offset_x[78]
-    set st__Object__set_offset_x[119]=st__Object__set_offset_x[78]
-    set st__Object__set_offset_x[122]=st__Object__set_offset_x[78]
-    set st__Object__set_offset_x[145]=st__Object__set_offset_x[78]
-    set st__Object__set_offset_x[154]=st__Object__set_offset_x[78]
-    set st__Object__set_offset_x[155]=st__Object__set_offset_x[78]
-    set st__Object__set_offset_x[165]=st__Object__set_offset_x[78]
-    call TriggerAddCondition(st__Object__set_offset_x[53],Condition( function sa__Effect__set_offset_x))
-    call TriggerAddAction(st__Object__set_offset_x[53], function sa__Effect__set_offset_x)
-    set st__Object__set_y[53]=CreateTrigger()
-    set st__Object__set_y[73]=st__Object__set_y[53]
-    set st__Object__set_y[74]=st__Object__set_y[53]
-    set st__Object__set_y[78]=st__Object__set_y[53]
-    set st__Object__set_y[99]=st__Object__set_y[78]
-    set st__Object__set_y[112]=st__Object__set_y[78]
-    set st__Object__set_y[119]=st__Object__set_y[78]
-    set st__Object__set_y[122]=st__Object__set_y[78]
-    set st__Object__set_y[145]=st__Object__set_y[78]
-    set st__Object__set_y[154]=st__Object__set_y[78]
-    set st__Object__set_y[155]=st__Object__set_y[78]
-    set st__Object__set_y[165]=st__Object__set_y[78]
-    call TriggerAddCondition(st__Object__set_y[53],Condition( function sa__Effect__set_y))
-    call TriggerAddAction(st__Object__set_y[53], function sa__Effect__set_y)
-    set st__Object__set_offset_y[53]=CreateTrigger()
-    set st__Object__set_offset_y[73]=st__Object__set_offset_y[53]
-    set st__Object__set_offset_y[74]=st__Object__set_offset_y[53]
-    set st__Object__set_offset_y[78]=st__Object__set_offset_y[53]
-    set st__Object__set_offset_y[99]=st__Object__set_offset_y[78]
-    set st__Object__set_offset_y[112]=st__Object__set_offset_y[78]
-    set st__Object__set_offset_y[119]=st__Object__set_offset_y[78]
-    set st__Object__set_offset_y[122]=st__Object__set_offset_y[78]
-    set st__Object__set_offset_y[145]=st__Object__set_offset_y[78]
-    set st__Object__set_offset_y[154]=st__Object__set_offset_y[78]
-    set st__Object__set_offset_y[155]=st__Object__set_offset_y[78]
-    set st__Object__set_offset_y[165]=st__Object__set_offset_y[78]
-    call TriggerAddCondition(st__Object__set_offset_y[53],Condition( function sa__Effect__set_offset_y))
-    call TriggerAddAction(st__Object__set_offset_y[53], function sa__Effect__set_offset_y)
-    set st__Object__set_z[53]=CreateTrigger()
-    set st__Object__set_z[73]=st__Object__set_z[53]
-    set st__Object__set_z[74]=st__Object__set_z[53]
-    set st__Object__set_z[78]=st__Object__set_z[53]
-    set st__Object__set_z[99]=st__Object__set_z[78]
-    set st__Object__set_z[112]=st__Object__set_z[78]
-    set st__Object__set_z[119]=st__Object__set_z[78]
-    set st__Object__set_z[122]=st__Object__set_z[78]
-    set st__Object__set_z[145]=st__Object__set_z[78]
-    set st__Object__set_z[154]=st__Object__set_z[78]
-    set st__Object__set_z[155]=st__Object__set_z[78]
-    set st__Object__set_z[165]=st__Object__set_z[78]
-    call TriggerAddCondition(st__Object__set_z[53],Condition( function sa__Effect__set_z))
-    call TriggerAddAction(st__Object__set_z[53], function sa__Effect__set_z)
-    set st__Object__set_offset_z[53]=CreateTrigger()
-    set st__Object__set_offset_z[73]=st__Object__set_offset_z[53]
-    set st__Object__set_offset_z[74]=st__Object__set_offset_z[53]
-    set st__Object__set_offset_z[78]=st__Object__set_offset_z[53]
-    set st__Object__set_offset_z[99]=st__Object__set_offset_z[78]
-    set st__Object__set_offset_z[112]=st__Object__set_offset_z[78]
-    set st__Object__set_offset_z[119]=st__Object__set_offset_z[78]
-    set st__Object__set_offset_z[122]=st__Object__set_offset_z[78]
-    set st__Object__set_offset_z[145]=st__Object__set_offset_z[78]
-    set st__Object__set_offset_z[154]=st__Object__set_offset_z[78]
-    set st__Object__set_offset_z[155]=st__Object__set_offset_z[78]
-    set st__Object__set_offset_z[165]=st__Object__set_offset_z[78]
-    call TriggerAddCondition(st__Object__set_offset_z[53],Condition( function sa__Effect__set_offset_z))
-    call TriggerAddAction(st__Object__set_offset_z[53], function sa__Effect__set_offset_z)
-    set st__Object__set_yaw[53]=CreateTrigger()
-    set st__Object__set_yaw[73]=st__Object__set_yaw[53]
-    set st__Object__set_yaw[74]=st__Object__set_yaw[53]
-    set st__Object__set_yaw[78]=st__Object__set_yaw[53]
-    set st__Object__set_yaw[99]=st__Object__set_yaw[78]
-    set st__Object__set_yaw[112]=st__Object__set_yaw[78]
-    set st__Object__set_yaw[119]=st__Object__set_yaw[78]
-    set st__Object__set_yaw[122]=st__Object__set_yaw[78]
-    set st__Object__set_yaw[145]=st__Object__set_yaw[78]
-    set st__Object__set_yaw[154]=st__Object__set_yaw[78]
-    set st__Object__set_yaw[155]=st__Object__set_yaw[78]
-    set st__Object__set_yaw[165]=st__Object__set_yaw[78]
-    call TriggerAddCondition(st__Object__set_yaw[53],Condition( function sa__Effect__set_yaw))
-    call TriggerAddAction(st__Object__set_yaw[53], function sa__Effect__set_yaw)
-    set st__Object__set_offset_yaw[53]=CreateTrigger()
-    set st__Object__set_offset_yaw[73]=st__Object__set_offset_yaw[53]
-    set st__Object__set_offset_yaw[74]=st__Object__set_offset_yaw[53]
-    set st__Object__set_offset_yaw[78]=st__Object__set_offset_yaw[53]
-    set st__Object__set_offset_yaw[99]=st__Object__set_offset_yaw[78]
-    set st__Object__set_offset_yaw[112]=st__Object__set_offset_yaw[78]
-    set st__Object__set_offset_yaw[119]=st__Object__set_offset_yaw[78]
-    set st__Object__set_offset_yaw[122]=st__Object__set_offset_yaw[78]
-    set st__Object__set_offset_yaw[145]=st__Object__set_offset_yaw[78]
-    set st__Object__set_offset_yaw[154]=st__Object__set_offset_yaw[78]
-    set st__Object__set_offset_yaw[155]=st__Object__set_offset_yaw[78]
-    set st__Object__set_offset_yaw[165]=st__Object__set_offset_yaw[78]
-    call TriggerAddCondition(st__Object__set_offset_yaw[53],Condition( function sa__Effect__set_offset_yaw))
-    call TriggerAddAction(st__Object__set_offset_yaw[53], function sa__Effect__set_offset_yaw)
-    set st__Object__set_pitch[53]=CreateTrigger()
-    set st__Object__set_pitch[73]=st__Object__set_pitch[53]
-    set st__Object__set_pitch[74]=st__Object__set_pitch[53]
-    set st__Object__set_pitch[78]=st__Object__set_pitch[53]
-    set st__Object__set_pitch[99]=st__Object__set_pitch[78]
-    set st__Object__set_pitch[112]=st__Object__set_pitch[78]
-    set st__Object__set_pitch[119]=st__Object__set_pitch[78]
-    set st__Object__set_pitch[122]=st__Object__set_pitch[78]
-    set st__Object__set_pitch[145]=st__Object__set_pitch[78]
-    set st__Object__set_pitch[154]=st__Object__set_pitch[78]
-    set st__Object__set_pitch[155]=st__Object__set_pitch[78]
-    set st__Object__set_pitch[165]=st__Object__set_pitch[78]
-    call TriggerAddCondition(st__Object__set_pitch[53],Condition( function sa__Effect__set_pitch))
-    call TriggerAddAction(st__Object__set_pitch[53], function sa__Effect__set_pitch)
-    set st__Object__set_offset_pitch[53]=CreateTrigger()
-    set st__Object__set_offset_pitch[73]=st__Object__set_offset_pitch[53]
-    set st__Object__set_offset_pitch[74]=st__Object__set_offset_pitch[53]
-    set st__Object__set_offset_pitch[78]=st__Object__set_offset_pitch[53]
-    set st__Object__set_offset_pitch[99]=st__Object__set_offset_pitch[78]
-    set st__Object__set_offset_pitch[112]=st__Object__set_offset_pitch[78]
-    set st__Object__set_offset_pitch[119]=st__Object__set_offset_pitch[78]
-    set st__Object__set_offset_pitch[122]=st__Object__set_offset_pitch[78]
-    set st__Object__set_offset_pitch[145]=st__Object__set_offset_pitch[78]
-    set st__Object__set_offset_pitch[154]=st__Object__set_offset_pitch[78]
-    set st__Object__set_offset_pitch[155]=st__Object__set_offset_pitch[78]
-    set st__Object__set_offset_pitch[165]=st__Object__set_offset_pitch[78]
-    call TriggerAddCondition(st__Object__set_offset_pitch[53],Condition( function sa__Effect__set_offset_pitch))
-    call TriggerAddAction(st__Object__set_offset_pitch[53], function sa__Effect__set_offset_pitch)
-    set st__Object__set_roll[53]=CreateTrigger()
-    set st__Object__set_roll[73]=st__Object__set_roll[53]
-    set st__Object__set_roll[74]=st__Object__set_roll[53]
-    set st__Object__set_roll[78]=st__Object__set_roll[53]
-    set st__Object__set_roll[99]=st__Object__set_roll[78]
-    set st__Object__set_roll[112]=st__Object__set_roll[78]
-    set st__Object__set_roll[119]=st__Object__set_roll[78]
-    set st__Object__set_roll[122]=st__Object__set_roll[78]
-    set st__Object__set_roll[145]=st__Object__set_roll[78]
-    set st__Object__set_roll[154]=st__Object__set_roll[78]
-    set st__Object__set_roll[155]=st__Object__set_roll[78]
-    set st__Object__set_roll[165]=st__Object__set_roll[78]
-    call TriggerAddCondition(st__Object__set_roll[53],Condition( function sa__Effect__set_roll))
-    call TriggerAddAction(st__Object__set_roll[53], function sa__Effect__set_roll)
-    set st__Object__set_offset_roll[53]=CreateTrigger()
-    set st__Object__set_offset_roll[73]=st__Object__set_offset_roll[53]
-    set st__Object__set_offset_roll[74]=st__Object__set_offset_roll[53]
-    set st__Object__set_offset_roll[78]=st__Object__set_offset_roll[53]
-    set st__Object__set_offset_roll[99]=st__Object__set_offset_roll[78]
-    set st__Object__set_offset_roll[112]=st__Object__set_offset_roll[78]
-    set st__Object__set_offset_roll[119]=st__Object__set_offset_roll[78]
-    set st__Object__set_offset_roll[122]=st__Object__set_offset_roll[78]
-    set st__Object__set_offset_roll[145]=st__Object__set_offset_roll[78]
-    set st__Object__set_offset_roll[154]=st__Object__set_offset_roll[78]
-    set st__Object__set_offset_roll[155]=st__Object__set_offset_roll[78]
-    set st__Object__set_offset_roll[165]=st__Object__set_offset_roll[78]
-    call TriggerAddCondition(st__Object__set_offset_roll[53],Condition( function sa__Effect__set_offset_roll))
-    call TriggerAddAction(st__Object__set_offset_roll[53], function sa__Effect__set_offset_roll)
-    set st__Effect_setScale=CreateTrigger()
-    call TriggerAddCondition(st__Effect_setScale,Condition( function sa__Effect_setScale))
-    set st__Effect_setAlpha=CreateTrigger()
-    call TriggerAddCondition(st__Effect_setAlpha,Condition( function sa__Effect_setAlpha))
-    set st__Effect_setColor=CreateTrigger()
-    call TriggerAddCondition(st__Effect_setColor,Condition( function sa__Effect_setColor))
-    set st__Effect_setPosition=CreateTrigger()
-    call TriggerAddCondition(st__Effect_setPosition,Condition( function sa__Effect_setPosition))
-    set st__Effect_setDuration=CreateTrigger()
-    call TriggerAddCondition(st__Effect_setDuration,Condition( function sa__Effect_setDuration))
-    set st__Effect_kill=CreateTrigger()
-    call TriggerAddCondition(st__Effect_kill,Condition( function sa__Effect_kill))
-    set st__Effect_setAnim=CreateTrigger()
-    call TriggerAddCondition(st__Effect_setAnim,Condition( function sa__Effect_setAnim))
-    set st__Effect_setLocalAlpha=CreateTrigger()
-    call TriggerAddCondition(st__Effect_setLocalAlpha,Condition( function sa__Effect_setLocalAlpha))
-    set st__Effect_setLocalColor=CreateTrigger()
-    call TriggerAddCondition(st__Effect_setLocalColor,Condition( function sa__Effect_setLocalColor))
-    set st__Effect_create=CreateTrigger()
-    call TriggerAddCondition(st__Effect_create,Condition( function sa__Effect_create))
-    set st__Object_onDestroy[53]=CreateTrigger()
-    call TriggerAddCondition(st__Object_onDestroy[53],Condition( function sa__Effect_onDestroy))
-    call TriggerAddCondition(st__Object_onDestroy[53],Condition( function sa__Agent_onDestroy))
-    call TriggerAddCondition(st__Object_onDestroy[53],Condition( function sa__Object_onDestroy))
     set st__Actor_periodicAction[123]=CreateTrigger()
     call TriggerAddCondition(st__Actor_periodicAction[123],Condition( function sa__Ability0010_make_periodicAction))
     call TriggerAddAction(st__Actor_periodicAction[123], function sa__Ability0010_make_periodicAction)
@@ -35990,6 +36323,392 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_deactivate[126]=CreateTrigger()
     call TriggerAddCondition(st__Ability_deactivate[126],Condition( function sa__Ability0010_main_deactivate))
     call TriggerAddAction(st__Ability_deactivate[126], function sa__Ability0010_main_deactivate)
+    set st__Effect__get_origin_effect=CreateTrigger()
+    call TriggerAddCondition(st__Effect__get_origin_effect,Condition( function sa__Effect__get_origin_effect))
+    set st__Object__get_x[53]=CreateTrigger()
+    set st__Object__get_x[73]=st__Object__get_x[53]
+    set st__Object__get_x[74]=st__Object__get_x[53]
+    set st__Object__get_x[78]=st__Object__get_x[53]
+    set st__Object__get_x[99]=st__Object__get_x[78]
+    set st__Object__get_x[112]=st__Object__get_x[78]
+    set st__Object__get_x[119]=st__Object__get_x[78]
+    set st__Object__get_x[122]=st__Object__get_x[78]
+    set st__Object__get_x[145]=st__Object__get_x[78]
+    set st__Object__get_x[154]=st__Object__get_x[78]
+    set st__Object__get_x[155]=st__Object__get_x[78]
+    set st__Object__get_x[159]=st__Object__get_x[78]
+    set st__Object__get_x[169]=st__Object__get_x[78]
+    call TriggerAddCondition(st__Object__get_x[53],Condition( function sa__Effect__get_x))
+    call TriggerAddAction(st__Object__get_x[53], function sa__Effect__get_x)
+    set st__Object__get_offset_x[53]=CreateTrigger()
+    set st__Object__get_offset_x[73]=st__Object__get_offset_x[53]
+    set st__Object__get_offset_x[74]=st__Object__get_offset_x[53]
+    set st__Object__get_offset_x[78]=st__Object__get_offset_x[53]
+    set st__Object__get_offset_x[99]=st__Object__get_offset_x[78]
+    set st__Object__get_offset_x[112]=st__Object__get_offset_x[78]
+    set st__Object__get_offset_x[119]=st__Object__get_offset_x[78]
+    set st__Object__get_offset_x[122]=st__Object__get_offset_x[78]
+    set st__Object__get_offset_x[145]=st__Object__get_offset_x[78]
+    set st__Object__get_offset_x[154]=st__Object__get_offset_x[78]
+    set st__Object__get_offset_x[155]=st__Object__get_offset_x[78]
+    set st__Object__get_offset_x[159]=st__Object__get_offset_x[78]
+    set st__Object__get_offset_x[169]=st__Object__get_offset_x[78]
+    call TriggerAddCondition(st__Object__get_offset_x[53],Condition( function sa__Effect__get_offset_x))
+    call TriggerAddAction(st__Object__get_offset_x[53], function sa__Effect__get_offset_x)
+    set st__Object__get_y[53]=CreateTrigger()
+    set st__Object__get_y[73]=st__Object__get_y[53]
+    set st__Object__get_y[74]=st__Object__get_y[53]
+    set st__Object__get_y[78]=st__Object__get_y[53]
+    set st__Object__get_y[99]=st__Object__get_y[78]
+    set st__Object__get_y[112]=st__Object__get_y[78]
+    set st__Object__get_y[119]=st__Object__get_y[78]
+    set st__Object__get_y[122]=st__Object__get_y[78]
+    set st__Object__get_y[145]=st__Object__get_y[78]
+    set st__Object__get_y[154]=st__Object__get_y[78]
+    set st__Object__get_y[155]=st__Object__get_y[78]
+    set st__Object__get_y[159]=st__Object__get_y[78]
+    set st__Object__get_y[169]=st__Object__get_y[78]
+    call TriggerAddCondition(st__Object__get_y[53],Condition( function sa__Effect__get_y))
+    call TriggerAddAction(st__Object__get_y[53], function sa__Effect__get_y)
+    set st__Object__get_offset_y[53]=CreateTrigger()
+    set st__Object__get_offset_y[73]=st__Object__get_offset_y[53]
+    set st__Object__get_offset_y[74]=st__Object__get_offset_y[53]
+    set st__Object__get_offset_y[78]=st__Object__get_offset_y[53]
+    set st__Object__get_offset_y[99]=st__Object__get_offset_y[78]
+    set st__Object__get_offset_y[112]=st__Object__get_offset_y[78]
+    set st__Object__get_offset_y[119]=st__Object__get_offset_y[78]
+    set st__Object__get_offset_y[122]=st__Object__get_offset_y[78]
+    set st__Object__get_offset_y[145]=st__Object__get_offset_y[78]
+    set st__Object__get_offset_y[154]=st__Object__get_offset_y[78]
+    set st__Object__get_offset_y[155]=st__Object__get_offset_y[78]
+    set st__Object__get_offset_y[159]=st__Object__get_offset_y[78]
+    set st__Object__get_offset_y[169]=st__Object__get_offset_y[78]
+    call TriggerAddCondition(st__Object__get_offset_y[53],Condition( function sa__Effect__get_offset_y))
+    call TriggerAddAction(st__Object__get_offset_y[53], function sa__Effect__get_offset_y)
+    set st__Object__get_z[53]=CreateTrigger()
+    set st__Object__get_z[73]=st__Object__get_z[53]
+    set st__Object__get_z[74]=st__Object__get_z[53]
+    set st__Object__get_z[78]=st__Object__get_z[53]
+    set st__Object__get_z[99]=st__Object__get_z[78]
+    set st__Object__get_z[112]=st__Object__get_z[78]
+    set st__Object__get_z[119]=st__Object__get_z[78]
+    set st__Object__get_z[122]=st__Object__get_z[78]
+    set st__Object__get_z[145]=st__Object__get_z[78]
+    set st__Object__get_z[154]=st__Object__get_z[78]
+    set st__Object__get_z[155]=st__Object__get_z[78]
+    set st__Object__get_z[159]=st__Object__get_z[78]
+    set st__Object__get_z[169]=st__Object__get_z[78]
+    call TriggerAddCondition(st__Object__get_z[53],Condition( function sa__Effect__get_z))
+    call TriggerAddAction(st__Object__get_z[53], function sa__Effect__get_z)
+    set st__Object__get_offset_z[53]=CreateTrigger()
+    set st__Object__get_offset_z[73]=st__Object__get_offset_z[53]
+    set st__Object__get_offset_z[74]=st__Object__get_offset_z[53]
+    set st__Object__get_offset_z[78]=st__Object__get_offset_z[53]
+    set st__Object__get_offset_z[99]=st__Object__get_offset_z[78]
+    set st__Object__get_offset_z[112]=st__Object__get_offset_z[78]
+    set st__Object__get_offset_z[119]=st__Object__get_offset_z[78]
+    set st__Object__get_offset_z[122]=st__Object__get_offset_z[78]
+    set st__Object__get_offset_z[145]=st__Object__get_offset_z[78]
+    set st__Object__get_offset_z[154]=st__Object__get_offset_z[78]
+    set st__Object__get_offset_z[155]=st__Object__get_offset_z[78]
+    set st__Object__get_offset_z[159]=st__Object__get_offset_z[78]
+    set st__Object__get_offset_z[169]=st__Object__get_offset_z[78]
+    call TriggerAddCondition(st__Object__get_offset_z[53],Condition( function sa__Effect__get_offset_z))
+    call TriggerAddAction(st__Object__get_offset_z[53], function sa__Effect__get_offset_z)
+    set st__Object__get_yaw[53]=CreateTrigger()
+    set st__Object__get_yaw[73]=st__Object__get_yaw[53]
+    set st__Object__get_yaw[74]=st__Object__get_yaw[53]
+    set st__Object__get_yaw[78]=st__Object__get_yaw[53]
+    set st__Object__get_yaw[99]=st__Object__get_yaw[78]
+    set st__Object__get_yaw[112]=st__Object__get_yaw[78]
+    set st__Object__get_yaw[119]=st__Object__get_yaw[78]
+    set st__Object__get_yaw[122]=st__Object__get_yaw[78]
+    set st__Object__get_yaw[145]=st__Object__get_yaw[78]
+    set st__Object__get_yaw[154]=st__Object__get_yaw[78]
+    set st__Object__get_yaw[155]=st__Object__get_yaw[78]
+    set st__Object__get_yaw[159]=st__Object__get_yaw[78]
+    set st__Object__get_yaw[169]=st__Object__get_yaw[78]
+    call TriggerAddCondition(st__Object__get_yaw[53],Condition( function sa__Effect__get_yaw))
+    call TriggerAddAction(st__Object__get_yaw[53], function sa__Effect__get_yaw)
+    set st__Object__get_offset_yaw[53]=CreateTrigger()
+    set st__Object__get_offset_yaw[73]=st__Object__get_offset_yaw[53]
+    set st__Object__get_offset_yaw[74]=st__Object__get_offset_yaw[53]
+    set st__Object__get_offset_yaw[78]=st__Object__get_offset_yaw[53]
+    set st__Object__get_offset_yaw[99]=st__Object__get_offset_yaw[78]
+    set st__Object__get_offset_yaw[112]=st__Object__get_offset_yaw[78]
+    set st__Object__get_offset_yaw[119]=st__Object__get_offset_yaw[78]
+    set st__Object__get_offset_yaw[122]=st__Object__get_offset_yaw[78]
+    set st__Object__get_offset_yaw[145]=st__Object__get_offset_yaw[78]
+    set st__Object__get_offset_yaw[154]=st__Object__get_offset_yaw[78]
+    set st__Object__get_offset_yaw[155]=st__Object__get_offset_yaw[78]
+    set st__Object__get_offset_yaw[159]=st__Object__get_offset_yaw[78]
+    set st__Object__get_offset_yaw[169]=st__Object__get_offset_yaw[78]
+    call TriggerAddCondition(st__Object__get_offset_yaw[53],Condition( function sa__Effect__get_offset_yaw))
+    call TriggerAddAction(st__Object__get_offset_yaw[53], function sa__Effect__get_offset_yaw)
+    set st__Object__get_pitch[53]=CreateTrigger()
+    set st__Object__get_pitch[73]=st__Object__get_pitch[53]
+    set st__Object__get_pitch[74]=st__Object__get_pitch[53]
+    set st__Object__get_pitch[78]=st__Object__get_pitch[53]
+    set st__Object__get_pitch[99]=st__Object__get_pitch[78]
+    set st__Object__get_pitch[112]=st__Object__get_pitch[78]
+    set st__Object__get_pitch[119]=st__Object__get_pitch[78]
+    set st__Object__get_pitch[122]=st__Object__get_pitch[78]
+    set st__Object__get_pitch[145]=st__Object__get_pitch[78]
+    set st__Object__get_pitch[154]=st__Object__get_pitch[78]
+    set st__Object__get_pitch[155]=st__Object__get_pitch[78]
+    set st__Object__get_pitch[159]=st__Object__get_pitch[78]
+    set st__Object__get_pitch[169]=st__Object__get_pitch[78]
+    call TriggerAddCondition(st__Object__get_pitch[53],Condition( function sa__Effect__get_pitch))
+    call TriggerAddAction(st__Object__get_pitch[53], function sa__Effect__get_pitch)
+    set st__Object__get_offset_pitch[53]=CreateTrigger()
+    set st__Object__get_offset_pitch[73]=st__Object__get_offset_pitch[53]
+    set st__Object__get_offset_pitch[74]=st__Object__get_offset_pitch[53]
+    set st__Object__get_offset_pitch[78]=st__Object__get_offset_pitch[53]
+    set st__Object__get_offset_pitch[99]=st__Object__get_offset_pitch[78]
+    set st__Object__get_offset_pitch[112]=st__Object__get_offset_pitch[78]
+    set st__Object__get_offset_pitch[119]=st__Object__get_offset_pitch[78]
+    set st__Object__get_offset_pitch[122]=st__Object__get_offset_pitch[78]
+    set st__Object__get_offset_pitch[145]=st__Object__get_offset_pitch[78]
+    set st__Object__get_offset_pitch[154]=st__Object__get_offset_pitch[78]
+    set st__Object__get_offset_pitch[155]=st__Object__get_offset_pitch[78]
+    set st__Object__get_offset_pitch[159]=st__Object__get_offset_pitch[78]
+    set st__Object__get_offset_pitch[169]=st__Object__get_offset_pitch[78]
+    call TriggerAddCondition(st__Object__get_offset_pitch[53],Condition( function sa__Effect__get_offset_pitch))
+    call TriggerAddAction(st__Object__get_offset_pitch[53], function sa__Effect__get_offset_pitch)
+    set st__Object__get_roll[53]=CreateTrigger()
+    set st__Object__get_roll[73]=st__Object__get_roll[53]
+    set st__Object__get_roll[74]=st__Object__get_roll[53]
+    set st__Object__get_roll[78]=st__Object__get_roll[53]
+    set st__Object__get_roll[99]=st__Object__get_roll[78]
+    set st__Object__get_roll[112]=st__Object__get_roll[78]
+    set st__Object__get_roll[119]=st__Object__get_roll[78]
+    set st__Object__get_roll[122]=st__Object__get_roll[78]
+    set st__Object__get_roll[145]=st__Object__get_roll[78]
+    set st__Object__get_roll[154]=st__Object__get_roll[78]
+    set st__Object__get_roll[155]=st__Object__get_roll[78]
+    set st__Object__get_roll[159]=st__Object__get_roll[78]
+    set st__Object__get_roll[169]=st__Object__get_roll[78]
+    call TriggerAddCondition(st__Object__get_roll[53],Condition( function sa__Effect__get_roll))
+    call TriggerAddAction(st__Object__get_roll[53], function sa__Effect__get_roll)
+    set st__Object__get_offset_roll[53]=CreateTrigger()
+    set st__Object__get_offset_roll[73]=st__Object__get_offset_roll[53]
+    set st__Object__get_offset_roll[74]=st__Object__get_offset_roll[53]
+    set st__Object__get_offset_roll[78]=st__Object__get_offset_roll[53]
+    set st__Object__get_offset_roll[99]=st__Object__get_offset_roll[78]
+    set st__Object__get_offset_roll[112]=st__Object__get_offset_roll[78]
+    set st__Object__get_offset_roll[119]=st__Object__get_offset_roll[78]
+    set st__Object__get_offset_roll[122]=st__Object__get_offset_roll[78]
+    set st__Object__get_offset_roll[145]=st__Object__get_offset_roll[78]
+    set st__Object__get_offset_roll[154]=st__Object__get_offset_roll[78]
+    set st__Object__get_offset_roll[155]=st__Object__get_offset_roll[78]
+    set st__Object__get_offset_roll[159]=st__Object__get_offset_roll[78]
+    set st__Object__get_offset_roll[169]=st__Object__get_offset_roll[78]
+    call TriggerAddCondition(st__Object__get_offset_roll[53],Condition( function sa__Effect__get_offset_roll))
+    call TriggerAddAction(st__Object__get_offset_roll[53], function sa__Effect__get_offset_roll)
+    set st__Object__set_x[53]=CreateTrigger()
+    set st__Object__set_x[73]=st__Object__set_x[53]
+    set st__Object__set_x[74]=st__Object__set_x[53]
+    set st__Object__set_x[78]=st__Object__set_x[53]
+    set st__Object__set_x[99]=st__Object__set_x[78]
+    set st__Object__set_x[112]=st__Object__set_x[78]
+    set st__Object__set_x[119]=st__Object__set_x[78]
+    set st__Object__set_x[122]=st__Object__set_x[78]
+    set st__Object__set_x[145]=st__Object__set_x[78]
+    set st__Object__set_x[154]=st__Object__set_x[78]
+    set st__Object__set_x[155]=st__Object__set_x[78]
+    set st__Object__set_x[159]=st__Object__set_x[78]
+    set st__Object__set_x[169]=st__Object__set_x[78]
+    call TriggerAddCondition(st__Object__set_x[53],Condition( function sa__Effect__set_x))
+    call TriggerAddAction(st__Object__set_x[53], function sa__Effect__set_x)
+    set st__Object__set_offset_x[53]=CreateTrigger()
+    set st__Object__set_offset_x[73]=st__Object__set_offset_x[53]
+    set st__Object__set_offset_x[74]=st__Object__set_offset_x[53]
+    set st__Object__set_offset_x[78]=st__Object__set_offset_x[53]
+    set st__Object__set_offset_x[99]=st__Object__set_offset_x[78]
+    set st__Object__set_offset_x[112]=st__Object__set_offset_x[78]
+    set st__Object__set_offset_x[119]=st__Object__set_offset_x[78]
+    set st__Object__set_offset_x[122]=st__Object__set_offset_x[78]
+    set st__Object__set_offset_x[145]=st__Object__set_offset_x[78]
+    set st__Object__set_offset_x[154]=st__Object__set_offset_x[78]
+    set st__Object__set_offset_x[155]=st__Object__set_offset_x[78]
+    set st__Object__set_offset_x[159]=st__Object__set_offset_x[78]
+    set st__Object__set_offset_x[169]=st__Object__set_offset_x[78]
+    call TriggerAddCondition(st__Object__set_offset_x[53],Condition( function sa__Effect__set_offset_x))
+    call TriggerAddAction(st__Object__set_offset_x[53], function sa__Effect__set_offset_x)
+    set st__Object__set_y[53]=CreateTrigger()
+    set st__Object__set_y[73]=st__Object__set_y[53]
+    set st__Object__set_y[74]=st__Object__set_y[53]
+    set st__Object__set_y[78]=st__Object__set_y[53]
+    set st__Object__set_y[99]=st__Object__set_y[78]
+    set st__Object__set_y[112]=st__Object__set_y[78]
+    set st__Object__set_y[119]=st__Object__set_y[78]
+    set st__Object__set_y[122]=st__Object__set_y[78]
+    set st__Object__set_y[145]=st__Object__set_y[78]
+    set st__Object__set_y[154]=st__Object__set_y[78]
+    set st__Object__set_y[155]=st__Object__set_y[78]
+    set st__Object__set_y[159]=st__Object__set_y[78]
+    set st__Object__set_y[169]=st__Object__set_y[78]
+    call TriggerAddCondition(st__Object__set_y[53],Condition( function sa__Effect__set_y))
+    call TriggerAddAction(st__Object__set_y[53], function sa__Effect__set_y)
+    set st__Object__set_offset_y[53]=CreateTrigger()
+    set st__Object__set_offset_y[73]=st__Object__set_offset_y[53]
+    set st__Object__set_offset_y[74]=st__Object__set_offset_y[53]
+    set st__Object__set_offset_y[78]=st__Object__set_offset_y[53]
+    set st__Object__set_offset_y[99]=st__Object__set_offset_y[78]
+    set st__Object__set_offset_y[112]=st__Object__set_offset_y[78]
+    set st__Object__set_offset_y[119]=st__Object__set_offset_y[78]
+    set st__Object__set_offset_y[122]=st__Object__set_offset_y[78]
+    set st__Object__set_offset_y[145]=st__Object__set_offset_y[78]
+    set st__Object__set_offset_y[154]=st__Object__set_offset_y[78]
+    set st__Object__set_offset_y[155]=st__Object__set_offset_y[78]
+    set st__Object__set_offset_y[159]=st__Object__set_offset_y[78]
+    set st__Object__set_offset_y[169]=st__Object__set_offset_y[78]
+    call TriggerAddCondition(st__Object__set_offset_y[53],Condition( function sa__Effect__set_offset_y))
+    call TriggerAddAction(st__Object__set_offset_y[53], function sa__Effect__set_offset_y)
+    set st__Object__set_z[53]=CreateTrigger()
+    set st__Object__set_z[73]=st__Object__set_z[53]
+    set st__Object__set_z[74]=st__Object__set_z[53]
+    set st__Object__set_z[78]=st__Object__set_z[53]
+    set st__Object__set_z[99]=st__Object__set_z[78]
+    set st__Object__set_z[112]=st__Object__set_z[78]
+    set st__Object__set_z[119]=st__Object__set_z[78]
+    set st__Object__set_z[122]=st__Object__set_z[78]
+    set st__Object__set_z[145]=st__Object__set_z[78]
+    set st__Object__set_z[154]=st__Object__set_z[78]
+    set st__Object__set_z[155]=st__Object__set_z[78]
+    set st__Object__set_z[159]=st__Object__set_z[78]
+    set st__Object__set_z[169]=st__Object__set_z[78]
+    call TriggerAddCondition(st__Object__set_z[53],Condition( function sa__Effect__set_z))
+    call TriggerAddAction(st__Object__set_z[53], function sa__Effect__set_z)
+    set st__Object__set_offset_z[53]=CreateTrigger()
+    set st__Object__set_offset_z[73]=st__Object__set_offset_z[53]
+    set st__Object__set_offset_z[74]=st__Object__set_offset_z[53]
+    set st__Object__set_offset_z[78]=st__Object__set_offset_z[53]
+    set st__Object__set_offset_z[99]=st__Object__set_offset_z[78]
+    set st__Object__set_offset_z[112]=st__Object__set_offset_z[78]
+    set st__Object__set_offset_z[119]=st__Object__set_offset_z[78]
+    set st__Object__set_offset_z[122]=st__Object__set_offset_z[78]
+    set st__Object__set_offset_z[145]=st__Object__set_offset_z[78]
+    set st__Object__set_offset_z[154]=st__Object__set_offset_z[78]
+    set st__Object__set_offset_z[155]=st__Object__set_offset_z[78]
+    set st__Object__set_offset_z[159]=st__Object__set_offset_z[78]
+    set st__Object__set_offset_z[169]=st__Object__set_offset_z[78]
+    call TriggerAddCondition(st__Object__set_offset_z[53],Condition( function sa__Effect__set_offset_z))
+    call TriggerAddAction(st__Object__set_offset_z[53], function sa__Effect__set_offset_z)
+    set st__Object__set_yaw[53]=CreateTrigger()
+    set st__Object__set_yaw[73]=st__Object__set_yaw[53]
+    set st__Object__set_yaw[74]=st__Object__set_yaw[53]
+    set st__Object__set_yaw[78]=st__Object__set_yaw[53]
+    set st__Object__set_yaw[99]=st__Object__set_yaw[78]
+    set st__Object__set_yaw[112]=st__Object__set_yaw[78]
+    set st__Object__set_yaw[119]=st__Object__set_yaw[78]
+    set st__Object__set_yaw[122]=st__Object__set_yaw[78]
+    set st__Object__set_yaw[145]=st__Object__set_yaw[78]
+    set st__Object__set_yaw[154]=st__Object__set_yaw[78]
+    set st__Object__set_yaw[155]=st__Object__set_yaw[78]
+    set st__Object__set_yaw[159]=st__Object__set_yaw[78]
+    set st__Object__set_yaw[169]=st__Object__set_yaw[78]
+    call TriggerAddCondition(st__Object__set_yaw[53],Condition( function sa__Effect__set_yaw))
+    call TriggerAddAction(st__Object__set_yaw[53], function sa__Effect__set_yaw)
+    set st__Object__set_offset_yaw[53]=CreateTrigger()
+    set st__Object__set_offset_yaw[73]=st__Object__set_offset_yaw[53]
+    set st__Object__set_offset_yaw[74]=st__Object__set_offset_yaw[53]
+    set st__Object__set_offset_yaw[78]=st__Object__set_offset_yaw[53]
+    set st__Object__set_offset_yaw[99]=st__Object__set_offset_yaw[78]
+    set st__Object__set_offset_yaw[112]=st__Object__set_offset_yaw[78]
+    set st__Object__set_offset_yaw[119]=st__Object__set_offset_yaw[78]
+    set st__Object__set_offset_yaw[122]=st__Object__set_offset_yaw[78]
+    set st__Object__set_offset_yaw[145]=st__Object__set_offset_yaw[78]
+    set st__Object__set_offset_yaw[154]=st__Object__set_offset_yaw[78]
+    set st__Object__set_offset_yaw[155]=st__Object__set_offset_yaw[78]
+    set st__Object__set_offset_yaw[159]=st__Object__set_offset_yaw[78]
+    set st__Object__set_offset_yaw[169]=st__Object__set_offset_yaw[78]
+    call TriggerAddCondition(st__Object__set_offset_yaw[53],Condition( function sa__Effect__set_offset_yaw))
+    call TriggerAddAction(st__Object__set_offset_yaw[53], function sa__Effect__set_offset_yaw)
+    set st__Object__set_pitch[53]=CreateTrigger()
+    set st__Object__set_pitch[73]=st__Object__set_pitch[53]
+    set st__Object__set_pitch[74]=st__Object__set_pitch[53]
+    set st__Object__set_pitch[78]=st__Object__set_pitch[53]
+    set st__Object__set_pitch[99]=st__Object__set_pitch[78]
+    set st__Object__set_pitch[112]=st__Object__set_pitch[78]
+    set st__Object__set_pitch[119]=st__Object__set_pitch[78]
+    set st__Object__set_pitch[122]=st__Object__set_pitch[78]
+    set st__Object__set_pitch[145]=st__Object__set_pitch[78]
+    set st__Object__set_pitch[154]=st__Object__set_pitch[78]
+    set st__Object__set_pitch[155]=st__Object__set_pitch[78]
+    set st__Object__set_pitch[159]=st__Object__set_pitch[78]
+    set st__Object__set_pitch[169]=st__Object__set_pitch[78]
+    call TriggerAddCondition(st__Object__set_pitch[53],Condition( function sa__Effect__set_pitch))
+    call TriggerAddAction(st__Object__set_pitch[53], function sa__Effect__set_pitch)
+    set st__Object__set_offset_pitch[53]=CreateTrigger()
+    set st__Object__set_offset_pitch[73]=st__Object__set_offset_pitch[53]
+    set st__Object__set_offset_pitch[74]=st__Object__set_offset_pitch[53]
+    set st__Object__set_offset_pitch[78]=st__Object__set_offset_pitch[53]
+    set st__Object__set_offset_pitch[99]=st__Object__set_offset_pitch[78]
+    set st__Object__set_offset_pitch[112]=st__Object__set_offset_pitch[78]
+    set st__Object__set_offset_pitch[119]=st__Object__set_offset_pitch[78]
+    set st__Object__set_offset_pitch[122]=st__Object__set_offset_pitch[78]
+    set st__Object__set_offset_pitch[145]=st__Object__set_offset_pitch[78]
+    set st__Object__set_offset_pitch[154]=st__Object__set_offset_pitch[78]
+    set st__Object__set_offset_pitch[155]=st__Object__set_offset_pitch[78]
+    set st__Object__set_offset_pitch[159]=st__Object__set_offset_pitch[78]
+    set st__Object__set_offset_pitch[169]=st__Object__set_offset_pitch[78]
+    call TriggerAddCondition(st__Object__set_offset_pitch[53],Condition( function sa__Effect__set_offset_pitch))
+    call TriggerAddAction(st__Object__set_offset_pitch[53], function sa__Effect__set_offset_pitch)
+    set st__Object__set_roll[53]=CreateTrigger()
+    set st__Object__set_roll[73]=st__Object__set_roll[53]
+    set st__Object__set_roll[74]=st__Object__set_roll[53]
+    set st__Object__set_roll[78]=st__Object__set_roll[53]
+    set st__Object__set_roll[99]=st__Object__set_roll[78]
+    set st__Object__set_roll[112]=st__Object__set_roll[78]
+    set st__Object__set_roll[119]=st__Object__set_roll[78]
+    set st__Object__set_roll[122]=st__Object__set_roll[78]
+    set st__Object__set_roll[145]=st__Object__set_roll[78]
+    set st__Object__set_roll[154]=st__Object__set_roll[78]
+    set st__Object__set_roll[155]=st__Object__set_roll[78]
+    set st__Object__set_roll[159]=st__Object__set_roll[78]
+    set st__Object__set_roll[169]=st__Object__set_roll[78]
+    call TriggerAddCondition(st__Object__set_roll[53],Condition( function sa__Effect__set_roll))
+    call TriggerAddAction(st__Object__set_roll[53], function sa__Effect__set_roll)
+    set st__Object__set_offset_roll[53]=CreateTrigger()
+    set st__Object__set_offset_roll[73]=st__Object__set_offset_roll[53]
+    set st__Object__set_offset_roll[74]=st__Object__set_offset_roll[53]
+    set st__Object__set_offset_roll[78]=st__Object__set_offset_roll[53]
+    set st__Object__set_offset_roll[99]=st__Object__set_offset_roll[78]
+    set st__Object__set_offset_roll[112]=st__Object__set_offset_roll[78]
+    set st__Object__set_offset_roll[119]=st__Object__set_offset_roll[78]
+    set st__Object__set_offset_roll[122]=st__Object__set_offset_roll[78]
+    set st__Object__set_offset_roll[145]=st__Object__set_offset_roll[78]
+    set st__Object__set_offset_roll[154]=st__Object__set_offset_roll[78]
+    set st__Object__set_offset_roll[155]=st__Object__set_offset_roll[78]
+    set st__Object__set_offset_roll[159]=st__Object__set_offset_roll[78]
+    set st__Object__set_offset_roll[169]=st__Object__set_offset_roll[78]
+    call TriggerAddCondition(st__Object__set_offset_roll[53],Condition( function sa__Effect__set_offset_roll))
+    call TriggerAddAction(st__Object__set_offset_roll[53], function sa__Effect__set_offset_roll)
+    set st__Effect_setScale=CreateTrigger()
+    call TriggerAddCondition(st__Effect_setScale,Condition( function sa__Effect_setScale))
+    set st__Effect_setAlpha=CreateTrigger()
+    call TriggerAddCondition(st__Effect_setAlpha,Condition( function sa__Effect_setAlpha))
+    set st__Effect_setColor=CreateTrigger()
+    call TriggerAddCondition(st__Effect_setColor,Condition( function sa__Effect_setColor))
+    set st__Effect_setPosition=CreateTrigger()
+    call TriggerAddCondition(st__Effect_setPosition,Condition( function sa__Effect_setPosition))
+    set st__Effect_setDuration=CreateTrigger()
+    call TriggerAddCondition(st__Effect_setDuration,Condition( function sa__Effect_setDuration))
+    set st__Effect_kill=CreateTrigger()
+    call TriggerAddCondition(st__Effect_kill,Condition( function sa__Effect_kill))
+    set st__Effect_setAnim=CreateTrigger()
+    call TriggerAddCondition(st__Effect_setAnim,Condition( function sa__Effect_setAnim))
+    set st__Effect_setLocalAlpha=CreateTrigger()
+    call TriggerAddCondition(st__Effect_setLocalAlpha,Condition( function sa__Effect_setLocalAlpha))
+    set st__Effect_setLocalColor=CreateTrigger()
+    call TriggerAddCondition(st__Effect_setLocalColor,Condition( function sa__Effect_setLocalColor))
+    set st__Effect_create=CreateTrigger()
+    call TriggerAddCondition(st__Effect_create,Condition( function sa__Effect_create))
+    set st__Object_onDestroy[53]=CreateTrigger()
+    call TriggerAddCondition(st__Object_onDestroy[53],Condition( function sa__Effect_onDestroy))
+    call TriggerAddCondition(st__Object_onDestroy[53],Condition( function sa__Agent_onDestroy))
+    call TriggerAddCondition(st__Object_onDestroy[53],Condition( function sa__Object_onDestroy))
     set st__Actor_periodicAction[128]=CreateTrigger()
     call TriggerAddCondition(st__Actor_periodicAction[128],Condition( function sa__Ability0013_actor_periodicAction))
     call TriggerAddAction(st__Actor_periodicAction[128], function sa__Ability0013_actor_periodicAction)
@@ -36021,6 +36740,47 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Ability_prototype_init[132]=CreateTrigger()
     call TriggerAddCondition(st__Ability_prototype_init[132],Condition( function sa__Ability0014_main_init))
     call TriggerAddAction(st__Ability_prototype_init[132], function sa__Ability0014_main_init)
+    set st__Actor_periodicAction[134]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_periodicAction[134],Condition( function sa__Ability0015_actor_periodicAction))
+    call TriggerAddAction(st__Actor_periodicAction[134], function sa__Ability0015_actor_periodicAction)
+    set st__Actor_onComplete[134]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_onComplete[134],Condition( function sa__Ability0015_actor_onComplete))
+    call TriggerAddAction(st__Actor_onComplete[134], function sa__Ability0015_actor_onComplete)
+    set st__Actor_onSuspend[134]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_onSuspend[134],Condition( function sa__Ability0015_actor_onSuspend))
+    call TriggerAddAction(st__Actor_onSuspend[134], function sa__Ability0015_actor_onSuspend)
+    set st__Actor_onDestroy[134]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_onDestroy[134],Condition( function sa__Ability0015_actor_onDestroy))
+    call TriggerAddCondition(st__Actor_onDestroy[134],Condition( function sa__UnitActor_onDestroy))
+    call TriggerAddCondition(st__Actor_onDestroy[134],Condition( function sa__Actor_onDestroy))
+    set st__Actor_periodicAction[136]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_periodicAction[136],Condition( function sa__Ability0015_charge_periodicAction))
+    call TriggerAddAction(st__Actor_periodicAction[136], function sa__Ability0015_charge_periodicAction)
+    set st__Actor_onDestroy[136]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_onDestroy[136],Condition( function sa__Ability0015_charge_onDestroy))
+    call TriggerAddCondition(st__Actor_onDestroy[136],Condition( function sa__UnitActor_onDestroy))
+    call TriggerAddCondition(st__Actor_onDestroy[136],Condition( function sa__Actor_onDestroy))
+    set st__Ability_prototype_relativeTooltip[137]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_relativeTooltip[137],Condition( function sa__Ability0015_main_relativeTooltip))
+    call TriggerAddAction(st__Ability_prototype_relativeTooltip[137], function sa__Ability0015_main_relativeTooltip)
+    set st__Ability_prototype_beforeRelease[137]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_beforeRelease[137],Condition( function sa__Ability0015_main_beforeRelease))
+    call TriggerAddAction(st__Ability_prototype_beforeRelease[137], function sa__Ability0015_main_beforeRelease)
+    set st__Ability_prototype_onRelease[137]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_onRelease[137],Condition( function sa__Ability0015_main_onRelease))
+    call TriggerAddAction(st__Ability_prototype_onRelease[137], function sa__Ability0015_main_onRelease)
+    set st__Ability_prototype_onRightClick[137]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_onRightClick[137],Condition( function sa__Ability0015_main_onRightClick))
+    call TriggerAddAction(st__Ability_prototype_onRightClick[137], function sa__Ability0015_main_onRightClick)
+    set st__Ability_prototype_execute[137]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_execute[137],Condition( function sa__Ability0015_main_execute))
+    call TriggerAddAction(st__Ability_prototype_execute[137], function sa__Ability0015_main_execute)
+    set st__Ability_prototype_onPress[137]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_onPress[137],Condition( function sa__Ability0015_main_onPress))
+    call TriggerAddAction(st__Ability_prototype_onPress[137], function sa__Ability0015_main_onPress)
+    set st__Ability_prototype_init[137]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_init[137],Condition( function sa__Ability0015_main_init))
+    call TriggerAddAction(st__Ability_prototype_init[137], function sa__Ability0015_main_init)
     set st__Unit_prototype__get_origin_unit=CreateTrigger()
     call TriggerAddCondition(st__Unit_prototype__get_origin_unit,Condition( function sa__Unit_prototype__get_origin_unit))
     set st__Unit_prototype__get_level=CreateTrigger()
@@ -36214,24 +36974,24 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__Object_onDestroy[44],Condition( function sa__Unit_prototype_onDestroy))
     call TriggerAddCondition(st__Object_onDestroy[44],Condition( function sa__Agent_onDestroy))
     call TriggerAddCondition(st__Object_onDestroy[44],Condition( function sa__Object_onDestroy))
-    set st__Ability_prototype_init[177]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_init[177],Condition( function sa__AbilityC008_main_init))
-    call TriggerAddAction(st__Ability_prototype_init[177], function sa__AbilityC008_main_init)
-    set st__Ability_prototype_onDestroy[177]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_onDestroy[177],Condition( function sa__AbilityC008_main_onDestroy))
-    call TriggerAddCondition(st__Ability_prototype_onDestroy[177],Condition( function sa__Ability_prototype_onDestroy))
-    set st__Ability_prototype_init[176]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_init[176],Condition( function sa__AbilityC007_main_init))
-    call TriggerAddAction(st__Ability_prototype_init[176], function sa__AbilityC007_main_init)
-    set st__Ability_prototype_onDestroy[176]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_onDestroy[176],Condition( function sa__AbilityC007_main_onDestroy))
-    call TriggerAddCondition(st__Ability_prototype_onDestroy[176],Condition( function sa__Ability_prototype_onDestroy))
-    set st__Ability_prototype_init[175]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_init[175],Condition( function sa__AbilityC006_main_init))
-    call TriggerAddAction(st__Ability_prototype_init[175], function sa__AbilityC006_main_init)
-    set st__Ability_prototype_onDestroy[175]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_onDestroy[175],Condition( function sa__AbilityC006_main_onDestroy))
-    call TriggerAddCondition(st__Ability_prototype_onDestroy[175],Condition( function sa__Ability_prototype_onDestroy))
+    set st__Ability_prototype_init[181]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_init[181],Condition( function sa__AbilityC008_main_init))
+    call TriggerAddAction(st__Ability_prototype_init[181], function sa__AbilityC008_main_init)
+    set st__Ability_prototype_onDestroy[181]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_onDestroy[181],Condition( function sa__AbilityC008_main_onDestroy))
+    call TriggerAddCondition(st__Ability_prototype_onDestroy[181],Condition( function sa__Ability_prototype_onDestroy))
+    set st__Ability_prototype_init[180]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_init[180],Condition( function sa__AbilityC007_main_init))
+    call TriggerAddAction(st__Ability_prototype_init[180], function sa__AbilityC007_main_init)
+    set st__Ability_prototype_onDestroy[180]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_onDestroy[180],Condition( function sa__AbilityC007_main_onDestroy))
+    call TriggerAddCondition(st__Ability_prototype_onDestroy[180],Condition( function sa__Ability_prototype_onDestroy))
+    set st__Ability_prototype_init[179]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_init[179],Condition( function sa__AbilityC006_main_init))
+    call TriggerAddAction(st__Ability_prototype_init[179], function sa__AbilityC006_main_init)
+    set st__Ability_prototype_onDestroy[179]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_onDestroy[179],Condition( function sa__AbilityC006_main_onDestroy))
+    call TriggerAddCondition(st__Ability_prototype_onDestroy[179],Condition( function sa__Ability_prototype_onDestroy))
     set st__Actor_onComplete[116]=CreateTrigger()
     call TriggerAddCondition(st__Actor_onComplete[116],Condition( function sa__Abilityu000_actor_onComplete))
     call TriggerAddAction(st__Actor_onComplete[116], function sa__Abilityu000_actor_onComplete)
@@ -36240,24 +37000,6 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__Actor_onDestroy[116],Condition( function sa__UnitMovement_onDestroy))
     call TriggerAddCondition(st__Actor_onDestroy[116],Condition( function sa__Movement_onDestroy))
     call TriggerAddCondition(st__Actor_onDestroy[116],Condition( function sa__Actor_onDestroy))
-    set st__Ability_prototype_init[174]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_init[174],Condition( function sa__AbilityC005_main_init))
-    call TriggerAddAction(st__Ability_prototype_init[174], function sa__AbilityC005_main_init)
-    set st__Ability_prototype_onDestroy[174]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_onDestroy[174],Condition( function sa__AbilityC005_main_onDestroy))
-    call TriggerAddCondition(st__Ability_prototype_onDestroy[174],Condition( function sa__Ability_prototype_onDestroy))
-    set st__Ability_prototype_init[173]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_init[173],Condition( function sa__AbilityC004_main_init))
-    call TriggerAddAction(st__Ability_prototype_init[173], function sa__AbilityC004_main_init)
-    set st__Ability_prototype_onDestroy[173]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_onDestroy[173],Condition( function sa__AbilityC004_main_onDestroy))
-    call TriggerAddCondition(st__Ability_prototype_onDestroy[173],Condition( function sa__Ability_prototype_onDestroy))
-    set st__Ability_prototype_init[172]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_init[172],Condition( function sa__AbilityC003_main_init))
-    call TriggerAddAction(st__Ability_prototype_init[172], function sa__AbilityC003_main_init)
-    set st__Ability_prototype_onDestroy[172]=CreateTrigger()
-    call TriggerAddCondition(st__Ability_prototype_onDestroy[172],Condition( function sa__AbilityC003_main_onDestroy))
-    call TriggerAddCondition(st__Ability_prototype_onDestroy[172],Condition( function sa__Ability_prototype_onDestroy))
     set st__UnitMovement_executeExplosion[88]=CreateTrigger()
     call TriggerAddCondition(st__UnitMovement_executeExplosion[88],Condition( function sa__Ability0000_mv_executeExplosion))
     call TriggerAddAction(st__UnitMovement_executeExplosion[88], function sa__Ability0000_mv_executeExplosion)
@@ -36269,6 +37011,30 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__Actor_onDestroy[88],Condition( function sa__UnitMovement_onDestroy))
     call TriggerAddCondition(st__Actor_onDestroy[88],Condition( function sa__Movement_onDestroy))
     call TriggerAddCondition(st__Actor_onDestroy[88],Condition( function sa__Actor_onDestroy))
+    set st__Ability_prototype_init[178]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_init[178],Condition( function sa__AbilityC005_main_init))
+    call TriggerAddAction(st__Ability_prototype_init[178], function sa__AbilityC005_main_init)
+    set st__Ability_prototype_onDestroy[178]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_onDestroy[178],Condition( function sa__AbilityC005_main_onDestroy))
+    call TriggerAddCondition(st__Ability_prototype_onDestroy[178],Condition( function sa__Ability_prototype_onDestroy))
+    set st__Ability_prototype_init[177]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_init[177],Condition( function sa__AbilityC004_main_init))
+    call TriggerAddAction(st__Ability_prototype_init[177], function sa__AbilityC004_main_init)
+    set st__Ability_prototype_onDestroy[177]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_onDestroy[177],Condition( function sa__AbilityC004_main_onDestroy))
+    call TriggerAddCondition(st__Ability_prototype_onDestroy[177],Condition( function sa__Ability_prototype_onDestroy))
+    set st__Ability_prototype_init[176]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_init[176],Condition( function sa__AbilityC003_main_init))
+    call TriggerAddAction(st__Ability_prototype_init[176], function sa__AbilityC003_main_init)
+    set st__Ability_prototype_onDestroy[176]=CreateTrigger()
+    call TriggerAddCondition(st__Ability_prototype_onDestroy[176],Condition( function sa__AbilityC003_main_onDestroy))
+    call TriggerAddCondition(st__Ability_prototype_onDestroy[176],Condition( function sa__Ability_prototype_onDestroy))
+    set st__Actor_periodicAction[89]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_periodicAction[89],Condition( function sa__Ability0000_actor_periodicAction))
+    call TriggerAddAction(st__Actor_periodicAction[89], function sa__Ability0000_actor_periodicAction)
+    set st__Actor_onComplete[89]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_onComplete[89],Condition( function sa__Ability0000_actor_onComplete))
+    call TriggerAddAction(st__Actor_onComplete[89], function sa__Ability0000_actor_onComplete)
     set st__Unit_create=CreateTrigger()
     call TriggerAddCondition(st__Unit_create,Condition( function sa__Unit_create))
     set st__Object_onDestroy[80]=CreateTrigger()
@@ -36276,48 +37042,6 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__Object_onDestroy[80],Condition( function sa__Unit_prototype_onDestroy))
     call TriggerAddCondition(st__Object_onDestroy[80],Condition( function sa__Agent_onDestroy))
     call TriggerAddCondition(st__Object_onDestroy[80],Condition( function sa__Object_onDestroy))
-    set st__Actor_periodicAction[89]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_periodicAction[89],Condition( function sa__Ability0000_actor_periodicAction))
-    call TriggerAddAction(st__Actor_periodicAction[89], function sa__Ability0000_actor_periodicAction)
-    set st__Actor_onComplete[89]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_onComplete[89],Condition( function sa__Ability0000_actor_onComplete))
-    call TriggerAddAction(st__Actor_onComplete[89], function sa__Ability0000_actor_onComplete)
-    set st__Actor_periodicAction[134]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_periodicAction[134],Condition( function sa__Ability0015_actor_periodicAction))
-    call TriggerAddAction(st__Actor_periodicAction[134], function sa__Ability0015_actor_periodicAction)
-    set st__Actor_onComplete[134]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_onComplete[134],Condition( function sa__Ability0015_actor_onComplete))
-    call TriggerAddAction(st__Actor_onComplete[134], function sa__Ability0015_actor_onComplete)
-    set st__Actor_onSuspend[134]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_onSuspend[134],Condition( function sa__Ability0015_actor_onSuspend))
-    call TriggerAddAction(st__Actor_onSuspend[134], function sa__Ability0015_actor_onSuspend)
-    set st__Actor_onDestroy[134]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_onDestroy[134],Condition( function sa__Ability0015_actor_onDestroy))
-    call TriggerAddCondition(st__Actor_onDestroy[134],Condition( function sa__UnitActor_onDestroy))
-    call TriggerAddCondition(st__Actor_onDestroy[134],Condition( function sa__Actor_onDestroy))
-    set st__Actor_periodicAction[136]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_periodicAction[136],Condition( function sa__Ability0015_charge_periodicAction))
-    call TriggerAddAction(st__Actor_periodicAction[136], function sa__Ability0015_charge_periodicAction)
-    set st__Actor_onDestroy[136]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_onDestroy[136],Condition( function sa__Ability0015_charge_onDestroy))
-    call TriggerAddCondition(st__Actor_onDestroy[136],Condition( function sa__UnitActor_onDestroy))
-    call TriggerAddCondition(st__Actor_onDestroy[136],Condition( function sa__Actor_onDestroy))
-    set st__Ability0004___chain_rangeFilter=CreateTrigger()
-    call TriggerAddCondition(st__Ability0004___chain_rangeFilter,Condition( function sa__Ability0004___chain_rangeFilter))
-    set st__Ability0004___chain_explosionFilterAdditional=CreateTrigger()
-    call TriggerAddCondition(st__Ability0004___chain_explosionFilterAdditional,Condition( function sa__Ability0004___chain_explosionFilterAdditional))
-    set st__Ability0004___chain_executeExplosion=CreateTrigger()
-    call TriggerAddCondition(st__Ability0004___chain_executeExplosion,Condition( function sa__Ability0004___chain_executeExplosion))
-    set st__Actor_killFilter[103]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_killFilter[103],Condition( function sa__Ability0004___chain_killFilter))
-    call TriggerAddAction(st__Actor_killFilter[103], function sa__Ability0004___chain_killFilter)
-    set st__Actor_onComplete[103]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_onComplete[103],Condition( function sa__Ability0004___chain_onComplete))
-    call TriggerAddAction(st__Actor_onComplete[103], function sa__Ability0004___chain_onComplete)
-    set st__Actor_onDestroy[103]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_onDestroy[103],Condition( function sa__Ability0004___chain_onDestroy))
-    call TriggerAddCondition(st__Actor_onDestroy[103],Condition( function sa__UnitActor_onDestroy))
-    call TriggerAddCondition(st__Actor_onDestroy[103],Condition( function sa__Actor_onDestroy))
     set st__Actor_killFilter[138]=CreateTrigger()
     call TriggerAddCondition(st__Actor_killFilter[138],Condition( function sa__Ability0016_actor_killFilter))
     call TriggerAddAction(st__Actor_killFilter[138], function sa__Ability0016_actor_killFilter)
@@ -36334,6 +37058,24 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__Actor_onDestroy[138],Condition( function sa__Ability0016_actor_onDestroy))
     call TriggerAddCondition(st__Actor_onDestroy[138],Condition( function sa__UnitActor_onDestroy))
     call TriggerAddCondition(st__Actor_onDestroy[138],Condition( function sa__Actor_onDestroy))
+    set st__Ability0004__chain_rangeFilter=CreateTrigger()
+    call TriggerAddCondition(st__Ability0004__chain_rangeFilter,Condition( function sa__Ability0004__chain_rangeFilter))
+    set st__Ability0004__chain_explosionFillUnits=CreateTrigger()
+    call TriggerAddCondition(st__Ability0004__chain_explosionFillUnits,Condition( function sa__Ability0004__chain_explosionFillUnits))
+    set st__Ability0004__chain_explosionFilterAdditional=CreateTrigger()
+    call TriggerAddCondition(st__Ability0004__chain_explosionFilterAdditional,Condition( function sa__Ability0004__chain_explosionFilterAdditional))
+    set st__Ability0004__chain_executeExplosion=CreateTrigger()
+    call TriggerAddCondition(st__Ability0004__chain_executeExplosion,Condition( function sa__Ability0004__chain_executeExplosion))
+    set st__Actor_killFilter[103]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_killFilter[103],Condition( function sa__Ability0004__chain_killFilter))
+    call TriggerAddAction(st__Actor_killFilter[103], function sa__Ability0004__chain_killFilter)
+    set st__Actor_onComplete[103]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_onComplete[103],Condition( function sa__Ability0004__chain_onComplete))
+    call TriggerAddAction(st__Actor_onComplete[103], function sa__Ability0004__chain_onComplete)
+    set st__Actor_onDestroy[103]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_onDestroy[103],Condition( function sa__Ability0004__chain_onDestroy))
+    call TriggerAddCondition(st__Actor_onDestroy[103],Condition( function sa__UnitActor_onDestroy))
+    call TriggerAddCondition(st__Actor_onDestroy[103],Condition( function sa__Actor_onDestroy))
     set st__Actor_onComplete[100]=CreateTrigger()
     call TriggerAddCondition(st__Actor_onComplete[100],Condition( function sa__Ability0003_actor_onComplete))
     call TriggerAddAction(st__Actor_onComplete[100], function sa__Ability0003_actor_onComplete)
@@ -36341,6 +37083,16 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__Actor_onDestroy[100],Condition( function sa__Ability0003_actor_onDestroy))
     call TriggerAddCondition(st__Actor_onDestroy[100],Condition( function sa__UnitActor_onDestroy))
     call TriggerAddCondition(st__Actor_onDestroy[100],Condition( function sa__Actor_onDestroy))
+    set st__Actor_onComplete[93]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_onComplete[93],Condition( function sa__Ability0001_a2_onComplete))
+    call TriggerAddAction(st__Actor_onComplete[93], function sa__Ability0001_a2_onComplete)
+    set st__Actor_periodicAction[93]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_periodicAction[93],Condition( function sa__Ability0001_a2_periodicAction))
+    call TriggerAddAction(st__Actor_periodicAction[93], function sa__Ability0001_a2_periodicAction)
+    set st__Actor_onDestroy[93]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_onDestroy[93],Condition( function sa__Ability0001_a2_onDestroy))
+    call TriggerAddCondition(st__Actor_onDestroy[93],Condition( function sa__UnitActor_onDestroy))
+    call TriggerAddCondition(st__Actor_onDestroy[93],Condition( function sa__Actor_onDestroy))
     set st__Missile_explosionFilterAdditional[78]=CreateTrigger()
     set st__Missile_explosionFilterAdditional[99]=st__Missile_explosionFilterAdditional[78]
     set st__Missile_explosionFilterAdditional[112]=st__Missile_explosionFilterAdditional[78]
@@ -36349,7 +37101,8 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Missile_explosionFilterAdditional[145]=st__Missile_explosionFilterAdditional[78]
     set st__Missile_explosionFilterAdditional[154]=st__Missile_explosionFilterAdditional[78]
     set st__Missile_explosionFilterAdditional[155]=st__Missile_explosionFilterAdditional[78]
-    set st__Missile_explosionFilterAdditional[165]=st__Missile_explosionFilterAdditional[78]
+    set st__Missile_explosionFilterAdditional[159]=st__Missile_explosionFilterAdditional[78]
+    set st__Missile_explosionFilterAdditional[169]=st__Missile_explosionFilterAdditional[78]
     call TriggerAddCondition(st__Missile_explosionFilterAdditional[78],Condition( function sa__Missile_explosionFilterAdditional))
     call TriggerAddAction(st__Missile_explosionFilterAdditional[78], function sa__Missile_explosionFilterAdditional)
     set st__Missile_executeExplosion[78]=CreateTrigger()
@@ -36359,7 +37112,7 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Missile_executeExplosion[145]=st__Missile_executeExplosion[78]
     set st__Missile_executeExplosion[154]=st__Missile_executeExplosion[78]
     set st__Missile_executeExplosion[155]=st__Missile_executeExplosion[78]
-    set st__Missile_executeExplosion[165]=st__Missile_executeExplosion[78]
+    set st__Missile_executeExplosion[169]=st__Missile_executeExplosion[78]
     call TriggerAddCondition(st__Missile_executeExplosion[78],Condition( function sa__Missile_executeExplosion))
     call TriggerAddAction(st__Missile_executeExplosion[78], function sa__Missile_executeExplosion)
     set st__Missile_damageTarget=CreateTrigger()
@@ -36372,9 +37125,22 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Missile_rangeFilter[145]=st__Missile_rangeFilter[78]
     set st__Missile_rangeFilter[154]=st__Missile_rangeFilter[78]
     set st__Missile_rangeFilter[155]=st__Missile_rangeFilter[78]
-    set st__Missile_rangeFilter[165]=st__Missile_rangeFilter[78]
+    set st__Missile_rangeFilter[159]=st__Missile_rangeFilter[78]
+    set st__Missile_rangeFilter[169]=st__Missile_rangeFilter[78]
     call TriggerAddCondition(st__Missile_rangeFilter[78],Condition( function sa__Missile_rangeFilter))
     call TriggerAddAction(st__Missile_rangeFilter[78], function sa__Missile_rangeFilter)
+    set st__Missile_explosionFillUnits[78]=CreateTrigger()
+    set st__Missile_explosionFillUnits[99]=st__Missile_explosionFillUnits[78]
+    set st__Missile_explosionFillUnits[112]=st__Missile_explosionFillUnits[78]
+    set st__Missile_explosionFillUnits[119]=st__Missile_explosionFillUnits[78]
+    set st__Missile_explosionFillUnits[122]=st__Missile_explosionFillUnits[78]
+    set st__Missile_explosionFillUnits[145]=st__Missile_explosionFillUnits[78]
+    set st__Missile_explosionFillUnits[154]=st__Missile_explosionFillUnits[78]
+    set st__Missile_explosionFillUnits[155]=st__Missile_explosionFillUnits[78]
+    set st__Missile_explosionFillUnits[159]=st__Missile_explosionFillUnits[78]
+    set st__Missile_explosionFillUnits[169]=st__Missile_explosionFillUnits[78]
+    call TriggerAddCondition(st__Missile_explosionFillUnits[78],Condition( function sa__Missile_explosionFillUnits))
+    call TriggerAddAction(st__Missile_explosionFillUnits[78], function sa__Missile_explosionFillUnits)
     set st__Missile_waveFilterAdditional[78]=CreateTrigger()
     set st__Missile_waveFilterAdditional[99]=st__Missile_waveFilterAdditional[78]
     set st__Missile_waveFilterAdditional[112]=st__Missile_waveFilterAdditional[78]
@@ -36383,7 +37149,8 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Missile_waveFilterAdditional[145]=st__Missile_waveFilterAdditional[78]
     set st__Missile_waveFilterAdditional[154]=st__Missile_waveFilterAdditional[78]
     set st__Missile_waveFilterAdditional[155]=st__Missile_waveFilterAdditional[78]
-    set st__Missile_waveFilterAdditional[165]=st__Missile_waveFilterAdditional[78]
+    set st__Missile_waveFilterAdditional[159]=st__Missile_waveFilterAdditional[78]
+    set st__Missile_waveFilterAdditional[169]=st__Missile_waveFilterAdditional[78]
     call TriggerAddCondition(st__Missile_waveFilterAdditional[78],Condition( function sa__Missile_waveFilterAdditional))
     call TriggerAddAction(st__Missile_waveFilterAdditional[78], function sa__Missile_waveFilterAdditional)
     set st__Missile_waveRangeFilter[78]=CreateTrigger()
@@ -36394,7 +37161,8 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Missile_waveRangeFilter[145]=st__Missile_waveRangeFilter[78]
     set st__Missile_waveRangeFilter[154]=st__Missile_waveRangeFilter[78]
     set st__Missile_waveRangeFilter[155]=st__Missile_waveRangeFilter[78]
-    set st__Missile_waveRangeFilter[165]=st__Missile_waveRangeFilter[78]
+    set st__Missile_waveRangeFilter[159]=st__Missile_waveRangeFilter[78]
+    set st__Missile_waveRangeFilter[169]=st__Missile_waveRangeFilter[78]
     call TriggerAddCondition(st__Missile_waveRangeFilter[78],Condition( function sa__Missile_waveRangeFilter))
     call TriggerAddAction(st__Missile_waveRangeFilter[78], function sa__Missile_waveRangeFilter)
     set st__Missile_executeWave[78]=CreateTrigger()
@@ -36414,7 +37182,8 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Missile_collisionFilterAdditional[145]=st__Missile_collisionFilterAdditional[78]
     set st__Missile_collisionFilterAdditional[154]=st__Missile_collisionFilterAdditional[78]
     set st__Missile_collisionFilterAdditional[155]=st__Missile_collisionFilterAdditional[78]
-    set st__Missile_collisionFilterAdditional[165]=st__Missile_collisionFilterAdditional[78]
+    set st__Missile_collisionFilterAdditional[159]=st__Missile_collisionFilterAdditional[78]
+    set st__Missile_collisionFilterAdditional[169]=st__Missile_collisionFilterAdditional[78]
     call TriggerAddCondition(st__Missile_collisionFilterAdditional[78],Condition( function sa__Missile_collisionFilterAdditional))
     call TriggerAddAction(st__Missile_collisionFilterAdditional[78], function sa__Missile_collisionFilterAdditional)
     set st__Missile_targetFilterAdditional[78]=CreateTrigger()
@@ -36425,13 +37194,15 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Missile_targetFilterAdditional[145]=st__Missile_targetFilterAdditional[78]
     set st__Missile_targetFilterAdditional[154]=st__Missile_targetFilterAdditional[78]
     set st__Missile_targetFilterAdditional[155]=st__Missile_targetFilterAdditional[78]
-    set st__Missile_targetFilterAdditional[165]=st__Missile_targetFilterAdditional[78]
+    set st__Missile_targetFilterAdditional[159]=st__Missile_targetFilterAdditional[78]
+    set st__Missile_targetFilterAdditional[169]=st__Missile_targetFilterAdditional[78]
     call TriggerAddCondition(st__Missile_targetFilterAdditional[78],Condition( function sa__Missile_targetFilterAdditional))
     call TriggerAddAction(st__Missile_targetFilterAdditional[78], function sa__Missile_targetFilterAdditional)
     set st__Missile_executeTarget[78]=CreateTrigger()
     set st__Missile_executeTarget[122]=st__Missile_executeTarget[78]
     set st__Missile_executeTarget[155]=st__Missile_executeTarget[78]
-    set st__Missile_executeTarget[165]=st__Missile_executeTarget[78]
+    set st__Missile_executeTarget[159]=st__Missile_executeTarget[78]
+    set st__Missile_executeTarget[169]=st__Missile_executeTarget[78]
     call TriggerAddCondition(st__Missile_executeTarget[78],Condition( function sa__Missile_executeTarget))
     call TriggerAddAction(st__Missile_executeTarget[78], function sa__Missile_executeTarget)
     set st__Missile_killFilter[78]=CreateTrigger()
@@ -36442,7 +37213,7 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Missile_killFilter[145]=st__Missile_killFilter[78]
     set st__Missile_killFilter[154]=st__Missile_killFilter[78]
     set st__Missile_killFilter[155]=st__Missile_killFilter[78]
-    set st__Missile_killFilter[165]=st__Missile_killFilter[78]
+    set st__Missile_killFilter[169]=st__Missile_killFilter[78]
     call TriggerAddCondition(st__Missile_killFilter[78],Condition( function sa__Missile_killFilter))
     call TriggerAddAction(st__Missile_killFilter[78], function sa__Missile_killFilter)
     set st__Missile_onBound[78]=CreateTrigger()
@@ -36453,7 +37224,8 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Missile_onBound[145]=st__Missile_onBound[78]
     set st__Missile_onBound[154]=st__Missile_onBound[78]
     set st__Missile_onBound[155]=st__Missile_onBound[78]
-    set st__Missile_onBound[165]=st__Missile_onBound[78]
+    set st__Missile_onBound[159]=st__Missile_onBound[78]
+    set st__Missile_onBound[169]=st__Missile_onBound[78]
     call TriggerAddCondition(st__Missile_onBound[78],Condition( function sa__Missile_onBound))
     call TriggerAddAction(st__Missile_onBound[78], function sa__Missile_onBound)
     set st__Missile_beforeExplosion[78]=CreateTrigger()
@@ -36463,7 +37235,8 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Missile_beforeExplosion[145]=st__Missile_beforeExplosion[78]
     set st__Missile_beforeExplosion[154]=st__Missile_beforeExplosion[78]
     set st__Missile_beforeExplosion[155]=st__Missile_beforeExplosion[78]
-    set st__Missile_beforeExplosion[165]=st__Missile_beforeExplosion[78]
+    set st__Missile_beforeExplosion[159]=st__Missile_beforeExplosion[78]
+    set st__Missile_beforeExplosion[169]=st__Missile_beforeExplosion[78]
     call TriggerAddCondition(st__Missile_beforeExplosion[78],Condition( function sa__Missile_beforeExplosion))
     call TriggerAddAction(st__Missile_beforeExplosion[78], function sa__Missile_beforeExplosion)
     set st__Missile_afterExplosion[78]=CreateTrigger()
@@ -36472,7 +37245,7 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Missile_afterExplosion[145]=st__Missile_afterExplosion[78]
     set st__Missile_afterExplosion[154]=st__Missile_afterExplosion[78]
     set st__Missile_afterExplosion[155]=st__Missile_afterExplosion[78]
-    set st__Missile_afterExplosion[165]=st__Missile_afterExplosion[78]
+    set st__Missile_afterExplosion[169]=st__Missile_afterExplosion[78]
     call TriggerAddCondition(st__Missile_afterExplosion[78],Condition( function sa__Missile_afterExplosion))
     call TriggerAddAction(st__Missile_afterExplosion[78], function sa__Missile_afterExplosion)
     set st__Missile_beforeWave[78]=CreateTrigger()
@@ -36482,7 +37255,8 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Missile_beforeWave[122]=st__Missile_beforeWave[78]
     set st__Missile_beforeWave[145]=st__Missile_beforeWave[78]
     set st__Missile_beforeWave[154]=st__Missile_beforeWave[78]
-    set st__Missile_beforeWave[165]=st__Missile_beforeWave[78]
+    set st__Missile_beforeWave[159]=st__Missile_beforeWave[78]
+    set st__Missile_beforeWave[169]=st__Missile_beforeWave[78]
     call TriggerAddCondition(st__Missile_beforeWave[78],Condition( function sa__Missile_beforeWave))
     call TriggerAddAction(st__Missile_beforeWave[78], function sa__Missile_beforeWave)
     set st__Missile_afterWave[78]=CreateTrigger()
@@ -36492,7 +37266,7 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Missile_afterWave[122]=st__Missile_afterWave[78]
     set st__Missile_afterWave[145]=st__Missile_afterWave[78]
     set st__Missile_afterWave[154]=st__Missile_afterWave[78]
-    set st__Missile_afterWave[165]=st__Missile_afterWave[78]
+    set st__Missile_afterWave[169]=st__Missile_afterWave[78]
     call TriggerAddCondition(st__Missile_afterWave[78],Condition( function sa__Missile_afterWave))
     call TriggerAddAction(st__Missile_afterWave[78], function sa__Missile_afterWave)
     set st__Missile_periodicAction[78]=CreateTrigger()
@@ -36501,7 +37275,7 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Missile_periodicAction[122]=st__Missile_periodicAction[78]
     set st__Missile_periodicAction[145]=st__Missile_periodicAction[78]
     set st__Missile_periodicAction[154]=st__Missile_periodicAction[78]
-    set st__Missile_periodicAction[165]=st__Missile_periodicAction[78]
+    set st__Missile_periodicAction[169]=st__Missile_periodicAction[78]
     call TriggerAddCondition(st__Missile_periodicAction[78],Condition( function sa__Missile_periodicAction))
     call TriggerAddAction(st__Missile_periodicAction[78], function sa__Missile_periodicAction)
     set st__Missile_create=CreateTrigger()
@@ -36511,27 +37285,11 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Object_onDestroy[119]=st__Object_onDestroy[78]
     set st__Object_onDestroy[122]=st__Object_onDestroy[78]
     set st__Object_onDestroy[145]=st__Object_onDestroy[78]
-    set st__Object_onDestroy[165]=st__Object_onDestroy[78]
+    set st__Object_onDestroy[169]=st__Object_onDestroy[78]
     call TriggerAddCondition(st__Object_onDestroy[78],Condition( function sa__Missile_onDestroy))
     call TriggerAddCondition(st__Object_onDestroy[78],Condition( function sa__Effect_onDestroy))
     call TriggerAddCondition(st__Object_onDestroy[78],Condition( function sa__Agent_onDestroy))
     call TriggerAddCondition(st__Object_onDestroy[78],Condition( function sa__Object_onDestroy))
-    set st__UnitActor_suspendFilterAdditional[97]=CreateTrigger()
-    call TriggerAddCondition(st__UnitActor_suspendFilterAdditional[97],Condition( function sa__Ability0002_actor_suspendFilterAdditional))
-    call TriggerAddAction(st__UnitActor_suspendFilterAdditional[97], function sa__Ability0002_actor_suspendFilterAdditional)
-    set st__Actor_onComplete[97]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_onComplete[97],Condition( function sa__Ability0002_actor_onComplete))
-    call TriggerAddAction(st__Actor_onComplete[97], function sa__Ability0002_actor_onComplete)
-    set st__Actor_periodicAction[97]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_periodicAction[97],Condition( function sa__Ability0002_actor_periodicAction))
-    call TriggerAddAction(st__Actor_periodicAction[97], function sa__Ability0002_actor_periodicAction)
-    set st__Actor_onDestroy[97]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_onDestroy[97],Condition( function sa__Ability0002_actor_onDestroy))
-    call TriggerAddCondition(st__Actor_onDestroy[97],Condition( function sa__UnitActor_onDestroy))
-    call TriggerAddCondition(st__Actor_onDestroy[97],Condition( function sa__Actor_onDestroy))
-    set st__Missile_executeTarget[145]=CreateTrigger()
-    call TriggerAddCondition(st__Missile_executeTarget[145],Condition( function sa__Ability0020___bullet_executeTarget))
-    call TriggerAddAction(st__Missile_executeTarget[145], function sa__Ability0020___bullet_executeTarget)
     set st__Actor_onComplete[146]=CreateTrigger()
     call TriggerAddCondition(st__Actor_onComplete[146],Condition( function sa__Ability0020_actor_onComplete))
     call TriggerAddAction(st__Actor_onComplete[146], function sa__Ability0020_actor_onComplete)
@@ -36601,13 +37359,57 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__Object_onDestroy[75],Condition( function sa__Unit_prototype_onDestroy))
     call TriggerAddCondition(st__Object_onDestroy[75],Condition( function sa__Agent_onDestroy))
     call TriggerAddCondition(st__Object_onDestroy[75],Condition( function sa__Object_onDestroy))
-    set st__Actor_periodicAction[161]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_periodicAction[161],Condition( function sa__Ability0040_actor_periodicAction))
-    call TriggerAddAction(st__Actor_periodicAction[161], function sa__Ability0040_actor_periodicAction)
-    set st__Actor_onDestroy[161]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_onDestroy[161],Condition( function sa__Ability0040_actor_onDestroy))
-    call TriggerAddCondition(st__Actor_onDestroy[161],Condition( function sa__UnitActor_onDestroy))
-    call TriggerAddCondition(st__Actor_onDestroy[161],Condition( function sa__Actor_onDestroy))
+    set st__Missile_periodicAction[159]=CreateTrigger()
+    call TriggerAddCondition(st__Missile_periodicAction[159],Condition( function sa__Ability0031___ball_periodicAction))
+    call TriggerAddAction(st__Missile_periodicAction[159], function sa__Ability0031___ball_periodicAction)
+    set st__Missile_afterWave[159]=CreateTrigger()
+    call TriggerAddCondition(st__Missile_afterWave[159],Condition( function sa__Ability0031___ball_afterWave))
+    call TriggerAddAction(st__Missile_afterWave[159], function sa__Ability0031___ball_afterWave)
+    set st__Missile_executeWave[159]=CreateTrigger()
+    call TriggerAddCondition(st__Missile_executeWave[159],Condition( function sa__Ability0031___ball_executeWave))
+    call TriggerAddAction(st__Missile_executeWave[159], function sa__Ability0031___ball_executeWave)
+    set st__Missile_afterExplosion[159]=CreateTrigger()
+    call TriggerAddCondition(st__Missile_afterExplosion[159],Condition( function sa__Ability0031___ball_afterExplosion))
+    call TriggerAddAction(st__Missile_afterExplosion[159], function sa__Ability0031___ball_afterExplosion)
+    set st__Missile_executeExplosion[159]=CreateTrigger()
+    call TriggerAddCondition(st__Missile_executeExplosion[159],Condition( function sa__Ability0031___ball_executeExplosion))
+    call TriggerAddAction(st__Missile_executeExplosion[159], function sa__Ability0031___ball_executeExplosion)
+    set st__Missile_killFilter[159]=CreateTrigger()
+    call TriggerAddCondition(st__Missile_killFilter[159],Condition( function sa__Ability0031___ball_killFilter))
+    call TriggerAddAction(st__Missile_killFilter[159], function sa__Ability0031___ball_killFilter)
+    set st__Object_onDestroy[159]=CreateTrigger()
+    call TriggerAddCondition(st__Object_onDestroy[159],Condition( function sa__Ability0031___ball_onDestroy))
+    call TriggerAddCondition(st__Object_onDestroy[159],Condition( function sa__Missile_onDestroy))
+    call TriggerAddCondition(st__Object_onDestroy[159],Condition( function sa__Effect_onDestroy))
+    call TriggerAddCondition(st__Object_onDestroy[159],Condition( function sa__Agent_onDestroy))
+    call TriggerAddCondition(st__Object_onDestroy[159],Condition( function sa__Object_onDestroy))
+    set st__Actor_onComplete[160]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_onComplete[160],Condition( function sa__Ability0031___actor_onComplete))
+    call TriggerAddAction(st__Actor_onComplete[160], function sa__Ability0031___actor_onComplete)
+    set st__Actor_onDestroy[160]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_onDestroy[160],Condition( function sa__Ability0031___actor_onDestroy))
+    call TriggerAddCondition(st__Actor_onDestroy[160],Condition( function sa__UnitActor_onDestroy))
+    call TriggerAddCondition(st__Actor_onDestroy[160],Condition( function sa__Actor_onDestroy))
+    set st__UnitActor_suspendFilterAdditional[97]=CreateTrigger()
+    call TriggerAddCondition(st__UnitActor_suspendFilterAdditional[97],Condition( function sa__Ability0002_actor_suspendFilterAdditional))
+    call TriggerAddAction(st__UnitActor_suspendFilterAdditional[97], function sa__Ability0002_actor_suspendFilterAdditional)
+    set st__Actor_onComplete[97]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_onComplete[97],Condition( function sa__Ability0002_actor_onComplete))
+    call TriggerAddAction(st__Actor_onComplete[97], function sa__Ability0002_actor_onComplete)
+    set st__Actor_periodicAction[97]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_periodicAction[97],Condition( function sa__Ability0002_actor_periodicAction))
+    call TriggerAddAction(st__Actor_periodicAction[97], function sa__Ability0002_actor_periodicAction)
+    set st__Actor_onDestroy[97]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_onDestroy[97],Condition( function sa__Ability0002_actor_onDestroy))
+    call TriggerAddCondition(st__Actor_onDestroy[97],Condition( function sa__UnitActor_onDestroy))
+    call TriggerAddCondition(st__Actor_onDestroy[97],Condition( function sa__Actor_onDestroy))
+    set st__Actor_periodicAction[165]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_periodicAction[165],Condition( function sa__Ability0040_actor_periodicAction))
+    call TriggerAddAction(st__Actor_periodicAction[165], function sa__Ability0040_actor_periodicAction)
+    set st__Actor_onDestroy[165]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_onDestroy[165],Condition( function sa__Ability0040_actor_onDestroy))
+    call TriggerAddCondition(st__Actor_onDestroy[165],Condition( function sa__UnitActor_onDestroy))
+    call TriggerAddCondition(st__Actor_onDestroy[165],Condition( function sa__Actor_onDestroy))
     set st__Actor_onComplete[94]=CreateTrigger()
     call TriggerAddCondition(st__Actor_onComplete[94],Condition( function sa__Ability0001_actor_onComplete))
     call TriggerAddAction(st__Actor_onComplete[94], function sa__Ability0001_actor_onComplete)
@@ -36615,36 +37417,26 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__Actor_onDestroy[94],Condition( function sa__Ability0001_actor_onDestroy))
     call TriggerAddCondition(st__Actor_onDestroy[94],Condition( function sa__UnitActor_onDestroy))
     call TriggerAddCondition(st__Actor_onDestroy[94],Condition( function sa__Actor_onDestroy))
-    set st__Missile_executeWave[165]=CreateTrigger()
-    call TriggerAddCondition(st__Missile_executeWave[165],Condition( function sa__Ability0041__bullet_executeWave))
-    call TriggerAddAction(st__Missile_executeWave[165], function sa__Ability0041__bullet_executeWave)
-    set st__Actor_onComplete[166]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_onComplete[166],Condition( function sa__Ability0041__fire_onComplete))
-    call TriggerAddAction(st__Actor_onComplete[166], function sa__Ability0041__fire_onComplete)
-    set st__Actor_periodicAction[166]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_periodicAction[166],Condition( function sa__Ability0041__fire_periodicAction))
-    call TriggerAddAction(st__Actor_periodicAction[166], function sa__Ability0041__fire_periodicAction)
-    set st__Actor_onDestroy[166]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_onDestroy[166],Condition( function sa__Ability0041__fire_onDestroy))
-    call TriggerAddCondition(st__Actor_onDestroy[166],Condition( function sa__UnitActor_onDestroy))
-    call TriggerAddCondition(st__Actor_onDestroy[166],Condition( function sa__Actor_onDestroy))
-    set st__Actor_onComplete[167]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_onComplete[167],Condition( function sa__Ability0041__prepare_onComplete))
-    call TriggerAddAction(st__Actor_onComplete[167], function sa__Ability0041__prepare_onComplete)
-    set st__Actor_onDestroy[167]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_onDestroy[167],Condition( function sa__Ability0041__prepare_onDestroy))
-    call TriggerAddCondition(st__Actor_onDestroy[167],Condition( function sa__UnitActor_onDestroy))
-    call TriggerAddCondition(st__Actor_onDestroy[167],Condition( function sa__Actor_onDestroy))
-    set st__Actor_onComplete[93]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_onComplete[93],Condition( function sa__Ability0001_a2_onComplete))
-    call TriggerAddAction(st__Actor_onComplete[93], function sa__Ability0001_a2_onComplete)
-    set st__Actor_periodicAction[93]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_periodicAction[93],Condition( function sa__Ability0001_a2_periodicAction))
-    call TriggerAddAction(st__Actor_periodicAction[93], function sa__Ability0001_a2_periodicAction)
-    set st__Actor_onDestroy[93]=CreateTrigger()
-    call TriggerAddCondition(st__Actor_onDestroy[93],Condition( function sa__Ability0001_a2_onDestroy))
-    call TriggerAddCondition(st__Actor_onDestroy[93],Condition( function sa__UnitActor_onDestroy))
-    call TriggerAddCondition(st__Actor_onDestroy[93],Condition( function sa__Actor_onDestroy))
+    set st__Missile_executeWave[169]=CreateTrigger()
+    call TriggerAddCondition(st__Missile_executeWave[169],Condition( function sa__Ability0041___bullet_executeWave))
+    call TriggerAddAction(st__Missile_executeWave[169], function sa__Ability0041___bullet_executeWave)
+    set st__Actor_onComplete[170]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_onComplete[170],Condition( function sa__Ability0041___fire_onComplete))
+    call TriggerAddAction(st__Actor_onComplete[170], function sa__Ability0041___fire_onComplete)
+    set st__Actor_periodicAction[170]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_periodicAction[170],Condition( function sa__Ability0041___fire_periodicAction))
+    call TriggerAddAction(st__Actor_periodicAction[170], function sa__Ability0041___fire_periodicAction)
+    set st__Actor_onDestroy[170]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_onDestroy[170],Condition( function sa__Ability0041___fire_onDestroy))
+    call TriggerAddCondition(st__Actor_onDestroy[170],Condition( function sa__UnitActor_onDestroy))
+    call TriggerAddCondition(st__Actor_onDestroy[170],Condition( function sa__Actor_onDestroy))
+    set st__Actor_onComplete[171]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_onComplete[171],Condition( function sa__Ability0041___prepare_onComplete))
+    call TriggerAddAction(st__Actor_onComplete[171], function sa__Ability0041___prepare_onComplete)
+    set st__Actor_onDestroy[171]=CreateTrigger()
+    call TriggerAddCondition(st__Actor_onDestroy[171],Condition( function sa__Ability0041___prepare_onDestroy))
+    call TriggerAddCondition(st__Actor_onDestroy[171],Condition( function sa__UnitActor_onDestroy))
+    call TriggerAddCondition(st__Actor_onDestroy[171],Condition( function sa__Actor_onDestroy))
     set st__Missile_executeExplosion[122]=CreateTrigger()
     call TriggerAddCondition(st__Missile_executeExplosion[122],Condition( function sa__Ability0010_potion_executeExplosion))
     call TriggerAddAction(st__Missile_executeExplosion[122], function sa__Ability0010_potion_executeExplosion)
@@ -36654,17 +37446,20 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Missile_afterExplosion[122]=CreateTrigger()
     call TriggerAddCondition(st__Missile_afterExplosion[122],Condition( function sa__Ability0010_potion_afterExplosion))
     call TriggerAddAction(st__Missile_afterExplosion[122], function sa__Ability0010_potion_afterExplosion)
+    set st__Missile_executeTarget[145]=CreateTrigger()
+    call TriggerAddCondition(st__Missile_executeTarget[145],Condition( function sa__Ability0020___bullet_executeTarget))
+    call TriggerAddAction(st__Missile_executeTarget[145], function sa__Ability0020___bullet_executeTarget)
     set st__Missile_periodicAction[99]=CreateTrigger()
-    call TriggerAddCondition(st__Missile_periodicAction[99],Condition( function sa__Ability0003___ball_periodicAction))
-    call TriggerAddAction(st__Missile_periodicAction[99], function sa__Ability0003___ball_periodicAction)
+    call TriggerAddCondition(st__Missile_periodicAction[99],Condition( function sa__Ability0003__ball_periodicAction))
+    call TriggerAddAction(st__Missile_periodicAction[99], function sa__Ability0003__ball_periodicAction)
     set st__Missile_executeTarget[99]=CreateTrigger()
-    call TriggerAddCondition(st__Missile_executeTarget[99],Condition( function sa__Ability0003___ball_executeTarget))
-    call TriggerAddAction(st__Missile_executeTarget[99], function sa__Ability0003___ball_executeTarget)
+    call TriggerAddCondition(st__Missile_executeTarget[99],Condition( function sa__Ability0003__ball_executeTarget))
+    call TriggerAddAction(st__Missile_executeTarget[99], function sa__Ability0003__ball_executeTarget)
     set st__Missile_afterExplosion[99]=CreateTrigger()
-    call TriggerAddCondition(st__Missile_afterExplosion[99],Condition( function sa__Ability0003___ball_afterExplosion))
-    call TriggerAddAction(st__Missile_afterExplosion[99], function sa__Ability0003___ball_afterExplosion)
+    call TriggerAddCondition(st__Missile_afterExplosion[99],Condition( function sa__Ability0003__ball_afterExplosion))
+    call TriggerAddAction(st__Missile_afterExplosion[99], function sa__Ability0003__ball_afterExplosion)
     set st__Object_onDestroy[99]=CreateTrigger()
-    call TriggerAddCondition(st__Object_onDestroy[99],Condition( function sa__Ability0003___ball_onDestroy))
+    call TriggerAddCondition(st__Object_onDestroy[99],Condition( function sa__Ability0003__ball_onDestroy))
     call TriggerAddCondition(st__Object_onDestroy[99],Condition( function sa__Missile_onDestroy))
     call TriggerAddCondition(st__Object_onDestroy[99],Condition( function sa__Effect_onDestroy))
     call TriggerAddCondition(st__Object_onDestroy[99],Condition( function sa__Agent_onDestroy))
@@ -36672,9 +37467,6 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     set st__Missile_executeTarget[119]=CreateTrigger()
     call TriggerAddCondition(st__Missile_executeTarget[119],Condition( function sa__Abilityu001___mss_executeTarget))
     call TriggerAddAction(st__Missile_executeTarget[119], function sa__Abilityu001___mss_executeTarget)
-    set st__Missile_executeTarget[112]=CreateTrigger()
-    call TriggerAddCondition(st__Missile_executeTarget[112],Condition( function sa__Ability0008___arrow_executeTarget))
-    call TriggerAddAction(st__Missile_executeTarget[112], function sa__Ability0008___arrow_executeTarget)
     set st__Undead_isGuardianAlive[82]=CreateTrigger()
     set st__Undead_isGuardianAlive[34]=st__Undead_isGuardianAlive[82]
     set st__Undead_isGuardianAlive[35]=st__Undead_isGuardianAlive[82]
@@ -36760,18 +37552,25 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call TriggerAddCondition(st__Object_onDestroy[82],Condition( function sa__Unit_prototype_onDestroy))
     call TriggerAddCondition(st__Object_onDestroy[82],Condition( function sa__Agent_onDestroy))
     call TriggerAddCondition(st__Object_onDestroy[82],Condition( function sa__Object_onDestroy))
-    set st__Undead_init[37]=CreateTrigger()
-    call TriggerAddCondition(st__Undead_init[37],Condition( function sa__UndeadU003_init))
-    call TriggerAddAction(st__Undead_init[37], function sa__UndeadU003_init)
-    set st__Undead_periodicAction[34]=CreateTrigger()
-    call TriggerAddCondition(st__Undead_periodicAction[34],Condition( function sa__UndeadU000_periodicAction))
-    call TriggerAddAction(st__Undead_periodicAction[34], function sa__UndeadU000_periodicAction)
-    set st__Undead_init[36]=CreateTrigger()
-    call TriggerAddCondition(st__Undead_init[36],Condition( function sa__UndeadU002_init))
-    call TriggerAddAction(st__Undead_init[36], function sa__UndeadU002_init)
     set st__Undead_init[35]=CreateTrigger()
     call TriggerAddCondition(st__Undead_init[35],Condition( function sa__UndeadU001_init))
     call TriggerAddAction(st__Undead_init[35], function sa__UndeadU001_init)
+    set st__Undead_init[36]=CreateTrigger()
+    call TriggerAddCondition(st__Undead_init[36],Condition( function sa__UndeadU002_init))
+    call TriggerAddAction(st__Undead_init[36], function sa__UndeadU002_init)
+    set st__Undead_init[37]=CreateTrigger()
+    call TriggerAddCondition(st__Undead_init[37],Condition( function sa__UndeadU003_init))
+    call TriggerAddAction(st__Undead_init[37], function sa__UndeadU003_init)
+    set st__Missile_executeTarget[112]=CreateTrigger()
+    call TriggerAddCondition(st__Missile_executeTarget[112],Condition( function sa__Ability0008___arrow_executeTarget))
+    call TriggerAddAction(st__Missile_executeTarget[112], function sa__Ability0008___arrow_executeTarget)
+    set st__Undead_periodicAction[34]=CreateTrigger()
+    call TriggerAddCondition(st__Undead_periodicAction[34],Condition( function sa__UndeadU000_periodicAction))
+    call TriggerAddAction(st__Undead_periodicAction[34], function sa__UndeadU000_periodicAction)
+
+
+
+
 
 
 
@@ -36993,6 +37792,7 @@ function jasshelper__initstructs1699117953 takes nothing returns nothing
     call ExecuteFunc("s__Ability0020_main_onInit")
     call ExecuteFunc("s__Ability0021_main_onInit")
     call ExecuteFunc("s__Ability0030_main_onInit")
+    call ExecuteFunc("s__Ability0031_main_onInit")
     call ExecuteFunc("s__Ability0040_main_onInit")
     call ExecuteFunc("s__Ability0041_main_onInit")
     call ExecuteFunc("s__AbilityC000_main_onInit")
