@@ -18,9 +18,9 @@ Frame "GLUETEXTBUTTON" "SlotChangerUIButton" {
 	ControlStyle "HIGHLIGHTONMOUSEOVER",
 	ButtonPushedTextOffset 0.00 0.00,
 
-	ButtonText "SlotChangerUIButtonText",
-	Frame "TEXT" "SlotChangerUIButtonText" INHERITS "SkillShopButtonTextTemplate" {
-
+	Frame "BACKDROP" "SlotChangerUIButtonIcon" {
+		Height 0.02,
+		Width 0.02,
 	}
 
 	ControlBackdrop "ButtonBackdropTemplate",
@@ -48,9 +48,9 @@ Frame "GLUETEXTBUTTON" "InventoryUIButton" {
 	ControlStyle "HIGHLIGHTONMOUSEOVER",
 	ButtonPushedTextOffset 0.00 0.00,
 
-	ButtonText "InventoryUIButtonText",
-	Frame "TEXT" "InventoryUIButtonText" INHERITS "SkillShopButtonTextTemplate" {
-
+	Frame "BACKDROP" "InventoryUIButtonIcon" {
+		Height 0.02,
+		Width 0.02,
 	}
 
 	ControlBackdrop "ButtonBackdropTemplate",

@@ -18,9 +18,9 @@ Frame "GLUETEXTBUTTON" "SkillShopUIButton" {
 	ControlStyle "HIGHLIGHTONMOUSEOVER",
 	ButtonPushedTextOffset 0.00 0.00,
 
-	ButtonText "SkillShopUIButtonText",
-	Frame "TEXT" "SkillShopUIButtonText" INHERITS "SkillShopButtonTextTemplate" {
-
+	Frame "BACKDROP" "SkillShopUIButtonIcon" {
+		Height 0.02,
+		Width 0.02,
 	}
 
 	ControlBackdrop "ButtonBackdropTemplate",
