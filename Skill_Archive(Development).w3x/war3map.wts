@@ -54,26 +54,6 @@ STRING 1681
 플레이어 4
 }
 
-STRING 1682
-{
-플레이어 5
-}
-
-STRING 1683
-{
-플레이어 6
-}
-
-STRING 1684
-{
-플레이어 7
-}
-
-STRING 1685
-{
-플레이어 8
-}
-
 STRING 1689
 // 유닛: HRxx (더미영웅), Propernames (적합한 이름)
 {
@@ -339,12 +319,12 @@ STRING 2204
 
 STRING 2207
 {
-|cffd5bd92스킬저장소|r |cffffff00v1.00|r
+|cffd5bd92K-스사막|r |cffffff00v0.01|r
 }
 
 STRING 2208
 {
-8
+4
 }
 
 STRING 2209

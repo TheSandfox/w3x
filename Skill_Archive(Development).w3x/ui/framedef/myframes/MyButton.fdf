@@ -363,3 +363,33 @@ Frame "GLUETEXTBUTTON" "ChinghoSelectPagePrevButton" {
 	Frame "HIGHLIGHT" "ButtonMouseOverHighlightTemplate" INHERITS "EscMenuButtonMouseOverHighlightTemplate" {
 	}
 }
+
+Frame "GLUETEXTBUTTON" "CraftUIButton" {
+	ControlStyle "HIGHLIGHTONMOUSEOVER",
+	ButtonPushedTextOffset 0.00 0.00,
+
+	Frame "BACKDROP" "CraftUIButtonIcon" {
+		Height 0.02,
+		Width 0.02,
+	}
+
+	ControlBackdrop "ButtonBackdropTemplate",
+	Frame "BACKDROP" "ButtonBackdropTemplate" INHERITS "EscMenuButtonBackdropTemplate" {
+	}
+
+	ControlPushedBackdrop "ButtonPushedBackdropTemplate",
+	Frame "BACKDROP" "ButtonPushedBackdropTemplate" INHERITS "EscMenuButtonPushedBackdropTemplate" {
+	}
+
+	ControlDisabledBackdrop "ButtonDisabledBackdropTemplate",
+	Frame "BACKDROP" "ButtonDisabledBackdropTemplate" INHERITS "EscMenuButtonDisabledBackdropTemplate" {
+	}
+
+	ControlDisabledPushedBackdrop "ButtonDisabledPushedBackdropTemplate",
+	Frame "BACKDROP" "ButtonDisabledPushedBackdropTemplate" INHERITS "EscMenuButtonDisabledPushedBackdropTemplate" {
+	}
+
+	ControlMouseOverHighlight "ButtonMouseOverHighlightTemplate",
+	Frame "HIGHLIGHT" "ButtonMouseOverHighlightTemplate" INHERITS "EscMenuButtonMouseOverHighlightTemplate" {
+	}
+}
