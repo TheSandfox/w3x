@@ -1,18 +1,5 @@
 IncludeFile "UI\FrameDef\UI\EscMenuTemplates.fdf",
-
-Frame "TEXT" "SkillShopButtonTextTemplate" {
-	DecorateFileNames,
-	FrameFont "EscMenuTextFont", 0.010, "",
-	FontJustificationH JUSTIFYCENTER,
-	FontJustificationV JUSTIFYMIDDLE,    
-	FontJustificationOffset 0.0 0.0,
-	FontFlags "FIXEDSIZE",
-	FontColor 0.99 0.827 0.0705 1.0,
-	FontHighlightColor 1.0 1.0 1.0 1.0,
-	FontDisabledColor 0.5 0.5 0.5 1.0,
-	FontShadowColor 0.0 0.0 0.0 0.9,	
-	FontShadowOffset 0.002 -0.002,	
-}
+IncludeFile "UI\FrameDef\myframes\Mytext.fdf",
 
 Frame "GLUETEXTBUTTON" "SkillShopUIButton" {
 	ControlStyle "HIGHLIGHTONMOUSEOVER",
@@ -49,7 +36,7 @@ Frame "GLUETEXTBUTTON" "SkillShopBuyButton" {
 	ButtonPushedTextOffset 0.00 0.00,
 
 	ButtonText "SkillShopBuyButtonText",
-	Frame "TEXT" "SkillShopBuyButtonText" INHERITS "SkillShopButtonTextTemplate" {
+	Frame "TEXT" "SkillShopBuyButtonText" INHERITS "MyButtonText" {
 
 	}
 
@@ -84,7 +71,7 @@ Frame "GLUETEXTBUTTON" "SkillShopRefreshButton" {
 	ButtonPushedTextOffset 0.00 0.00,
 
 	ButtonText "SkillShopRefreshButtonText",
-	Frame "TEXT" "SkillShopRefreshButtonText" INHERITS "SkillShopButtonTextTemplate" {
+	Frame "TEXT" "SkillShopRefreshButtonText" INHERITS "MyButtonText" {
 
 	}
 
@@ -119,7 +106,7 @@ Frame "GLUETEXTBUTTON" "SkillShopAutoRefreshButton" {
 	ButtonPushedTextOffset 0.00 0.00,
 
 	ButtonText "SkillShopAutoRefreshButtonText",
-	Frame "TEXT" "SkillShopAutoRefreshButtonText" INHERITS "SkillShopButtonTextTemplate" {
+	Frame "TEXT" "SkillShopAutoRefreshButtonText" INHERITS "MyButtonText" {
 
 	}
 
@@ -149,7 +136,7 @@ Frame "GLUETEXTBUTTON" "SkillShopDonateButton" {
 	ButtonPushedTextOffset 0.00 0.00,
 
 	ButtonText "SkillShopDonateButtonText",
-	Frame "TEXT" "SkillShopDonateButtonText" INHERITS "SkillShopButtonTextTemplate" {
+	Frame "TEXT" "SkillShopDonateButtonText" INHERITS "MyButtonText" {
 
 	}
 

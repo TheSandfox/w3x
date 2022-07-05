@@ -12,9 +12,23 @@ Frame "BACKDROP" "MyTextBox" {
 Frame "TEXT" "MyText" {
 	UseActiveContext,
 	DecorateFileNames,
+	FontJustificationH JUSTIFYCENTER,
+    FontJustificationV JUSTIFYMIDDLE,    
 	FontFlags "FIXEDSIZE",
 	FrameFont "MasterFont", 0.01, "",
 	FontColor 1.0 1.0 1.0 1.0,
+	FontShadowColor 0.0 0.0 0.0 0.9,
+	FontShadowOffset 0.001 -0.001,
+}
+
+Frame "TEXT" "MyButtonText" {
+	UseActiveContext,
+	DecorateFileNames,
+	FontJustificationH JUSTIFYCENTER,
+    FontJustificationV JUSTIFYMIDDLE,    
+	FontFlags "FIXEDSIZE",
+	FrameFont "MasterFont", 0.01, "",
+	FontColor 1.0 0.8 0.0 1.0,
 	FontShadowColor 0.0 0.0 0.0 0.9,
 	FontShadowOffset 0.001 -0.001,
 }

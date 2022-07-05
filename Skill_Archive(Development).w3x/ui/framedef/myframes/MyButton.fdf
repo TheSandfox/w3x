@@ -1,18 +1,5 @@
 IncludeFile "UI\FrameDef\UI\EscMenuTemplates.fdf",
-
-Frame "TEXT" "SkillShopButtonTextTemplate" {
-	DecorateFileNames,
-	FrameFont "EscMenuTextFont", 0.010, "",
-	FontJustificationH JUSTIFYCENTER,
-	FontJustificationV JUSTIFYMIDDLE,    
-	FontJustificationOffset 0.0 0.0,
-	FontFlags "FIXEDSIZE",
-	FontColor 0.99 0.827 0.0705 1.0,
-	FontHighlightColor 1.0 1.0 1.0 1.0,
-	FontDisabledColor 0.5 0.5 0.5 1.0,
-	FontShadowColor 0.0 0.0 0.0 0.9,	
-	FontShadowOffset 0.002 -0.002,	
-}
+IncludeFile "UI\FrameDef\myframes\Mytext.fdf",
 
 Frame "GLUETEXTBUTTON" "SlotChangerUIButton" {
 	ControlStyle "HIGHLIGHTONMOUSEOVER",
@@ -79,7 +66,7 @@ Frame "GLUETEXTBUTTON" "SlotChangerButton" {
 	ButtonPushedTextOffset 0.00 0.00,
 
 	ButtonText "SlotChangerButtonText",
-	Frame "TEXT" "SlotChangerButtonText" INHERITS "SkillShopButtonTextTemplate" {
+	Frame "TEXT" "SlotChangerButtonText" INHERITS "MyButtonText" {
 
 	}
 
@@ -109,7 +96,7 @@ Frame "GLUETEXTBUTTON" "SlotChangerConfirmButton" {
 	ButtonPushedTextOffset 0.00 0.00,
 
 	ButtonText "SlotChangerConfirmButtonText",
-	Frame "TEXT" "SlotChangerConfirmButtonText" INHERITS "SkillShopButtonTextTemplate" {
+	Frame "TEXT" "SlotChangerConfirmButtonText" INHERITS "MyButtonText" {
 
 	}
 
@@ -139,7 +126,7 @@ Frame "GLUETEXTBUTTON" "MakePotionCreateButton" {
 	ButtonPushedTextOffset 0.00 0.00,
 
 	ButtonText "MakePotionCreateButtonText",
-	Frame "TEXT" "MakePotionCreateButtonText" INHERITS "SkillShopButtonTextTemplate" {
+	Frame "TEXT" "MakePotionCreateButtonText" INHERITS "MyButtonText" {
 
 	}
 
@@ -174,7 +161,7 @@ Frame "GLUETEXTBUTTON" "MakePotionSetButton" {
 	ButtonPushedTextOffset 0.00 0.00,
 
 	ButtonText "MakePotionSetButtonText",
-	Frame "TEXT" "MakePotionSetButtonText" INHERITS "SkillShopButtonTextTemplate" {
+	Frame "TEXT" "MakePotionSetButtonText" INHERITS "MyButtonText" {
 
 	}
 
@@ -239,7 +226,7 @@ Frame "GLUETEXTBUTTON" "CharacterSelectConfirmButton" {
 	ButtonPushedTextOffset 0.00 0.00,
 
 	ButtonText "CharacterSelectConfirmButtonText",
-	Frame "TEXT" "CharacterSelectConfirmButtonText" INHERITS "SkillShopButtonTextTemplate" {
+	Frame "TEXT" "CharacterSelectConfirmButtonText" INHERITS "MyButtonText" {
 
 	}
 
@@ -269,7 +256,7 @@ Frame "GLUETEXTBUTTON" "ChinghoSelectButton" {
 	ButtonPushedTextOffset 0.00 0.00,
 
 	ButtonText "ChinghoSelectButtonText",
-	Frame "TEXT" "ChinghoSelectButtonText" INHERITS "SkillShopButtonTextTemplate" {
+	Frame "TEXT" "ChinghoSelectButtonText" INHERITS "MyButtonText" {
 
 	}
 
@@ -309,7 +296,7 @@ Frame "GLUETEXTBUTTON" "ChinghoSelectPageNextButton" {
 	ButtonPushedTextOffset 0.00 0.00,
 
 	ButtonText "ChinghoSelectPageNextButtonText",
-	Frame "TEXT" "ChinghoSelectPageNextButtonText" INHERITS "SkillShopButtonTextTemplate" {
+	Frame "TEXT" "ChinghoSelectPageNextButtonText" INHERITS "MyButtonText" {
 
 	}
 
@@ -339,7 +326,7 @@ Frame "GLUETEXTBUTTON" "ChinghoSelectPagePrevButton" {
 	ButtonPushedTextOffset 0.00 0.00,
 
 	ButtonText "ChinghoSelectPagePrevButtonText",
-	Frame "TEXT" "ChinghoSelectPagePrevButtonText" INHERITS "SkillShopButtonTextTemplate" {
+	Frame "TEXT" "ChinghoSelectPagePrevButtonText" INHERITS "MyButtonText" {
 
 	}
 
