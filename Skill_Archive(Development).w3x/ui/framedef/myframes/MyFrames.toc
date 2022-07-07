@@ -4,3 +4,4 @@ ui\framedef\myframes\MyGTB.fdf
 ui\framedef\myframes\MyButton.fdf
 ui\framedef\myframes\SkillShop.fdf
 ui\framedef\myframes\Inventory.fdf
+ui\framedef\myframes\Craft.fdf

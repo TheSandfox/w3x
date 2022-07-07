@@ -1,0 +1,68 @@
+IncludeFile "UI\FrameDef\UI\EscMenuTemplates.fdf",
+IncludeFile "UI\FrameDef\myframes\Mytext.fdf",
+
+Frame "GLUETEXTBUTTON" "CraftMixConfirmButton" {
+	ControlStyle "HIGHLIGHTONMOUSEOVER",
+	ButtonPushedTextOffset 0.00 0.00,
+	Width 0.10667,
+	Height 0.02666,
+
+	ButtonText "CraftMixConfirmButtonText",
+	Frame "TEXT" "CraftMixConfirmButtonText" INHERITS "MyButtonText" {
+		SetPoint CENTER, "CraftMixConfirmButton", CENTER, 0.0, 0.0,
+		Text "합성",
+	}
+
+	ControlBackdrop "ButtonBackdropTemplate",
+	Frame "BACKDROP" "ButtonBackdropTemplate" INHERITS "EscMenuButtonBackdropTemplate" {
+	}
+
+	ControlPushedBackdrop "ButtonPushedBackdropTemplate",
+	Frame "BACKDROP" "ButtonPushedBackdropTemplate" INHERITS "EscMenuButtonPushedBackdropTemplate" {
+	}
+
+	ControlDisabledBackdrop "ButtonDisabledBackdropTemplate",
+	Frame "BACKDROP" "ButtonDisabledBackdropTemplate" INHERITS "EscMenuButtonDisabledBackdropTemplate" {
+	}
+
+	ControlDisabledPushedBackdrop "ButtonDisabledPushedBackdropTemplate",
+	Frame "BACKDROP" "ButtonDisabledPushedBackdropTemplate" INHERITS "EscMenuButtonDisabledPushedBackdropTemplate" {
+	}
+
+	ControlMouseOverHighlight "ButtonMouseOverHighlightTemplate",
+	Frame "HIGHLIGHT" "ButtonMouseOverHighlightTemplate" INHERITS "EscMenuButtonMouseOverHighlightTemplate" {
+	}
+}
+
+Frame "GLUETEXTBUTTON" "CraftMixClearButton" {
+	ControlStyle "HIGHLIGHTONMOUSEOVER",
+	ButtonPushedTextOffset 0.00 0.00,
+	Width 0.10667,
+	Height 0.02666,
+
+	ButtonText "CraftMixConfirmButtonText",
+	Frame "TEXT" "CraftMixConfirmButtonText" INHERITS "MyButtonText" {
+		SetPoint CENTER, "CraftMixConfirmButton", CENTER, 0.0, 0.0,
+		Text "비우기",
+	}
+
+	ControlBackdrop "ButtonBackdropTemplate",
+	Frame "BACKDROP" "ButtonBackdropTemplate" INHERITS "EscMenuButtonBackdropTemplate" {
+	}
+
+	ControlPushedBackdrop "ButtonPushedBackdropTemplate",
+	Frame "BACKDROP" "ButtonPushedBackdropTemplate" INHERITS "EscMenuButtonPushedBackdropTemplate" {
+	}
+
+	ControlDisabledBackdrop "ButtonDisabledBackdropTemplate",
+	Frame "BACKDROP" "ButtonDisabledBackdropTemplate" INHERITS "EscMenuButtonDisabledBackdropTemplate" {
+	}
+
+	ControlDisabledPushedBackdrop "ButtonDisabledPushedBackdropTemplate",
+	Frame "BACKDROP" "ButtonDisabledPushedBackdropTemplate" INHERITS "EscMenuButtonDisabledPushedBackdropTemplate" {
+	}
+
+	ControlMouseOverHighlight "ButtonMouseOverHighlightTemplate",
+	Frame "HIGHLIGHT" "ButtonMouseOverHighlightTemplate" INHERITS "EscMenuButtonMouseOverHighlightTemplate" {
+	}
+}

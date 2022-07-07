@@ -7,7 +7,7 @@ Frame "GLUETEXTBUTTON" "InventoryDialogConfirmButton" {
 
 	ButtonText "InventoryDialogConfirmButtonText",
 	Frame "TEXT" "InventoryDialogConfirmButtonText" INHERITS "MyButtonText" {
-		SetPoint CENTER, "EscMenuMainPanel", CENTER, 0.0, 0.0,
+		SetPoint CENTER, "InventoryDialogConfirmButton", CENTER, 0.0, 0.0,
 		Text "확인",
 	}
 
@@ -38,7 +38,7 @@ Frame "GLUETEXTBUTTON" "InventoryDialogCancleButton" {
 
 	ButtonText "InventoryDialogCancleButtonText",
 	Frame "TEXT" "InventoryDialogCancleButtonText" INHERITS "MyButtonText" {
-		SetPoint CENTER, "EscMenuMainPanel", CENTER, 0.0, 0.0,
+		SetPoint CENTER, "InventoryDialogCancleButton", CENTER, 0.0, 0.0,
 		Text "취소 (ESC)",
 	}
 
