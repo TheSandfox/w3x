@@ -1,0 +1,70 @@
+﻿STRING 1
+{
+|cffd6c98dWARKéMON LEGENDS v0.01|r
+}
+
+STRING 4
+{
+TheSandfox
+}
+
+STRING 5
+{
+플레이어 1
+}
+
+STRING 6
+{
+플레이어 2
+}
+
+STRING 7
+{
+플레이어 3
+}
+
+STRING 8
+{
+플레이어 4
+}
+
+STRING 9
+{
+Force 1
+}
+
+STRING 10
+// 유닛: dumm (더미), Name (이름)
+{
+더미
+}
+
+STRING 12
+// 장식물: D000 (팜(장식)), Name (이름)
+{
+팜(장식)
+}
+
+STRING 13
+// 장식물: D001 (연구소(장식)), Name (이름)
+{
+연구소(장식)
+}
+
+STRING 14
+// 유닛: h000 (캐슬(장식)), Name (이름)
+{
+캐슬(장식)
+}
+
+STRING 15
+// 장식물: D002 (캐슬(장식)), Name (이름)
+{
+캐슬(장식)
+}
+
+STRING 16
+{
+4인 이하
+}
+

@@ -1,0 +1,3 @@
+ui\framedef\MyEdge.fdf
+ui\framedef\MyText.fdf
+ui\framedef\MyGTB.fdf

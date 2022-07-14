@@ -1,0 +1,64 @@
+Texture "UpperMenuButtonBackground" {
+    File "UpperMenuButtonTexture",
+    TexCoord 0.0, 0.6640625, 0.0, 0.171875,
+}
+Texture "UpperMenuButtonPushedBackground" {
+    File "UpperMenuButtonTexture",
+    TexCoord 0.0, 0.6640625, 0.25, 0.421875,
+}
+Texture "UpperMenuButtonDisabledBackground" {
+    File "UpperMenuButtonTexture",
+    TexCoord 0.0, 0.6640625, 0.5, 0.671875,
+}
+Texture "UpperMenuButtonHighlight" {
+    File "UpperMenuButtonTexture",
+    TexCoord 0.0, 0.6640625, 0.75, 0.921875,
+    AlphaMode "ADD",
+}
+
+// -- FRAMES ----------------------------------------------------------------
+
+Frame "BACKDROP" "MBEdge" {
+	UseActiveContext,
+	DecorateFileNames,
+	BackdropTileBackground,
+	BackdropBackground "MultiboardBackground",
+	BackdropCornerFlags "UL|UR|BL|BR|T|L|B|R",
+	BackdropCornerSize 0.0125,
+	BackdropBackgroundInsets 0.005f 0.005f 0.005f 0.005f,
+	BackdropEdgeFile "MultiboardBorder",
+	BackdropBlendAll,
+}
+
+Frame "TEXT" "GenericText" {
+	DecorateFileNames,
+	Text "GText",
+		FontFlags "FIXEDSIZE",
+		FrameFont "MasterFont", 0.013, "",
+		FontColor 1.0 1.0 1.0 1.0,
+		FontShadowColor 0.0 0.0 0.0 0.9,
+		FontShadowOffset 0.002 -0.002,
+}
+
+Frame "BACKDROP" "EMEdge" {
+	DecorateFileNames,
+	BackdropTileBackground,
+	BackdropBackground  "EscMenuBackground",
+ 	BackdropCornerFlags "UL|UR|BL|BR|T|L|B|R",
+ 	BackdropCornerSize  0.048,
+ 	BackdropBackgroundSize  0.256,
+ 	BackdropBackgroundInsets 0.01 0.01 0.01 0.01,
+ 	BackdropEdgeFile  "EscMenuBorder",
+ 	BackdropBlendAll,
+}
+
+Frame "BUTTON" "UMButton" {
+	DecorateFileNames,
+	Width 0.085,
+	Height 0.022,
+	ButtonPushedTextOffset 0.001 -0.001,
+	NormalTexture "UpperMenuButtonBackground",
+	PushedTexture "UpperMenuButtonPushedBackground",
+	DisabledTexture "UpperMenuButtonDisabledBackground",
+	UseHighlight "UpperMenuButtonHighlight",	
+}
